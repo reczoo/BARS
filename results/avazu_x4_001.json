@@ -1,8 +1,8 @@
 {
     "data": [
         {
-            "year": "2017",
-            "pub": "IJCAI'17",
+            "year": "2007",
+            "pub": "WWW'07",
             "model": "LR",
             "logloss": "0.3815",
             "auc": "0.7775",
@@ -51,15 +51,6 @@
             "model": "YoutubeDNN",
             "logloss": "0.3722",
             "auc": "0.7928",
-            "link": "https://xx",
-            "contr": "jimzhu"
-        },
-        {
-            "year": "2016",
-            "pub": "ECIR'16",
-            "model": "FNN",
-            "logloss": "0.3774",
-            "auc": "0.7883",
             "link": "https://xx",
             "contr": "jimzhu"
         },
