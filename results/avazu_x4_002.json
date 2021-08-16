@@ -1,0 +1,266 @@
+{
+    "data": [
+        {
+            "year": "2007",
+            "pub": "WWW'07",
+            "model": "LR",
+            "logloss": "0.3799",
+            "auc": "0.7805",
+            "link": "https://xx",
+            "contr": "jimzhu"
+        },
+        {
+            "year": "2010",
+            "pub": "ICDM'10",
+            "model": "FM",
+            "logloss": "0.3736",
+            "auc": "0.7908",
+            "link": "https://xx",
+            "contr": "jimzhu"
+        },
+        {
+            "year": "2016",
+            "pub": "RecSys'16",
+            "model": "FFM",
+            "logloss": "0.3711",
+            "auc": "0.7948",
+            "link": "https://xx",
+            "contr": "jimzhu"
+        },
+        {
+            "year": "2018",
+            "pub": "WWW'18",
+            "model": "FwFM",
+            "logloss": "0.3724",
+            "auc": "0.7925",
+            "link": "https://xx",
+            "contr": "jimzhu"
+        },
+        {
+            "year": "2017",
+            "pub": "IJCAI'17",
+            "model": "AFM",
+            "logloss": "0.3781",
+            "auc": "0.7840",
+            "link": "https://xx",
+            "contr": "jimzhu"
+        },
+        {
+            "year": "2016",
+            "pub": "NIPS'16",
+            "model": "HOFM",
+            "logloss": "0.3733",
+            "auc": "0.7914",
+            "link": "https://xx",
+            "contr": "jimzhu"
+        },
+        {
+            "year": "2017",
+            "pub": "SIGIR'17",
+            "model": "NFM",
+            "logloss": "0.3715",
+            "auc": "0.7940",
+            "link": "https://xx",
+            "contr": "jimzhu"
+        },
+        {
+            "year": "2015",
+            "pub": "CIKM'15",
+            "model": "CCPM",
+            "logloss": "0.3721",
+            "auc": "0.7932",
+            "link": "https://xx",
+            "contr": "jimzhu"
+        },
+        {
+            "year": "2016",
+            "pub": "RecSys'16",
+            "model": "YoutubeDNN",
+            "logloss": "0.3705",
+            "auc": "0.7958",
+            "link": "https://xx",
+            "contr": "jimzhu"
+        },
+        {
+            "year": "2016",
+            "pub": "RecSysW'16",
+            "model": "WideDeep",
+            "logloss": "0.3703",
+            "auc": "0.7958",
+            "link": "https://xx",
+            "contr": "jimzhu"
+        },
+        {
+            "year": "2017",
+            "pub": "IJCAI'17",
+            "model": "DeepFM",
+            "logloss": "0.3701",
+            "auc": "0.7963",
+            "link": "https://xx",
+            "contr": "jimzhu"
+        },
+        {
+            "year": "2016",
+            "pub": "ICDM'16",
+            "model": "PNN",
+            "logloss": "0.3684",
+            "auc": "0.7989",
+            "link": "https://xx",
+            "contr": "jimzhu"
+        },
+        {
+            "year": "2016",
+            "pub": "KDD'16",
+            "model": "DeepCross",
+            "logloss": "0.3700",
+            "auc": "0.7962",
+            "link": "https://xx",
+            "contr": "jimzhu"
+        },
+        {
+            "year": "2017",
+            "pub": "ADKDD'17",
+            "model": "CrossNet",
+            "logloss": "0.3773",
+            "auc": "0.7840",
+            "link": "https://xx",
+            "contr": "jimzhu"
+        },
+        {
+            "year": "2017",
+            "pub": "ADKDD'17",
+            "model": "DCN",
+            "logloss": "0.3699",
+            "auc": "0.7965",
+            "link": "https://xx",
+            "contr": "jimzhu"
+        },
+        {
+            "year": "2018",
+            "pub": "KDD'18",
+            "model": "CIN",
+            "logloss": "0.3726",
+            "auc": "0.7923",
+            "link": "https://xx",
+            "contr": "jimzhu"
+        },
+        {
+            "year": "2018",
+            "pub": "KDD'18",
+            "model": "xDeepFM",
+            "logloss": "0.3697",
+            "auc": "0.7967",
+            "link": "https://xx",
+            "contr": "jimzhu"
+        },
+        {
+            "year": "2019",
+            "pub": "CIKM'19",
+            "model": "AutoInt",
+            "logloss": "0.3726",
+            "auc": "0.7922",
+            "link": "https://xx",
+            "contr": "jimzhu"
+        },
+        {
+            "year": "2019",
+            "pub": "CIKM'19",
+            "model": "AutoInt+",
+            "logloss": "0.3703",
+            "auc": "0.7959",
+            "link": "https://xx",
+            "contr": "jimzhu"
+        },
+        {
+            "year": "2019",
+            "pub": "CIKM'19",
+            "model": "FiGNN",
+            "logloss": "0.3711",
+            "auc": "0.7944",
+            "link": "https://xx",
+            "contr": "jimzhu"
+        },
+        {
+            "year": "2019",
+            "pub": "RecSys'19",
+            "model": "FiBiNET",
+            "logloss": "0.3675",
+            "auc": "0.8003",
+            "link": "https://xx",
+            "contr": "jimzhu"
+        },
+        {
+            "year": "2019",
+            "pub": "WWW'19",
+            "model": "FGCNN",
+            "logloss": "0.3696",
+            "auc": "0.7971",
+            "link": "https://xx",
+            "contr": "jimzhu"
+        },
+        {
+            "year": "2020",
+            "pub": "NeuralNetworks'20",
+            "model": "ONN",
+            "logloss": "0.3677",
+            "auc": "0.8001",
+            "link": "https://xx",
+            "contr": "jimzhu"
+        },
+        {
+            "year": "2020",
+            "pub": "WSDM'20",
+            "model": "InterHAt",
+            "logloss": "0.3722",
+            "auc": "0.7927",
+            "link": "https://xx",
+            "contr": "jimzhu"
+        },
+        {
+            "year": "2020",
+            "pub": "AAAI'20",
+            "model": "AFN",
+            "logloss": "0.3720",
+            "auc": "0.7936",
+            "link": "https://xx",
+            "contr": "jimzhu"
+        },
+        {
+            "year": "2020",
+            "pub": "AAAI'20",
+            "model": "AFN+",
+            "logloss": "0.3706",
+            "auc": "0.7956",
+            "link": "https://xx",
+            "contr": "jimzhu"
+        },
+        {
+            "year": "2020",
+            "pub": "AAAI'20",
+            "model": "LorentzFM",
+            "logloss": "0.3742",
+            "auc": "0.7912",
+            "link": "https://xx",
+            "contr": "jimzhu"
+        },
+        {
+            "year": "2019",
+            "pub": "AAAI'19",
+            "model": "HFM",
+            "logloss": "0.3735",
+            "auc": "0.7910",
+            "link": "https://xx",
+            "contr": "jimzhu"
+        },
+        {
+            "year": "2019",
+            "pub": "AAAI'19",
+            "model": "HFM+",
+            "logloss": "0.3683",
+            "auc": "0.7992",
+            "link": "https://xx",
+            "contr": "jimzhu"
+        }
+    ]
+}
+
