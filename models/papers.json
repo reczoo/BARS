@@ -8,6 +8,7 @@
             "authors": "Shu Wu, Feng Yu, Xueli Yu, Qiang Liu, Liang Wang, Tieniu Tan, Jie Shao, Fan Huang",
             "link": "https://arxiv.org/abs/2006.15939",
             "company": "Tencent",
+            "available": "N",
             "tags": "#feature-interactions"
         },
         {
@@ -18,6 +19,7 @@
             "authors": "Tongwen Huang, Zhiqi Zhang, Junlin Zhang",
             "link": "https://arxiv.org/abs/1905.09433",
             "company": "Sina Weibo",
+            "available": "Y",
             "tags": "#feature-interactions"
         },
         {
@@ -28,6 +30,7 @@
             "authors": "Weiping Song, Chence Shi, Zhiping Xiao, Zhijian Duan, Yewen Xu, Ming Zhang, Jian Tang",
             "link": "https://arxiv.org/abs/1810.11921",
             "company": "",
+            "available": "Y",
             "tags": "#feature-interactions"
         }
       ]
