@@ -1,1 +1,34 @@
-
+{
+    "data": [
+        {
+            "year": "2020",
+            "pub": "SIGIR'20",
+            "model": "TFNet",
+            "paper": "TFNet: Multi-Semantic Feature Interaction for CTR Prediction",
+            "authors": "Shu Wu, Feng Yu, Xueli Yu, Qiang Liu, Liang Wang, Tieniu Tan, Jie Shao, Fan Huang",
+            "link": "https://arxiv.org/abs/2006.15939",
+            "company": "Tencent",
+            "tags": "#feature-interactions"
+        },
+        {
+            "year": "2019",
+            "pub": "RecSys'19",
+            "model": "FiBiNET",
+            "paper": "FiBiNET: Combining Feature Importance and Bilinear feature Interaction for Click-Through Rate Prediction",
+            "authors": "Tongwen Huang, Zhiqi Zhang, Junlin Zhang",
+            "link": "https://arxiv.org/abs/1905.09433",
+            "company": "Sina Weibo",
+            "tags": "#feature-interactions"
+        },
+        {
+            "year": "2019",
+            "pub": "CIKM'19",
+            "model": "AutoInt",
+            "paper": "AutoInt: Automatic Feature Interaction Learning via Self-Attentive Neural Networks",
+            "authors": "Weiping Song, Chence Shi, Zhiping Xiao, Zhijian Duan, Yewen Xu, Ming Zhang, Jian Tang",
+            "link": "https://arxiv.org/abs/1810.11921",
+            "company": "",
+            "tags": "#feature-interactions"
+        }
+      ]
+}
