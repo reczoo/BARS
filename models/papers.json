@@ -1,6 +1,5 @@
 {
-    "data": [
-        {
+    "data": [{
             "year": "2020",
             "pub": "SIGIR'20",
             "model": "TFNet",
@@ -8,6 +7,17 @@
             "authors": "Shu Wu, Feng Yu, Xueli Yu, Qiang Liu, Liang Wang, Tieniu Tan, Jie Shao, Fan Huang",
             "link": "https://arxiv.org/abs/2006.15939",
             "company": "Tencent",
+            "available": "N",
+            "tags": "#feature-interactions"
+        },
+        {
+            "year": "2019",
+            "pub": "Arixv'19",
+            "model": "FAT-DeepFFM",
+            "paper": "FAT-DeepFFM: Field Attentive Deep Field-aware Factorization Machine",
+            "authors": "Junlin Zhang, Tongwen Huang, Zhiqi Zhang",
+            "link": "https://arxiv.org/pdf/1905.06336",
+            "company": "Sina Weibo",
             "available": "N",
             "tags": "#feature-interactions"
         },
@@ -24,6 +34,39 @@
         },
         {
             "year": "2019",
+            "pub": "Neural Networks'20",
+            "model": "ONN",
+            "paper": "Operation-aware Neural Networks for User Response Prediction",
+            "authors": "Yi Yang, Baile Xu, Furao Shen, Jian Zhao",
+            "link": "https://arxiv.org/pdf/1904.12579",
+            "company": "",
+            "available": "N",
+            "tags": "#feature-interactions"
+        },
+        {
+            "year": "2019",
+            "pub": "IJCAI'19",
+            "model": "DeepMCP",
+            "paper": "Representation Learning-Assisted Click-Through Rate Prediction",
+            "authors": "Wentao Ouyang, Xiuwu Zhang, Shukui Ren, Chao Qi, Zhaojie Liu, Yanlong Du",
+            "link": "https://arxiv.org/abs/1906.04365",
+            "company": "Alibaba",
+            "available": "N",
+            "tags": "#feature-interactions"
+        },
+        {
+            "year": "2019",
+            "pub": "IJCAI'19",
+            "model": "DSIN",
+            "paper": "Deep Session Interest Network for Click-Through Rate Prediction",
+            "authors": "Yufei Feng, Fuyu Lv, Weichen Shen, Menghan Wang, Fei Sun, Yu Zhu, Keping Yang",
+            "link": "https://arxiv.org/abs/1905.06482",
+            "company": "Alibaba",
+            "available": "N",
+            "tags": "#feature-interactions"
+        },
+        {
+            "year": "2019",
             "pub": "CIKM'19",
             "model": "AutoInt",
             "paper": "AutoInt: Automatic Feature Interaction Learning via Self-Attentive Neural Networks",
@@ -33,5 +76,5 @@
             "available": "Y",
             "tags": "#feature-interactions"
         }
-      ]
+    ]
 }
