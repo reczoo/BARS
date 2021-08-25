@@ -196,6 +196,94 @@
             "company": "",
             "available": "N",
             "tags": "#feature-interactions"
+        },
+        {
+            "year": "2018",
+            "pub": "CSUR'18",
+            "model": "*",
+            "paper": "Deep Learning based Recommender System: A Survey and New Perspectives",
+            "authors": "Shuai Zhang, Lina Yao, Aixin Sun, Yi Tay",
+            "link": "https://arxiv.org/abs/1707.07435",
+            "company": "",
+            "available": "N",
+            "tags": "#feature-interactions"
+        },
+        {
+            "year": "2018",
+            "pub": "WWW'18",
+            "model": "FwFMs",
+            "paper": "Field-weighted Factorization Machines for Click-Through Rate Prediction in Display Advertising",
+            "authors": "Junwei Pan, Jian Xu, Alfonso Lobos Ruiz, Wenliang Zhao, Shengjun Pan, Yu Sun, Quan Lu",
+            "link": "https://dl.acm.org/doi/10.1145/3178876.3186040",
+            "company": "Oath, TouchPal, LinkedIn, Ablibaba",
+            "available": "N",
+            "tags": "#feature-interactions"
+        },
+        {
+            "year": "2018",
+            "pub": "WWW'18",
+            "model": "RFM/RFFM",
+            "paper": "Robust Factorization Machines for User Response Prediction",
+            "authors": "Surabhi Punjabi, Priyanka Bhatt",
+            "link": "http://wnzhang.net/share/rtb-papers/rfm-www.pdf",
+            "company": "WalmartLabs",
+            "available": "N",
+            "tags": "#feature-interactions"
+        },
+        {
+            "year": "2018",
+            "pub": "KDD'18",
+            "model": "xDeepFM",
+            "paper": "xDeepFM: Combining Explicit and Implicit Feature Interactions for Recommender Systems",
+            "authors": "Jianxun Lian, Xiaohuan Zhou, Fuzheng Zhang, Zhongxia Chen, Xing Xie, Guangzhong Sun",
+            "link": "https://dl.acm.org/doi/abs/10.1145/3219819.3220023",
+            "company": "Microsoft",
+            "available": "N",
+            "tags": "#feature-interactions"
+        },
+        {
+            "year": "2018",
+            "pub": "IJCAI'18",
+            "model": "MSS/MSM",
+            "paper": "Convolutional Neural Networks based Click-Through Rate Prediction with Multiple Feature Sequences",
+            "authors": "Patrick P. K. Chan, Xian Hu, Lili Zhao, Daniel S. Yeung, Dapeng Liu, Lei Xiao",
+            "link": "https://www.ijcai.org/proceedings/2018/0277.pdf",
+            "company": "Tencent",
+            "available": "N",
+            "tags": "#feature-interactions"
+        },
+        {
+            "year": "2018",
+            "pub": "RecSys'18",
+            "model": "FPENN",
+            "paper": "Field-aware Probabilistic Embedding Neural Network for CTR Prediction",
+            "authors": "Weiwen Liu, Ruiming Tang, Jiajin Li, Jinkai Yu, Huifeng Guo, Xiuqiang He, Shengyu Zhang",
+            "link": "https://dl.acm.org/doi/10.1145/3240323.3240396",
+            "company": "Huawei, Tencent",
+            "available": "N",
+            "tags": "#feature-interactions"
+        },
+        {
+            "year": "2018",
+            "pub": "TOIS'18",
+            "model": "PNN",
+            "paper": "Product-based Neural Networks for User Response Prediction over Multi-field Categorical Data",
+            "authors": "Yanru Qu, Bohui Fang, Weinan Zhang, Ruiming Tang, Minzhe Niu, Huifeng Guo, Yong Yu, Xiuqiang He",
+            "link": "https://arxiv.org/abs/1807.00311",
+            "company": "Huawei, Tencent",
+            "available": "N",
+            "tags": "#feature-interactions"
+        },
+        {
+            "year": "2018",
+            "pub": "",
+            "model": "",
+            "paper": "",
+            "authors": "",
+            "link": "",
+            "company": "",
+            "available": "N",
+            "tags": "#feature-interactions"
         }
     ]
 }
