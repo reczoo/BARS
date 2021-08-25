@@ -67,6 +67,94 @@
         },
         {
             "year": "2019",
+            "pub": "KDD'19",
+            "model": "DSTN",
+            "paper": "Deep Spatio-Temporal Neural Networks for Click-Through Rate Prediction",
+            "authors": "Wentao Ouyang, Xiuwu Zhang, Li Li, Heng Zou, Xin Xing, Zhaojie Liu, Yanlong Du",
+            "link": "https://arxiv.org/abs/1906.03776",
+            "company": "Alibaba",
+            "available": "N",
+            "tags": "#feature-interactions"
+        },
+        {
+            "year": "2019",
+            "pub": "SIGIR'19",
+            "model": "GIN",
+            "paper": "Graph Intention Network for Click-through Rate Prediction in Sponsored Search",
+            "authors": "Feng Li, Zhenrui Chen, Pengjie Wang, Yi Ren, Di Zhang, Xiaoyu Zhu",
+            "link": "https://dl.acm.org/doi/10.1145/3331184.3331283",
+            "company": "Alibaba",
+            "available": "N",
+            "tags": "#feature-interactions"
+        },
+        {
+            "year": "2019",
+            "pub": "SIGIR'19",
+            "model": "Meta-Embedding*",
+            "paper": "Warm Up Cold-start Advertisements: Improving CTR Predictions via Learning to Learn ID Embeddings",
+            "authors": "Feiyang Pan, Shuokai Li, Xiang Ao, Pingzhong Tang and Qing He",
+            "link": "https://arxiv.org/abs/1904.11547",
+            "company": "",
+            "available": "N",
+            "tags": "#feature-interactions"
+        },
+        {
+            "year": "2019",
+            "pub": "SIGIR'19",
+            "model": "OENN",
+            "paper": "Order-aware Embedding Neural Network for CTR Prediction",
+            "authors": "Wei Guo, Ruiming Tang, Huifeng Guo, Jianhua Han, Yuzhou Zhang and Wen Yang",
+            "link": "https://dl.acm.org/doi/10.1145/3331184.3331332",
+            "company": "Huawei",
+            "available": "N",
+            "tags": "#feature-interactions"
+        },
+        {
+            "year": "2019",
+            "pub": "WWW'19",
+            "model": "FGCNN",
+            "paper": "Feature Generation by Convolutional Neural Network for Click-Through Rate Prediction",
+            "authors": "Bin Liu, Ruiming Tang, Yingzhi Chen, Jinkai Yu, Huifeng Guo, Yuzhou Zhang",
+            "link": "https://arxiv.org/abs/1904.04447",
+            "company": "Huawei",
+            "available": "N",
+            "tags": "#feature-interactions"
+        },
+        {
+            "year": "2019",
+            "pub": "AAAI'19",
+            "model": "SEFM",
+            "paper": "Accurate and Interpretable Factorization Machines",
+            "authors": "Liang Lan, Yu Geng",
+            "link": "https://ojs.aaai.org//index.php/AAAI/article/view/4315",
+            "company": "",
+            "available": "N",
+            "tags": "#feature-interactions"
+        },
+        {
+            "year": "2019",
+            "pub": "AAAI'19",
+            "model": "HFM/HFM+",
+            "paper": "Holographic Factorization Machines for Recommendation",
+            "authors": "Yi Tay, Shuai Zhang, Anh Tuan Luu, Siu Cheung Hui, Lina Yao, Tran Dang Quang Vinh",
+            "link": "https://ojs.aaai.org//index.php/AAAI/article/view/4448",
+            "company": "",
+            "available": "N",
+            "tags": "#feature-interactions"
+        },
+        {
+            "year": "2019",
+            "pub": "AAAI'19",
+            "model": "IFM",
+            "paper": "Interaction-aware Factorization Machines for Recommender Systems",
+            "authors": "Fuxing Hong, Dongbo Huang, Ge Chen",
+            "link": "https://arxiv.org/abs/1902.09757",
+            "company": "",
+            "available": "N",
+            "tags": "#feature-interactions"
+        },
+        {
+            "year": "2019",
             "pub": "CIKM'19",
             "model": "AutoInt",
             "paper": "AutoInt: Automatic Feature Interaction Learning via Self-Attentive Neural Networks",
@@ -74,6 +162,39 @@
             "link": "https://arxiv.org/abs/1810.11921",
             "company": "",
             "available": "Y",
+            "tags": "#feature-interactions"
+        },
+        {
+            "year": "2019",
+            "pub": "Arixv'19",
+            "model": "Attention-Net",
+            "paper": "Learning Representations of Categorical Feature Combinations via Self-Attention",
+            "authors": "Chen Xu, Chengzhen Fu, Peng Jiang, Wenwu Ou",
+            "link": "https://openreview.net/pdf?id=SyxwW2A5Km",
+            "company": "",
+            "available": "N",
+            "tags": "#feature-interactions"
+        },
+        {
+            "year": "2019",
+            "pub": "Data Mining and Knowledge Discovery'19",
+            "model": "DSM",
+            "paper": "Deeply Supervised Semantic Model for Click-Through Rate Prediction in Sponsored Search",
+            "authors": "Jelena Gligorijevic, Djordje Gligorijevic, Ivan Stojkovic, Xiao Bai, Amit Goyal, Zoran Obradovic",
+            "link": "https://arxiv.org/abs/1803.10739",
+            "company": "",
+            "available": "N",
+            "tags": "#feature-interactions"
+        },
+        {
+            "year": "2018",
+            "pub": "CSUR'18",
+            "model": "*",
+            "paper": "Deep Learning based Recommender System: A Survey and New Perspectives",
+            "authors": "Shuai Zhang, Lina Yao, Aixin Sun, Yi Tay",
+            "link": "https://arxiv.org/abs/1707.07435",
+            "company": "",
+            "available": "N",
             "tags": "#feature-interactions"
         }
     ]
