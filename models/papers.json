@@ -8,7 +8,7 @@
             "link": "https://arxiv.org/abs/2006.15939",
             "company": "Tencent",
             "available": "N",
-            "tags": "*"
+            "tags": "#Feature Interactions"
         },
         {
             "year": "2019",
@@ -19,7 +19,7 @@
             "link": "https://arxiv.org/pdf/1905.06336",
             "company": "Sina Weibo",
             "available": "N",
-            "tags": "*"
+            "tags": "#Feature Interactions"
         },
         {
             "year": "2019",
@@ -33,7 +33,7 @@
             "tags": "*"
         },
         {
-            "year": "2019",
+            "year": "2020",
             "pub": "Neural Networks'20",
             "model": "ONN",
             "paper": "Operation-aware Neural Networks for User Response Prediction",
@@ -52,7 +52,7 @@
             "link": "https://arxiv.org/abs/1906.04365",
             "company": "Alibaba",
             "available": "N",
-            "tags": "*"
+            "tags": "Multi-Task"
         },
         {
             "year": "2019",
@@ -63,7 +63,7 @@
             "link": "https://arxiv.org/abs/1905.06482",
             "company": "Alibaba",
             "available": "N",
-            "tags": "*"
+            "tags": "#Behavior Modeling"
         },
         {
             "year": "2019",
@@ -74,7 +74,7 @@
             "link": "https://arxiv.org/abs/1906.03776",
             "company": "Alibaba",
             "available": "N",
-            "tags": "*"
+            "tags": "#Behavior Modeling"
         },
         {
             "year": "2019",
@@ -85,7 +85,7 @@
             "link": "https://dl.acm.org/doi/10.1145/3331184.3331283",
             "company": "Alibaba",
             "available": "N",
-            "tags": "*"
+            "tags": "Graph-enhanced Modeling"
         },
         {
             "year": "2019",
@@ -162,7 +162,7 @@
             "link": "https://arxiv.org/abs/1810.11921",
             "company": "",
             "available": "Y",
-            "tags": "*"
+            "tags": "#Feature Interactions"
         },
         {
             "year": "2019",
@@ -184,7 +184,7 @@
             "link": "https://arxiv.org/abs/1803.10739",
             "company": "",
             "available": "N",
-            "tags": "*"
+            "tags": "Multi-Task"
         },
         {
             "year": "2018",
@@ -211,13 +211,13 @@
         {
             "year": "2018",
             "pub": "WWW'18",
-            "model": "FwFMs",
+            "model": "FwFM",
             "paper": "Field-weighted Factorization Machines for Click-Through Rate Prediction in Display Advertising",
             "authors": "Junwei Pan, Jian Xu, Alfonso Lobos Ruiz, Wenliang Zhao, Shengjun Pan, Yu Sun, Quan Lu",
             "link": "https://dl.acm.org/doi/10.1145/3178876.3186040",
             "company": "Oath, TouchPal, LinkedIn, Ablibaba",
             "available": "N",
-            "tags": "*"
+            "tags": "#Feature Interactions"
         },
         {
             "year": "2018",
@@ -261,7 +261,7 @@
             "link": "https://arxiv.org/abs/1703.04247",
             "company": "Huawei",
             "available": "N",
-            "tags": "*"
+            "tags": "#Feature Interactions"
         },
         {
             "year": "2017",
@@ -294,7 +294,7 @@
             "link": "https://arxiv.org/abs/1708.05123",
             "company": "Google",
             "available": "N",
-            "tags": "*"
+            "tags": "#Feature Interactions"
         },
         {
             "year": "2017",
@@ -305,7 +305,7 @@
             "link": "https://arxiv.org/pdf/1701.04099.pdf",
             "company": "Criteo, Facebook, Google",
             "available": "N",
-            "tags": "*"
+            "tags": "#Feature Interactions"
         },
         {
             "year": "2017",
@@ -321,13 +321,13 @@
         {
             "year": "2016",
             "pub": "RecSys'16",
-            "model": "YoutubeDNN*",
+            "model": "YoutubeNet",
             "paper": "Deep Neural Networks for YouTube Recommendations",
             "authors": "Paul Covington, Jay Adams, Emre Sargin",
             "link": "https://dl.acm.org/doi/10.1145/2959100.2959190",
             "company": "Google",
             "available": "N",
-            "tags": "*"
+            "tags": "#Feature Interactions"
         },
         {
             "year": "2016",
@@ -338,7 +338,7 @@
             "link": "https://dl.acm.org/doi/10.1145/2959100.2959134",
             "company": "Criteo",
             "available": "N",
-            "tags": "*"
+            "tags": "#Feature Interactions"
         },
         {
             "year": "2016",
@@ -349,7 +349,7 @@
             "link": "https://arxiv.org/pdf/1606.07792.pdf",
             "company": "Google",
             "available": "N",
-            "tags": "*"
+            "tags": "#Feature Interactions"
         },
         {
             "year": "2016",
@@ -360,7 +360,7 @@
             "link": "https://arxiv.org/pdf/1611.00144.pdf",
             "company": "",
             "available": "N",
-            "tags": "*"
+            "tags": "#Feature Interactions"
         },
         {
             "year": "2016",
@@ -382,7 +382,7 @@
             "link": "https://dl.acm.org/doi/10.1145/2964284.2964325",
             "company": "Alibaba",
             "available": "N",
-            "tags": "*"
+            "tags": "Multimodal"
         },
         {
             "year": "2015",
@@ -398,7 +398,7 @@
         {
             "year": "2015",
             "pub": "TIST'15",
-            "model": "",
+            "model": "LR",
             "paper": "Simple and Scalable Response Prediction for Display Advertising",
             "authors": "Olivier Chapelle, Eren Manavoglu, Romer Rosales",
             "link": "https://dl.acm.org/doi/10.1145/2532128",
@@ -409,13 +409,13 @@
         {
             "year": "2014",
             "pub": "ADKDD'14",
-            "model": "LR+Trees*",
+            "model": "LR+GBDT",
             "paper": "Practical Lessons from Predicting Clicks on Ads at Facebook",
             "authors": "Xinran He, Junfeng Pan, Ou Jin, Tianbing Xu, Bo Liu, Tao Xu, Yanxin Shi, Antoine Atallah, Ralf Herbrich, Stuart Bowers, Joaquin Quiñonero Candela",
             "link": "https://dl.acm.org/doi/10.1145/2648584.2648589",
             "company": "Facebook",
             "available": "N",
-            "tags": "*"
+            "tags": "#Feature Interactions"
         },
         {
             "year": "2013",
@@ -426,7 +426,7 @@
             "link": "https://dl.acm.org/doi/10.1145/2487575.2488200",
             "company": "Google",
             "available": "N",
-            "tags": "*"
+            "tags": "#Feature Interactions"
         },
         {
             "year": "2010",
@@ -437,7 +437,7 @@
             "link": "https://www.csie.ntu.edu.tw/~b97053/paper/Rendle2010FM.pdf",
             "company": "",
             "available": "N",
-            "tags": "*"
+            "tags": "#Feature Interactions"
         },
         {
             "year": "2007",
@@ -448,7 +448,7 @@
             "link": "https://dl.acm.org/doi/10.1145/1242572.1242643",
             "company": "Microsoft",
             "available": "N",
-            "tags": "*"
+            "tags": "#Feature Interactions"
         },
         {
             "year": "2019",
@@ -459,7 +459,7 @@
             "link": "https://arxiv.org/abs/1905.09248",
             "company": "Alibaba",
             "available": "N",
-            "tags": "#Behaviour Modeling"
+            "tags": "#Behavior Modeling"
         },
         {
             "year": "2019",
@@ -470,7 +470,7 @@
             "link": "https://arxiv.org/abs/1905.06874",
             "company": "Alibaba",
             "available": "N",
-            "tags": "#Behaviour Modeling"
+            "tags": "#Behavior Modeling"
         },
         {
             "year": "2019",
@@ -481,7 +481,7 @@
             "link": "https://arxiv.org/abs/1904.08030",
             "company": "Alibaba",
             "available": "N",
-            "tags": "#Behaviour Modeling"
+            "tags": "#Behavior Modeling"
         },
         {
             "year": "2019",
@@ -492,7 +492,7 @@
             "link": "https://arxiv.org/abs/1809.03672",
             "company": "Alibaba",
             "available": "N",
-            "tags": "#Behaviour Modeling"
+            "tags": "#Behavior Modeling"
         },
         {
             "year": "2018",
@@ -503,7 +503,7 @@
             "link": "https://www.kdd.org/kdd2018/accepted-papers/view/deep-interest-network-for-click-through-rate-prediction",
             "company": "Alibaba",
             "available": "N",
-            "tags": "#Behaviour Modeling"
+            "tags": "#Behavior Modeling"
         },
         {
             "year": "2020",
@@ -558,7 +558,7 @@
             "link": "https://arxiv.org/abs/2101.11427v4",
             "company": "Alibaba",
             "available": "N",
-            "tags": "*"
+            "tags": "Cross-Domain"
         },
         {
             "year": "2021",
@@ -706,24 +706,24 @@
         {
             "year": "2020",
             "pub": "NIPS'20",
-            "model": "field-wise learning",
+            "model": "",
             "paper": "Field-wise Learning for Multi-field Categorical Data",
             "authors": "Zhibin Li, Jian Zhang, Yongshun Gong, Yazhou Yao, Qiang Wu",
             "link": "https://arxiv.org/abs/2012.00202",
             "company": "",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2020",
             "pub": "HPCCT & BDAI'20",
-            "model": "*",
+            "model": "",
             "paper": "An Efficient Deep Interaction Network for Click-Through Rate Prediction",
             "authors": "Xu Li, Xiang Ji, Li Zhang",
             "link": "https://dl.acm.org/doi/abs/10.1145/3409501.3409519",
             "company": "",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2020",
@@ -1042,7 +1042,18 @@
             "link": "https://arxiv.org/abs/2105.05563",
             "company": "BOSS Zhipin",
             "available": "N",
-            "tags": "*"
+            "tags": "#Feature Interactions"
+        },
+        {
+            "year": "2018",
+            "pub": "KDD'18",
+            "model": "xDeepFM",
+            "paper": "xDeepFM: Combining Explicit and Implicit Feature Interactions for Recommender Systems",
+            "authors": "Jianxun Lian, Xiaohuan Zhou, Fuzheng Zhang, Zhongxia Chen, Xing Xie, Guangzhong Sun",
+            "link": "https://arxiv.org/pdf/1803.05170.pdf",
+            "company": "Microsoft",
+            "available": "N",
+            "tags": "#Feature Interactions"
         }
     ]
 }
