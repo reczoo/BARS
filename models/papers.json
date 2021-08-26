@@ -8,7 +8,7 @@
             "link": "https://arxiv.org/abs/2006.15939",
             "company": "Tencent",
             "available": "N",
-            "tags": "#feature-interactions"
+            "tags": "*"
         },
         {
             "year": "2019",
@@ -19,7 +19,7 @@
             "link": "https://arxiv.org/pdf/1905.06336",
             "company": "Sina Weibo",
             "available": "N",
-            "tags": "#feature-interactions"
+            "tags": "*"
         },
         {
             "year": "2019",
@@ -30,7 +30,7 @@
             "link": "https://arxiv.org/abs/1905.09433",
             "company": "Sina Weibo",
             "available": "Y",
-            "tags": "#feature-interactions"
+            "tags": "*"
         },
         {
             "year": "2019",
@@ -41,7 +41,7 @@
             "link": "https://arxiv.org/pdf/1904.12579",
             "company": "",
             "available": "N",
-            "tags": "#feature-interactions"
+            "tags": "*"
         },
         {
             "year": "2019",
@@ -52,7 +52,7 @@
             "link": "https://arxiv.org/abs/1906.04365",
             "company": "Alibaba",
             "available": "N",
-            "tags": "#feature-interactions"
+            "tags": "*"
         },
         {
             "year": "2019",
@@ -63,7 +63,7 @@
             "link": "https://arxiv.org/abs/1905.06482",
             "company": "Alibaba",
             "available": "N",
-            "tags": "#feature-interactions"
+            "tags": "*"
         },
         {
             "year": "2019",
@@ -74,7 +74,7 @@
             "link": "https://arxiv.org/abs/1906.03776",
             "company": "Alibaba",
             "available": "N",
-            "tags": "#feature-interactions"
+            "tags": "*"
         },
         {
             "year": "2019",
@@ -85,7 +85,7 @@
             "link": "https://dl.acm.org/doi/10.1145/3331184.3331283",
             "company": "Alibaba",
             "available": "N",
-            "tags": "#feature-interactions"
+            "tags": "*"
         },
         {
             "year": "2019",
@@ -96,7 +96,7 @@
             "link": "https://arxiv.org/abs/1904.11547",
             "company": "",
             "available": "N",
-            "tags": "#feature-interactions"
+            "tags": "*"
         },
         {
             "year": "2019",
@@ -107,7 +107,7 @@
             "link": "https://dl.acm.org/doi/10.1145/3331184.3331332",
             "company": "Huawei",
             "available": "N",
-            "tags": "#feature-interactions"
+            "tags": "*"
         },
         {
             "year": "2019",
@@ -118,7 +118,7 @@
             "link": "https://arxiv.org/abs/1904.04447",
             "company": "Huawei",
             "available": "N",
-            "tags": "#feature-interactions"
+            "tags": "*"
         },
         {
             "year": "2019",
@@ -129,7 +129,7 @@
             "link": "https://ojs.aaai.org//index.php/AAAI/article/view/4315",
             "company": "",
             "available": "N",
-            "tags": "#feature-interactions"
+            "tags": "*"
         },
         {
             "year": "2019",
@@ -140,7 +140,7 @@
             "link": "https://ojs.aaai.org//index.php/AAAI/article/view/4448",
             "company": "",
             "available": "N",
-            "tags": "#feature-interactions"
+            "tags": "*"
         },
         {
             "year": "2019",
@@ -151,7 +151,7 @@
             "link": "https://arxiv.org/abs/1902.09757",
             "company": "",
             "available": "N",
-            "tags": "#feature-interactions"
+            "tags": "*"
         },
         {
             "year": "2019",
@@ -162,7 +162,7 @@
             "link": "https://arxiv.org/abs/1810.11921",
             "company": "",
             "available": "Y",
-            "tags": "#feature-interactions"
+            "tags": "*"
         },
         {
             "year": "2019",
@@ -173,7 +173,7 @@
             "link": "https://openreview.net/pdf?id=SyxwW2A5Km",
             "company": "",
             "available": "N",
-            "tags": "#feature-interactions"
+            "tags": "*"
         },
         {
             "year": "2019",
@@ -184,7 +184,7 @@
             "link": "https://arxiv.org/abs/1803.10739",
             "company": "",
             "available": "N",
-            "tags": "#feature-interactions"
+            "tags": "*"
         },
         {
             "year": "2018",
@@ -195,7 +195,7 @@
             "link": "https://arxiv.org/abs/1707.07435",
             "company": "",
             "available": "N",
-            "tags": "#feature-interactions"
+            "tags": "*"
         },
         {
             "year": "2018",
@@ -206,7 +206,7 @@
             "link": "https://arxiv.org/abs/1707.07435",
             "company": "",
             "available": "N",
-            "tags": "#feature-interactions"
+            "tags": "*"
         },
         {
             "year": "2018",
@@ -217,7 +217,7 @@
             "link": "https://dl.acm.org/doi/10.1145/3178876.3186040",
             "company": "Oath, TouchPal, LinkedIn, Ablibaba",
             "available": "N",
-            "tags": "#feature-interactions"
+            "tags": "*"
         },
         {
             "year": "2018",
@@ -228,29 +228,7 @@
             "link": "http://wnzhang.net/share/rtb-papers/rfm-www.pdf",
             "company": "WalmartLabs",
             "available": "N",
-            "tags": "#feature-interactions"
-        },
-        {
-            "year": "2018",
-            "pub": "KDD'18",
-            "model": "xDeepFM",
-            "paper": "xDeepFM: Combining Explicit and Implicit Feature Interactions for Recommender Systems",
-            "authors": "Jianxun Lian, Xiaohuan Zhou, Fuzheng Zhang, Zhongxia Chen, Xing Xie, Guangzhong Sun",
-            "link": "https://dl.acm.org/doi/abs/10.1145/3219819.3220023",
-            "company": "Microsoft",
-            "available": "N",
-            "tags": "#feature-interactions"
-        },
-        {
-            "year": "2018",
-            "pub": "IJCAI'18",
-            "model": "MSS/MSM",
-            "paper": "Convolutional Neural Networks based Click-Through Rate Prediction with Multiple Feature Sequences",
-            "authors": "Patrick P. K. Chan, Xian Hu, Lili Zhao, Daniel S. Yeung, Dapeng Liu, Lei Xiao",
-            "link": "https://www.ijcai.org/proceedings/2018/0277.pdf",
-            "company": "Tencent",
-            "available": "N",
-            "tags": "#feature-interactions"
+            "tags": "*"
         },
         {
             "year": "2018",
@@ -261,7 +239,7 @@
             "link": "https://dl.acm.org/doi/10.1145/3240323.3240396",
             "company": "Huawei, Tencent",
             "available": "N",
-            "tags": "#feature-interactions"
+            "tags": "*"
         },
         {
             "year": "2018",
@@ -272,7 +250,7 @@
             "link": "https://arxiv.org/abs/1807.00311",
             "company": "Huawei, Tencent",
             "available": "N",
-            "tags": "#feature-interactions"
+            "tags": "*"
         },
         {
             "year": "2017",
@@ -283,7 +261,7 @@
             "link": "https://arxiv.org/abs/1703.04247",
             "company": "Huawei",
             "available": "N",
-            "tags": "#feature-interactions"
+            "tags": "*"
         },
         {
             "year": "2017",
@@ -294,7 +272,7 @@
             "link": "https://www.ijcai.org/proceedings/2017/0435.pdf",
             "company": "",
             "available": "N",
-            "tags": "#feature-interactions"
+            "tags": "*"
         },
         {
             "year": "2017",
@@ -305,7 +283,7 @@
             "link": "https://dl.acm.org/doi/10.1145/3077136.3080777",
             "company": "",
             "available": "N",
-            "tags": "#feature-interactions"
+            "tags": "*"
         },
         {
             "year": "2017",
@@ -316,7 +294,7 @@
             "link": "https://arxiv.org/abs/1708.05123",
             "company": "Google",
             "available": "N",
-            "tags": "#feature-interactions"
+            "tags": "*"
         },
         {
             "year": "2017",
@@ -327,7 +305,7 @@
             "link": "https://arxiv.org/pdf/1701.04099.pdf",
             "company": "Criteo, Facebook, Google",
             "available": "N",
-            "tags": "#feature-interactions"
+            "tags": "*"
         },
         {
             "year": "2017",
@@ -338,7 +316,7 @@
             "link": "https://dl.acm.org/doi/10.1145/3041021.3054208",
             "company": "Huawei",
             "available": "N",
-            "tags": "#feature-interactions"
+            "tags": "*"
         },
         {
             "year": "2016",
@@ -349,7 +327,7 @@
             "link": "https://dl.acm.org/doi/10.1145/2959100.2959190",
             "company": "Google",
             "available": "N",
-            "tags": "#feature-interactions"
+            "tags": "*"
         },
         {
             "year": "2016",
@@ -360,7 +338,7 @@
             "link": "https://dl.acm.org/doi/10.1145/2959100.2959134",
             "company": "Criteo",
             "available": "N",
-            "tags": "#feature-interactions"
+            "tags": "*"
         },
         {
             "year": "2016",
@@ -371,7 +349,7 @@
             "link": "https://arxiv.org/pdf/1606.07792.pdf",
             "company": "Google",
             "available": "N",
-            "tags": "#feature-interactions"
+            "tags": "*"
         },
         {
             "year": "2016",
@@ -382,7 +360,7 @@
             "link": "https://arxiv.org/pdf/1611.00144.pdf",
             "company": "",
             "available": "N",
-            "tags": "#feature-interactions"
+            "tags": "*"
         },
         {
             "year": "2016",
@@ -393,7 +371,7 @@
             "link": "https://arxiv.org/abs/1601.02376",
             "company": "RayCloud",
             "available": "N",
-            "tags": "#feature-interactions"
+            "tags": "*"
         },
         {
             "year": "2016",
@@ -404,7 +382,7 @@
             "link": "https://dl.acm.org/doi/10.1145/2964284.2964325",
             "company": "Alibaba",
             "available": "N",
-            "tags": "#feature-interactions"
+            "tags": "*"
         },
         {
             "year": "2015",
@@ -415,7 +393,7 @@
             "link": "https://dl.acm.org/doi/abs/10.1145/2806416.2806603",
             "company": "",
             "available": "N",
-            "tags": "#feature-interactions"
+            "tags": "*"
         },
         {
             "year": "2015",
@@ -426,7 +404,7 @@
             "link": "https://dl.acm.org/doi/10.1145/2532128",
             "company": "Criteo, Microsoft, LinkedIn",
             "available": "N",
-            "tags": "#feature-interactions"
+            "tags": "*"
         },
         {
             "year": "2014",
@@ -437,7 +415,7 @@
             "link": "https://dl.acm.org/doi/10.1145/2648584.2648589",
             "company": "Facebook",
             "available": "N",
-            "tags": "#feature-interactions"
+            "tags": "*"
         },
         {
             "year": "2013",
@@ -448,7 +426,7 @@
             "link": "https://dl.acm.org/doi/10.1145/2487575.2488200",
             "company": "Google",
             "available": "N",
-            "tags": "#feature-interactions"
+            "tags": "*"
         },
         {
             "year": "2010",
@@ -459,7 +437,7 @@
             "link": "https://www.csie.ntu.edu.tw/~b97053/paper/Rendle2010FM.pdf",
             "company": "",
             "available": "N",
-            "tags": "#feature-interactions"
+            "tags": "*"
         },
         {
             "year": "2007",
@@ -470,7 +448,348 @@
             "link": "https://dl.acm.org/doi/10.1145/1242572.1242643",
             "company": "Microsoft",
             "available": "N",
-            "tags": "#feature-interactions"
+            "tags": "*"
+        },
+        {
+            "year": "2007",
+            "pub": "WWW'07",
+            "model": "LR",
+            "paper": "Predicting clicks: estimating the click-through rate for new ads",
+            "authors": "Matthew Richardson, Ewa Dominowska, Robert Ragno",
+            "link": "https://dl.acm.org/doi/10.1145/1242572.1242643",
+            "company": "Microsoft",
+            "available": "N",
+            "tags": "*"
+        },
+        {
+            "year": "2019",
+            "pub": "KDD'19",
+            "model": "MIMN",
+            "paper": "Practice on Long Sequential User Behavior Modeling for Click-Through Rate Prediction",
+            "authors": "Qi Pi, Weijie Bian, Guorui Zhou, Xiaoqiang Zhu, Kun Gai",
+            "link": "https://arxiv.org/abs/1905.09248",
+            "company": "Alibaba",
+            "available": "N",
+            "tags": "#Behaviour Modeling"
+        },
+        {
+            "year": "2019",
+            "pub": "Arixv'19",
+            "model": "BST",
+            "paper": "Behavior Sequence Transformer for E-commerce Recommendation in Alibaba,",
+            "authors": "Qiwei Chen, Huan Zhao, Wei Li, Pipei Huang, Wenwu Ou",
+            "link": "https://arxiv.org/abs/1905.06874",
+            "company": "Alibaba",
+            "available": "N",
+            "tags": "#Behaviour Modeling"
+        },
+        {
+            "year": "2019",
+            "pub": "CIKM'19",
+            "model": "MIND",
+            "paper": "Multi-Interest Network with Dynamic Routing for Recommendation at Tmall",
+            "authors": "Chao Li, Zhiyuan Liu, Mengmeng Wu, Yuchi Xu, Pipei Huang, Huan Zhao, Guoliang Kang, Qiwei Chen, Wei Li, Dik Lun Lee",
+            "link": "https://arxiv.org/abs/1904.08030",
+            "company": "Alibaba",
+            "available": "N",
+            "tags": "#Behaviour Modeling"
+        },
+        {
+            "year": "2019",
+            "pub": "AAAI'19",
+            "model": "DIEN",
+            "paper": "Deep Interest Evolution Network for Click-Through Rate Prediction",
+            "authors": "Guorui Zhou, Na Mou, Ying Fan, Qi Pi, Weijie Bian, Chang Zhou, Xiaoqiang Zhu, Kun Gai",
+            "link": "https://arxiv.org/abs/1809.03672",
+            "company": "Alibaba",
+            "available": "N",
+            "tags": "#Behaviour Modeling"
+        },
+        {
+            "year": "2018",
+            "pub": "KDD'18",
+            "model": "DIN",
+            "paper": "Deep Interest Network for Click-Through Rate Prediction",
+            "authors": "Guorui Zhou, Chengru Song, Xiaoqiang Zhu, Ying Fan, Han Zhu, Xiao Ma, Yanghui Yan, Junqi Jin, Han Li, Kun Gai",
+            "link": "https://www.kdd.org/kdd2018/accepted-papers/view/deep-interest-network-for-click-through-rate-prediction",
+            "company": "Alibaba",
+            "available": "N",
+            "tags": "#Behaviour Modeling"
+        },
+        {
+            "year": "2020",
+            "pub": "TKDD'20",
+            "model": "CIN",
+            "paper": "Core Interest Network for Click-Through Rate Prediction",
+            "authors": "En Xu, Zhiwen Yu, Bin Guo, and Helei Cui",
+            "link": "https://dl.acm.org/doi/abs/10.1145/3428079",
+            "company": "",
+            "available": "N",
+            "tags": "*"
+        },
+        {
+            "year": "2020",
+            "pub": "CIKM'20",
+            "model": "DMIN",
+            "paper": "Deep Multi-Interest Network for Click-through Rate Prediction",
+            "authors": "Zhibo Xiao, Luwei Yang, Wen Jiang, Yi Wei, Yi Hu, Hao Wang",
+            "link": "https://dl.acm.org/doi/10.1145/3340531.3412092",
+            "company": "Alibaba",
+            "available": "N",
+            "tags": "#Behaviour Modeling"
+        },
+        {
+            "year": "2021",
+            "pub": "CIKM'21",
+            "model": "*",
+            "paper": "Efficient Learning to Learn a Robust CTR Model for Web-scale Online Sponsored Search Advertising",
+            "authors": "Xin Wang, Peng Yang, Shaopeng Chen, Lin Liu, Lian Zhao, Jiacheng Guo, Mingming Sun, Ping Li",
+            "link": "*",
+            "company": "Baidu",
+            "available": "N",
+            "tags": "*"
+        },
+        {
+            "year": "2021",
+            "pub": "DLP-KDD'21/CIKM'21*",
+            "model": "EDCN",
+            "paper": "Enhancing Explicit and Implicit Feature Interactions via Information Sharing for Parallel Deep CTR Models",
+            "authors": "Bo Chen, Yichao Wang, Zhirong Liu, Ruiming Tang, Wei Guo, Hongkun Zheng, Weiwei Yao, Muyu Zhang and Xiuqiang He",
+            "link": "https://dlp-kdd.github.io/assets/pdf/DLP-KDD_2021_paper_12.pdf",
+            "company": "Huawei",
+            "available": "N",
+            "tags": "*"
+        },
+        {
+            "year": "2021",
+            "pub": "CIKM'21",
+            "model": "STAR",
+            "paper": "One Model to Serve All: Star Topology Adaptive Recommender for Multi-Domain CTR Prediction",
+            "authors": "Xiang-Rong Sheng, Liqin Zhao, Guorui Zhou, Xinyao Ding, Binding Dai, Qiang Luo, Siran Yang, Jingshan Lv, Chi Zhang, Hongbo Deng, Xiaoqiang Zhu",
+            "link": "https://arxiv.org/abs/2101.11427v4",
+            "company": "Alibaba",
+            "available": "N",
+            "tags": "*"
+        },
+        {
+            "year": "2021",
+            "pub": "CIKM'21",
+            "model": "AutoIAS*",
+            "paper": "AutoIAS: Automatic Integrated Architecture Searcher For Click-Trough Rate Prediction",
+            "authors": "Zhikun Wei, Xin Wang, Wenwu Zhu",
+            "link": "*",
+            "company": "",
+            "available": "N",
+            "tags": "*"
+        },
+        {
+            "year": "2021",
+            "pub": "CIKM'21",
+            "model": "*",
+            "paper": "Click-Through Rate Prediction with Multi-Modal Hypergraphs",
+            "authors": "Li He, Hongxu Chen, Dingxian Wang, Shoaib Jameel, Philip Yu, Guandong Xu",
+            "link": "*",
+            "company": "Ebay",
+            "available": "N",
+            "tags": "*"
+        },
+        {
+            "year": "2021",
+            "pub": "CIKM'21",
+            "model": "AutoHERI*",
+            "paper": "AutoHERI: Automated Hierarchical Representation Integration for Post-Click Conversion Rate Estimation",
+            "authors": "Penghui Wei, Weimin Zhang, Zixuan Xu, Shaoguo Liu, Kuang-Chih Lee, Bo Zheng",
+            "link": "*",
+            "company": "Alibaba",
+            "available": "N",
+            "tags": "*"
+        },
+        {
+            "year": "2021",
+            "pub": "CIKM'21",
+            "model": "DESTINE",
+            "paper": "Disentangled Self-Attentive Neural Networks for Click-Through Rate Prediction",
+            "authors": "Yichen Xu, Yanqiao Zhu, Feng Yu, Qiang Liu, Shu Wu",
+            "link": "https://arxiv.org/abs/2101.03654",
+            "company": "Alibaba",
+            "available": "N",
+            "tags": "*"
+        },
+        {
+            "year": "2021",
+            "pub": "SIGIR'21",
+            "model": "PCF-GNN",
+            "paper": "Explicit Semantic Cross Feature Learning via Pre-trained Graph Neural Networks for CTR Prediction",
+            "authors": "Feng Li, Bencheng Yan, Qingqing Long, Pengjie Wang, Wei Lin, Jian Xu, Bo Zheng",
+            "link": "https://arxiv.org/abs/2105.07752",
+            "company": "Alibaba",
+            "available": "N",
+            "tags": "*"
+        },
+        {
+            "year": "2021",
+            "pub": "KDD'21",
+            "model": "DASL",
+            "paper": "Dual Attentive Sequential Learning for Cross-Domain Click-Through Rate Prediction",
+            "authors": "Pan Li, Zhichao Jiang, Maofei Que, Yao Hu, Alexander Tuzhilin",
+            "link": "https://arxiv.org/abs/2106.02768",
+            "company": "Alibaba",
+            "available": "N",
+            "tags": "*"
+        },
+        {
+            "year": "2021",
+            "pub": "KDD'21",
+            "model": "DG-ENN",
+            "paper": "Dual Graph enhanced Embedding Neural Network for CTR Prediction",
+            "authors": "Wei Guo, Rong Su, Renhao Tan, Huifeng Guo, Yingxue Zhang, Zhirong Liu, Ruiming Tang, Xiuqiang He",
+            "link": "https://arxiv.org/abs/2106.00314",
+            "company": "Huawei",
+            "available": "N",
+            "tags": "*"
+        },
+        {
+            "year": "2021",
+            "pub": "PAKDD'21",
+            "model": "XCrossNe",
+            "paper": "XCrossNet: Feature Structure-Oriented Learning for Click-Through Rate Prediction",
+            "authors": "Runlong Yu, Yuyang Ye, Qi Liu, Zihan Wang, Chunfeng Yang, Yucheng Hu, Enhong Chen",
+            "link": "https://link.springer.com/chapter/10.1007%2F978-3-030-75765-6_35",
+            "company": "Tencent",
+            "available": "N",
+            "tags": "*"
+        },
+        {
+            "year": "2020",
+            "pub": "Arixv'20",
+            "model": "FINN",
+            "paper": "Feature Interaction based Neural Network for Click-Through Rate Prediction",
+            "authors": "Dafang Zou, Leiming Zhang, Jiafa Mao, Weiguo Sheng",
+            "link": "https://arxiv.org/abs/2006.05312",
+            "company": "",
+            "available": "N",
+            "tags": "*"
+        },
+        {
+            "year": "2021",
+            "pub": "SIGIR'21",
+            "model": "GME",
+            "paper": "Learning Graph Meta Embeddings for Cold-Start Ads in Click-Through Rate Prediction",
+            "authors": "Wentao Ouyang, Xiuwu Zhang, Shukui Ren, Li Li, Kun Zhang, Jinmei Luo, Zhaojie Liu, Yanlong Du",
+            "link": "https://arxiv.org/abs/2105.08909",
+            "company": "Alibaba",
+            "available": "N",
+            "tags": "*"
+        },
+        {
+            "year": "2021",
+            "pub": "Arixv'21",
+            "model": "DINMP",
+            "paper": "A Non-sequential Approach to Deep User Interest Model for CTR Prediction",
+            "authors": "Keke Zhao, Xing Zhao, Qi Cao, Linjian Mo",
+            "link": "https://arxiv.org/abs/2104.06312",
+            "company": "Alibaba",
+            "available": "N",
+            "tags": "*"
+        },
+        {
+            "year": "2020",
+            "pub": "Arixv'20",
+            "model": "AdnFM",
+            "paper": "AdnFM: An Attentive DenseNet based Factorization Machine for CTR Prediction",
+            "authors": "Kai Wang, Chunxu Shen, Wenye Ma",
+            "link": "https://arxiv.org/abs/2012.10820",
+            "company": "Tencent",
+            "available": "N",
+            "tags": "*"
+        },
+        {
+            "year": "2020",
+            "pub": "Arixv'20",
+            "model": "FEFM",
+            "paper": "Field-Embedded Factorization Machines for Click-through rate prediction",
+            "authors": "Harshit Pande",
+            "link": "https://arxiv.org/abs/2009.09931",
+            "company": "Adobe",
+            "available": "N",
+            "tags": "*"
+        },
+        {
+            "year": "2020",
+            "pub": "NIPS'20",
+            "model": "field-wise learning",
+            "paper": "Field-wise Learning for Multi-field Categorical Data",
+            "authors": "Zhibin Li, Jian Zhang, Yongshun Gong, Yazhou Yao, Qiang Wu",
+            "link": "https://arxiv.org/abs/2012.00202",
+            "company": "",
+            "available": "N",
+            "tags": "*"
+        },
+        {
+            "year": "2020",
+            "pub": "HPCCT & BDAI'20",
+            "model": "*",
+            "paper": "An Efficient Deep Interaction Network for Click-Through Rate Prediction",
+            "authors": "Xu Li, Xiang Ji, Li Zhang",
+            "link": "https://dl.acm.org/doi/abs/10.1145/3409501.3409519",
+            "company": "",
+            "available": "N",
+            "tags": "*"
+        },
+        {
+            "year": "2020",
+            "pub": "IEEE ACCESS'20",
+            "model": "MiFiNN",
+            "paper": "Click-Through Rate Prediction Combining Mutual Information Feature Weighting and Feature Interaction",
+            "authors": "Xiaowei Wang, Hongbin Dong, Shuang Han",
+            "link": "https://ieeexplore.ieee.org/abstract/document/9244149",
+            "company": "",
+            "available": "N",
+            "tags": "*"
+        },
+        {
+            "year": "2020",
+            "pub": "Arixv'20",
+            "model": "GateNet",
+            "paper": "GateNet: Gating-Enhanced Deep Network for Click-Through Rate Prediction",
+            "authors": "Tongwen Huang, Qingyun She, Zhiqiang Wang, Junlin Zhang",
+            "link": "https://arxiv.org/abs/2007.03519",
+            "company": "Tencent,Sina Weibo",
+            "available": "N",
+            "tags": "*"
+        },
+        {
+            "year": "2021",
+            "pub": "Arixv'21",
+            "model": "*",
+            "paper": "Click-Through Rate Prediction Using Graph Neural Networks and Online Learning",
+            "authors": "Farzaneh Rajabi, Jack Siyuan He",
+            "link": "https://arxiv.org/abs/2105.03811",
+            "company": "Google",
+            "available": "N",
+            "tags": "*"
+        },
+        {
+            "year": "2020",
+            "pub": "Arixv'20",
+            "model": "XDBoost",
+            "paper": "Iterative Boosting Deep Neural Networks for Predicting Click-Through Rate",
+            "authors": "Amit Livne, Roy Dor, Eyal Mazuz, Tamar Didi, Bracha Shapira, Lior Rokach",
+            "link": "https://arxiv.org/abs/2007.13087",
+            "company": "",
+            "available": "N",
+            "tags": "*"
+        },
+        {
+            "year": "2020",
+            "pub": "Algorithms'20",
+            "model": "FO-FTRL-DCN",
+            "paper": "A New Click-Through Rates Prediction Model Based on Deep&Cross Network",
+            "authors": "Guojing Huang, Qingliang Chen, Congjian Deng",
+            "link": "https://www.mdpi.com/1999-4893/13/12/342/htm",
+            "company": "ICBC, Yunqu",
+            "available": "N",
+            "tags": "*"
         }
     ]
 }
