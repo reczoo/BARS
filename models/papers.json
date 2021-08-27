@@ -90,7 +90,7 @@
         {
             "year": "2019",
             "pub": "SIGIR'19",
-            "model": "Meta-Embedding",
+            "model": "",
             "paper": "Warm Up Cold-start Advertisements: Improving CTR Predictions via Learning to Learn ID Embeddings",
             "authors": "Feiyang Pan, Shuokai Li, Xiang Ao, Pingzhong Tang and Qing He",
             "link": "https://arxiv.org/abs/1904.11547",
@@ -176,39 +176,6 @@
             "tags": ""
         },
         {
-            "year": "2019",
-            "pub": "Data Mining and Knowledge Discovery'19",
-            "model": "DSM",
-            "paper": "Deeply Supervised Semantic Model for Click-Through Rate Prediction in Sponsored Search",
-            "authors": "Jelena Gligorijevic, Djordje Gligorijevic, Ivan Stojkovic, Xiao Bai, Amit Goyal, Zoran Obradovic",
-            "link": "https://arxiv.org/abs/1803.10739",
-            "company": "",
-            "available": "N",
-            "tags": "#Multi-Task"
-        },
-        {
-            "year": "2018",
-            "pub": "CSUR'18",
-            "model": "",
-            "paper": "Deep Learning based Recommender System: A Survey and New Perspectives",
-            "authors": "Shuai Zhang, Lina Yao, Aixin Sun, Yi Tay",
-            "link": "https://arxiv.org/abs/1707.07435",
-            "company": "",
-            "available": "N",
-            "tags": ""
-        },
-        {
-            "year": "2018",
-            "pub": "CSUR'18",
-            "model": "",
-            "paper": "Deep Learning based Recommender System: A Survey and New Perspectives",
-            "authors": "Shuai Zhang, Lina Yao, Aixin Sun, Yi Tay",
-            "link": "https://arxiv.org/abs/1707.07435",
-            "company": "",
-            "available": "N",
-            "tags": ""
-        },
-        {
             "year": "2018",
             "pub": "WWW'18",
             "model": "FwFM",
@@ -244,7 +211,7 @@
         {
             "year": "2018",
             "pub": "TOIS'18",
-            "model": "PNN",
+            "model": "PIN",
             "paper": "Product-based Neural Networks for User Response Prediction over Multi-field Categorical Data",
             "authors": "Yanru Qu, Bohui Fang, Weinan Zhang, Ruiming Tang, Minzhe Niu, Huifeng Guo, Yong Yu, Xiuqiang He",
             "link": "https://arxiv.org/abs/1807.00311",
@@ -321,7 +288,7 @@
         {
             "year": "2016",
             "pub": "RecSys'16",
-            "model": "YoutubeNet",
+            "model": "YoutubeDNN",
             "paper": "Deep Neural Networks for YouTube Recommendations",
             "authors": "Paul Covington, Jay Adams, Emre Sargin",
             "link": "https://dl.acm.org/doi/10.1145/2959100.2959190",
@@ -343,7 +310,7 @@
         {
             "year": "2016",
             "pub": "DLRS'16",
-            "model": "Wide & Deep",
+            "model": "Wide&Deep",
             "paper": "Wide & Deep Learning for Recommender Systems",
             "authors": "Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, Rohan Anil, Zakaria Haque, Lichan Hong, Vihan Jain, Xiaobing Liu, Hemal Shah",
             "link": "https://arxiv.org/pdf/1606.07792.pdf",
@@ -365,7 +332,7 @@
         {
             "year": "2016",
             "pub": "ECIR'16",
-            "model": "FNN/SNN",
+            "model": "FNN",
             "paper": "Deep Learning over Multi-field Categorical Data: A Case Study on User Response Prediction",
             "authors": "Weinan Zhang, Tianming Du, Jun Wang",
             "link": "https://arxiv.org/abs/1601.02376",
@@ -398,7 +365,7 @@
         {
             "year": "2015",
             "pub": "TIST'15",
-            "model": "LR",
+            "model": "",
             "paper": "Simple and Scalable Response Prediction for Display Advertising",
             "authors": "Olivier Chapelle, Eren Manavoglu, Romer Rosales",
             "link": "https://dl.acm.org/doi/10.1145/2532128",
@@ -420,7 +387,7 @@
         {
             "year": "2013",
             "pub": "KDD'13",
-            "model": "FTRL-Proximal",
+            "model": "FTRL",
             "paper": "Ad Click Prediction: a View from the Trenches",
             "authors": "H. Brendan McMahan, Gary Holt, David Sculley, Michael Young, Dietmar Ebner, Julian Grady, Lan Nie, Todd Phillips, Eugene Davydov, Daniel Golovin, Sharat Chikkerur, Dan Liu, Martin Wattenberg, Arnar Mar Hrafnkelsson, Tom Boulos, Jeremy Kubica",
             "link": "https://dl.acm.org/doi/10.1145/2487575.2488200",
@@ -540,7 +507,7 @@
         },
         {
             "year": "2021",
-            "pub": "DLP-KDD'21/CIKM'21",
+            "pub": "CIKM'21/DLP-KDD'21",
             "model": "EDCN",
             "paper": "Enhancing Explicit and Implicit Feature Interactions via Information Sharing for Parallel Deep CTR Models",
             "authors": "Bo Chen, Yichao Wang, Zhirong Liu, Ruiming Tang, Wei Guo, Hongkun Zheng, Weiwei Yao, Muyu Zhang and Xiuqiang He",
@@ -640,7 +607,7 @@
         {
             "year": "2021",
             "pub": "PAKDD'21",
-            "model": "XCrossNe",
+            "model": "XCrossNet",
             "paper": "XCrossNet: Feature Structure-Oriented Learning for Click-Through Rate Prediction",
             "authors": "Runlong Yu, Yuyang Ye, Qi Liu, Zihan Wang, Chunfeng Yang, Yucheng Hu, Enhong Chen",
             "link": "https://link.springer.com/chapter/10.1007%2F978-3-030-75765-6_35",
@@ -716,28 +683,6 @@
         },
         {
             "year": "2020",
-            "pub": "HPCCT & BDAI'20",
-            "model": "",
-            "paper": "An Efficient Deep Interaction Network for Click-Through Rate Prediction",
-            "authors": "Xu Li, Xiang Ji, Li Zhang",
-            "link": "https://dl.acm.org/doi/abs/10.1145/3409501.3409519",
-            "company": "",
-            "available": "N",
-            "tags": ""
-        },
-        {
-            "year": "2020",
-            "pub": "IEEE ACCESS'20",
-            "model": "MiFiNN",
-            "paper": "Click-Through Rate Prediction Combining Mutual Information Feature Weighting and Feature Interaction",
-            "authors": "Xiaowei Wang, Hongbin Dong, Shuang Han",
-            "link": "https://ieeexplore.ieee.org/abstract/document/9244149",
-            "company": "",
-            "available": "N",
-            "tags": ""
-        },
-        {
-            "year": "2020",
             "pub": "Arixv'20",
             "model": "GateNet",
             "paper": "GateNet: Gating-Enhanced Deep Network for Click-Through Rate Prediction",
@@ -766,17 +711,6 @@
             "authors": "Amit Livne, Roy Dor, Eyal Mazuz, Tamar Didi, Bracha Shapira, Lior Rokach",
             "link": "https://arxiv.org/abs/2007.13087",
             "company": "",
-            "available": "N",
-            "tags": ""
-        },
-        {
-            "year": "2020",
-            "pub": "Algorithms'20",
-            "model": "FO-FTRL-DCN",
-            "paper": "A New Click-Through Rates Prediction Model Based on Deep&Cross Network",
-            "authors": "Guojing Huang, Qingliang Chen, Congjian Deng",
-            "link": "https://www.mdpi.com/1999-4893/13/12/342/htm",
-            "company": "ICBC, Yunqu",
             "available": "N",
             "tags": ""
         },
@@ -860,7 +794,7 @@
         {
             "year": "2020",
             "pub": "JMLR'21",
-            "model": "TI Upper Bound Regularizer",
+            "model": "",
             "paper": "Factorization Machines with Regularization for Sparse Feature Interactions",
             "authors": "Kyohei Atarashi, Satoshi Oyama, Masahito Kurihara",
             "link": "https://arxiv.org/abs/2010.09225",
@@ -903,17 +837,6 @@
         },
         {
             "year": "2020",
-            "pub": "SEKE'20",
-            "model": "DGAN",
-            "paper": "Deep Graph Attention Neural Network for Click-Through Rate Prediction",
-            "authors": "Wen Fang, Lu Lu",
-            "link": "https://ksiresearch.org/seke/seke20paper/paper035.pdf",
-            "company": "",
-            "available": "N",
-            "tags": ""
-        },
-        {
-            "year": "2020",
             "pub": "KDD'20",
             "model": "AutoFIS",
             "paper": "AutoFIS: Automatic Feature Interaction Selection in Factorization Models for Click-Through Rate Prediction",
@@ -937,7 +860,7 @@
         {
             "year": "2020",
             "pub": "WWW'20",
-            "model": "Neural Calibration",
+            "model": "",
             "paper": "Field-aware Calibration: A Simple and Empirically Strong Method for Reliable Probabilistic Predictions",
             "authors": "Feiyang Pan, Xiang Ao, Pingzhong Tang, Min Lu, Dapeng Liu, Lei Xiao, Qing He",
             "link": "https://dl.acm.org/doi/pdf/10.1145/3366423.3380154",
@@ -968,17 +891,6 @@
             "tags": ""
         },
         {
-            "year": "2019",
-            "pub": "IEEE ACCESS'19",
-            "model": "FNFM",
-            "paper": "Field-Aware Neural Factorization Machine for Click-Through Rate Prediction",
-            "authors": "Li Zhang, Weichen Shen, Jianhang Huang, Shijian Li, Gang Pan",
-            "link": "https://ieeexplore.ieee.org/abstract/document/8731899",
-            "company": "",
-            "available": "N",
-            "tags": ""
-        },
-        {
             "year": "2018",
             "pub": "Arixv'18",
             "model": "SSM",
@@ -986,17 +898,6 @@
             "authors": "Chenglei Niu, Guojing Zhong, Ying Liu, Yandong Zhang, Yongsheng Sun, Ailong He, Zhaoji Chen",
             "link": "https://arxiv.org/abs/1812.01353",
             "company": "Sina Weibo, Alibaba",
-            "available": "N",
-            "tags": ""
-        },
-        {
-            "year": "2019",
-            "pub": "BigMM'19",
-            "model": "DNN-based CTR Model",
-            "paper": "Deep Neural Network-Based Click-Through Rate Prediction using Multimodal Features of Online Banners",
-            "authors": "Bohui Xia, Xueting Wang, Toshihiko Yamasaki, Kiyoharu Aizawa, Hiroyuki Seshime",
-            "link": "https://ieeexplore.ieee.org/abstract/document/8919379",
-            "company": "",
             "available": "N",
             "tags": ""
         },
