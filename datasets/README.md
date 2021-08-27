@@ -9,7 +9,8 @@
 |           | Avazu_x4           | Avazu_x4_001           | Random split 8:1:1, fix embedding_dim=16    |
 |           |                    | Avazu_x4_002           | Random split 8:1:1, fix embedding_dim=40    |
 | KKBox     | KKBox_x4           | KKBox_x4_001           | Random split 8:1:1, fix embedding_dim=10    |
-| Taobao    | Taobao_x0          | Taobao_x0_001          | Split chronologically, fix embedding_dim=16 |
+| Taobao    | Taobao_x0          | Taobao_x0_001          | Follow existing split (by time), fix embedding_dim=16 |
+| MicroVideo1.7M    | MicroVideo1.7M_x0          | MicroVideo1.7M_x0_001          | Follow existing split (by user), fix embedding_dim=16 |
 | Frappe    | Frappe_x0          | Frappe_x0_001          | Random split 8:1:1, fix embedding_dim=10    |
 | Movielens | MovielensLatest_x0 | MovielensLatest_x0_001 | Random split 8:1:1, fix embedding_dim=10    |
 
