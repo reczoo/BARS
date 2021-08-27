@@ -52,7 +52,7 @@
             "link": "https://arxiv.org/abs/1906.04365",
             "company": "Alibaba",
             "available": "N",
-            "tags": "Multi-Task"
+            "tags": "#Multi-Task"
         },
         {
             "year": "2019",
@@ -184,7 +184,7 @@
             "link": "https://arxiv.org/abs/1803.10739",
             "company": "",
             "available": "N",
-            "tags": "Multi-Task"
+            "tags": "#Multi-Task"
         },
         {
             "year": "2018",
@@ -382,7 +382,7 @@
             "link": "https://dl.acm.org/doi/10.1145/2964284.2964325",
             "company": "Alibaba",
             "available": "N",
-            "tags": "Multimodal"
+            "tags": "#Multimodal"
         },
         {
             "year": "2015",
