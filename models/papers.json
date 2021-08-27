@@ -30,7 +30,7 @@
             "link": "https://arxiv.org/abs/1905.09433",
             "company": "Sina Weibo",
             "available": "Y",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2020",
@@ -41,7 +41,7 @@
             "link": "https://arxiv.org/pdf/1904.12579",
             "company": "",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2019",
@@ -90,13 +90,13 @@
         {
             "year": "2019",
             "pub": "SIGIR'19",
-            "model": "Meta-Embedding*",
+            "model": "Meta-Embedding",
             "paper": "Warm Up Cold-start Advertisements: Improving CTR Predictions via Learning to Learn ID Embeddings",
             "authors": "Feiyang Pan, Shuokai Li, Xiang Ao, Pingzhong Tang and Qing He",
             "link": "https://arxiv.org/abs/1904.11547",
             "company": "",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2019",
@@ -107,7 +107,7 @@
             "link": "https://dl.acm.org/doi/10.1145/3331184.3331332",
             "company": "Huawei",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2019",
@@ -118,7 +118,7 @@
             "link": "https://arxiv.org/abs/1904.04447",
             "company": "Huawei",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2019",
@@ -129,7 +129,7 @@
             "link": "https://ojs.aaai.org//index.php/AAAI/article/view/4315",
             "company": "",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2019",
@@ -140,7 +140,7 @@
             "link": "https://ojs.aaai.org//index.php/AAAI/article/view/4448",
             "company": "",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2019",
@@ -151,7 +151,7 @@
             "link": "https://arxiv.org/abs/1902.09757",
             "company": "",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2019",
@@ -173,7 +173,7 @@
             "link": "https://openreview.net/pdf?id=SyxwW2A5Km",
             "company": "",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2019",
@@ -189,24 +189,24 @@
         {
             "year": "2018",
             "pub": "CSUR'18",
-            "model": "*",
+            "model": "",
             "paper": "Deep Learning based Recommender System: A Survey and New Perspectives",
             "authors": "Shuai Zhang, Lina Yao, Aixin Sun, Yi Tay",
             "link": "https://arxiv.org/abs/1707.07435",
             "company": "",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2018",
             "pub": "CSUR'18",
-            "model": "*",
+            "model": "",
             "paper": "Deep Learning based Recommender System: A Survey and New Perspectives",
             "authors": "Shuai Zhang, Lina Yao, Aixin Sun, Yi Tay",
             "link": "https://arxiv.org/abs/1707.07435",
             "company": "",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2018",
@@ -228,7 +228,7 @@
             "link": "http://wnzhang.net/share/rtb-papers/rfm-www.pdf",
             "company": "WalmartLabs",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2018",
@@ -239,7 +239,7 @@
             "link": "https://dl.acm.org/doi/10.1145/3240323.3240396",
             "company": "Huawei, Tencent",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2018",
@@ -250,7 +250,7 @@
             "link": "https://arxiv.org/abs/1807.00311",
             "company": "Huawei, Tencent",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2017",
@@ -272,7 +272,7 @@
             "link": "https://www.ijcai.org/proceedings/2017/0435.pdf",
             "company": "",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2017",
@@ -283,7 +283,7 @@
             "link": "https://dl.acm.org/doi/10.1145/3077136.3080777",
             "company": "",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2017",
@@ -300,7 +300,7 @@
             "year": "2017",
             "pub": "WWW'17",
             "model": "FFM",
-            "paper": "Field-aware Factorization Machines in a Real-world Online Advertising System*",
+            "paper": "Field-aware Factorization Machines in a Real-world Online Advertising System",
             "authors": "Yuchin Juan, Damien Lefortier, Olivier Chapelle",
             "link": "https://arxiv.org/pdf/1701.04099.pdf",
             "company": "Criteo, Facebook, Google",
@@ -316,7 +316,7 @@
             "link": "https://dl.acm.org/doi/10.1145/3041021.3054208",
             "company": "Huawei",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2016",
@@ -371,7 +371,7 @@
             "link": "https://arxiv.org/abs/1601.02376",
             "company": "RayCloud",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2016",
@@ -393,7 +393,7 @@
             "link": "https://dl.acm.org/doi/abs/10.1145/2806416.2806603",
             "company": "",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2015",
@@ -404,7 +404,7 @@
             "link": "https://dl.acm.org/doi/10.1145/2532128",
             "company": "Criteo, Microsoft, LinkedIn",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2014",
@@ -514,7 +514,7 @@
             "link": "https://dl.acm.org/doi/abs/10.1145/3428079",
             "company": "",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2020",
@@ -530,24 +530,24 @@
         {
             "year": "2021",
             "pub": "CIKM'21",
-            "model": "*",
+            "model": "",
             "paper": "Efficient Learning to Learn a Robust CTR Model for Web-scale Online Sponsored Search Advertising",
             "authors": "Xin Wang, Peng Yang, Shaopeng Chen, Lin Liu, Lian Zhao, Jiacheng Guo, Mingming Sun, Ping Li",
-            "link": "*",
+            "link": "",
             "company": "Baidu",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2021",
-            "pub": "DLP-KDD'21/CIKM'21*",
+            "pub": "DLP-KDD'21/CIKM'21",
             "model": "EDCN",
             "paper": "Enhancing Explicit and Implicit Feature Interactions via Information Sharing for Parallel Deep CTR Models",
             "authors": "Bo Chen, Yichao Wang, Zhirong Liu, Ruiming Tang, Wei Guo, Hongkun Zheng, Weiwei Yao, Muyu Zhang and Xiuqiang He",
             "link": "https://dlp-kdd.github.io/assets/pdf/DLP-KDD_2021_paper_12.pdf",
             "company": "Huawei",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2021",
@@ -558,40 +558,40 @@
             "link": "https://arxiv.org/abs/2101.11427v4",
             "company": "Alibaba",
             "available": "N",
-            "tags": "Cross-Domain"
+            "tags": "#Cross-Domain"
         },
         {
             "year": "2021",
             "pub": "CIKM'21",
-            "model": "AutoIAS*",
+            "model": "AutoIAS",
             "paper": "AutoIAS: Automatic Integrated Architecture Searcher For Click-Trough Rate Prediction",
             "authors": "Zhikun Wei, Xin Wang, Wenwu Zhu",
-            "link": "*",
+            "link": "",
             "company": "",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2021",
             "pub": "CIKM'21",
-            "model": "*",
+            "model": "",
             "paper": "Click-Through Rate Prediction with Multi-Modal Hypergraphs",
             "authors": "Li He, Hongxu Chen, Dingxian Wang, Shoaib Jameel, Philip Yu, Guandong Xu",
-            "link": "*",
+            "link": "",
             "company": "Ebay",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2021",
             "pub": "CIKM'21",
-            "model": "AutoHERI*",
+            "model": "AutoHERI",
             "paper": "AutoHERI: Automated Hierarchical Representation Integration for Post-Click Conversion Rate Estimation",
             "authors": "Penghui Wei, Weimin Zhang, Zixuan Xu, Shaoguo Liu, Kuang-Chih Lee, Bo Zheng",
-            "link": "*",
+            "link": "",
             "company": "Alibaba",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2021",
@@ -602,7 +602,7 @@
             "link": "https://arxiv.org/abs/2101.03654",
             "company": "Alibaba",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2021",
@@ -613,7 +613,7 @@
             "link": "https://arxiv.org/abs/2105.07752",
             "company": "Alibaba",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2021",
@@ -624,7 +624,7 @@
             "link": "https://arxiv.org/abs/2106.02768",
             "company": "Alibaba",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2021",
@@ -635,7 +635,7 @@
             "link": "https://arxiv.org/abs/2106.00314",
             "company": "Huawei",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2021",
@@ -646,7 +646,7 @@
             "link": "https://link.springer.com/chapter/10.1007%2F978-3-030-75765-6_35",
             "company": "Tencent",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2020",
@@ -657,7 +657,7 @@
             "link": "https://arxiv.org/abs/2006.05312",
             "company": "",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2021",
@@ -668,7 +668,7 @@
             "link": "https://arxiv.org/abs/2105.08909",
             "company": "Alibaba",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2021",
@@ -679,7 +679,7 @@
             "link": "https://arxiv.org/abs/2104.06312",
             "company": "Alibaba",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2020",
@@ -690,7 +690,7 @@
             "link": "https://arxiv.org/abs/2012.10820",
             "company": "Tencent",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2020",
@@ -701,7 +701,7 @@
             "link": "https://arxiv.org/abs/2009.09931",
             "company": "Adobe",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2020",
@@ -734,7 +734,7 @@
             "link": "https://ieeexplore.ieee.org/abstract/document/9244149",
             "company": "",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2020",
@@ -745,18 +745,18 @@
             "link": "https://arxiv.org/abs/2007.03519",
             "company": "Tencent,Sina Weibo",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2021",
             "pub": "Arixv'21",
-            "model": "*",
+            "model": "",
             "paper": "Click-Through Rate Prediction Using Graph Neural Networks and Online Learning",
             "authors": "Farzaneh Rajabi, Jack Siyuan He",
             "link": "https://arxiv.org/abs/2105.03811",
             "company": "Google",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2020",
@@ -767,7 +767,7 @@
             "link": "https://arxiv.org/abs/2007.13087",
             "company": "",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2020",
@@ -778,7 +778,7 @@
             "link": "https://www.mdpi.com/1999-4893/13/12/342/htm",
             "company": "ICBC, Yunqu",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2020",
@@ -800,7 +800,7 @@
             "link": "https://dl.acm.org/doi/abs/10.1145/2556195.2556240",
             "company": "",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2020",
@@ -811,7 +811,7 @@
             "link": "https://arxiv.org/abs/2011.11826",
             "company": "Alibaba",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2020",
@@ -822,7 +822,7 @@
             "link": "https://arxiv.org/abs/2006.10966",
             "company": "Facebook",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2020",
@@ -833,7 +833,7 @@
             "link": "https://dl.acm.org/doi/abs/10.1145/3394486.3403137",
             "company": "Facebook",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2020",
@@ -844,18 +844,18 @@
             "link": "https://arxiv.org/abs/2006.12753",
             "company": "Sina Weibo",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2020",
-            "pub": "OpenReview'20*",
+            "pub": "OpenReview'20",
             "model": "DeepEnFM",
             "paper": "DeepEnFM: Deep neural networks with Encoder enhanced Factorization Machine",
             "authors": "Qiang Sun, Zhinan Cheng, Yanwei Fu, Wenxuan Wang, Yu-Gang Jiang, Xiangyang Xue",
             "link": "https://openreview.net/forum?id=SJlyta4YPS",
             "company": "",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2020",
@@ -866,7 +866,7 @@
             "link": "https://arxiv.org/abs/2010.09225",
             "company": "",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2020",
@@ -877,7 +877,7 @@
             "link": "https://dl.acm.org/doi/abs/10.1145/3366424.3382680",
             "company": "Huawei",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2020",
@@ -888,7 +888,7 @@
             "link": "https://www.ijcai.org/Proceedings/2020/0434.pdf",
             "company": "",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2019",
@@ -899,7 +899,7 @@
             "link": "https://ieeexplore.ieee.org/abstract/document/9005598/authors",
             "company": "Samsung",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2020",
@@ -910,7 +910,7 @@
             "link": "https://ksiresearch.org/seke/seke20paper/paper035.pdf",
             "company": "",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2020",
@@ -921,7 +921,7 @@
             "link": "https://dl.acm.org/doi/abs/10.1145/3394486.3403314",
             "company": "Huawei",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2019",
@@ -932,7 +932,7 @@
             "link": "https://dl.acm.org/doi/abs/10.1145/3357384.3357936",
             "company": "JD",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2020",
@@ -943,7 +943,7 @@
             "link": "https://dl.acm.org/doi/pdf/10.1145/3366423.3380154",
             "company": "Tencent",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2020",
@@ -954,7 +954,7 @@
             "link": "https://dl.acm.org/doi/abs/10.1145/3366423.3380163",
             "company": "Alibaba",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2020",
@@ -965,7 +965,7 @@
             "link": "https://dl.acm.org/doi/abs/10.1145/3397271.3401082",
             "company": "Huawei",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2019",
@@ -976,7 +976,7 @@
             "link": "https://ieeexplore.ieee.org/abstract/document/8731899",
             "company": "",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2018",
@@ -987,18 +987,18 @@
             "link": "https://arxiv.org/abs/1812.01353",
             "company": "Sina Weibo, Alibaba",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2019",
             "pub": "BigMM'19",
-            "model": "DNN-based CTR Model*",
+            "model": "DNN-based CTR Model",
             "paper": "Deep Neural Network-Based Click-Through Rate Prediction using Multimodal Features of Online Banners",
             "authors": "Bohui Xia, Xueting Wang, Toshihiko Yamasaki, Kiyoharu Aizawa, Hiroyuki Seshime",
             "link": "https://ieeexplore.ieee.org/abstract/document/8919379",
             "company": "",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2018",
@@ -1009,18 +1009,18 @@
             "link": "https://dl.acm.org/doi/10.1145/3209978.3210062",
             "company": "",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2018",
             "pub": "SIGIRW'18",
-            "model": "*",
+            "model": "",
             "paper": "Visualizing and Understanding Deep Neural Networks in CTR Prediction",
             "authors": "Lin Guo, Hui Ye, Wenbo Su, Henhuan Liu, Kai Sun, Hang Xiang",
             "link": "https://arxiv.org/abs/1806.08541",
             "company": "Alibaba",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2021",
@@ -1031,7 +1031,7 @@
             "link": "https://arxiv.org/abs/2107.01999",
             "company": "iQIYI",
             "available": "N",
-            "tags": "*"
+            "tags": ""
         },
         {
             "year": "2021",
