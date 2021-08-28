@@ -65,7 +65,7 @@
         {
             "year": "2016",
             "pub": "ICDM'16",
-            "model": "IPNN",
+            "model": "PNN",
             "logloss": "0.4378",
             "auc": "0.8142",
             "link": "",
