@@ -5,7 +5,7 @@
             "model": "LR",
             "logloss": "0.4386",
             "auc": "0.6619",
-            "link": "",
+            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
             "contr": "jimzhu"
         },
         {
@@ -14,7 +14,7 @@
             "model": "FM",
             "logloss": "0.4148",
             "auc": "0.7201",
-            "link": "",
+            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
             "contr": "jimzhu"
         },
         {
@@ -23,7 +23,7 @@
             "model": "YoutubeDNN",
             "logloss": "0.4111",
             "auc": "0.7345",
-            "link": "",
+            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
             "contr": "jimzhu"
         },
         {
@@ -32,7 +32,7 @@
             "model": "DeepFM",
             "logloss": "0.4103",
             "auc": "0.7340",
-            "link": "",
+            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
             "contr": "jimzhu"
         },
         {
@@ -41,7 +41,7 @@
             "model": "DCN",
             "logloss": "0.4112",
             "auc": "0.7349",
-            "link": "",
+            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
             "contr": "jimzhu"
         }
     ]
