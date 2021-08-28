@@ -321,7 +321,7 @@
         {
             "year": "2016",
             "pub": "ICDM'16",
-            "model": "PNN",
+            "model": "IPNN",
             "paper": "Product-based Neural Networks for User Response Prediction",
             "authors": "Yanru Qu, Han Cai, Kan Ren, Weinan Zhang, Yong Yu, Ying Wen, Jun Wang",
             "link": "https://arxiv.org/pdf/1611.00144.pdf",
@@ -1003,12 +1003,22 @@
         {
             "year": "2019",
             "pub": "CIKM'19",
-            "model": "Fi-GNN",
-            "paper": "Fi-GNN: Modeling Feature Interactions via Graph Neural Networks for CTR Prediction",
+            "model": "FiGNN",
+            "paper": "FiGNN: Modeling Feature Interactions via Graph Neural Networks for CTR Prediction",
             "authors": "Zekun Li, Zeyu Cui, Shu Wu, Xiaoyu Zhang, Liang Wang",
             "link": "https://arxiv.org/abs/1910.05552",
             "company": "",
-            "available": "",
+            "available": "N",
+            "tags": ""
+        }, {
+            "year": "2016",
+            "pub": "KDD'16",
+            "model": "DeepCross",
+            "paper": "Deep Crossing: Web-Scale Modeling without Manually Crafted Combinatorial Features",
+            "authors": "Zekun Li, Zeyu Cui, Shu Wu, Xiaoyu Zhang, Liang Wang",
+            "link": "https://dl.acm.org/doi/abs/10.1145/2939672.2939704",
+            "company": "Microsoft",
+            "available": "N",
             "tags": ""
         }
     ]

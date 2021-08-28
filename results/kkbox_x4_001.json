@@ -9,8 +9,8 @@
             "contr": "jimzhu"
         },
         {
-            "year": "",
-            "pub": "",
+            "year": "2010",
+            "pub": "ICDM'10",
             "model": "FM",
             "logloss": "0.5075",
             "auc": "0.8291",
@@ -99,8 +99,8 @@
             "contr": "jimzhu"
         },
         {
-            "year": "",
-            "pub": "",
+            "year": "2016",
+            "pub": "KDD'16",
             "model": "DeepCross",
             "logloss": "0.4799",
             "auc": "0.8496",
@@ -171,8 +171,8 @@
             "contr": "jimzhu"
         },
         {
-            "year": "",
-            "pub": "",
+            "year": "2019",
+            "pub": "RecSys'19",
             "model": "FiBiNet",
             "logloss": "0.4822",
             "auc": "0.8499",
@@ -189,8 +189,8 @@
             "contr": "jimzhu"
         },
         {
-            "year": "",
-            "pub": "",
+            "year": "2020",
+            "pub": "Neural Networks'20",
             "model": "ONN",
             "logloss": "0.4832",
             "auc": "0.8493",

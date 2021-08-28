@@ -18,8 +18,8 @@
             "contr": "jimzhu"
         },
         {
-            "year": " ",
-            "pub": "",
+            "year": "2021",
+            "pub": "WWW'21",
             "model": "FmFM",
             "logloss": "0.4462",
             "auc": "0.8056",

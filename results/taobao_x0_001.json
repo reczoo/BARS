@@ -9,8 +9,8 @@
             "contr": "jimzhu"
         },
         {
-            "year": "",
-            "pub": "",
+            "year": "2010",
+            "pub": "ICDM'10",
             "model": "FM",
             "logloss": "0.1942",
             "auc": "0.6373",
@@ -27,8 +27,8 @@
             "contr": "jimzhu"
         },
         {
-            "year": "",
-            "pub": "",
+            "year": "2017",
+            "pub": "WWW'17",
             "model": "FFM",
             "logloss": "0.1936",
             "auc": "0.6433",
@@ -54,8 +54,8 @@
             "contr": "jimzhu"
         },
         {
-            "year": "",
-            "pub": "",
+            "year": "2015",
+            "pub": "CIKM'15",
             "model": "CCPM",
             "logloss": "0.1939",
             "auc": "0.6432",
@@ -99,8 +99,8 @@
             "contr": "jimzhu"
         },
         {
-            "year": "",
-            "pub": "",
+            "year": "2016",
+            "pub": "KDD'16",
             "model": "DeepCross",
             "logloss": "0.1934",
             "auc": "0.6442",
@@ -135,8 +135,8 @@
             "contr": "jimzhu"
         },
         {
-            "year": "",
-            "pub": "",
+            "year": "2019",
+            "pub": "CIKM'19",
             "model": "FiGNN",
             "logloss": "0.1934",
             "auc": "0.6441",
@@ -144,8 +144,8 @@
             "contr": "jimzhu"
         },
         {
-            "year": "",
-            "pub": "",
+            "year": "2019",
+            "pub": "RecSys'19",
             "model": "FiBiNet",
             "logloss": "0.1938",
             "auc": "0.6433",
