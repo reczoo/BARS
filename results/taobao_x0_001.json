@@ -1,6 +1,6 @@
 {
     "data": [{
-            "year": "",
+            "year": "2007",
             "pub": "",
             "model": "LR",
             "logloss": "0.1941",
@@ -92,7 +92,7 @@
         {
             "year": "2016",
             "pub": "ICDM'16",
-            "model": "PNN",
+            "model": "IPNN",
             "logloss": "0.1936",
             "auc": "0.6437",
             "link": "",

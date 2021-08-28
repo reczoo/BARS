@@ -1,6 +1,6 @@
 {
     "data": [{
-            "year": "",
+            "year": "2007",
             "pub": "",
             "model": "LR",
             "logloss": "0.5746",
@@ -108,8 +108,8 @@
             "contr": "jimzhu"
         },
         {
-            "year": "",
-            "pub": "",
+            "year": "2017",
+            "pub": "ADKDD'17",
             "model": "CrossNet",
             "logloss": "0.5284",
             "auc": "0.8115",

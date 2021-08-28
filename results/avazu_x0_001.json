@@ -72,7 +72,7 @@
             "contr": "jimzhu"
         },
         {
-            "year": " ",
+            "year": "2007",
             "pub": "",
             "model": "LR",
             "logloss": "0.4065",
@@ -81,8 +81,8 @@
             "contr": "Reported by AFN paper"
         },
         {
-            "year": " ",
-            "pub": "",
+            "year": "2010",
+            "pub": "ICDM'10",
             "model": "FM(paper)",
             "logloss": "0.3740",
             "auc": "0.7496",
@@ -99,8 +99,8 @@
             "contr": "Reported by AFN paper"
         },
         {
-            "year": " ",
-            "pub": "",
+            "year": "2017",
+            "pub": "ADKDD'17",
             "model": "CrossNet",
             "logloss": "0.3756",
             "auc": "0.7498",
