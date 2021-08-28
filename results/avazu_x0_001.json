@@ -2,7 +2,7 @@
     "data": [{
             "year": "2010",
             "pub": "ICDM'10",
-            "model": "FM",
+            "model": "FM(rerun)",
             "logloss": "0.3677",
             "auc": "0.7613",
             "link": "",
@@ -38,7 +38,7 @@
         {
             "year": "2016",
             "pub": "ICDM'16",
-            "model": "PNN",
+            "model": "PNN(rerun)",
             "logloss": "0.3676",
             "auc": "0.7630",
             "link": "",
@@ -47,7 +47,7 @@
         {
             "year": "2017",
             "pub": "IJCAI'17",
-            "model": "DeepFM",
+            "model": "DeepFM(rerun)",
             "logloss": "0.3662",
             "auc": "0.7657",
             "link": "",
@@ -77,6 +77,123 @@
             "model": "LR",
             "logloss": "0.4065",
             "auc": "0.7313",
+            "link": "",
+            "contr": "Reported by AFN paper"
+        },
+        {
+            "year": " ",
+            "pub": "",
+            "model": "FM(paper)",
+            "logloss": "0.3740",
+            "auc": "0.7496",
+            "link": "",
+            "contr": "Reported by AFN paper"
+        },
+        {
+            "year": " ",
+            "pub": "",
+            "model": "AFM",
+            "logloss": "0.3766",
+            "auc": "0.7454",
+            "link": "",
+            "contr": "Reported by AFN paper"
+        },
+        {
+            "year": " ",
+            "pub": "",
+            "model": "CrossNet",
+            "logloss": "0.3756",
+            "auc": "0.7498",
+            "link": "",
+            "contr": "Reported by AFN paper"
+        },
+        {
+            "year": " ",
+            "pub": "",
+            "model": "HOFM",
+            "logloss": "0.3756",
+            "auc": "0.7516",
+            "link": "",
+            "contr": "Reported by AFN paper"
+        },
+        {
+            "year": " ",
+            "pub": "",
+            "model": "NFM",
+            "logloss": "0.3761",
+            "auc": "0.7531",
+            "link": "",
+            "contr": "Reported by AFN paper"
+        },
+        {
+            "year": " ",
+            "pub": "",
+            "model": "PNN(paper)",
+            "logloss": "0.3737",
+            "auc": "0.7526",
+            "link": "",
+            "contr": "Reported by AFN paper"
+        },
+        {
+            "year": " ",
+            "pub": "",
+            "model": "CIN",
+            "logloss": "0.3756",
+            "auc": "0.7533",
+            "link": "",
+            "contr": "Reported by AFN paper"
+        },
+        {
+            "year": " ",
+            "pub": "",
+            "model": "AFN",
+            "logloss": "0.3731",
+            "auc": "0.7512",
+            "link": "",
+            "contr": "Reported by AFN paper"
+        },
+        {
+            "year": " ",
+            "pub": "",
+            "model": "DCN",
+            "logloss": "0.3721",
+            "auc": "0.7550",
+            "link": "",
+            "contr": "Reported by AFN paper"
+        },
+        {
+            "year": " ",
+            "pub": "",
+            "model": "Wide&Deep",
+            "logloss": "0.3744",
+            "auc": "0.7529",
+            "link": "",
+            "contr": "Reported by AFN paper"
+        },
+        {
+            "year": " ",
+            "pub": "",
+            "model": "DeepFM(paper)",
+            "logloss": "0.3742",
+            "auc": "0.7535",
+            "link": "",
+            "contr": "Reported by AFN paper"
+        },
+        {
+            "year": " ",
+            "pub": "",
+            "model": "xDeepFM",
+            "logloss": "0.3737",
+            "auc": "0.7535",
+            "link": "",
+            "contr": "Reported by AFN paper"
+        },
+        {
+            "year": " ",
+            "pub": "",
+            "model": "AFN+",
+            "logloss": "0.3718",
+            "auc": "0.7555",
             "link": "",
             "contr": "Reported by AFN paper"
         }
