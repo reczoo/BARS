@@ -2,99 +2,45 @@
     "data": [{
             "year": "",
             "pub": "",
-            "model": "",
-            "logloss": "",
-            "auc": "",
+            "model": "LR",
+            "logloss": "0.4386",
+            "auc": "0.6619",
             "link": "",
             "contr": "jimzhu"
         },
         {
             "year": "",
             "pub": "",
-            "model": "",
-            "logloss": "",
-            "auc": "",
+            "model": "FM",
+            "logloss": "0.4148",
+            "auc": "0.7201",
             "link": "",
             "contr": "jimzhu"
         },
         {
             "year": "",
             "pub": "",
-            "model": "",
-            "logloss": "",
-            "auc": "",
+            "model": "YoutubeDNN",
+            "logloss": "0.4111",
+            "auc": "0.7345",
             "link": "",
             "contr": "jimzhu"
         },
         {
             "year": "",
             "pub": "",
-            "model": "",
-            "logloss": "",
-            "auc": "",
+            "model": "DeepFM",
+            "logloss": "0.4103",
+            "auc": "0.7340",
             "link": "",
             "contr": "jimzhu"
         },
         {
             "year": "",
             "pub": "",
-            "model": "",
-            "logloss": "",
-            "auc": "",
-            "link": "",
-            "contr": "jimzhu"
-        },
-        {
-            "year": "",
-            "pub": "",
-            "model": "",
-            "logloss": "",
-            "auc": "",
-            "link": "",
-            "contr": "jimzhu"
-        },
-        {
-            "year": "",
-            "pub": "",
-            "model": "",
-            "logloss": "",
-            "auc": "",
-            "link": "",
-            "contr": "jimzhu"
-        },
-        {
-            "year": "",
-            "pub": "",
-            "model": "",
-            "logloss": "",
-            "auc": "",
-            "link": "",
-            "contr": "jimzhu"
-        },
-        {
-            "year": "",
-            "pub": "",
-            "model": "",
-            "logloss": "",
-            "auc": "",
-            "link": "",
-            "contr": "jimzhu"
-        },
-        {
-            "year": "",
-            "pub": "",
-            "model": "",
-            "logloss": "",
-            "auc": "",
-            "link": "",
-            "contr": "jimzhu"
-        },
-        {
-            "year": "",
-            "pub": "",
-            "model": "",
-            "logloss": "",
-            "auc": "",
+            "model": "DCN",
+            "logloss": "0.4112",
+            "auc": "0.7349",
             "link": "",
             "contr": "jimzhu"
         }
