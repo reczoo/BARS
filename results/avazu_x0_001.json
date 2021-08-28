@@ -48,7 +48,7 @@
             "year": "2017",
             "pub": "IJCAI'17",
             "model": "DeepFM(rerun)",
-            "logloss": "0.3662",
+            "logloss": "",
             "auc": "0.7657",
             "link": "",
             "contr": "jimzhu"
