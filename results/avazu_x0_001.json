@@ -144,8 +144,8 @@
             "contr": "Reported by AFN paper"
         },
         {
-            "year": " ",
-            "pub": "",
+            "year": "2020",
+            "pub": "AAAI'20",
             "model": "AFN",
             "logloss": "0.3731",
             "auc": "0.7512",
@@ -189,8 +189,8 @@
             "contr": "Reported by AFN paper"
         },
         {
-            "year": " ",
-            "pub": "",
+            "year": "2020",
+            "pub": "AAAI'20",
             "model": "AFN+",
             "logloss": "0.3718",
             "auc": "0.7555",

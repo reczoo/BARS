@@ -1020,6 +1020,17 @@
             "company": "Microsoft",
             "available": "N",
             "tags": ""
+        },
+        {
+            "year": "2020",
+            "pub": "AAAI'20",
+            "model": "AFN",
+            "paper": "Adaptive Factorization Network: Learning Adaptive-Order Feature Interactions",
+            "authors": "Weiyu Cheng, Yanyan Shen, Linpeng Huang",
+            "link": "https://ojs.aaai.org/index.php/AAAI/article/view/5768",
+            "company": "",
+            "available": "N",
+            "tags": ""
         }
     ]
 }
