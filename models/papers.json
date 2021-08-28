@@ -977,6 +977,39 @@
             "company": "Google",
             "available": "N",
             "tags": "#Feature Interactions"
+        },
+        {
+            "year": "2020",
+            "pub": "CIKM'20",
+            "model": "DeepIM",
+            "paper": "Deep Interaction Machine: A Simple but Effective Model for High-order Feature Interactions",
+            "authors": "Feng Yu, Zhaocheng Liu, Qiang Liu, Haoli Zhang, Shu Wu, Liang Wang",
+            "link": "https://dl.acm.org/doi/10.1145/3340531.3412077",
+            "company": "Alibaba,RealAI",
+            "available": "N",
+            "tags": ""
+        },
+        {
+            "year": "2016",
+            "pub": "NIPS'16",
+            "model": "HOFM",
+            "paper": "Higher-Order Factorization Machines",
+            "authors": "Mathieu Blondel, Akinori Fujino, Naonori Ueda, Masakazu Ishihata",
+            "link": "https://arxiv.org/abs/1607.07195",
+            "company": "",
+            "available": "N",
+            "tags": ""
+        },
+        {
+            "year": "2019",
+            "pub": "CIKM'19",
+            "model": "Fi-GNN",
+            "paper": "Fi-GNN: Modeling Feature Interactions via Graph Neural Networks for CTR Prediction",
+            "authors": "Zekun Li, Zeyu Cui, Shu Wu, Xiaoyu Zhang, Liang Wang",
+            "link": "https://arxiv.org/abs/1910.05552",
+            "company": "",
+            "available": "",
+            "tags": ""
         }
     ]
 }

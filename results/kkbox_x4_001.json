@@ -27,8 +27,8 @@
             "contr": "jimzhu"
         },
         {
-            "year": "",
-            "pub": "",
+            "year": "2021",
+            "pub": "WWW'21",
             "model": "FwFM",
             "logloss": "0.4966",
             "auc": "0.8408",
@@ -36,8 +36,8 @@
             "contr": "jimzhu"
         },
         {
-            "year": "",
-            "pub": "",
+            "year": "2017",
+            "pub": "IJCAI'17",
             "model": "AFM",
             "logloss": "0.5235",
             "auc": "0.8168",
@@ -45,8 +45,8 @@
             "contr": "jimzhu"
         },
         {
-            "year": "",
-            "pub": "",
+            "year": "2016",
+            "pub": "NIPS'16",
             "model": "HOFM",
             "logloss": "0.5053",
             "auc": "0.8313",
@@ -54,8 +54,8 @@
             "contr": "jimzhu"
         },
         {
-            "year": "",
-            "pub": "",
+            "year": "2017",
+            "pub": "SIGIR'17",
             "model": "NFM",
             "logloss": "0.5089",
             "auc": "0.8274",
@@ -63,8 +63,8 @@
             "contr": "jimzhu"
         },
         {
-            "year": "",
-            "pub": "",
+            "year": "2016",
+            "pub": "RecSys'16",
             "model": "YoutubeDNN",
             "logloss": "0.4804",
             "auc": "0.8505",
@@ -72,8 +72,8 @@
             "contr": "jimzhu"
         },
         {
-            "year": "",
-            "pub": "",
+            "year": "2016",
+            "pub": "DLRS'16",
             "model": "Wide&Deep",
             "logloss": "0.4810",
             "auc": "0.8519",
@@ -81,8 +81,8 @@
             "contr": "jimzhu"
         },
         {
-            "year": "",
-            "pub": "",
+            "year": "2017",
+            "pub": "IJCAI'17",
             "model": "DeepFM",
             "logloss": "0.4785",
             "auc": "0.8531",
@@ -90,8 +90,8 @@
             "contr": "jimzhu"
         },
         {
-            "year": "",
-            "pub": "",
+            "year": "2016",
+            "pub": "ICDM'16",
             "model": "PNN",
             "logloss": "0.4784",
             "auc": "0.8512",
@@ -117,8 +117,8 @@
             "contr": "jimzhu"
         },
         {
-            "year": "",
-            "pub": "",
+            "year": "2017",
+            "pub": "ADKDD'17",
             "model": "DCN",
             "logloss": "0.4761",
             "auc": "0.8534",
@@ -126,8 +126,8 @@
             "contr": "jimzhu"
         },
         {
-            "year": "",
-            "pub": "",
+            "year": "2020",
+            "pub": "TKDD'20",
             "model": "CIN",
             "logloss": "0.4909",
             "auc": "0.8426",
@@ -135,8 +135,8 @@
             "contr": "jimzhu"
         },
         {
-            "year": "",
-            "pub": "",
+            "year": "2018",
+            "pub": "KDD'18",
             "model": "xDeepFM",
             "logloss": "0.4774",
             "auc": "0.8526",
@@ -144,8 +144,8 @@
             "contr": "jimzhu"
         },
         {
-            "year": "",
-            "pub": "",
+            "year": "2019",
+            "pub": "CIKM'19",
             "model": "AutoInt",
             "logloss": "0.4919",
             "auc": "0.8436",
@@ -153,8 +153,8 @@
             "contr": "jimzhu"
         },
         {
-            "year": "",
-            "pub": "",
+            "year": "2019",
+            "pub": "CIKM'19",
             "model": "AutoInt+",
             "logloss": "0.4768",
             "auc": "0.8530",
@@ -162,8 +162,8 @@
             "contr": "jimzhu"
         },
         {
-            "year": "",
-            "pub": "",
+            "year": "2019",
+            "pub": "CIKM'19",
             "model": "FiGNN",
             "logloss": "0.4902",
             "auc": "0.8463",

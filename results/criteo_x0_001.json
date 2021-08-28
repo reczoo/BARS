@@ -63,8 +63,8 @@
             "contr": "jimzhu"
         },
         {
-            "year": " ",
-            "pub": "",
+            "year": "2020",
+            "pub": "CIKM'20",
             "model": "DeepIM",
             "logloss": "0.4379",
             "auc": "0.8140",
@@ -81,8 +81,8 @@
             "contr": "Reported by AFN paper"
         },
         {
-            "year": " ",
-            "pub": "",
+            "year": "2010",
+            "pub": "ICDM'10",
             "model": "FM(paper)",
             "logloss": "0.4574",
             "auc": "0.7933",
@@ -90,8 +90,8 @@
             "contr": "Reported by AFN paper"
         },
         {
-            "year": " ",
-            "pub": "",
+            "year": "2017",
+            "pub": "IJCAI'17",
             "model": "AFM",
             "logloss": "0.4554",
             "auc": "0.7953",
@@ -108,8 +108,8 @@
             "contr": "Reported by AFN paper"
         },
         {
-            "year": " ",
-            "pub": "",
+            "year": "2016",
+            "pub": "NIPS'16",
             "model": "HOFM",
             "logloss": "0.4551",
             "auc": "0.7960",
@@ -117,8 +117,8 @@
             "contr": "Reported by AFN paper"
         },
         {
-            "year": " ",
-            "pub": "",
+            "year": "2017",
+            "pub": "SIGIR'17",
             "model": "NFM",
             "logloss": "0.4537",
             "auc": "0.7968",
@@ -126,8 +126,8 @@
             "contr": "Reported by AFN paper"
         },
         {
-            "year": " ",
-            "pub": "",
+            "year": "2016",
+            "pub": "ICDM'16",
             "model": "PNN(paper)",
             "logloss": "0.4509",
             "auc": "0.8026",
@@ -135,8 +135,8 @@
             "contr": "Reported by AFN paper"
         },
         {
-            "year": " ",
-            "pub": "",
+            "year": "2020",
+            "pub": "TKDD'20",
             "model": "CIN",
             "logloss": "0.4472",
             "auc": "0.8042",
@@ -153,8 +153,8 @@
             "contr": "Reported by AFN paper"
         },
         {
-            "year": " ",
-            "pub": "",
+            "year": "2017",
+            "pub": "ADKDD'17",
             "model": "DCN(paper)",
             "logloss": "0.4463",
             "auc": "0.8059",
@@ -162,8 +162,8 @@
             "contr": "Reported by AFN paper"
         },
         {
-            "year": " ",
-            "pub": "",
+            "year": "2016",
+            "pub": "DLRS'16",
             "model": "Wide&Deep",
             "logloss": "0.4453",
             "auc": "0.8062",
@@ -171,8 +171,8 @@
             "contr": "Reported by AFN paper"
         },
         {
-            "year": " ",
-            "pub": "",
+            "year": "2017",
+            "pub": "IJCAI'17",
             "model": "DeepFM(paper)",
             "logloss": "0.4501",
             "auc": "0.8025",
@@ -180,8 +180,8 @@
             "contr": "Reported by AFN paper"
         },
         {
-            "year": " ",
-            "pub": "",
+            "year": "2018",
+            "pub": "KDD'18",
             "model": "xDeepFM",
             "logloss": "0.4443",
             "auc": "0.8070",
