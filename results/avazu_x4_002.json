@@ -5,7 +5,7 @@
             "model": "LR",
             "logloss": "0.3799",
             "auc": "0.7805",
-            "link": "https://xx",
+            "link": "",
             "contr": "jimzhu"
         },
         {
@@ -14,7 +14,7 @@
             "model": "FM",
             "logloss": "0.3736",
             "auc": "0.7908",
-            "link": "https://xx",
+            "link": "",
             "contr": "jimzhu"
         },
         {
@@ -23,7 +23,7 @@
             "model": "FFM",
             "logloss": "0.3711",
             "auc": "0.7948",
-            "link": "https://xx",
+            "link": "",
             "contr": "jimzhu"
         },
         {
@@ -32,7 +32,7 @@
             "model": "FwFM",
             "logloss": "0.3724",
             "auc": "0.7925",
-            "link": "https://xx",
+            "link": "",
             "contr": "jimzhu"
         },
         {
@@ -41,7 +41,7 @@
             "model": "AFM",
             "logloss": "0.3781",
             "auc": "0.7840",
-            "link": "https://xx",
+            "link": "",
             "contr": "jimzhu"
         },
         {
@@ -50,7 +50,7 @@
             "model": "HOFM",
             "logloss": "0.3733",
             "auc": "0.7914",
-            "link": "https://xx",
+            "link": "",
             "contr": "jimzhu"
         },
         {
@@ -59,7 +59,7 @@
             "model": "NFM",
             "logloss": "0.3715",
             "auc": "0.7940",
-            "link": "https://xx",
+            "link": "",
             "contr": "jimzhu"
         },
         {
@@ -68,7 +68,7 @@
             "model": "CCPM",
             "logloss": "0.3721",
             "auc": "0.7932",
-            "link": "https://xx",
+            "link": "",
             "contr": "jimzhu"
         },
         {
@@ -77,7 +77,7 @@
             "model": "YoutubeDNN",
             "logloss": "0.3705",
             "auc": "0.7958",
-            "link": "https://xx",
+            "link": "",
             "contr": "jimzhu"
         },
         {
@@ -86,7 +86,7 @@
             "model": "WideDeep",
             "logloss": "0.3703",
             "auc": "0.7958",
-            "link": "https://xx",
+            "link": "",
             "contr": "jimzhu"
         },
         {
@@ -95,7 +95,7 @@
             "model": "DeepFM",
             "logloss": "0.3701",
             "auc": "0.7963",
-            "link": "https://xx",
+            "link": "",
             "contr": "jimzhu"
         },
         {
@@ -104,7 +104,7 @@
             "model": "PNN",
             "logloss": "0.3684",
             "auc": "0.7989",
-            "link": "https://xx",
+            "link": "",
             "contr": "jimzhu"
         },
         {
@@ -113,7 +113,7 @@
             "model": "DeepCross",
             "logloss": "0.3700",
             "auc": "0.7962",
-            "link": "https://xx",
+            "link": "",
             "contr": "jimzhu"
         },
         {
@@ -122,7 +122,7 @@
             "model": "CrossNet",
             "logloss": "0.3773",
             "auc": "0.7840",
-            "link": "https://xx",
+            "link": "",
             "contr": "jimzhu"
         },
         {
@@ -131,7 +131,7 @@
             "model": "DCN",
             "logloss": "0.3699",
             "auc": "0.7965",
-            "link": "https://xx",
+            "link": "",
             "contr": "jimzhu"
         },
         {
@@ -140,7 +140,7 @@
             "model": "CIN",
             "logloss": "0.3726",
             "auc": "0.7923",
-            "link": "https://xx",
+            "link": "",
             "contr": "jimzhu"
         },
         {
@@ -149,7 +149,7 @@
             "model": "xDeepFM",
             "logloss": "0.3697",
             "auc": "0.7967",
-            "link": "https://xx",
+            "link": "",
             "contr": "jimzhu"
         },
         {
@@ -158,7 +158,7 @@
             "model": "AutoInt",
             "logloss": "0.3726",
             "auc": "0.7922",
-            "link": "https://xx",
+            "link": "",
             "contr": "jimzhu"
         },
         {
@@ -167,7 +167,7 @@
             "model": "AutoInt+",
             "logloss": "0.3703",
             "auc": "0.7959",
-            "link": "https://xx",
+            "link": "",
             "contr": "jimzhu"
         },
         {
@@ -176,7 +176,7 @@
             "model": "FiGNN",
             "logloss": "0.3711",
             "auc": "0.7944",
-            "link": "https://xx",
+            "link": "",
             "contr": "jimzhu"
         },
         {
@@ -185,7 +185,7 @@
             "model": "FiBiNET",
             "logloss": "0.3675",
             "auc": "0.8003",
-            "link": "https://xx",
+            "link": "",
             "contr": "jimzhu"
         },
         {
@@ -194,7 +194,7 @@
             "model": "FGCNN",
             "logloss": "0.3696",
             "auc": "0.7971",
-            "link": "https://xx",
+            "link": "",
             "contr": "jimzhu"
         },
         {
@@ -203,7 +203,7 @@
             "model": "ONN",
             "logloss": "0.3677",
             "auc": "0.8001",
-            "link": "https://xx",
+            "link": "",
             "contr": "jimzhu"
         },
         {
@@ -212,7 +212,7 @@
             "model": "InterHAt",
             "logloss": "0.3722",
             "auc": "0.7927",
-            "link": "https://xx",
+            "link": "",
             "contr": "jimzhu"
         },
         {
@@ -221,7 +221,7 @@
             "model": "AFN",
             "logloss": "0.3720",
             "auc": "0.7936",
-            "link": "https://xx",
+            "link": "",
             "contr": "jimzhu"
         },
         {
@@ -230,7 +230,7 @@
             "model": "AFN+",
             "logloss": "0.3706",
             "auc": "0.7956",
-            "link": "https://xx",
+            "link": "",
             "contr": "jimzhu"
         },
         {
@@ -239,7 +239,7 @@
             "model": "LorentzFM",
             "logloss": "0.3742",
             "auc": "0.7912",
-            "link": "https://xx",
+            "link": "",
             "contr": "jimzhu"
         },
         {
@@ -248,7 +248,7 @@
             "model": "HFM",
             "logloss": "0.3735",
             "auc": "0.7910",
-            "link": "https://xx",
+            "link": "",
             "contr": "jimzhu"
         },
         {
@@ -257,7 +257,7 @@
             "model": "HFM+",
             "logloss": "0.3683",
             "auc": "0.7992",
-            "link": "https://xx",
+            "link": "",
             "contr": "jimzhu"
         }
     ]
