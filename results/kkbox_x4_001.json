@@ -216,8 +216,8 @@
             "contr": "jimzhu"
         },
         {
-            "year": "",
-            "pub": "",
+            "year": "2020",
+            "pub": "AAAI'20",
             "model": "LorentzFM",
             "logloss": "0.5187",
             "auc": "0.8203",
