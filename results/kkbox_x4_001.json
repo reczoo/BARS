@@ -180,8 +180,8 @@
             "contr": "jimzhu"
         },
         {
-            "year": "",
-            "pub": "",
+            "year": "2019",
+            "pub": "WWW'19",
             "model": "FGCNN",
             "logloss": "0.4798",
             "auc": "0.8504",
@@ -225,8 +225,8 @@
             "contr": "jimzhu"
         },
         {
-            "year": "",
-            "pub": "",
+            "year": "2019",
+            "pub": "AAAI'19",
             "model": "HFM",
             "logloss": "0.4973",
             "auc": "0.8388",
@@ -234,8 +234,8 @@
             "contr": "jimzhu"
         },
         {
-            "year": "",
-            "pub": "",
+            "year": "2019",
+            "pub": "AAAI'19",
             "model": "HFM+",
             "logloss": "0.4771",
             "auc": "0.8523",

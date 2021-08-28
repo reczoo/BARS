@@ -1031,6 +1031,17 @@
             "company": "",
             "available": "N",
             "tags": ""
+        },
+        {
+            "year": "2019",
+            "pub": "WWW'19",
+            "model": "FGCNN",
+            "paper": "Feature Generation by Convolutional Neural Network for Click-Through Rate Prediction",
+            "authors": "Bin Liu, Ruiming Tang, Yingzhi Chen, Jinkai Yu, Huifeng Guo, Yuzhou Zhang",
+            "link": "https://arxiv.org/abs/1904.04447",
+            "company": "Huawei",
+            "available": "N",
+            "tags": ""
         }
     ]
 }
