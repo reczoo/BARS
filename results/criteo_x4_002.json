@@ -1,6 +1,5 @@
 {
-    "data": [
-        {
+    "data": [{
             "year": "2007",
             "pub": "WWW'07",
             "model": "LR",
@@ -191,7 +190,7 @@
         },
         {
             "year": "2020",
-            "pub": "NeuralNetworks'20",
+            "pub": "Neural Networks'20",
             "model": "ONN",
             "logloss": "0.4381",
             "auc": "0.8142",
@@ -263,4 +262,3 @@
         }
     ]
 }
-
