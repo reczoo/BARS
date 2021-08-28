@@ -955,6 +955,28 @@
             "company": "Microsoft",
             "available": "N",
             "tags": "#Feature Interactions"
+        },
+        {
+            "year": "2021",
+            "pub": "WWW'21",
+            "model": "FmFM",
+            "paper": "FM^2: Field-matrixed Factorization Machines for Recommender Systems",
+            "authors": "Yang Sun, Junwei Pan, Alex Zhang, Aaron Flores",
+            "link": "https://arxiv.org/abs/2102.12994v2",
+            "company": "Yahoo",
+            "available": "N",
+            "tags": ""
+        },
+        {
+            "year": "",
+            "pub": "",
+            "model": "",
+            "paper": "",
+            "authors": "",
+            "link": "",
+            "company": "",
+            "available": "N",
+            "tags": ""
         }
     ]
 }
