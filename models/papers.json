@@ -968,15 +968,15 @@
             "tags": ""
         },
         {
-            "year": "",
-            "pub": "",
-            "model": "",
-            "paper": "",
-            "authors": "",
-            "link": "",
-            "company": "",
+            "year": "2021",
+            "pub": "WWW'21",
+            "model": "DCN V2",
+            "paper": "DCN V2: Improved Deep & Cross Network and Practical Lessons for Web-scale Learning to Rank Systems",
+            "authors": "Ruoxi Wang, Rakesh Shivanna, Derek Z. Cheng, Sagar Jain, Dong Lin, Lichan Hong, Ed H. Chi",
+            "link": "https://arxiv.org/abs/2008.13535",
+            "company": "Google",
             "available": "N",
-            "tags": ""
+            "tags": "#Feature Interactions"
         }
     ]
 }
