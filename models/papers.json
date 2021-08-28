@@ -507,7 +507,7 @@
         },
         {
             "year": "2021",
-            "pub": "CIKM'21/DLP-KDD'21",
+            "pub": "CIKM'21",
             "model": "EDCN",
             "paper": "Enhancing Explicit and Implicit Feature Interactions via Information Sharing for Parallel Deep CTR Models",
             "authors": "Bo Chen, Yichao Wang, Zhirong Liu, Ruiming Tang, Wei Guo, Hongkun Zheng, Weiwei Yao, Muyu Zhang and Xiuqiang He",
