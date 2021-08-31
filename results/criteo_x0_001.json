@@ -6,7 +6,7 @@
             "logloss": "0.4491",
             "auc": "0.8022",
             "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
-            "contr": "jimzhu"
+            "contr": "zhujiem"
         },
         {
             "year": "2016",
@@ -15,7 +15,7 @@
             "logloss": "0.4456",
             "auc": "0.8060",
             "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
-            "contr": "jimzhu"
+            "contr": "zhujiem"
         },
         {
             "year": "2021",
@@ -24,7 +24,7 @@
             "logloss": "0.4462",
             "auc": "0.8056",
             "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
-            "contr": "jimzhu"
+            "contr": "zhujiem"
         },
         {
             "year": "2016",
@@ -33,7 +33,7 @@
             "logloss": "0.4382",
             "auc": "0.8136",
             "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
-            "contr": "jimzhu"
+            "contr": "zhujiem"
         },
         {
             "year": "2016",
@@ -42,7 +42,7 @@
             "logloss": "0.4383",
             "auc": "0.8137",
             "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
-            "contr": "jimzhu"
+            "contr": "zhujiem"
         },
         {
             "year": "2017",
@@ -51,7 +51,7 @@
             "logloss": "0.4381",
             "auc": "0.8138",
             "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
-            "contr": "jimzhu"
+            "contr": "zhujiem"
         },
         {
             "year": "2017",
@@ -60,7 +60,7 @@
             "logloss": "0.4379",
             "auc": "0.8141",
             "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
-            "contr": "jimzhu"
+            "contr": "zhujiem"
         },
         {
             "year": "2020",
@@ -69,7 +69,7 @@
             "logloss": "0.4379",
             "auc": "0.8140",
             "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
-            "contr": "jimzhu"
+            "contr": "zhujiem"
         },
         {
             "year": "2007",

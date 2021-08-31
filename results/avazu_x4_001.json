@@ -6,7 +6,7 @@
             "logloss": "0.3815",
             "auc": "0.7775",
             "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
-            "contr": "jimzhu"
+            "contr": "zhujiem"
         },
         {
             "year": "2010",
@@ -15,7 +15,7 @@
             "logloss": "0.3754",
             "auc": "0.7887",
             "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
-            "contr": "jimzhu"
+            "contr": "zhujiem"
         },
         {
             "year": "2015",
@@ -24,7 +24,7 @@
             "logloss": "0.3745",
             "auc": "0.7892",
             "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
-            "contr": "jimzhu"
+            "contr": "zhujiem"
         },
         {
             "year": "2016",
@@ -33,7 +33,7 @@
             "logloss": "0.3754",
             "auc": "0.7891",
             "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
-            "contr": "jimzhu"
+            "contr": "zhujiem"
         },
         {
             "year": "2016",
@@ -42,7 +42,7 @@
             "logloss": "0.3715",
             "auc": "0.7942",
             "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
-            "contr": "jimzhu"
+            "contr": "zhujiem"
         },
         {
             "year": "2016",
@@ -51,7 +51,7 @@
             "logloss": "0.3722",
             "auc": "0.7928",
             "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
-            "contr": "jimzhu"
+            "contr": "zhujiem"
         },
         {
             "year": "2016",
@@ -60,7 +60,7 @@
             "logloss": "0.3720",
             "auc": "0.7929",
             "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
-            "contr": "jimzhu"
+            "contr": "zhujiem"
         },
         {
             "year": "2016",
@@ -69,7 +69,7 @@
             "logloss": "0.3712",
             "auc": "0.7944",
             "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
-            "contr": "jimzhu"
+            "contr": "zhujiem"
         },
         {
             "year": "2016",
@@ -78,7 +78,7 @@
             "logloss": "0.3721",
             "auc": "0.7930",
             "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
-            "contr": "jimzhu"
+            "contr": "zhujiem"
         },
         {
             "year": "2017",
@@ -87,7 +87,7 @@
             "logloss": "0.3743",
             "auc": "0.7894",
             "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
-            "contr": "jimzhu"
+            "contr": "zhujiem"
         },
         {
             "year": "2017",
@@ -96,7 +96,7 @@
             "logloss": "0.3792",
             "auc": "0.7825",
             "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
-            "contr": "jimzhu"
+            "contr": "zhujiem"
         },
         {
             "year": "2017",
@@ -105,7 +105,7 @@
             "logloss": "0.3719",
             "auc": "0.7930",
             "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
-            "contr": "jimzhu"
+            "contr": "zhujiem"
         },
         {
             "year": "2017",
@@ -114,7 +114,7 @@
             "logloss": "0.3779",
             "auc": "0.7840",
             "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
-            "contr": "jimzhu"
+            "contr": "zhujiem"
         },
         {
             "year": "2017",
@@ -123,7 +123,7 @@
             "logloss": "0.3719",
             "auc": "0.7931",
             "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
-            "contr": "jimzhu"
+            "contr": "zhujiem"
         },
         {
             "year": "2018",
@@ -132,7 +132,7 @@
             "logloss": "0.3744",
             "auc": "0.7907",
             "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
-            "contr": "jimzhu"
+            "contr": "zhujiem"
         },
         {
             "year": "2018",
@@ -141,7 +141,7 @@
             "logloss": "0.3742",
             "auc": "0.7894",
             "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
-            "contr": "jimzhu"
+            "contr": "zhujiem"
         },
         {
             "year": "2018",
@@ -150,7 +150,7 @@
             "logloss": "0.3718",
             "auc": "0.7933",
             "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
-            "contr": "jimzhu"
+            "contr": "zhujiem"
         },
         {
             "year": "2019",
@@ -159,7 +159,7 @@
             "logloss": "0.3757",
             "auc": "0.7879",
             "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
-            "contr": "jimzhu"
+            "contr": "zhujiem"
         },
         {
             "year": "2019",
@@ -168,7 +168,7 @@
             "logloss": "0.3714",
             "auc": "0.7944",
             "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
-            "contr": "jimzhu"
+            "contr": "zhujiem"
         },
         {
             "year": "2019",
@@ -177,7 +177,7 @@
             "logloss": "0.3711",
             "auc": "0.7944",
             "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
-            "contr": "jimzhu"
+            "contr": "zhujiem"
         },
         {
             "year": "2019",
@@ -186,7 +186,7 @@
             "logloss": "0.3745",
             "auc": "0.7891",
             "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
-            "contr": "jimzhu"
+            "contr": "zhujiem"
         },
         {
             "year": "2019",
@@ -195,7 +195,7 @@
             "logloss": "0.3746",
             "auc": "0.7902",
             "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
-            "contr": "jimzhu"
+            "contr": "zhujiem"
         },
         {
             "year": "2019",
@@ -204,7 +204,7 @@
             "logloss": "0.3736",
             "auc": "0.7915",
             "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
-            "contr": "jimzhu"
+            "contr": "zhujiem"
         },
         {
             "year": "2020",
@@ -213,7 +213,7 @@
             "logloss": "0.3683",
             "auc": "0.7992",
             "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
-            "contr": "jimzhu"
+            "contr": "zhujiem"
         },
         {
             "year": "2019",
@@ -222,7 +222,7 @@
             "logloss": "0.3705",
             "auc": "0.7953",
             "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
-            "contr": "jimzhu"
+            "contr": "zhujiem"
         },
         {
             "year": "2020",
@@ -231,7 +231,7 @@
             "logloss": "0.3756",
             "auc": "0.7885",
             "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
-            "contr": "jimzhu"
+            "contr": "zhujiem"
         },
         {
             "year": "2020",
@@ -240,7 +240,7 @@
             "logloss": "0.3740",
             "auc": "0.7907",
             "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
-            "contr": "jimzhu"
+            "contr": "zhujiem"
         },
         {
             "year": "2020",
@@ -249,7 +249,7 @@
             "logloss": "0.3726",
             "auc": "0.7929",
             "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
-            "contr": "jimzhu"
+            "contr": "zhujiem"
         },
         {
             "year": "2020",
@@ -258,7 +258,7 @@
             "logloss": "0.3749",
             "auc": "0.7882",
             "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
-            "contr": "jimzhu"
+            "contr": "zhujiem"
         },
         {
             "year": "2020",
@@ -267,7 +267,7 @@
             "logloss": "0.3719",
             "auc": "0.7929",
             "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
-            "contr": "jimzhu"
+            "contr": "zhujiem"
         }
     ]
 }
