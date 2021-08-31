@@ -113,7 +113,6 @@
             "model": "CrossNet",
             "logloss": "0.4456",
             "auc": "0.8060",
-            "link": "",
             "contr": "zhujiem"
         },
         {
