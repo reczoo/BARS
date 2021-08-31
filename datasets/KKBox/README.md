@@ -1,69 +1,50 @@
-# Datasets
+# KKBox
 
-Indexed
-+ [Avazu](#Avazu)
-+ [Criteo](#Criteo)
-+ [KKBox](#KKBox)
-+ [Taobao](#Taobao)
+It is a [WSDM challenge dataset for KKBox's Music Recommendation in 2018](https://www.kaggle.com/c/kkbox-music-recommendation-challenge). The dataset is from [KKBox](https://www.kkbox.com/), Asia's leading music streaming service, holding the world's most comprehensive Asia-Pop music library with over 30 million tracks. 
 
+The task is to predict the chances of a user listening to a song repetitively after the first observable listening event within a time window was triggered. If there are recurring listening event(s) triggered within a month after the user’s very first observable listening event, its target is marked 1, and 0 otherwise in the training set. KKBox provides a training data set consists of information of the first observable listening event for each unique user-song pair within a specific time duration. Metadata of each unique user and song pair is also provided. The train and the test data are selected from users listening history in a given time period, and are split based on time. Note that only the labeled train set of the data is used for benchmarking. 
 
-## Avazu
-[This is a Kaggle dataset for Avazu CTR prediction challenge.](https://www.kaggle.com/c/avazu-ctr-prediction/data) 
+Data fields consist of:
++ target: this is the target variable. target=1 means there are recurring listening event(s) triggered within a month after the user’s very first observable listening event, target=0 otherwise .
++ msno: user id
++ song_id: song id
++ source_system_tab: the name of the tab where the event was triggered. System tabs are used to categorize KKBOX mobile apps functions. For example, tab my library contains functions to manipulate the local storage, and tab search contains functions relating to search.
++ source_screen_name: name of the layout a user sees.
++ source_type: an entry point a user first plays music on mobile apps. An entry point could be album, online-playlist, song, etc.
 
-[Avazu](http://avazuinc.com/home/) is one of the leading mobile advertising platforms globally. This Kaggle competition targets at predicting whether a mobile ad will be clicked and has provided 11 days worth of Avazu data to build and test prediction models. It consists of 10 days of labeled click-through data for training and 1 day of unlabeled ads data for testing. Note that we only use the first 10 days of labeled data as our benchmarking set. 
-
-Data fields:
-+ id: ad identifier
-+ click: 0/1 for non-click/click
-+ hour: format is YYMMDDHH, so 14091123 means 23:00 on Sept. 11, 2014 UTC.
-+ C1 -- anonymized categorical variable
-+ banner_pos
-+ site_id
-+ site_domain
-+ site_category
-+ app_id
-+ app_domain
-+ app_category
-+ device_id
-+ device_ip
-+ device_model
-+ device_type
-+ device_conn_type
-+ C14-C21 -- anonymized categorical variables
-
-### avazu_x4
-Following most of previous work, we randomly split the data into 8:1:1 as the training set, validation set, and test set, respectively. To make it exactly reproducible and easy to compare with existing work, we reuse the code provided by AutoInt and control the random seed (i.e., seed=2018) for splitting. 
-
-Especially, we remove the sample\_id field that is useless for CTR prediction. In addition, we transform and expand the timestamp field into three fields: hour, weekday, and is_weekend. For all categorical fields, we replace infrequent features (min_category_count=2 after tuning) with a default "<UNK>" feature.
-
-+ avazu_x4_001
-  
-  Note that we fix **embedding_dim=16** for fair comparisons.
-  
-+ avazu_x4_002
+Song features:
++ song_length: in ms
++ genre_ids: genre category. Some songs have multiple genres and they are separated by |
++ artist_name
++ composer
++ lyricist
++ language
++ song name: the name of the song.
++ isrc: International Standard Recording Code
+ 
+User features:
++ city
++ bd: age. Note: this column has outlier values, please use your judgement.
++ gender
++ registered_via: registration method
++ registration_init_time: format %Y%m%d
++ expiration_date: format %Y%m%d
 
 
-## Criteo
-[This is a Kaggle dataset for Criteo display advertising challenge.](https://www.kaggle.com/c/criteo-display-ad-challenge/data) 
+## KKBox_x4
 
-[Criteo](https://www.criteo.com/) is a personalized retargeting company that works with Internet retailers to serve personalized online display advertisements to consumers. The goal of this Kaggle challenge is to predict click-through rates on display ads. It offers a week’s worth of data from Criteo's traffic. In the labeled training set over a period of 7 days, each row corresponds to a display ad served by Criteo. The samples are chronologically ordered. Positive (clicked) and negatives (non-clicked) samples have both been subsampled at different rates in order to reduce the dataset size. There are 13 count features and 26 categorical features. The semantic of these features is undisclosed. Some features may have missing values. [The dataset is currently available for downloading at AWS](https://s3-eu-west-1.amazonaws.com/kaggle-display-advertising-challenge-dataset/dac.tar.gz). Note that we only use the labeled part of data as our benchmarking set. 
+This dataset is randomly split into 8:1:1 as the training set, validation set, and test set, respectively. To make it reproducible, we reuse part of the code provided by AutoInt and control the random seed (i.e., seed=2018) for splitting. 
 
-Data fields:
-+ Label - Target variable that indicates if an ad was clicked (1) or not (0).
-+ I1-I13 - A total of 13 columns of integer features (mostly count features).
-+ C1-C26 - A total of 26 columns of categorical features. The values of these features have been hashed onto 32 bits for anonymization purposes. 
++ Reproducing steps:
+  + Step1: Download the [raw data](https://www.kaggle.com/c/kkbox-music-recommendation-challenge/data).
+  + Step2: Split the data using [the script](./KKBox_x4/split_kkbox_x4.py).
+
+
+### KKBox_x4_001
+
+In this setting, For all categorical fields, we replace infrequent features with a default ``<OOV>`` token by setting the threshold min_category_count=10. 
+
+To make a fair comparison, we fix **embedding_dim=128**, which performs well.
 
   
-### criteo_x4
-Following most of previous work, we randomly split the data into 8:1:1 as the training set, validation set, and test set, respectively. To make it exactly reproducible and easy to compare with existing work, we reuse the code provided by AutoInt and control the random seed (i.e., seed=2018) for splitting. 
-
-+ criteo_x4_001
-+ criteo_x4_002
-
-  
-## Taobao
-
-
-
-
 

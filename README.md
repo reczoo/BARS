@@ -1,8 +1,6 @@
 ## Open-CTR-Benchmark
 
 
-
-
 ### Models
 
 
