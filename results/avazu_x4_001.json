@@ -5,7 +5,7 @@
             "model": "LR",
             "logloss": "0.3815",
             "auc": "0.7775",
-            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
+            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/LR/LR_Avazu_x4_001.md",
             "contr": "zhujiem"
         },
         {
@@ -32,7 +32,7 @@
             "model": "HOFM",
             "logloss": "0.3754",
             "auc": "0.7891",
-            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
+            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/HOFM/HOFM_Avazu_x4_001.md",
             "contr": "zhujiem"
         },
         {
@@ -50,7 +50,7 @@
             "model": "YoutubeDNN",
             "logloss": "0.3722",
             "auc": "0.7928",
-            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
+            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/YoutubeDNN/YoutubeDNN_Avazu_x4_001.md",
             "contr": "zhujiem"
         },
         {
@@ -59,16 +59,16 @@
             "model": "WideDeep",
             "logloss": "0.3720",
             "auc": "0.7929",
-            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
+            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/WideDeep/WideDeep_Avazu_x4_001.md",
             "contr": "zhujiem"
         },
         {
             "year": "2016",
             "pub": "ICDM'16",
-            "model": "PNN",
+            "model": "IPNN",
             "logloss": "0.3712",
             "auc": "0.7944",
-            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
+            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/IPNN/IPNN_Avazu_x4_001.md",
             "contr": "zhujiem"
         },
         {
@@ -86,7 +86,7 @@
             "model": "NFM",
             "logloss": "0.3743",
             "auc": "0.7894",
-            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
+            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/NFM/NFM_Avazu_x4_001.md",
             "contr": "zhujiem"
         },
         {
@@ -149,7 +149,7 @@
             "model": "xDeepFM",
             "logloss": "0.3718",
             "auc": "0.7933",
-            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
+            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/xDeepFM/xDeepFM_Avazu_x4_001.md",
             "contr": "zhujiem"
         },
         {
@@ -158,7 +158,7 @@
             "model": "HFM",
             "logloss": "0.3757",
             "auc": "0.7879",
-            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
+            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/HFM/HFM_Avazu_x4_001.md",
             "contr": "zhujiem"
         },
         {
@@ -167,7 +167,7 @@
             "model": "HFM+",
             "logloss": "0.3714",
             "auc": "0.7944",
-            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
+            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/HFM+/HFM+_Avazu_x4_001.md",
             "contr": "zhujiem"
         },
         {
@@ -212,7 +212,7 @@
             "model": "ONN",
             "logloss": "0.3683",
             "auc": "0.7992",
-            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
+            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/ONN/ONN_Avazu_x4_001.md",
             "contr": "zhujiem"
         },
         {

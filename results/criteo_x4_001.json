@@ -32,7 +32,7 @@
             "model": "HOFM",
             "logloss": "0.4411",
             "auc": "0.8107",
-            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
+            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/HOFM/HOFM_Criteo_x4_001.md",
             "contr": "zhujiem"
         },
         {
@@ -50,7 +50,7 @@
             "model": "YoutubeDNN",
             "logloss": "0.4380",
             "auc": "0.8140",
-            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
+            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/YoutubeDNN/YoutubeDNN_Criteo_x4_001.md",
             "contr": "zhujiem"
         },
         {
@@ -59,16 +59,16 @@
             "model": "WideDeep",
             "logloss": "0.4377",
             "auc": "0.8142",
-            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
+            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/WideDeep/WideDeep_Criteo_x4_001.md",
             "contr": "zhujiem"
         },
         {
             "year": "2016",
             "pub": "ICDM'16",
-            "model": "PNN",
+            "model": "IPNN",
             "logloss": "0.4378",
             "auc": "0.8142",
-            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
+            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/IPNN/IPNN_Criteo_x4_001.md",
             "contr": "zhujiem"
         },
         {
@@ -86,7 +86,7 @@
             "model": "NFM",
             "logloss": "0.4424",
             "auc": "0.8093",
-            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
+            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/NFM/NFM_Criteo_x4_001.md",
             "contr": "zhujiem"
         },
         {
@@ -149,7 +149,7 @@
             "model": "xDeepFM",
             "logloss": "0.4376",
             "auc": "0.8143",
-            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
+            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/xDeepFM/xDeepFM_Criteo_x4_001.md",
             "contr": "zhujiem"
         },
         {
@@ -158,7 +158,7 @@
             "model": "HFM",
             "logloss": "0.4424",
             "auc": "0.8095",
-            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
+            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/HFM/HFM_Criteo_x4_001.md",
             "contr": "zhujiem"
         },
         {
@@ -167,7 +167,7 @@
             "model": "HFM+",
             "logloss": "0.4392",
             "auc": "0.8127",
-            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
+            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/HFM+/HFM+_Criteo_x4_001.md",
             "contr": "zhujiem"
         },
         {
@@ -210,9 +210,9 @@
             "year": "2020",
             "pub": "Neural Networks'20",
             "model": "ONN",
-            "logloss": "0.4368",
-            "auc": "0.8152",
-            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
+            "logloss": "0.4372",
+            "auc": "0.8148",
+            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/ONN/ONN_Criteo_x4_001.md",
             "contr": "zhujiem"
         },
         {
@@ -230,7 +230,7 @@
             "model": "LorentzFM",
             "logloss": "0.4434",
             "auc": "0.8083",
-            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
+            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/LorentzFM/LorentzFM_Criteo_x4_001.md",
             "contr": "zhujiem"
         },
         {
@@ -257,7 +257,7 @@
             "model": "InterHAt",
             "logloss": "0.4414",
             "auc": "0.8104",
-            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
+            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/InterHAt/InterHAt_Criteo_x4_001.md",
             "contr": "zhujiem"
         }
     ]
