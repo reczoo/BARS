@@ -189,7 +189,7 @@ To make a fair comparison, we fix embedding_dim=16 as with AutoInt.
 2020-06-14 05:00:38,184 P11780 INFO --- 3235/3235 batches finished ---
 2020-06-14 05:00:38,289 P11780 INFO Train loss: 0.348203
 2020-06-14 05:00:38,289 P11780 INFO Training finished.
-2020-06-14 05:00:38,289 P11780 INFO Load best model: /home/zhujieming/xxx/OpenCTR1030/benchmarks/Avazu/FM_avazu/min2/avazu_x4_3bbbc4c9/FM_avazu_x4_3bbbc4c9_003_e720ce1f_model.ckpt
+2020-06-14 05:00:38,289 P11780 INFO Load best model: /home/xxx/xxx/OpenCTR1030/benchmarks/Avazu/FM_avazu/min2/avazu_x4_3bbbc4c9/FM_avazu_x4_3bbbc4c9_003_e720ce1f_model.ckpt
 2020-06-14 05:00:38,743 P11780 INFO ****** Train/validation evaluation ******
 2020-06-14 05:01:03,038 P11780 INFO [Metrics] logloss: 0.375271 - AUC: 0.788845
 2020-06-14 05:01:03,079 P11780 INFO ******** Test evaluation ********
