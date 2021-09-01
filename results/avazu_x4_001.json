@@ -14,7 +14,7 @@
             "model": "FM",
             "logloss": "0.3754",
             "auc": "0.7887",
-            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
+            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/FM/FM_Avazu_x4_001.md",
             "contr": "zhujiem"
         },
         {
@@ -23,7 +23,7 @@
             "model": "CCPM",
             "logloss": "0.3745",
             "auc": "0.7892",
-            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
+            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/CCPM/CCPM_Avazu_x4_001.md",
             "contr": "zhujiem"
         },
         {
@@ -41,7 +41,7 @@
             "model": "FFM",
             "logloss": "0.3715",
             "auc": "0.7942",
-            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
+            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/FFM/FFM_Avazu_x4_001.md",
             "contr": "zhujiem"
         },
         {
@@ -77,7 +77,7 @@
             "model": "DeepCross",
             "logloss": "0.3721",
             "auc": "0.7930",
-            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
+            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/DeepCross/DeepCross_Avazu_x4_001.md",
             "contr": "zhujiem"
         },
         {
@@ -95,7 +95,7 @@
             "model": "AFM",
             "logloss": "0.3792",
             "auc": "0.7825",
-            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
+            "link": "",
             "contr": "zhujiem"
         },
         {
@@ -104,7 +104,7 @@
             "model": "DeepFM",
             "logloss": "0.3719",
             "auc": "0.7930",
-            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
+            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/DeepFM/DeepFM_Avazu_x4_001.md",
             "contr": "zhujiem"
         },
         {
@@ -113,7 +113,7 @@
             "model": "CrossNet",
             "logloss": "0.3779",
             "auc": "0.7840",
-            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
+            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/CrossNet/CrossNet_Avazu_x4_001.md",
             "contr": "zhujiem"
         },
         {
@@ -122,7 +122,7 @@
             "model": "DCN",
             "logloss": "0.3719",
             "auc": "0.7931",
-            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
+            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/DCN/DCN_Avazu_x4_001.md",
             "contr": "zhujiem"
         },
         {
@@ -131,7 +131,7 @@
             "model": "FwFM",
             "logloss": "0.3744",
             "auc": "0.7907",
-            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
+            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/FwFM/FwFM_Avazu_x4_001.md",
             "contr": "zhujiem"
         },
         {
@@ -140,7 +140,7 @@
             "model": "CIN",
             "logloss": "0.3742",
             "auc": "0.7894",
-            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
+            "link": "",
             "contr": "zhujiem"
         },
         {
@@ -176,7 +176,7 @@
             "model": "FGCNN",
             "logloss": "0.3711",
             "auc": "0.7944",
-            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
+            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/FGCNN/FGCNN_Avazu_x4_001.md",
             "contr": "zhujiem"
         },
         {
@@ -185,7 +185,7 @@
             "model": "AutoInt",
             "logloss": "0.3745",
             "auc": "0.7891",
-            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
+            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/AutoInt/AutoInt_Avazu_x4_001.md",
             "contr": "zhujiem"
         },
         {
@@ -194,7 +194,7 @@
             "model": "AutoInt+",
             "logloss": "0.3746",
             "auc": "0.7902",
-            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
+            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/AutoInt+/AutoInt+_Avazu_x4_001.md",
             "contr": "zhujiem"
         },
         {
@@ -203,7 +203,7 @@
             "model": "FiGNN",
             "logloss": "0.3736",
             "auc": "0.7915",
-            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
+            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/FiGNN/FiGNN_Avazu_x4_001.md",
             "contr": "zhujiem"
         },
         {
@@ -221,7 +221,7 @@
             "model": "FiBiNET",
             "logloss": "0.3705",
             "auc": "0.7953",
-            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
+            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/FiBiNET/FiBiNET_Avazu_x4_001.md",
             "contr": "zhujiem"
         },
         {
@@ -239,7 +239,7 @@
             "model": "AFN",
             "logloss": "0.3740",
             "auc": "0.7907",
-            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
+            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/AFN/AFN_Avazu_x4_001.md",
             "contr": "zhujiem"
         },
         {
@@ -248,7 +248,7 @@
             "model": "AFN+",
             "logloss": "0.3726",
             "auc": "0.7929",
-            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
+            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/AFN+/AFN+_Avazu_x4_001.md",
             "contr": "zhujiem"
         },
         {
@@ -266,7 +266,7 @@
             "model": "FLEN",
             "logloss": "0.3719",
             "auc": "0.7929",
-            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
+            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/FLEN/FLEN_Avazu_x4_001.md",
             "contr": "zhujiem"
         }
     ]

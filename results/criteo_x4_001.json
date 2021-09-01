@@ -176,7 +176,7 @@
             "model": "FGCNN",
             "logloss": "0.4398",
             "auc": "0.8121",
-            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
+            "link": "",
             "contr": "zhujiem"
         },
         {
