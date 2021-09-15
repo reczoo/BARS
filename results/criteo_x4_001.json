@@ -5,16 +5,16 @@
             "model": "LR",
             "logloss": "0.4568",
             "auc": "0.7934",
-            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
+            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/LR/LR_Criteo_x4_001.md",
             "contr": "zhujiem"
         },
         {
             "year": "2010",
             "pub": "ICDM'10",
             "model": "FM",
-            "logloss": "0.4430",
-            "auc": "0.8087",
-            "link": "",
+            "logloss": "0.4431",
+            "auc": "0.8086",
+            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/FM/FM_Criteo_x4_001.md",
             "contr": "zhujiem"
         },
         {
@@ -111,9 +111,9 @@
             "year": "2017",
             "pub": "ADKDD'17",
             "model": "CrossNet",
-            "logloss": "0.4456",
-            "auc": "0.8060",
-            "link": "",
+            "logloss": "0.4458",
+            "auc": "0.8058",
+            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/CrossNet/CrossNet_Criteo_x4_001.md",
             "contr": "zhujiem"
         },
         {
@@ -129,9 +129,9 @@
             "year": "2018",
             "pub": "WWW'18",
             "model": "FwFM",
-            "logloss": "0.4407",
+            "logloss": "0.4408",
             "auc": "0.8112",
-            "link": "",
+            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/FwFM/FwFM_Criteo_x4_001.md",
             "contr": "zhujiem"
         },
         {
@@ -176,7 +176,7 @@
             "model": "FGCNN",
             "logloss": "0.4398",
             "auc": "0.8121",
-            "link": "",
+            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/FGCNN/FGCNN_Criteo_x4_001.md",
             "contr": "zhujiem"
         },
         {

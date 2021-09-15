@@ -33,41 +33,37 @@ This dataset split follows the setting in the AutoInt work. Specifically, we ran
 
 ### Results
 ```python
-[Metrics] logloss: 0.440225 - AUC: 0.811513
+[Metrics] logloss: 0.445791 - AUC: 0.805756
 ```
 
 
 ### Logs
 ```python
-2020-07-24 02:25:36,558 P13372 INFO {
-    "afn_activations": "relu",
-    "afn_dropout": "0.2",
-    "afn_hidden_units": "[1000, 1000, 1000, 1000]",
-    "batch_norm": "True",
+2021-09-09 01:48:21,492 P5328 INFO {
+    "batch_norm": "False",
     "batch_size": "10000",
+    "crossing_layers": "8",
     "data_format": "h5",
     "data_root": "../data/Criteo/",
-    "dataset_id": "criteo_x4_5c863b0f",
+    "dataset_id": "criteo_x4_9ea3bdfc",
     "debug": "False",
     "dnn_activations": "relu",
-    "dnn_dropout": "0",
-    "dnn_hidden_units": "[]",
+    "dnn_hidden_units": "None",
     "embedding_dim": "16",
     "embedding_dropout": "0",
-    "embedding_regularizer": "1e-06",
-    "ensemble_dnn": "False",
+    "embedding_regularizer": "1e-05",
     "epochs": "100",
     "every_x_epochs": "1",
     "gpu": "1",
     "learning_rate": "0.001",
-    "logarithmic_neurons": "1200",
     "loss": "binary_crossentropy",
     "metrics": "['logloss', 'AUC']",
-    "model": "AFN",
-    "model_id": "AFN_criteo_x4_5c863b0f_012_363a38e8",
-    "model_root": "./Criteo/AFN_criteo/min10/",
+    "model": "DCN",
+    "model_id": "DCN_criteo_x4_9ea3bdfc_019_2683e720",
+    "model_root": "./Criteo/CrossNet_criteo_x4_001/",
     "monitor": "{'AUC': 1, 'logloss': -1}",
     "monitor_mode": "max",
+    "net_dropout": "0",
     "net_regularizer": "0",
     "optimizer": "adam",
     "patience": "2",
@@ -76,72 +72,149 @@ This dataset split follows the setting in the AutoInt work. Specifically, we ran
     "seed": "2019",
     "shuffle": "True",
     "task": "binary_classification",
-    "test_data": "../data/Criteo/criteo_x4_5c863b0f/test.h5",
-    "train_data": "../data/Criteo/criteo_x4_5c863b0f/train.h5",
+    "test_data": "../data/Criteo/criteo_x4_9ea3bdfc/test.h5",
+    "train_data": "../data/Criteo/criteo_x4_9ea3bdfc/train.h5",
     "use_hdf5": "True",
-    "valid_data": "../data/Criteo/criteo_x4_5c863b0f/valid.h5",
-    "verbose": "1",
+    "valid_data": "../data/Criteo/criteo_x4_9ea3bdfc/valid.h5",
+    "verbose": "0",
     "version": "pytorch",
     "workers": "3"
 }
-2020-07-24 02:25:36,559 P13372 INFO Set up feature encoder...
-2020-07-24 02:25:36,559 P13372 INFO Load feature_map from json: ../data/Criteo/criteo_x4_5c863b0f/feature_map.json
-2020-07-24 02:25:40,655 P13372 INFO Total number of parameters: 36833607.
-2020-07-24 02:25:40,655 P13372 INFO Loading data...
-2020-07-24 02:25:40,657 P13372 INFO Loading data from h5: ../data/Criteo/criteo_x4_5c863b0f/train.h5
-2020-07-24 02:25:50,773 P13372 INFO Loading data from h5: ../data/Criteo/criteo_x4_5c863b0f/valid.h5
-2020-07-24 02:25:54,459 P13372 INFO Train samples: total/36672493, pos/9396350, neg/27276143, ratio/25.62%
-2020-07-24 02:25:54,702 P13372 INFO Validation samples: total/4584062, pos/1174544, neg/3409518, ratio/25.62%
-2020-07-24 02:25:54,703 P13372 INFO Loading train data done.
-2020-07-24 02:26:37,624 P13372 INFO Start training: 3668 batches/epoch
-2020-07-24 02:26:37,624 P13372 INFO ************ Epoch=1 start ************
-2020-07-24 02:48:16,994 P13372 INFO [Metrics] logloss: 0.450781 - AUC: 0.800109
-2020-07-24 02:48:16,997 P13372 INFO Save best model: monitor(max): 0.349328
-2020-07-24 02:48:17,153 P13372 INFO --- 3668/3668 batches finished ---
-2020-07-24 02:48:17,269 P13372 INFO Train loss: 0.460929
-2020-07-24 02:48:17,269 P13372 INFO ************ Epoch=1 end ************
-2020-07-24 03:09:56,141 P13372 INFO [Metrics] logloss: 0.444814 - AUC: 0.806515
-2020-07-24 03:09:56,142 P13372 INFO Save best model: monitor(max): 0.361701
-2020-07-24 03:09:56,410 P13372 INFO --- 3668/3668 batches finished ---
-2020-07-24 03:09:56,535 P13372 INFO Train loss: 0.450058
-2020-07-24 03:09:56,535 P13372 INFO ************ Epoch=2 end ************
-2020-07-24 03:31:30,987 P13372 INFO [Metrics] logloss: 0.442434 - AUC: 0.809230
-2020-07-24 03:31:30,998 P13372 INFO Save best model: monitor(max): 0.366796
-2020-07-24 03:31:32,805 P13372 INFO --- 3668/3668 batches finished ---
-2020-07-24 03:31:32,970 P13372 INFO Train loss: 0.446568
-2020-07-24 03:31:32,970 P13372 INFO ************ Epoch=3 end ************
-2020-07-24 03:53:20,605 P13372 INFO [Metrics] logloss: 0.441153 - AUC: 0.810500
-2020-07-24 03:53:20,606 P13372 INFO Save best model: monitor(max): 0.369346
-2020-07-24 03:53:20,890 P13372 INFO --- 3668/3668 batches finished ---
-2020-07-24 03:53:21,021 P13372 INFO Train loss: 0.444205
-2020-07-24 03:53:21,021 P13372 INFO ************ Epoch=4 end ************
-2020-07-24 04:14:47,960 P13372 INFO [Metrics] logloss: 0.440639 - AUC: 0.811021
-2020-07-24 04:14:47,962 P13372 INFO Save best model: monitor(max): 0.370382
-2020-07-24 04:14:48,259 P13372 INFO --- 3668/3668 batches finished ---
-2020-07-24 04:14:48,388 P13372 INFO Train loss: 0.442115
-2020-07-24 04:14:48,388 P13372 INFO ************ Epoch=5 end ************
-2020-07-24 04:36:21,514 P13372 INFO [Metrics] logloss: 0.440984 - AUC: 0.810871
-2020-07-24 04:36:21,515 P13372 INFO Monitor(max) STOP: 0.369887 !
-2020-07-24 04:36:21,515 P13372 INFO Reduce learning rate on plateau: 0.000100
-2020-07-24 04:36:21,515 P13372 INFO --- 3668/3668 batches finished ---
-2020-07-24 04:36:21,628 P13372 INFO Train loss: 0.439794
-2020-07-24 04:36:21,628 P13372 INFO ************ Epoch=6 end ************
-2020-07-24 04:57:57,204 P13372 INFO [Metrics] logloss: 0.442888 - AUC: 0.809799
-2020-07-24 04:57:57,205 P13372 INFO Monitor(max) STOP: 0.366912 !
-2020-07-24 04:57:57,205 P13372 INFO Reduce learning rate on plateau: 0.000010
-2020-07-24 04:57:57,205 P13372 INFO Early stopping at epoch=7
-2020-07-24 04:57:57,205 P13372 INFO --- 3668/3668 batches finished ---
-2020-07-24 04:57:57,327 P13372 INFO Train loss: 0.428021
-2020-07-24 04:57:57,327 P13372 INFO Training finished.
-2020-07-24 04:57:57,327 P13372 INFO Load best model: /home/xxx/xxx/OpenCTR1030/benchmarks/Criteo/AFN_criteo/min10/criteo_x4_5c863b0f/AFN_criteo_x4_5c863b0f_012_363a38e8_model.ckpt
-2020-07-24 04:57:57,537 P13372 INFO ****** Train/validation evaluation ******
-2020-07-24 05:06:23,618 P13372 INFO [Metrics] logloss: 0.427785 - AUC: 0.825324
-2020-07-24 05:07:17,836 P13372 INFO [Metrics] logloss: 0.440639 - AUC: 0.811021
-2020-07-24 05:07:17,876 P13372 INFO ******** Test evaluation ********
-2020-07-24 05:07:17,876 P13372 INFO Loading data...
-2020-07-24 05:07:17,877 P13372 INFO Loading data from h5: ../data/Criteo/criteo_x4_5c863b0f/test.h5
-2020-07-24 05:07:20,996 P13372 INFO Test samples: total/4584062, pos/1174544, neg/3409518, ratio/25.62%
-2020-07-24 05:07:20,996 P13372 INFO Loading test data done.
-2020-07-24 05:08:20,419 P13372 INFO [Metrics] logloss: 0.440225 - AUC: 0.811513
+2021-09-09 01:48:21,493 P5328 INFO Set up feature encoder...
+2021-09-09 01:48:21,493 P5328 INFO Load feature_map from json: ../data/Criteo/criteo_x4_9ea3bdfc/feature_map.json
+2021-09-09 01:48:21,818 P5328 INFO Total number of parameters: 14581937.
+2021-09-09 01:48:21,818 P5328 INFO Loading data...
+2021-09-09 01:48:21,821 P5328 INFO Loading data from h5: ../data/Criteo/criteo_x4_9ea3bdfc/train.h5
+2021-09-09 01:48:27,659 P5328 INFO Loading data from h5: ../data/Criteo/criteo_x4_9ea3bdfc/valid.h5
+2021-09-09 01:48:29,833 P5328 INFO Train samples: total/36672493, pos/9396350, neg/27276143, ratio/25.62%
+2021-09-09 01:48:29,956 P5328 INFO Validation samples: total/4584062, pos/1174544, neg/3409518, ratio/25.62%
+2021-09-09 01:48:29,956 P5328 INFO Loading train data done.
+2021-09-09 01:48:33,030 P5328 INFO Start training: 3668 batches/epoch
+2021-09-09 01:48:33,030 P5328 INFO ************ Epoch=1 start ************
+2021-09-09 01:54:17,337 P5328 INFO [Metrics] logloss: 0.458623 - AUC: 0.791963
+2021-09-09 01:54:17,338 P5328 INFO Save best model: monitor(max): 0.333339
+2021-09-09 01:54:17,529 P5328 INFO --- 3668/3668 batches finished ---
+2021-09-09 01:54:17,559 P5328 INFO Train loss: 0.466079
+2021-09-09 01:54:17,559 P5328 INFO ************ Epoch=1 end ************
+2021-09-09 02:00:03,207 P5328 INFO [Metrics] logloss: 0.452876 - AUC: 0.797554
+2021-09-09 02:00:03,211 P5328 INFO Save best model: monitor(max): 0.344678
+2021-09-09 02:00:03,274 P5328 INFO --- 3668/3668 batches finished ---
+2021-09-09 02:00:03,316 P5328 INFO Train loss: 0.460098
+2021-09-09 02:00:03,316 P5328 INFO ************ Epoch=2 end ************
+2021-09-09 02:05:47,628 P5328 INFO [Metrics] logloss: 0.452030 - AUC: 0.798566
+2021-09-09 02:05:47,631 P5328 INFO Save best model: monitor(max): 0.346536
+2021-09-09 02:05:47,695 P5328 INFO --- 3668/3668 batches finished ---
+2021-09-09 02:05:47,739 P5328 INFO Train loss: 0.457809
+2021-09-09 02:05:47,739 P5328 INFO ************ Epoch=3 end ************
+2021-09-09 02:11:31,160 P5328 INFO [Metrics] logloss: 0.451567 - AUC: 0.799339
+2021-09-09 02:11:31,162 P5328 INFO Save best model: monitor(max): 0.347771
+2021-09-09 02:11:31,224 P5328 INFO --- 3668/3668 batches finished ---
+2021-09-09 02:11:31,256 P5328 INFO Train loss: 0.457189
+2021-09-09 02:11:31,256 P5328 INFO ************ Epoch=4 end ************
+2021-09-09 02:17:14,284 P5328 INFO [Metrics] logloss: 0.450927 - AUC: 0.799837
+2021-09-09 02:17:14,287 P5328 INFO Save best model: monitor(max): 0.348909
+2021-09-09 02:17:14,348 P5328 INFO --- 3668/3668 batches finished ---
+2021-09-09 02:17:14,379 P5328 INFO Train loss: 0.456812
+2021-09-09 02:17:14,379 P5328 INFO ************ Epoch=5 end ************
+2021-09-09 02:22:58,558 P5328 INFO [Metrics] logloss: 0.450809 - AUC: 0.800043
+2021-09-09 02:22:58,560 P5328 INFO Save best model: monitor(max): 0.349235
+2021-09-09 02:22:58,619 P5328 INFO --- 3668/3668 batches finished ---
+2021-09-09 02:22:58,651 P5328 INFO Train loss: 0.456476
+2021-09-09 02:22:58,651 P5328 INFO ************ Epoch=6 end ************
+2021-09-09 02:28:42,568 P5328 INFO [Metrics] logloss: 0.450543 - AUC: 0.800371
+2021-09-09 02:28:42,569 P5328 INFO Save best model: monitor(max): 0.349828
+2021-09-09 02:28:42,631 P5328 INFO --- 3668/3668 batches finished ---
+2021-09-09 02:28:42,670 P5328 INFO Train loss: 0.456244
+2021-09-09 02:28:42,671 P5328 INFO ************ Epoch=7 end ************
+2021-09-09 02:34:29,136 P5328 INFO [Metrics] logloss: 0.450127 - AUC: 0.800721
+2021-09-09 02:34:29,137 P5328 INFO Save best model: monitor(max): 0.350594
+2021-09-09 02:34:29,200 P5328 INFO --- 3668/3668 batches finished ---
+2021-09-09 02:34:29,241 P5328 INFO Train loss: 0.456028
+2021-09-09 02:34:29,241 P5328 INFO ************ Epoch=8 end ************
+2021-09-09 02:40:19,769 P5328 INFO [Metrics] logloss: 0.449966 - AUC: 0.800832
+2021-09-09 02:40:19,771 P5328 INFO Save best model: monitor(max): 0.350866
+2021-09-09 02:40:19,838 P5328 INFO --- 3668/3668 batches finished ---
+2021-09-09 02:40:19,877 P5328 INFO Train loss: 0.455840
+2021-09-09 02:40:19,877 P5328 INFO ************ Epoch=9 end ************
+2021-09-09 02:46:03,858 P5328 INFO [Metrics] logloss: 0.449815 - AUC: 0.801137
+2021-09-09 02:46:03,861 P5328 INFO Save best model: monitor(max): 0.351321
+2021-09-09 02:46:03,924 P5328 INFO --- 3668/3668 batches finished ---
+2021-09-09 02:46:03,963 P5328 INFO Train loss: 0.455670
+2021-09-09 02:46:03,963 P5328 INFO ************ Epoch=10 end ************
+2021-09-09 02:51:47,079 P5328 INFO [Metrics] logloss: 0.449570 - AUC: 0.801344
+2021-09-09 02:51:47,081 P5328 INFO Save best model: monitor(max): 0.351773
+2021-09-09 02:51:47,143 P5328 INFO --- 3668/3668 batches finished ---
+2021-09-09 02:51:47,175 P5328 INFO Train loss: 0.455534
+2021-09-09 02:51:47,176 P5328 INFO ************ Epoch=11 end ************
+2021-09-09 02:57:30,445 P5328 INFO [Metrics] logloss: 0.449525 - AUC: 0.801554
+2021-09-09 02:57:30,446 P5328 INFO Save best model: monitor(max): 0.352029
+2021-09-09 02:57:30,505 P5328 INFO --- 3668/3668 batches finished ---
+2021-09-09 02:57:30,545 P5328 INFO Train loss: 0.455421
+2021-09-09 02:57:30,546 P5328 INFO ************ Epoch=12 end ************
+2021-09-09 03:03:14,849 P5328 INFO [Metrics] logloss: 0.449469 - AUC: 0.801492
+2021-09-09 03:03:14,851 P5328 INFO Monitor(max) STOP: 0.352023 !
+2021-09-09 03:03:14,851 P5328 INFO Reduce learning rate on plateau: 0.000100
+2021-09-09 03:03:14,851 P5328 INFO --- 3668/3668 batches finished ---
+2021-09-09 03:03:14,885 P5328 INFO Train loss: 0.455300
+2021-09-09 03:03:14,885 P5328 INFO ************ Epoch=13 end ************
+2021-09-09 03:08:58,593 P5328 INFO [Metrics] logloss: 0.446740 - AUC: 0.804486
+2021-09-09 03:08:58,594 P5328 INFO Save best model: monitor(max): 0.357746
+2021-09-09 03:08:58,653 P5328 INFO --- 3668/3668 batches finished ---
+2021-09-09 03:08:58,685 P5328 INFO Train loss: 0.448421
+2021-09-09 03:08:58,685 P5328 INFO ************ Epoch=14 end ************
+2021-09-09 03:14:44,160 P5328 INFO [Metrics] logloss: 0.446391 - AUC: 0.804974
+2021-09-09 03:14:44,164 P5328 INFO Save best model: monitor(max): 0.358583
+2021-09-09 03:14:44,235 P5328 INFO --- 3668/3668 batches finished ---
+2021-09-09 03:14:44,269 P5328 INFO Train loss: 0.446174
+2021-09-09 03:14:44,269 P5328 INFO ************ Epoch=15 end ************
+2021-09-09 03:20:28,785 P5328 INFO [Metrics] logloss: 0.446119 - AUC: 0.805211
+2021-09-09 03:20:28,788 P5328 INFO Save best model: monitor(max): 0.359092
+2021-09-09 03:20:28,856 P5328 INFO --- 3668/3668 batches finished ---
+2021-09-09 03:20:28,888 P5328 INFO Train loss: 0.445136
+2021-09-09 03:20:28,888 P5328 INFO ************ Epoch=16 end ************
+2021-09-09 03:26:12,058 P5328 INFO [Metrics] logloss: 0.446092 - AUC: 0.805343
+2021-09-09 03:26:12,059 P5328 INFO Save best model: monitor(max): 0.359251
+2021-09-09 03:26:12,124 P5328 INFO --- 3668/3668 batches finished ---
+2021-09-09 03:26:12,164 P5328 INFO Train loss: 0.444364
+2021-09-09 03:26:12,164 P5328 INFO ************ Epoch=17 end ************
+2021-09-09 03:31:56,217 P5328 INFO [Metrics] logloss: 0.446087 - AUC: 0.805373
+2021-09-09 03:31:56,220 P5328 INFO Save best model: monitor(max): 0.359286
+2021-09-09 03:31:56,286 P5328 INFO --- 3668/3668 batches finished ---
+2021-09-09 03:31:56,318 P5328 INFO Train loss: 0.443731
+2021-09-09 03:31:56,318 P5328 INFO ************ Epoch=18 end ************
+2021-09-09 03:37:41,144 P5328 INFO [Metrics] logloss: 0.446072 - AUC: 0.805355
+2021-09-09 03:37:41,147 P5328 INFO Monitor(max) STOP: 0.359284 !
+2021-09-09 03:37:41,147 P5328 INFO Reduce learning rate on plateau: 0.000010
+2021-09-09 03:37:41,147 P5328 INFO --- 3668/3668 batches finished ---
+2021-09-09 03:37:41,180 P5328 INFO Train loss: 0.443202
+2021-09-09 03:37:41,180 P5328 INFO ************ Epoch=19 end ************
+2021-09-09 03:43:25,692 P5328 INFO [Metrics] logloss: 0.446078 - AUC: 0.805390
+2021-09-09 03:43:25,693 P5328 INFO Save best model: monitor(max): 0.359312
+2021-09-09 03:43:25,758 P5328 INFO --- 3668/3668 batches finished ---
+2021-09-09 03:43:25,789 P5328 INFO Train loss: 0.440875
+2021-09-09 03:43:25,790 P5328 INFO ************ Epoch=20 end ************
+2021-09-09 03:49:11,903 P5328 INFO [Metrics] logloss: 0.446179 - AUC: 0.805324
+2021-09-09 03:49:11,906 P5328 INFO Monitor(max) STOP: 0.359145 !
+2021-09-09 03:49:11,906 P5328 INFO Reduce learning rate on plateau: 0.000001
+2021-09-09 03:49:11,906 P5328 INFO --- 3668/3668 batches finished ---
+2021-09-09 03:49:11,951 P5328 INFO Train loss: 0.440623
+2021-09-09 03:49:11,951 P5328 INFO ************ Epoch=21 end ************
+2021-09-09 03:54:57,568 P5328 INFO [Metrics] logloss: 0.446175 - AUC: 0.805327
+2021-09-09 03:54:57,569 P5328 INFO Monitor(max) STOP: 0.359152 !
+2021-09-09 03:54:57,569 P5328 INFO Reduce learning rate on plateau: 0.000001
+2021-09-09 03:54:57,569 P5328 INFO Early stopping at epoch=22
+2021-09-09 03:54:57,569 P5328 INFO --- 3668/3668 batches finished ---
+2021-09-09 03:54:57,600 P5328 INFO Train loss: 0.440268
+2021-09-09 03:54:57,600 P5328 INFO Training finished.
+2021-09-09 03:54:57,600 P5328 INFO Load best model: /cache/FuxiCTR/benchmarks/Criteo/CrossNet_criteo_x4_001/criteo_x4_9ea3bdfc/DCN_criteo_x4_9ea3bdfc_019_2683e720_model.ckpt
+2021-09-09 03:54:57,671 P5328 INFO ****** Train/validation evaluation ******
+2021-09-09 03:55:22,640 P5328 INFO [Metrics] logloss: 0.446078 - AUC: 0.805390
+2021-09-09 03:55:22,718 P5328 INFO ******** Test evaluation ********
+2021-09-09 03:55:22,718 P5328 INFO Loading data...
+2021-09-09 03:55:22,718 P5328 INFO Loading data from h5: ../data/Criteo/criteo_x4_9ea3bdfc/test.h5
+2021-09-09 03:55:23,632 P5328 INFO Test samples: total/4584062, pos/1174544, neg/3409518, ratio/25.62%
+2021-09-09 03:55:23,632 P5328 INFO Loading test data done.
+2021-09-09 03:55:49,555 P5328 INFO [Metrics] logloss: 0.445791 - AUC: 0.805756
+
 
 ```
