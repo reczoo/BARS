@@ -178,7 +178,7 @@ In this setting, we follow the AFN work to fix embedding_dim=16, batch_size=4096
 2020-12-30 05:04:12,971 P34601 INFO --- 8058/8058 batches finished ---
 2020-12-30 05:04:13,303 P34601 INFO Train loss: 0.431000
 2020-12-30 05:04:13,303 P34601 INFO Training finished.
-2020-12-30 05:04:13,303 P34601 INFO Load best model: /home/zhujieming/zhujieming/FuxiCTR/benchmarks/Criteo/DNN_criteo_x0/criteo_x0_ace9c1b9/DNN_criteo_x0_012_ad22ff24_model.ckpt
+2020-12-30 05:04:13,303 P34601 INFO Load best model: /home/xxx/xxx/FuxiCTR/benchmarks/Criteo/DNN_criteo_x0/criteo_x0_ace9c1b9/DNN_criteo_x0_012_ad22ff24_model.ckpt
 2020-12-30 05:04:13,704 P34601 INFO ****** Train/validation evaluation ******
 2020-12-30 05:05:54,928 P34601 INFO [Metrics] logloss: 0.438638 - AUC: 0.813258
 2020-12-30 05:05:55,223 P34601 INFO ******** Test evaluation ********
