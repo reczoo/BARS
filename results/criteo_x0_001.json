@@ -23,7 +23,7 @@
             "model": "FmFM",
             "logloss": "0.4462",
             "auc": "0.8056",
-            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
+            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/FmFM/FmFM_Criteo_x0_001.md",
             "contr": "zhujiem"
         },
         {
@@ -32,7 +32,7 @@
             "model": "YoutubeDNN",
             "logloss": "0.4382",
             "auc": "0.8136",
-            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
+            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/YoutubeDNN/YoutubeDNN_Criteo_x0_001.md",
             "contr": "zhujiem"
         },
         {
@@ -41,7 +41,7 @@
             "model": "IPNN(rerun)",
             "logloss": "0.4383",
             "auc": "0.8137",
-            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
+            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/IPNN/IPNN_Criteo_x0_001.md",
             "contr": "zhujiem"
         },
         {
@@ -50,7 +50,7 @@
             "model": "DeepFM(rerun)",
             "logloss": "0.4381",
             "auc": "0.8138",
-            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
+            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/DeepFM/DeepFM_Criteo_x0_001.md",
             "contr": "zhujiem"
         },
         {
@@ -59,7 +59,7 @@
             "model": "DCN(rerun)",
             "logloss": "0.4379",
             "auc": "0.8141",
-            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
+            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/DCN/DCN_Criteo_x0_001.md",
             "contr": "zhujiem"
         },
         {
@@ -68,7 +68,7 @@
             "model": "DeepIM",
             "logloss": "0.4379",
             "auc": "0.8140",
-            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
+            "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/DeepIM/DeepIM_Criteo_x0_001.md",
             "contr": "zhujiem"
         },
         {
