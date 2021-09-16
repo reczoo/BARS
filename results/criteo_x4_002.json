@@ -12,8 +12,8 @@
             "year": "2010",
             "pub": "ICDM'10",
             "model": "FM",
-            "logloss": "0.4443",
-            "auc": "0.8080",
+            "logloss": "0.4445",
+            "auc": "0.8078",
             "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
             "contr": "zhujiem"
         },
