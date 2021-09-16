@@ -3,7 +3,7 @@
             "year": "2007",
             "pub": "WWW'07",
             "model": "LR",
-            "logloss": "0.4565",
+            "logloss": "0.4566",
             "auc": "0.7936",
             "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
             "contr": "zhujiem"
@@ -147,8 +147,8 @@
             "year": "2018",
             "pub": "KDD'18",
             "model": "xDeepFM",
-            "logloss": "0.4378",
-            "auc": "0.8143",
+            "logloss": "0.4375",
+            "auc": "0.8144",
             "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
             "contr": "zhujiem"
         },
@@ -193,7 +193,7 @@
             "pub": "Neural Networks'20",
             "model": "ONN",
             "logloss": "0.4381",
-            "auc": "0.8142",
+            "auc": "0.8141",
             "link": "https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/benchmarks/default.md",
             "contr": "zhujiem"
         },
