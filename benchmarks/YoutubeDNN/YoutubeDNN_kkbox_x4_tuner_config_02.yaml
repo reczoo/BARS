@@ -1,0 +1,21 @@
+base_config: ../config/
+base_expid: DNN_kkbox_x4
+
+dataset_config:
+    kkbox_x4_001_c5c9c6e3:
+        data_format: h5
+        data_root: '../data/KKBox/'
+        train_data: ../data/KKBox/kkbox_x4_001_c5c9c6e3/train.h5
+        valid_data: ../data/KKBox/kkbox_x4_001_c5c9c6e3/valid.h5
+        test_data: ../data/KKBox/kkbox_x4_001_c5c9c6e3/test.h5
+
+tuner_space:
+    model_root: './KKBox/DNN_kkbox/'
+    embedding_dim: 128
+    learning_rate: 1.e-3
+    embedding_dim: 128
+    hidden_units: [[1000, 1000], [1000, 1000, 1000], [1000, 1000, 1000, 1000]]
+    embedding_regularizer: [1.e-4, 5.e-4, 1.e-3]
+    net_dropout: [0.2, 0.3, 0.4, 0.5]
+    batch_size: 10000
+    seed: 2019
