@@ -1,0 +1,27 @@
+base_config: ../config/
+base_expid: AFN_avazu_x4
+
+dataset_config:
+    avazu_x4_001_d45ad60e:
+        data_format: h5
+        data_root: '../data/Avazu/'
+        train_data: ../data/Avazu/avazu_x4_001_d45ad60e/train.h5
+        valid_data: ../data/Avazu/avazu_x4_001_d45ad60e/valid.h5
+        test_data: ../data/Avazu/avazu_x4_001_d45ad60e/test.h5
+
+tuner_space:
+    model_root: './Avazu/AFN_avazu/'
+    embedding_regularizer: 1.0e-08
+    batch_size: 10000
+    embedding_dim: 20 # use 20 due to two seperate embeddings
+    logarithmic_neurons: 1200
+    afn_hidden_units: [[1000, 1000, 1000]]
+    afn_activations: relu
+    afn_dropout: 0
+    ensemble_dnn: True
+    dnn_hidden_units: [[1000, 1000, 1000]]
+    dnn_activations: relu
+    dnn_dropout: 0
+    batch_norm: True
+    seed: [658895, 382107, 2019]
+
