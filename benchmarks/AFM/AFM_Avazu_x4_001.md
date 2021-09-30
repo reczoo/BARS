@@ -47,12 +47,3 @@ To make a fair comparison, we fix embedding_dim=16 as with AutoInt.
   python run_param_tuner.py --config YOUR_PATH/AFM_avazu_x4_tuner_config_01.yaml --tag 008 --gpu 0
   ```
 
-
-### Results
-```python
-```
-
-
-### Logs
-```
-```
