@@ -27,9 +27,26 @@ Author: [XUEPAI Team](https://github.com/xue-pai)
 In this setting, we preprocess the data split by removing the id field that is useless for CTR prediction. In addition, we transform the timestamp field into three fields: hour, weekday, and is_weekend. For all categorical fields, we filter infrequent features by setting the threshold min_category_count=1 and replace them with a default <OOV> token. Note that we found that min_category_count=1 performs the best, which is surprising.
 
 We fix embedding_dim=40 following the existing FGCNN work.
+  
+  
 ### Code
+1. Install FuxiCTR
+You need to install FuxiCTR via `pip install fuxictr==1.0` to get all dependencies ready.
+Then download [the FuxiCTR repository](https://github.com/huawei-noah/benchmark/archive/53e314461c19dbc7f462b42bf0f0bfae020dc398.zip) to your local path.
 
+2. Downalod the dataset and run [the preprocessing script](https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/datasets/Avazu/Avazu_x4/split_avazu_x4.py) for data splitting. 
 
+3. Download the hyper-parameter configuration file: [AFM_avazu_x4_tuner_config_02.yaml](./AFM_avazu_x4_tuner_config_02.yaml)
+
+4. Run the following script to reproduce the result. 
+  + --config: The config file that defines the tuning space
+  + --tag: Specify which expid to run (each expid corresponds to a specific setting of hyper-parameters in the tunner space)
+  + --gpu: The available gpus for parameters tuning.
+
+  ```bash
+  cd FuxiCTR/benchmarks
+  python run_param_tuner.py --config YOUR_PATH/AFM_avazu_x4_tuner_config_02.yaml --tag 009 --gpu 0
+  ```
 
 
 ### Results
