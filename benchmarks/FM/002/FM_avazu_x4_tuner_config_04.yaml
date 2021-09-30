@@ -1,0 +1,19 @@
+base_config: ../config/
+base_expid: FM_avazu_x4
+
+dataset_config:
+    avazu_x4_001_d45ad60e:
+        data_format: h5
+        data_root: '../data/Avazu/'
+        train_data: ../data/Avazu/avazu_x4_001_d45ad60e/train.h5
+        valid_data: ../data/Avazu/avazu_x4_001_d45ad60e/valid.h5
+        test_data: ../data/Avazu/avazu_x4_001_d45ad60e/test.h5
+
+tuner_space:
+    model_root: './Avazu/FM_avazu/'
+    embedding_dim: 40
+    regularizer: 0
+    batch_size: 5000
+    learning_rate: 1.e-3
+    seed: [658895, 382107, 2019]
+    every_x_epochs: 1

@@ -1,0 +1,16 @@
+base_config: ../config/
+base_setting: WideDeep_avazu_x4
+
+tuner_space:
+    model_dir: './WideDeep_avazu/'
+    min_categr_count: 1
+    seed: 2019
+    dropout_rates: [0, 0.1]
+    embedding_regularizer: [0, 'l2(1.e-8)', 'l2(1.e-7)']
+    batch_size: 10000
+    hidden_units: [[500, 500, 500], [700, 700, 700], [1000, 1000, 1000], 
+                   [500, 500, 500, 500], [700, 700, 700, 700], [1000, 1000, 1000, 1000],
+                   [500, 500, 500, 500, 500], [700, 700, 700, 700, 700], [1000, 1000, 1000, 1000, 1000]]
+
+             
+

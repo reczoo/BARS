@@ -1,0 +1,10 @@
+base_config: ../config/
+base_setting: LR_avazu_x4
+
+tuner_space:
+    model_dir: './LR_avazu/'
+    min_categr_count: 1
+    regularizer: ['l1(1.e-8)', 'l2(1.e-8)', 'l1_l2(1.e-8, 1.e-8)']
+    batch_size: [10000, 20000]
+    seed: 2019
+

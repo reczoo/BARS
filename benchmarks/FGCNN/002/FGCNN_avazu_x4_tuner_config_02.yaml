@@ -1,0 +1,28 @@
+base_config: ../config/
+base_expid: FGCNN_avazu_x4
+
+dataset_config:
+    avazu_x4_001_d45ad60e:
+        data_format: h5
+        data_root: '../data/Avazu/'
+        train_data: ../data/Avazu/avazu_x4_001_d45ad60e/train.h5
+        valid_data: ../data/Avazu/avazu_x4_001_d45ad60e/valid.h5
+        test_data: ../data/Avazu/avazu_x4_001_d45ad60e/test.h5
+
+tuner_space:
+    model_root: './Avazu/FGCNN_avazu/'
+    embedding_dim: 20
+    share_embedding: False
+    embedding_regularizer: ['l2(1.e-5)', 'l2(1.e-6)', 'l2(1.e-7)', 0]
+    net_dropout: [0.2, 0]
+    channels: [[14, 16, 18, 20]]
+    kernel_heights: [[7, 7, 7, 7], [9, 9, 9, 9]]
+    pooling_sizes: [[2, 2, 2, 2]]
+    recombined_channels: [[3, 3, 3, 3]]
+    conv_activation: Tanh
+    conv_batch_norm: True
+    dnn_hidden_units: [[4096, 2048, 1024, 512], [4096, 2048, 1024, 512, 256], [1000, 1000, 1000, 1000]]
+    dnn_batch_norm: False
+    learning_rate: 1.e-3
+    batch_size: 2000
+    seed: 2019

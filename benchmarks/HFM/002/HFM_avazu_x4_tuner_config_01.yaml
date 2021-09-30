@@ -1,0 +1,22 @@
+base_config: ../config/
+base_expid: HFM_avazu_x4
+
+dataset_config:
+    avazu_x4_001_d45ad60e:
+        data_format: h5
+        data_root: '../data/Avazu/'
+        train_data: ../data/Avazu/avazu_x4_001_d45ad60e/train.h5
+        valid_data: ../data/Avazu/avazu_x4_001_d45ad60e/valid.h5
+        test_data: ../data/Avazu/avazu_x4_001_d45ad60e/test.h5
+
+tuner_space:
+    model_root: './Avazu/HFM_avazu/'
+    embedding_dim: 40
+    use_dnn: False
+    interaction_type: ['circular_convolution', 'circular_correlation', 'hadamard_product']
+    embedding_regularizer: [0, 1.e-9, 1.e-8]
+    learning_rate: 1.e-3
+    batch_size: 5000
+    seed: 2019
+
+

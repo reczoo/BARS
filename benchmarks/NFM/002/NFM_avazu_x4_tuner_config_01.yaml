@@ -1,0 +1,15 @@
+base_config: ../config/
+base_setting: NFM_avazu_x4
+
+tuner_space:
+    model_dir: './DeepFM_avazu/'
+    min_categr_count: 1
+    seed: 2019
+    dropout_rates: [0, 0.1]
+    embedding_regularizer: [0, 'l2(1.e-9)', 'l2(1.e-8)']
+    batch_size: 10000
+    hidden_units: [[100, 100, 100], [300, 300, 300], [500, 500, 500], [700, 700, 700], [1000, 1000, 1000]]
+    layer_norm: False
+
+             
+

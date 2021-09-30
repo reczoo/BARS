@@ -1,0 +1,28 @@
+base_config: ../config/
+base_expid: AFN_base
+dataset_id: avazu_x4_3bbbc4c9
+
+dataset_config:
+    avazu_x4_3bbbc4c9:
+        data_format: h5
+        data_root: '../data/Avazu/'
+        train_data: ../data/Avazu/avazu_x4_3bbbc4c9/train.h5
+        valid_data: ../data/Avazu/avazu_x4_3bbbc4c9/valid.h5
+        test_data: ../data/Avazu/avazu_x4_3bbbc4c9/test.h5
+
+tuner_space:
+    model_root: './Avazu/AFN_avazu/min2/'
+    embedding_dim: 16
+    embedding_regularizer: [1.e-8, 1.e-9]
+    logarithmic_neurons: 1200
+    afn_hidden_units: [[1000, 1000]]
+    afn_activations: relu
+    afn_dropout: [0, 0.1]
+    ensemble_dnn: False
+    dnn_hidden_units: [[]]
+    dnn_activations: relu
+    dnn_dropout: 0
+    batch_norm: True
+    batch_size: 2000
+    seed: 2019
+

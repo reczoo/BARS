@@ -1,0 +1,21 @@
+base_config: ../config/
+base_expid: CCPM_avazu_x4
+dataset_id: avazu_x4_001_74410863
+
+dataset_config:
+    avazu_x4_001_74410863:
+        data_format: h5
+        data_root: '../data/Avazu/'
+        train_data: ../data/Avazu/avazu_x4_001_74410863/train.h5
+        valid_data: ../data/Avazu/avazu_x4_001_74410863/valid.h5
+        test_data: ../data/Avazu/avazu_x4_001_74410863/test.h5
+
+tuner_space:
+    model_root: './Avazu/CCPM_avazu/'
+    embedding_dim: 40
+    embedding_regularizer: [0, 1.e-8]
+    learning_rate: 1.e-3
+    channels: [[4, 4, 2], [4, 4, 4], [8, 8, 8], [16, 16, 16], [16, 32, 64], [64, 128, 256], [128, 256, 512]]
+    kernel_heights: [[6, 5, 3], [3, 3, 3], [5, 5, 5], [7, 7, 7], [7, 5, 3]]
+    batch_size: 10000
+    seed: 2019
