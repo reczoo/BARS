@@ -1,0 +1,24 @@
+base_config: ../config/
+base_expid: FiGNN_base
+dataset_id: avazu_x4_3bbbc4c9
+
+dataset_config:
+    avazu_x4_3bbbc4c9:
+        data_format: h5
+        data_root: '../data/Avazu/'
+        train_data: ../data/Avazu/avazu_x4_3bbbc4c9/train.h5
+        valid_data: ../data/Avazu/avazu_x4_3bbbc4c9/valid.h5
+        test_data: ../data/Avazu/avazu_x4_3bbbc4c9/test.h5
+
+tuner_space:
+    model_root: './Avazu/FiGNN_avazu/min2/'
+    embedding_dim: 16
+    learning_rate: 1.e-3
+    embedding_regularizer: [1.e-6, 1.e-5]
+    net_regularizer: 0
+    gnn_layers: [8, 9, 10]
+    use_residual: True
+    use_gru: False
+    reuse_graph_layer: False
+    batch_size: 10000
+    seed: 2019

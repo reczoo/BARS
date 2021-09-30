@@ -32,8 +32,6 @@ To make a fair comparison, we fix embedding_dim=16 as with AutoInt.
 ### Code
 
 
-
-
 ### Results
 ```python
 [Metrics] logloss: 0.377924 - AUC: 0.783962
