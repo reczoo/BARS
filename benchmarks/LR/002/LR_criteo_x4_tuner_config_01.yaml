@@ -1,0 +1,11 @@
+base_config: ../config/
+base_setting: LR_criteo_x4
+
+tuner_space:
+    model_dir: './LR_criteo/'
+    min_categr_count: [1, 5, 10]
+    regularizer: [0, 'l2(1.e-7)', 'l2(1.e-8)', 'l2(1.e-9)']
+    learning_rate: 1.e-3
+    batch_size: 10000
+    seed: 2019
+

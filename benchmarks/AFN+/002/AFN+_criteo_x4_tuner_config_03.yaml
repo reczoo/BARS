@@ -1,0 +1,28 @@
+base_config: ../config/
+base_expid: AFN_criteo_x4
+
+dataset_config:
+    criteo_x4_001_be98441d:
+        data_format: h5
+        data_root: '../data/Criteo/'
+        train_data: ../data/Criteo/criteo_x4_001_be98441d/train.h5
+        valid_data: ../data/Criteo/criteo_x4_001_be98441d/valid.h5
+        test_data: ../data/Criteo/criteo_x4_001_be98441d/test.h5
+
+tuner_space:
+    model_root: './Criteo/AFN_criteo/'
+    learning_rate: 1.e-3
+    embedding_regularizer: [1.e-5, 3.e-6, 1.e-6, 3.e-7]
+    batch_size: 2000
+    embedding_dim: 20 # use 20 due to two seperate embeddings
+    logarithmic_neurons: 1500
+    afn_hidden_units: [[400, 400, 400]]
+    afn_activations: relu
+    afn_dropout: [0.1, 0.2]
+    ensemble_dnn: True
+    dnn_hidden_units: [[1000, 1000, 1000, 1000], [400, 400, 400, 400]]
+    dnn_activations: relu
+    dnn_dropout: 0
+    batch_norm: True
+    seed: 2019
+

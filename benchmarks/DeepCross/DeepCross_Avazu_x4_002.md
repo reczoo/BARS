@@ -34,7 +34,7 @@ We fix embedding_dim=40 following the existing FGCNN work.
 
 2. Downalod the dataset and run [the preprocessing script](https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/datasets/Avazu/Avazu_x4/split_avazu_x4.py) for data splitting. 
 
-3. Download the hyper-parameter configuration file: [DeepCross_avazu_x4_tuner_config_01.yaml](./DeepCrossing_avazu_x4_tuner_config_01.yaml)
+3. Download the hyper-parameter configuration file: [DeepCross_avazu_x4_tuner_config_01.yaml](./002/DeepCross_avazu_x4_tuner_config_01.yaml)
 
 4. Run the following script to reproduce the result. 
   + --config: The config file that defines the tuning space
@@ -43,7 +43,7 @@ We fix embedding_dim=40 following the existing FGCNN work.
 
   ```bash
   cd FuxiCTR/benchmarks
-  python run_param_tuner.py --config YOUR_PATH/002/DeepCrossing_avazu_x4_tuner_config_01.yaml --tag 040 --gpu 0
+  python run_param_tuner.py --config YOUR_PATH/002/DeepCross_avazu_x4_tuner_config_01.yaml --tag 040 --gpu 0
   ```
   
 ### Results

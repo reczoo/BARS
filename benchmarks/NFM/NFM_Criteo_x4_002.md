@@ -28,10 +28,23 @@ In this setting, we follow the winner's solution of the Criteo challenge to disc
 
 We fix embedding_dim=40 in this setting.
 ### Code
+1. Install FuxiCTR
+  
+    Install FuxiCTR via `pip install fuxictr==1.0` to get all dependencies ready. Then download [the FuxiCTR repository](https://github.com/huawei-noah/benchmark/archive/53e314461c19dbc7f462b42bf0f0bfae020dc398.zip) to your local path.
 
+2. Downalod the dataset and run [the preprocessing script](https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/datasets/Criteo/Criteo_x4/split_criteo_x4.py) for data splitting. 
 
+3. Download the hyper-parameter configuration file: [NFM_criteo_x4_tuner_config_01.yaml](./002/NFM_criteo_x4_tuner_config_01.yaml)
 
+4. Run the following script to reproduce the result. 
+  + --config: The config file that defines the tuning space
+  + --tag: Specify which expid to run (each expid corresponds to a specific setting of hyper-parameters in the tunner space)
+  + --gpu: The available gpus for parameters tuning.
 
+  ```bash
+  cd FuxiCTR/benchmarks
+  python run_param_tuner.py --config YOUR_PATH/002/NFM_criteo_x4_tuner_config_01.yaml --tag 023 --gpu 0
+  ```
 ### Results
 ```python
 [Metrics] logloss: 0.444309 - AUC: 0.807179

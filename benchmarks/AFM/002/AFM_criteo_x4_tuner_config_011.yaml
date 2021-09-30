@@ -1,0 +1,16 @@
+base_config: ../config/
+base_expid: AFM_criteo_x4
+
+tuner_space:
+    model_root: './Criteo/AFM_criteo/'
+    min_categr_count: 2
+    seed: 2019
+    embedding_regularizer: [0, 'l2(1.e-6)', 'l2(1.e-5)', 'l2(1.e-4)']
+    net_regularizer: 0
+    batch_size: 10000
+    embedding_dim: 40
+    attention_dim: [40, 80]
+    attention_dropout: [0, 0.1, 0.3, 0.5]
+
+
+             

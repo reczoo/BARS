@@ -1,0 +1,26 @@
+base_config: ../config/
+base_expid: FiBiNET_criteo_x4
+
+dataset_config:
+    criteo_x4_001_be98441d:
+        data_format: h5
+        data_root: '../data/Criteo/'
+        train_data: ../data/Criteo/criteo_x4_001_be98441d/train.h5
+        valid_data: ../data/Criteo/criteo_x4_001_be98441d/valid.h5
+        test_data: ../data/Criteo/criteo_x4_001_be98441d/test.h5
+
+tuner_space:
+    model_root: './Criteo/FiBiNET_criteo/'
+    learning_rate: 1.e-3
+    seed: 2019
+    embedding_regularizer: ['l2(1.e-7)', 'l2(1.e-6)', 'l2(1.e-5)']
+    batch_size: 5000
+    hidden_units: [[4096, 2048, 1024, 512, 256], [2000, 2000, 2000, 2000, 2000], 
+                   [1000, 1000, 1000, 1000], [1000, 1000, 1000, 1000, 1000],
+                   [2000, 2000, 2000, 2000], [4096, 2048, 1024, 512]]
+    bilinear_type: "field_interaction"
+    embedding_dim: 40
+
+
+             
+

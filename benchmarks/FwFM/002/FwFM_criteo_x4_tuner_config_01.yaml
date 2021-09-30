@@ -1,0 +1,11 @@
+base_config: ../config/
+base_expid: FwFM_criteo_x4
+
+tuner_space:
+    model_root: './Criteo/FwFM_criteo/'
+    min_categr_count: 2
+    embedding_dim: 40
+    regularizer: [0, 1.e-9, 1.e-8, 1.e-6]
+    linear_type: [FiLV, LW, FeLV]
+    batch_size: 5000
+    seed: 2019

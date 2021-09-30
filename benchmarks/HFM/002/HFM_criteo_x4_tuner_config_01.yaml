@@ -1,0 +1,24 @@
+base_config: ../config/
+base_expid: HFM_criteo_x4
+dataset_id: criteo_x4_001_be98441d
+
+dataset_config:
+    criteo_x4_001_be98441d:
+        data_format: h5
+        data_root: '../data/Criteo/'
+        train_data: ../data/Criteo/criteo_x4_001_be98441d/train.h5
+        valid_data: ../data/Criteo/criteo_x4_001_be98441d/valid.h5
+        test_data: ../data/Criteo/criteo_x4_001_be98441d/test.h5
+
+tuner_space:
+    model_root: './Criteo/HFM_criteo/'
+    embedding_dim: 40
+    use_dnn: False
+    interaction_type: ['circular_convolution', 'circular_correlation']
+    embedding_regularizer: ['l2(1.e-4)', 'l2(1.e-5)', 'l2(1.e-6)', 'l2(1.e-7)', 'l2(1.e-8)']
+    batch_norm: False
+    learning_rate: 1.e-3
+    batch_size: 5000
+    seed: 2019
+
+
