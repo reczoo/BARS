@@ -1,0 +1,24 @@
+base_config: ../config/
+base_expid: AFM_base
+dataset_id: criteo_x4_5c863b0f
+
+dataset_config:
+    criteo_x4_5c863b0f:
+        data_format: h5
+        data_root: '../data/Criteo/'
+        train_data: ../data/Criteo/criteo_x4_5c863b0f/train.h5
+        valid_data: ../data/Criteo/criteo_x4_5c863b0f/valid.h5
+        test_data: ../data/Criteo/criteo_x4_5c863b0f/test.h5
+
+tuner_space:
+    model_root: './Criteo/AFM_criteo/min10/'
+    embedding_dim: 16
+    embedding_regularizer: [0, 1.e-8, 1.e-7, 1.e-6, 1.e-5]
+    attention_dim: [16, 32, 64]
+    attention_dropout: [[0, 0]]
+    learning_rate: 1.e-3
+    batch_size: 10000
+    seed: 2019
+
+
+             

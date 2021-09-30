@@ -30,6 +30,24 @@ To make a fair comparison, we fix embedding_dim=16 as with AutoInt.
 
 
 ### Code
+1. Install FuxiCTR
+  
+    Install FuxiCTR via `pip install fuxictr==1.0` to get all dependencies ready. Then download [the FuxiCTR repository](https://github.com/huawei-noah/benchmark/archive/53e314461c19dbc7f462b42bf0f0bfae020dc398.zip) to your local path.
+
+2. Downalod the dataset and run [the preprocessing script](https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/datasets/Criteo/Criteo_x4/split_criteo_x4.py) for data splitting. 
+
+3. Download the hyper-parameter configuration file: [LR_criteo_x4_tuner_config_01.yaml](./LR_criteo_x4_tuner_config_01.yaml)
+
+4. Run the following script to reproduce the result. 
+  + --config: The config file that defines the tuning space
+  + --tag: Specify which expid to run (each expid corresponds to a specific setting of hyper-parameters in the tunner space)
+  + --gpu: The available gpus for parameters tuning.
+
+  ```bash
+  cd FuxiCTR/benchmarks
+  python run_param_tuner.py --config YOUR_PATH/LR_criteo_x4_tuner_config_01.yaml --tag 003 --gpu 0
+  ```
+
 
 
 
@@ -169,6 +187,5 @@ To make a fair comparison, we fix embedding_dim=16 as with AutoInt.
 2021-09-08 12:30:53,715 P512 INFO Test samples: total/4584062, pos/1174544, neg/3409518, ratio/25.62%
 2021-09-08 12:30:53,715 P512 INFO Loading test data done.
 2021-09-08 12:31:16,538 P512 INFO [Metrics] logloss: 0.456754 - AUC: 0.793359
-
 
 ```

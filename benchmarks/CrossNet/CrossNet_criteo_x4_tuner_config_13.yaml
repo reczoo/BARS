@@ -1,0 +1,22 @@
+base_config: ../config/
+base_expid: DCN_base
+dataset_id: criteo_x4_9ea3bdfc
+
+dataset_config:
+    criteo_x4_9ea3bdfc:
+        data_format: h5
+        data_root: '../data/Criteo/'
+        train_data: ../data/Criteo/criteo_x4_9ea3bdfc/train.h5
+        valid_data: ../data/Criteo/criteo_x4_9ea3bdfc/valid.h5
+        test_data: ../data/Criteo/criteo_x4_9ea3bdfc/test.h5
+
+tuner_space:
+    model_root: './Criteo/CrossNet_criteo_x4_001/'
+    embedding_dim: 16
+    learning_rate: 1.e-3
+    crossing_layers: [8, 9, 7, 6, 5, 4]
+    dnn_hidden_units: null
+    embedding_regularizer: [5.e-6, 1.e-6, 5.e-5, 1.e-5, 1.e-4]
+    batch_size: 10000
+    seed: 2019
+

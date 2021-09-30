@@ -27,6 +27,24 @@ Author: [XUEPAI Team](https://github.com/xue-pai)
 This dataset split follows the setting in the AutoInt work. Specifically, we randomly split the data into 8:1:1 as the training set, validation set, and test set, respectively. To make it exactly reproducible, we reuse the code provided by AutoInt and control the random seed (i.e., seed=2018) for splitting.
 
 ### Code
+1. Install FuxiCTR
+  
+    Install FuxiCTR via `pip install fuxictr==1.0` to get all dependencies ready. Then download [the FuxiCTR repository](https://github.com/huawei-noah/benchmark/archive/53e314461c19dbc7f462b42bf0f0bfae020dc398.zip) to your local path.
+
+2. Downalod the dataset and run [the preprocessing script](https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/datasets/Criteo/Criteo_x4/split_criteo_x4.py) for data splitting. 
+
+3. Download the hyper-parameter configuration file: [AutoInt_criteo_x4_tuner_config_11.yaml](./AutoInt_criteo_x4_tuner_config_11.yaml)
+
+4. Run the following script to reproduce the result. 
+  + --config: The config file that defines the tuning space
+  + --tag: Specify which expid to run (each expid corresponds to a specific setting of hyper-parameters in the tunner space)
+  + --gpu: The available gpus for parameters tuning.
+
+  ```bash
+  cd FuxiCTR/benchmarks
+  python run_param_tuner.py --config YOUR_PATH/AutoInt_criteo_x4_tuner_config_11.yaml --tag 024 --gpu 0
+  ```
+
 
 
 
