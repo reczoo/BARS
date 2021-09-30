@@ -31,8 +31,8 @@ We fix embedding_dim=40 following the existing FGCNN work.
   
 ### Code
 1. Install FuxiCTR
-You need to install FuxiCTR via `pip install fuxictr==1.0` to get all dependencies ready.
-Then download [the FuxiCTR repository](https://github.com/huawei-noah/benchmark/archive/53e314461c19dbc7f462b42bf0f0bfae020dc398.zip) to your local path.
+  
+    Install FuxiCTR via `pip install fuxictr==1.0` to get all dependencies ready. Then download [the FuxiCTR repository](https://github.com/huawei-noah/benchmark/archive/53e314461c19dbc7f462b42bf0f0bfae020dc398.zip) to your local path.
 
 2. Downalod the dataset and run [the preprocessing script](https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/datasets/Avazu/Avazu_x4/split_avazu_x4.py) for data splitting. 
 
