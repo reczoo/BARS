@@ -34,7 +34,7 @@ To make a fair comparison, we fix embedding_dim=16 as with AutoInt.
 
 2. Downalod the dataset and run [the preprocessing script](https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/datasets/Criteo/Criteo_x4/split_criteo_x4.py) for data splitting. 
 
-3. Download the hyper-parameter configuration file: [**.yaml](./002/**.yaml)
+3. Download the hyper-parameter configuration file: [AutoInt+_criteo_x4_tuner_config_03.yaml](./002/AutoInt+_criteo_x4_tuner_config_03.yaml)
 
 4. Run the following script to reproduce the result. 
   + --config: The config file that defines the tuning space
@@ -43,7 +43,7 @@ To make a fair comparison, we fix embedding_dim=16 as with AutoInt.
 
   ```bash
   cd FuxiCTR/benchmarks
-  python run_param_tuner.py --config YOUR_PATH/002/**.yaml --tag ** --gpu 0
+  python run_param_tuner.py --config YOUR_PATH/002/AutoInt+_criteo_x4_tuner_config_03.yaml --tag 003 --gpu 0
   ```
 
 ### Results
