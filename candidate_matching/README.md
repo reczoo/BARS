@@ -1,4 +1,4 @@
-# BARS-Match-Benchmark
+# BARS-Candidate-Matching
 
 Open Benchmarking for Candidate Item Matching: https://openbenchmark.github.io/candidate-matching
 

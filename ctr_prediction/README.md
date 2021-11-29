@@ -4,7 +4,7 @@ This repo presents open benchmarking for CTR Prediction: https://openbenchmark.g
 
 + [Models](#Models-Available)
 + [Datasets](#Benchmark-Datasets)
-+ [Libraries](#Recommended-Libraries)
++ [Tools](#Recommended-Tools)
 
 
 ## Models Available
@@ -46,7 +46,7 @@ The following models have been benchmarked with open-source code and detailed re
 
 ## Benchmark Datasets
 
-| Dataset   | Dataset Split (ID)    | Benchmark Setting (ID)     |  Used by                           |
+| Dataset   | Dataset Split   | Benchmark Setting     |  Used by                           |
 |:-----------|:--------------------|:------------------------|:---------------------------------------------|
 | [Criteo](./datasets/Criteo)    | [Criteo_x1](./datasets/Criteo/README.md#Criteo_x1)          | [Criteo_x1_001](./datasets/Criteo/README.md#Criteo_x1_001)          |  [Cheng et al., AAAI'20](https://ojs.aaai.org/index.php/AAAI/article/view/5768)     |
 |           | [Criteo_x2](./datasets/Criteo/README.md#Criteo_x2)          | [Criteo_x2_001](./datasets/Criteo/README.md#Criteo_x2_001)          |  [Liu et al., SIGIR'20](https://dl.acm.org/doi/abs/10.1145/3397271.3401082)    |
@@ -66,7 +66,7 @@ The following models have been benchmarked with open-source code and detailed re
 | [Movielens](./datasets/Movielens) | [MovielensLatest_x1](./datasets/Movielens/README.md#MovielensLatest_x1) | [MovielensLatest_x1_001](./datasets/Movielens/README.md#MovielensLatest_x1_001) | [Cheng et al., AAAI'20](https://ojs.aaai.org/index.php/AAAI/article/view/5768)  |
 
 
-## Recommended Libraries
+## Recommended Tools
 
 + FuxiCTR (pytorch): https://github.com/xue-pai/FuxiCTR
 + DeepCTR (tensorflow): https://github.com/shenweichen/DeepCTR
