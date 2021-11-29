@@ -1,0 +1,133 @@
+{
+    "data": [{
+            "year": "2007",
+            "pub": "WWW'07",
+            "model": "LR",
+            "logloss": "0.4386",
+            "auc": "0.6619",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/LR/LR_microvideo1.7m_x1_001",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2010",
+            "pub": "ICDM'10",
+            "model": "FM",
+            "logloss": "0.4148",
+            "auc": "0.7201",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/FM/FM_microvideo1.7m_x1_001",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2016",
+            "pub": "RecSys'16",
+            "model": "YoutubeDNN",
+            "logloss": "0.4111",
+            "auc": "0.7345",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/YoutubeDNN/YoutubeDNN_microvideo1.7m_x1_001",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2019",
+            "pub": "CIKM'19",
+            "model": "AutoInt+",
+            "logloss": " 0.4097",
+            "auc": " 0.7346",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/AutoInt+/AutoInt+_microvideo1.7m_x1_001",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2017",
+            "pub": "IJCAI'17",
+            "model": "DeepFM",
+            "logloss": "0.4104",
+            "auc": "0.7340",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/DeepFM/DeepFM+_microvideo1.7m_x1_001",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2020",
+            "pub": "CIKM'17",
+            "model": "DeepIM",
+            "logloss": "0.4110",
+            "auc": "0.7378",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/DeepIM/DeepIM_microvideo1.7m_x1_001",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2017",
+            "pub": "ADKDD'17",
+            "model": "DCN",
+            "logloss": "0.4112",
+            "auc": "0.7349",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/DCN/DCN_microvideo1.7m_x1_001",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2016",
+            "pub": "RecSys'16",
+            "model": "FFM",
+            "logloss": "0.4182",
+            "auc": "0.7237",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/FFM/FFM_microvideo1.7m_x1_001",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2021",
+            "pub": "WWW'21",
+            "model": "FmFM",
+            "logloss": "0.4157",
+            "auc": "0.7220",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/FmFM/FmFM_microvideo1.7m_x1_001",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2018",
+            "pub": "WWW'18",
+            "model": "FwFM",
+            "logloss": "0.4150",
+            "auc": "0.7959",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/FwFM/FwFM_microvideo1.7m_x1_001",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2016",
+            "pub": "ICDM'16",
+            "model": "IPNN",
+            "logloss": "0.4110",
+            "auc": "0.7364",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/IPNN/IPNN_microvideo1.7m_x1_001",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2016",
+            "pub": "RecSysW'16",
+            "model": "WideDeep",
+            "logloss": "0.4112",
+            "auc": "0.7340",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/WideDeep/WideDeep_microvideo1.7m_x1_001",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2018",
+            "pub": "KDD'18",
+            "model": "xDeepFM",
+            "logloss": "0.4107",
+            "auc": "0.7362",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/xDeepFM/xDeepFM_microvideo1.7m_x1_001",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        }
+    ]
+}

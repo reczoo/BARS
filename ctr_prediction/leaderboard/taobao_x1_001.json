@@ -1,0 +1,193 @@
+{
+    "data": [{
+            "year": "2007",
+            "pub": "WWW'07",
+            "model": "LR",
+            "logloss": "0.1941",
+            "auc": "0.6414",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/LR/LR_taobao_x1_001",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2010",
+            "pub": "ICDM'10",
+            "model": "FM",
+            "logloss": "0.1942",
+            "auc": "0.6373",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/FM/FM_taobao_x1_001",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2021",
+            "pub": "WWW'21",
+            "model": "FwFM",
+            "logloss": "0.1936",
+            "auc": "0.6427",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/FwFM/FwFM_taobao_x1_001",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2017",
+            "pub": "WWW'17",
+            "model": "FFM",
+            "logloss": "0.1936",
+            "auc": "0.6433",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/FFM/FFM_taobao_x1_001",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2017",
+            "pub": "IJCAI'17",
+            "model": "AFM",
+            "logloss": "0.1941",
+            "auc": "0.6415",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/AFM/AFM_taobao_x1_001",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2017",
+            "pub": "SIGIR'17",
+            "model": "NFM",
+            "logloss": "0.1956",
+            "auc": "0.6392",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/NFM/NFM_taobao_x1_001",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2015",
+            "pub": "CIKM'15",
+            "model": "CCPM",
+            "logloss": "0.1939",
+            "auc": "0.6432",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/CCPM/CCPM_taobao_x1_001",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2016",
+            "pub": "RecSys'16",
+            "model": "YoutubeDNN",
+            "logloss": "0.1935",
+            "auc": "0.6436",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/YoutubeDNN/YoutubeDNN_taobao_x1_001",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2016",
+            "pub": "DLRS'16",
+            "model": "Wide&Deep",
+            "logloss": "0.1937",
+            "auc": "0.6424",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/WideDeep/WideDeep_taobao_x1_001",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2017",
+            "pub": "IJCAI'17",
+            "model": "DeepFM",
+            "logloss": "0.1937",
+            "auc": "0.6427",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/DeepFM/DeepFM_taobao_x1_001",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2016",
+            "pub": "ICDM'16",
+            "model": "IPNN",
+            "logloss": "0.1936",
+            "auc": "0.6437",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/IPNN/IPNN_taobao_x1_001",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2016",
+            "pub": "KDD'16",
+            "model": "DeepCross",
+            "logloss": "0.1934",
+            "auc": "0.6442",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/DeepCross/DeepCross_taobao_x1_001",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2017",
+            "pub": "ADKDD'17",
+            "model": "DCN",
+            "logloss": "0.1938",
+            "auc": "0.6429",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/DCN/DCN_taobao_x1_001",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2018",
+            "pub": "KDD'18",
+            "model": "xDeepFM",
+            "logloss": "0.1936",
+            "auc": "0.6436",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/xDeepFM/xDeepFM_taobao_x1_001",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2019",
+            "pub": "CIKM'19",
+            "model": "AutoInt+",
+            "logloss": "0.1935",
+            "auc": "0.6432",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/default",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2019",
+            "pub": "CIKM'19",
+            "model": "FiGNN",
+            "logloss": "0.1934",
+            "auc": "0.6441",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/FiGNN/FiGNN_taobao_x1_001",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2019",
+            "pub": "RecSys'19",
+            "model": "FiBiNet",
+            "logloss": "0.1938",
+            "auc": "0.6433",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/FiBiNet/FiBiNET_taobao_x1_001",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2020",
+            "pub": "DLP-KDD'20",
+            "model": "FLEN",
+            "logloss": "0.1944",
+            "auc": "0.6397",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/FLEN/FLEN_taobao_x1_001",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2018",
+            "pub": "KDD'18",
+            "model": "DIN",
+            "logloss": "0.1933",
+            "auc": "0.6440",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/DIN/DIN_taobao_x1_001",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        }
+    ]
+}

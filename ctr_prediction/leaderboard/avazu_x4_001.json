@@ -1,0 +1,303 @@
+{
+    "data": [{
+            "year": "2007",
+            "pub": "WWW'07",
+            "model": "LR",
+            "logloss": "0.3815",
+            "auc": "0.7775",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/LR/LR_avazu_x4_001",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2010",
+            "pub": "ICDM'10",
+            "model": "FM",
+            "logloss": "0.3754",
+            "auc": "0.7887",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/FM/FM_avazu_x4_001",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2015",
+            "pub": "CIKM'15",
+            "model": "CCPM",
+            "logloss": "0.3745",
+            "auc": "0.7892",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/CCPM/CCPM_avazu_x4_001",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2016",
+            "pub": "NIPS'16",
+            "model": "HOFM",
+            "logloss": "0.3754",
+            "auc": "0.7891",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/HOFM/HOFM_avazu_x4_001",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2016",
+            "pub": "RecSys'16",
+            "model": "FFM",
+            "logloss": "0.3715",
+            "auc": "0.7942",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/FFM/FFM_avazu_x4_001",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2016",
+            "pub": "RecSys'16",
+            "model": "YoutubeDNN",
+            "logloss": "0.3722",
+            "auc": "0.7928",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/YoutubeDNN/YoutubeDNN_avazu_x4_001",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2016",
+            "pub": "RecSysW'16",
+            "model": "WideDeep",
+            "logloss": "0.3720",
+            "auc": "0.7929",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/WideDeep/WideDeep_avazu_x4_001",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2016",
+            "pub": "ICDM'16",
+            "model": "IPNN",
+            "logloss": "0.3712",
+            "auc": "0.7944",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/IPNN/IPNN_avazu_x4_001",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2016",
+            "pub": "KDD'16",
+            "model": "DeepCross",
+            "logloss": "0.3721",
+            "auc": "0.7930",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/DeepCross/DeepCross_avazu_x4_001",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2017",
+            "pub": "SIGIR'17",
+            "model": "NFM",
+            "logloss": "0.3743",
+            "auc": "0.7894",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/NFM/NFM_avazu_x4_001",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2017",
+            "pub": "IJCAI'17",
+            "model": "AFM",
+            "logloss": "0.3792",
+            "auc": "0.7825",
+            "link": "",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2017",
+            "pub": "IJCAI'17",
+            "model": "DeepFM",
+            "logloss": "0.3719",
+            "auc": "0.7930",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/DeepFM/DeepFM_avazu_x4_001",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2017",
+            "pub": "ADKDD'17",
+            "model": "CrossNet",
+            "logloss": "0.3779",
+            "auc": "0.7840",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/CrossNet/CrossNet_avazu_x4_001",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2017",
+            "pub": "ADKDD'17",
+            "model": "DCN",
+            "logloss": "0.3719",
+            "auc": "0.7931",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/DCN/DCN_avazu_x4_001",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2018",
+            "pub": "WWW'18",
+            "model": "FwFM",
+            "logloss": "0.3744",
+            "auc": "0.7907",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/FwFM/FwFM_avazu_x4_001",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2018",
+            "pub": "KDD'18",
+            "model": "CIN",
+            "logloss": "0.3742",
+            "auc": "0.7894",
+            "link": "",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2018",
+            "pub": "KDD'18",
+            "model": "xDeepFM",
+            "logloss": "0.3718",
+            "auc": "0.7933",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/xDeepFM/xDeepFM_avazu_x4_001",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2019",
+            "pub": "AAAI'19",
+            "model": "HFM",
+            "logloss": "0.3757",
+            "auc": "0.7879",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/HFM/HFM_avazu_x4_001",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2019",
+            "pub": "AAAI'19",
+            "model": "HFM+",
+            "logloss": "0.3714",
+            "auc": "0.7944",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/HFM+/HFM+_avazu_x4_001",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2019",
+            "pub": "WWW'19",
+            "model": "FGCNN",
+            "logloss": "0.3711",
+            "auc": "0.7944",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/FGCNN/FGCNN_avazu_x4_001",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2019",
+            "pub": "CIKM'19",
+            "model": "AutoInt",
+            "logloss": "0.3745",
+            "auc": "0.7891",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/AutoInt/AutoInt_avazu_x4_001",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2019",
+            "pub": "CIKM'19",
+            "model": "AutoInt+",
+            "logloss": "0.3746",
+            "auc": "0.7902",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/AutoInt+/AutoInt+_avazu_x4_001",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2019",
+            "pub": "CIKM'19",
+            "model": "FiGNN",
+            "logloss": "0.3736",
+            "auc": "0.7915",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/FiGNN/FiGNN_avazu_x4_001",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2020",
+            "pub": "Neural Networks'20",
+            "model": "ONN",
+            "logloss": "0.3683",
+            "auc": "0.7992",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/ONN/ONN_avazu_x4_001",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2019",
+            "pub": "RecSys'19",
+            "model": "FiBiNET",
+            "logloss": "0.3705",
+            "auc": "0.7953",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/FiBiNET/FiBiNET_avazu_x4_001",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2020",
+            "pub": "AAAI'20",
+            "model": "LorentzFM",
+            "logloss": "0.3756",
+            "auc": "0.7885",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/default",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2020",
+            "pub": "AAAI'20",
+            "model": "AFN",
+            "logloss": "0.3740",
+            "auc": "0.7907",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/AFN/AFN_avazu_x4_001",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2020",
+            "pub": "AAAI'20",
+            "model": "AFN+",
+            "logloss": "0.3726",
+            "auc": "0.7929",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/AFN+/AFN+_avazu_x4_001",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2020",
+            "pub": "WSDM'20",
+            "model": "InterHAt",
+            "logloss": "0.3749",
+            "auc": "0.7882",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/default",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2020",
+            "pub": "KDDW'20",
+            "model": "FLEN",
+            "logloss": "0.3719",
+            "auc": "0.7929",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/FLEN/FLEN_avazu_x4_001",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        }
+    ]
+}

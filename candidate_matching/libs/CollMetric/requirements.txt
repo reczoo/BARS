@@ -1,0 +1,6 @@
+scipy
+numpy
+tensorflow
+tqdm
+toolz
+scikit-learn
