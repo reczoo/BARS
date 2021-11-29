@@ -5,7 +5,7 @@
             "model": "LR",
             "logloss": "0.5746",
             "auc": "0.7678",
-            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/LR/LR_kkbox_x4_001",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/LR/LR_kkbox_x4_001",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
         },
@@ -15,7 +15,7 @@
             "model": "FM",
             "logloss": "0.5075",
             "auc": "0.8291",
-            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/default",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/default",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
         },
@@ -25,7 +25,7 @@
             "model": "FFM",
             "logloss": "0.5003",
             "auc": "0.8348",
-            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/FFM/FFM_kkbox_x4_001",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/FFM/FFM_kkbox_x4_001",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
         },
@@ -35,7 +35,7 @@
             "model": "FwFM",
             "logloss": "0.4966",
             "auc": "0.8408",
-            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/FwFM/FwFM_kkbox_x4_001",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/FwFM/FwFM_kkbox_x4_001",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
         },
@@ -45,7 +45,7 @@
             "model": "AFM",
             "logloss": "0.5235",
             "auc": "0.8168",
-            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/default",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/default",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
         },
@@ -55,7 +55,7 @@
             "model": "HOFM",
             "logloss": "0.5053",
             "auc": "0.8313",
-            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/default",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/default",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
         },
@@ -65,7 +65,7 @@
             "model": "NFM",
             "logloss": "0.5089",
             "auc": "0.8274",
-            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/default",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/default",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
         },
@@ -75,7 +75,7 @@
             "model": "YoutubeDNN",
             "logloss": "0.4804",
             "auc": "0.8505",
-            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/YoutubeDNN/YoutubeDNN_kkbox_x4_001",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/YoutubeDNN/YoutubeDNN_kkbox_x4_001",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
         },
@@ -85,7 +85,7 @@
             "model": "Wide&Deep",
             "logloss": "0.4810",
             "auc": "0.8519",
-            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/default",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/default",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
         },
@@ -95,7 +95,7 @@
             "model": "DeepFM",
             "logloss": "0.4785",
             "auc": "0.8531",
-            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/DeepFM/DeepFM_kkbox_x4_001",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/DeepFM/DeepFM_kkbox_x4_001",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
         },
@@ -105,7 +105,7 @@
             "model": "IPNN",
             "logloss": "0.4784",
             "auc": "0.8512",
-            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/default",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/default",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
         },
@@ -115,7 +115,7 @@
             "model": "DeepCross",
             "logloss": "0.4799",
             "auc": "0.8496",
-            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/DeepCross/DeepCross_kkbox_x4_001",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/DeepCross/DeepCross_kkbox_x4_001",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
         },
@@ -125,7 +125,7 @@
             "model": "CrossNet",
             "logloss": "0.5284",
             "auc": "0.8115",
-            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/default",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/default",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
         },
@@ -135,7 +135,7 @@
             "model": "DCN",
             "logloss": "0.4761",
             "auc": "0.8534",
-            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/DCN/DCN_kkbox_x4_001",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/DCN/DCN_kkbox_x4_001",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
         },
@@ -145,7 +145,7 @@
             "model": "CIN",
             "logloss": "0.4909",
             "auc": "0.8426",
-            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/CIN/CIN_kkbox_x4_001",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/CIN/CIN_kkbox_x4_001",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
         },
@@ -155,7 +155,7 @@
             "model": "xDeepFM",
             "logloss": "0.4774",
             "auc": "0.8526",
-            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/default",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/default",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
         },
@@ -165,7 +165,7 @@
             "model": "AutoInt",
             "logloss": "0.4919",
             "auc": "0.8436",
-            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/AutoInt/AutoInt_kkbox_x4_001",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/AutoInt/AutoInt_kkbox_x4_001",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
         },
@@ -175,7 +175,7 @@
             "model": "AutoInt+",
             "logloss": "0.4768",
             "auc": "0.8530",
-            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/AutoInt+/AutoInt+_kkbox_x4_001",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/AutoInt+/AutoInt+_kkbox_x4_001",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
         },
@@ -185,7 +185,7 @@
             "model": "FiGNN",
             "logloss": "0.4902",
             "auc": "0.8463",
-            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/FiGNN/FiGNN_kkbox_x4_001",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/FiGNN/FiGNN_kkbox_x4_001",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
         },
@@ -195,7 +195,7 @@
             "model": "FiBiNet",
             "logloss": "0.4822",
             "auc": "0.8499",
-            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/FiBiNET/FiBiNET_kkbox_x4_001",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/FiBiNET/FiBiNET_kkbox_x4_001",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
         },
@@ -205,7 +205,7 @@
             "model": "FGCNN",
             "logloss": "0.4798",
             "auc": "0.8504",
-            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/default",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/default",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
         },
@@ -215,7 +215,7 @@
             "model": "ONN",
             "logloss": "0.4832",
             "auc": "0.8493",
-            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/default",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/default",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
         },
@@ -225,7 +225,7 @@
             "model": "AFN",
             "logloss": "0.4905",
             "auc": "0.8427",
-            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/default",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/default",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
         },
@@ -235,7 +235,7 @@
             "model": "AFN+",
             "logloss": "0.4874",
             "auc": "0.8493",
-            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/default",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/default",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
         },
@@ -245,7 +245,7 @@
             "model": "LorentzFM",
             "logloss": "0.5187",
             "auc": "0.8203",
-            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/default",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/default",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
         },
@@ -255,7 +255,7 @@
             "model": "HFM",
             "logloss": "0.4973",
             "auc": "0.8388",
-            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/HFM/HFM_kkbox_x4_001",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/HFM/HFM_kkbox_x4_001",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
         },
@@ -265,7 +265,7 @@
             "model": "HFM+",
             "logloss": "0.4771",
             "auc": "0.8523",
-            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/HFM+/HFM+_kkbox_x4_001",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/HFM+/HFM+_kkbox_x4_001",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
         }

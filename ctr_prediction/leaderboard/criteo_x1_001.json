@@ -5,7 +5,7 @@
             "model": "FM(rerun)",
             "logloss": "0.4491",
             "auc": "0.8022",
-            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/default",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/default",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
         },
@@ -15,7 +15,7 @@
             "model": "FFM",
             "logloss": "0.4456",
             "auc": "0.8060",
-            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/default",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/default",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
         },
@@ -25,7 +25,7 @@
             "model": "FmFM",
             "logloss": "0.4462",
             "auc": "0.8056",
-            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/FmFM/FmFM_criteo_x1_001",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/FmFM/FmFM_criteo_x1_001",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
         },
@@ -35,7 +35,7 @@
             "model": "YoutubeDNN",
             "logloss": "0.4382",
             "auc": "0.8136",
-            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/YoutubeDNN/YoutubeDNN_criteo_x1_001",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/YoutubeDNN/YoutubeDNN_criteo_x1_001",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
         },
@@ -45,7 +45,7 @@
             "model": "IPNN(rerun)",
             "logloss": "0.4383",
             "auc": "0.8137",
-            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/IPNN/IPNN_criteo_x1_001",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/IPNN/IPNN_criteo_x1_001",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
         },
@@ -55,7 +55,7 @@
             "model": "DeepFM(rerun)",
             "logloss": "0.4381",
             "auc": "0.8138",
-            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/DeepFM/DeepFM_criteo_x1_001",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/DeepFM/DeepFM_criteo_x1_001",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
         },
@@ -65,7 +65,7 @@
             "model": "DCN(rerun)",
             "logloss": "0.4379",
             "auc": "0.8141",
-            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/DCN/DCN_criteo_x1_001",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/DCN/DCN_criteo_x1_001",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
         },
@@ -75,7 +75,7 @@
             "model": "DeepIM",
             "logloss": "0.4379",
             "auc": "0.8140",
-            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/DeepIM/DeepIM_criteo_x1_001",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/DeepIM/DeepIM_criteo_x1_001",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
         },
@@ -85,7 +85,7 @@
             "model": "LR",
             "logloss": "0.4636",
             "auc": "0.7858",
-            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/default",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/default",
             "contr": "Reported by AFN paper"
         },
         {
@@ -94,7 +94,7 @@
             "model": "FM(paper)",
             "logloss": "0.4574",
             "auc": "0.7933",
-            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/default",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/default",
             "contr": "Reported by AFN paper"
         },
         {
@@ -103,7 +103,7 @@
             "model": "AFM",
             "logloss": "0.4554",
             "auc": "0.7953",
-            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/default",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/default",
             "contr": "Reported by AFN paper"
         },
         {
@@ -112,7 +112,7 @@
             "model": "CrossNet",
             "logloss": "0.4585",
             "auc": "0.7915",
-            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/default",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/default",
             "contr": "Reported by AFN paper"
         },
         {
@@ -121,7 +121,7 @@
             "model": "HOFM",
             "logloss": "0.4551",
             "auc": "0.7960",
-            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/default",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/default",
             "contr": "Reported by AFN paper"
         },
         {
@@ -130,7 +130,7 @@
             "model": "NFM",
             "logloss": "0.4537",
             "auc": "0.7968",
-            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/default",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/default",
             "contr": "Reported by AFN paper"
         },
         {
@@ -139,7 +139,7 @@
             "model": "IPNN(paper)",
             "logloss": "0.4509",
             "auc": "0.8026",
-            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/default",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/default",
             "contr": "Reported by AFN paper"
         },
         {
@@ -148,7 +148,7 @@
             "model": "CIN",
             "logloss": "0.4472",
             "auc": "0.8042",
-            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/default",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/default",
             "contr": "Reported by AFN paper"
         },
         {
@@ -157,7 +157,7 @@
             "model": "AFN",
             "logloss": "0.4458",
             "auc": "0.8061",
-            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/default",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/default",
             "contr": "Reported by AFN paper"
         },
         {
@@ -166,7 +166,7 @@
             "model": "DCN(paper)",
             "logloss": "0.4463",
             "auc": "0.8059",
-            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/default",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/default",
             "contr": "Reported by AFN paper"
         },
         {
@@ -175,7 +175,7 @@
             "model": "Wide&Deep",
             "logloss": "0.4453",
             "auc": "0.8062",
-            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/default",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/default",
             "contr": "Reported by AFN paper"
         },
         {
@@ -184,7 +184,7 @@
             "model": "DeepFM(paper)",
             "logloss": "0.4501",
             "auc": "0.8025",
-            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/default",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/default",
             "contr": "Reported by AFN paper"
         },
         {
@@ -193,7 +193,7 @@
             "model": "xDeepFM",
             "logloss": "0.4443",
             "auc": "0.8070",
-            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/default",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/default",
             "contr": "Reported by AFN paper"
         },
         {
@@ -202,7 +202,7 @@
             "model": "AFN+",
             "logloss": "0.4451",
             "auc": "0.8074",
-            "link": "https://github.com/openbenchmark/BARS/blob/master/benchmarks/default",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/default",
             "contr": "Reported by AFN paper"
         }
     ]
