@@ -470,7 +470,7 @@
             "link": "https://dlp-kdd.github.io/assets/pdf/DLP-KDD_2021_paper_12.pdf",
             "company": "Huawei",
             "code": "",
-            "tags": "#Behavior-Modeling"
+            "tags": "#Feature-Interactions"
         },
         {
             "year": "2021",
@@ -573,7 +573,7 @@
         },
         {
             "year": "2020",
-            "pub": "Arixv'20",
+            "pub": "Arxiv'20",
             "model": "FINN",
             "paper": "Feature Interaction based Neural Network for Click-Through Rate Prediction",
             "authors": "Dafang Zou, Leiming Zhang, Jiafa Mao, Weiguo Sheng",
@@ -595,7 +595,7 @@
         },
         {
             "year": "2021",
-            "pub": "Arixv'21",
+            "pub": "Arxiv'21",
             "model": "DINMP",
             "paper": "A Non-sequential Approach to Deep User Interest Model for CTR Prediction",
             "authors": "Keke Zhao, Xing Zhao, Qi Cao, Linjian Mo",
@@ -617,7 +617,7 @@
         },
         {
             "year": "2021",
-            "pub": "Arixv'21",
+            "pub": "Arxiv'21",
             "model": "",
             "paper": "Click-Through Rate Prediction Using Graph Neural Networks and Online Learning",
             "authors": "Farzaneh Rajabi, Jack Siyuan He",

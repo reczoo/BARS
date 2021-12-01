@@ -53,7 +53,7 @@ User features:
       8c5f7add05a6f5258b6b3bcc00ba640b  test.csv
       ```
 
-#### KKBox_x1_001
-In this setting, for all categorical fields, we replace infrequent features with a default ``<OOV>`` token by setting the threshold min_category_count=10. To make a fair comparison, we fix **embedding_dim=128** for all compared models.
++ Default setting
+  In this setting, for all categorical fields, we replace infrequent features with a default ``<OOV>`` token by setting the threshold min_category_count=10. To make a fair comparison, we fix **embedding_dim=128** for all compared models.
 
 

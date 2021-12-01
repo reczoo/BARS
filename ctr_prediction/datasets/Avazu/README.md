@@ -58,9 +58,9 @@ This dataset contains about 10 days of labeled click-through data on mobile adve
       9e2fe9c48705c9315ae7a0953eb57acf  test.csv
       ```
 
-#### Avazu_x0_001
++ Default setting
   
-In this benchmark setting, we follow the AFN work to fix **embedding_dim=16**, **batch_size=4096**, and **MLP_hidden_units=[400, 400, 400]** to make fair comparisons.
+  In this benchmark setting, we follow the AFN work to fix **embedding_dim=16**, **batch_size=4096**, and **MLP_hidden_units=[400, 400, 400]** to make fair comparisons.
   
 
 ## Avazu_x2
@@ -77,15 +77,15 @@ This dataset contains about 10 days of labeled click-through data on mobile adve
       e641ea94c72cdc99b49656d3404f536e  test.csv
       ```
 
-#### Avazu_x2_001
-For all categorical fields, we filter infrequent features by setting the threshold min_category_count=20 and replace them with a default ``<OOV>`` token.
++ Default setting
+  For all categorical fields, we filter infrequent features by setting the threshold min_category_count=20 and replace them with a default ``<OOV>`` token.
 
 
 ## Avazu_x3
 TBA
 
 
-#### Avazu_x3_001
++ Default setting
 
 
 

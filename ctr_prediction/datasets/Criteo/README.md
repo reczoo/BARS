@@ -46,9 +46,9 @@ The Criteo dataset is a widely-used benchmark dataset for CTR prediction, which 
       ```
 
 
-#### Criteo_x1_001
++ Default setting
   
-In this benchmark setting, we follow the AFN work to fix **embedding_dim=16**, **batch_size=4096**, and **MLP_hidden_units=[400, 400, 400]** to make fair comparisons.
+  In this benchmark setting, we follow the AFN work to fix **embedding_dim=16**, **batch_size=4096**, and **MLP_hidden_units=[400, 400, 400]** to make fair comparisons.
 
 
 ## Criteo_x2
@@ -65,14 +65,13 @@ This dataset employs the [Criteo 1TB Click Logs](https://ailab.criteo.com/criteo
       32c14fbc7bfe02e72b501793e8db660b  test.csv
       ```
 
-#### Criteo_x2_001
-In this setting, 13 numerical fields are converted into categorical values through bucketizing, while categorical features appearing less than 20 times are set as a default ``<OOV>`` feature.
++ Default setting
+  In this setting, 13 numerical fields are converted into categorical values through bucketizing, while categorical features appearing less than 20 times are set as a default ``<OOV>`` feature.
 
 
 ## Criteo_x3
 TBA
 
-#### Criteo_x3_001
 
 
 ## Criteo_x4

@@ -72,9 +72,9 @@ raw_behavior_log:
       1de0b75cbb473b0c3ea2dd146dc4af28  test.csv
       ```
 
-#### Taobao_x0_001
++ Default setting
 
-In this setting, we replace infrequent categorical features with a default ``<OOV>`` token by setting the threshold min_category_count=10. We further set the length of user click sequence to be 128 via truncating or padding. To make a fair comparison, after some tuning, we fix **embedding_dim=10**, and **hidden_units=[512, 256, 128]** for all compared models.
+  In this setting, we replace infrequent categorical features with a default ``<OOV>`` token by setting the threshold min_category_count=10. We further set the length of user click sequence to be 128 via truncating or padding. To make a fair comparison, after some tuning, we fix **embedding_dim=10**, and **hidden_units=[512, 256, 128]** for all compared models.
 
 
 ## Taobao_x2
