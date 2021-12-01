@@ -54,6 +54,7 @@ User features:
       ```
 
 + Default setting
+
   In this setting, for all categorical fields, we replace infrequent features with a default ``<OOV>`` token by setting the threshold min_category_count=10. To make a fair comparison, we fix **embedding_dim=128** for all compared models.
 
 

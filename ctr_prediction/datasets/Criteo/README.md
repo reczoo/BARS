@@ -66,6 +66,7 @@ This dataset employs the [Criteo 1TB Click Logs](https://ailab.criteo.com/criteo
       ```
 
 + Default setting
+
   In this setting, 13 numerical fields are converted into categorical values through bucketizing, while categorical features appearing less than 20 times are set as a default ``<OOV>`` feature.
 
 

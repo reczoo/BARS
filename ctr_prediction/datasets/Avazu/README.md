@@ -78,6 +78,7 @@ This dataset contains about 10 days of labeled click-through data on mobile adve
       ```
 
 + Default setting
+
   For all categorical fields, we filter infrequent features by setting the threshold min_category_count=20 and replace them with a default ``<OOV>`` token.
 
 
