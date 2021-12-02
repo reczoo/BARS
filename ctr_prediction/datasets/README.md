@@ -1,13 +1,38 @@
-## Benchmark Datasets
+# Benchmark Datasets
+
+
+## Available Dataset Splits
+
+| Dataset   | Dataset Split   | Benchmark Setting     |  Used by                           |
+|:-----------|:--------------------|:------------------------|:---------------------------------------------|
+| [Criteo](./datasets/Criteo)    | [Criteo_x1](./datasets/Criteo/README.md#Criteo_x1)          | default     |  [Cheng et al., AAAI'20](https://ojs.aaai.org/index.php/AAAI/article/view/5768)     |
+|           | [Criteo_x2](./datasets/Criteo/README.md#Criteo_x2)          |  default        |  [Liu et al., SIGIR'20](https://dl.acm.org/doi/abs/10.1145/3397271.3401082)    |
+|           | [Criteo_x3](./datasets/Criteo/README.md#Criteo_x3)          | default      |  [Sun et al., WWW'21](https://arxiv.org/abs/2102.12994)    |
+|           | [Criteo_x4](./datasets/Criteo/README.md#Criteo_x4)          | [Criteo_x4_001](./datasets/Criteo/README.md#Criteo_x4_001)          |  [Song et al., CIKM'20](https://arxiv.org/abs/1810.11921)    |
+|           |                    | [Criteo_x4_002](./datasets/Criteo/README.md#Criteo_x4_002)           | [Zhu et al., CIKM'21](https://arxiv.org/abs/2009.05794)   |
+| [Avazu](./datasets/Avazu)     | [Avazu_x1](./datasets/Avazu/README.md#Avazu_x1)           | default        |  [Cheng et al., AAAI'20](https://ojs.aaai.org/index.php/AAAI/article/view/5768)   |
+|           | [Avazu_x2](./datasets/Avazu/README.md#Avazu_x2)          | default        |  [Liu et al., SIGIR'20](https://dl.acm.org/doi/abs/10.1145/3397271.3401082)    |
+|           | [Avazu_x3](./datasets/Avazu/README.md#Avazu_x3)           | default         |  [Sun et al., WWW'21](https://arxiv.org/abs/2102.12994)   |
+|           | [Avazu_x4](./datasets/Avazu/README.md#Avazu_x4)           | [Avazu_x4_001](./datasets/Avazu/README.md#Avazu_x4_001)           |  [Song et al., CIKM'20](https://arxiv.org/abs/1810.11921)   |
+|           |                    | [Avazu_x4_002](./datasets/Avazu/README.md#Avazu_x4_002)           | [Zhu et al., CIKM'21](https://arxiv.org/abs/2009.05794)    |
+| [KKBox](./datasets/KKBox)     | [KKBox_x1](./datasets/KKBox/README.md#KKBox_x1)           | default        |  TBA  |
+| [Taobao](./datasets/Taobao)    | [Taobao_x1](./datasets/Taobao/README.md#Taobao_x1)          | default        |  TBA  |
+|     | [Taobao_x2](./datasets/Taobao/README.md#Taobao_x2)          | default       |  [Feng et al., IJCAI'19](https://arxiv.org/abs/1905.06482)  |
+| [MicroVideo1.7M](./datasets/MicroVideo1.7M)    | [MicroVideo1.7M_x1](./datasets/MicroVideo1.7M/README.md#MicroVideo17M_x1)          |  default        | [Chen et al., MM'18](https://dl.acm.org/doi/abs/10.1145/3240508.3240617) |
+| [Frappe](./datasets/Frappe)    | [Frappe_x1](./datasets/Frappe/README.md#Frappe_x1)          | default         |  [Cheng et al., AAAI'20](https://ojs.aaai.org/index.php/AAAI/article/view/5768) |
+| [Movielens](./datasets/Movielens) | [MovielensLatest_x1](./datasets/Movielens/README.md#MovielensLatest_x1) | default | [Cheng et al., AAAI'20](https://ojs.aaai.org/index.php/AAAI/article/view/5768)  |
+
+
+## Dataset Splits Tracking
 
 We track dataset splits from the published papers in order to make the research results reproducible and reusable. We directly reuse the data splits or preprocessing steps if a paper has open the details. If not, we request the data splits by sending emails to the authors.
 
 
-|  Paper   |   Dataset Splits    | 
+| Dataset Splits    |  Paper   |   
 |:-----------|:--------------------|
-|  [**WWW'21**] [DCN V2: Improved Deep & Cross Network and Practical Lessons for Web-scale Learning to Rank Systems](https://arxiv.org/pdf/2008.13535.pdf), Ruoxi Wang, Rakesh Shivanna, Derek Z. Cheng, Sagar Jain, Dong Lin, Lichan Hong, Ed H. Chi.    |     |
-|  [**WWW'21**] [FM^2: Field-matrixed Factorization Machines for Recommender Systems](https://arxiv.org/abs/2102.12994v2), Yang Sun, Junwei Pan, Alex Zhang, Aaron Flores.    |     |
-|  [**AAAI'20**] [Adaptive Factorization Network: Learning Adaptive-Order Feature Interactions](https://ojs.aaai.org/index.php/AAAI/article/view/5768), Weiyu Cheng, Yanyan Shen, Linpeng Huang.    |  [Criteo_x1](./Criteo/README.md#Criteo_x1), [Avazu_x1](./Avazu/README.md#Avazu_x1), Frappe_x1, Movielens_x1   |
-|  [**CIKM'19**] [AutoInt: Automatic Feature Interaction Learning via Self-Attentive Neural Networks](https://arxiv.org/abs/1810.11921), Weiping Song, Chence Shi, Zhiping Xiao, Zhijian Duan, Yewen Xu, Ming Zhang, Jian Tang.    |  [Criteo_x4](./Criteo/README.md#Criteo_x4), [Avazu_x4](./Avazu/README.md#Avazu_x4)   |
+|  | [**WWW'21**] [DCN V2: Improved Deep & Cross Network and Practical Lessons for Web-scale Learning to Rank Systems](https://arxiv.org/pdf/2008.13535.pdf), Ruoxi Wang, Rakesh Shivanna, Derek Z. Cheng, Sagar Jain, Dong Lin, Lichan Hong, Ed H. Chi.    |    
+|   |  [**WWW'21**] [FM^2: Field-matrixed Factorization Machines for Recommender Systems](https://arxiv.org/abs/2102.12994v2), Yang Sun, Junwei Pan, Alex Zhang, Aaron Flores.    |   
+|  [Criteo_x1](./Criteo/README.md#Criteo_x1), [Avazu_x1](./Avazu/README.md#Avazu_x1), Frappe_x1, MovielensLatest_x1     |  [**AAAI'20**] [Adaptive Factorization Network: Learning Adaptive-Order Feature Interactions](https://ojs.aaai.org/index.php/AAAI/article/view/5768), Weiyu Cheng, Yanyan Shen, Linpeng Huang.    |
+ |  [Criteo_x4](./Criteo/README.md#Criteo_x4), [Avazu_x4](./Avazu/README.md#Avazu_x4) |  [**CIKM'19**] [AutoInt: Automatic Feature Interaction Learning via Self-Attentive Neural Networks](https://arxiv.org/abs/1810.11921), Weiping Song, Chence Shi, Zhiping Xiao, Zhijian Duan, Yewen Xu, Ming Zhang, Jian Tang.      |
 
 
