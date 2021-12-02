@@ -2,6 +2,9 @@
 
 This repo presents open benchmarking for CTR Prediction: https://openbenchmark.github.io/ctr-prediction
 
+Details can be found as follows:
+
++ [Paper List](./papers.json)
 + [Dataset Splits](./datasets)
 + [Benchmark Code](./benchmarks)
 
