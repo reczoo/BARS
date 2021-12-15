@@ -64,7 +64,7 @@
             "pub": "ADKDD'17",
             "model": "DCN(rerun)",
             "logloss": "0.4379",
-            "auc": "0.8141",
+            "auc": "0.8139",
             "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/DCN/DCN_criteo_x1_001",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
