@@ -38,19 +38,21 @@ In this setting, we follow the AFN work to fix embedding_dim=16, batch_size=4096
 
 ### Results
 ```python
-[Metrics] AUC: 0.814118 - logloss: 0.437875
+[Metrics] logloss: 0.437904 - AUC: 0.813926
 ```
 
 ### Logs
 ```python
-2021-08-15 01:10:31,897 P46215 INFO {
+2020-12-27 13:13:41,486 P31211 INFO {
     "batch_norm": "False",
     "batch_size": "4096",
+    "crossing_layers": "3",
     "data_format": "csv",
     "data_root": "../data/Criteo/",
     "dataset_id": "criteo_x0_ace9c1b9",
     "debug": "False",
     "dnn_activations": "relu",
+    "dnn_hidden_units": "[400, 400, 400]",
     "embedding_dim": "10",
     "embedding_dropout": "0",
     "embedding_regularizer": "1e-05",
@@ -61,122 +63,151 @@ In this setting, we follow the AFN work to fix embedding_dim=16, batch_size=4096
     "label_col": "{'dtype': 'float', 'name': 'label'}",
     "learning_rate": "0.001",
     "loss": "binary_crossentropy",
-    "low_rank": "32",
-    "metrics": "['AUC', 'logloss']",
+    "metrics": "['logloss', 'AUC']",
     "min_categr_count": "1",
-    "model": "DCN_v2",
-    "model_id": "DCN_v2_criteo_x0_005_6971f7bc",
+    "model": "DCN",
+    "model_id": "DCN_criteo_x0_014_53f4baa3",
     "model_root": "./Criteo/DCN_criteo_x0/",
-    "model_structure": "parallel",
-    "monitor": "AUC",
+    "monitor": "{'AUC': 1, 'logloss': -1}",
     "monitor_mode": "max",
     "net_dropout": "0.1",
     "net_regularizer": "0",
-    "num_cross_layers": "3",
-    "num_experts": "4",
     "num_workers": "3",
     "optimizer": "adam",
-    "parallel_dnn_hidden_units": "[500, 500, 500]",
     "partition_block_size": "-1",
     "patience": "2",
     "pickle_feature_encoder": "True",
     "save_best_only": "True",
     "seed": "2021",
     "shuffle": "True",
-    "stacked_dnn_hidden_units": "[400, 400, 400]",
     "task": "binary_classification",
     "test_data": "../data/Criteo/Criteo_x0/test.csv",
     "train_data": "../data/Criteo/Criteo_x0/train.csv",
     "use_hdf5": "True",
-    "use_low_rank_mixture": "False",
     "valid_data": "../data/Criteo/Criteo_x0/valid.csv",
     "verbose": "1",
     "version": "pytorch"
 }
-2021-08-15 01:10:31,898 P46215 INFO Set up feature encoder...
-2021-08-15 01:10:31,898 P46215 INFO Load feature_encoder from pickle: ../data/Criteo/criteo_x0_ace9c1b9/feature_encoder.pkl
-2021-08-15 01:10:33,851 P46215 INFO Total number of parameters: 22018021.
-2021-08-15 01:10:33,852 P46215 INFO Loading data...
-2021-08-15 01:10:33,856 P46215 INFO Loading data from h5: ../data/Criteo/criteo_x0_ace9c1b9/train.h5
-2021-08-15 01:10:49,171 P46215 INFO Loading data from h5: ../data/Criteo/criteo_x0_ace9c1b9/valid.h5
-2021-08-15 01:11:17,094 P46215 INFO Train samples: total/33003326, pos/8456369, neg/24546957, ratio/25.62%, blocks/1
-2021-08-15 01:11:17,094 P46215 INFO Validation samples: total/8250124, pos/2114300, neg/6135824, ratio/25.63%, blocks/1
-2021-08-15 01:11:17,094 P46215 INFO Loading train data done.
-2021-08-15 01:11:25,525 P46215 INFO Start training: 8058 batches/epoch
-2021-08-15 01:11:25,525 P46215 INFO ************ Epoch=1 start ************
-2021-08-15 01:35:53,655 P46215 INFO [Metrics] AUC: 0.805631 - logloss: 0.445776
-2021-08-15 01:35:53,670 P46215 INFO Save best model: monitor(max): 0.805631
-2021-08-15 01:35:54,093 P46215 INFO --- 8058/8058 batches finished ---
-2021-08-15 01:35:54,432 P46215 INFO Train loss: 0.460219
-2021-08-15 01:35:54,432 P46215 INFO ************ Epoch=1 end ************
-2021-08-15 01:59:42,249 P46215 INFO [Metrics] AUC: 0.807809 - logloss: 0.443784
-2021-08-15 01:59:42,268 P46215 INFO Save best model: monitor(max): 0.807809
-2021-08-15 01:59:42,404 P46215 INFO --- 8058/8058 batches finished ---
-2021-08-15 01:59:43,088 P46215 INFO Train loss: 0.453981
-2021-08-15 01:59:43,088 P46215 INFO ************ Epoch=2 end ************
-2021-08-15 02:23:00,519 P46215 INFO [Metrics] AUC: 0.809119 - logloss: 0.442565
-2021-08-15 02:23:00,531 P46215 INFO Save best model: monitor(max): 0.809119
-2021-08-15 02:23:00,689 P46215 INFO --- 8058/8058 batches finished ---
-2021-08-15 02:23:01,017 P46215 INFO Train loss: 0.452322
-2021-08-15 02:23:01,017 P46215 INFO ************ Epoch=3 end ************
-2021-08-15 02:46:09,497 P46215 INFO [Metrics] AUC: 0.809660 - logloss: 0.442067
-2021-08-15 02:46:09,506 P46215 INFO Save best model: monitor(max): 0.809660
-2021-08-15 02:46:09,659 P46215 INFO --- 8058/8058 batches finished ---
-2021-08-15 02:46:10,010 P46215 INFO Train loss: 0.451470
-2021-08-15 02:46:10,010 P46215 INFO ************ Epoch=4 end ************
-2021-08-15 03:08:57,182 P46215 INFO [Metrics] AUC: 0.809980 - logloss: 0.441693
-2021-08-15 03:08:57,192 P46215 INFO Save best model: monitor(max): 0.809980
-2021-08-15 03:08:57,348 P46215 INFO --- 8058/8058 batches finished ---
-2021-08-15 03:08:57,645 P46215 INFO Train loss: 0.450895
-2021-08-15 03:08:57,645 P46215 INFO ************ Epoch=5 end ************
-2021-08-15 03:31:41,821 P46215 INFO [Metrics] AUC: 0.810293 - logloss: 0.441445
-2021-08-15 03:31:41,829 P46215 INFO Save best model: monitor(max): 0.810293
-2021-08-15 03:31:41,969 P46215 INFO --- 8058/8058 batches finished ---
-2021-08-15 03:31:42,194 P46215 INFO Train loss: 0.450494
-2021-08-15 03:31:42,194 P46215 INFO ************ Epoch=6 end ************
-2021-08-15 03:54:40,788 P46215 INFO [Metrics] AUC: 0.810259 - logloss: 0.441564
-2021-08-15 03:54:40,801 P46215 INFO Monitor(max) STOP: 0.810259 !
-2021-08-15 03:54:40,801 P46215 INFO Reduce learning rate on plateau: 0.000100
-2021-08-15 03:54:40,801 P46215 INFO --- 8058/8058 batches finished ---
-2021-08-15 03:54:41,036 P46215 INFO Train loss: 0.450127
-2021-08-15 03:54:41,036 P46215 INFO ************ Epoch=7 end ************
-2021-08-15 04:16:26,566 P46215 INFO [Metrics] AUC: 0.813420 - logloss: 0.438577
-2021-08-15 04:16:26,573 P46215 INFO Save best model: monitor(max): 0.813420
-2021-08-15 04:16:26,705 P46215 INFO --- 8058/8058 batches finished ---
-2021-08-15 04:16:26,898 P46215 INFO Train loss: 0.439104
-2021-08-15 04:16:26,898 P46215 INFO ************ Epoch=8 end ************
-2021-08-15 04:38:19,082 P46215 INFO [Metrics] AUC: 0.813803 - logloss: 0.438303
-2021-08-15 04:38:19,090 P46215 INFO Save best model: monitor(max): 0.813803
-2021-08-15 04:38:19,236 P46215 INFO --- 8058/8058 batches finished ---
-2021-08-15 04:38:19,444 P46215 INFO Train loss: 0.435280
-2021-08-15 04:38:19,444 P46215 INFO ************ Epoch=9 end ************
-2021-08-15 05:00:11,176 P46215 INFO [Metrics] AUC: 0.813852 - logloss: 0.438296
-2021-08-15 05:00:11,184 P46215 INFO Save best model: monitor(max): 0.813852
-2021-08-15 05:00:11,323 P46215 INFO --- 8058/8058 batches finished ---
-2021-08-15 05:00:11,517 P46215 INFO Train loss: 0.433623
-2021-08-15 05:00:11,517 P46215 INFO ************ Epoch=10 end ************
-2021-08-15 05:23:05,408 P46215 INFO [Metrics] AUC: 0.813782 - logloss: 0.438429
-2021-08-15 05:23:05,421 P46215 INFO Monitor(max) STOP: 0.813782 !
-2021-08-15 05:23:05,421 P46215 INFO Reduce learning rate on plateau: 0.000010
-2021-08-15 05:23:05,421 P46215 INFO --- 8058/8058 batches finished ---
-2021-08-15 05:23:05,633 P46215 INFO Train loss: 0.432388
-2021-08-15 05:23:05,633 P46215 INFO ************ Epoch=11 end ************
-2021-08-15 05:46:15,391 P46215 INFO [Metrics] AUC: 0.813571 - logloss: 0.438850
-2021-08-15 05:46:15,409 P46215 INFO Monitor(max) STOP: 0.813571 !
-2021-08-15 05:46:15,409 P46215 INFO Reduce learning rate on plateau: 0.000001
-2021-08-15 05:46:15,409 P46215 INFO Early stopping at epoch=12
-2021-08-15 05:46:15,409 P46215 INFO --- 8058/8058 batches finished ---
-2021-08-15 05:46:15,745 P46215 INFO Train loss: 0.428479
-2021-08-15 05:46:15,745 P46215 INFO Training finished.
-2021-08-15 05:46:15,745 P46215 INFO Load best model: /home/xxx/xxx/FuxiCTR_v2/FuxiCTR/benchmarks/Criteo/DCN_criteo_x0/criteo_x0_ace9c1b9/DCN_v2_criteo_x0_005_6971f7bc.model
-2021-08-15 05:46:28,142 P46215 INFO ****** Train/validation evaluation ******
-2021-08-15 05:47:29,258 P46215 INFO [Metrics] AUC: 0.813852 - logloss: 0.438296
-2021-08-15 05:47:29,782 P46215 INFO ******** Test evaluation ********
-2021-08-15 05:47:29,783 P46215 INFO Loading data...
-2021-08-15 05:47:29,783 P46215 INFO Loading data from h5: ../data/Criteo/criteo_x0_ace9c1b9/test.h5
-2021-08-15 05:47:30,622 P46215 INFO Test samples: total/4587167, pos/1174769, neg/3412398, ratio/25.61%, blocks/1
-2021-08-15 05:47:30,622 P46215 INFO Loading test data done.
-2021-08-15 05:47:55,355 P46215 INFO [Metrics] AUC: 0.814118 - logloss: 0.437875
+2020-12-27 13:13:41,487 P31211 INFO Set up feature encoder...
+2020-12-27 13:13:41,487 P31211 INFO Load feature_encoder from pickle: ../data/Criteo/criteo_x0_ace9c1b9/feature_encoder.pkl
+2020-12-27 13:13:43,250 P31211 INFO Total number of parameters: 21343491.
+2020-12-27 13:13:43,250 P31211 INFO Loading data...
+2020-12-27 13:13:43,253 P31211 INFO Loading data from h5: ../data/Criteo/criteo_x0_ace9c1b9/train.h5
+2020-12-27 13:13:48,716 P31211 INFO Loading data from h5: ../data/Criteo/criteo_x0_ace9c1b9/valid.h5
+2020-12-27 13:13:50,454 P31211 INFO Train samples: total/33003326, pos/8456369, neg/24546957, ratio/25.62%, blocks/1
+2020-12-27 13:13:50,454 P31211 INFO Validation samples: total/8250124, pos/2114300, neg/6135824, ratio/25.63%, blocks/1
+2020-12-27 13:13:50,454 P31211 INFO Loading train data done.
+2020-12-27 13:13:55,090 P31211 INFO Start training: 8058 batches/epoch
+2020-12-27 13:13:55,091 P31211 INFO ************ Epoch=1 start ************
+2020-12-27 14:12:58,388 P31211 INFO [Metrics] logloss: 0.447059 - AUC: 0.804085
+2020-12-27 14:12:58,389 P31211 INFO Save best model: monitor(max): 0.357026
+2020-12-27 14:12:58,466 P31211 INFO --- 8058/8058 batches finished ---
+2020-12-27 14:12:58,547 P31211 INFO Train loss: 0.461657
+2020-12-27 14:12:58,547 P31211 INFO ************ Epoch=1 end ************
+2020-12-27 15:02:52,736 P31211 INFO [Metrics] logloss: 0.445168 - AUC: 0.806487
+2020-12-27 15:02:52,737 P31211 INFO Save best model: monitor(max): 0.361319
+2020-12-27 15:02:52,873 P31211 INFO --- 8058/8058 batches finished ---
+2020-12-27 15:02:52,958 P31211 INFO Train loss: 0.455967
+2020-12-27 15:02:52,959 P31211 INFO ************ Epoch=2 end ************
+2020-12-27 15:47:57,714 P31211 INFO [Metrics] logloss: 0.444223 - AUC: 0.807586
+2020-12-27 15:47:57,716 P31211 INFO Save best model: monitor(max): 0.363363
+2020-12-27 15:47:57,851 P31211 INFO --- 8058/8058 batches finished ---
+2020-12-27 15:47:57,934 P31211 INFO Train loss: 0.454617
+2020-12-27 15:47:57,934 P31211 INFO ************ Epoch=3 end ************
+2020-12-27 16:36:06,487 P31211 INFO [Metrics] logloss: 0.443307 - AUC: 0.808256
+2020-12-27 16:36:06,488 P31211 INFO Save best model: monitor(max): 0.364950
+2020-12-27 16:36:06,630 P31211 INFO --- 8058/8058 batches finished ---
+2020-12-27 16:36:06,714 P31211 INFO Train loss: 0.453948
+2020-12-27 16:36:06,714 P31211 INFO ************ Epoch=4 end ************
+2020-12-27 17:14:12,114 P31211 INFO [Metrics] logloss: 0.443120 - AUC: 0.808461
+2020-12-27 17:14:12,116 P31211 INFO Save best model: monitor(max): 0.365341
+2020-12-27 17:14:12,261 P31211 INFO --- 8058/8058 batches finished ---
+2020-12-27 17:14:12,345 P31211 INFO Train loss: 0.453554
+2020-12-27 17:14:12,346 P31211 INFO ************ Epoch=5 end ************
+2020-12-27 17:48:52,255 P31211 INFO [Metrics] logloss: 0.442741 - AUC: 0.808832
+2020-12-27 17:48:52,257 P31211 INFO Save best model: monitor(max): 0.366091
+2020-12-27 17:48:52,397 P31211 INFO --- 8058/8058 batches finished ---
+2020-12-27 17:48:52,479 P31211 INFO Train loss: 0.453250
+2020-12-27 17:48:52,479 P31211 INFO ************ Epoch=6 end ************
+2020-12-27 18:23:30,297 P31211 INFO [Metrics] logloss: 0.442675 - AUC: 0.808974
+2020-12-27 18:23:30,298 P31211 INFO Save best model: monitor(max): 0.366299
+2020-12-27 18:23:30,418 P31211 INFO --- 8058/8058 batches finished ---
+2020-12-27 18:23:30,506 P31211 INFO Train loss: 0.453000
+2020-12-27 18:23:30,506 P31211 INFO ************ Epoch=7 end ************
+2020-12-27 19:02:37,888 P31211 INFO [Metrics] logloss: 0.442776 - AUC: 0.809184
+2020-12-27 19:02:37,902 P31211 INFO Save best model: monitor(max): 0.366408
+2020-12-27 19:02:38,069 P31211 INFO --- 8058/8058 batches finished ---
+2020-12-27 19:02:38,161 P31211 INFO Train loss: 0.452781
+2020-12-27 19:02:38,162 P31211 INFO ************ Epoch=8 end ************
+2020-12-27 20:02:09,398 P31211 INFO [Metrics] logloss: 0.442581 - AUC: 0.809264
+2020-12-27 20:02:09,400 P31211 INFO Save best model: monitor(max): 0.366683
+2020-12-27 20:02:09,500 P31211 INFO --- 8058/8058 batches finished ---
+2020-12-27 20:02:09,594 P31211 INFO Train loss: 0.452622
+2020-12-27 20:02:09,594 P31211 INFO ************ Epoch=9 end ************
+2020-12-27 21:01:33,977 P31211 INFO [Metrics] logloss: 0.442339 - AUC: 0.809386
+2020-12-27 21:01:33,979 P31211 INFO Save best model: monitor(max): 0.367046
+2020-12-27 21:01:34,124 P31211 INFO --- 8058/8058 batches finished ---
+2020-12-27 21:01:34,213 P31211 INFO Train loss: 0.452513
+2020-12-27 21:01:34,214 P31211 INFO ************ Epoch=10 end ************
+2020-12-27 22:00:37,410 P31211 INFO [Metrics] logloss: 0.442111 - AUC: 0.809505
+2020-12-27 22:00:37,425 P31211 INFO Save best model: monitor(max): 0.367394
+2020-12-27 22:00:37,572 P31211 INFO --- 8058/8058 batches finished ---
+2020-12-27 22:00:37,656 P31211 INFO Train loss: 0.452360
+2020-12-27 22:00:37,657 P31211 INFO ************ Epoch=11 end ************
+2020-12-27 22:55:30,599 P31211 INFO [Metrics] logloss: 0.442067 - AUC: 0.809600
+2020-12-27 22:55:30,601 P31211 INFO Save best model: monitor(max): 0.367533
+2020-12-27 22:55:30,737 P31211 INFO --- 8058/8058 batches finished ---
+2020-12-27 22:55:30,819 P31211 INFO Train loss: 0.452260
+2020-12-27 22:55:30,819 P31211 INFO ************ Epoch=12 end ************
+2020-12-27 23:47:59,466 P31211 INFO [Metrics] logloss: 0.442065 - AUC: 0.809637
+2020-12-27 23:47:59,468 P31211 INFO Save best model: monitor(max): 0.367572
+2020-12-27 23:47:59,598 P31211 INFO --- 8058/8058 batches finished ---
+2020-12-27 23:47:59,681 P31211 INFO Train loss: 0.452170
+2020-12-27 23:47:59,681 P31211 INFO ************ Epoch=13 end ************
+2020-12-28 00:40:52,590 P31211 INFO [Metrics] logloss: 0.442010 - AUC: 0.809582
+2020-12-28 00:40:52,591 P31211 INFO Monitor(max) STOP: 0.367572 !
+2020-12-28 00:40:52,591 P31211 INFO Reduce learning rate on plateau: 0.000100
+2020-12-28 00:40:52,591 P31211 INFO --- 8058/8058 batches finished ---
+2020-12-28 00:40:52,681 P31211 INFO Train loss: 0.452076
+2020-12-28 00:40:52,681 P31211 INFO ************ Epoch=14 end ************
+2020-12-28 01:29:35,926 P31211 INFO [Metrics] logloss: 0.439002 - AUC: 0.812899
+2020-12-28 01:29:35,930 P31211 INFO Save best model: monitor(max): 0.373897
+2020-12-28 01:29:36,164 P31211 INFO --- 8058/8058 batches finished ---
+2020-12-28 01:29:36,385 P31211 INFO Train loss: 0.441425
+2020-12-28 01:29:36,386 P31211 INFO ************ Epoch=15 end ************
+2020-12-28 02:04:27,234 P31211 INFO [Metrics] logloss: 0.438487 - AUC: 0.813407
+2020-12-28 02:04:27,236 P31211 INFO Save best model: monitor(max): 0.374919
+2020-12-28 02:04:27,388 P31211 INFO --- 8058/8058 batches finished ---
+2020-12-28 02:04:27,474 P31211 INFO Train loss: 0.437405
+2020-12-28 02:04:27,474 P31211 INFO ************ Epoch=16 end ************
+2020-12-28 02:32:12,570 P31211 INFO [Metrics] logloss: 0.438385 - AUC: 0.813570
+2020-12-28 02:32:12,572 P31211 INFO Save best model: monitor(max): 0.375185
+2020-12-28 02:32:12,706 P31211 INFO --- 8058/8058 batches finished ---
+2020-12-28 02:32:12,795 P31211 INFO Train loss: 0.435645
+2020-12-28 02:32:12,795 P31211 INFO ************ Epoch=17 end ************
+2020-12-28 02:59:55,367 P31211 INFO [Metrics] logloss: 0.438483 - AUC: 0.813512
+2020-12-28 02:59:55,369 P31211 INFO Monitor(max) STOP: 0.375029 !
+2020-12-28 02:59:55,369 P31211 INFO Reduce learning rate on plateau: 0.000010
+2020-12-28 02:59:55,369 P31211 INFO --- 8058/8058 batches finished ---
+2020-12-28 02:59:55,458 P31211 INFO Train loss: 0.434309
+2020-12-28 02:59:55,458 P31211 INFO ************ Epoch=18 end ************
+2020-12-28 03:20:59,776 P31211 INFO [Metrics] logloss: 0.438989 - AUC: 0.813241
+2020-12-28 03:20:59,778 P31211 INFO Monitor(max) STOP: 0.374252 !
+2020-12-28 03:20:59,778 P31211 INFO Reduce learning rate on plateau: 0.000001
+2020-12-28 03:20:59,778 P31211 INFO Early stopping at epoch=19
+2020-12-28 03:20:59,778 P31211 INFO --- 8058/8058 batches finished ---
+2020-12-28 03:20:59,862 P31211 INFO Train loss: 0.430456
+2020-12-28 03:20:59,862 P31211 INFO Training finished.
+2020-12-28 03:20:59,862 P31211 INFO Load best model: /home/zhujieming/zhujieming/FuxiCTR/benchmarks/Criteo/DCN_criteo_x0/criteo_x0_ace9c1b9/DCN_criteo_x0_014_53f4baa3_model.ckpt
+2020-12-28 03:21:00,060 P31211 INFO ****** Train/validation evaluation ******
+2020-12-28 03:21:35,528 P31211 INFO [Metrics] logloss: 0.438385 - AUC: 0.813570
+2020-12-28 03:21:35,636 P31211 INFO ******** Test evaluation ********
+2020-12-28 03:21:35,636 P31211 INFO Loading data...
+2020-12-28 03:21:35,636 P31211 INFO Loading data from h5: ../data/Criteo/criteo_x0_ace9c1b9/test.h5
+2020-12-28 03:21:36,369 P31211 INFO Test samples: total/4587167, pos/1174769, neg/3412398, ratio/25.61%, blocks/1
+2020-12-28 03:21:36,369 P31211 INFO Loading test data done.
+2020-12-28 03:21:55,028 P31211 INFO [Metrics] logloss: 0.437904 - AUC: 0.813926
+
 
 
 ```
