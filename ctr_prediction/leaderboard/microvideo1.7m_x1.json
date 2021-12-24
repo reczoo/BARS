@@ -94,7 +94,7 @@
             "pub": "WWW'18",
             "model": "FwFM",
             "logloss": "0.4150",
-            "auc": "0.7959",
+            "auc": "0.7259",
             "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/FwFM/FwFM_microvideo1.7m_x1_001",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
