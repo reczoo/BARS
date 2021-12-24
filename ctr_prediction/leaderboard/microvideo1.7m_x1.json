@@ -63,8 +63,8 @@
             "year": "2017",
             "pub": "ADKDD'17",
             "model": "DCN",
-            "logloss": "0.4112",
-            "auc": "0.7349",
+            "logloss": "0.4111",
+            "auc": "0.7345",
             "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/DCN/DCN_microvideo1.7m_x1_001",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
