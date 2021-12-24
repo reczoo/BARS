@@ -45,7 +45,7 @@
             "model": "DeepFM",
             "logloss": "0.4104",
             "auc": "0.7340",
-            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/DeepFM/DeepFM+_microvideo1.7m_x1_001",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/DeepFM/DeepFM_microvideo1.7m_x1_001",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
         },
