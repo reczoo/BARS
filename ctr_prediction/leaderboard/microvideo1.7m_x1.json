@@ -51,7 +51,7 @@
         },
         {
             "year": "2020",
-            "pub": "CIKM'17",
+            "pub": "CIKM'20",
             "model": "DeepIM",
             "logloss": "0.4110",
             "auc": "0.7378",
