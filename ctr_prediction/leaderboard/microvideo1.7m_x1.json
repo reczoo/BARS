@@ -54,7 +54,7 @@
             "pub": "CIKM'20",
             "model": "DeepIM",
             "logloss": "0.4110",
-            "auc": "0.7378",
+            "auc": "0.7348",
             "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/DeepIM/DeepIM_microvideo1.7m_x1_001",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
