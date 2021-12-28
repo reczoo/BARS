@@ -1,5 +1,16 @@
 {
     "data": [{
+            "year": "2021",
+            "pub": "SIGIR'21",
+            "model": "xLightFM",
+            "paper": "xLightFM: Extremely Memory-Efficient Factorization Machine",
+            "authors": "Gangwei Jiang, Hao Wang, Jin Chen, Haoyu Wang, Defu Lian, Enhong Chen",
+            "link": "https://dl.acm.org/doi/10.1145/3404835.3462941",
+            "company": "",
+            "code": "",
+            "tags": "#Embedding"
+        },
+        {
             "year": "2020",
             "pub": "SIGIR'20",
             "model": "TFNet",
@@ -456,7 +467,7 @@
             "model": "",
             "paper": "Efficient Learning to Learn a Robust CTR Model for Web-scale Online Sponsored Search Advertising",
             "authors": "Xin Wang, Peng Yang, Shaopeng Chen, Lin Liu, Lian Zhao, Jiacheng Guo, Mingming Sun, Ping Li",
-            "link": "",
+            "link": "https://dl.acm.org/doi/abs/10.1145/3459637.3481912",
             "company": "Baidu",
             "code": "",
             "tags": ""
@@ -489,7 +500,7 @@
             "model": "AutoIAS",
             "paper": "AutoIAS: Automatic Integrated Architecture Searcher For Click-Trough Rate Prediction",
             "authors": "Zhikun Wei, Xin Wang, Wenwu Zhu",
-            "link": "",
+            "link": "https://dl.acm.org/doi/abs/10.1145/3459637.3482234",
             "company": "",
             "code": "",
             "tags": "#AutoML"
@@ -500,7 +511,7 @@
             "model": "",
             "paper": "Click-Through Rate Prediction with Multi-Modal Hypergraphs",
             "authors": "Li He, Hongxu Chen, Dingxian Wang, Shoaib Jameel, Philip Yu, Guandong Xu",
-            "link": "",
+            "link": "https://arxiv.org/pdf/2109.02398",
             "company": "Ebay",
             "code": "",
             "tags": "#Graph-Modeling"
@@ -511,7 +522,7 @@
             "model": "AutoHERI",
             "paper": "AutoHERI: Automated Hierarchical Representation Integration for Post-Click Conversion Rate Estimation",
             "authors": "Penghui Wei, Weimin Zhang, Zixuan Xu, Shaoguo Liu, Kuang-Chih Lee, Bo Zheng",
-            "link": "",
+            "link": "https://dl.acm.org/doi/abs/10.1145/3459637.3482061",
             "company": "Alibaba",
             "code": "",
             "tags": "#CVR"
