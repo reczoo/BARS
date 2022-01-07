@@ -52,7 +52,8 @@ We use [FuxiCTR v1.1](https://github.com/xue-pai/FuxiCTR/tree/v1.1.0) for this e
 4. Run the following script to start.
 
   ```bash
-  nohup python run_expid.py --version pytorch --config Avazu/DCN_avazu_x1/DCN_avazu_x1_tuner_config_02 --expid DCN_avazu_x1_010_6afb45f5 --gpu 0 > run.log & 
+  cd BARS/ctr_prediction/benchmarks/DCN/DCN_avazu_x1
+  nohup python run_expid.py --version pytorch --config DCN_avazu_x1_tuner_config_02 --expid DCN_avazu_x1_010_6afb45f5 --gpu 0 > run.log & 
   tail -f run.log
   ```
 

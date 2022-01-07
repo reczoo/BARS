@@ -52,7 +52,8 @@ We use [FuxiCTR v1.1](https://github.com/xue-pai/FuxiCTR/tree/v1.1.0) for this e
 4. Run the following script to start.
 
   ```bash
-  nohup python run_expid.py --version pytorch --config Criteo/FM_criteo_x1/FM_criteo_x1_tuner_config_02 --expid FM_criteo_x1_001_8f8d954b --gpu 0 > run.log & 
+  cd BARS/ctr_prediction/benchmarks/FM/FM_criteo_x1
+  nohup python run_expid.py --version pytorch --config FM_criteo_x1_tuner_config_02 --expid FM_criteo_x1_001_8f8d954b --gpu 0 > run.log & 
   tail -f run.log
   ```
 

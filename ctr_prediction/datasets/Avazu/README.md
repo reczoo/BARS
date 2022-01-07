@@ -40,9 +40,13 @@ Dataset statistics are summarized as follows:
 ## Avazu_x1
 
 + Dataset description
-This dataset contains about 10 days of labeled click-through data on mobile advertisements. It has 22 feature fields including user features and advertisement attributes. As similar to the [AFN](https://ojs.aaai.org/index.php/AAAI/article/view/5768) work, we split the data randomly into 7:1:2 as the training set, validation set, and test set, respectively. For consistency of evaluation, we directly reuse the preprocessed data accessible from the [BARS benchmark](https://github.com/openbenchmark/BARS/click_prediction/datasets). 
+
+This dataset contains about 10 days of labeled click-through data on mobile advertisements. It has 22 feature fields including user features and advertisement attributes. We reuse the preprocessed data released by the [AFN](https://ojs.aaai.org/index.php/AAAI/article/view/5768) work, which are randomly split into 7:1:2\* as the training set, validation set, and test set, respectively. For consistency of evaluation, we obtain the preprocessed data accessible from the [BARS benchmark](https://github.com/openbenchmark/BARS/click_prediction/datasets). 
+
+\* Note that the released data have a ratio of 7:1:2, which is different from 8:1:1 as reported in the AFN paper. 
 
 + How to get the dataset?
+
   + Solution#1: Run the following scripts:
       ```bash
       $ cd datasets/Avazu/Avazu_x1
@@ -60,12 +64,13 @@ This dataset contains about 10 days of labeled click-through data on mobile adve
 
 + Default setting
   
-  In this benchmark setting, we follow the AFN work to fix **embedding_dim=16**, **batch_size=4096**, and **MLP_hidden_units=[400, 400, 400]** to make fair comparisons.
+  In this benchmark setting, we follow the AFN work to fix **embedding_dim=10**, **batch_size=4096**, and **MLP_hidden_units=[400, 400, 400]** to make fair comparisons.
   
 
 ## Avazu_x2
 
 + Dataset description
+
 This dataset contains about 10 days of labeled click-through data on mobile advertisements. It has 22 feature fields including user features and advertisement attributes. Following the same setting in the [AutoGroup](https://dl.acm.org/doi/abs/10.1145/3397271.3401082) work, we randomly split 80% of the data for training and validation, and the remaining 20% for testing, respectively. For consistency of evaluation, we directly reuse the preprocessed data accessible from the [BARS benchmark](https://github.com/openbenchmark/BARS/click_prediction/datasets). 
 
 + How to get the dataset?
@@ -93,6 +98,7 @@ TBA
 ## Avazu_x4
 
 + Dataset description
+
 This dataset contains about 10 days of labeled click-through data on mobile advertisements. It has 22 feature fields including user features and advertisement attributes. Following the same setting in the [AutoInt](https://arxiv.org/abs/1810.11921) work, we split the data randomly into 8:1:1 as the training set, validation set, and test set, respectively. For better reproduciblity, we directly reuse the code provided by AutoInt and control the random seed (i.e., seed=2018) for splitting. The preprocessed data are accessible from the [BARS benchmark](https://github.com/openbenchmark/BARS/click_prediction/datasets).
 
 + How to get the dataset?
