@@ -5,7 +5,7 @@
             "model": "FM(rerun)",
             "logloss": "0.3677",
             "auc": "0.7613",
-            "link": "https://github.com/openbenchmark/BARS/blob/master/ctr_prediction/benchmarks/FM/FM_avazu_x1_001",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/ctr_prediction/benchmarks/FM/FM_avazu_x1",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
         },
@@ -15,7 +15,7 @@
             "model": "FFM",
             "logloss": "0.3676",
             "auc": "0.7625",
-            "link": "https://github.com/openbenchmark/BARS/blob/master/ctr_prediction/benchmarks/FFM/FFM_avazu_x1_001",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/ctr_prediction/benchmarks/FFM/FFM_avazu_x1",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
         },
@@ -25,7 +25,7 @@
             "model": "FmFM",
             "logloss": "0.3685",
             "auc": "0.7603",
-            "link": "https://github.com/openbenchmark/BARS/blob/master/ctr_prediction/benchmarks/FmFM/FmFM_avazu_x1_001",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/ctr_prediction/benchmarks/FmFM/FmFM_avazu_x1",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
         },
@@ -35,7 +35,7 @@
             "model": "YoutubeNet",
             "logloss": "0.3671",
             "auc": "0.7646",
-            "link": "https://github.com/openbenchmark/BARS/blob/master/ctr_prediction/benchmarks/YoutubeDNN/YoutubeDNN_avazu_x1_001",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/ctr_prediction/benchmarks/YoutubeDNN/YoutubeDNN_avazu_x1",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
         },
@@ -45,7 +45,7 @@
             "model": "IPNN(rerun)",
             "logloss": "0.3676",
             "auc": "0.7630",
-            "link": "https://github.com/openbenchmark/BARS/blob/master/ctr_prediction/benchmarks/IPNN/IPNN_avazu_x1_001",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/ctr_prediction/benchmarks/IPNN/IPNN_avazu_x1",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
         },
@@ -55,7 +55,7 @@
             "model": "DeepFM(rerun)",
             "logloss": "0.3662",
             "auc": "0.7657",
-            "link": "https://github.com/openbenchmark/BARS/blob/master/ctr_prediction/benchmarks/DeepFM/DeepFM_avazu_x1_001",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/ctr_prediction/benchmarks/DeepFM/DeepFM_avazu_x1",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
         },
@@ -63,9 +63,10 @@
             "year": "2017",
             "pub": "ADKDD'17",
             "model": "DCN",
-            "logloss": "0.3663",
-            "auc": "0.7649",
-            "link": "https://github.com/openbenchmark/BARS/blob/master/ctr_prediction/benchmarks/DCN/DCN_avazu_x1_001",
+            "paper": "https://arxiv.org/abs/1708.05123",
+            "logloss": "0.3669",
+            "auc": "0.7647",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/ctr_prediction/benchmarks/DCN/DCN_avazu_x1",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
         },
@@ -75,7 +76,7 @@
             "model": "DeepIM",
             "logloss": "0.3668",
             "auc": "0.7652",
-            "link": "https://github.com/openbenchmark/BARS/blob/master/ctr_prediction/benchmarks/DeepIM/DeepIM_avazu_x1_001",
+            "link": "https://github.com/openbenchmark/BARS/blob/master/ctr_prediction/benchmarks/DeepIM/DeepIM_avazu_x1",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
         }

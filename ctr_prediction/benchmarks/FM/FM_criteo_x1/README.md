@@ -1,4 +1,4 @@
-## FM_Criteo_x1
+## FM_criteo_x1
 
 A guide to benchmark FM on [Criteo_x1](https://github.com/openbenchmark/BARS/blob/master/ctr_prediction/datasets/Criteo/README.md#Criteo_x1).
 
@@ -32,13 +32,13 @@ Author: [zhujiem](https://github.com/zhujiem)
 
 ### Dataset
 
-To reproduce the dataset splitting, please follow the the details of [Criteo_x1](https://github.com/openbenchmark/BARS/blob/master/ctr_prediction/datasets/Criteo/README.md#Criteo_x1) to get data ready.
+To reproduce the dataset splitting, please follow the details of [Criteo_x1](https://github.com/openbenchmark/BARS/blob/master/ctr_prediction/datasets/Criteo/README.md#Criteo_x1) to get data ready.
 
 ### Code
 
-We use [FuxiCTR](https://github.com/xue-pai/FuxiCTR) for benchmarking the FM model.
+We use [FuxiCTR v1.1](https://github.com/xue-pai/FuxiCTR/tree/v1.1.0) for this experiment.
 
-1. Install FuxiCTR and all the dependencies. FuxiCTR v1.1 is required in this experiment. 
+1. Install FuxiCTR and all the dependencies. 
    ```bash
    pip install fuxictr==1.1.*
    ```
