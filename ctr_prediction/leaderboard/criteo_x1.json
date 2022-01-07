@@ -2,10 +2,11 @@
     "data": [{
             "year": "2010",
             "pub": "ICDM'10",
-            "model": "FM(rerun)",
+            "model": "FM",
+            "paper": "https://www.csie.ntu.edu.tw/~b97053/paper/Rendle2010FM.pdf",
             "logloss": "0.4491",
             "auc": "0.8022",
-            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/default",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/FM/FM_criteo_x1",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
         },
@@ -25,7 +26,7 @@
             "model": "FmFM",
             "logloss": "0.4462",
             "auc": "0.8056",
-            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/FmFM/FmFM_criteo_x1_001",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/FmFM/FmFM_criteo_x1",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
         },
@@ -35,7 +36,7 @@
             "model": "YoutubeDNN",
             "logloss": "0.4382",
             "auc": "0.8136",
-            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/YoutubeDNN/YoutubeDNN_criteo_x1_001",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/YoutubeDNN/YoutubeDNN_criteo_x1",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
         },
@@ -45,7 +46,7 @@
             "model": "IPNN(rerun)",
             "logloss": "0.4383",
             "auc": "0.8137",
-            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/IPNN/IPNN_criteo_x1_001",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/IPNN/IPNN_criteo_x1",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
         },
@@ -55,7 +56,7 @@
             "model": "DeepFM(rerun)",
             "logloss": "0.4381",
             "auc": "0.8138",
-            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/DeepFM/DeepFM_criteo_x1_001",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/DeepFM/DeepFM_criteo_x1",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
         },
@@ -65,7 +66,7 @@
             "model": "DCN(rerun)",
             "logloss": "0.4379",
             "auc": "0.8139",
-            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/DCN/DCN_criteo_x1_001",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/DCN/DCN_criteo_x1",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
         },
@@ -75,7 +76,7 @@
             "model": "DeepIM",
             "logloss": "0.4379",
             "auc": "0.8140",
-            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/DeepIM/DeepIM_criteo_x1_001",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/DeepIM/DeepIM_criteo_x1",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
         },
@@ -85,15 +86,6 @@
             "model": "LR",
             "logloss": "0.4636",
             "auc": "0.7858",
-            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/default",
-            "contr": "Reported by AFN paper"
-        },
-        {
-            "year": "2010",
-            "pub": "ICDM'10",
-            "model": "FM(paper)",
-            "logloss": "0.4574",
-            "auc": "0.7933",
             "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/default",
             "contr": "Reported by AFN paper"
         },
