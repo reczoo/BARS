@@ -15,7 +15,7 @@ FM_criteo_x1_001_8f8d954b:
     monitor_mode: max
     num_workers: 3
     optimizer: adam
-    partition_block_size: -1
+    data_block_size: -1
     patience: 2
     pickle_feature_encoder: true
     regularizer: 5.0e-06
@@ -42,7 +42,7 @@ FM_criteo_x1_002_8c23840e:
     monitor_mode: max
     num_workers: 3
     optimizer: adam
-    partition_block_size: -1
+    data_block_size: -1
     patience: 2
     pickle_feature_encoder: true
     regularizer: 5.0e-05

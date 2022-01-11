@@ -45,7 +45,7 @@ We use [FuxiCTR v1.1](https://github.com/xue-pai/FuxiCTR/tree/v1.1.0) for this e
    
 2. Put the downloaded dataset in `../data/Criteo/Criteo_x1`. 
 
-3. The dataset_config and model_config files are available in the sub-folder `FM_criteo_x1_tuner_config_02`.
+3. The dataset_config and model_config files are available in the sub-folder [FM_criteo_x1_tuner_config_02](./FM_criteo_x1_tuner_config_02).
 
    Note that in this setting, we follow the AFN work to fix embedding_dim=10, batch_size=4096, and MLP_hidden_units=[400, 400, 400] to make fair comparisons. Other hyper-parameters are tuned via grid search.
 

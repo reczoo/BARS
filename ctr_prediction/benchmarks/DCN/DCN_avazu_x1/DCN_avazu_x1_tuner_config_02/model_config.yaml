@@ -22,7 +22,7 @@ DCN_avazu_x1_010_6afb45f5:
     net_regularizer: 0
     num_workers: 3
     optimizer: adam
-    partition_block_size: -1
+    data_block_size: -1
     patience: 2
     pickle_feature_encoder: true
     save_best_only: true

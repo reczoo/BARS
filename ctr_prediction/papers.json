@@ -1,6 +1,17 @@
 {
     "data": [{
             "year": "2021",
+            "pub": "CIKM'21",
+            "model": "DCAP",
+            "paper": "DCAP: Deep Cross Attentional Product Network for User Response Prediction",
+            "authors": "Zekai Chen, Fangtian Zhong, Zhumin Chen, Xiao Zhang, Robert Pless, Xiuzhen Cheng",
+            "link": "https://arxiv.org/abs/2105.08649",
+            "company": "",
+            "code": "",
+            "tags": "#Feature-Interactions"
+        },
+        {
+            "year": "2021",
             "pub": "SIGIR'21",
             "model": "xLightFM",
             "paper": "xLightFM: Extremely Memory-Efficient Factorization Machine",
