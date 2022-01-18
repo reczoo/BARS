@@ -36,7 +36,7 @@ To reproduce the dataset splitting, please follow the details of [Avazu_x1](http
 
 ### Code
 
-We use [FuxiCTR v1.1](https://github.com/xue-pai/FuxiCTR/tree/v1.1.0) for this experiment.
+We use [FuxiCTR v1.1](https://github.com/xue-pai/FuxiCTR/tree/v1.1.0) for this experiment. The model implementation can be found [here](https://github.com/xue-pai/FuxiCTR/blob/v1.1.0/fuxictr/pytorch/models/DCN.py).
 
 1. Install FuxiCTR and all the dependencies.
    ```bash
