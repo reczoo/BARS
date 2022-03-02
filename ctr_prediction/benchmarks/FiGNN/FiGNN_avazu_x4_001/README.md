@@ -1,9 +1,8 @@
-## FiGNN_Avazu_x4_001
+## FiGNN_avazu_x4_001
 
-A notebook to benchmark FiGNN on Avazu_x4_001 dataset.
+A hands-on guide to run the FiGNN model on the Avazu_x4_001 dataset.
 
-Author: [XUEPAI Team](https://github.com/xue-pai)
-
+Author: [XUEPAI](https://github.com/xue-pai)
 
 ### Index
 [Environments](#Environments) | [Dataset](#Dataset) | [Code](#Code) | [Results](#Results) | [Logs](#Logs)
@@ -12,47 +11,60 @@ Author: [XUEPAI Team](https://github.com/xue-pai)
 + Hardware
 
   ```python
-  CPU: Intel(R) Xeon(R) CPU E5-2690 v4 @ 2.6GHz
-  RAM: 500G+
+  CPU: Intel(R) Xeon(R) Gold 6278C CPU @ 2.60GHz
+  GPU: Tesla V100 32G
+  RAM: 755G
+
   ```
+
 + Software
 
   ```python
-  python: 3.6.5
-  pandas: 1.0.0
-  numpy: 1.18.1
+  CUDA: 10.2
+  python: 3.6.4
+  pytorch: 1.0.0
+  pandas: 0.22.0
+  numpy: 1.19.2
+  scipy: 1.5.4
+  sklearn: 0.22.1
+  pyyaml: 5.4.1
+  h5py: 2.8.0
+  tqdm: 4.60.0
+  fuxictr: 1.0.2
   ```
 
 ### Dataset
-In this setting, we preprocess the data split by removing the id field that is useless for CTR prediction. In addition, we transform the timestamp field into three fields: hour, weekday, and is_weekend. For all categorical fields, we filter infrequent features by setting the threshold min_category_count=2 (performs well) and replace them with a default <OOV> token. Note that we do not follow the exact preprocessing steps in AutoInt, because the authors neither remove the useless id field nor specially preprocess the timestamp field.
-
-To make a fair comparison, we fix embedding_dim=16 as with AutoInt.
-
+Dataset ID: [Avazu_x4_001](https://github.com/openbenchmark/BARS/blob/master/ctr_prediction/datasets/Avazu/README.md#Avazu_x4_001). Please refer to the dataset details to get data ready.
 
 ### Code
-1. Install FuxiCTR
-  
-    Install FuxiCTR via `pip install fuxictr==1.0` to get all dependencies ready. Then download [the FuxiCTR repository](https://github.com/huawei-noah/benchmark/archive/53e314461c19dbc7f462b42bf0f0bfae020dc398.zip) to your local path.
 
-2. Downalod the dataset and run [the preprocessing script](https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/datasets/Avazu/Avazu_x4/split_avazu_x4.py) for data splitting. 
+We use [FuxiCTR-v1.0.2](fuxictr_url) for this experiment. See model code: [FiGNN](https://github.com/xue-pai/FuxiCTR/blob/v1.0.2/fuxictr/pytorch/models/FiGNN.py).
 
-3. Download the hyper-parameter configuration file: [FiGNN_avazu_x4_tuner_config_03.yaml](./FiGNN_avazu_x4_tuner_config_03.yaml)
+Running steps:
 
-4. Run the following script to reproduce the result. 
-  + --config: The config file that defines the tuning space
-  + --tag: Specify which expid to run (each expid corresponds to a specific setting of hyper-parameters in the tunner space)
-  + --gpu: The available gpus for parameters tuning.
+1. Download [FuxiCTR-v1.0.2](fuxictr_url) and install all the dependencies listed in the [environments](#environments). Then modify [run_expid.py](./run_expid.py#L5) to add the FuxiCTR library to system path
+    
+    ```python
+    sys.path.append('YOUR_PATH_TO_FuxiCTR/')
+    ```
 
-  ```bash
-  cd FuxiCTR/benchmarks
-  python run_param_tuner.py --config YOUR_PATH/FiGNN_avazu_x4_tuner_config_03.yaml --tag 002 --gpu 0
-  ```
+2. Create a data directory and put the downloaded csv files in `../data/Avazu/Avazu_x1`.
 
+3. Both `dataset_config.yaml` and `model_config.yaml` files are available in [FiGNN_avazu_x4_tuner_config_03](./FiGNN_avazu_x4_tuner_config_03). Make sure the data paths in `dataset_config.yaml` are correctly set to what we create in the last step.
+
+4. Run the following script to start.
+
+    ```bash
+    cd FiGNN_avazu_x4_001
+    nohup python run_expid.py --config ./FiGNN_avazu_x4_tuner_config_03 --expid FiGNN_avazu_x4_002_c8515c76 --gpu 0 > run.log &
+    tail -f run.log
+    ```
 
 ### Results
-```python
-[Metrics] logloss: 0.373630 - AUC: 0.791460
-```
+
+| logloss | AUC  |
+|:--------------------:|:--------------------:|
+| 0.373630 | 0.791460  |
 
 
 ### Logs
@@ -130,7 +142,7 @@ To make a fair comparison, we fix embedding_dim=16 as with AutoInt.
 2020-06-14 15:51:56,162 P591 INFO --- 3235/3235 batches finished ---
 2020-06-14 15:51:56,216 P591 INFO Train loss: 0.314782
 2020-06-14 15:51:56,216 P591 INFO Training finished.
-2020-06-14 15:51:56,216 P591 INFO Load best model: /cache/xxx/FuxiCTR/benchmarks/Avazu/FiGNN_avazu/min2/avazu_x4_3bbbc4c9/FiGNN_avazu_x4_3bbbc4c9_002_236c17be_model.ckpt
+2020-06-14 15:51:56,216 P591 INFO Load best model: /cache/XXX/FuxiCTR/benchmarks/Avazu/FiGNN_avazu/min2/avazu_x4_3bbbc4c9/FiGNN_avazu_x4_3bbbc4c9_002_236c17be_model.ckpt
 2020-06-14 15:51:56,700 P591 INFO ****** Train/validation evaluation ******
 2020-06-14 15:55:11,710 P591 INFO [Metrics] logloss: 0.327311 - AUC: 0.855957
 2020-06-14 15:55:34,878 P591 INFO [Metrics] logloss: 0.373721 - AUC: 0.791325
@@ -140,6 +152,5 @@ To make a fair comparison, we fix embedding_dim=16 as with AutoInt.
 2020-06-14 15:55:35,584 P591 INFO Test samples: total/4042898, pos/686507, neg/3356391, ratio/16.98%
 2020-06-14 15:55:35,584 P591 INFO Loading test data done.
 2020-06-14 15:56:00,588 P591 INFO [Metrics] logloss: 0.373630 - AUC: 0.791460
-
 
 ```

@@ -1,0 +1,408 @@
+HFM_criteo_x4_001_ced5eacc:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-4)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [64, 64, 64]
+    interaction_type: circular_convolution
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HFM
+    model_id: HFM_base
+    model_root: ./Criteo/HFM_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_dnn: false
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HFM_criteo_x4_002_5a1adc57:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [64, 64, 64]
+    interaction_type: circular_convolution
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HFM
+    model_id: HFM_base
+    model_root: ./Criteo/HFM_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_dnn: false
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HFM_criteo_x4_003_051251f0:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [64, 64, 64]
+    interaction_type: circular_convolution
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HFM
+    model_id: HFM_base
+    model_root: ./Criteo/HFM_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_dnn: false
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HFM_criteo_x4_004_8bb4c398:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-7)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [64, 64, 64]
+    interaction_type: circular_convolution
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HFM
+    model_id: HFM_base
+    model_root: ./Criteo/HFM_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_dnn: false
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HFM_criteo_x4_005_21fcc1f9:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-8)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [64, 64, 64]
+    interaction_type: circular_convolution
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HFM
+    model_id: HFM_base
+    model_root: ./Criteo/HFM_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_dnn: false
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HFM_criteo_x4_006_cefd2c7f:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [64, 64, 64]
+    interaction_type: circular_convolution
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HFM
+    model_id: HFM_base
+    model_root: ./Criteo/HFM_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_dnn: false
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HFM_criteo_x4_007_db6d21c6:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-4)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [64, 64, 64]
+    interaction_type: circular_correlation
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HFM
+    model_id: HFM_base
+    model_root: ./Criteo/HFM_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_dnn: false
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HFM_criteo_x4_008_c1d1ba8a:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [64, 64, 64]
+    interaction_type: circular_correlation
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HFM
+    model_id: HFM_base
+    model_root: ./Criteo/HFM_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_dnn: false
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HFM_criteo_x4_009_37dcc212:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [64, 64, 64]
+    interaction_type: circular_correlation
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HFM
+    model_id: HFM_base
+    model_root: ./Criteo/HFM_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_dnn: false
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HFM_criteo_x4_010_6c08c160:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-7)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [64, 64, 64]
+    interaction_type: circular_correlation
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HFM
+    model_id: HFM_base
+    model_root: ./Criteo/HFM_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_dnn: false
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HFM_criteo_x4_011_8b990266:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-8)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [64, 64, 64]
+    interaction_type: circular_correlation
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HFM
+    model_id: HFM_base
+    model_root: ./Criteo/HFM_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_dnn: false
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HFM_criteo_x4_012_fa60e437:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [64, 64, 64]
+    interaction_type: circular_correlation
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HFM
+    model_id: HFM_base
+    model_root: ./Criteo/HFM_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_dnn: false
+    use_hdf5: true
+    verbose: 1
+    workers: 3

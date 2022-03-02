@@ -1,0 +1,279 @@
+PNN_avazu_x1_001_d3a160cb:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 5.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: PNN
+    model_id: PNN_base
+    model_root: ./Avazu/PNN_avazu_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+PNN_avazu_x1_002_8a91559c:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 5.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: PNN
+    model_id: PNN_base
+    model_root: ./Avazu/PNN_avazu_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+PNN_avazu_x1_003_5c3b5ff7:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 5.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: PNN
+    model_id: PNN_base
+    model_root: ./Avazu/PNN_avazu_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+PNN_avazu_x1_004_77c4499d:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: PNN
+    model_id: PNN_base
+    model_root: ./Avazu/PNN_avazu_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+PNN_avazu_x1_005_114bc2ba:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: PNN
+    model_id: PNN_base
+    model_root: ./Avazu/PNN_avazu_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+PNN_avazu_x1_006_76e24acf:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: PNN
+    model_id: PNN_base
+    model_root: ./Avazu/PNN_avazu_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+PNN_avazu_x1_007_441e5e7e:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.0005
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: PNN
+    model_id: PNN_base
+    model_root: ./Avazu/PNN_avazu_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+PNN_avazu_x1_008_73dfb034:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.0005
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: PNN
+    model_id: PNN_base
+    model_root: ./Avazu/PNN_avazu_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+PNN_avazu_x1_009_9bf18276:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.0005
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: PNN
+    model_id: PNN_base
+    model_root: ./Avazu/PNN_avazu_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1

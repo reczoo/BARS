@@ -1,0 +1,32 @@
+DeepFM_avazu_x4_003_f37a42a1:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [3000, 3000, 3000, 3000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./Avazu/DeepFM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3

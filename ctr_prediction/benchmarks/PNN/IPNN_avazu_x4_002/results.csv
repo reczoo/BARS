@@ -1,0 +1,1 @@
+ 20220303-181542,[command] python run_expid.py --config Avazu/PNN_avazu_x4_002/PNN_avazu_x4_tuner_config_01/ --expid PNN_avazu_x4_013_1893e8ce --gpu 1,[exp_id] PNN_avazu_x4_013_1893e8ce,[dataset_id] avazu_x4_d102865a,[train] N.A.,[val] logloss: 0.368706 - AUC: 0.798507,[test] logloss: 0.368566 - AUC: 0.798799

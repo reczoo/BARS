@@ -1,0 +1,1 @@
+ 20200427-061948,[command] python benchmark.py --version pytorch --config KKBox/ONN_kkbox/ONN_kkbox_x4_tuner_config_02 --expid ONN_kkbox_x4_007_476b5290 --gpu 1,[exp_id] ONN_kkbox_x4_007_476b5290,[dataset_id] kkbox_x4_001_c5c9c6e3,[train] logloss: 0.401456 - AUC: 0.899096,[val] logloss: 0.483942 - AUC: 0.848900,[test] logloss: 0.483243 - AUC: 0.849291

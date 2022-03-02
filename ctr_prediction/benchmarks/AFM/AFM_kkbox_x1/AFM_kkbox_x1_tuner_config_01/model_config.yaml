@@ -1,0 +1,744 @@
+AFM_kkbox_x1_001_6b5ebf4f:
+    attention_dim: 64
+    attention_dropout: [0, 0]
+    batch_size: 10000
+    dataset_id: kkbox_x1_bf23df6c
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFM
+    model_id: AFM_kkbox_x1
+    model_root: ./KKBox/AFM_kkbox/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_attention: true
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFM_kkbox_x1_002_cd847c99:
+    attention_dim: 64
+    attention_dropout: [0.1, 0.1]
+    batch_size: 10000
+    dataset_id: kkbox_x1_bf23df6c
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFM
+    model_id: AFM_kkbox_x1
+    model_root: ./KKBox/AFM_kkbox/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_attention: true
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFM_kkbox_x1_003_3c35ca53:
+    attention_dim: 128
+    attention_dropout: [0, 0]
+    batch_size: 10000
+    dataset_id: kkbox_x1_bf23df6c
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFM
+    model_id: AFM_kkbox_x1
+    model_root: ./KKBox/AFM_kkbox/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_attention: true
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFM_kkbox_x1_004_672a509b:
+    attention_dim: 128
+    attention_dropout: [0.1, 0.1]
+    batch_size: 10000
+    dataset_id: kkbox_x1_bf23df6c
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFM
+    model_id: AFM_kkbox_x1
+    model_root: ./KKBox/AFM_kkbox/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_attention: true
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFM_kkbox_x1_005_2c0484b4:
+    attention_dim: 256
+    attention_dropout: [0, 0]
+    batch_size: 10000
+    dataset_id: kkbox_x1_bf23df6c
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFM
+    model_id: AFM_kkbox_x1
+    model_root: ./KKBox/AFM_kkbox/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_attention: true
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFM_kkbox_x1_006_c79f1795:
+    attention_dim: 256
+    attention_dropout: [0.1, 0.1]
+    batch_size: 10000
+    dataset_id: kkbox_x1_bf23df6c
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFM
+    model_id: AFM_kkbox_x1
+    model_root: ./KKBox/AFM_kkbox/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_attention: true
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFM_kkbox_x1_007_7d582ff2:
+    attention_dim: 64
+    attention_dropout: [0, 0]
+    batch_size: 10000
+    dataset_id: kkbox_x1_bf23df6c
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFM
+    model_id: AFM_kkbox_x1
+    model_root: ./KKBox/AFM_kkbox/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_attention: true
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFM_kkbox_x1_008_24d852e8:
+    attention_dim: 64
+    attention_dropout: [0.1, 0.1]
+    batch_size: 10000
+    dataset_id: kkbox_x1_bf23df6c
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFM
+    model_id: AFM_kkbox_x1
+    model_root: ./KKBox/AFM_kkbox/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_attention: true
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFM_kkbox_x1_009_9355ac99:
+    attention_dim: 128
+    attention_dropout: [0, 0]
+    batch_size: 10000
+    dataset_id: kkbox_x1_bf23df6c
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFM
+    model_id: AFM_kkbox_x1
+    model_root: ./KKBox/AFM_kkbox/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_attention: true
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFM_kkbox_x1_010_6d4527fc:
+    attention_dim: 128
+    attention_dropout: [0.1, 0.1]
+    batch_size: 10000
+    dataset_id: kkbox_x1_bf23df6c
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFM
+    model_id: AFM_kkbox_x1
+    model_root: ./KKBox/AFM_kkbox/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_attention: true
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFM_kkbox_x1_011_66e8cf02:
+    attention_dim: 256
+    attention_dropout: [0, 0]
+    batch_size: 10000
+    dataset_id: kkbox_x1_bf23df6c
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFM
+    model_id: AFM_kkbox_x1
+    model_root: ./KKBox/AFM_kkbox/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_attention: true
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFM_kkbox_x1_012_9f08711d:
+    attention_dim: 256
+    attention_dropout: [0.1, 0.1]
+    batch_size: 10000
+    dataset_id: kkbox_x1_bf23df6c
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFM
+    model_id: AFM_kkbox_x1
+    model_root: ./KKBox/AFM_kkbox/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_attention: true
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFM_kkbox_x1_013_892a4a8d:
+    attention_dim: 64
+    attention_dropout: [0, 0]
+    batch_size: 10000
+    dataset_id: kkbox_x1_bf23df6c
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFM
+    model_id: AFM_kkbox_x1
+    model_root: ./KKBox/AFM_kkbox/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_attention: true
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFM_kkbox_x1_014_4d0356e7:
+    attention_dim: 64
+    attention_dropout: [0.1, 0.1]
+    batch_size: 10000
+    dataset_id: kkbox_x1_bf23df6c
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFM
+    model_id: AFM_kkbox_x1
+    model_root: ./KKBox/AFM_kkbox/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_attention: true
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFM_kkbox_x1_015_39ce9c52:
+    attention_dim: 128
+    attention_dropout: [0, 0]
+    batch_size: 10000
+    dataset_id: kkbox_x1_bf23df6c
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFM
+    model_id: AFM_kkbox_x1
+    model_root: ./KKBox/AFM_kkbox/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_attention: true
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFM_kkbox_x1_016_c47a56b9:
+    attention_dim: 128
+    attention_dropout: [0.1, 0.1]
+    batch_size: 10000
+    dataset_id: kkbox_x1_bf23df6c
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFM
+    model_id: AFM_kkbox_x1
+    model_root: ./KKBox/AFM_kkbox/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_attention: true
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFM_kkbox_x1_017_3ef61cf1:
+    attention_dim: 256
+    attention_dropout: [0, 0]
+    batch_size: 10000
+    dataset_id: kkbox_x1_bf23df6c
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFM
+    model_id: AFM_kkbox_x1
+    model_root: ./KKBox/AFM_kkbox/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_attention: true
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFM_kkbox_x1_018_21f830f5:
+    attention_dim: 256
+    attention_dropout: [0.1, 0.1]
+    batch_size: 10000
+    dataset_id: kkbox_x1_bf23df6c
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFM
+    model_id: AFM_kkbox_x1
+    model_root: ./KKBox/AFM_kkbox/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_attention: true
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFM_kkbox_x1_019_48e81308:
+    attention_dim: 64
+    attention_dropout: [0, 0]
+    batch_size: 10000
+    dataset_id: kkbox_x1_bf23df6c
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFM
+    model_id: AFM_kkbox_x1
+    model_root: ./KKBox/AFM_kkbox/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_attention: true
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFM_kkbox_x1_020_5af71ec0:
+    attention_dim: 64
+    attention_dropout: [0.1, 0.1]
+    batch_size: 10000
+    dataset_id: kkbox_x1_bf23df6c
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFM
+    model_id: AFM_kkbox_x1
+    model_root: ./KKBox/AFM_kkbox/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_attention: true
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFM_kkbox_x1_021_ad8893e9:
+    attention_dim: 128
+    attention_dropout: [0, 0]
+    batch_size: 10000
+    dataset_id: kkbox_x1_bf23df6c
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFM
+    model_id: AFM_kkbox_x1
+    model_root: ./KKBox/AFM_kkbox/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_attention: true
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFM_kkbox_x1_022_35128a10:
+    attention_dim: 128
+    attention_dropout: [0.1, 0.1]
+    batch_size: 10000
+    dataset_id: kkbox_x1_bf23df6c
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFM
+    model_id: AFM_kkbox_x1
+    model_root: ./KKBox/AFM_kkbox/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_attention: true
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFM_kkbox_x1_023_2c5d0ec4:
+    attention_dim: 256
+    attention_dropout: [0, 0]
+    batch_size: 10000
+    dataset_id: kkbox_x1_bf23df6c
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFM
+    model_id: AFM_kkbox_x1
+    model_root: ./KKBox/AFM_kkbox/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_attention: true
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFM_kkbox_x1_024_f527f108:
+    attention_dim: 256
+    attention_dropout: [0.1, 0.1]
+    batch_size: 10000
+    dataset_id: kkbox_x1_bf23df6c
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFM
+    model_id: AFM_kkbox_x1
+    model_root: ./KKBox/AFM_kkbox/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_attention: true
+    use_hdf5: true
+    verbose: 1
+    workers: 3

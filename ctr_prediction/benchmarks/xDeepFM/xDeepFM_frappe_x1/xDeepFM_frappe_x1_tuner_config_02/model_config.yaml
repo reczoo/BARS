@@ -1,0 +1,330 @@
+xDeepFM_frappe_x1_001_c49ca40d:
+    batch_norm: true
+    batch_size: 4096
+    cin_layer_units: [32]
+    dataset_id: frappe_x1_04e961e9
+    debug: false
+    dnn_hidden_units: [400, 400, 400]
+    embedding_dim: 10
+    embedding_regularizer: 0.1
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./Frappe/xDeepFM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+xDeepFM_frappe_x1_002_3b8c3513:
+    batch_norm: true
+    batch_size: 4096
+    cin_layer_units: [16, 16, 16]
+    dataset_id: frappe_x1_04e961e9
+    debug: false
+    dnn_hidden_units: [400, 400, 400]
+    embedding_dim: 10
+    embedding_regularizer: 0.1
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./Frappe/xDeepFM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+xDeepFM_frappe_x1_003_d0341e94:
+    batch_norm: true
+    batch_size: 4096
+    cin_layer_units: [16, 16]
+    dataset_id: frappe_x1_04e961e9
+    debug: false
+    dnn_hidden_units: [400, 400, 400]
+    embedding_dim: 10
+    embedding_regularizer: 0.1
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./Frappe/xDeepFM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+xDeepFM_frappe_x1_004_55b70952:
+    batch_norm: true
+    batch_size: 4096
+    cin_layer_units: [32, 16]
+    dataset_id: frappe_x1_04e961e9
+    debug: false
+    dnn_hidden_units: [400, 400, 400]
+    embedding_dim: 10
+    embedding_regularizer: 0.1
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./Frappe/xDeepFM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+xDeepFM_frappe_x1_005_447fa536:
+    batch_norm: true
+    batch_size: 4096
+    cin_layer_units: [64]
+    dataset_id: frappe_x1_04e961e9
+    debug: false
+    dnn_hidden_units: [400, 400, 400]
+    embedding_dim: 10
+    embedding_regularizer: 0.1
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./Frappe/xDeepFM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+xDeepFM_frappe_x1_006_61764699:
+    batch_norm: true
+    batch_size: 4096
+    cin_layer_units: [32]
+    dataset_id: frappe_x1_04e961e9
+    debug: false
+    dnn_hidden_units: [400, 400, 400]
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./Frappe/xDeepFM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+xDeepFM_frappe_x1_007_fa91a6f6:
+    batch_norm: true
+    batch_size: 4096
+    cin_layer_units: [16, 16, 16]
+    dataset_id: frappe_x1_04e961e9
+    debug: false
+    dnn_hidden_units: [400, 400, 400]
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./Frappe/xDeepFM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+xDeepFM_frappe_x1_008_2e3b74df:
+    batch_norm: true
+    batch_size: 4096
+    cin_layer_units: [16, 16]
+    dataset_id: frappe_x1_04e961e9
+    debug: false
+    dnn_hidden_units: [400, 400, 400]
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./Frappe/xDeepFM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+xDeepFM_frappe_x1_009_83eadff1:
+    batch_norm: true
+    batch_size: 4096
+    cin_layer_units: [32, 16]
+    dataset_id: frappe_x1_04e961e9
+    debug: false
+    dnn_hidden_units: [400, 400, 400]
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./Frappe/xDeepFM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+xDeepFM_frappe_x1_010_a8330bbe:
+    batch_norm: true
+    batch_size: 4096
+    cin_layer_units: [64]
+    dataset_id: frappe_x1_04e961e9
+    debug: false
+    dnn_hidden_units: [400, 400, 400]
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./Frappe/xDeepFM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1

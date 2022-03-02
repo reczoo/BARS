@@ -1,0 +1,1 @@
+ 20200307-034105,[command] python benchmark.py --version pytorch --config Avazu/HOFM_avazu/HOFM_avazu_x4_tuner_config_07 --expid HOFM_avazu_x4_001_63b17d4d --gpu 0,[exp_id] HOFM_avazu_x4_001_63b17d4d,[dataset_id] avazu_x4_001_d45ad60e,[train] logloss: 0.331442 - AUC: 0.854117,[val] logloss: 0.373340 - AUC: 0.791282,[test] logloss: 0.373289 - AUC: 0.791393

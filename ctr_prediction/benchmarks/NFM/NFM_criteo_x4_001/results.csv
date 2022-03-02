@@ -1,0 +1,1 @@
+ 20200626-221947,[command] python benchmark.py --version pytorch --config Criteo/NFM_criteo/min10/NFM_criteo_x4_tuner_config_01 --expid NFM_criteo_x4_5c863b0f_017_2a1a6375 --gpu 0,[exp_id] NFM_criteo_x4_5c863b0f_017_2a1a6375,[dataset_id] criteo_x4_5c863b0f,[train] logloss: 0.431636 - AUC: 0.820899,[val] logloss: 0.442787 - AUC: 0.808803,[test] logloss: 0.442406 - AUC: 0.809330

@@ -1,0 +1,1 @@
+ 20200621-132138,[command] python benchmark.py --version pytorch --config Criteo/DCN_criteo/min10/DCN_criteo_x4_tuner_config_02 --expid DCN_criteo_x4_5c863b0f_012_56382345 --gpu 1,[exp_id] DCN_criteo_x4_5c863b0f_012_56382345,[dataset_id] criteo_x4_5c863b0f,[train] logloss: 0.422779 - AUC: 0.830139,[val] logloss: 0.437998 - AUC: 0.813987,[test] logloss: 0.437612 - AUC: 0.814437

@@ -1,0 +1,1 @@
+ 20201225-193926,[command] python benchmark.py --version pytorch --config Criteo/PNN_criteo_x1/PNN_criteo_x1_tuner_config_01 --expid PNN_criteo_x1_007_2cb55658 --gpu 1,[exp_id] PNN_criteo_x1_007_2cb55658,[dataset_id] criteo_x1_ace9c1b9,[train] N.A.,[val] AUC: 0.813369 - logloss: 0.438737,[test] AUC: 0.813664 - logloss: 0.438297

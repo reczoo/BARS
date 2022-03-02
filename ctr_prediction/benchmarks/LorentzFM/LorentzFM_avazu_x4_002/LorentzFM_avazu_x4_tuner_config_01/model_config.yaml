@@ -1,0 +1,135 @@
+LorentzFM_avazu_x4_001_c77e5dd3:
+    batch_size: 10000
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: LorentzFM
+    model_id: LorentzFM_base
+    model_root: ./Avazu/LorentzFM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: l2(1.e-6)
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+LorentzFM_avazu_x4_002_1051d5d2:
+    batch_size: 10000
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: LorentzFM
+    model_id: LorentzFM_base
+    model_root: ./Avazu/LorentzFM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: l2(1.e-7)
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+LorentzFM_avazu_x4_003_127802be:
+    batch_size: 10000
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: LorentzFM
+    model_id: LorentzFM_base
+    model_root: ./Avazu/LorentzFM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: l2(1.e-8)
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+LorentzFM_avazu_x4_004_f84caad6:
+    batch_size: 10000
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: LorentzFM
+    model_id: LorentzFM_base
+    model_root: ./Avazu/LorentzFM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: l2(1.e-9)
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+LorentzFM_avazu_x4_005_a57c4ecd:
+    batch_size: 10000
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: LorentzFM
+    model_id: LorentzFM_base
+    model_root: ./Avazu/LorentzFM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 0
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3

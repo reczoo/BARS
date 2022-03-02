@@ -1,0 +1,1 @@
+ 20220302-190819,[command] python run_expid.py --config Avazu/LorentzFM_avazu_x4_001/LorentzFM_avazu_x4_tuner_config_01/ --expid LorentzFM_avazu_x4_004_d25a301d --gpu 0,[exp_id] LorentzFM_avazu_x4_004_d25a301d,[dataset_id] avazu_x4_3bbbc4c9,[train] N.A.,[val] logloss: 0.375607 - AUC: 0.788507,[test] logloss: 0.375609 - AUC: 0.788511

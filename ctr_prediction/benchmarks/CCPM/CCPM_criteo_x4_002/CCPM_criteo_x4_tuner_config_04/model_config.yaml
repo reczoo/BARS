@@ -1,0 +1,496 @@
+CCPM_criteo_x4_001_efda2298:
+    activation: Tanh
+    batch_size: 5000
+    channels: [64, 128, 256]
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [3, 3, 3]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Criteo/CCPM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_criteo_x4_002_83a01775:
+    activation: Tanh
+    batch_size: 5000
+    channels: [64, 128, 256]
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [5, 5, 5]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Criteo/CCPM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_criteo_x4_003_1ce12704:
+    activation: Tanh
+    batch_size: 5000
+    channels: [64, 128, 256]
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [7, 7, 7]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Criteo/CCPM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_criteo_x4_004_fbc96ecb:
+    activation: Tanh
+    batch_size: 5000
+    channels: [64, 128, 256]
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [7, 5, 3]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Criteo/CCPM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_criteo_x4_005_f970889e:
+    activation: Tanh
+    batch_size: 5000
+    channels: [128, 256, 512]
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [3, 3, 3]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Criteo/CCPM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_criteo_x4_006_5e22c2d0:
+    activation: Tanh
+    batch_size: 5000
+    channels: [128, 256, 512]
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [5, 5, 5]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Criteo/CCPM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_criteo_x4_007_924772be:
+    activation: Tanh
+    batch_size: 5000
+    channels: [128, 256, 512]
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [7, 7, 7]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Criteo/CCPM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_criteo_x4_008_d4015f55:
+    activation: Tanh
+    batch_size: 5000
+    channels: [128, 256, 512]
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [7, 5, 3]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Criteo/CCPM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_criteo_x4_009_57c58cbb:
+    activation: Tanh
+    batch_size: 5000
+    channels: [64, 128, 256]
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-08
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [3, 3, 3]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Criteo/CCPM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_criteo_x4_010_d34056af:
+    activation: Tanh
+    batch_size: 5000
+    channels: [64, 128, 256]
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-08
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [5, 5, 5]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Criteo/CCPM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_criteo_x4_011_3f46109b:
+    activation: Tanh
+    batch_size: 5000
+    channels: [64, 128, 256]
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-08
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [7, 7, 7]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Criteo/CCPM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_criteo_x4_012_2a6e45c4:
+    activation: Tanh
+    batch_size: 5000
+    channels: [64, 128, 256]
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-08
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [7, 5, 3]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Criteo/CCPM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_criteo_x4_013_15182024:
+    activation: Tanh
+    batch_size: 5000
+    channels: [128, 256, 512]
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-08
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [3, 3, 3]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Criteo/CCPM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_criteo_x4_014_5a99200d:
+    activation: Tanh
+    batch_size: 5000
+    channels: [128, 256, 512]
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-08
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [5, 5, 5]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Criteo/CCPM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_criteo_x4_015_b5ffdaa4:
+    activation: Tanh
+    batch_size: 5000
+    channels: [128, 256, 512]
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-08
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [7, 7, 7]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Criteo/CCPM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_criteo_x4_016_d0073a67:
+    activation: Tanh
+    batch_size: 5000
+    channels: [128, 256, 512]
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-08
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [7, 5, 3]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Criteo/CCPM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3

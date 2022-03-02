@@ -1,0 +1,666 @@
+AFN_avazu_x4_001_8108c5ed:
+    afn_activations: relu
+    afn_dropout: 0
+    afn_hidden_units: [1000, 1000]
+    batch_norm: true
+    batch_size: 2000
+    dataset_id: avazu_x4_74410863
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0
+    dnn_hidden_units: []
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    ensemble_dnn: false
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_avazu_x4
+    model_root: ./Avazu/AFN_avazu_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_avazu_x4_002_0ac048bf:
+    afn_activations: relu
+    afn_dropout: 0.1
+    afn_hidden_units: [1000, 1000]
+    batch_norm: true
+    batch_size: 2000
+    dataset_id: avazu_x4_74410863
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0
+    dnn_hidden_units: []
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    ensemble_dnn: false
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_avazu_x4
+    model_root: ./Avazu/AFN_avazu_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_avazu_x4_003_88dc94cd:
+    afn_activations: relu
+    afn_dropout: 0.2
+    afn_hidden_units: [1000, 1000]
+    batch_norm: true
+    batch_size: 2000
+    dataset_id: avazu_x4_74410863
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0
+    dnn_hidden_units: []
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    ensemble_dnn: false
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_avazu_x4
+    model_root: ./Avazu/AFN_avazu_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_avazu_x4_004_82ee0d58:
+    afn_activations: relu
+    afn_dropout: 0
+    afn_hidden_units: [1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 2000
+    dataset_id: avazu_x4_74410863
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0
+    dnn_hidden_units: []
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    ensemble_dnn: false
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_avazu_x4
+    model_root: ./Avazu/AFN_avazu_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_avazu_x4_005_e0582b11:
+    afn_activations: relu
+    afn_dropout: 0.1
+    afn_hidden_units: [1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 2000
+    dataset_id: avazu_x4_74410863
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0
+    dnn_hidden_units: []
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    ensemble_dnn: false
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_avazu_x4
+    model_root: ./Avazu/AFN_avazu_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_avazu_x4_006_b475d331:
+    afn_activations: relu
+    afn_dropout: 0.2
+    afn_hidden_units: [1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 2000
+    dataset_id: avazu_x4_74410863
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0
+    dnn_hidden_units: []
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    ensemble_dnn: false
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_avazu_x4
+    model_root: ./Avazu/AFN_avazu_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_avazu_x4_007_81edbe56:
+    afn_activations: relu
+    afn_dropout: 0
+    afn_hidden_units: [2000, 2000, 2000]
+    batch_norm: true
+    batch_size: 2000
+    dataset_id: avazu_x4_74410863
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0
+    dnn_hidden_units: []
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    ensemble_dnn: false
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_avazu_x4
+    model_root: ./Avazu/AFN_avazu_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_avazu_x4_008_ee12a597:
+    afn_activations: relu
+    afn_dropout: 0.1
+    afn_hidden_units: [2000, 2000, 2000]
+    batch_norm: true
+    batch_size: 2000
+    dataset_id: avazu_x4_74410863
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0
+    dnn_hidden_units: []
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    ensemble_dnn: false
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_avazu_x4
+    model_root: ./Avazu/AFN_avazu_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_avazu_x4_009_f0f8280a:
+    afn_activations: relu
+    afn_dropout: 0.2
+    afn_hidden_units: [2000, 2000, 2000]
+    batch_norm: true
+    batch_size: 2000
+    dataset_id: avazu_x4_74410863
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0
+    dnn_hidden_units: []
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    ensemble_dnn: false
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_avazu_x4
+    model_root: ./Avazu/AFN_avazu_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_avazu_x4_010_3d44918b:
+    afn_activations: relu
+    afn_dropout: 0
+    afn_hidden_units: [1000, 1000]
+    batch_norm: true
+    batch_size: 2000
+    dataset_id: avazu_x4_74410863
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0
+    dnn_hidden_units: []
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    ensemble_dnn: false
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1600
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_avazu_x4
+    model_root: ./Avazu/AFN_avazu_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_avazu_x4_011_35a20258:
+    afn_activations: relu
+    afn_dropout: 0.1
+    afn_hidden_units: [1000, 1000]
+    batch_norm: true
+    batch_size: 2000
+    dataset_id: avazu_x4_74410863
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0
+    dnn_hidden_units: []
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    ensemble_dnn: false
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1600
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_avazu_x4
+    model_root: ./Avazu/AFN_avazu_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_avazu_x4_012_00ce5d6c:
+    afn_activations: relu
+    afn_dropout: 0.2
+    afn_hidden_units: [1000, 1000]
+    batch_norm: true
+    batch_size: 2000
+    dataset_id: avazu_x4_74410863
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0
+    dnn_hidden_units: []
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    ensemble_dnn: false
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1600
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_avazu_x4
+    model_root: ./Avazu/AFN_avazu_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_avazu_x4_013_42987502:
+    afn_activations: relu
+    afn_dropout: 0
+    afn_hidden_units: [1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 2000
+    dataset_id: avazu_x4_74410863
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0
+    dnn_hidden_units: []
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    ensemble_dnn: false
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1600
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_avazu_x4
+    model_root: ./Avazu/AFN_avazu_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_avazu_x4_014_f936cb87:
+    afn_activations: relu
+    afn_dropout: 0.1
+    afn_hidden_units: [1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 2000
+    dataset_id: avazu_x4_74410863
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0
+    dnn_hidden_units: []
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    ensemble_dnn: false
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1600
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_avazu_x4
+    model_root: ./Avazu/AFN_avazu_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_avazu_x4_015_225e2be4:
+    afn_activations: relu
+    afn_dropout: 0.2
+    afn_hidden_units: [1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 2000
+    dataset_id: avazu_x4_74410863
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0
+    dnn_hidden_units: []
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    ensemble_dnn: false
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1600
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_avazu_x4
+    model_root: ./Avazu/AFN_avazu_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_avazu_x4_016_513a3388:
+    afn_activations: relu
+    afn_dropout: 0
+    afn_hidden_units: [2000, 2000, 2000]
+    batch_norm: true
+    batch_size: 2000
+    dataset_id: avazu_x4_74410863
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0
+    dnn_hidden_units: []
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    ensemble_dnn: false
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1600
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_avazu_x4
+    model_root: ./Avazu/AFN_avazu_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_avazu_x4_017_9add7d02:
+    afn_activations: relu
+    afn_dropout: 0.1
+    afn_hidden_units: [2000, 2000, 2000]
+    batch_norm: true
+    batch_size: 2000
+    dataset_id: avazu_x4_74410863
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0
+    dnn_hidden_units: []
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    ensemble_dnn: false
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1600
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_avazu_x4
+    model_root: ./Avazu/AFN_avazu_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_avazu_x4_018_9e7e8096:
+    afn_activations: relu
+    afn_dropout: 0.2
+    afn_hidden_units: [2000, 2000, 2000]
+    batch_norm: true
+    batch_size: 2000
+    dataset_id: avazu_x4_74410863
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0
+    dnn_hidden_units: []
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    ensemble_dnn: false
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1600
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_avazu_x4
+    model_root: ./Avazu/AFN_avazu_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3

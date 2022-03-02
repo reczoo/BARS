@@ -1,0 +1,279 @@
+AFM_criteo_x1_001_710faa0a:
+    attention_dim: 32
+    attention_dropout: [0, 0]
+    batch_size: 4096
+    data_block_size: -1
+    dataset_id: criteo_x1_7b681156
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: AFM
+    model_id: AFM_base
+    model_root: ./Criteo/AFM_criteo_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_attention: true
+    use_hdf5: true
+    verbose: 1
+AFM_criteo_x1_002_8ec85047:
+    attention_dim: 32
+    attention_dropout: [0.1, 0.1]
+    batch_size: 4096
+    data_block_size: -1
+    dataset_id: criteo_x1_7b681156
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: AFM
+    model_id: AFM_base
+    model_root: ./Criteo/AFM_criteo_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_attention: true
+    use_hdf5: true
+    verbose: 1
+AFM_criteo_x1_003_53db00dc:
+    attention_dim: 32
+    attention_dropout: [0.2, 0.2]
+    batch_size: 4096
+    data_block_size: -1
+    dataset_id: criteo_x1_7b681156
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: AFM
+    model_id: AFM_base
+    model_root: ./Criteo/AFM_criteo_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_attention: true
+    use_hdf5: true
+    verbose: 1
+AFM_criteo_x1_004_954c0ecc:
+    attention_dim: 32
+    attention_dropout: [0, 0]
+    batch_size: 4096
+    data_block_size: -1
+    dataset_id: criteo_x1_7b681156
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: AFM
+    model_id: AFM_base
+    model_root: ./Criteo/AFM_criteo_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_attention: true
+    use_hdf5: true
+    verbose: 1
+AFM_criteo_x1_005_d8ea9c7d:
+    attention_dim: 32
+    attention_dropout: [0.1, 0.1]
+    batch_size: 4096
+    data_block_size: -1
+    dataset_id: criteo_x1_7b681156
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: AFM
+    model_id: AFM_base
+    model_root: ./Criteo/AFM_criteo_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_attention: true
+    use_hdf5: true
+    verbose: 1
+AFM_criteo_x1_006_089b8bc5:
+    attention_dim: 32
+    attention_dropout: [0.2, 0.2]
+    batch_size: 4096
+    data_block_size: -1
+    dataset_id: criteo_x1_7b681156
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: AFM
+    model_id: AFM_base
+    model_root: ./Criteo/AFM_criteo_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_attention: true
+    use_hdf5: true
+    verbose: 1
+AFM_criteo_x1_007_4138fd26:
+    attention_dim: 32
+    attention_dropout: [0, 0]
+    batch_size: 4096
+    data_block_size: -1
+    dataset_id: criteo_x1_7b681156
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 5.0e-07
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: AFM
+    model_id: AFM_base
+    model_root: ./Criteo/AFM_criteo_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_attention: true
+    use_hdf5: true
+    verbose: 1
+AFM_criteo_x1_008_6df419fc:
+    attention_dim: 32
+    attention_dropout: [0.1, 0.1]
+    batch_size: 4096
+    data_block_size: -1
+    dataset_id: criteo_x1_7b681156
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 5.0e-07
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: AFM
+    model_id: AFM_base
+    model_root: ./Criteo/AFM_criteo_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_attention: true
+    use_hdf5: true
+    verbose: 1
+AFM_criteo_x1_009_c044ff29:
+    attention_dim: 32
+    attention_dropout: [0.2, 0.2]
+    batch_size: 4096
+    data_block_size: -1
+    dataset_id: criteo_x1_7b681156
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 5.0e-07
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: AFM
+    model_id: AFM_base
+    model_root: ./Criteo/AFM_criteo_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_attention: true
+    use_hdf5: true
+    verbose: 1

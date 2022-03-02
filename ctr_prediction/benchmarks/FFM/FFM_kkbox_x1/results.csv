@@ -1,0 +1,1 @@
+ 20200420-124738,[command] python benchmark.py --version pytorch --config KKBox/FFM_kkbox/FFM_kkbox_x1_tuner_config_02 --expid FFM_kkbox_x1_002_be4e6111 --gpu 1,[exp_id] FFM_kkbox_x1_002_be4e6111,[dataset_id] kkbox_x1_001_c5c9c6e3,[train] logloss: 0.431065 - AUC: 0.886449,[val] logloss: 0.500691 - AUC: 0.834590,[test] logloss: 0.500291 - AUC: 0.834831

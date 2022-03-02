@@ -1,0 +1,888 @@
+InterHAt_kkbox_x1_001_15b95d4a:
+    attention_dim: 128
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_dim: 1024
+    hidden_units: [1000, 1000]
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: InterHAt
+    model_id: InterHAt_base
+    model_root: ./KKBox/InterHAt_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 1
+    optimizer: adam
+    order: 4
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+InterHAt_kkbox_x1_002_8ce5721b:
+    attention_dim: 128
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_dim: 1024
+    hidden_units: [1000, 1000]
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: InterHAt
+    model_id: InterHAt_base
+    model_root: ./KKBox/InterHAt_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    optimizer: adam
+    order: 4
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+InterHAt_kkbox_x1_003_ea78530e:
+    attention_dim: 256
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_dim: 1024
+    hidden_units: [1000, 1000]
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: InterHAt
+    model_id: InterHAt_base
+    model_root: ./KKBox/InterHAt_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 1
+    optimizer: adam
+    order: 4
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+InterHAt_kkbox_x1_004_436951c3:
+    attention_dim: 256
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_dim: 1024
+    hidden_units: [1000, 1000]
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: InterHAt
+    model_id: InterHAt_base
+    model_root: ./KKBox/InterHAt_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    optimizer: adam
+    order: 4
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+InterHAt_kkbox_x1_005_fd7b7027:
+    attention_dim: 128
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_dim: 1024
+    hidden_units: [1000, 1000]
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: InterHAt
+    model_id: InterHAt_base
+    model_root: ./KKBox/InterHAt_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 2
+    optimizer: adam
+    order: 4
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+InterHAt_kkbox_x1_006_76924c0a:
+    attention_dim: 128
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_dim: 1024
+    hidden_units: [1000, 1000]
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: InterHAt
+    model_id: InterHAt_base
+    model_root: ./KKBox/InterHAt_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 2
+    optimizer: adam
+    order: 4
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+InterHAt_kkbox_x1_007_5a759e50:
+    attention_dim: 256
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_dim: 1024
+    hidden_units: [1000, 1000]
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: InterHAt
+    model_id: InterHAt_base
+    model_root: ./KKBox/InterHAt_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 2
+    optimizer: adam
+    order: 4
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+InterHAt_kkbox_x1_008_a9abfa37:
+    attention_dim: 256
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_dim: 1024
+    hidden_units: [1000, 1000]
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: InterHAt
+    model_id: InterHAt_base
+    model_root: ./KKBox/InterHAt_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 2
+    optimizer: adam
+    order: 4
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+InterHAt_kkbox_x1_009_a9cf73e0:
+    attention_dim: 128
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_dim: 1024
+    hidden_units: [1000, 1000]
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: InterHAt
+    model_id: InterHAt_base
+    model_root: ./KKBox/InterHAt_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 4
+    optimizer: adam
+    order: 4
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+InterHAt_kkbox_x1_010_c33855b5:
+    attention_dim: 128
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_dim: 1024
+    hidden_units: [1000, 1000]
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: InterHAt
+    model_id: InterHAt_base
+    model_root: ./KKBox/InterHAt_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 4
+    optimizer: adam
+    order: 4
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+InterHAt_kkbox_x1_011_a558357f:
+    attention_dim: 256
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_dim: 1024
+    hidden_units: [1000, 1000]
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: InterHAt
+    model_id: InterHAt_base
+    model_root: ./KKBox/InterHAt_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 4
+    optimizer: adam
+    order: 4
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+InterHAt_kkbox_x1_012_f304415e:
+    attention_dim: 256
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_dim: 1024
+    hidden_units: [1000, 1000]
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: InterHAt
+    model_id: InterHAt_base
+    model_root: ./KKBox/InterHAt_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 4
+    optimizer: adam
+    order: 4
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+InterHAt_kkbox_x1_013_130f2cff:
+    attention_dim: 128
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_dim: 1024
+    hidden_units: [1000, 1000]
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: InterHAt
+    model_id: InterHAt_base
+    model_root: ./KKBox/InterHAt_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 1
+    optimizer: adam
+    order: 4
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+InterHAt_kkbox_x1_014_ace26e7a:
+    attention_dim: 128
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_dim: 1024
+    hidden_units: [1000, 1000]
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: InterHAt
+    model_id: InterHAt_base
+    model_root: ./KKBox/InterHAt_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    optimizer: adam
+    order: 4
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+InterHAt_kkbox_x1_015_56797a62:
+    attention_dim: 256
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_dim: 1024
+    hidden_units: [1000, 1000]
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: InterHAt
+    model_id: InterHAt_base
+    model_root: ./KKBox/InterHAt_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 1
+    optimizer: adam
+    order: 4
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+InterHAt_kkbox_x1_016_4436fa26:
+    attention_dim: 256
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_dim: 1024
+    hidden_units: [1000, 1000]
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: InterHAt
+    model_id: InterHAt_base
+    model_root: ./KKBox/InterHAt_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    optimizer: adam
+    order: 4
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+InterHAt_kkbox_x1_017_f7d8835c:
+    attention_dim: 128
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_dim: 1024
+    hidden_units: [1000, 1000]
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: InterHAt
+    model_id: InterHAt_base
+    model_root: ./KKBox/InterHAt_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 2
+    optimizer: adam
+    order: 4
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+InterHAt_kkbox_x1_018_ab9a987b:
+    attention_dim: 128
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_dim: 1024
+    hidden_units: [1000, 1000]
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: InterHAt
+    model_id: InterHAt_base
+    model_root: ./KKBox/InterHAt_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 2
+    optimizer: adam
+    order: 4
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+InterHAt_kkbox_x1_019_f7f9650b:
+    attention_dim: 256
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_dim: 1024
+    hidden_units: [1000, 1000]
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: InterHAt
+    model_id: InterHAt_base
+    model_root: ./KKBox/InterHAt_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 2
+    optimizer: adam
+    order: 4
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+InterHAt_kkbox_x1_020_7cfd0c8b:
+    attention_dim: 256
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_dim: 1024
+    hidden_units: [1000, 1000]
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: InterHAt
+    model_id: InterHAt_base
+    model_root: ./KKBox/InterHAt_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 2
+    optimizer: adam
+    order: 4
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+InterHAt_kkbox_x1_021_4e159c8d:
+    attention_dim: 128
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_dim: 1024
+    hidden_units: [1000, 1000]
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: InterHAt
+    model_id: InterHAt_base
+    model_root: ./KKBox/InterHAt_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 4
+    optimizer: adam
+    order: 4
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+InterHAt_kkbox_x1_022_5db2d770:
+    attention_dim: 128
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_dim: 1024
+    hidden_units: [1000, 1000]
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: InterHAt
+    model_id: InterHAt_base
+    model_root: ./KKBox/InterHAt_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 4
+    optimizer: adam
+    order: 4
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+InterHAt_kkbox_x1_023_a7cc5a36:
+    attention_dim: 256
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_dim: 1024
+    hidden_units: [1000, 1000]
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: InterHAt
+    model_id: InterHAt_base
+    model_root: ./KKBox/InterHAt_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 4
+    optimizer: adam
+    order: 4
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+InterHAt_kkbox_x1_024_6e260516:
+    attention_dim: 256
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_dim: 1024
+    hidden_units: [1000, 1000]
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: InterHAt
+    model_id: InterHAt_base
+    model_root: ./KKBox/InterHAt_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 4
+    optimizer: adam
+    order: 4
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3

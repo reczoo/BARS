@@ -1,0 +1,32 @@
+avazu_x4_c9fb310a:
+    data_format: csv
+    data_root: ../data/Avazu/
+    feature_cols:
+    - {active: false, dtype: str, name: id, source: context, type: categorical}
+    - {active: true, dtype: str, name: hour, preprocess: convert_hour, source: context,
+        type: categorical}
+    -   active: true
+        dtype: str
+        name: [C1, C14, C15, C16, C17, C18, C19, C20, C21, device_id, device_ip, device_model,
+            device_type]
+        source: user
+        type: categorical
+    -   active: true
+        dtype: str
+        name: [banner_pos, site_id, site_domain, site_category, device_conn_type]
+        source: context
+        type: categorical
+    -   active: true
+        dtype: str
+        name: [app_id, app_domain, app_category]
+        source: item
+        type: categorical
+    - {active: true, dtype: str, name: weekday, preprocess: convert_weekday, source: context,
+        type: categorical}
+    - {active: true, dtype: str, name: weekend, preprocess: convert_weekend, source: context,
+        type: categorical}
+    label_col: {dtype: float, name: click}
+    min_categr_count: 2
+    test_data: ../data/Avazu/Avazu_x4/test.csv
+    train_data: ../data/Avazu/Avazu_x4/train.csv
+    valid_data: ../data/Avazu/Avazu_x4/valid.csv

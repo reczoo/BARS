@@ -1,0 +1,1 @@
+ 20220201-231901,[command] python run_expid.py --version pytorch --config Frappe/HFM_frappe_x1/HFM_frappe_x1_tuner_config_03 --expid HFM_frappe_x1_001_3755ddc7 --gpu 0,[exp_id] HFM_frappe_x1_001_3755ddc7,[dataset_id] frappe_x1_04e961e9,[train] N.A.,[val] AUC: 0.940612 - logloss: 0.278758,[test] AUC: 0.938632 - logloss: 0.281538

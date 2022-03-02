@@ -1,0 +1,102 @@
+HFM_movielenslatest_x1_001_8769d2b0:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [64, 64, 64]
+    interaction_type: circular_correlation
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: HFM
+    model_id: HFM_base
+    model_root: ./Movielens/HFM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0.001
+    num_workers: 3
+    optimizer: adam
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_dnn: false
+    use_hdf5: true
+    verbose: 1
+HFM_movielenslatest_x1_002_e5873ea8:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [64, 64, 64]
+    interaction_type: circular_correlation
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: HFM
+    model_id: HFM_base
+    model_root: ./Movielens/HFM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0.0001
+    num_workers: 3
+    optimizer: adam
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_dnn: false
+    use_hdf5: true
+    verbose: 1
+HFM_movielenslatest_x1_003_80cddf7a:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [64, 64, 64]
+    interaction_type: circular_correlation
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: HFM
+    model_id: HFM_base
+    model_root: ./Movielens/HFM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 1.0e-05
+    num_workers: 3
+    optimizer: adam
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_dnn: false
+    use_hdf5: true
+    verbose: 1

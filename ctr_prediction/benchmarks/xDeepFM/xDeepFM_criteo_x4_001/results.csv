@@ -1,0 +1,1 @@
+ 20200723-183907,[command] python benchmark.py --version pytorch --config Criteo/xDeepFM_criteo/min10/xDeepFM_criteo_x4_tuner_config_03 --expid xDeepFM_criteo_x4_5c863b0f_001_109e6738 --gpu 0,[exp_id] xDeepFM_criteo_x4_5c863b0f_001_109e6738,[dataset_id] criteo_x4_5c863b0f,[train] N.A.,[val] logloss: 0.438136 - AUC: 0.813737,[test] logloss: 0.437602 - AUC: 0.814331

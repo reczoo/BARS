@@ -1,0 +1,150 @@
+LR_criteo_x4_001_b16dd5f6:
+    batch_size: 10000
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: LR
+    model_id: LR_base
+    model_root: ./Criteo/LR_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 0
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+LR_criteo_x4_002_fe84b4b2:
+    batch_size: 10000
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: LR
+    model_id: LR_base
+    model_root: ./Criteo/LR_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 1.0e-08
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+LR_criteo_x4_003_76cc7982:
+    batch_size: 10000
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: LR
+    model_id: LR_base
+    model_root: ./Criteo/LR_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 1.0e-07
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+LR_criteo_x4_004_93db1764:
+    batch_size: 10000
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: LR
+    model_id: LR_base
+    model_root: ./Criteo/LR_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 1.0e-06
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+LR_criteo_x4_005_35bfc779:
+    batch_size: 10000
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: LR
+    model_id: LR_base
+    model_root: ./Criteo/LR_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 1.0e-05
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+LR_criteo_x4_006_7ae45864:
+    batch_size: 10000
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: LR
+    model_id: LR_base
+    model_root: ./Criteo/LR_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 0.0001
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3

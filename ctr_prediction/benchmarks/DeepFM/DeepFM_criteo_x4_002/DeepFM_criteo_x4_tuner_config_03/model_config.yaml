@@ -1,0 +1,1536 @@
+DeepFM_criteo_x4_001_ed69a0c1:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./Criteo/DeepFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DeepFM_criteo_x4_002_ccfb2e1f:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./Criteo/DeepFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DeepFM_criteo_x4_003_f28f1021:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./Criteo/DeepFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DeepFM_criteo_x4_004_57674dd9:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./Criteo/DeepFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DeepFM_criteo_x4_005_ec7d12ed:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./Criteo/DeepFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DeepFM_criteo_x4_006_942e0878:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./Criteo/DeepFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DeepFM_criteo_x4_007_b63e5558:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./Criteo/DeepFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DeepFM_criteo_x4_008_b0f97841:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./Criteo/DeepFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DeepFM_criteo_x4_009_a91628c6:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./Criteo/DeepFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DeepFM_criteo_x4_010_752acab6:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./Criteo/DeepFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DeepFM_criteo_x4_011_7be45a33:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./Criteo/DeepFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DeepFM_criteo_x4_012_275698bf:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./Criteo/DeepFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DeepFM_criteo_x4_013_09de60a7:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [2000, 2000, 2000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./Criteo/DeepFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DeepFM_criteo_x4_014_9605303a:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [2000, 2000, 2000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./Criteo/DeepFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DeepFM_criteo_x4_015_2347c885:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [2000, 2000, 2000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./Criteo/DeepFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DeepFM_criteo_x4_016_e2352132:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [2000, 2000, 2000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./Criteo/DeepFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DeepFM_criteo_x4_017_8cd89bbc:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [2000, 2000, 2000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./Criteo/DeepFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DeepFM_criteo_x4_018_328a648c:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [2000, 2000, 2000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./Criteo/DeepFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DeepFM_criteo_x4_019_7fccbf2d:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [2000, 2000, 2000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./Criteo/DeepFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DeepFM_criteo_x4_020_97e9a525:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [2000, 2000, 2000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./Criteo/DeepFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DeepFM_criteo_x4_021_23627546:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [2000, 2000, 2000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./Criteo/DeepFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DeepFM_criteo_x4_022_4f154384:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [2000, 2000, 2000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./Criteo/DeepFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DeepFM_criteo_x4_023_896b76e5:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [2000, 2000, 2000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./Criteo/DeepFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DeepFM_criteo_x4_024_7c437cad:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [2000, 2000, 2000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./Criteo/DeepFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DeepFM_criteo_x4_025_90ca315b:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500, 500, 500]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./Criteo/DeepFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DeepFM_criteo_x4_026_d6104dc5:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500, 500, 500]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./Criteo/DeepFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DeepFM_criteo_x4_027_069a6541:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500, 500, 500]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./Criteo/DeepFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DeepFM_criteo_x4_028_97f38b89:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500, 500, 500]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./Criteo/DeepFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DeepFM_criteo_x4_029_cd25bf51:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500, 500, 500]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./Criteo/DeepFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DeepFM_criteo_x4_030_bde0ee64:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500, 500, 500]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./Criteo/DeepFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DeepFM_criteo_x4_031_3b83c8ce:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500, 500, 500]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./Criteo/DeepFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DeepFM_criteo_x4_032_287cc084:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500, 500, 500]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./Criteo/DeepFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DeepFM_criteo_x4_033_eb777c4c:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500, 500, 500]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./Criteo/DeepFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DeepFM_criteo_x4_034_02e477bb:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500, 500, 500]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./Criteo/DeepFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DeepFM_criteo_x4_035_2b78fb68:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500, 500, 500]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./Criteo/DeepFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DeepFM_criteo_x4_036_b778a12e:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500, 500, 500]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./Criteo/DeepFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DeepFM_criteo_x4_037_e1c082ff:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./Criteo/DeepFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DeepFM_criteo_x4_038_5b2b1ae4:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./Criteo/DeepFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DeepFM_criteo_x4_039_eea99929:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./Criteo/DeepFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DeepFM_criteo_x4_040_70af88e8:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./Criteo/DeepFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DeepFM_criteo_x4_041_53fa8cb5:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./Criteo/DeepFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DeepFM_criteo_x4_042_8ab8a400:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./Criteo/DeepFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DeepFM_criteo_x4_043_02f8a26d:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./Criteo/DeepFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DeepFM_criteo_x4_044_578fce50:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./Criteo/DeepFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DeepFM_criteo_x4_045_6a788169:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./Criteo/DeepFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DeepFM_criteo_x4_046_7c9dc2b4:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./Criteo/DeepFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DeepFM_criteo_x4_047_1c8e6a49:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./Criteo/DeepFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DeepFM_criteo_x4_048_b69f7581:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./Criteo/DeepFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3

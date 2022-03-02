@@ -1,0 +1,2048 @@
+DNN_criteo_x4_001_4d6f6acb:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [300, 300, 300]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_002_ebaee05c:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [300, 300, 300]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_003_80f0d0c7:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500, 500]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_004_d0a8168c:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500, 500]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_005_38f719e6:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [700, 700, 700]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_006_9d705434:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [700, 700, 700]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_007_df39f4da:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_008_09bed0ca:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_009_ef68b8ac:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [300, 300, 300, 300]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_010_b83320ae:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [300, 300, 300, 300]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_011_4e5ed1fc:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500, 500, 500]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_012_7f8dc996:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500, 500, 500]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_013_4b0adb32:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [700, 700, 700, 700]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_014_9bcf8673:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [700, 700, 700, 700]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_015_84632225:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_016_fb89f30d:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_017_0de89f31:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-7)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [300, 300, 300]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_018_4b7cfc32:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-7)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [300, 300, 300]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_019_57e32422:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-7)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500, 500]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_020_280001ef:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-7)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500, 500]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_021_71dc7d52:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-7)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [700, 700, 700]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_022_2771d17e:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-7)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [700, 700, 700]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_023_b3503a43:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-7)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_024_60485322:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-7)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_025_8e309c34:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-7)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [300, 300, 300, 300]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_026_d38a600c:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-7)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [300, 300, 300, 300]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_027_7044994b:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-7)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500, 500, 500]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_028_0629d16b:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-7)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500, 500, 500]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_029_ad4745d2:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-7)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [700, 700, 700, 700]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_030_a75df1da:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-7)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [700, 700, 700, 700]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_031_90b5a63c:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-7)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_032_daa223ed:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-7)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_033_6167d337:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-8)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [300, 300, 300]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_034_1455cfbc:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-8)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [300, 300, 300]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_035_a6197743:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-8)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500, 500]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_036_2cfeeeb6:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-8)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500, 500]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_037_0db34068:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-8)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [700, 700, 700]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_038_9988e6a4:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-8)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [700, 700, 700]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_039_e5edc02d:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-8)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_040_b5cfabc8:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-8)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_041_0d46d03c:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-8)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [300, 300, 300, 300]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_042_9e06e9c0:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-8)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [300, 300, 300, 300]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_043_0e8114ac:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-8)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500, 500, 500]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_044_9661a38d:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-8)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500, 500, 500]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_045_2000aee8:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-8)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [700, 700, 700, 700]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_046_c886886b:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-8)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [700, 700, 700, 700]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_047_521c2471:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-8)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_048_e567d28f:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-8)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_049_a1e935bd:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-9)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [300, 300, 300]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_050_ae7e10ef:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-9)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [300, 300, 300]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_051_c1a8fd49:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-9)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500, 500]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_052_8a8ebac0:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-9)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500, 500]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_053_b829e2a9:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-9)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [700, 700, 700]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_054_100b4d24:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-9)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [700, 700, 700]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_055_d958b2c9:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-9)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_056_51b98626:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-9)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_057_99b9d89f:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-9)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [300, 300, 300, 300]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_058_b775a9b2:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-9)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [300, 300, 300, 300]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_059_ba576779:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-9)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500, 500, 500]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_060_829e4bcd:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-9)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500, 500, 500]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_061_d26ded06:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-9)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [700, 700, 700, 700]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_062_69ebccab:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-9)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [700, 700, 700, 700]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_063_6d9e25c9:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-9)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DNN_criteo_x4_064_22a3307e:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-9)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DNN
+    model_id: DNN_base
+    model_root: ./Criteo/DNN_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3

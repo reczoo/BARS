@@ -1,0 +1,1 @@
+ 20200301-123834,[command] python benchmark.py --version pytorch --config Criteo/PNN_criteo/PNN_criteo_x4_tuner_config_04 --expid PNN_criteo_x4_005_c8ef60d9 --gpu 0,[exp_id] PNN_criteo_x4_005_c8ef60d9,[dataset_id] criteo_x4_001_be98441d,[train] logloss: 0.408069 - AUC: 0.846062,[val] logloss: 0.439248 - AUC: 0.812742,[test] logloss: 0.438836 - AUC: 0.813244

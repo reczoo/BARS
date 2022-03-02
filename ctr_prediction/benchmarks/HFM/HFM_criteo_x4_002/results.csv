@@ -1,0 +1,1 @@
+ 20200515-114353,[command] python benchmark.py --version pytorch --config Criteo/HFM_criteo/HFM_criteo_x4_tuner_config_01 --expid HFM_criteo_x4_002_f397374f --gpu 1,[exp_id] HFM_criteo_x4_002_f397374f,[dataset_id] criteo_x4_001_be98441d,[train] logloss: 0.424450 - AUC: 0.828188,[val] logloss: 0.441283 - AUC: 0.810671,[test] logloss: 0.441036 - AUC: 0.810985

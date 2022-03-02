@@ -1,5 +1,6 @@
-DeepIM_avazu_x1_002_81e1625e:
+DeepIM_avazu_x1_001_ce22770f:
     batch_size: 4096
+    data_block_size: -1
     dataset_id: avazu_x1_3fb65689
     debug: false
     embedding_dim: 10
@@ -23,7 +24,6 @@ DeepIM_avazu_x1_002_81e1625e:
     net_regularizer: 0
     num_workers: 3
     optimizer: adam
-    partition_block_size: -1
     patience: 2
     pickle_feature_encoder: true
     save_best_only: true
@@ -31,4 +31,4 @@ DeepIM_avazu_x1_002_81e1625e:
     shuffle: true
     task: binary_classification
     use_hdf5: true
-    verbose: 1
+    verbose: 0

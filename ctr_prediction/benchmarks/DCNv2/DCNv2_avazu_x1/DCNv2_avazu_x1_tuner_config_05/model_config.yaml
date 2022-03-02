@@ -1,0 +1,1216 @@
+DCNv2_avazu_x1_001_99f41371:
+    batch_norm: true
+    batch_size: 4096
+    data_block_size: -1
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Avazu/DCNv2_avazu_x1/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.4
+    net_regularizer: 0
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [400, 400, 400]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 0
+DCNv2_avazu_x1_002_170cdaca:
+    batch_norm: false
+    batch_size: 4096
+    data_block_size: -1
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Avazu/DCNv2_avazu_x1/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.4
+    net_regularizer: 0
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [400, 400, 400]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 0
+DCNv2_avazu_x1_003_99e00dde:
+    batch_norm: true
+    batch_size: 4096
+    data_block_size: -1
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Avazu/DCNv2_avazu_x1/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [400, 400, 400]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 0
+DCNv2_avazu_x1_004_70f6bb65:
+    batch_norm: false
+    batch_size: 4096
+    data_block_size: -1
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Avazu/DCNv2_avazu_x1/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [400, 400, 400]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 0
+DCNv2_avazu_x1_005_2fd03cbf:
+    batch_norm: true
+    batch_size: 4096
+    data_block_size: -1
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Avazu/DCNv2_avazu_x1/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [400, 400, 400]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 0
+DCNv2_avazu_x1_006_4c190cd2:
+    batch_norm: false
+    batch_size: 4096
+    data_block_size: -1
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Avazu/DCNv2_avazu_x1/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [400, 400, 400]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 0
+DCNv2_avazu_x1_007_9ac4f727:
+    batch_norm: true
+    batch_size: 4096
+    data_block_size: -1
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Avazu/DCNv2_avazu_x1/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [400, 400, 400]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 0
+DCNv2_avazu_x1_008_3f4df185:
+    batch_norm: false
+    batch_size: 4096
+    data_block_size: -1
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Avazu/DCNv2_avazu_x1/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [400, 400, 400]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 0
+DCNv2_avazu_x1_009_86af3286:
+    batch_norm: true
+    batch_size: 4096
+    data_block_size: -1
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Avazu/DCNv2_avazu_x1/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.4
+    net_regularizer: 0
+    num_cross_layers: 2
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [400, 400, 400]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 0
+DCNv2_avazu_x1_010_e4eeafb5:
+    batch_norm: false
+    batch_size: 4096
+    data_block_size: -1
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Avazu/DCNv2_avazu_x1/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.4
+    net_regularizer: 0
+    num_cross_layers: 2
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [400, 400, 400]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 0
+DCNv2_avazu_x1_011_a7fe373a:
+    batch_norm: true
+    batch_size: 4096
+    data_block_size: -1
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Avazu/DCNv2_avazu_x1/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_cross_layers: 2
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [400, 400, 400]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 0
+DCNv2_avazu_x1_012_62ff9e3d:
+    batch_norm: false
+    batch_size: 4096
+    data_block_size: -1
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Avazu/DCNv2_avazu_x1/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_cross_layers: 2
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [400, 400, 400]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 0
+DCNv2_avazu_x1_013_b37fb49d:
+    batch_norm: true
+    batch_size: 4096
+    data_block_size: -1
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Avazu/DCNv2_avazu_x1/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_cross_layers: 2
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [400, 400, 400]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 0
+DCNv2_avazu_x1_014_4fe1416d:
+    batch_norm: false
+    batch_size: 4096
+    data_block_size: -1
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Avazu/DCNv2_avazu_x1/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_cross_layers: 2
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [400, 400, 400]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 0
+DCNv2_avazu_x1_015_d83556aa:
+    batch_norm: true
+    batch_size: 4096
+    data_block_size: -1
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Avazu/DCNv2_avazu_x1/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_cross_layers: 2
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [400, 400, 400]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 0
+DCNv2_avazu_x1_016_a33a5ec6:
+    batch_norm: false
+    batch_size: 4096
+    data_block_size: -1
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Avazu/DCNv2_avazu_x1/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_cross_layers: 2
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [400, 400, 400]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 0
+DCNv2_avazu_x1_017_92fb7f52:
+    batch_norm: true
+    batch_size: 4096
+    data_block_size: -1
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Avazu/DCNv2_avazu_x1/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.4
+    net_regularizer: 0
+    num_cross_layers: 4
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [400, 400, 400]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 0
+DCNv2_avazu_x1_018_4fe0668b:
+    batch_norm: false
+    batch_size: 4096
+    data_block_size: -1
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Avazu/DCNv2_avazu_x1/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.4
+    net_regularizer: 0
+    num_cross_layers: 4
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [400, 400, 400]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 0
+DCNv2_avazu_x1_019_8abc174a:
+    batch_norm: true
+    batch_size: 4096
+    data_block_size: -1
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Avazu/DCNv2_avazu_x1/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_cross_layers: 4
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [400, 400, 400]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 0
+DCNv2_avazu_x1_020_bc3a1891:
+    batch_norm: false
+    batch_size: 4096
+    data_block_size: -1
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Avazu/DCNv2_avazu_x1/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_cross_layers: 4
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [400, 400, 400]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 0
+DCNv2_avazu_x1_021_d6ee9ff9:
+    batch_norm: true
+    batch_size: 4096
+    data_block_size: -1
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Avazu/DCNv2_avazu_x1/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_cross_layers: 4
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [400, 400, 400]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 0
+DCNv2_avazu_x1_022_236eb24b:
+    batch_norm: false
+    batch_size: 4096
+    data_block_size: -1
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Avazu/DCNv2_avazu_x1/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_cross_layers: 4
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [400, 400, 400]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 0
+DCNv2_avazu_x1_023_c02d3eb6:
+    batch_norm: true
+    batch_size: 4096
+    data_block_size: -1
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Avazu/DCNv2_avazu_x1/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_cross_layers: 4
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [400, 400, 400]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 0
+DCNv2_avazu_x1_024_f2f09231:
+    batch_norm: false
+    batch_size: 4096
+    data_block_size: -1
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Avazu/DCNv2_avazu_x1/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_cross_layers: 4
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [400, 400, 400]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 0
+DCNv2_avazu_x1_025_696dfdbf:
+    batch_norm: true
+    batch_size: 4096
+    data_block_size: -1
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Avazu/DCNv2_avazu_x1/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.4
+    net_regularizer: 0
+    num_cross_layers: 5
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [400, 400, 400]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 0
+DCNv2_avazu_x1_026_2d2e50a4:
+    batch_norm: false
+    batch_size: 4096
+    data_block_size: -1
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Avazu/DCNv2_avazu_x1/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.4
+    net_regularizer: 0
+    num_cross_layers: 5
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [400, 400, 400]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 0
+DCNv2_avazu_x1_027_0e1997d4:
+    batch_norm: true
+    batch_size: 4096
+    data_block_size: -1
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Avazu/DCNv2_avazu_x1/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_cross_layers: 5
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [400, 400, 400]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 0
+DCNv2_avazu_x1_028_04a1aeeb:
+    batch_norm: false
+    batch_size: 4096
+    data_block_size: -1
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Avazu/DCNv2_avazu_x1/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_cross_layers: 5
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [400, 400, 400]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 0
+DCNv2_avazu_x1_029_81904473:
+    batch_norm: true
+    batch_size: 4096
+    data_block_size: -1
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Avazu/DCNv2_avazu_x1/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_cross_layers: 5
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [400, 400, 400]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 0
+DCNv2_avazu_x1_030_d447020e:
+    batch_norm: false
+    batch_size: 4096
+    data_block_size: -1
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Avazu/DCNv2_avazu_x1/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_cross_layers: 5
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [400, 400, 400]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 0
+DCNv2_avazu_x1_031_41252d34:
+    batch_norm: true
+    batch_size: 4096
+    data_block_size: -1
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Avazu/DCNv2_avazu_x1/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_cross_layers: 5
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [400, 400, 400]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 0
+DCNv2_avazu_x1_032_48d27033:
+    batch_norm: false
+    batch_size: 4096
+    data_block_size: -1
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Avazu/DCNv2_avazu_x1/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_cross_layers: 5
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [400, 400, 400]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 0

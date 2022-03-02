@@ -1,0 +1,1 @@
+ 20220129-215748,[command] python run_expid.py --version pytorch --config Frappe/AFN_frappe_x1/AFN_frappe_x1_tuner_config_02 --expid AFN_frappe_x1_008_f15b0bf0 --gpu 1,[exp_id] AFN_frappe_x1_008_f15b0bf0,[dataset_id] frappe_x1_04e961e9,[train] N.A.,[val] AUC: 0.981422 - logloss: 0.230077,[test] AUC: 0.981099 - logloss: 0.233090

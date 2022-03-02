@@ -1,0 +1,624 @@
+FGCNN_avazu_x4_001_4b196135:
+    batch_size: 10000
+    channels: [20, 22, 24, 26]
+    conv_activation: Tanh
+    conv_batch_norm: true
+    dataset_id: avazu_x4_3bbbc4c9
+    debug: false
+    dnn_activations: ReLU
+    dnn_batch_norm: false
+    dnn_hidden_units: [1000, 1000, 1000, 1000]
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [9, 9, 9, 9]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FGCNN
+    model_id: FGCNN_base
+    model_root: ./Avazu/FGCNN_avazu_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    pooling_sizes: [2, 2, 2, 2]
+    recombined_channels: [3, 3, 3, 3]
+    save_best_only: true
+    seed: 2019
+    share_embedding: false
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FGCNN_avazu_x4_002_22b292a5:
+    batch_size: 10000
+    channels: [20, 22, 24, 26]
+    conv_activation: Tanh
+    conv_batch_norm: true
+    dataset_id: avazu_x4_3bbbc4c9
+    debug: false
+    dnn_activations: ReLU
+    dnn_batch_norm: false
+    dnn_hidden_units: [2000, 2000, 2000, 2000]
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [9, 9, 9, 9]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FGCNN
+    model_id: FGCNN_base
+    model_root: ./Avazu/FGCNN_avazu_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    pooling_sizes: [2, 2, 2, 2]
+    recombined_channels: [3, 3, 3, 3]
+    save_best_only: true
+    seed: 2019
+    share_embedding: false
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FGCNN_avazu_x4_003_3bf975f5:
+    batch_size: 10000
+    channels: [26, 28, 30, 32]
+    conv_activation: Tanh
+    conv_batch_norm: true
+    dataset_id: avazu_x4_3bbbc4c9
+    debug: false
+    dnn_activations: ReLU
+    dnn_batch_norm: false
+    dnn_hidden_units: [1000, 1000, 1000, 1000]
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [9, 9, 9, 9]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FGCNN
+    model_id: FGCNN_base
+    model_root: ./Avazu/FGCNN_avazu_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    pooling_sizes: [2, 2, 2, 2]
+    recombined_channels: [3, 3, 3, 3]
+    save_best_only: true
+    seed: 2019
+    share_embedding: false
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FGCNN_avazu_x4_004_8048f435:
+    batch_size: 10000
+    channels: [26, 28, 30, 32]
+    conv_activation: Tanh
+    conv_batch_norm: true
+    dataset_id: avazu_x4_3bbbc4c9
+    debug: false
+    dnn_activations: ReLU
+    dnn_batch_norm: false
+    dnn_hidden_units: [2000, 2000, 2000, 2000]
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [9, 9, 9, 9]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FGCNN
+    model_id: FGCNN_base
+    model_root: ./Avazu/FGCNN_avazu_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    pooling_sizes: [2, 2, 2, 2]
+    recombined_channels: [3, 3, 3, 3]
+    save_best_only: true
+    seed: 2019
+    share_embedding: false
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FGCNN_avazu_x4_005_0079b4c4:
+    batch_size: 10000
+    channels: [32, 34, 36, 38]
+    conv_activation: Tanh
+    conv_batch_norm: true
+    dataset_id: avazu_x4_3bbbc4c9
+    debug: false
+    dnn_activations: ReLU
+    dnn_batch_norm: false
+    dnn_hidden_units: [1000, 1000, 1000, 1000]
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [9, 9, 9, 9]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FGCNN
+    model_id: FGCNN_base
+    model_root: ./Avazu/FGCNN_avazu_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    pooling_sizes: [2, 2, 2, 2]
+    recombined_channels: [3, 3, 3, 3]
+    save_best_only: true
+    seed: 2019
+    share_embedding: false
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FGCNN_avazu_x4_006_66277af9:
+    batch_size: 10000
+    channels: [32, 34, 36, 38]
+    conv_activation: Tanh
+    conv_batch_norm: true
+    dataset_id: avazu_x4_3bbbc4c9
+    debug: false
+    dnn_activations: ReLU
+    dnn_batch_norm: false
+    dnn_hidden_units: [2000, 2000, 2000, 2000]
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [9, 9, 9, 9]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FGCNN
+    model_id: FGCNN_base
+    model_root: ./Avazu/FGCNN_avazu_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    pooling_sizes: [2, 2, 2, 2]
+    recombined_channels: [3, 3, 3, 3]
+    save_best_only: true
+    seed: 2019
+    share_embedding: false
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FGCNN_avazu_x4_007_ad75c206:
+    batch_size: 10000
+    channels: [38, 40, 42, 44]
+    conv_activation: Tanh
+    conv_batch_norm: true
+    dataset_id: avazu_x4_3bbbc4c9
+    debug: false
+    dnn_activations: ReLU
+    dnn_batch_norm: false
+    dnn_hidden_units: [1000, 1000, 1000, 1000]
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [9, 9, 9, 9]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FGCNN
+    model_id: FGCNN_base
+    model_root: ./Avazu/FGCNN_avazu_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    pooling_sizes: [2, 2, 2, 2]
+    recombined_channels: [3, 3, 3, 3]
+    save_best_only: true
+    seed: 2019
+    share_embedding: false
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FGCNN_avazu_x4_008_5b99d564:
+    batch_size: 10000
+    channels: [38, 40, 42, 44]
+    conv_activation: Tanh
+    conv_batch_norm: true
+    dataset_id: avazu_x4_3bbbc4c9
+    debug: false
+    dnn_activations: ReLU
+    dnn_batch_norm: false
+    dnn_hidden_units: [2000, 2000, 2000, 2000]
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [9, 9, 9, 9]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FGCNN
+    model_id: FGCNN_base
+    model_root: ./Avazu/FGCNN_avazu_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    pooling_sizes: [2, 2, 2, 2]
+    recombined_channels: [3, 3, 3, 3]
+    save_best_only: true
+    seed: 2019
+    share_embedding: false
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FGCNN_avazu_x4_009_b57c4a7a:
+    batch_size: 10000
+    channels: [20, 22, 24, 26]
+    conv_activation: Tanh
+    conv_batch_norm: true
+    dataset_id: avazu_x4_3bbbc4c9
+    debug: false
+    dnn_activations: ReLU
+    dnn_batch_norm: false
+    dnn_hidden_units: [1000, 1000, 1000, 1000]
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [9, 9, 9, 9]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FGCNN
+    model_id: FGCNN_base
+    model_root: ./Avazu/FGCNN_avazu_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    pooling_sizes: [2, 2, 2, 2]
+    recombined_channels: [3, 3, 3, 3]
+    save_best_only: true
+    seed: 2019
+    share_embedding: false
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FGCNN_avazu_x4_010_06d6ae32:
+    batch_size: 10000
+    channels: [20, 22, 24, 26]
+    conv_activation: Tanh
+    conv_batch_norm: true
+    dataset_id: avazu_x4_3bbbc4c9
+    debug: false
+    dnn_activations: ReLU
+    dnn_batch_norm: false
+    dnn_hidden_units: [2000, 2000, 2000, 2000]
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [9, 9, 9, 9]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FGCNN
+    model_id: FGCNN_base
+    model_root: ./Avazu/FGCNN_avazu_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    pooling_sizes: [2, 2, 2, 2]
+    recombined_channels: [3, 3, 3, 3]
+    save_best_only: true
+    seed: 2019
+    share_embedding: false
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FGCNN_avazu_x4_011_aff91733:
+    batch_size: 10000
+    channels: [26, 28, 30, 32]
+    conv_activation: Tanh
+    conv_batch_norm: true
+    dataset_id: avazu_x4_3bbbc4c9
+    debug: false
+    dnn_activations: ReLU
+    dnn_batch_norm: false
+    dnn_hidden_units: [1000, 1000, 1000, 1000]
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [9, 9, 9, 9]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FGCNN
+    model_id: FGCNN_base
+    model_root: ./Avazu/FGCNN_avazu_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    pooling_sizes: [2, 2, 2, 2]
+    recombined_channels: [3, 3, 3, 3]
+    save_best_only: true
+    seed: 2019
+    share_embedding: false
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FGCNN_avazu_x4_012_0e7ae107:
+    batch_size: 10000
+    channels: [26, 28, 30, 32]
+    conv_activation: Tanh
+    conv_batch_norm: true
+    dataset_id: avazu_x4_3bbbc4c9
+    debug: false
+    dnn_activations: ReLU
+    dnn_batch_norm: false
+    dnn_hidden_units: [2000, 2000, 2000, 2000]
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [9, 9, 9, 9]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FGCNN
+    model_id: FGCNN_base
+    model_root: ./Avazu/FGCNN_avazu_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    pooling_sizes: [2, 2, 2, 2]
+    recombined_channels: [3, 3, 3, 3]
+    save_best_only: true
+    seed: 2019
+    share_embedding: false
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FGCNN_avazu_x4_013_792f78cc:
+    batch_size: 10000
+    channels: [32, 34, 36, 38]
+    conv_activation: Tanh
+    conv_batch_norm: true
+    dataset_id: avazu_x4_3bbbc4c9
+    debug: false
+    dnn_activations: ReLU
+    dnn_batch_norm: false
+    dnn_hidden_units: [1000, 1000, 1000, 1000]
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [9, 9, 9, 9]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FGCNN
+    model_id: FGCNN_base
+    model_root: ./Avazu/FGCNN_avazu_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    pooling_sizes: [2, 2, 2, 2]
+    recombined_channels: [3, 3, 3, 3]
+    save_best_only: true
+    seed: 2019
+    share_embedding: false
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FGCNN_avazu_x4_014_f5d016b4:
+    batch_size: 10000
+    channels: [32, 34, 36, 38]
+    conv_activation: Tanh
+    conv_batch_norm: true
+    dataset_id: avazu_x4_3bbbc4c9
+    debug: false
+    dnn_activations: ReLU
+    dnn_batch_norm: false
+    dnn_hidden_units: [2000, 2000, 2000, 2000]
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [9, 9, 9, 9]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FGCNN
+    model_id: FGCNN_base
+    model_root: ./Avazu/FGCNN_avazu_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    pooling_sizes: [2, 2, 2, 2]
+    recombined_channels: [3, 3, 3, 3]
+    save_best_only: true
+    seed: 2019
+    share_embedding: false
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FGCNN_avazu_x4_015_f3e0a059:
+    batch_size: 10000
+    channels: [38, 40, 42, 44]
+    conv_activation: Tanh
+    conv_batch_norm: true
+    dataset_id: avazu_x4_3bbbc4c9
+    debug: false
+    dnn_activations: ReLU
+    dnn_batch_norm: false
+    dnn_hidden_units: [1000, 1000, 1000, 1000]
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [9, 9, 9, 9]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FGCNN
+    model_id: FGCNN_base
+    model_root: ./Avazu/FGCNN_avazu_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    pooling_sizes: [2, 2, 2, 2]
+    recombined_channels: [3, 3, 3, 3]
+    save_best_only: true
+    seed: 2019
+    share_embedding: false
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FGCNN_avazu_x4_016_c835c7f4:
+    batch_size: 10000
+    channels: [38, 40, 42, 44]
+    conv_activation: Tanh
+    conv_batch_norm: true
+    dataset_id: avazu_x4_3bbbc4c9
+    debug: false
+    dnn_activations: ReLU
+    dnn_batch_norm: false
+    dnn_hidden_units: [2000, 2000, 2000, 2000]
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [9, 9, 9, 9]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FGCNN
+    model_id: FGCNN_base
+    model_root: ./Avazu/FGCNN_avazu_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    pooling_sizes: [2, 2, 2, 2]
+    recombined_channels: [3, 3, 3, 3]
+    save_best_only: true
+    seed: 2019
+    share_embedding: false
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3

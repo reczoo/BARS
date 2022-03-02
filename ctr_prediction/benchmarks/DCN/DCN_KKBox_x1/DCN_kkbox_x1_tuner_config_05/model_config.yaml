@@ -1,0 +1,792 @@
+DCN_kkbox_x1_001_2a344cba:
+    batch_norm: false
+    batch_size: 10000
+    crossing_layers: 3
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_hidden_units: [5000, 5000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DCN
+    model_id: DCN_base
+    model_root: ./KKBox/DCN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DCN_kkbox_x1_002_95d0da97:
+    batch_norm: false
+    batch_size: 10000
+    crossing_layers: 3
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_hidden_units: [5000, 5000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DCN
+    model_id: DCN_base
+    model_root: ./KKBox/DCN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.4
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DCN_kkbox_x1_003_18a25bec:
+    batch_norm: false
+    batch_size: 10000
+    crossing_layers: 3
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_hidden_units: [5000, 5000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DCN
+    model_id: DCN_base
+    model_root: ./KKBox/DCN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.5
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DCN_kkbox_x1_004_1870e257:
+    batch_norm: false
+    batch_size: 10000
+    crossing_layers: 4
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_hidden_units: [5000, 5000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DCN
+    model_id: DCN_base
+    model_root: ./KKBox/DCN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DCN_kkbox_x1_005_362e6c13:
+    batch_norm: false
+    batch_size: 10000
+    crossing_layers: 4
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_hidden_units: [5000, 5000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DCN
+    model_id: DCN_base
+    model_root: ./KKBox/DCN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.4
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DCN_kkbox_x1_006_41fb69bc:
+    batch_norm: false
+    batch_size: 10000
+    crossing_layers: 4
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_hidden_units: [5000, 5000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DCN
+    model_id: DCN_base
+    model_root: ./KKBox/DCN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.5
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DCN_kkbox_x1_007_9bf7f6f4:
+    batch_norm: false
+    batch_size: 10000
+    crossing_layers: 3
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_hidden_units: [1000, 1000, 1000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DCN
+    model_id: DCN_base
+    model_root: ./KKBox/DCN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DCN_kkbox_x1_008_522f7c05:
+    batch_norm: false
+    batch_size: 10000
+    crossing_layers: 3
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_hidden_units: [1000, 1000, 1000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DCN
+    model_id: DCN_base
+    model_root: ./KKBox/DCN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.4
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DCN_kkbox_x1_009_7d39043c:
+    batch_norm: false
+    batch_size: 10000
+    crossing_layers: 3
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_hidden_units: [1000, 1000, 1000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DCN
+    model_id: DCN_base
+    model_root: ./KKBox/DCN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.5
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DCN_kkbox_x1_010_50d6008e:
+    batch_norm: false
+    batch_size: 10000
+    crossing_layers: 4
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_hidden_units: [1000, 1000, 1000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DCN
+    model_id: DCN_base
+    model_root: ./KKBox/DCN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DCN_kkbox_x1_011_a144c2a1:
+    batch_norm: false
+    batch_size: 10000
+    crossing_layers: 4
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_hidden_units: [1000, 1000, 1000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DCN
+    model_id: DCN_base
+    model_root: ./KKBox/DCN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.4
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DCN_kkbox_x1_012_8ae336ed:
+    batch_norm: false
+    batch_size: 10000
+    crossing_layers: 4
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_hidden_units: [1000, 1000, 1000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DCN
+    model_id: DCN_base
+    model_root: ./KKBox/DCN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.5
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DCN_kkbox_x1_013_ef9929b0:
+    batch_norm: false
+    batch_size: 10000
+    crossing_layers: 3
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_hidden_units: [2000, 2000, 2000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DCN
+    model_id: DCN_base
+    model_root: ./KKBox/DCN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DCN_kkbox_x1_014_90427ba2:
+    batch_norm: false
+    batch_size: 10000
+    crossing_layers: 3
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_hidden_units: [2000, 2000, 2000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DCN
+    model_id: DCN_base
+    model_root: ./KKBox/DCN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.4
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DCN_kkbox_x1_015_44b653c0:
+    batch_norm: false
+    batch_size: 10000
+    crossing_layers: 3
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_hidden_units: [2000, 2000, 2000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DCN
+    model_id: DCN_base
+    model_root: ./KKBox/DCN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.5
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DCN_kkbox_x1_016_706654eb:
+    batch_norm: false
+    batch_size: 10000
+    crossing_layers: 4
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_hidden_units: [2000, 2000, 2000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DCN
+    model_id: DCN_base
+    model_root: ./KKBox/DCN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DCN_kkbox_x1_017_e3ee3de0:
+    batch_norm: false
+    batch_size: 10000
+    crossing_layers: 4
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_hidden_units: [2000, 2000, 2000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DCN
+    model_id: DCN_base
+    model_root: ./KKBox/DCN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.4
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DCN_kkbox_x1_018_985001d1:
+    batch_norm: false
+    batch_size: 10000
+    crossing_layers: 4
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_hidden_units: [2000, 2000, 2000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DCN
+    model_id: DCN_base
+    model_root: ./KKBox/DCN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.5
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DCN_kkbox_x1_019_89c120e6:
+    batch_norm: false
+    batch_size: 10000
+    crossing_layers: 3
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_hidden_units: [5000, 5000, 5000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DCN
+    model_id: DCN_base
+    model_root: ./KKBox/DCN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DCN_kkbox_x1_020_fa8f29e4:
+    batch_norm: false
+    batch_size: 10000
+    crossing_layers: 3
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_hidden_units: [5000, 5000, 5000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DCN
+    model_id: DCN_base
+    model_root: ./KKBox/DCN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.4
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DCN_kkbox_x1_021_d3d309b7:
+    batch_norm: false
+    batch_size: 10000
+    crossing_layers: 3
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_hidden_units: [5000, 5000, 5000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DCN
+    model_id: DCN_base
+    model_root: ./KKBox/DCN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.5
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DCN_kkbox_x1_022_42732236:
+    batch_norm: false
+    batch_size: 10000
+    crossing_layers: 4
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_hidden_units: [5000, 5000, 5000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DCN
+    model_id: DCN_base
+    model_root: ./KKBox/DCN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DCN_kkbox_x1_023_ef2b1e10:
+    batch_norm: false
+    batch_size: 10000
+    crossing_layers: 4
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_hidden_units: [5000, 5000, 5000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DCN
+    model_id: DCN_base
+    model_root: ./KKBox/DCN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.4
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+DCN_kkbox_x1_024_e0c9ad2d:
+    batch_norm: false
+    batch_size: 10000
+    crossing_layers: 4
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_hidden_units: [5000, 5000, 5000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DCN
+    model_id: DCN_base
+    model_root: ./KKBox/DCN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.5
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3

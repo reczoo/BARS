@@ -1,8 +1,8 @@
 ## DCN_avazu_x1
 
-A guide to benchmark DCN on [Avazu_x1](https://github.com/openbenchmark/BARS/blob/master/ctr_prediction/datasets/Avazu/README.md#Avazu_x1).
+A hands-on guide to run the DCN model on the Avazu_x1 dataset.
 
-Author: [zhujiem](https://github.com/zhujiem)
+Author: [XUEPAI](https://github.com/xue-pai)
 
 ### Index
 [Environments](#Environments) | [Dataset](#Dataset) | [Code](#Code) | [Results](#Results) | [Logs](#Logs)
@@ -11,64 +11,79 @@ Author: [zhujiem](https://github.com/zhujiem)
 + Hardware
 
   ```python
-  CPU: Intel(R) Xeon(R) CPU E5-2690 v4 @ 2.6GHz
-  GPU: Tesla P100 16G
+  CPU: Intel(R) Xeon(R) Gold 6278C CPU @ 2.60GHz
+  GPU: Tesla V100 32G
   RAM: 755G
+
   ```
+
 + Software
 
   ```python
-  CUDA: 10.0.130
-  python: 3.6.5
-  pytorch: 1.0.1.post2
-  pandas: 0.23.0
-  numpy: 1.18.1
-  scipy: 1.1.0
-  sklearn: 0.23.1
-  pyyaml: 5.1
-  h5py: 2.7.1
-  tqdm: 4.59.0
+  CUDA: 10.2
+  python: 3.6.4
+  pytorch: 1.0.0
+  pandas: 0.22.0
+  numpy: 1.19.2
+  scipy: 1.5.4
+  sklearn: 0.22.1
+  pyyaml: 5.4.1
+  h5py: 2.8.0
+  tqdm: 4.60.0
+  fuxictr: 1.1.0
+
   ```
 
 ### Dataset
-
-To reproduce the dataset splitting, please follow the details of [Avazu_x1](https://github.com/openbenchmark/BARS/blob/master/ctr_prediction/datasets/Avazu/README.md#Avazu_x1) to get data ready.
+Dataset ID: [Avazu_x1](https://github.com/openbenchmark/BARS/blob/master/ctr_prediction/datasets/Avazu/README.md#Avazu_x1). Please refer to the dataset details to get data ready.
 
 ### Code
 
-We use [FuxiCTR v1.1](https://github.com/xue-pai/FuxiCTR/tree/v1.1.0) for this experiment. The model implementation can be found [here](https://github.com/xue-pai/FuxiCTR/blob/v1.1.0/fuxictr/pytorch/models/DCN.py).
+We use [FuxiCTR-v1.1.0](fuxictr_url) for this experiment. See model code: [DCN](https://github.com/xue-pai/FuxiCTR/blob/v1.1.0/fuxictr/pytorch/models/DCN.py).
 
-1. Install FuxiCTR and all the dependencies.
-   ```bash
-   pip install fuxictr==1.1.*
-   ```
-   
-2. Put the downloaded dataset in `../data/Avazu/Avazu_x1`. 
+Running steps:
 
-3. The dataset_config and model_config files are available in the sub-folder [DCN_avazu_x1_tuner_config_02](./DCN_avazu_x1_tuner_config_02).
+1. Download [FuxiCTR-v1.1.0](fuxictr_url) and install all the dependencies listed in the [environments](#environments). Then modify [run_expid.py](./run_expid.py#L5) to add the FuxiCTR library to system path
+    
+    ```python
+    sys.path.append('YOUR_PATH_TO_FuxiCTR/')
+    ```
 
-   Note that in this setting, we follow the AFN work to fix embedding_dim=10, batch_size=4096, and MLP_hidden_units=[400, 400, 400] to make fair comparisons. Other hyper-parameters are tuned via grid search.
+2. Create a data directory and put the downloaded csv files in `../data/Avazu/Avazu_x1`.
+
+3. Both `dataset_config.yaml` and `model_config.yaml` files are available in [DCN_avazu_x1_tuner_config_03](./DCN_avazu_x1_tuner_config_03). Make sure the data paths in `dataset_config.yaml` are correctly set to what we create in the last step.
 
 4. Run the following script to start.
 
-  ```bash
-  cd BARS/ctr_prediction/benchmarks/DCN/DCN_avazu_x1
-  nohup python run_expid.py --version pytorch --config DCN_avazu_x1_tuner_config_02 --expid DCN_avazu_x1_010_6afb45f5 --gpu 0 > run.log & 
-  tail -f run.log
-  ```
-
+    ```bash
+    cd DCN_avazu_x1
+    nohup python run_expid.py --config ./DCN_avazu_x1_tuner_config_03 --expid DCN_avazu_x1_004_e58d35c1 --gpu 0 > run.log &
+    tail -f run.log
+    ```
 
 ### Results
-```python
-[Metrics] logloss: 0.366885 - AUC: 0.764671
-```
+
+Total 5 runs:
+
+| Runs | AUC | logloss  |
+|:--------------------:|:--------------------:|:--------------------:|
+| 1 | 0.765181 | 0.366485  |
+| 2 | 0.761728 | 0.368109  |
+| 3 | 0.764153 | 0.366988  |
+| 4 | 0.764464 | 0.366932  |
+| 5 | 0.763515 | 0.367715  |
+| | | | 
+| Avg | 0.763808 | 0.367246 |
+| Std | &#177;0.00117019 | &#177;0.00058464 |
+
 
 ### Logs
 ```python
-2021-12-30 13:48:20,969 P30627 INFO {
+2022-02-09 00:54:48,138 P734 INFO {
     "batch_norm": "False",
     "batch_size": "4096",
-    "crossing_layers": "5",
+    "crossing_layers": "3",
+    "data_block_size": "-1",
     "data_format": "csv",
     "data_root": "../data/Avazu/",
     "dataset_id": "avazu_x1_3fb65689",
@@ -76,26 +91,25 @@ We use [FuxiCTR v1.1](https://github.com/xue-pai/FuxiCTR/tree/v1.1.0) for this e
     "dnn_activations": "relu",
     "dnn_hidden_units": "[400, 400, 400]",
     "embedding_dim": "10",
-    "embedding_regularizer": "0.001",
+    "embedding_regularizer": "0.05",
     "epochs": "100",
     "every_x_epochs": "1",
     "feature_cols": "[{'active': True, 'dtype': 'float', 'name': ['feat_1', 'feat_2', 'feat_3', 'feat_4', 'feat_5', 'feat_6', 'feat_7', 'feat_8', 'feat_9', 'feat_10', 'feat_11', 'feat_12', 'feat_13', 'feat_14', 'feat_15', 'feat_16', 'feat_17', 'feat_18', 'feat_19', 'feat_20', 'feat_21', 'feat_22'], 'type': 'categorical'}]",
-    "gpu": "0",
+    "gpu": "3",
     "label_col": "{'dtype': 'float', 'name': 'label'}",
     "learning_rate": "0.001",
     "loss": "binary_crossentropy",
-    "metrics": "['logloss', 'AUC']",
+    "metrics": "['AUC', 'logloss']",
     "min_categr_count": "1",
     "model": "DCN",
-    "model_id": "DCN_avazu_x1_010_6afb45f5",
+    "model_id": "DCN_avazu_x1_004_e58d35c1",
     "model_root": "./Avazu/DCN_avazu_x1/",
-    "monitor": "{'AUC': 1, 'logloss': -1}",
+    "monitor": "AUC",
     "monitor_mode": "max",
-    "net_dropout": "0.3",
+    "net_dropout": "0.1",
     "net_regularizer": "0",
     "num_workers": "3",
     "optimizer": "adam",
-    "partition_block_size": "-1",
     "patience": "2",
     "pickle_feature_encoder": "True",
     "save_best_only": "True",
@@ -106,106 +120,73 @@ We use [FuxiCTR v1.1](https://github.com/xue-pai/FuxiCTR/tree/v1.1.0) for this e
     "train_data": "../data/Avazu/Avazu_x1/train.csv",
     "use_hdf5": "True",
     "valid_data": "../data/Avazu/Avazu_x1/valid.csv",
-    "verbose": "1",
+    "verbose": "0",
     "version": "pytorch"
 }
-2021-12-30 13:48:20,969 P30627 INFO Set up feature encoder...
-2021-12-30 13:48:20,970 P30627 INFO Reading file: ../data/Avazu/Avazu_x1/train.csv
-2021-12-30 13:49:38,387 P30627 INFO Reading file: ../data/Avazu/Avazu_x1/valid.csv
-2021-12-30 13:49:50,345 P30627 INFO Reading file: ../data/Avazu/Avazu_x1/test.csv
-2021-12-30 13:50:12,989 P30627 INFO Preprocess feature columns...
-2021-12-30 13:50:16,035 P30627 INFO Fit feature encoder...
-2021-12-30 13:50:16,036 P30627 INFO Processing column: {'active': True, 'dtype': 'float', 'name': 'feat_1', 'type': 'categorical'}
-2021-12-30 13:50:24,103 P30627 INFO Processing column: {'active': True, 'dtype': 'float', 'name': 'feat_2', 'type': 'categorical'}
-2021-12-30 13:50:32,402 P30627 INFO Processing column: {'active': True, 'dtype': 'float', 'name': 'feat_3', 'type': 'categorical'}
-2021-12-30 13:50:40,913 P30627 INFO Processing column: {'active': True, 'dtype': 'float', 'name': 'feat_4', 'type': 'categorical'}
-2021-12-30 13:50:48,867 P30627 INFO Processing column: {'active': True, 'dtype': 'float', 'name': 'feat_5', 'type': 'categorical'}
-2021-12-30 13:50:56,815 P30627 INFO Processing column: {'active': True, 'dtype': 'float', 'name': 'feat_6', 'type': 'categorical'}
-2021-12-30 13:51:04,970 P30627 INFO Processing column: {'active': True, 'dtype': 'float', 'name': 'feat_7', 'type': 'categorical'}
-2021-12-30 13:51:12,610 P30627 INFO Processing column: {'active': True, 'dtype': 'float', 'name': 'feat_8', 'type': 'categorical'}
-2021-12-30 13:51:19,772 P30627 INFO Processing column: {'active': True, 'dtype': 'float', 'name': 'feat_9', 'type': 'categorical'}
-2021-12-30 13:51:30,737 P30627 INFO Processing column: {'active': True, 'dtype': 'float', 'name': 'feat_10', 'type': 'categorical'}
-2021-12-30 13:51:56,607 P30627 INFO Processing column: {'active': True, 'dtype': 'float', 'name': 'feat_11', 'type': 'categorical'}
-2021-12-30 13:52:04,112 P30627 INFO Processing column: {'active': True, 'dtype': 'float', 'name': 'feat_12', 'type': 'categorical'}
-2021-12-30 13:52:10,569 P30627 INFO Processing column: {'active': True, 'dtype': 'float', 'name': 'feat_13', 'type': 'categorical'}
-2021-12-30 13:52:17,024 P30627 INFO Processing column: {'active': True, 'dtype': 'float', 'name': 'feat_14', 'type': 'categorical'}
-2021-12-30 13:52:23,904 P30627 INFO Processing column: {'active': True, 'dtype': 'float', 'name': 'feat_15', 'type': 'categorical'}
-2021-12-30 13:52:30,817 P30627 INFO Processing column: {'active': True, 'dtype': 'float', 'name': 'feat_16', 'type': 'categorical'}
-2021-12-30 13:52:37,357 P30627 INFO Processing column: {'active': True, 'dtype': 'float', 'name': 'feat_17', 'type': 'categorical'}
-2021-12-30 13:52:44,197 P30627 INFO Processing column: {'active': True, 'dtype': 'float', 'name': 'feat_18', 'type': 'categorical'}
-2021-12-30 13:52:51,638 P30627 INFO Processing column: {'active': True, 'dtype': 'float', 'name': 'feat_19', 'type': 'categorical'}
-2021-12-30 13:52:59,569 P30627 INFO Processing column: {'active': True, 'dtype': 'float', 'name': 'feat_20', 'type': 'categorical'}
-2021-12-30 13:53:07,559 P30627 INFO Processing column: {'active': True, 'dtype': 'float', 'name': 'feat_21', 'type': 'categorical'}
-2021-12-30 13:53:15,457 P30627 INFO Processing column: {'active': True, 'dtype': 'float', 'name': 'feat_22', 'type': 'categorical'}
-2021-12-30 13:53:23,157 P30627 INFO Set feature index...
-2021-12-30 13:53:23,158 P30627 INFO Pickle feature_encode: ../data/Avazu/avazu_x1_3fb65689/feature_encoder.pkl
-2021-12-30 13:53:30,081 P30627 INFO Save feature_map to json: ../data/Avazu/avazu_x1_3fb65689/feature_map.json
-2021-12-30 13:53:30,083 P30627 INFO Set feature encoder done.
-2021-12-30 13:53:30,083 P30627 INFO Transform feature columns...
-2021-12-30 13:59:00,459 P30627 INFO Saving data to h5: ../data/Avazu/avazu_x1_3fb65689/train.h5
-2021-12-30 13:59:04,109 P30627 INFO Preprocess feature columns...
-2021-12-30 13:59:05,164 P30627 INFO Transform feature columns...
-2021-12-30 13:59:51,903 P30627 INFO Saving data to h5: ../data/Avazu/avazu_x1_3fb65689/valid.h5
-2021-12-30 13:59:52,419 P30627 INFO Preprocess feature columns...
-2021-12-30 13:59:53,197 P30627 INFO Transform feature columns...
-2021-12-30 14:01:24,620 P30627 INFO Saving data to h5: ../data/Avazu/avazu_x1_3fb65689/test.h5
-2021-12-30 14:01:25,737 P30627 INFO Transform csv data to h5 done.
-2021-12-30 14:01:25,737 P30627 INFO Loading data...
-2021-12-30 14:01:25,742 P30627 INFO Loading data from h5: ../data/Avazu/avazu_x1_3fb65689/train.h5
-2021-12-30 14:01:28,948 P30627 INFO Loading data from h5: ../data/Avazu/avazu_x1_3fb65689/valid.h5
-2021-12-30 14:01:29,368 P30627 INFO Train samples: total/28300276, pos/4953382, neg/23346894, ratio/17.50%, blocks/1
-2021-12-30 14:01:29,368 P30627 INFO Validation samples: total/4042897, pos/678699, neg/3364198, ratio/16.79%, blocks/1
-2021-12-30 14:01:29,368 P30627 INFO Loading train data done.
-2021-12-30 14:01:32,611 P30627 INFO Total number of parameters: 13398011.
-2021-12-30 14:01:32,611 P30627 INFO Start training: 6910 batches/epoch
-2021-12-30 14:01:32,611 P30627 INFO ************ Epoch=1 start ************
-2021-12-30 14:12:23,690 P30627 INFO [Metrics] logloss: 0.397372 - AUC: 0.743992
-2021-12-30 14:12:23,691 P30627 INFO Save best model: monitor(max): 0.346619
-2021-12-30 14:12:23,738 P30627 INFO --- 6910/6910 batches finished ---
-2021-12-30 14:12:23,954 P30627 INFO Train loss: 0.420003
-2021-12-30 14:12:23,954 P30627 INFO ************ Epoch=1 end ************
-2021-12-30 14:22:53,456 P30627 INFO [Metrics] logloss: 0.396507 - AUC: 0.745616
-2021-12-30 14:22:53,456 P30627 INFO Save best model: monitor(max): 0.349109
-2021-12-30 14:22:53,532 P30627 INFO --- 6910/6910 batches finished ---
-2021-12-30 14:22:53,731 P30627 INFO Train loss: 0.420978
-2021-12-30 14:22:53,731 P30627 INFO ************ Epoch=2 end ************
-2021-12-30 14:34:09,667 P30627 INFO [Metrics] logloss: 0.396295 - AUC: 0.745970
-2021-12-30 14:34:09,668 P30627 INFO Save best model: monitor(max): 0.349675
-2021-12-30 14:34:09,747 P30627 INFO --- 6910/6910 batches finished ---
-2021-12-30 14:34:09,955 P30627 INFO Train loss: 0.422253
-2021-12-30 14:34:09,955 P30627 INFO ************ Epoch=3 end ************
-2021-12-30 14:45:30,520 P30627 INFO [Metrics] logloss: 0.399075 - AUC: 0.742307
-2021-12-30 14:45:30,521 P30627 INFO Monitor(max) STOP: 0.343232 !
-2021-12-30 14:45:30,521 P30627 INFO Reduce learning rate on plateau: 0.000100
-2021-12-30 14:45:30,521 P30627 INFO --- 6910/6910 batches finished ---
-2021-12-30 14:45:30,748 P30627 INFO Train loss: 0.422529
-2021-12-30 14:45:30,748 P30627 INFO ************ Epoch=4 end ************
-2021-12-30 14:56:48,432 P30627 INFO [Metrics] logloss: 0.396215 - AUC: 0.747274
-2021-12-30 14:56:48,432 P30627 INFO Save best model: monitor(max): 0.351059
-2021-12-30 14:56:48,530 P30627 INFO --- 6910/6910 batches finished ---
-2021-12-30 14:56:48,788 P30627 INFO Train loss: 0.399464
-2021-12-30 14:56:48,788 P30627 INFO ************ Epoch=5 end ************
-2021-12-30 15:08:13,549 P30627 INFO [Metrics] logloss: 0.396993 - AUC: 0.744173
-2021-12-30 15:08:13,550 P30627 INFO Monitor(max) STOP: 0.347180 !
-2021-12-30 15:08:13,550 P30627 INFO Reduce learning rate on plateau: 0.000010
-2021-12-30 15:08:13,550 P30627 INFO --- 6910/6910 batches finished ---
-2021-12-30 15:08:13,781 P30627 INFO Train loss: 0.395828
-2021-12-30 15:08:13,781 P30627 INFO ************ Epoch=6 end ************
-2021-12-30 15:19:37,669 P30627 INFO [Metrics] logloss: 0.401493 - AUC: 0.737824
-2021-12-30 15:19:37,670 P30627 INFO Monitor(max) STOP: 0.336331 !
-2021-12-30 15:19:37,670 P30627 INFO Reduce learning rate on plateau: 0.000001
-2021-12-30 15:19:37,670 P30627 INFO Early stopping at epoch=7
-2021-12-30 15:19:37,670 P30627 INFO --- 6910/6910 batches finished ---
-2021-12-30 15:19:37,920 P30627 INFO Train loss: 0.386000
-2021-12-30 15:19:37,920 P30627 INFO Training finished.
-2021-12-30 15:19:37,920 P30627 INFO Load best model: /home/xx/FuxiCTR/benchmarks/Avazu/DCN_avazu_x1/avazu_x1_3fb65689/DCN_avazu_x1_010_6afb45f5.model
-2021-12-30 15:19:37,966 P30627 INFO ****** Validation evaluation ******
-2021-12-30 15:19:51,774 P30627 INFO [Metrics] logloss: 0.396215 - AUC: 0.747274
-2021-12-30 15:19:51,855 P30627 INFO ******** Test evaluation ********
-2021-12-30 15:19:51,855 P30627 INFO Loading data...
-2021-12-30 15:19:51,856 P30627 INFO Loading data from h5: ../data/Avazu/avazu_x1_3fb65689/test.h5
-2021-12-30 15:19:52,937 P30627 INFO Test samples: total/8085794, pos/1232985, neg/6852809, ratio/15.25%, blocks/1
-2021-12-30 15:19:52,938 P30627 INFO Loading test data done.
-2021-12-30 15:20:21,279 P30627 INFO [Metrics] logloss: 0.366885 - AUC: 0.764671
+2022-02-09 00:54:48,139 P734 INFO Set up feature encoder...
+2022-02-09 00:54:48,139 P734 INFO Load feature_map from json: ../data/Avazu/avazu_x1_3fb65689/feature_map.json
+2022-02-09 00:54:48,139 P734 INFO Loading data...
+2022-02-09 00:54:48,140 P734 INFO Loading data from h5: ../data/Avazu/avazu_x1_3fb65689/train.h5
+2022-02-09 00:54:50,502 P734 INFO Loading data from h5: ../data/Avazu/avazu_x1_3fb65689/valid.h5
+2022-02-09 00:54:50,824 P734 INFO Train samples: total/28300276, pos/4953382, neg/23346894, ratio/17.50%, blocks/1
+2022-02-09 00:54:50,825 P734 INFO Validation samples: total/4042897, pos/678699, neg/3364198, ratio/16.79%, blocks/1
+2022-02-09 00:54:50,825 P734 INFO Loading train data done.
+2022-02-09 00:54:54,916 P734 INFO Total number of parameters: 13397131.
+2022-02-09 00:54:54,916 P734 INFO Start training: 6910 batches/epoch
+2022-02-09 00:54:54,917 P734 INFO ************ Epoch=1 start ************
+2022-02-09 01:04:07,081 P734 INFO [Metrics] AUC: 0.736263 - logloss: 0.401565
+2022-02-09 01:04:07,084 P734 INFO Save best model: monitor(max): 0.736263
+2022-02-09 01:04:07,311 P734 INFO --- 6910/6910 batches finished ---
+2022-02-09 01:04:07,345 P734 INFO Train loss: 0.437337
+2022-02-09 01:04:07,345 P734 INFO ************ Epoch=1 end ************
+2022-02-09 01:13:19,081 P734 INFO [Metrics] AUC: 0.730804 - logloss: 0.404337
+2022-02-09 01:13:19,084 P734 INFO Monitor(max) STOP: 0.730804 !
+2022-02-09 01:13:19,084 P734 INFO Reduce learning rate on plateau: 0.000100
+2022-02-09 01:13:19,084 P734 INFO --- 6910/6910 batches finished ---
+2022-02-09 01:13:19,120 P734 INFO Train loss: 0.438976
+2022-02-09 01:13:19,120 P734 INFO ************ Epoch=2 end ************
+2022-02-09 01:22:32,539 P734 INFO [Metrics] AUC: 0.743859 - logloss: 0.398189
+2022-02-09 01:22:32,541 P734 INFO Save best model: monitor(max): 0.743859
+2022-02-09 01:22:32,613 P734 INFO --- 6910/6910 batches finished ---
+2022-02-09 01:22:32,647 P734 INFO Train loss: 0.410227
+2022-02-09 01:22:32,647 P734 INFO ************ Epoch=3 end ************
+2022-02-09 01:31:45,614 P734 INFO [Metrics] AUC: 0.746237 - logloss: 0.397325
+2022-02-09 01:31:45,617 P734 INFO Save best model: monitor(max): 0.746237
+2022-02-09 01:31:45,689 P734 INFO --- 6910/6910 batches finished ---
+2022-02-09 01:31:45,727 P734 INFO Train loss: 0.412729
+2022-02-09 01:31:45,727 P734 INFO ************ Epoch=4 end ************
+2022-02-09 01:40:59,799 P734 INFO [Metrics] AUC: 0.746186 - logloss: 0.396691
+2022-02-09 01:40:59,802 P734 INFO Monitor(max) STOP: 0.746186 !
+2022-02-09 01:40:59,802 P734 INFO Reduce learning rate on plateau: 0.000010
+2022-02-09 01:40:59,803 P734 INFO --- 6910/6910 batches finished ---
+2022-02-09 01:40:59,842 P734 INFO Train loss: 0.413467
+2022-02-09 01:40:59,842 P734 INFO ************ Epoch=5 end ************
+2022-02-09 01:50:09,735 P734 INFO [Metrics] AUC: 0.747655 - logloss: 0.395564
+2022-02-09 01:50:09,738 P734 INFO Save best model: monitor(max): 0.747655
+2022-02-09 01:50:09,804 P734 INFO --- 6910/6910 batches finished ---
+2022-02-09 01:50:09,840 P734 INFO Train loss: 0.398316
+2022-02-09 01:50:09,840 P734 INFO ************ Epoch=6 end ************
+2022-02-09 01:59:15,502 P734 INFO [Metrics] AUC: 0.744314 - logloss: 0.397735
+2022-02-09 01:59:15,505 P734 INFO Monitor(max) STOP: 0.744314 !
+2022-02-09 01:59:15,505 P734 INFO Reduce learning rate on plateau: 0.000001
+2022-02-09 01:59:15,505 P734 INFO --- 6910/6910 batches finished ---
+2022-02-09 01:59:15,537 P734 INFO Train loss: 0.395764
+2022-02-09 01:59:15,537 P734 INFO ************ Epoch=7 end ************
+2022-02-09 02:08:18,833 P734 INFO [Metrics] AUC: 0.741345 - logloss: 0.399801
+2022-02-09 02:08:18,836 P734 INFO Monitor(max) STOP: 0.741345 !
+2022-02-09 02:08:18,836 P734 INFO Reduce learning rate on plateau: 0.000001
+2022-02-09 02:08:18,836 P734 INFO Early stopping at epoch=8
+2022-02-09 02:08:18,836 P734 INFO --- 6910/6910 batches finished ---
+2022-02-09 02:08:18,869 P734 INFO Train loss: 0.388288
+2022-02-09 02:08:18,869 P734 INFO Training finished.
+2022-02-09 02:08:18,869 P734 INFO Load best model: /cache/FuxiCTR/benchmarks/Avazu/DCN_avazu_x1/avazu_x1_3fb65689/DCN_avazu_x1_004_e58d35c1.model
+2022-02-09 02:08:23,407 P734 INFO ****** Validation evaluation ******
+2022-02-09 02:08:34,994 P734 INFO [Metrics] AUC: 0.747655 - logloss: 0.395564
+2022-02-09 02:08:35,093 P734 INFO ******** Test evaluation ********
+2022-02-09 02:08:35,094 P734 INFO Loading data...
+2022-02-09 02:08:35,094 P734 INFO Loading data from h5: ../data/Avazu/avazu_x1_3fb65689/test.h5
+2022-02-09 02:08:35,789 P734 INFO Test samples: total/8085794, pos/1232985, neg/6852809, ratio/15.25%, blocks/1
+2022-02-09 02:08:35,789 P734 INFO Loading test data done.
+2022-02-09 02:09:01,181 P734 INFO [Metrics] AUC: 0.765181 - logloss: 0.366485
 
 ```

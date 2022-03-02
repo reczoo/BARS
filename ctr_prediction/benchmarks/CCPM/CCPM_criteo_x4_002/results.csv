@@ -1,0 +1,1 @@
+ 20200602-034214,[command] python benchmark.py --version pytorch --config Criteo/CCPM_criteo/CCPM_criteo_x4_tuner_config_04 --expid CCPM_criteo_x4_011_dd841ea9 --gpu 1,[exp_id] CCPM_criteo_x4_011_dd841ea9,[dataset_id] criteo_x4_001_be98441d,[train] logloss: 0.424894 - AUC: 0.827891,[val] logloss: 0.444192 - AUC: 0.807421,[test] logloss: 0.443958 - AUC: 0.807705

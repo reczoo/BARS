@@ -1,0 +1,888 @@
+AFN_criteo_x4_001_cdbe663a:
+    afn_activations: relu
+    afn_dropout: 0.2
+    afn_hidden_units: [1000, 1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0
+    dnn_hidden_units: [1000, 1000, 1000, 1000]
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-05
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./Criteo/AFN_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_criteo_x4_002_c25d41b3:
+    afn_activations: relu
+    afn_dropout: 0.2
+    afn_hidden_units: [1000, 1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.1
+    dnn_hidden_units: [1000, 1000, 1000, 1000]
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-05
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./Criteo/AFN_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_criteo_x4_003_323ffac6:
+    afn_activations: relu
+    afn_dropout: 0.2
+    afn_hidden_units: [1000, 1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.2
+    dnn_hidden_units: [1000, 1000, 1000, 1000]
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-05
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./Criteo/AFN_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_criteo_x4_004_8fcb4074:
+    afn_activations: relu
+    afn_dropout: 0.2
+    afn_hidden_units: [1000, 1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0
+    dnn_hidden_units: [1000, 1000, 1000, 1000, 1000]
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-05
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./Criteo/AFN_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_criteo_x4_005_fb35ecb4:
+    afn_activations: relu
+    afn_dropout: 0.2
+    afn_hidden_units: [1000, 1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.1
+    dnn_hidden_units: [1000, 1000, 1000, 1000, 1000]
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-05
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./Criteo/AFN_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_criteo_x4_006_3bb07242:
+    afn_activations: relu
+    afn_dropout: 0.2
+    afn_hidden_units: [1000, 1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.2
+    dnn_hidden_units: [1000, 1000, 1000, 1000, 1000]
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-05
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./Criteo/AFN_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_criteo_x4_007_33d251d0:
+    afn_activations: relu
+    afn_dropout: 0.2
+    afn_hidden_units: [1000, 1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0
+    dnn_hidden_units: [1000, 1000, 1000, 1000]
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-05
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1500
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./Criteo/AFN_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_criteo_x4_008_f8b43b50:
+    afn_activations: relu
+    afn_dropout: 0.2
+    afn_hidden_units: [1000, 1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.1
+    dnn_hidden_units: [1000, 1000, 1000, 1000]
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-05
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1500
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./Criteo/AFN_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_criteo_x4_009_1f49b2db:
+    afn_activations: relu
+    afn_dropout: 0.2
+    afn_hidden_units: [1000, 1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.2
+    dnn_hidden_units: [1000, 1000, 1000, 1000]
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-05
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1500
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./Criteo/AFN_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_criteo_x4_010_c5a067ec:
+    afn_activations: relu
+    afn_dropout: 0.2
+    afn_hidden_units: [1000, 1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0
+    dnn_hidden_units: [1000, 1000, 1000, 1000, 1000]
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-05
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1500
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./Criteo/AFN_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_criteo_x4_011_96bf8ffc:
+    afn_activations: relu
+    afn_dropout: 0.2
+    afn_hidden_units: [1000, 1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.1
+    dnn_hidden_units: [1000, 1000, 1000, 1000, 1000]
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-05
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1500
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./Criteo/AFN_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_criteo_x4_012_dd9f842e:
+    afn_activations: relu
+    afn_dropout: 0.2
+    afn_hidden_units: [1000, 1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.2
+    dnn_hidden_units: [1000, 1000, 1000, 1000, 1000]
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-05
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1500
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./Criteo/AFN_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_criteo_x4_013_cd122dfb:
+    afn_activations: relu
+    afn_dropout: 0.2
+    afn_hidden_units: [1000, 1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0
+    dnn_hidden_units: [1000, 1000, 1000, 1000]
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./Criteo/AFN_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_criteo_x4_014_e3336105:
+    afn_activations: relu
+    afn_dropout: 0.2
+    afn_hidden_units: [1000, 1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.1
+    dnn_hidden_units: [1000, 1000, 1000, 1000]
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./Criteo/AFN_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_criteo_x4_015_090a997d:
+    afn_activations: relu
+    afn_dropout: 0.2
+    afn_hidden_units: [1000, 1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.2
+    dnn_hidden_units: [1000, 1000, 1000, 1000]
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./Criteo/AFN_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_criteo_x4_016_b6a0c266:
+    afn_activations: relu
+    afn_dropout: 0.2
+    afn_hidden_units: [1000, 1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0
+    dnn_hidden_units: [1000, 1000, 1000, 1000, 1000]
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./Criteo/AFN_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_criteo_x4_017_fa89e54e:
+    afn_activations: relu
+    afn_dropout: 0.2
+    afn_hidden_units: [1000, 1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.1
+    dnn_hidden_units: [1000, 1000, 1000, 1000, 1000]
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./Criteo/AFN_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_criteo_x4_018_4ffd68eb:
+    afn_activations: relu
+    afn_dropout: 0.2
+    afn_hidden_units: [1000, 1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.2
+    dnn_hidden_units: [1000, 1000, 1000, 1000, 1000]
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./Criteo/AFN_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_criteo_x4_019_d2ebe931:
+    afn_activations: relu
+    afn_dropout: 0.2
+    afn_hidden_units: [1000, 1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0
+    dnn_hidden_units: [1000, 1000, 1000, 1000]
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1500
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./Criteo/AFN_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_criteo_x4_020_4c80db1d:
+    afn_activations: relu
+    afn_dropout: 0.2
+    afn_hidden_units: [1000, 1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.1
+    dnn_hidden_units: [1000, 1000, 1000, 1000]
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1500
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./Criteo/AFN_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_criteo_x4_021_e0c37ada:
+    afn_activations: relu
+    afn_dropout: 0.2
+    afn_hidden_units: [1000, 1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.2
+    dnn_hidden_units: [1000, 1000, 1000, 1000]
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1500
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./Criteo/AFN_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_criteo_x4_022_fa9d7cce:
+    afn_activations: relu
+    afn_dropout: 0.2
+    afn_hidden_units: [1000, 1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0
+    dnn_hidden_units: [1000, 1000, 1000, 1000, 1000]
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1500
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./Criteo/AFN_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_criteo_x4_023_4ed763b8:
+    afn_activations: relu
+    afn_dropout: 0.2
+    afn_hidden_units: [1000, 1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.1
+    dnn_hidden_units: [1000, 1000, 1000, 1000, 1000]
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1500
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./Criteo/AFN_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_criteo_x4_024_67fe9131:
+    afn_activations: relu
+    afn_dropout: 0.2
+    afn_hidden_units: [1000, 1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.2
+    dnn_hidden_units: [1000, 1000, 1000, 1000, 1000]
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1500
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./Criteo/AFN_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3

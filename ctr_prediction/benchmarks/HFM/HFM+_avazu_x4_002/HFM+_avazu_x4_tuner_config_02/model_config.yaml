@@ -1,0 +1,1020 @@
+HFM_avazu_x4_001_6f0738f0:
+    batch_norm: false
+    batch_size: 5000
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000]
+    interaction_type: circular_correlation
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HFM
+    model_id: HFM_base
+    model_root: ./Avazu/HFM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_dnn: true
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HFM_avazu_x4_002_3251afa4:
+    batch_norm: false
+    batch_size: 5000
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000]
+    interaction_type: circular_correlation
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HFM
+    model_id: HFM_base
+    model_root: ./Avazu/HFM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_dnn: true
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HFM_avazu_x4_003_574609a8:
+    batch_norm: false
+    batch_size: 5000
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000]
+    interaction_type: circular_correlation
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HFM
+    model_id: HFM_base
+    model_root: ./Avazu/HFM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_dnn: true
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HFM_avazu_x4_004_2113095e:
+    batch_norm: false
+    batch_size: 5000
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000]
+    interaction_type: circular_correlation
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HFM
+    model_id: HFM_base
+    model_root: ./Avazu/HFM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_dnn: true
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HFM_avazu_x4_005_00e3be18:
+    batch_norm: false
+    batch_size: 5000
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000]
+    interaction_type: circular_correlation
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HFM
+    model_id: HFM_base
+    model_root: ./Avazu/HFM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_dnn: true
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HFM_avazu_x4_006_9fc9e8f0:
+    batch_norm: false
+    batch_size: 5000
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000]
+    interaction_type: circular_correlation
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HFM
+    model_id: HFM_base
+    model_root: ./Avazu/HFM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_dnn: true
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HFM_avazu_x4_007_314492d5:
+    batch_norm: false
+    batch_size: 5000
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [2000, 2000]
+    interaction_type: circular_correlation
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HFM
+    model_id: HFM_base
+    model_root: ./Avazu/HFM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_dnn: true
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HFM_avazu_x4_008_069999dd:
+    batch_norm: false
+    batch_size: 5000
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [2000, 2000]
+    interaction_type: circular_correlation
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HFM
+    model_id: HFM_base
+    model_root: ./Avazu/HFM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_dnn: true
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HFM_avazu_x4_009_4b213067:
+    batch_norm: false
+    batch_size: 5000
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [2000, 2000]
+    interaction_type: circular_correlation
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HFM
+    model_id: HFM_base
+    model_root: ./Avazu/HFM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_dnn: true
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HFM_avazu_x4_010_77040b23:
+    batch_norm: false
+    batch_size: 5000
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [2000, 2000]
+    interaction_type: circular_correlation
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HFM
+    model_id: HFM_base
+    model_root: ./Avazu/HFM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_dnn: true
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HFM_avazu_x4_011_98d0f6fb:
+    batch_norm: false
+    batch_size: 5000
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [2000, 2000]
+    interaction_type: circular_correlation
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HFM
+    model_id: HFM_base
+    model_root: ./Avazu/HFM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_dnn: true
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HFM_avazu_x4_012_09931b4b:
+    batch_norm: false
+    batch_size: 5000
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [2000, 2000]
+    interaction_type: circular_correlation
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HFM
+    model_id: HFM_base
+    model_root: ./Avazu/HFM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_dnn: true
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HFM_avazu_x4_013_53c3d288:
+    batch_norm: false
+    batch_size: 5000
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000]
+    interaction_type: circular_correlation
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HFM
+    model_id: HFM_base
+    model_root: ./Avazu/HFM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_dnn: true
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HFM_avazu_x4_014_dd338872:
+    batch_norm: false
+    batch_size: 5000
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000]
+    interaction_type: circular_correlation
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HFM
+    model_id: HFM_base
+    model_root: ./Avazu/HFM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_dnn: true
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HFM_avazu_x4_015_b8428ee7:
+    batch_norm: false
+    batch_size: 5000
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000]
+    interaction_type: circular_correlation
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HFM
+    model_id: HFM_base
+    model_root: ./Avazu/HFM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_dnn: true
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HFM_avazu_x4_016_b078e9be:
+    batch_norm: false
+    batch_size: 5000
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000]
+    interaction_type: circular_correlation
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HFM
+    model_id: HFM_base
+    model_root: ./Avazu/HFM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_dnn: true
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HFM_avazu_x4_017_102ac669:
+    batch_norm: false
+    batch_size: 5000
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000]
+    interaction_type: circular_correlation
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HFM
+    model_id: HFM_base
+    model_root: ./Avazu/HFM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_dnn: true
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HFM_avazu_x4_018_ad870f69:
+    batch_norm: false
+    batch_size: 5000
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000]
+    interaction_type: circular_correlation
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HFM
+    model_id: HFM_base
+    model_root: ./Avazu/HFM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_dnn: true
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HFM_avazu_x4_019_927e8f45:
+    batch_norm: false
+    batch_size: 5000
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000, 1000]
+    interaction_type: circular_correlation
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HFM
+    model_id: HFM_base
+    model_root: ./Avazu/HFM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_dnn: true
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HFM_avazu_x4_020_283b7ae0:
+    batch_norm: false
+    batch_size: 5000
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000, 1000]
+    interaction_type: circular_correlation
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HFM
+    model_id: HFM_base
+    model_root: ./Avazu/HFM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_dnn: true
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HFM_avazu_x4_021_a9ad6604:
+    batch_norm: false
+    batch_size: 5000
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000, 1000]
+    interaction_type: circular_correlation
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HFM
+    model_id: HFM_base
+    model_root: ./Avazu/HFM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_dnn: true
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HFM_avazu_x4_022_7615053d:
+    batch_norm: false
+    batch_size: 5000
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000, 1000]
+    interaction_type: circular_correlation
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HFM
+    model_id: HFM_base
+    model_root: ./Avazu/HFM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_dnn: true
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HFM_avazu_x4_023_1b36db5b:
+    batch_norm: false
+    batch_size: 5000
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000, 1000]
+    interaction_type: circular_correlation
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HFM
+    model_id: HFM_base
+    model_root: ./Avazu/HFM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_dnn: true
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HFM_avazu_x4_024_69e30c40:
+    batch_norm: false
+    batch_size: 5000
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000, 1000]
+    interaction_type: circular_correlation
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HFM
+    model_id: HFM_base
+    model_root: ./Avazu/HFM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_dnn: true
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HFM_avazu_x4_025_8af966da:
+    batch_norm: false
+    batch_size: 5000
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500]
+    interaction_type: circular_correlation
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HFM
+    model_id: HFM_base
+    model_root: ./Avazu/HFM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_dnn: true
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HFM_avazu_x4_026_73e55693:
+    batch_norm: false
+    batch_size: 5000
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500]
+    interaction_type: circular_correlation
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HFM
+    model_id: HFM_base
+    model_root: ./Avazu/HFM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_dnn: true
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HFM_avazu_x4_027_0533c140:
+    batch_norm: false
+    batch_size: 5000
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500]
+    interaction_type: circular_correlation
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HFM
+    model_id: HFM_base
+    model_root: ./Avazu/HFM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_dnn: true
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HFM_avazu_x4_028_423a1198:
+    batch_norm: false
+    batch_size: 5000
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500]
+    interaction_type: circular_correlation
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HFM
+    model_id: HFM_base
+    model_root: ./Avazu/HFM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_dnn: true
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HFM_avazu_x4_029_4b6b5cf1:
+    batch_norm: false
+    batch_size: 5000
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500]
+    interaction_type: circular_correlation
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HFM
+    model_id: HFM_base
+    model_root: ./Avazu/HFM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_dnn: true
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HFM_avazu_x4_030_a3d38cf1:
+    batch_norm: false
+    batch_size: 5000
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500]
+    interaction_type: circular_correlation
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HFM
+    model_id: HFM_base
+    model_root: ./Avazu/HFM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_dnn: true
+    use_hdf5: true
+    verbose: 1
+    workers: 3

@@ -1,9 +1,8 @@
-## FFM_Avazu_x4_001
+## FFM_avazu_x4_001
 
-A notebook to benchmark FFM on Avazu_x4_001 dataset.
+A hands-on guide to run the FFM model on the Avazu_x4_001 dataset.
 
-Author: [XUEPAI Team](https://github.com/xue-pai)
-
+Author: [XUEPAI](https://github.com/xue-pai)
 
 ### Index
 [Environments](#Environments) | [Dataset](#Dataset) | [Code](#Code) | [Results](#Results) | [Logs](#Logs)
@@ -12,66 +11,84 @@ Author: [XUEPAI Team](https://github.com/xue-pai)
 + Hardware
 
   ```python
-  CPU: Intel(R) Xeon(R) CPU E5-2690 v4 @ 2.6GHz
-  RAM: 500G+
+  CPU: Intel(R) Xeon(R) CPU E5-2690 v4 @ 2.60GHz
+  GPU: Tesla P100 16G
+  RAM: 755G
+
   ```
+
 + Software
 
   ```python
+  CUDA: 10.0
   python: 3.6.5
-  pandas: 1.0.0
+  pytorch: 1.0.1.post2
+  pandas: 0.23.0
   numpy: 1.18.1
+  scipy: 1.1.0
+  sklearn: 0.23.1
+  pyyaml: 5.1
+  h5py: 2.7.1
+  tqdm: 4.59.0
+  fuxictr: 1.0.2
   ```
 
 ### Dataset
-In this setting, we preprocess the data split by removing the id field that is useless for CTR prediction. In addition, we transform the timestamp field into three fields: hour, weekday, and is_weekend. For all categorical fields, we filter infrequent features by setting the threshold min_category_count=2 (performs well) and replace them with a default <OOV> token. Note that we do not follow the exact preprocessing steps in AutoInt, because the authors neither remove the useless id field nor specially preprocess the timestamp field.
-
-To make a fair comparison, we fix embedding_dim=16 as with AutoInt.
-
+Dataset ID: [Avazu_x4_001](https://github.com/openbenchmark/BARS/blob/master/ctr_prediction/datasets/Avazu/README.md#Avazu_x4_001). Please refer to the dataset details to get data ready.
 
 ### Code
-1. Install FuxiCTR
-  
-    Install FuxiCTR via `pip install fuxictr==1.0` to get all dependencies ready. Then download [the FuxiCTR repository](https://github.com/huawei-noah/benchmark/archive/53e314461c19dbc7f462b42bf0f0bfae020dc398.zip) to your local path.
 
-2. Downalod the dataset and run [the preprocessing script](https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/datasets/Avazu/Avazu_x4/split_avazu_x4.py) for data splitting. 
+We use [FuxiCTR-v1.0.2](fuxictr_url) for this experiment. See model code: [FFM](https://github.com/xue-pai/FuxiCTR/blob/v1.0.2/fuxictr/pytorch/models/FFM.py).
 
-3. Download the hyper-parameter configuration file: [FFM_avazu_x4_tuner_config_01.yaml](./FFM_avazu_x4_tuner_config_01.yaml)
+Running steps:
 
-4. Run the following script to reproduce the result. 
-  + --config: The config file that defines the tuning space
-  + --tag: Specify which expid to run (each expid corresponds to a specific setting of hyper-parameters in the tunner space)
-  + --gpu: The available gpus for parameters tuning.
+1. Download [FuxiCTR-v1.0.2](fuxictr_url) and install all the dependencies listed in the [environments](#environments). Then modify [run_expid.py](./run_expid.py#L5) to add the FuxiCTR library to system path
+    
+    ```python
+    sys.path.append('YOUR_PATH_TO_FuxiCTR/')
+    ```
 
-  ```bash
-  cd FuxiCTR/benchmarks
-  python run_param_tuner.py --config YOUR_PATH/FFM_avazu_x4_tuner_config_01.yaml --tag 003 --gpu 0
-  ```
+2. Create a data directory and put the downloaded csv files in `../data/Avazu/Avazu_x1`.
+
+3. Both `dataset_config.yaml` and `model_config.yaml` files are available in [FFM_avazu_x4_tuner_config_01](./FFM_avazu_x4_tuner_config_01). Make sure the data paths in `dataset_config.yaml` are correctly set to what we create in the last step.
+
+4. Run the following script to start.
+
+    ```bash
+    cd FFM_avazu_x4_001
+    nohup python run_expid.py --config ./FFM_avazu_x4_tuner_config_01 --expid FFM_avazu_x4_003_792ee3b7 --gpu 0 > run.log &
+    tail -f run.log
+    ```
 
 ### Results
-```python
-[Metrics] logloss: 0.371864 - AUC: 0.793279
-```
+
+| logloss | AUC  |
+|:--------------------:|:--------------------:|
+| 0.371960 | 0.793121  |
+
 
 ### Logs
-The following log is to be updated.
 ```python
-2020-05-13 23:47:15,648 P555 INFO {
+2022-03-01 20:43:43,732 P40741 INFO {
     "batch_size": "10000",
-    "data_format": "h5",
+    "data_format": "csv",
     "data_root": "../data/Avazu/",
     "dataset_id": "avazu_x4_3bbbc4c9",
-    "embedding_dim": "10",
+    "debug": "False",
+    "embedding_dim": "8",
     "embedding_dropout": "0",
     "epochs": "100",
     "every_x_epochs": "1",
-    "gpu": "0",
+    "feature_cols": "[{'active': False, 'dtype': 'str', 'name': 'id', 'type': 'categorical'}, {'active': True, 'dtype': 'str', 'name': 'hour', 'preprocess': 'convert_hour', 'type': 'categorical'}, {'active': True, 'dtype': 'str', 'name': ['C1', 'banner_pos', 'site_id', 'site_domain', 'site_category', 'app_id', 'app_domain', 'app_category', 'device_id', 'device_ip', 'device_model', 'device_type', 'device_conn_type', 'C14', 'C15', 'C16', 'C17', 'C18', 'C19', 'C20', 'C21'], 'type': 'categorical'}, {'active': True, 'dtype': 'str', 'name': 'weekday', 'preprocess': 'convert_weekday', 'type': 'categorical'}, {'active': True, 'dtype': 'str', 'name': 'weekend', 'preprocess': 'convert_weekend', 'type': 'categorical'}]",
+    "gpu": "1",
+    "label_col": "{'dtype': 'float', 'name': 'click'}",
     "learning_rate": "0.001",
     "loss": "binary_crossentropy",
     "metrics": "['logloss', 'AUC']",
+    "min_categr_count": "2",
     "model": "FFM",
-    "model_id": "FFM_avazu_x4_3bbbc4c9_001_9dcde48f",
-    "model_root": "./Avazu/FFM_avazu/min2/",
+    "model_id": "FFM_avazu_x4_003_792ee3b7",
+    "model_root": "./Avazu/FFM_avazu_x4_001/",
     "monitor": "{'AUC': 1, 'logloss': -1}",
     "monitor_mode": "max",
     "optimizer": "adam",
@@ -82,51 +99,90 @@ The following log is to be updated.
     "seed": "2019",
     "shuffle": "True",
     "task": "binary_classification",
-    "test_data": "../data/Avazu/avazu_x4_3bbbc4c9/test.h5",
-    "train_data": "../data/Avazu/avazu_x4_3bbbc4c9/train.h5",
+    "test_data": "../data/Avazu/Avazu_x4/test.csv",
+    "train_data": "../data/Avazu/Avazu_x4/train.csv",
     "use_hdf5": "True",
-    "valid_data": "../data/Avazu/avazu_x4_3bbbc4c9/valid.h5",
-    "verbose": "0",
+    "valid_data": "../data/Avazu/Avazu_x4/valid.csv",
+    "verbose": "1",
     "version": "pytorch",
     "workers": "3"
 }
-2020-05-13 23:47:15,663 P555 INFO Set up feature encoder...
-2020-05-13 23:47:15,663 P555 INFO Load feature_map from json: ../data/Avazu/avazu_x4_3bbbc4c9/feature_map.json
-2020-05-13 23:47:15,664 P555 INFO Loading data...
-2020-05-13 23:47:15,671 P555 INFO Loading data from h5: ../data/Avazu/avazu_x4_3bbbc4c9/train.h5
-2020-05-13 23:47:18,481 P555 INFO Loading data from h5: ../data/Avazu/avazu_x4_3bbbc4c9/valid.h5
-2020-05-13 23:47:19,842 P555 INFO Train samples: total/32343172, pos/5492052, neg/26851120, ratio/16.98%
-2020-05-13 23:47:19,942 P555 INFO Validation samples: total/4042897, pos/686507, neg/3356390, ratio/16.98%
-2020-05-13 23:47:19,942 P555 INFO Loading train data done.
-2020-05-13 23:47:43,035 P555 INFO **** Start training: 3235 batches/epoch ****
-2020-05-14 01:02:08,064 P555 INFO [Metrics] logloss: 0.371391 - AUC: 0.794224
-2020-05-14 01:02:08,065 P555 INFO Save best model: monitor(max): 0.422833
-2020-05-14 01:02:12,109 P555 INFO --- 3235/3235 batches finished ---
-2020-05-14 01:02:12,180 P555 INFO Train loss: 0.381109
-2020-05-14 01:02:12,181 P555 INFO ************ Epoch=1 end ************
-2020-05-14 02:16:47,682 P555 INFO [Metrics] logloss: 0.378682 - AUC: 0.790775
-2020-05-14 02:16:47,688 P555 INFO Monitor(max) STOP: 0.412093 !
-2020-05-14 02:16:47,688 P555 INFO Reduce learning rate on plateau: 0.000100
-2020-05-14 02:16:47,688 P555 INFO --- 3235/3235 batches finished ---
-2020-05-14 02:16:47,767 P555 INFO Train loss: 0.327801
-2020-05-14 02:16:47,768 P555 INFO ************ Epoch=2 end ************
-2020-05-14 03:31:21,825 P555 INFO [Metrics] logloss: 0.402067 - AUC: 0.781527
-2020-05-14 03:31:21,826 P555 INFO Monitor(max) STOP: 0.379460 !
-2020-05-14 03:31:21,826 P555 INFO Reduce learning rate on plateau: 0.000010
-2020-05-14 03:31:21,826 P555 INFO Early stopping at epoch=3
-2020-05-14 03:31:21,826 P555 INFO --- 3235/3235 batches finished ---
-2020-05-14 03:31:21,887 P555 INFO Train loss: 0.277228
-2020-05-14 03:31:21,888 P555 INFO Training finished.
-2020-05-14 03:31:21,888 P555 INFO Load best model: /cache/xxx/FuxiCTR/benchmarks/Avazu/FFM_avazu/min2/avazu_x4_3bbbc4c9/FFM_avazu_x4_3bbbc4c9_001_9dcde48f_model.ckpt
-2020-05-14 03:31:28,151 P555 INFO ****** Train/validation evaluation ******
-2020-05-14 03:35:36,057 P555 INFO [Metrics] logloss: 0.331382 - AUC: 0.854428
-2020-05-14 03:36:05,955 P555 INFO [Metrics] logloss: 0.371391 - AUC: 0.794224
-2020-05-14 03:36:06,090 P555 INFO ******** Test evaluation ********
-2020-05-14 03:36:06,091 P555 INFO Loading data...
-2020-05-14 03:36:06,091 P555 INFO Loading data from h5: ../data/Avazu/avazu_x4_3bbbc4c9/test.h5
-2020-05-14 03:36:06,847 P555 INFO Test samples: total/4042898, pos/686507, neg/3356391, ratio/16.98%
-2020-05-14 03:36:06,848 P555 INFO Loading test data done.
-2020-05-14 03:36:34,581 P555 INFO [Metrics] logloss: 0.371450 - AUC: 0.794166
-
+2022-03-01 20:43:43,733 P40741 INFO Set up feature encoder...
+2022-03-01 20:43:43,733 P40741 INFO Reading file: ../data/Avazu/Avazu_x4/train.csv
+2022-03-01 20:45:45,309 P40741 INFO Preprocess feature columns...
+2022-03-01 20:51:30,469 P40741 INFO Fit feature encoder...
+2022-03-01 20:51:30,469 P40741 INFO Processing column: {'active': True, 'dtype': 'str', 'name': 'hour', 'preprocess': 'convert_hour', 'type': 'categorical'}
+2022-03-01 20:54:14,582 P40741 INFO Processing column: {'active': True, 'dtype': 'str', 'name': 'C1', 'type': 'categorical'}
+2022-03-01 20:54:19,534 P40741 INFO Processing column: {'active': True, 'dtype': 'str', 'name': 'banner_pos', 'type': 'categorical'}
+2022-03-01 20:54:23,822 P40741 INFO Processing column: {'active': True, 'dtype': 'str', 'name': 'site_id', 'type': 'categorical'}
+2022-03-01 20:54:28,771 P40741 INFO Processing column: {'active': True, 'dtype': 'str', 'name': 'site_domain', 'type': 'categorical'}
+2022-03-01 20:54:33,785 P40741 INFO Processing column: {'active': True, 'dtype': 'str', 'name': 'site_category', 'type': 'categorical'}
+2022-03-01 20:54:38,606 P40741 INFO Processing column: {'active': True, 'dtype': 'str', 'name': 'app_id', 'type': 'categorical'}
+2022-03-01 20:54:43,577 P40741 INFO Processing column: {'active': True, 'dtype': 'str', 'name': 'app_domain', 'type': 'categorical'}
+2022-03-01 20:54:48,306 P40741 INFO Processing column: {'active': True, 'dtype': 'str', 'name': 'app_category', 'type': 'categorical'}
+2022-03-01 20:54:53,085 P40741 INFO Processing column: {'active': True, 'dtype': 'str', 'name': 'device_id', 'type': 'categorical'}
+2022-03-01 20:55:00,189 P40741 INFO Processing column: {'active': True, 'dtype': 'str', 'name': 'device_ip', 'type': 'categorical'}
+2022-03-01 20:55:16,303 P40741 INFO Processing column: {'active': True, 'dtype': 'str', 'name': 'device_model', 'type': 'categorical'}
+2022-03-01 20:55:21,951 P40741 INFO Processing column: {'active': True, 'dtype': 'str', 'name': 'device_type', 'type': 'categorical'}
+2022-03-01 20:55:26,324 P40741 INFO Processing column: {'active': True, 'dtype': 'str', 'name': 'device_conn_type', 'type': 'categorical'}
+2022-03-01 20:55:30,653 P40741 INFO Processing column: {'active': True, 'dtype': 'str', 'name': 'C14', 'type': 'categorical'}
+2022-03-01 20:55:35,967 P40741 INFO Processing column: {'active': True, 'dtype': 'str', 'name': 'C15', 'type': 'categorical'}
+2022-03-01 20:55:40,703 P40741 INFO Processing column: {'active': True, 'dtype': 'str', 'name': 'C16', 'type': 'categorical'}
+2022-03-01 20:55:45,720 P40741 INFO Processing column: {'active': True, 'dtype': 'str', 'name': 'C17', 'type': 'categorical'}
+2022-03-01 20:55:50,831 P40741 INFO Processing column: {'active': True, 'dtype': 'str', 'name': 'C18', 'type': 'categorical'}
+2022-03-01 20:55:55,478 P40741 INFO Processing column: {'active': True, 'dtype': 'str', 'name': 'C19', 'type': 'categorical'}
+2022-03-01 20:56:00,662 P40741 INFO Processing column: {'active': True, 'dtype': 'str', 'name': 'C20', 'type': 'categorical'}
+2022-03-01 20:56:05,883 P40741 INFO Processing column: {'active': True, 'dtype': 'str', 'name': 'C21', 'type': 'categorical'}
+2022-03-01 20:56:10,777 P40741 INFO Processing column: {'active': True, 'dtype': 'str', 'name': 'weekday', 'preprocess': 'convert_weekday', 'type': 'categorical'}
+2022-03-01 20:58:52,259 P40741 INFO Processing column: {'active': True, 'dtype': 'str', 'name': 'weekend', 'preprocess': 'convert_weekend', 'type': 'categorical'}
+2022-03-01 21:01:35,883 P40741 INFO Set feature index...
+2022-03-01 21:01:35,884 P40741 INFO Pickle feature_encode: ../data/Avazu/avazu_x4_3bbbc4c9/feature_encoder.pkl
+2022-03-01 21:01:37,574 P40741 INFO Save feature_map to json: ../data/Avazu/avazu_x4_3bbbc4c9/feature_map.json
+2022-03-01 21:01:37,575 P40741 INFO Set feature encoder done.
+2022-03-01 21:01:56,049 P40741 INFO Total number of parameters: 693930376.
+2022-03-01 21:01:56,050 P40741 INFO Loading data...
+2022-03-01 21:01:56,053 P40741 INFO Reading file: ../data/Avazu/Avazu_x4/train.csv
+2022-03-01 21:03:55,494 P40741 INFO Preprocess feature columns...
+2022-03-01 21:09:38,007 P40741 INFO Transform feature columns...
+2022-03-01 21:14:04,364 P40741 INFO Saving data to h5: ../data/Avazu/avazu_x4_3bbbc4c9/train.h5
+2022-03-01 21:14:13,404 P40741 INFO Reading file: ../data/Avazu/Avazu_x4/valid.csv
+2022-03-01 21:14:27,698 P40741 INFO Preprocess feature columns...
+2022-03-01 21:15:13,568 P40741 INFO Transform feature columns...
+2022-03-01 21:15:51,581 P40741 INFO Saving data to h5: ../data/Avazu/avazu_x4_3bbbc4c9/valid.h5
+2022-03-01 21:15:54,274 P40741 INFO Train samples: total/32343172, pos/5492052, neg/26851120, ratio/16.98%
+2022-03-01 21:15:54,662 P40741 INFO Validation samples: total/4042897, pos/686507, neg/3356390, ratio/16.98%
+2022-03-01 21:15:54,662 P40741 INFO Loading train data done.
+2022-03-01 21:15:58,015 P40741 INFO Start training: 3235 batches/epoch
+2022-03-01 21:15:58,016 P40741 INFO ************ Epoch=1 start ************
+2022-03-01 23:13:05,354 P40741 INFO [Metrics] logloss: 0.371829 - AUC: 0.793346
+2022-03-01 23:13:05,355 P40741 INFO Save best model: monitor(max): 0.421517
+2022-03-01 23:13:07,317 P40741 INFO --- 3235/3235 batches finished ---
+2022-03-01 23:13:07,689 P40741 INFO Train loss: 0.381648
+2022-03-01 23:13:07,689 P40741 INFO ************ Epoch=1 end ************
+2022-03-02 01:10:40,100 P40741 INFO [Metrics] logloss: 0.378712 - AUC: 0.790570
+2022-03-02 01:10:40,101 P40741 INFO Monitor(max) STOP: 0.411857 !
+2022-03-02 01:10:40,101 P40741 INFO Reduce learning rate on plateau: 0.000100
+2022-03-02 01:10:40,101 P40741 INFO --- 3235/3235 batches finished ---
+2022-03-02 01:10:40,529 P40741 INFO Train loss: 0.329993
+2022-03-02 01:10:40,530 P40741 INFO ************ Epoch=2 end ************
+2022-03-02 03:07:46,954 P40741 INFO [Metrics] logloss: 0.400290 - AUC: 0.781329
+2022-03-02 03:07:46,954 P40741 INFO Monitor(max) STOP: 0.381039 !
+2022-03-02 03:07:46,955 P40741 INFO Reduce learning rate on plateau: 0.000010
+2022-03-02 03:07:46,955 P40741 INFO Early stopping at epoch=3
+2022-03-02 03:07:46,955 P40741 INFO --- 3235/3235 batches finished ---
+2022-03-02 03:07:47,372 P40741 INFO Train loss: 0.281902
+2022-03-02 03:07:47,373 P40741 INFO Training finished.
+2022-03-02 03:07:47,373 P40741 INFO Load best model: /home/XXX/FuxiCTR/benchmarks/Avazu/FFM_avazu_x4_001/avazu_x4_3bbbc4c9/FFM_avazu_x4_003_792ee3b7_model.ckpt
+2022-03-02 03:07:51,948 P40741 INFO ****** Validation evaluation ******
+2022-03-02 03:08:22,081 P40741 INFO [Metrics] logloss: 0.371829 - AUC: 0.793346
+2022-03-02 03:08:22,188 P40741 INFO ******** Test evaluation ********
+2022-03-02 03:08:22,188 P40741 INFO Loading data...
+2022-03-02 03:08:22,188 P40741 INFO Reading file: ../data/Avazu/Avazu_x4/test.csv
+2022-03-02 03:08:38,471 P40741 INFO Preprocess feature columns...
+2022-03-02 03:09:21,769 P40741 INFO Transform feature columns...
+2022-03-02 03:09:56,647 P40741 INFO Saving data to h5: ../data/Avazu/avazu_x4_3bbbc4c9/test.h5
+2022-03-02 03:09:57,994 P40741 INFO Test samples: total/4042898, pos/686507, neg/3356391, ratio/16.98%
+2022-03-02 03:09:57,995 P40741 INFO Loading test data done.
+2022-03-02 03:10:31,442 P40741 INFO [Metrics] logloss: 0.371960 - AUC: 0.793121
 
 ```

@@ -1,9 +1,8 @@
-## FiBiNET_Criteo_x4_001
+## FiBiNET_criteo_x4_001
 
-A notebook to benchmark FiBiNET on Criteo_x4_001 dataset.
+A hands-on guide to run the FiBiNET model on the Criteo_x4_001 dataset.
 
-Author: [XUEPAI Team](https://github.com/xue-pai)
-
+Author: [XUEPAI](https://github.com/xue-pai)
 
 ### Index
 [Environments](#Environments) | [Dataset](#Dataset) | [Code](#Code) | [Results](#Results) | [Logs](#Logs)
@@ -12,72 +11,86 @@ Author: [XUEPAI Team](https://github.com/xue-pai)
 + Hardware
 
   ```python
-  CPU: Intel(R) Xeon(R) CPU E5-2690 v4 @ 2.6GHz
-  RAM: 500G+
+  CPU: Intel(R) Xeon(R) CPU E5-2690 v4 @ 2.60GHz
+  GPU: Tesla P100 16G
+  RAM: 755G
+
   ```
+
 + Software
 
   ```python
+  CUDA: 10.0
   python: 3.6.5
-  pandas: 1.0.0
+  pytorch: 1.0.1.post2
+  pandas: 0.23.0
   numpy: 1.18.1
+  scipy: 1.1.0
+  sklearn: 0.23.1
+  pyyaml: 5.1
+  h5py: 2.7.1
+  tqdm: 4.59.0
+  fuxictr: 1.0.2
   ```
 
 ### Dataset
-In this setting, we follow the winner's solution of the Criteo challenge to discretize each integer value x to ⌊log2 (x)⌋, if x > 2; and x = 1 otherwise. For all categorical fields, we replace infrequent features with a default <OOV> token by setting the threshold min_category_count=10. Note that we do not follow the exact preprocessing steps in AutoInt, because this preprocessing performs much better.
+Dataset ID: [Criteo_x4_001](https://github.com/openbenchmark/BARS/blob/master/ctr_prediction/datasets/Criteo/README.md#Criteo_x4_001). Please refer to the dataset details to get data ready.
 
-To make a fair comparison, we fix embedding_dim=16 as with AutoInt.
 ### Code
-1. Install FuxiCTR
-  
-    Install FuxiCTR via `pip install fuxictr==1.0` to get all dependencies ready. Then download [the FuxiCTR repository](https://github.com/huawei-noah/benchmark/archive/53e314461c19dbc7f462b42bf0f0bfae020dc398.zip) to your local path.
 
-2. Downalod the dataset and run [the preprocessing script](https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/datasets/Criteo/Criteo_x4/split_criteo_x4.py) for data splitting. 
+We use [FuxiCTR-v1.0.2](fuxictr_url) for this experiment. See model code: [FiBiNET](https://github.com/xue-pai/FuxiCTR/blob/v1.0.2/fuxictr/pytorch/models/FiBiNET.py).
 
-3. Download the hyper-parameter configuration file: [FiBiNET_criteo_x4_tuner_config_05.yaml](./FiBiNET_criteo_x4_tuner_config_05.yaml)
+Running steps:
 
-4. Run the following script to reproduce the result. 
-  + --config: The config file that defines the tuning space
-  + --tag: Specify which expid to run (each expid corresponds to a specific setting of hyper-parameters in the tunner space)
-  + --gpu: The available gpus for parameters tuning.
+1. Download [FuxiCTR-v1.0.2](fuxictr_url) and install all the dependencies listed in the [environments](#environments). Then modify [run_expid.py](./run_expid.py#L5) to add the FuxiCTR library to system path
+    
+    ```python
+    sys.path.append('YOUR_PATH_TO_FuxiCTR/')
+    ```
 
-  ```bash
-  cd FuxiCTR/benchmarks
-  python run_param_tuner.py --config YOUR_PATH/FiBiNET_criteo_x4_tuner_config_05.yaml --tag 004 --gpu 0
-  ```
+2. Create a data directory and put the downloaded csv files in `../data/Avazu/Avazu_x1`.
 
+3. Both `dataset_config.yaml` and `model_config.yaml` files are available in [FiBiNET_criteo_x4_tuner_config_05](./FiBiNET_criteo_x4_tuner_config_05). Make sure the data paths in `dataset_config.yaml` are correctly set to what we create in the last step.
 
+4. Run the following script to start.
+
+    ```bash
+    cd FiBiNET_criteo_x4_001
+    nohup python run_expid.py --config ./FiBiNET_criteo_x4_tuner_config_05 --expid FiBiNET_criteo_x4_004_73513faa --gpu 0 > run.log &
+    tail -f run.log
+    ```
 
 ### Results
-```python
-[Metrics] logloss: 0.438314 - AUC: 0.813607
-```
+
+| logloss | AUC  |
+|:--------------------:|:--------------------:|
+| 0.438736 | 0.813097  |
 
 
 ### Logs
 ```python
-2020-06-25 21:52:49,804 P2488 INFO {
+2021-09-14 04:20:51,248 P23284 INFO {
     "batch_norm": "False",
     "batch_size": "10000",
     "bilinear_type": "field_interaction",
     "data_format": "h5",
     "data_root": "../data/Criteo/",
-    "dataset_id": "criteo_x4_5c863b0f",
+    "dataset_id": "criteo_x4_9ea3bdfc",
     "debug": "False",
-    "embedding_dim": "40",
+    "embedding_dim": "16",
     "embedding_dropout": "0",
     "embedding_regularizer": "1e-06",
     "epochs": "100",
     "every_x_epochs": "1",
-    "gpu": "2",
+    "gpu": "0",
     "hidden_activations": "relu",
-    "hidden_units": "[4096, 2048, 1024, 512]",
+    "hidden_units": "[2000, 2000, 2000]",
     "learning_rate": "0.001",
     "loss": "binary_crossentropy",
     "metrics": "['logloss', 'AUC']",
     "model": "FiBiNET",
-    "model_id": "FiBiNET_criteo_x4_5c863b0f_010_2b723348",
-    "model_root": "./Criteo/FiBiNET_criteo/min10/",
+    "model_id": "FiBiNET_criteo_x4_9ea3bdfc_004_73513faa",
+    "model_root": "./Criteo/FiBiNET_criteo_x4_001/",
     "monitor": "{'AUC': 1, 'logloss': -1}",
     "monitor_mode": "max",
     "net_dropout": "0",
@@ -90,56 +103,56 @@ To make a fair comparison, we fix embedding_dim=16 as with AutoInt.
     "seed": "2019",
     "shuffle": "True",
     "task": "binary_classification",
-    "test_data": "../data/Criteo/criteo_x4_5c863b0f/test.h5",
-    "train_data": "../data/Criteo/criteo_x4_5c863b0f/train.h5",
+    "test_data": "../data/Criteo/criteo_x4_9ea3bdfc/test.h5",
+    "train_data": "../data/Criteo/criteo_x4_9ea3bdfc/train.h5",
     "use_hdf5": "True",
-    "valid_data": "../data/Criteo/criteo_x4_5c863b0f/valid.h5",
-    "verbose": "0",
+    "valid_data": "../data/Criteo/criteo_x4_9ea3bdfc/valid.h5",
+    "verbose": "1",
     "version": "pytorch",
     "workers": "3"
 }
-2020-06-25 21:52:49,805 P2488 INFO Set up feature encoder...
-2020-06-25 21:52:49,805 P2488 INFO Load feature_map from json: ../data/Criteo/criteo_x4_5c863b0f/feature_map.json
-2020-06-25 21:52:49,805 P2488 INFO Loading data...
-2020-06-25 21:52:49,807 P2488 INFO Loading data from h5: ../data/Criteo/criteo_x4_5c863b0f/train.h5
-2020-06-25 21:52:55,826 P2488 INFO Loading data from h5: ../data/Criteo/criteo_x4_5c863b0f/valid.h5
-2020-06-25 21:52:57,869 P2488 INFO Train samples: total/36672493, pos/9396350, neg/27276143, ratio/25.62%
-2020-06-25 21:52:57,992 P2488 INFO Validation samples: total/4584062, pos/1174544, neg/3409518, ratio/25.62%
-2020-06-25 21:52:57,992 P2488 INFO Loading train data done.
-2020-06-25 21:53:07,615 P2488 INFO Start training: 3668 batches/epoch
-2020-06-25 21:53:07,615 P2488 INFO ************ Epoch=1 start ************
-2020-06-26 00:01:28,127 P2488 INFO [Metrics] logloss: 0.440876 - AUC: 0.811099
-2020-06-26 00:01:28,131 P2488 INFO Save best model: monitor(max): 0.370223
-2020-06-26 00:01:30,387 P2488 INFO --- 3668/3668 batches finished ---
-2020-06-26 00:01:30,455 P2488 INFO Train loss: 0.452338
-2020-06-26 00:01:30,457 P2488 INFO ************ Epoch=1 end ************
-2020-06-26 02:10:27,155 P2488 INFO [Metrics] logloss: 0.438709 - AUC: 0.813169
-2020-06-26 02:10:27,156 P2488 INFO Save best model: monitor(max): 0.374460
-2020-06-26 02:10:28,897 P2488 INFO --- 3668/3668 batches finished ---
-2020-06-26 02:10:28,970 P2488 INFO Train loss: 0.443842
-2020-06-26 02:10:28,976 P2488 INFO ************ Epoch=2 end ************
-2020-06-26 04:18:46,202 P2488 INFO [Metrics] logloss: 0.441972 - AUC: 0.810466
-2020-06-26 04:18:46,203 P2488 INFO Monitor(max) STOP: 0.368494 !
-2020-06-26 04:18:46,204 P2488 INFO Reduce learning rate on plateau: 0.000100
-2020-06-26 04:18:46,204 P2488 INFO --- 3668/3668 batches finished ---
-2020-06-26 04:18:46,321 P2488 INFO Train loss: 0.437679
-2020-06-26 04:18:46,324 P2488 INFO ************ Epoch=3 end ************
-2020-06-26 06:27:18,281 P2488 INFO [Metrics] logloss: 0.527664 - AUC: 0.775889
-2020-06-26 06:27:18,283 P2488 INFO Monitor(max) STOP: 0.248225 !
-2020-06-26 06:27:18,283 P2488 INFO Reduce learning rate on plateau: 0.000010
-2020-06-26 06:27:18,283 P2488 INFO Early stopping at epoch=4
-2020-06-26 06:27:18,283 P2488 INFO --- 3668/3668 batches finished ---
-2020-06-26 06:27:18,349 P2488 INFO Train loss: 0.352262
-2020-06-26 06:27:18,352 P2488 INFO Training finished.
-2020-06-26 06:27:18,352 P2488 INFO Load best model: /cache/xxx/FuxiCTR/benchmarks/Criteo/FiBiNET_criteo/min10/criteo_x4_5c863b0f/FiBiNET_criteo_x4_5c863b0f_010_2b723348_model.ckpt
-2020-06-26 06:27:20,061 P2488 INFO ****** Train/validation evaluation ******
-2020-06-26 07:05:57,286 P2488 INFO [Metrics] logloss: 0.419918 - AUC: 0.833587
-2020-06-26 07:10:43,758 P2488 INFO [Metrics] logloss: 0.438709 - AUC: 0.813169
-2020-06-26 07:10:43,862 P2488 INFO ******** Test evaluation ********
-2020-06-26 07:10:43,863 P2488 INFO Loading data...
-2020-06-26 07:10:43,863 P2488 INFO Loading data from h5: ../data/Criteo/criteo_x4_5c863b0f/test.h5
-2020-06-26 07:10:44,944 P2488 INFO Test samples: total/4584062, pos/1174544, neg/3409518, ratio/25.62%
-2020-06-26 07:10:44,944 P2488 INFO Loading test data done.
-2020-06-26 07:15:30,644 P2488 INFO [Metrics] logloss: 0.438314 - AUC: 0.813607
+2021-09-14 04:20:51,249 P23284 INFO Set up feature encoder...
+2021-09-14 04:20:51,249 P23284 INFO Load feature_map from json: ../data/Criteo/criteo_x4_9ea3bdfc/feature_map.json
+2021-09-14 04:20:52,815 P23284 INFO Total number of parameters: 71104747.
+2021-09-14 04:20:52,815 P23284 INFO Loading data...
+2021-09-14 04:20:52,817 P23284 INFO Loading data from h5: ../data/Criteo/criteo_x4_9ea3bdfc/train.h5
+2021-09-14 04:20:57,725 P23284 INFO Loading data from h5: ../data/Criteo/criteo_x4_9ea3bdfc/valid.h5
+2021-09-14 04:20:59,979 P23284 INFO Train samples: total/36672493, pos/9396350, neg/27276143, ratio/25.62%
+2021-09-14 04:21:00,118 P23284 INFO Validation samples: total/4584062, pos/1174544, neg/3409518, ratio/25.62%
+2021-09-14 04:21:00,118 P23284 INFO Loading train data done.
+2021-09-14 04:21:03,012 P23284 INFO Start training: 3668 batches/epoch
+2021-09-14 04:21:03,013 P23284 INFO ************ Epoch=1 start ************
+2021-09-14 05:30:58,488 P23284 INFO [Metrics] logloss: 0.441152 - AUC: 0.810529
+2021-09-14 05:30:58,492 P23284 INFO Save best model: monitor(max): 0.369377
+2021-09-14 05:30:58,792 P23284 INFO --- 3668/3668 batches finished ---
+2021-09-14 05:30:58,840 P23284 INFO Train loss: 0.451255
+2021-09-14 05:30:58,841 P23284 INFO ************ Epoch=1 end ************
+2021-09-14 06:42:19,439 P23284 INFO [Metrics] logloss: 0.439118 - AUC: 0.812614
+2021-09-14 06:42:19,440 P23284 INFO Save best model: monitor(max): 0.373495
+2021-09-14 06:42:20,087 P23284 INFO --- 3668/3668 batches finished ---
+2021-09-14 06:42:20,140 P23284 INFO Train loss: 0.441994
+2021-09-14 06:42:20,142 P23284 INFO ************ Epoch=2 end ************
+2021-09-14 07:53:44,859 P23284 INFO [Metrics] logloss: 0.441423 - AUC: 0.811169
+2021-09-14 07:53:44,861 P23284 INFO Monitor(max) STOP: 0.369746 !
+2021-09-14 07:53:44,861 P23284 INFO Reduce learning rate on plateau: 0.000100
+2021-09-14 07:53:44,861 P23284 INFO --- 3668/3668 batches finished ---
+2021-09-14 07:53:44,930 P23284 INFO Train loss: 0.436822
+2021-09-14 07:53:44,932 P23284 INFO ************ Epoch=3 end ************
+2021-09-14 09:03:58,529 P23284 INFO [Metrics] logloss: 0.475763 - AUC: 0.791703
+2021-09-14 09:03:58,533 P23284 INFO Monitor(max) STOP: 0.315940 !
+2021-09-14 09:03:58,533 P23284 INFO Reduce learning rate on plateau: 0.000010
+2021-09-14 09:03:58,533 P23284 INFO Early stopping at epoch=4
+2021-09-14 09:03:58,533 P23284 INFO --- 3668/3668 batches finished ---
+2021-09-14 09:03:58,597 P23284 INFO Train loss: 0.392997
+2021-09-14 09:03:58,599 P23284 INFO Training finished.
+2021-09-14 09:03:58,600 P23284 INFO Load best model: /home/XXX/benchmarks/Criteo/FiBiNET_criteo_x4_001/criteo_x4_9ea3bdfc/FiBiNET_criteo_x4_9ea3bdfc_004_73513faa_model.ckpt
+2021-09-14 09:03:59,431 P23284 INFO ****** Train/validation evaluation ******
+2021-09-14 09:06:24,647 P23284 INFO [Metrics] logloss: 0.439118 - AUC: 0.812614
+2021-09-14 09:06:24,684 P23284 INFO ******** Test evaluation ********
+2021-09-14 09:06:24,684 P23284 INFO Loading data...
+2021-09-14 09:06:24,685 P23284 INFO Loading data from h5: ../data/Criteo/criteo_x4_9ea3bdfc/test.h5
+2021-09-14 09:06:25,466 P23284 INFO Test samples: total/4584062, pos/1174544, neg/3409518, ratio/25.62%
+2021-09-14 09:06:25,466 P23284 INFO Loading test data done.
+2021-09-14 09:08:55,523 P23284 INFO [Metrics] logloss: 0.438736 - AUC: 0.813097
 
 ```

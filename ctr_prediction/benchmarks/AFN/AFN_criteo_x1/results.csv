@@ -1,0 +1,1 @@
+ 20220122-162152,[command] python run_expid.py --version pytorch --config Criteo/AFN_criteo_x1/AFN_criteo_x1_tuner_config_03 --expid AFN_criteo_x1_002_d1191676 --gpu 1,[exp_id] AFN_criteo_x1_002_d1191676,[dataset_id] criteo_x1_7b681156,[train] N.A.,[val] AUC: 0.810355 - logloss: 0.441789,[test] AUC: 0.810686 - logloss: 0.441350

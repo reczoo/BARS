@@ -1,0 +1,216 @@
+LorentzFM_criteo_x4_001_342b3588:
+    batch_size: 5000
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    embedding_dim: 16
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: LorentzFM
+    model_id: LorentzFM_base
+    model_root: ./Criteo/LorentzFM_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 5.0e-06
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+LorentzFM_criteo_x4_002_5e227eaf:
+    batch_size: 10000
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    embedding_dim: 16
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: LorentzFM
+    model_id: LorentzFM_base
+    model_root: ./Criteo/LorentzFM_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 5.0e-06
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+LorentzFM_criteo_x4_003_54d0d2f5:
+    batch_size: 5000
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    embedding_dim: 16
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: LorentzFM
+    model_id: LorentzFM_base
+    model_root: ./Criteo/LorentzFM_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 1.0e-05
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+LorentzFM_criteo_x4_004_46aaddd5:
+    batch_size: 10000
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    embedding_dim: 16
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: LorentzFM
+    model_id: LorentzFM_base
+    model_root: ./Criteo/LorentzFM_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 1.0e-05
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+LorentzFM_criteo_x4_005_a448ffb3:
+    batch_size: 5000
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    embedding_dim: 16
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: LorentzFM
+    model_id: LorentzFM_base
+    model_root: ./Criteo/LorentzFM_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 5.0e-05
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+LorentzFM_criteo_x4_006_f925d08e:
+    batch_size: 10000
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    embedding_dim: 16
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: LorentzFM
+    model_id: LorentzFM_base
+    model_root: ./Criteo/LorentzFM_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 5.0e-05
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+LorentzFM_criteo_x4_007_54aa3a52:
+    batch_size: 5000
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    embedding_dim: 16
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: LorentzFM
+    model_id: LorentzFM_base
+    model_root: ./Criteo/LorentzFM_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 0.0001
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+LorentzFM_criteo_x4_008_5d423397:
+    batch_size: 10000
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    embedding_dim: 16
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: LorentzFM
+    model_id: LorentzFM_base
+    model_root: ./Criteo/LorentzFM_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 0.0001
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3

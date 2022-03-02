@@ -1,0 +1,1 @@
+ 20220127-152904,[command] python run_expid.py --version pytorch --config Criteo/AFM_criteo_x1/AFM_criteo_x1_tuner_config_02 --expid AFM_criteo_x1_004_954c0ecc --gpu 3,[exp_id] AFM_criteo_x1_004_954c0ecc,[dataset_id] criteo_x1_7b681156,[train] N.A.,[val] AUC: 0.804069 - logloss: 0.447414,[test] AUC: 0.804436 - logloss: 0.446977

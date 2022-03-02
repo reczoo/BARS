@@ -1,9 +1,8 @@
-## AFN_Criteo_x4_002
+## AFN_criteo_x4_002
 
-A notebook to benchmark AFN on Criteo_x4_002 dataset.
+A hands-on guide to run the AFN model on the Criteo_x4_002 dataset.
 
-Author: [XUEPAI Team](https://github.com/xue-pai)
-
+Author: [XUEPAI](https://github.com/xue-pai)
 
 ### Index
 [Environments](#Environments) | [Dataset](#Dataset) | [Code](#Code) | [Results](#Results) | [Logs](#Logs)
@@ -12,140 +11,213 @@ Author: [XUEPAI Team](https://github.com/xue-pai)
 + Hardware
 
   ```python
-  CPU: Intel(R) Xeon(R) CPU E5-2690 v4 @ 2.6GHz
-  RAM: 500G+
+  CPU: Intel(R) Xeon(R) CPU E5-2690 v4 @ 2.60GHz
+  GPU: Tesla P100 16G
+  RAM: 755G
+
   ```
+
 + Software
 
   ```python
+  CUDA: 10.0
   python: 3.6.5
-  pandas: 1.0.0
+  pytorch: 1.0.1.post2
+  pandas: 0.23.0
   numpy: 1.18.1
+  scipy: 1.1.0
+  sklearn: 0.23.1
+  pyyaml: 5.1
+  h5py: 2.7.1
+  tqdm: 4.59.0
+  fuxictr: 1.0.2
   ```
 
 ### Dataset
-In this setting, we follow the winner's solution of the Criteo challenge to discretize each integer value x to ⌊log2 (x)⌋, if x > 2; and x = 1 otherwise. For all categorical fields, we replace infrequent features with a default <OOV> token by setting the threshold min_category_count=10. Note that we do not follow the exact preprocessing steps in AutoInt, because this preprocessing performs much better.
+Dataset ID: [Criteo_x4_002](https://github.com/openbenchmark/BARS/blob/master/ctr_prediction/datasets/Criteo/README.md#Criteo_x4_002). Please refer to the dataset details to get data ready.
 
-To make a fair comparison, we fix embedding_dim=16 as with AutoInt.
 ### Code
-1. Install FuxiCTR
-  
-    Install FuxiCTR via `pip install fuxictr==1.0` to get all dependencies ready. Then download [the FuxiCTR repository](https://github.com/huawei-noah/benchmark/archive/53e314461c19dbc7f462b42bf0f0bfae020dc398.zip) to your local path.
 
-2. Downalod the dataset and run [the preprocessing script](https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/datasets/Criteo/Criteo_x4/split_criteo_x4.py) for data splitting. 
+We use [FuxiCTR-v1.0.2](fuxictr_url) for this experiment. See model code: [AFN](https://github.com/xue-pai/FuxiCTR/blob/v1.0.2/fuxictr/pytorch/models/AFN.py).
 
-3. Download the hyper-parameter configuration file: [AFN_criteo_x4_tuner_config_01.yaml](./002/AFN_criteo_x4_tuner_config_01.yaml)
+Running steps:
 
-4. Run the following script to reproduce the result. 
-  + --config: The config file that defines the tuning space
-  + --tag: Specify which expid to run (each expid corresponds to a specific setting of hyper-parameters in the tunner space)
-  + --gpu: The available gpus for parameters tuning.
+1. Download [FuxiCTR-v1.0.2](fuxictr_url) and install all the dependencies listed in the [environments](#environments). Then modify [run_expid.py](./run_expid.py#L5) to add the FuxiCTR library to system path
+    
+    ```python
+    sys.path.append('YOUR_PATH_TO_FuxiCTR/')
+    ```
 
-  ```bash
-  cd FuxiCTR/benchmarks
-  python run_param_tuner.py --config YOUR_PATH/002/AFN_criteo_x4_tuner_config_01.yaml --tag 080 --gpu 0
-  ```
+2. Create a data directory and put the downloaded csv files in `../data/Avazu/Avazu_x1`.
+
+3. Both `dataset_config.yaml` and `model_config.yaml` files are available in [AFN_criteo_x4_tuner_config_01](./AFN_criteo_x4_tuner_config_01). Make sure the data paths in `dataset_config.yaml` are correctly set to what we create in the last step.
+
+4. Run the following script to start.
+
+    ```bash
+    cd AFN_criteo_x4_002
+    nohup python run_expid.py --config ./AFN_criteo_x4_tuner_config_01 --expid AFN_criteo_x4_080_cf447dc2 --gpu 0 > run.log &
+    tail -f run.log
+    ```
 
 ### Results
-```python
-[Metrics] logloss 0.441809 - AUC 0.809716
-```
+
+| logloss | AUC  |
+|:--------------------:|:--------------------:|
+| 0.441816 | 0.809735  |
 
 
 ### Logs
 ```python
-2020-06-07 114555,911 P42904 INFO {
-    afn_activations relu,
-    afn_dropout 0.1,
-    afn_hidden_units [2000, 2000, 2000],
-    batch_norm True,
-    batch_size 2000,
-    dataset_id criteo_x4_001_be98441d,
-    dnn_activations relu,
-    dnn_dropout 0,
-    dnn_hidden_units [],
-    embedding_dim 40,
-    embedding_dropout 0,
-    embedding_regularizer 1e-06,
-    ensemble_dnn False,
-    epochs 100,
-    every_x_epochs 1,
-    learning_rate 0.001,
-    logarithmic_neurons 1500,
-    loss binary_crossentropy,
-    metrics ['logloss', 'AUC'],
-    model AFN,
-    model_id AFN_criteo_x4_080_a2c67c31,
-    model_root .AvazuAFN_criteo,
-    monitor {'AUC' 1, 'logloss' -1},
-    monitor_mode max,
-    net_regularizer 0,
-    optimizer adam,
-    patience 2,
-    pickle_feature_encoder True,
-    save_best_only True,
-    seed 2019,
-    shuffle True,
-    task binary_classification,
-    use_hdf5 True,
-    verbose 0,
-    workers 3,
-    data_format h5,
-    data_root ..dataCriteo,
-    test_data ..dataCriteocriteo_x4_001_be98441dtest.h5,
-    train_data ..dataCriteocriteo_x4_001_be98441dtrain.h5,
-    valid_data ..dataCriteocriteo_x4_001_be98441dvalid.h5,
-    version pytorch,
-    gpu 0
+2022-03-01 01:31:06,439 P8677 INFO {
+    "afn_activations": "relu",
+    "afn_dropout": "0.1",
+    "afn_hidden_units": "[2000, 2000, 2000]",
+    "batch_norm": "True",
+    "batch_size": "2000",
+    "data_format": "csv",
+    "data_root": "../data/Criteo/",
+    "dataset_id": "criteo_x4_41e78b20",
+    "debug": "False",
+    "dnn_activations": "relu",
+    "dnn_dropout": "0",
+    "dnn_hidden_units": "[]",
+    "embedding_dim": "40",
+    "embedding_dropout": "0",
+    "embedding_regularizer": "1e-06",
+    "ensemble_dnn": "False",
+    "epochs": "100",
+    "every_x_epochs": "1",
+    "feature_cols": "[{'active': True, 'dtype': 'float', 'na_value': 0, 'name': ['I1', 'I2', 'I3', 'I4', 'I5', 'I6', 'I7', 'I8', 'I9', 'I10', 'I11', 'I12', 'I13'], 'preprocess': 'convert_to_bucket', 'type': 'categorical'}, {'active': True, 'dtype': 'str', 'na_value': '', 'name': ['C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9', 'C10', 'C11', 'C12', 'C13', 'C14', 'C15', 'C16', 'C17', 'C18', 'C19', 'C20', 'C21', 'C22', 'C23', 'C24', 'C25', 'C26'], 'type': 'categorical'}]",
+    "gpu": "0",
+    "label_col": "{'dtype': 'float', 'name': 'Label'}",
+    "learning_rate": "0.001",
+    "logarithmic_neurons": "1500",
+    "loss": "binary_crossentropy",
+    "metrics": "['logloss', 'AUC']",
+    "min_categr_count": "2",
+    "model": "AFN",
+    "model_id": "AFN_criteo_x4_080_cf447dc2",
+    "model_root": "./Criteo/AFN_criteo_x4_002/",
+    "monitor": "{'AUC': 1, 'logloss': -1}",
+    "monitor_mode": "max",
+    "net_regularizer": "0",
+    "optimizer": "adam",
+    "patience": "2",
+    "pickle_feature_encoder": "True",
+    "save_best_only": "True",
+    "seed": "2019",
+    "shuffle": "True",
+    "task": "binary_classification",
+    "test_data": "../data/Criteo/Criteo_x4/test.csv",
+    "train_data": "../data/Criteo/Criteo_x4/train.csv",
+    "use_hdf5": "True",
+    "valid_data": "../data/Criteo/Criteo_x4/valid.csv",
+    "verbose": "1",
+    "version": "pytorch",
+    "workers": "3"
 }
-2020-06-07 114555,912 P42904 INFO Set up feature encoder...
-2020-06-07 114555,912 P42904 INFO Load feature_map from json ..dataCriteocriteo_x4_001_be98441dfeature_map.json
-2020-06-07 114555,912 P42904 INFO Loading data...
-2020-06-07 114555,915 P42904 INFO Loading data from h5 ..dataCriteocriteo_x4_001_be98441dtrain.h5
-2020-06-07 114600,188 P42904 INFO Loading data from h5 ..dataCriteocriteo_x4_001_be98441dvalid.h5
-2020-06-07 114613,982 P42904 INFO Train samples total36672493, pos9396350, neg27276143, ratio25.62%
-2020-06-07 114614,286 P42904 INFO Validation samples total4584062, pos1174544, neg3409518, ratio25.62%
-2020-06-07 114614,287 P42904 INFO Loading train data done.
-2020-06-07 114643,460 P42904 INFO  Start training 18337 batchesepoch 
-2020-06-07 134406,386 P42904 INFO [Metrics] logloss 0.447709 - AUC 0.803430
-2020-06-07 134406,500 P42904 INFO Save best model monitor(max) 0.355722
-2020-06-07 134421,665 P42904 INFO --- 1833718337 batches finished ---
-2020-06-07 134421,723 P42904 INFO Train loss 0.460343
-2020-06-07 134421,724 P42904 INFO  Epoch=1 end 
-2020-06-07 154144,369 P42904 INFO [Metrics] logloss 0.443359 - AUC 0.808010
-2020-06-07 154144,522 P42904 INFO Save best model monitor(max) 0.364651
-2020-06-07 154158,322 P42904 INFO --- 1833718337 batches finished ---
-2020-06-07 154158,419 P42904 INFO Train loss 0.451480
-2020-06-07 154158,419 P42904 INFO  Epoch=2 end 
-2020-06-07 173920,725 P42904 INFO [Metrics] logloss 0.442305 - AUC 0.809121
-2020-06-07 173920,864 P42904 INFO Save best model monitor(max) 0.366815
-2020-06-07 173935,269 P42904 INFO --- 1833718337 batches finished ---
-2020-06-07 173935,376 P42904 INFO Train loss 0.447150
-2020-06-07 173935,376 P42904 INFO  Epoch=3 end 
-2020-06-07 193656,522 P42904 INFO [Metrics] logloss 0.444041 - AUC 0.807416
-2020-06-07 193656,647 P42904 INFO Monitor(max) STOP 0.363375 !
-2020-06-07 193656,647 P42904 INFO Reduce learning rate on plateau 0.000100
-2020-06-07 193656,647 P42904 INFO --- 1833718337 batches finished ---
-2020-06-07 193656,765 P42904 INFO Train loss 0.440785
-2020-06-07 193656,765 P42904 INFO  Epoch=4 end 
-2020-06-07 213412,195 P42904 INFO [Metrics] logloss 0.465326 - AUC 0.796353
-2020-06-07 213412,314 P42904 INFO Monitor(max) STOP 0.331027 !
-2020-06-07 213412,315 P42904 INFO Reduce learning rate on plateau 0.000010
-2020-06-07 213412,315 P42904 INFO Early stopping at epoch=5
-2020-06-07 213412,315 P42904 INFO --- 1833718337 batches finished ---
-2020-06-07 213412,435 P42904 INFO Train loss 0.409479
-2020-06-07 213412,435 P42904 INFO Training finished.
-2020-06-07 213412,435 P42904 INFO Load best model homehispacecontainerdataxxxFuxiCTRbenchmarksAvazuAFN_criteocriteo_x4_001_be98441dAFN_criteo_x4_080_a2c67c31_criteo_x4_001_be98441d_model.ckpt
-2020-06-07 213444,340 P42904 INFO  Trainvalidation evaluation 
-2020-06-07 221109,461 P42904 INFO [Metrics] logloss 0.430320 - AUC 0.822152
-2020-06-07 221539,154 P42904 INFO [Metrics] logloss 0.442305 - AUC 0.809121
-2020-06-07 221539,381 P42904 INFO  Test evaluation 
-2020-06-07 221539,381 P42904 INFO Loading data...
-2020-06-07 221539,381 P42904 INFO Loading data from h5 ..dataCriteocriteo_x4_001_be98441dtest.h5
-2020-06-07 221540,102 P42904 INFO Test samples total4584062, pos1174544, neg3409518, ratio25.62%
-2020-06-07 221540,102 P42904 INFO Loading test data done.
-2020-06-07 222008,239 P42904 INFO [Metrics] logloss 0.441809 - AUC 0.809716
-
-
+2022-03-01 01:31:06,445 P8677 INFO Set up feature encoder...
+2022-03-01 01:31:06,446 P8677 INFO Reading file: ../data/Criteo/Criteo_x4/train.csv
+2022-03-01 01:52:07,306 P8677 INFO Preprocess feature columns...
+2022-03-01 03:10:40,921 P8677 INFO Fit feature encoder...
+2022-03-01 03:10:40,922 P8677 INFO Processing column: {'active': True, 'dtype': 'float', 'na_value': 0, 'name': 'I1', 'preprocess': 'convert_to_bucket', 'type': 'categorical'}
+2022-03-01 03:11:39,762 P8677 INFO Processing column: {'active': True, 'dtype': 'float', 'na_value': 0, 'name': 'I2', 'preprocess': 'convert_to_bucket', 'type': 'categorical'}
+2022-03-01 03:12:49,901 P8677 INFO Processing column: {'active': True, 'dtype': 'float', 'na_value': 0, 'name': 'I3', 'preprocess': 'convert_to_bucket', 'type': 'categorical'}
+2022-03-01 03:13:53,840 P8677 INFO Processing column: {'active': True, 'dtype': 'float', 'na_value': 0, 'name': 'I4', 'preprocess': 'convert_to_bucket', 'type': 'categorical'}
+2022-03-01 03:14:34,736 P8677 INFO Processing column: {'active': True, 'dtype': 'float', 'na_value': 0, 'name': 'I5', 'preprocess': 'convert_to_bucket', 'type': 'categorical'}
+2022-03-01 03:15:24,227 P8677 INFO Processing column: {'active': True, 'dtype': 'float', 'na_value': 0, 'name': 'I6', 'preprocess': 'convert_to_bucket', 'type': 'categorical'}
+2022-03-01 03:16:04,291 P8677 INFO Processing column: {'active': True, 'dtype': 'float', 'na_value': 0, 'name': 'I7', 'preprocess': 'convert_to_bucket', 'type': 'categorical'}
+2022-03-01 03:16:46,741 P8677 INFO Processing column: {'active': True, 'dtype': 'float', 'na_value': 0, 'name': 'I8', 'preprocess': 'convert_to_bucket', 'type': 'categorical'}
+2022-03-01 03:17:23,063 P8677 INFO Processing column: {'active': True, 'dtype': 'float', 'na_value': 0, 'name': 'I9', 'preprocess': 'convert_to_bucket', 'type': 'categorical'}
+2022-03-01 03:18:11,371 P8677 INFO Processing column: {'active': True, 'dtype': 'float', 'na_value': 0, 'name': 'I10', 'preprocess': 'convert_to_bucket', 'type': 'categorical'}
+2022-03-01 03:18:43,714 P8677 INFO Processing column: {'active': True, 'dtype': 'float', 'na_value': 0, 'name': 'I11', 'preprocess': 'convert_to_bucket', 'type': 'categorical'}
+2022-03-01 03:19:30,448 P8677 INFO Processing column: {'active': True, 'dtype': 'float', 'na_value': 0, 'name': 'I12', 'preprocess': 'convert_to_bucket', 'type': 'categorical'}
+2022-03-01 03:20:18,251 P8677 INFO Processing column: {'active': True, 'dtype': 'float', 'na_value': 0, 'name': 'I13', 'preprocess': 'convert_to_bucket', 'type': 'categorical'}
+2022-03-01 03:21:24,788 P8677 INFO Processing column: {'active': True, 'dtype': 'str', 'na_value': '', 'name': 'C1', 'type': 'categorical'}
+2022-03-01 03:21:41,548 P8677 INFO Processing column: {'active': True, 'dtype': 'str', 'na_value': '', 'name': 'C2', 'type': 'categorical'}
+2022-03-01 03:21:58,418 P8677 INFO Processing column: {'active': True, 'dtype': 'str', 'na_value': '', 'name': 'C3', 'type': 'categorical'}
+2022-03-01 03:22:57,003 P8677 INFO Processing column: {'active': True, 'dtype': 'str', 'na_value': '', 'name': 'C4', 'type': 'categorical'}
+2022-03-01 03:23:47,971 P8677 INFO Processing column: {'active': True, 'dtype': 'str', 'na_value': '', 'name': 'C5', 'type': 'categorical'}
+2022-03-01 03:24:11,110 P8677 INFO Processing column: {'active': True, 'dtype': 'str', 'na_value': '', 'name': 'C6', 'type': 'categorical'}
+2022-03-01 03:24:33,771 P8677 INFO Processing column: {'active': True, 'dtype': 'str', 'na_value': '', 'name': 'C7', 'type': 'categorical'}
+2022-03-01 03:25:08,601 P8677 INFO Processing column: {'active': True, 'dtype': 'str', 'na_value': '', 'name': 'C8', 'type': 'categorical'}
+2022-03-01 03:25:32,460 P8677 INFO Processing column: {'active': True, 'dtype': 'str', 'na_value': '', 'name': 'C9', 'type': 'categorical'}
+2022-03-01 03:25:55,797 P8677 INFO Processing column: {'active': True, 'dtype': 'str', 'na_value': '', 'name': 'C10', 'type': 'categorical'}
+2022-03-01 03:26:32,931 P8677 INFO Processing column: {'active': True, 'dtype': 'str', 'na_value': '', 'name': 'C11', 'type': 'categorical'}
+2022-03-01 03:27:05,093 P8677 INFO Processing column: {'active': True, 'dtype': 'str', 'na_value': '', 'name': 'C12', 'type': 'categorical'}
+2022-03-01 03:28:07,196 P8677 INFO Processing column: {'active': True, 'dtype': 'str', 'na_value': '', 'name': 'C13', 'type': 'categorical'}
+2022-03-01 03:28:39,291 P8677 INFO Processing column: {'active': True, 'dtype': 'str', 'na_value': '', 'name': 'C14', 'type': 'categorical'}
+2022-03-01 03:29:03,484 P8677 INFO Processing column: {'active': True, 'dtype': 'str', 'na_value': '', 'name': 'C15', 'type': 'categorical'}
+2022-03-01 03:29:36,603 P8677 INFO Processing column: {'active': True, 'dtype': 'str', 'na_value': '', 'name': 'C16', 'type': 'categorical'}
+2022-03-01 03:30:46,393 P8677 INFO Processing column: {'active': True, 'dtype': 'str', 'na_value': '', 'name': 'C17', 'type': 'categorical'}
+2022-03-01 03:31:25,942 P8677 INFO Processing column: {'active': True, 'dtype': 'str', 'na_value': '', 'name': 'C18', 'type': 'categorical'}
+2022-03-01 03:32:15,071 P8677 INFO Processing column: {'active': True, 'dtype': 'str', 'na_value': '', 'name': 'C19', 'type': 'categorical'}
+2022-03-01 03:32:52,017 P8677 INFO Processing column: {'active': True, 'dtype': 'str', 'na_value': '', 'name': 'C20', 'type': 'categorical'}
+2022-03-01 03:33:22,798 P8677 INFO Processing column: {'active': True, 'dtype': 'str', 'na_value': '', 'name': 'C21', 'type': 'categorical'}
+2022-03-01 03:34:56,048 P8677 INFO Processing column: {'active': True, 'dtype': 'str', 'na_value': '', 'name': 'C22', 'type': 'categorical'}
+2022-03-01 03:35:17,438 P8677 INFO Processing column: {'active': True, 'dtype': 'str', 'na_value': '', 'name': 'C23', 'type': 'categorical'}
+2022-03-01 03:35:51,019 P8677 INFO Processing column: {'active': True, 'dtype': 'str', 'na_value': '', 'name': 'C24', 'type': 'categorical'}
+2022-03-01 03:36:42,060 P8677 INFO Processing column: {'active': True, 'dtype': 'str', 'na_value': '', 'name': 'C25', 'type': 'categorical'}
+2022-03-01 03:37:00,088 P8677 INFO Processing column: {'active': True, 'dtype': 'str', 'na_value': '', 'name': 'C26', 'type': 'categorical'}
+2022-03-01 03:37:21,205 P8677 INFO Set feature index...
+2022-03-01 03:37:21,206 P8677 INFO Pickle feature_encode: ../data/Criteo/criteo_x4_41e78b20/feature_encoder.pkl
+2022-03-01 03:37:34,554 P8677 INFO Save feature_map to json: ../data/Criteo/criteo_x4_41e78b20/feature_map.json
+2022-03-01 03:37:34,565 P8677 INFO Set feature encoder done.
+2022-03-01 03:38:27,339 P8677 INFO Total number of parameters: 350050099.
+2022-03-01 03:38:27,340 P8677 INFO Loading data...
+2022-03-01 03:38:27,343 P8677 INFO Reading file: ../data/Criteo/Criteo_x4/train.csv
+2022-03-01 03:51:16,015 P8677 INFO Preprocess feature columns...
+2022-03-01 05:26:59,719 P8677 INFO Transform feature columns...
+2022-03-01 06:02:39,549 P8677 INFO Saving data to h5: ../data/Criteo/criteo_x4_41e78b20/train.h5
+2022-03-01 06:04:03,414 P8677 INFO Reading file: ../data/Criteo/Criteo_x4/valid.csv
+2022-03-01 06:05:31,449 P8677 INFO Preprocess feature columns...
+2022-03-01 06:12:16,724 P8677 INFO Transform feature columns...
+2022-03-01 06:18:16,842 P8677 INFO Saving data to h5: ../data/Criteo/criteo_x4_41e78b20/valid.h5
+2022-03-01 06:18:30,269 P8677 INFO Train samples: total/36672493, pos/9396350, neg/27276143, ratio/25.62%
+2022-03-01 06:18:31,158 P8677 INFO Validation samples: total/4584062, pos/1174544, neg/3409518, ratio/25.62%
+2022-03-01 06:18:31,158 P8677 INFO Loading train data done.
+2022-03-01 06:18:31,160 P8677 INFO Start training: 18337 batches/epoch
+2022-03-01 06:18:31,160 P8677 INFO ************ Epoch=1 start ************
+2022-03-01 08:38:18,945 P8677 INFO [Metrics] logloss: 0.447726 - AUC: 0.803390
+2022-03-01 08:38:18,952 P8677 INFO Save best model: monitor(max): 0.355664
+2022-03-01 08:38:23,154 P8677 INFO --- 18337/18337 batches finished ---
+2022-03-01 08:38:24,033 P8677 INFO Train loss: 0.460386
+2022-03-01 08:38:24,033 P8677 INFO ************ Epoch=1 end ************
+2022-03-01 10:59:33,025 P8677 INFO [Metrics] logloss: 0.443367 - AUC: 0.807998
+2022-03-01 10:59:33,035 P8677 INFO Save best model: monitor(max): 0.364631
+2022-03-01 10:59:39,006 P8677 INFO --- 18337/18337 batches finished ---
+2022-03-01 10:59:39,865 P8677 INFO Train loss: 0.451429
+2022-03-01 10:59:39,865 P8677 INFO ************ Epoch=2 end ************
+2022-03-01 13:16:56,773 P8677 INFO [Metrics] logloss: 0.442363 - AUC: 0.809064
+2022-03-01 13:16:56,774 P8677 INFO Save best model: monitor(max): 0.366701
+2022-03-01 13:17:04,495 P8677 INFO --- 18337/18337 batches finished ---
+2022-03-01 13:17:05,474 P8677 INFO Train loss: 0.447051
+2022-03-01 13:17:05,474 P8677 INFO ************ Epoch=3 end ************
+2022-03-01 15:27:45,493 P8677 INFO [Metrics] logloss: 0.444257 - AUC: 0.807147
+2022-03-01 15:27:45,494 P8677 INFO Monitor(max) STOP: 0.362890 !
+2022-03-01 15:27:45,495 P8677 INFO Reduce learning rate on plateau: 0.000100
+2022-03-01 15:27:45,495 P8677 INFO --- 18337/18337 batches finished ---
+2022-03-01 15:27:46,890 P8677 INFO Train loss: 0.440484
+2022-03-01 15:27:46,890 P8677 INFO ************ Epoch=4 end ************
+2022-03-01 17:42:03,406 P8677 INFO [Metrics] logloss: 0.467047 - AUC: 0.795902
+2022-03-01 17:42:03,411 P8677 INFO Monitor(max) STOP: 0.328855 !
+2022-03-01 17:42:03,411 P8677 INFO Reduce learning rate on plateau: 0.000010
+2022-03-01 17:42:03,411 P8677 INFO Early stopping at epoch=5
+2022-03-01 17:42:03,411 P8677 INFO --- 18337/18337 batches finished ---
+2022-03-01 17:42:04,136 P8677 INFO Train loss: 0.408461
+2022-03-01 17:42:04,136 P8677 INFO Training finished.
+2022-03-01 17:42:04,136 P8677 INFO Load best model: /home/XXX/FuxiCTR_v1.0/benchmarks/Criteo/AFN_criteo_x4_002/criteo_x4_41e78b20/AFN_criteo_x4_080_cf447dc2_model.ckpt
+2022-03-01 17:42:09,438 P8677 INFO ****** Validation evaluation ******
+2022-03-01 17:46:47,079 P8677 INFO [Metrics] logloss: 0.442363 - AUC: 0.809064
+2022-03-01 17:46:47,402 P8677 INFO ******** Test evaluation ********
+2022-03-01 17:46:47,402 P8677 INFO Loading data...
+2022-03-01 17:46:47,403 P8677 INFO Reading file: ../data/Criteo/Criteo_x4/test.csv
+2022-03-01 17:49:01,751 P8677 INFO Preprocess feature columns...
+2022-03-01 18:02:08,304 P8677 INFO Transform feature columns...
+2022-03-01 18:05:36,203 P8677 INFO Saving data to h5: ../data/Criteo/criteo_x4_41e78b20/test.h5
+2022-03-01 18:05:40,249 P8677 INFO Test samples: total/4584062, pos/1174544, neg/3409518, ratio/25.62%
+2022-03-01 18:05:40,249 P8677 INFO Loading test data done.
+2022-03-01 18:10:52,512 P8677 INFO [Metrics] logloss: 0.441816 - AUC: 0.809735
 
 ```

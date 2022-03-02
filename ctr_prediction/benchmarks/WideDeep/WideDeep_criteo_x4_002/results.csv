@@ -1,0 +1,1 @@
+ 20200304-132436,[command] python benchmark.py --version pytorch --config Criteo/WideDeep_criteo/WideDeep_criteo_x4_tuner_config_02 --expid WideDeep_criteo_x4_007_5305f0a1 --gpu 2,[exp_id] WideDeep_criteo_x4_007_5305f0a1,[dataset_id] criteo_x4_001_be98441d,[train] logloss: 0.419569 - AUC: 0.833701,[val] logloss: 0.439318 - AUC: 0.812417,[test] logloss: 0.438892 - AUC: 0.812913

@@ -1,0 +1,1 @@
+ 20210316-001322,[command] python benchmark.py --version pytorch --config Frappe/FFM_frappe_x1/FFM_frappe_x1_tuner_config_01 --expid FFM_frappe_x1_007_1e29f4c0 --gpu 0,[exp_id] FFM_frappe_x1_007_1e29f4c0,[dataset_id] frappe_x1_7f91d67a,[train] N.A.,[val] AUC: 0.979055 - logloss: 0.183072,[test] AUC: 0.978620 - logloss: 0.186032

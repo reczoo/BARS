@@ -1,0 +1,1 @@
+ 20200206-220459,[command] python benchmark.py --version pytorch --config Avazu/LorentzFM_avazu/LorentzFM_avazu_x4_tuner_config_01 --expid LorentzFM_avazu_x4_001_1246f5a7 --gpu 1,[exp_id] LorentzFM_avazu_x4_001_1246f5a7,[dataset_id] avazu_x4_001_d45ad60e,[train] logloss: 0.319675 - AUC: 0.867070,[val] logloss: 0.374183 - AUC: 0.791171,[test] logloss: 0.374173 - AUC: 0.791223

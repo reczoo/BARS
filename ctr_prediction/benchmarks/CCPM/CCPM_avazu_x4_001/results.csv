@@ -1,0 +1,1 @@
+ 20200627-050822,[command] python benchmark.py --version pytorch --config Avazu/CCPM_avazu/min2/CCPM_avazu_x4_tuner_config_04 --expid CCPM_avazu_x4_3bbbc4c9_017_16dce5de --gpu 0,[exp_id] CCPM_avazu_x4_3bbbc4c9_017_16dce5de,[dataset_id] avazu_x4_3bbbc4c9,[train] logloss: 0.342947 - AUC: 0.839513,[val] logloss: 0.374473 - AUC: 0.789223,[test] logloss: 0.374494 - AUC: 0.789239

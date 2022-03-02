@@ -1,0 +1,17 @@
+[Hardware]
+CPU: Intel(R) Xeon(R) CPU E5-2690 v4 @ 2.6GHz
+GPU: Tesla P100 16G
+RAM: 503G
+
+[Software]
+CUDA: 10.2
+python: 3.6.4
+pytorch: 1.0.0
+pandas: 0.22.0
+numpy: 1.19.1
+scipy: 1.2.2
+sklearn: 0.19.1
+pyyaml: 6.0
+h5py: 2.8.0
+tqdm: 4.28.1
+fuxictr: 1.1.0

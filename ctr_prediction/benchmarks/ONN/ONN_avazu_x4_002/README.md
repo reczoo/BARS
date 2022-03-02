@@ -1,9 +1,8 @@
-## ONN_Avazu_x4_002
+## ONN_avazu_x4_002
 
-A notebook to benchmark ONN on Avazu_x4_002 dataset.
+A hands-on guide to run the ONN model on the Avazu_x4_002 dataset.
 
-Author: [XUEPAI Team](https://github.com/xue-pai)
-
+Author: [XUEPAI](https://github.com/xue-pai)
 
 ### Index
 [Environments](#Environments) | [Dataset](#Dataset) | [Code](#Code) | [Results](#Results) | [Logs](#Logs)
@@ -12,43 +11,60 @@ Author: [XUEPAI Team](https://github.com/xue-pai)
 + Hardware
 
   ```python
-  CPU: Intel(R) Xeon(R) CPU E5-2690 v4 @ 2.6GHz
-  RAM: 500G+
+  CPU: Intel(R) Xeon(R) CPU E5-2690 v4 @ 2.60GHz
+  GPU: Tesla P100 16G
+  RAM: 755G
+
   ```
+
 + Software
 
   ```python
+  CUDA: 10.0
   python: 3.6.5
-  pandas: 1.0.0
+  pytorch: 1.0.1.post2
+  pandas: 0.23.0
   numpy: 1.18.1
+  scipy: 1.1.0
+  sklearn: 0.23.1
+  pyyaml: 5.1
+  h5py: 2.7.1
+  tqdm: 4.59.0
+  fuxictr: 1.0.2
   ```
 
 ### Dataset
-In this setting, we preprocess the data split by removing the id field that is useless for CTR prediction. In addition, we transform the timestamp field into three fields: hour, weekday, and is_weekend. For all categorical fields, we filter infrequent features by setting the threshold min_category_count=1 and replace them with a default <OOV> token. Note that we found that min_category_count=1 performs the best, which is surprising.
+Dataset ID: [Avazu_x4_002](https://github.com/openbenchmark/BARS/blob/master/ctr_prediction/datasets/Avazu/README.md#Avazu_x4_002). Please refer to the dataset details to get data ready.
 
-We fix embedding_dim=40 following the existing FGCNN work.
 ### Code
-1. Install FuxiCTR
-  
-    Install FuxiCTR via `pip install fuxictr==1.0` to get all dependencies ready. Then download [the FuxiCTR repository](https://github.com/huawei-noah/benchmark/archive/53e314461c19dbc7f462b42bf0f0bfae020dc398.zip) to your local path.
 
-2. Downalod the dataset and run [the preprocessing script](https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/datasets/Avazu/Avazu_x4/split_avazu_x4.py) for data splitting. 
+We use [FuxiCTR-v1.0.2](fuxictr_url) for this experiment. See model code: [ONN](https://github.com/xue-pai/FuxiCTR/blob/v1.0.2/fuxictr/pytorch/models/ONN.py).
 
-3. Download the hyper-parameter configuration file: [ONN_avazu_x4_tuner_config_02.yaml](./ONN_avazu_x4_tuner_config_02.yaml)
+Running steps:
 
-4. Run the following script to reproduce the result. 
-  + --config: The config file that defines the tuning space
-  + --tag: Specify which expid to run (each expid corresponds to a specific setting of hyper-parameters in the tunner space)
-  + --gpu: The available gpus for parameters tuning.
+1. Download [FuxiCTR-v1.0.2](fuxictr_url) and install all the dependencies listed in the [environments](#environments). Then modify [run_expid.py](./run_expid.py#L5) to add the FuxiCTR library to system path
+    
+    ```python
+    sys.path.append('YOUR_PATH_TO_FuxiCTR/')
+    ```
 
-  ```bash
-  cd FuxiCTR/benchmarks
-  python run_param_tuner.py --config YOUR_PATH/ONN_avazu_x4_tuner_config_02.yaml --tag 036 --gpu 0
-  ```
+2. Create a data directory and put the downloaded csv files in `../data/Avazu/Avazu_x1`.
+
+3. Both `dataset_config.yaml` and `model_config.yaml` files are available in [ONN_avazu_x4_tuner_config_02](./ONN_avazu_x4_tuner_config_02). Make sure the data paths in `dataset_config.yaml` are correctly set to what we create in the last step.
+
+4. Run the following script to start.
+
+    ```bash
+    cd ONN_avazu_x4_002
+    nohup python run_expid.py --config ./ONN_avazu_x4_tuner_config_02 --expid ONN_avazu_x4_036_23b6ec31 --gpu 0 > run.log &
+    tail -f run.log
+    ```
+
 ### Results
-```python
-[Metrics] logloss: 0.367666 - AUC: 0.800119
-```
+
+| logloss | AUC  |
+|:--------------------:|:--------------------:|
+| 0.367666 | 0.800119  |
 
 
 ### Logs
@@ -119,7 +135,7 @@ We fix embedding_dim=40 following the existing FGCNN work.
 2020-02-04 10:05:04,160 P3555 INFO --- 3235/3235 batches finished ---
 2020-02-04 10:05:04,375 P3555 INFO Train loss: 0.221371
 2020-02-04 10:05:04,376 P3555 INFO Training finished.
-2020-02-04 10:05:04,376 P3555 INFO Load best model: /home/hispace/container/data/xxx/FuxiCTR/benchmarks/Avazu/ONN_avazu/avazu_x4_001_d45ad60e/ONN_avazu_x4_036_15e5fc4d_avazu_x4_001_d45ad60e_model.ckpt
+2020-02-04 10:05:04,376 P3555 INFO Load best model: /home/XXX/FuxiCTR/benchmarks/Avazu/ONN_avazu/avazu_x4_001_d45ad60e/ONN_avazu_x4_036_15e5fc4d_avazu_x4_001_d45ad60e_model.ckpt
 2020-02-04 10:05:06,670 P3555 INFO ****** Train/validation evaluation ******
 2020-02-04 10:12:01,235 P3555 INFO [Metrics] logloss: 0.310772 - AUC: 0.881562
 2020-02-04 10:12:46,289 P3555 INFO [Metrics] logloss: 0.367837 - AUC: 0.799815

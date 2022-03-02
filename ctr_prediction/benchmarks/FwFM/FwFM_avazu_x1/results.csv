@@ -1,0 +1,1 @@
+ 20220125-223319,[command] python run_expid.py --version pytorch --config Avazu/FwFM_avazu_x1/FwFM_avazu_x1_tuner_config_01 --expid FwFM_avazu_x1_009_b8820aaa --gpu 0,[exp_id] FwFM_avazu_x1_009_b8820aaa,[dataset_id] avazu_x1_3fb65689,[train] N.A.,[val] AUC: 0.743596 - logloss: 0.397926,[test] AUC: 0.760156 - logloss: 0.368781

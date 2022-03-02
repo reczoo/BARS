@@ -1,0 +1,1 @@
+ 20200228-094136,[command] python benchmark.py --version pytorch --config Criteo/FiBiNET_criteo/FiBiNET_criteo_x4_tuner_config_03 --expid FiBiNET_criteo_x4_012_90314955 --gpu 2,[exp_id] FiBiNET_criteo_x4_012_90314955,[dataset_id] criteo_x4_001_be98441d,[train] logloss: 0.420199 - AUC: 0.832668,[val] logloss: 0.438986 - AUC: 0.812933,[test] logloss: 0.438573 - AUC: 0.813350

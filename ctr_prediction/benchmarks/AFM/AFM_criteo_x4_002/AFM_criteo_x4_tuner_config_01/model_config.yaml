@@ -1,0 +1,928 @@
+AFM_criteo_x4_001_9da6c6e0:
+    attention_dim: 40
+    attention_dropout: 0
+    batch_size: 10000
+    dataset_id: criteo_x4_001_be98441d
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFM
+    model_id: AFM_criteo_x4
+    model_root: ./Criteo/AFM_criteo/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFM_criteo_x4_002_295728c6:
+    attention_dim: 40
+    attention_dropout: 0.1
+    batch_size: 10000
+    dataset_id: criteo_x4_001_be98441d
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFM
+    model_id: AFM_criteo_x4
+    model_root: ./Criteo/AFM_criteo/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFM_criteo_x4_003_26abd039:
+    attention_dim: 40
+    attention_dropout: 0.3
+    batch_size: 10000
+    dataset_id: criteo_x4_001_be98441d
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFM
+    model_id: AFM_criteo_x4
+    model_root: ./Criteo/AFM_criteo/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFM_criteo_x4_004_327a2aa6:
+    attention_dim: 40
+    attention_dropout: 0.5
+    batch_size: 10000
+    dataset_id: criteo_x4_001_be98441d
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFM
+    model_id: AFM_criteo_x4
+    model_root: ./Criteo/AFM_criteo/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFM_criteo_x4_005_d244607f:
+    attention_dim: 80
+    attention_dropout: 0
+    batch_size: 10000
+    dataset_id: criteo_x4_001_be98441d
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFM
+    model_id: AFM_criteo_x4
+    model_root: ./Criteo/AFM_criteo/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFM_criteo_x4_006_2ecf2495:
+    attention_dim: 80
+    attention_dropout: 0.1
+    batch_size: 10000
+    dataset_id: criteo_x4_001_be98441d
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFM
+    model_id: AFM_criteo_x4
+    model_root: ./Criteo/AFM_criteo/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFM_criteo_x4_007_3c9dd33b:
+    attention_dim: 80
+    attention_dropout: 0.3
+    batch_size: 10000
+    dataset_id: criteo_x4_001_be98441d
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFM
+    model_id: AFM_criteo_x4
+    model_root: ./Criteo/AFM_criteo/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFM_criteo_x4_008_3d3e10fc:
+    attention_dim: 80
+    attention_dropout: 0.5
+    batch_size: 10000
+    dataset_id: criteo_x4_001_be98441d
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFM
+    model_id: AFM_criteo_x4
+    model_root: ./Criteo/AFM_criteo/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFM_criteo_x4_009_5dbdb6b0:
+    attention_dim: 40
+    attention_dropout: 0
+    batch_size: 10000
+    dataset_id: criteo_x4_001_be98441d
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFM
+    model_id: AFM_criteo_x4
+    model_root: ./Criteo/AFM_criteo/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFM_criteo_x4_010_98a31601:
+    attention_dim: 40
+    attention_dropout: 0.1
+    batch_size: 10000
+    dataset_id: criteo_x4_001_be98441d
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFM
+    model_id: AFM_criteo_x4
+    model_root: ./Criteo/AFM_criteo/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFM_criteo_x4_011_4bd97d26:
+    attention_dim: 40
+    attention_dropout: [0.3, 0]
+    batch_size: 10000
+    dataset_id: criteo_x4_001_be98441d
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFM
+    model_id: AFM_criteo_x4
+    model_root: ./Criteo/AFM_criteo/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFM_criteo_x4_012_ad054cfc:
+    attention_dim: 40
+    attention_dropout: 0.5
+    batch_size: 10000
+    dataset_id: criteo_x4_001_be98441d
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFM
+    model_id: AFM_criteo_x4
+    model_root: ./Criteo/AFM_criteo/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFM_criteo_x4_013_9b65a921:
+    attention_dim: 80
+    attention_dropout: 0
+    batch_size: 10000
+    dataset_id: criteo_x4_001_be98441d
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFM
+    model_id: AFM_criteo_x4
+    model_root: ./Criteo/AFM_criteo/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFM_criteo_x4_014_205726c2:
+    attention_dim: 80
+    attention_dropout: 0.1
+    batch_size: 10000
+    dataset_id: criteo_x4_001_be98441d
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFM
+    model_id: AFM_criteo_x4
+    model_root: ./Criteo/AFM_criteo/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFM_criteo_x4_015_9134c925:
+    attention_dim: 80
+    attention_dropout: 0.3
+    batch_size: 10000
+    dataset_id: criteo_x4_001_be98441d
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFM
+    model_id: AFM_criteo_x4
+    model_root: ./Criteo/AFM_criteo/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFM_criteo_x4_016_74669981:
+    attention_dim: 80
+    attention_dropout: 0.5
+    batch_size: 10000
+    dataset_id: criteo_x4_001_be98441d
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFM
+    model_id: AFM_criteo_x4
+    model_root: ./Criteo/AFM_criteo/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFM_criteo_x4_017_9fa77806:
+    attention_dim: 40
+    attention_dropout: 0
+    batch_size: 10000
+    dataset_id: criteo_x4_001_be98441d
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFM
+    model_id: AFM_criteo_x4
+    model_root: ./Criteo/AFM_criteo/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFM_criteo_x4_018_98f611b3:
+    attention_dim: 40
+    attention_dropout: 0.1
+    batch_size: 10000
+    dataset_id: criteo_x4_001_be98441d
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFM
+    model_id: AFM_criteo_x4
+    model_root: ./Criteo/AFM_criteo/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFM_criteo_x4_019_f51538fd:
+    attention_dim: 40
+    attention_dropout: 0.3
+    batch_size: 10000
+    dataset_id: criteo_x4_001_be98441d
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFM
+    model_id: AFM_criteo_x4
+    model_root: ./Criteo/AFM_criteo/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFM_criteo_x4_020_23a30a16:
+    attention_dim: 40
+    attention_dropout: 0.5
+    batch_size: 10000
+    dataset_id: criteo_x4_001_be98441d
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFM
+    model_id: AFM_criteo_x4
+    model_root: ./Criteo/AFM_criteo/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFM_criteo_x4_021_4b7dd241:
+    attention_dim: 80
+    attention_dropout: 0
+    batch_size: 10000
+    dataset_id: criteo_x4_001_be98441d
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFM
+    model_id: AFM_criteo_x4
+    model_root: ./Criteo/AFM_criteo/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFM_criteo_x4_022_1fa63415:
+    attention_dim: 80
+    attention_dropout: 0.1
+    batch_size: 10000
+    dataset_id: criteo_x4_001_be98441d
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFM
+    model_id: AFM_criteo_x4
+    model_root: ./Criteo/AFM_criteo/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFM_criteo_x4_023_d5076cbf:
+    attention_dim: 80
+    attention_dropout: 0.3
+    batch_size: 10000
+    dataset_id: criteo_x4_001_be98441d
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFM
+    model_id: AFM_criteo_x4
+    model_root: ./Criteo/AFM_criteo/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFM_criteo_x4_024_ebca5c96:
+    attention_dim: 80
+    attention_dropout: 0.5
+    batch_size: 10000
+    dataset_id: criteo_x4_001_be98441d
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFM
+    model_id: AFM_criteo_x4
+    model_root: ./Criteo/AFM_criteo/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFM_criteo_x4_025_47f2d484:
+    attention_dim: 40
+    attention_dropout: 0
+    batch_size: 10000
+    dataset_id: criteo_x4_001_be98441d
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-4)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFM
+    model_id: AFM_criteo_x4
+    model_root: ./Criteo/AFM_criteo/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFM_criteo_x4_026_e8ec2549:
+    attention_dim: 40
+    attention_dropout: 0.1
+    batch_size: 10000
+    dataset_id: criteo_x4_001_be98441d
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-4)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFM
+    model_id: AFM_criteo_x4
+    model_root: ./Criteo/AFM_criteo/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFM_criteo_x4_027_1130a3ae:
+    attention_dim: 40
+    attention_dropout: 0.3
+    batch_size: 10000
+    dataset_id: criteo_x4_001_be98441d
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-4)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFM
+    model_id: AFM_criteo_x4
+    model_root: ./Criteo/AFM_criteo/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFM_criteo_x4_028_8fc51d11:
+    attention_dim: 40
+    attention_dropout: 0.5
+    batch_size: 10000
+    dataset_id: criteo_x4_001_be98441d
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-4)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFM
+    model_id: AFM_criteo_x4
+    model_root: ./Criteo/AFM_criteo/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFM_criteo_x4_029_7a3f6238:
+    attention_dim: 80
+    attention_dropout: 0
+    batch_size: 10000
+    dataset_id: criteo_x4_001_be98441d
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-4)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFM
+    model_id: AFM_criteo_x4
+    model_root: ./Criteo/AFM_criteo/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFM_criteo_x4_030_90a160dd:
+    attention_dim: 80
+    attention_dropout: 0.1
+    batch_size: 10000
+    dataset_id: criteo_x4_001_be98441d
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-4)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFM
+    model_id: AFM_criteo_x4
+    model_root: ./Criteo/AFM_criteo/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFM_criteo_x4_031_2678a62f:
+    attention_dim: 80
+    attention_dropout: 0.3
+    batch_size: 10000
+    dataset_id: criteo_x4_001_be98441d
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-4)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFM
+    model_id: AFM_criteo_x4
+    model_root: ./Criteo/AFM_criteo/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFM_criteo_x4_032_656b6d91:
+    attention_dim: 80
+    attention_dropout: 0.5
+    batch_size: 10000
+    dataset_id: criteo_x4_001_be98441d
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-4)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFM
+    model_id: AFM_criteo_x4
+    model_root: ./Criteo/AFM_criteo/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3

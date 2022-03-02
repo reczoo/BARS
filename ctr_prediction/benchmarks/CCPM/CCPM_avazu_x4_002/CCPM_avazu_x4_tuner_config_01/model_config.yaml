@@ -1,0 +1,2170 @@
+CCPM_avazu_x4_001_6ce70b15:
+    activation: Tanh
+    batch_size: 10000
+    channels: [4, 4, 2]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [6, 5, 3]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_002_56531ee9:
+    activation: Tanh
+    batch_size: 10000
+    channels: [4, 4, 2]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [3, 3, 3]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_003_f767e89d:
+    activation: Tanh
+    batch_size: 10000
+    channels: [4, 4, 2]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [5, 5, 5]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_004_3b18383e:
+    activation: Tanh
+    batch_size: 10000
+    channels: [4, 4, 2]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [7, 7, 7]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_005_02e4b601:
+    activation: Tanh
+    batch_size: 10000
+    channels: [4, 4, 2]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [7, 5, 3]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_006_a6ad0d82:
+    activation: Tanh
+    batch_size: 10000
+    channels: [4, 4, 4]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [6, 5, 3]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_007_14580dcd:
+    activation: Tanh
+    batch_size: 10000
+    channels: [4, 4, 4]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [3, 3, 3]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_008_870f96ce:
+    activation: Tanh
+    batch_size: 10000
+    channels: [4, 4, 4]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [5, 5, 5]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_009_896fdaf1:
+    activation: Tanh
+    batch_size: 10000
+    channels: [4, 4, 4]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [7, 7, 7]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_010_79def456:
+    activation: Tanh
+    batch_size: 10000
+    channels: [4, 4, 4]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [7, 5, 3]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_011_6b9741ac:
+    activation: Tanh
+    batch_size: 10000
+    channels: [8, 8, 8]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [6, 5, 3]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_012_ed72803f:
+    activation: Tanh
+    batch_size: 10000
+    channels: [8, 8, 8]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [3, 3, 3]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_013_b0a9f66b:
+    activation: Tanh
+    batch_size: 10000
+    channels: [8, 8, 8]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [5, 5, 5]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_014_367a3e07:
+    activation: Tanh
+    batch_size: 10000
+    channels: [8, 8, 8]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [7, 7, 7]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_015_b17689e5:
+    activation: Tanh
+    batch_size: 10000
+    channels: [8, 8, 8]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [7, 5, 3]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_016_0f5a63d3:
+    activation: Tanh
+    batch_size: 10000
+    channels: [16, 16, 16]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [6, 5, 3]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_017_79f597d2:
+    activation: Tanh
+    batch_size: 10000
+    channels: [16, 16, 16]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [3, 3, 3]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_018_34c0cd5f:
+    activation: Tanh
+    batch_size: 10000
+    channels: [16, 16, 16]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [5, 5, 5]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_019_6361d9ee:
+    activation: Tanh
+    batch_size: 10000
+    channels: [16, 16, 16]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [7, 7, 7]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_020_d2e541ab:
+    activation: Tanh
+    batch_size: 10000
+    channels: [16, 16, 16]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [7, 5, 3]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_021_53fc345a:
+    activation: Tanh
+    batch_size: 10000
+    channels: [16, 32, 64]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [6, 5, 3]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_022_857f15d0:
+    activation: Tanh
+    batch_size: 10000
+    channels: [16, 32, 64]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [3, 3, 3]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_023_4e4d83c0:
+    activation: Tanh
+    batch_size: 10000
+    channels: [16, 32, 64]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [5, 5, 5]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_024_716f151e:
+    activation: Tanh
+    batch_size: 10000
+    channels: [16, 32, 64]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [7, 7, 7]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_025_e2254c14:
+    activation: Tanh
+    batch_size: 10000
+    channels: [16, 32, 64]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [7, 5, 3]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_026_8b039314:
+    activation: Tanh
+    batch_size: 10000
+    channels: [64, 128, 256]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [6, 5, 3]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_027_1b39f33a:
+    activation: Tanh
+    batch_size: 10000
+    channels: [64, 128, 256]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [3, 3, 3]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_028_412a3a41:
+    activation: Tanh
+    batch_size: 10000
+    channels: [64, 128, 256]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [5, 5, 5]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_029_22988280:
+    activation: Tanh
+    batch_size: 10000
+    channels: [64, 128, 256]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [7, 7, 7]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_030_7a743cf1:
+    activation: Tanh
+    batch_size: 10000
+    channels: [64, 128, 256]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [7, 5, 3]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_031_47c3ece1:
+    activation: Tanh
+    batch_size: 10000
+    channels: [128, 256, 512]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [6, 5, 3]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_032_a35d844e:
+    activation: Tanh
+    batch_size: 10000
+    channels: [128, 256, 512]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [3, 3, 3]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_033_2254a60d:
+    activation: Tanh
+    batch_size: 10000
+    channels: [128, 256, 512]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [5, 5, 5]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_034_99214c32:
+    activation: Tanh
+    batch_size: 10000
+    channels: [128, 256, 512]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [7, 7, 7]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_035_823d7abd:
+    activation: Tanh
+    batch_size: 10000
+    channels: [128, 256, 512]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 0
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [7, 5, 3]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_036_0dedc57e:
+    activation: Tanh
+    batch_size: 10000
+    channels: [4, 4, 2]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-08
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [6, 5, 3]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_037_cb66c467:
+    activation: Tanh
+    batch_size: 10000
+    channels: [4, 4, 2]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-08
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [3, 3, 3]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_038_096f17e2:
+    activation: Tanh
+    batch_size: 10000
+    channels: [4, 4, 2]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-08
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [5, 5, 5]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_039_ebb97ddc:
+    activation: Tanh
+    batch_size: 10000
+    channels: [4, 4, 2]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-08
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [7, 7, 7]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_040_59207cbd:
+    activation: Tanh
+    batch_size: 10000
+    channels: [4, 4, 2]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-08
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [7, 5, 3]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_041_a8d96fea:
+    activation: Tanh
+    batch_size: 10000
+    channels: [4, 4, 4]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-08
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [6, 5, 3]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_042_a6771cf6:
+    activation: Tanh
+    batch_size: 10000
+    channels: [4, 4, 4]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-08
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [3, 3, 3]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_043_92155899:
+    activation: Tanh
+    batch_size: 10000
+    channels: [4, 4, 4]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-08
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [5, 5, 5]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_044_c05082c7:
+    activation: Tanh
+    batch_size: 10000
+    channels: [4, 4, 4]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-08
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [7, 7, 7]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_045_3052ae1a:
+    activation: Tanh
+    batch_size: 10000
+    channels: [4, 4, 4]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-08
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [7, 5, 3]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_046_2c3059c3:
+    activation: Tanh
+    batch_size: 10000
+    channels: [8, 8, 8]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-08
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [6, 5, 3]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_047_8e387952:
+    activation: Tanh
+    batch_size: 10000
+    channels: [8, 8, 8]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-08
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [3, 3, 3]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_048_e989b11c:
+    activation: Tanh
+    batch_size: 10000
+    channels: [8, 8, 8]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-08
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [5, 5, 5]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_049_078ad0f1:
+    activation: Tanh
+    batch_size: 10000
+    channels: [8, 8, 8]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-08
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [7, 7, 7]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_050_9e4d6d38:
+    activation: Tanh
+    batch_size: 10000
+    channels: [8, 8, 8]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-08
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [7, 5, 3]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_051_49378151:
+    activation: Tanh
+    batch_size: 10000
+    channels: [16, 16, 16]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-08
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [6, 5, 3]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_052_a02c88ef:
+    activation: Tanh
+    batch_size: 10000
+    channels: [16, 16, 16]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-08
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [3, 3, 3]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_053_bda13c1d:
+    activation: Tanh
+    batch_size: 10000
+    channels: [16, 16, 16]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-08
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [5, 5, 5]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_054_3c56d4d3:
+    activation: Tanh
+    batch_size: 10000
+    channels: [16, 16, 16]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-08
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [7, 7, 7]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_055_87efc56c:
+    activation: Tanh
+    batch_size: 10000
+    channels: [16, 16, 16]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-08
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [7, 5, 3]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_056_d0ce7005:
+    activation: Tanh
+    batch_size: 10000
+    channels: [16, 32, 64]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-08
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [6, 5, 3]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_057_8ffdd588:
+    activation: Tanh
+    batch_size: 10000
+    channels: [16, 32, 64]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-08
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [3, 3, 3]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_058_ac06a517:
+    activation: Tanh
+    batch_size: 10000
+    channels: [16, 32, 64]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-08
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [5, 5, 5]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_059_29128569:
+    activation: Tanh
+    batch_size: 10000
+    channels: [16, 32, 64]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-08
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [7, 7, 7]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_060_8a69433a:
+    activation: Tanh
+    batch_size: 10000
+    channels: [16, 32, 64]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-08
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [7, 5, 3]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_061_935d3671:
+    activation: Tanh
+    batch_size: 10000
+    channels: [64, 128, 256]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-08
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [6, 5, 3]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_062_c8574b57:
+    activation: Tanh
+    batch_size: 10000
+    channels: [64, 128, 256]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-08
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [3, 3, 3]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_063_376bd00a:
+    activation: Tanh
+    batch_size: 10000
+    channels: [64, 128, 256]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-08
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [5, 5, 5]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_064_530473a9:
+    activation: Tanh
+    batch_size: 10000
+    channels: [64, 128, 256]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-08
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [7, 7, 7]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_065_021769b5:
+    activation: Tanh
+    batch_size: 10000
+    channels: [64, 128, 256]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-08
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [7, 5, 3]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_066_8d83954b:
+    activation: Tanh
+    batch_size: 10000
+    channels: [128, 256, 512]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-08
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [6, 5, 3]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_067_9a555edd:
+    activation: Tanh
+    batch_size: 10000
+    channels: [128, 256, 512]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-08
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [3, 3, 3]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_068_bc66389a:
+    activation: Tanh
+    batch_size: 10000
+    channels: [128, 256, 512]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-08
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [5, 5, 5]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_069_330ad11f:
+    activation: Tanh
+    batch_size: 10000
+    channels: [128, 256, 512]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-08
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [7, 7, 7]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+CCPM_avazu_x4_070_27fb8873:
+    activation: Tanh
+    batch_size: 10000
+    channels: [128, 256, 512]
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-08
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: [7, 5, 3]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: CCPM
+    model_id: CCPM_base
+    model_root: ./Avazu/CCPM_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3

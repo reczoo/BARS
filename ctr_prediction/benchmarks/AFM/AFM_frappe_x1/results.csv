@@ -1,0 +1,1 @@
+ 20220126-214533,[command] python run_expid.py --version pytorch --config Frappe/AFM_frappe_x1/AFM_frappe_x1_tuner_config_02 --expid AFM_frappe_x1_011_2d591f68 --gpu 0,[exp_id] AFM_frappe_x1_011_2d591f68,[dataset_id] frappe_x1_04e961e9,[train] N.A.,[val] AUC: 0.971434 - logloss: 0.218243,[test] AUC: 0.969733 - logloss: 0.226424

@@ -1,9 +1,8 @@
-## AutoInt+_KKBox_x4_001
+## AutoInt+_kkbox_x1
 
-A notebook to benchmark AutoInt+ on KKBox_x4_001 dataset.
+A hands-on guide to run the AutoInt model on the Kkbox_x1 dataset.
 
-Author: [XUEPAI Team](https://github.com/xue-pai)
-
+Author: [XUEPAI](https://github.com/xue-pai)
 
 ### Index
 [Environments](#Environments) | [Dataset](#Dataset) | [Code](#Code) | [Results](#Results) | [Logs](#Logs)
@@ -12,49 +11,60 @@ Author: [XUEPAI Team](https://github.com/xue-pai)
 + Hardware
 
   ```python
-  CPU: Intel(R) Xeon(R) CPU E5-2690 v4 @ 2.6GHz
-  RAM: 500G+
+  CPU: Intel(R) Xeon(R) CPU E5-2690 v4 @ 2.60GHz
+  GPU: Tesla P100 16G
+  RAM: 755G
+
   ```
+
 + Software
 
   ```python
+  CUDA: 10.0
   python: 3.6.5
-  pandas: 1.0.0
+  pytorch: 1.0.1.post2
+  pandas: 0.23.0
   numpy: 1.18.1
+  scipy: 1.1.0
+  sklearn: 0.23.1
+  pyyaml: 5.1
+  h5py: 2.7.1
+  tqdm: 4.59.0
+  fuxictr: 1.0.2
   ```
 
 ### Dataset
-In this setting, For all categorical fields, we replace infrequent features with a default <OOV> token by setting the threshold min_category_count=10.
-
-To make a fair comparison, we fix embedding_dim=128, which performs well.
-
+Dataset ID: [Kkbox_x1](https://github.com/openbenchmark/BARS/blob/master/ctr_prediction/datasets/Kkbox/README.md#Kkbox_x1). Please refer to the dataset details to get data ready.
 
 ### Code
-1. Install FuxiCTR
-  
-    Install FuxiCTR via `pip install fuxictr==1.0` to get all dependencies ready. Then download [the FuxiCTR repository](https://github.com/huawei-noah/benchmark/archive/53e314461c19dbc7f462b42bf0f0bfae020dc398.zip) to your local path.
 
-2. Downalod the dataset and run [the preprocessing script](https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/datasets/KKBox/KKBox_x4/split_kkbox_x4.py) for data splitting. 
+We use [FuxiCTR-v1.0.2](fuxictr_url) for this experiment. See model code: [AutoInt](https://github.com/xue-pai/FuxiCTR/blob/v1.0.2/fuxictr/pytorch/models/AutoInt.py).
 
-3. Download the hyper-parameter configuration file: [AutoInt+_kkbox_x4_tuner_config_06.yaml](./AutoInt+_kkbox_x4_tuner_config_06.yaml)
+Running steps:
 
-4. Run the following script to reproduce the result. 
-  + --config: The config file that defines the tuning space
-  + --tag: Specify which expid to run (each expid corresponds to a specific setting of hyper-parameters in the tunner space)
-  + --gpu: The available gpus for parameters tuning.
+1. Download [FuxiCTR-v1.0.2](fuxictr_url) and install all the dependencies listed in the [environments](#environments). Then modify [run_expid.py](./run_expid.py#L5) to add the FuxiCTR library to system path
+    
+    ```python
+    sys.path.append('YOUR_PATH_TO_FuxiCTR/')
+    ```
 
-  ```bash
-  cd FuxiCTR/benchmarks
-  python run_param_tuner.py --config YOUR_PATH/AutoInt+_kkbox_x4_tuner_config_06.yaml --tag 014 --gpu 0
-  ```
+2. Create a data directory and put the downloaded csv files in `../data/Avazu/Avazu_x1`.
 
+3. Both `dataset_config.yaml` and `model_config.yaml` files are available in [AutoInt+_kkbox_x1_tuner_config_06](./AutoInt+_kkbox_x1_tuner_config_06). Make sure the data paths in `dataset_config.yaml` are correctly set to what we create in the last step.
 
+4. Run the following script to start.
 
+    ```bash
+    cd AutoInt+_kkbox_x1
+    nohup python run_expid.py --config ./AutoInt+_kkbox_x1_tuner_config_06 --expid AutoInt_kkbox_x1_014_44f4cf9f --gpu 0 > run.log &
+    tail -f run.log
+    ```
 
 ### Results
-```python
-[Metrics] logloss: 0.476795 - AUC: 0.852967
-```
+
+| logloss | AUC  |
+|:--------------------:|:--------------------:|
+| 0.476795 | 0.852967  |
 
 
 ### Logs
@@ -64,7 +74,7 @@ To make a fair comparison, we fix embedding_dim=128, which performs well.
     "attention_layers": "4",
     "batch_norm": "False",
     "batch_size": "10000",
-    "dataset_id": "kkbox_x4_001_c5c9c6e3",
+    "dataset_id": "kkbox_x1_001_c5c9c6e3",
     "dnn_activations": "relu",
     "dnn_hidden_units": "[5000, 5000]",
     "embedding_dim": "128",
@@ -77,7 +87,7 @@ To make a fair comparison, we fix embedding_dim=128, which performs well.
     "loss": "binary_crossentropy",
     "metrics": "['logloss', 'AUC']",
     "model": "AutoInt",
-    "model_id": "AutoInt_kkbox_x4_014_b479679e",
+    "model_id": "AutoInt_kkbox_x1_014_b479679e",
     "model_root": "./KKBox/AutoInt_kkbox/",
     "monitor": "{'AUC': 1, 'logloss': -1}",
     "monitor_mode": "max",
@@ -99,17 +109,17 @@ To make a fair comparison, we fix embedding_dim=128, which performs well.
     "workers": "3",
     "data_format": "h5",
     "data_root": "../data/KKBox/",
-    "test_data": "../data/KKBox/kkbox_x4_001_c5c9c6e3/test.h5",
-    "train_data": "../data/KKBox/kkbox_x4_001_c5c9c6e3/train.h5",
-    "valid_data": "../data/KKBox/kkbox_x4_001_c5c9c6e3/valid.h5",
+    "test_data": "../data/KKBox/kkbox_x1_001_c5c9c6e3/test.h5",
+    "train_data": "../data/KKBox/kkbox_x1_001_c5c9c6e3/train.h5",
+    "valid_data": "../data/KKBox/kkbox_x1_001_c5c9c6e3/valid.h5",
     "version": "pytorch",
     "gpu": "1"
 }
 2020-05-07 17:55:14,230 P11754 INFO Set up feature encoder...
-2020-05-07 17:55:14,230 P11754 INFO Load feature_map from json: ../data/KKBox/kkbox_x4_001_c5c9c6e3/feature_map.json
+2020-05-07 17:55:14,230 P11754 INFO Load feature_map from json: ../data/KKBox/kkbox_x1_001_c5c9c6e3/feature_map.json
 2020-05-07 17:55:14,231 P11754 INFO Loading data...
-2020-05-07 17:55:14,233 P11754 INFO Loading data from h5: ../data/KKBox/kkbox_x4_001_c5c9c6e3/train.h5
-2020-05-07 17:55:14,528 P11754 INFO Loading data from h5: ../data/KKBox/kkbox_x4_001_c5c9c6e3/valid.h5
+2020-05-07 17:55:14,233 P11754 INFO Loading data from h5: ../data/KKBox/kkbox_x1_001_c5c9c6e3/train.h5
+2020-05-07 17:55:14,528 P11754 INFO Loading data from h5: ../data/KKBox/kkbox_x1_001_c5c9c6e3/valid.h5
 2020-05-07 17:55:14,720 P11754 INFO Train samples: total/5901932, pos/2971724, neg/2930208, ratio/50.35%
 2020-05-07 17:55:14,739 P11754 INFO Validation samples: total/737743, pos/371466, neg/366277, ratio/50.35%
 2020-05-07 17:55:14,739 P11754 INFO Loading train data done.
@@ -303,16 +313,15 @@ To make a fair comparison, we fix embedding_dim=128, which performs well.
 2020-05-07 21:00:43,781 P11754 INFO --- 591/591 batches finished ---
 2020-05-07 21:00:43,824 P11754 INFO Train loss: 0.430571
 2020-05-07 21:00:43,824 P11754 INFO Training finished.
-2020-05-07 21:00:43,824 P11754 INFO Load best model: /home/hispace/container/data/xxx/FuxiCTR/benchmarks/KKBox/AutoInt_kkbox/kkbox_x4_001_c5c9c6e3/AutoInt_kkbox_x4_014_b479679e_kkbox_x4_001_c5c9c6e3_model.ckpt
+2020-05-07 21:00:43,824 P11754 INFO Load best model: /home/XXX/FuxiCTR/benchmarks/KKBox/AutoInt_kkbox/kkbox_x1_001_c5c9c6e3/AutoInt_kkbox_x1_014_b479679e_kkbox_x1_001_c5c9c6e3_model.ckpt
 2020-05-07 21:00:44,049 P11754 INFO ****** Train/validation evaluation ******
 2020-05-07 21:02:18,959 P11754 INFO [Metrics] logloss: 0.391159 - AUC: 0.905808
 2020-05-07 21:02:31,102 P11754 INFO [Metrics] logloss: 0.477322 - AUC: 0.852634
 2020-05-07 21:02:31,191 P11754 INFO ******** Test evaluation ********
 2020-05-07 21:02:31,191 P11754 INFO Loading data...
-2020-05-07 21:02:31,191 P11754 INFO Loading data from h5: ../data/KKBox/kkbox_x4_001_c5c9c6e3/test.h5
+2020-05-07 21:02:31,191 P11754 INFO Loading data from h5: ../data/KKBox/kkbox_x1_001_c5c9c6e3/test.h5
 2020-05-07 21:02:31,258 P11754 INFO Test samples: total/737743, pos/371466, neg/366277, ratio/50.35%
 2020-05-07 21:02:31,258 P11754 INFO Loading test data done.
 2020-05-07 21:02:43,065 P11754 INFO [Metrics] logloss: 0.476795 - AUC: 0.852967
-
 
 ```

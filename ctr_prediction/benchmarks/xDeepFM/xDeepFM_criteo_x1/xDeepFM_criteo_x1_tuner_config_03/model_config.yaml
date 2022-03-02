@@ -1,0 +1,264 @@
+xDeepFM_criteo_x1_001_e08ec7de:
+    batch_norm: false
+    batch_size: 4096
+    cin_layer_units: [16, 16]
+    dataset_id: criteo_x1_7b681156
+    debug: false
+    dnn_hidden_units: [400, 400, 400]
+    embedding_dim: 10
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./Criteo/xDeepFM_criteo_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+xDeepFM_criteo_x1_002_a8dee3f9:
+    batch_norm: false
+    batch_size: 4096
+    cin_layer_units: [16, 16, 16, 16]
+    dataset_id: criteo_x1_7b681156
+    debug: false
+    dnn_hidden_units: [400, 400, 400]
+    embedding_dim: 10
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./Criteo/xDeepFM_criteo_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+xDeepFM_criteo_x1_003_e10c6c94:
+    batch_norm: false
+    batch_size: 4096
+    cin_layer_units: [8, 8, 8]
+    dataset_id: criteo_x1_7b681156
+    debug: false
+    dnn_hidden_units: [400, 400, 400]
+    embedding_dim: 10
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./Criteo/xDeepFM_criteo_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+xDeepFM_criteo_x1_004_76811bc6:
+    batch_norm: false
+    batch_size: 4096
+    cin_layer_units: [4, 4, 4]
+    dataset_id: criteo_x1_7b681156
+    debug: false
+    dnn_hidden_units: [400, 400, 400]
+    embedding_dim: 10
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./Criteo/xDeepFM_criteo_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+xDeepFM_criteo_x1_005_895c4193:
+    batch_norm: false
+    batch_size: 4096
+    cin_layer_units: [16, 16]
+    dataset_id: criteo_x1_7b681156
+    debug: false
+    dnn_hidden_units: [400, 400, 400]
+    embedding_dim: 10
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./Criteo/xDeepFM_criteo_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+xDeepFM_criteo_x1_006_54dacda6:
+    batch_norm: false
+    batch_size: 4096
+    cin_layer_units: [16, 16, 16, 16]
+    dataset_id: criteo_x1_7b681156
+    debug: false
+    dnn_hidden_units: [400, 400, 400]
+    embedding_dim: 10
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./Criteo/xDeepFM_criteo_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+xDeepFM_criteo_x1_007_78e71067:
+    batch_norm: false
+    batch_size: 4096
+    cin_layer_units: [8, 8, 8]
+    dataset_id: criteo_x1_7b681156
+    debug: false
+    dnn_hidden_units: [400, 400, 400]
+    embedding_dim: 10
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./Criteo/xDeepFM_criteo_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+xDeepFM_criteo_x1_008_ca736884:
+    batch_norm: false
+    batch_size: 4096
+    cin_layer_units: [4, 4, 4]
+    dataset_id: criteo_x1_7b681156
+    debug: false
+    dnn_hidden_units: [400, 400, 400]
+    embedding_dim: 10
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./Criteo/xDeepFM_criteo_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1

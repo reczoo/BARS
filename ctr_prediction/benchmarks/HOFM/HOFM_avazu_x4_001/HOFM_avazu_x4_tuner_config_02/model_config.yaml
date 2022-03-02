@@ -1,0 +1,174 @@
+HOFM_avazu_x4_001_a9f41af5:
+    batch_size: 10000
+    dataset_id: avazu_x4_3bbbc4c9
+    debug: false
+    embedding_dim: [16, 16]
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HOFM
+    model_id: HOFM_base
+    model_root: ./Avazu/HOFM_avazu_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    order: 3
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 1.0e-07
+    reuse_embedding: false
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HOFM_avazu_x4_002_7e7f19a6:
+    batch_size: 10000
+    dataset_id: avazu_x4_3bbbc4c9
+    debug: false
+    embedding_dim: [16, 8]
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HOFM
+    model_id: HOFM_base
+    model_root: ./Avazu/HOFM_avazu_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    order: 3
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 1.0e-07
+    reuse_embedding: false
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HOFM_avazu_x4_003_929b7048:
+    batch_size: 10000
+    dataset_id: avazu_x4_3bbbc4c9
+    debug: false
+    embedding_dim: [16, 16]
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HOFM
+    model_id: HOFM_base
+    model_root: ./Avazu/HOFM_avazu_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    order: 3
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 1.0e-08
+    reuse_embedding: false
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HOFM_avazu_x4_004_e9440802:
+    batch_size: 10000
+    dataset_id: avazu_x4_3bbbc4c9
+    debug: false
+    embedding_dim: [16, 8]
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HOFM
+    model_id: HOFM_base
+    model_root: ./Avazu/HOFM_avazu_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    order: 3
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 1.0e-08
+    reuse_embedding: false
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HOFM_avazu_x4_005_81692671:
+    batch_size: 10000
+    dataset_id: avazu_x4_3bbbc4c9
+    debug: false
+    embedding_dim: [16, 16]
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HOFM
+    model_id: HOFM_base
+    model_root: ./Avazu/HOFM_avazu_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    order: 3
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 0
+    reuse_embedding: false
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HOFM_avazu_x4_006_60d0049a:
+    batch_size: 10000
+    dataset_id: avazu_x4_3bbbc4c9
+    debug: false
+    embedding_dim: [16, 8]
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HOFM
+    model_id: HOFM_base
+    model_root: ./Avazu/HOFM_avazu_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    order: 3
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 0
+    reuse_embedding: false
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3

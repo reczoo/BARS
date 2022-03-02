@@ -1,0 +1,1 @@
+ 20220220-074407,[command] python run_expid.py --version pytorch --config Criteo/DESTINE_criteo_x1/DESTINE_criteo_x1_tuner_config_03 --expid DESTINE_criteo_x1_001_767ae9b5 --gpu 0,[exp_id] DESTINE_criteo_x1_001_767ae9b5,[dataset_id] criteo_x1_7b681156,[train] N.A.,[val] AUC: 0.813539 - logloss: 0.438458,[test] AUC: 0.813902 - logloss: 0.437963

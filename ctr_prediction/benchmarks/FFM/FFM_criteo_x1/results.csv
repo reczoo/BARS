@@ -1,0 +1,1 @@
+ 20220302-125033,[command] python run_expid.py --config Criteo/FFM_criteo_x1/FFM_criteo_x1_tuner_config_01/ --expid FFMv2_criteo_x1_004_9c79983e --gpu 0,[exp_id] FFMv2_criteo_x1_004_9c79983e,[dataset_id] criteo_x1_7b681156,[train] N.A.,[val] AUC: 0.805779 - logloss: 0.445920,[test] AUC: 0.806024 - logloss: 0.445553

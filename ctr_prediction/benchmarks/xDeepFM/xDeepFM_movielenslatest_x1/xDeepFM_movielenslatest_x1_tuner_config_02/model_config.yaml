@@ -1,0 +1,792 @@
+xDeepFM_movielenslatest_x1_001_1fae617d:
+    batch_norm: true
+    batch_size: 4096
+    cin_layer_units: [64, 64]
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    dnn_hidden_units: [400, 400, 400]
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./Movielens/xDeepFM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+xDeepFM_movielenslatest_x1_002_4efe11d6:
+    batch_norm: false
+    batch_size: 4096
+    cin_layer_units: [64, 64]
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    dnn_hidden_units: [400, 400, 400]
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./Movielens/xDeepFM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+xDeepFM_movielenslatest_x1_003_29621003:
+    batch_norm: true
+    batch_size: 4096
+    cin_layer_units: [64, 64]
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    dnn_hidden_units: [400, 400, 400]
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./Movielens/xDeepFM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+xDeepFM_movielenslatest_x1_004_851413b9:
+    batch_norm: false
+    batch_size: 4096
+    cin_layer_units: [64, 64]
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    dnn_hidden_units: [400, 400, 400]
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./Movielens/xDeepFM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+xDeepFM_movielenslatest_x1_005_8b73c75e:
+    batch_norm: true
+    batch_size: 4096
+    cin_layer_units: [64, 64, 64]
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    dnn_hidden_units: [400, 400, 400]
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./Movielens/xDeepFM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+xDeepFM_movielenslatest_x1_006_8b77984d:
+    batch_norm: false
+    batch_size: 4096
+    cin_layer_units: [64, 64, 64]
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    dnn_hidden_units: [400, 400, 400]
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./Movielens/xDeepFM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+xDeepFM_movielenslatest_x1_007_203a50df:
+    batch_norm: true
+    batch_size: 4096
+    cin_layer_units: [64, 64, 64]
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    dnn_hidden_units: [400, 400, 400]
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./Movielens/xDeepFM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+xDeepFM_movielenslatest_x1_008_6ff11934:
+    batch_norm: false
+    batch_size: 4096
+    cin_layer_units: [64, 64, 64]
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    dnn_hidden_units: [400, 400, 400]
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./Movielens/xDeepFM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+xDeepFM_movielenslatest_x1_009_e8de635f:
+    batch_norm: true
+    batch_size: 4096
+    cin_layer_units: [128, 128]
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    dnn_hidden_units: [400, 400, 400]
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./Movielens/xDeepFM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+xDeepFM_movielenslatest_x1_010_0293f76b:
+    batch_norm: false
+    batch_size: 4096
+    cin_layer_units: [128, 128]
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    dnn_hidden_units: [400, 400, 400]
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./Movielens/xDeepFM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+xDeepFM_movielenslatest_x1_011_e542a86f:
+    batch_norm: true
+    batch_size: 4096
+    cin_layer_units: [128, 128]
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    dnn_hidden_units: [400, 400, 400]
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./Movielens/xDeepFM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+xDeepFM_movielenslatest_x1_012_de16e1a6:
+    batch_norm: false
+    batch_size: 4096
+    cin_layer_units: [128, 128]
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    dnn_hidden_units: [400, 400, 400]
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./Movielens/xDeepFM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+xDeepFM_movielenslatest_x1_013_ecae9f4f:
+    batch_norm: true
+    batch_size: 4096
+    cin_layer_units: [64, 64]
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    dnn_hidden_units: [400, 400, 400]
+    embedding_dim: 10
+    embedding_regularizer: 0.005
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./Movielens/xDeepFM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+xDeepFM_movielenslatest_x1_014_4f664afd:
+    batch_norm: false
+    batch_size: 4096
+    cin_layer_units: [64, 64]
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    dnn_hidden_units: [400, 400, 400]
+    embedding_dim: 10
+    embedding_regularizer: 0.005
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./Movielens/xDeepFM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+xDeepFM_movielenslatest_x1_015_1535f7a3:
+    batch_norm: true
+    batch_size: 4096
+    cin_layer_units: [64, 64]
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    dnn_hidden_units: [400, 400, 400]
+    embedding_dim: 10
+    embedding_regularizer: 0.005
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./Movielens/xDeepFM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+xDeepFM_movielenslatest_x1_016_1a9559b7:
+    batch_norm: false
+    batch_size: 4096
+    cin_layer_units: [64, 64]
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    dnn_hidden_units: [400, 400, 400]
+    embedding_dim: 10
+    embedding_regularizer: 0.005
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./Movielens/xDeepFM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+xDeepFM_movielenslatest_x1_017_7828961a:
+    batch_norm: true
+    batch_size: 4096
+    cin_layer_units: [64, 64, 64]
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    dnn_hidden_units: [400, 400, 400]
+    embedding_dim: 10
+    embedding_regularizer: 0.005
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./Movielens/xDeepFM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+xDeepFM_movielenslatest_x1_018_57ed221b:
+    batch_norm: false
+    batch_size: 4096
+    cin_layer_units: [64, 64, 64]
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    dnn_hidden_units: [400, 400, 400]
+    embedding_dim: 10
+    embedding_regularizer: 0.005
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./Movielens/xDeepFM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+xDeepFM_movielenslatest_x1_019_9013ab25:
+    batch_norm: true
+    batch_size: 4096
+    cin_layer_units: [64, 64, 64]
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    dnn_hidden_units: [400, 400, 400]
+    embedding_dim: 10
+    embedding_regularizer: 0.005
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./Movielens/xDeepFM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+xDeepFM_movielenslatest_x1_020_caf444be:
+    batch_norm: false
+    batch_size: 4096
+    cin_layer_units: [64, 64, 64]
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    dnn_hidden_units: [400, 400, 400]
+    embedding_dim: 10
+    embedding_regularizer: 0.005
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./Movielens/xDeepFM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+xDeepFM_movielenslatest_x1_021_52ab045e:
+    batch_norm: true
+    batch_size: 4096
+    cin_layer_units: [128, 128]
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    dnn_hidden_units: [400, 400, 400]
+    embedding_dim: 10
+    embedding_regularizer: 0.005
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./Movielens/xDeepFM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+xDeepFM_movielenslatest_x1_022_bf53c2d7:
+    batch_norm: false
+    batch_size: 4096
+    cin_layer_units: [128, 128]
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    dnn_hidden_units: [400, 400, 400]
+    embedding_dim: 10
+    embedding_regularizer: 0.005
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./Movielens/xDeepFM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+xDeepFM_movielenslatest_x1_023_9e60a465:
+    batch_norm: true
+    batch_size: 4096
+    cin_layer_units: [128, 128]
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    dnn_hidden_units: [400, 400, 400]
+    embedding_dim: 10
+    embedding_regularizer: 0.005
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./Movielens/xDeepFM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+xDeepFM_movielenslatest_x1_024_6db6e9b8:
+    batch_norm: false
+    batch_size: 4096
+    cin_layer_units: [128, 128]
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    dnn_hidden_units: [400, 400, 400]
+    embedding_dim: 10
+    embedding_regularizer: 0.005
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./Movielens/xDeepFM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1

@@ -1,0 +1,1 @@
+ 20220125-233608,[command] python run_expid.py --version pytorch --config Criteo/LR_criteo_x1/LR_criteo_x1_tuner_config_01 --expid LR_criteo_x1_008_9581f586 --gpu 7,[exp_id] LR_criteo_x1_008_9581f586,[dataset_id] criteo_x1_7b681156,[train] N.A.,[val] AUC: 0.788466 - logloss: 0.461198,[test] AUC: 0.788625 - logloss: 0.460914

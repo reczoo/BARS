@@ -1,0 +1,1 @@
+ 20220128-185654,[command] python run_expid.py --version pytorch --config Movielens/NFM_movielenslatest_x1/NFM_movielenslatest_x1_tuner_config_01 --expid NFM_movielenslatest_x1_010_f3d546bc --gpu 1,[exp_id] NFM_movielenslatest_x1_010_f3d546bc,[dataset_id] movielenslatest_x1_cd32d937,[train] N.A.,[val] AUC: 0.949862 - logloss: 0.265737,[test] AUC: 0.949597 - logloss: 0.266413

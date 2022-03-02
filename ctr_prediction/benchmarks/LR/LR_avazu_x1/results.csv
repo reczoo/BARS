@@ -1,0 +1,1 @@
+ 20220126-090354,[command] python run_expid.py --version pytorch --config Avazu/LR_avazu_x1/LR_avazu_x1_tuner_config_01 --expid LR_avazu_x1_007_c7701820 --gpu 6,[exp_id] LR_avazu_x1_007_c7701820,[dataset_id] avazu_x1_3fb65689,[train] N.A.,[val] AUC: 0.735522 - logloss: 0.402475,[test] AUC: 0.751625 - logloss: 0.373527

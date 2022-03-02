@@ -1,0 +1,1 @@
+ 20200223-201910,[command] python benchmark.py --version pytorch --config Criteo/FM_criteo/FM_criteo_x4_tuner_config_02 --expid FM_criteo_x4_003_a2962a05 --gpu 1,[exp_id] FM_criteo_x4_003_a2962a05,[dataset_id] criteo_x4_001_be98441d,[train] logloss: 0.410629 - AUC: 0.841832,[val] logloss: 0.444802 - AUC: 0.807371,[test] logloss: 0.444521 - AUC: 0.807768

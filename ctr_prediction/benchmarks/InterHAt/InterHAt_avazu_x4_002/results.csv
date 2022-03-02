@@ -1,0 +1,1 @@
+ 20200605-222341,[command] python benchmark.py --version pytorch --config Avazu/InterHAt_avazu/InterHAt_avazu_x4_tuner_config_05 --expid InterHAt_avazu_x4_001_d45ad60e_009_bfbac078 --gpu 1,[exp_id] InterHAt_avazu_x4_001_d45ad60e_009_bfbac078,[dataset_id] avazu_x4_001_d45ad60e,[train] N.A.,[val] logloss: 0.372400 - AUC: 0.792452,[test] logloss: 0.372247 - AUC: 0.792731

@@ -1,0 +1,540 @@
+AFM_frappe_x1_001_a874e8ba:
+    attention_dim: 64
+    attention_dropout: [0, 0]
+    batch_size: 4096
+    dataset_id: frappe_x1_04e961e9
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: AFM
+    model_id: AFM_base
+    model_root: ./Frappe/AFM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_attention: true
+    use_hdf5: true
+    verbose: 1
+AFM_frappe_x1_002_17267821:
+    attention_dim: 64
+    attention_dropout: [0.1, 0.1]
+    batch_size: 4096
+    dataset_id: frappe_x1_04e961e9
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: AFM
+    model_id: AFM_base
+    model_root: ./Frappe/AFM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_attention: true
+    use_hdf5: true
+    verbose: 1
+AFM_frappe_x1_003_d58825c0:
+    attention_dim: 64
+    attention_dropout: [0.2, 0.2]
+    batch_size: 4096
+    dataset_id: frappe_x1_04e961e9
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: AFM
+    model_id: AFM_base
+    model_root: ./Frappe/AFM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_attention: true
+    use_hdf5: true
+    verbose: 1
+AFM_frappe_x1_004_70fd3ee1:
+    attention_dim: 128
+    attention_dropout: [0, 0]
+    batch_size: 4096
+    dataset_id: frappe_x1_04e961e9
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: AFM
+    model_id: AFM_base
+    model_root: ./Frappe/AFM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_attention: true
+    use_hdf5: true
+    verbose: 1
+AFM_frappe_x1_005_32d99fe9:
+    attention_dim: 128
+    attention_dropout: [0.1, 0.1]
+    batch_size: 4096
+    dataset_id: frappe_x1_04e961e9
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: AFM
+    model_id: AFM_base
+    model_root: ./Frappe/AFM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_attention: true
+    use_hdf5: true
+    verbose: 1
+AFM_frappe_x1_006_29f71b8f:
+    attention_dim: 128
+    attention_dropout: [0.2, 0.2]
+    batch_size: 4096
+    dataset_id: frappe_x1_04e961e9
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: AFM
+    model_id: AFM_base
+    model_root: ./Frappe/AFM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_attention: true
+    use_hdf5: true
+    verbose: 1
+AFM_frappe_x1_007_5105e46b:
+    attention_dim: 64
+    attention_dropout: [0, 0]
+    batch_size: 4096
+    dataset_id: frappe_x1_04e961e9
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: AFM
+    model_id: AFM_base
+    model_root: ./Frappe/AFM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_attention: true
+    use_hdf5: true
+    verbose: 1
+AFM_frappe_x1_008_35889f27:
+    attention_dim: 64
+    attention_dropout: [0.1, 0.1]
+    batch_size: 4096
+    dataset_id: frappe_x1_04e961e9
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: AFM
+    model_id: AFM_base
+    model_root: ./Frappe/AFM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_attention: true
+    use_hdf5: true
+    verbose: 1
+AFM_frappe_x1_009_19945476:
+    attention_dim: 64
+    attention_dropout: [0.2, 0.2]
+    batch_size: 4096
+    dataset_id: frappe_x1_04e961e9
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: AFM
+    model_id: AFM_base
+    model_root: ./Frappe/AFM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_attention: true
+    use_hdf5: true
+    verbose: 1
+AFM_frappe_x1_010_d58884d3:
+    attention_dim: 128
+    attention_dropout: [0, 0]
+    batch_size: 4096
+    dataset_id: frappe_x1_04e961e9
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: AFM
+    model_id: AFM_base
+    model_root: ./Frappe/AFM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_attention: true
+    use_hdf5: true
+    verbose: 1
+AFM_frappe_x1_011_2d591f68:
+    attention_dim: 128
+    attention_dropout: [0.1, 0.1]
+    batch_size: 4096
+    dataset_id: frappe_x1_04e961e9
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: AFM
+    model_id: AFM_base
+    model_root: ./Frappe/AFM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_attention: true
+    use_hdf5: true
+    verbose: 1
+AFM_frappe_x1_012_242dd9fd:
+    attention_dim: 128
+    attention_dropout: [0.2, 0.2]
+    batch_size: 4096
+    dataset_id: frappe_x1_04e961e9
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: AFM
+    model_id: AFM_base
+    model_root: ./Frappe/AFM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_attention: true
+    use_hdf5: true
+    verbose: 1
+AFM_frappe_x1_013_5671dff3:
+    attention_dim: 64
+    attention_dropout: [0, 0]
+    batch_size: 4096
+    dataset_id: frappe_x1_04e961e9
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: AFM
+    model_id: AFM_base
+    model_root: ./Frappe/AFM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_attention: true
+    use_hdf5: true
+    verbose: 1
+AFM_frappe_x1_014_9895c7ee:
+    attention_dim: 64
+    attention_dropout: [0.1, 0.1]
+    batch_size: 4096
+    dataset_id: frappe_x1_04e961e9
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: AFM
+    model_id: AFM_base
+    model_root: ./Frappe/AFM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_attention: true
+    use_hdf5: true
+    verbose: 1
+AFM_frappe_x1_015_ae17c0a8:
+    attention_dim: 64
+    attention_dropout: [0.2, 0.2]
+    batch_size: 4096
+    dataset_id: frappe_x1_04e961e9
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: AFM
+    model_id: AFM_base
+    model_root: ./Frappe/AFM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_attention: true
+    use_hdf5: true
+    verbose: 1
+AFM_frappe_x1_016_26a3b9ce:
+    attention_dim: 128
+    attention_dropout: [0, 0]
+    batch_size: 4096
+    dataset_id: frappe_x1_04e961e9
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: AFM
+    model_id: AFM_base
+    model_root: ./Frappe/AFM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_attention: true
+    use_hdf5: true
+    verbose: 1
+AFM_frappe_x1_017_a771093b:
+    attention_dim: 128
+    attention_dropout: [0.1, 0.1]
+    batch_size: 4096
+    dataset_id: frappe_x1_04e961e9
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: AFM
+    model_id: AFM_base
+    model_root: ./Frappe/AFM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_attention: true
+    use_hdf5: true
+    verbose: 1
+AFM_frappe_x1_018_c86fc45c:
+    attention_dim: 128
+    attention_dropout: [0.2, 0.2]
+    batch_size: 4096
+    dataset_id: frappe_x1_04e961e9
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: AFM
+    model_id: AFM_base
+    model_root: ./Frappe/AFM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_attention: true
+    use_hdf5: true
+    verbose: 1

@@ -1,9 +1,8 @@
-## xDeepFM_Criteo_x4_002
+## xDeepFM_criteo_x4_002
 
-A notebook to benchmark xDeepFM on Criteo_x4_002 dataset.
+A hands-on guide to run the xDeepFM model on the Criteo_x4_002 dataset.
 
-Author: [XUEPAI Team](https://github.com/xue-pai)
-
+Author: [XUEPAI](https://github.com/xue-pai)
 
 ### Index
 [Environments](#Environments) | [Dataset](#Dataset) | [Code](#Code) | [Results](#Results) | [Logs](#Logs)
@@ -12,43 +11,60 @@ Author: [XUEPAI Team](https://github.com/xue-pai)
 + Hardware
 
   ```python
-  CPU: Intel(R) Xeon(R) CPU E5-2690 v4 @ 2.6GHz
-  RAM: 500G+
+  CPU: Intel(R) Xeon(R) CPU E5-2690 v4 @ 2.60GHz
+  GPU: Tesla P100 16G
+  RAM: 755G
+
   ```
+
 + Software
 
   ```python
+  CUDA: 10.0
   python: 3.6.5
-  pandas: 1.0.0
+  pytorch: 1.0.1.post2
+  pandas: 0.23.0
   numpy: 1.18.1
+  scipy: 1.1.0
+  sklearn: 0.23.1
+  pyyaml: 5.1
+  h5py: 2.7.1
+  tqdm: 4.59.0
+  fuxictr: 1.0.2
   ```
 
 ### Dataset
-In this setting, we follow the winner's solution of the Criteo challenge to discretize each integer value x to ⌊log2 (x)⌋, if x > 2; and x = 1 otherwise. For all categorical fields, we replace infrequent features with a default <OOV> token by setting the threshold min_category_count=2.
+Dataset ID: [Criteo_x4_002](https://github.com/openbenchmark/BARS/blob/master/ctr_prediction/datasets/Criteo/README.md#Criteo_x4_002). Please refer to the dataset details to get data ready.
 
-We fix embedding_dim=40 in this setting.
 ### Code
-1. Install FuxiCTR
-  
-    Install FuxiCTR via `pip install fuxictr==1.0` to get all dependencies ready. Then download [the FuxiCTR repository](https://github.com/huawei-noah/benchmark/archive/53e314461c19dbc7f462b42bf0f0bfae020dc398.zip) to your local path.
 
-2. Downalod the dataset and run [the preprocessing script](https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/datasets/Criteo/Criteo_x4/split_criteo_x4.py) for data splitting. 
+We use [FuxiCTR-v1.0.2](fuxictr_url) for this experiment. See model code: [xDeepFM](https://github.com/xue-pai/FuxiCTR/blob/v1.0.2/fuxictr/pytorch/models/xDeepFM.py).
 
-3. Download the hyper-parameter configuration file: [xDeepFM_criteo_x4_tuner_config_02.yaml](./002/xDeepFM_criteo_x4_tuner_config_02.yaml)
+Running steps:
 
-4. Run the following script to reproduce the result. 
-  + --config: The config file that defines the tuning space
-  + --tag: Specify which expid to run (each expid corresponds to a specific setting of hyper-parameters in the tunner space)
-  + --gpu: The available gpus for parameters tuning.
+1. Download [FuxiCTR-v1.0.2](fuxictr_url) and install all the dependencies listed in the [environments](#environments). Then modify [run_expid.py](./run_expid.py#L5) to add the FuxiCTR library to system path
+    
+    ```python
+    sys.path.append('YOUR_PATH_TO_FuxiCTR/')
+    ```
 
-  ```bash
-  cd FuxiCTR/benchmarks
-  python run_param_tuner.py --config YOUR_PATH/002/xDeepFM_criteo_x4_tuner_config_02.yaml --tag 055 --gpu 0
-  ```
+2. Create a data directory and put the downloaded csv files in `../data/Avazu/Avazu_x1`.
+
+3. Both `dataset_config.yaml` and `model_config.yaml` files are available in [xDeepFM_criteo_x4_tuner_config_03](./xDeepFM_criteo_x4_tuner_config_03). Make sure the data paths in `dataset_config.yaml` are correctly set to what we create in the last step.
+
+4. Run the following script to start.
+
+    ```bash
+    cd xDeepFM_criteo_x4_002
+    nohup python run_expid.py --config ./xDeepFM_criteo_x4_tuner_config_03 --expid xDeepFM_criteo_x4_003_c601dd6b --gpu 0 > run.log &
+    tail -f run.log
+    ```
+
 ### Results
-```python
-[Metrics] logloss: 0.437532 - AUC: 0.814415
-```
+
+| logloss | AUC  |
+|:--------------------:|:--------------------:|
+| 0.437532 | 0.814415  |
 
 
 ### Logs
@@ -156,7 +172,7 @@ We fix embedding_dim=40 in this setting.
 2020-02-23 16:23:01,290 P12767 INFO --- 7335/7335 batches finished ---
 2020-02-23 16:23:01,358 P12767 INFO Train loss: 0.427982
 2020-02-23 16:23:01,358 P12767 INFO Training finished.
-2020-02-23 16:23:01,358 P12767 INFO Load best model: /home/hispace/container/data/xxx/FuxiCTR/benchmarks/Criteo/xDeepFM_criteo/criteo_x4_001_be98441d/xDeepFM_criteo_x4_003_364b7497_criteo_x4_001_be98441d_model.ckpt
+2020-02-23 16:23:01,358 P12767 INFO Load best model: /home/XXX/FuxiCTR/benchmarks/Criteo/xDeepFM_criteo/criteo_x4_001_be98441d/xDeepFM_criteo_x4_003_364b7497_criteo_x4_001_be98441d_model.ckpt
 2020-02-23 16:23:02,629 P12767 INFO ****** Train/validation evaluation ******
 2020-02-23 16:34:40,069 P12767 INFO [Metrics] logloss: 0.423823 - AUC: 0.828838
 2020-02-23 16:36:07,533 P12767 INFO [Metrics] logloss: 0.437944 - AUC: 0.813975

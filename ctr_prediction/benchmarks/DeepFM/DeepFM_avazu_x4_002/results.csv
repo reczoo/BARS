@@ -1,0 +1,1 @@
+ 20200303-181806,[command] python benchmark.py --version pytorch --config Avazu/DeepFM_avazu/DeepFM_avazu_x4_tuner_config_07 --expid DeepFM_avazu_x4_003_f11d0986 --gpu 0,[exp_id] DeepFM_avazu_x4_003_f11d0986,[dataset_id] avazu_x4_001_d45ad60e,[train] logloss: 0.318769 - AUC: 0.868529,[val] logloss: 0.370368 - AUC: 0.795802,[test] logloss: 0.370178 - AUC: 0.796177

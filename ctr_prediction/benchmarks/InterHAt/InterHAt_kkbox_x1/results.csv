@@ -1,0 +1,1 @@
+ 20220227-214209,[command] python run_expid.py --config KKBox/InterHAt_kkbox_x1/InterHAt_kkbox_x1_tuner_config_05 --expid InterHAt_kkbox_x1_007_5a759e50 --gpu 0,[exp_id] InterHAt_kkbox_x1_007_5a759e50,[dataset_id] kkbox_x1_227d337d,[train] N.A.,[val] logloss: 0.486820 - AUC: 0.845579,[test] logloss: 0.486302 - AUC: 0.845923

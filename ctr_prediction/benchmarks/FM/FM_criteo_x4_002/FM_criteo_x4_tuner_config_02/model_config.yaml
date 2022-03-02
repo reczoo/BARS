@@ -1,0 +1,27 @@
+FM_criteo_x4_003_608b63aa:
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FM
+    model_id: FM_criteo_x4
+    model_root: ./Criteo/FM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: l2(1.e-6)
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3

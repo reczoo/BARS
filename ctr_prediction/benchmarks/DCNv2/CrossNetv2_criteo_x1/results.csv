@@ -1,0 +1,1 @@
+ 20220121-145039,[command] python run_expid.py --version pytorch --config Criteo/DCNv2_criteo_x1/CrossNetv2_criteo_x1_tuner_config_01 --expid DCNv2_criteo_x1_008_43e17586 --gpu 7,[exp_id] DCNv2_criteo_x1_008_43e17586,[dataset_id] criteo_x1_7b681156,[train] N.A.,[val] AUC: 0.812447 - logloss: 0.439698,[test] AUC: 0.812727 - logloss: 0.439273

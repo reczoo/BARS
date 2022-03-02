@@ -1,0 +1,1 @@
+ 20200323-030025,[command] python benchmark.py --version pytorch --config Avazu/xDeepFM_avazu/xDeepFM_avazu_x4_tuner_config_08 --expid xDeepFM_avazu_x4_008_3aefa952 --gpu 1,[exp_id] xDeepFM_avazu_x4_008_3aefa952,[dataset_id] avazu_x4_001_d45ad60e,[train] logloss: 0.317834 - AUC: 0.871821,[val] logloss: 0.369772 - AUC: 0.796629,[test] logloss: 0.369703 - AUC: 0.796744

@@ -1,0 +1,1 @@
+ 20220125-144759,[command] python run_expid.py --version pytorch --config Frappe/LR_frappe_x1/LR_frappe_x1_tuner_config_01 --expid LR_frappe_x1_001_ff730f43 --gpu 0,[exp_id] LR_frappe_x1_001_ff730f43,[dataset_id] frappe_x1_04e961e9,[train] N.A.,[val] AUC: 0.937734 - logloss: 0.305725,[test] AUC: 0.935584 - logloss: 0.307643

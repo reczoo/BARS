@@ -1,0 +1,1 @@
+ 20200223-155500,[command] python benchmark.py --version pytorch --config Avazu/FM_avazu/FM_avazu_x4_tuner_config_04 --expid FM_avazu_x4_003_509e8ea6 --gpu 0,[exp_id] FM_avazu_x4_003_509e8ea6,[dataset_id] avazu_x4_001_d45ad60e,[train] logloss: 0.331818 - AUC: 0.853327,[val] logloss: 0.373535 - AUC: 0.790776,[test] logloss: 0.373561 - AUC: 0.790887

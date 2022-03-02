@@ -1,0 +1,1 @@
+ 20220126-131545,[command] python run_expid.py --version pytorch --config Avazu/FiBiNET_avazu_x1/FiBiNET_avazu_x1_tuner_config_06 --expid FiBiNET_avazu_x1_011_11e2ddd3 --gpu 2,[exp_id] FiBiNET_avazu_x1_011_11e2ddd3,[dataset_id] avazu_x1_3fb65689,[train] N.A.,[val] AUC: 0.746599 - logloss: 0.395933,[test] AUC: 0.764531 - logloss: 0.367292

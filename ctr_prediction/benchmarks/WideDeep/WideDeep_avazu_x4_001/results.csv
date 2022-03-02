@@ -1,0 +1,1 @@
+ 20200612-030447,[command] python benchmark.py --version pytorch --config Avazu/WideDeep_avazu/min2/WideDeep_avazu_x4_tuner_config_01 --expid WideDeep_avazu_x4_3bbbc4c9_016_2934bd82 --gpu 1,[exp_id] WideDeep_avazu_x4_3bbbc4c9_016_2934bd82,[dataset_id] avazu_x4_3bbbc4c9,[train] N.A.,[val] logloss: 0.372114 - AUC: 0.792644,[test] logloss: 0.371969 - AUC: 0.792869

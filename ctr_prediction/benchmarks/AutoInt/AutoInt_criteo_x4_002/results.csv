@@ -1,0 +1,1 @@
+ 20200604-153244,[command] python benchmark.py --version pytorch --config Criteo/AutoInt_criteo/AutoInt_criteo_x4_tuner_config_11 --expid AutoInt_criteo_x4_015_9c21dae1 --gpu 1,[exp_id] AutoInt_criteo_x4_015_9c21dae1,[dataset_id] criteo_x4_001_be98441d,[train] logloss: 0.424682 - AUC: 0.827847,[val] logloss: 0.439321 - AUC: 0.812559,[test] logloss: 0.439038 - AUC: 0.812877

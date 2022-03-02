@@ -1,0 +1,1 @@
+ 20220302-170224,[command] python run_expid.py --config Avazu/InterHAt_avazu_x4_001/InterHAt_avazu_x4_tuner_config_02/ --expid InterHAt_avazu_x4_027_db66045d --gpu 0,[exp_id] InterHAt_avazu_x4_027_db66045d,[dataset_id] avazu_x4_3bbbc4c9,[train] N.A.,[val] logloss: 0.375034 - AUC: 0.787974,[test] logloss: 0.374911 - AUC: 0.788180

@@ -1,0 +1,528 @@
+xDeepFM_avazu_x1_001_e019c455:
+    batch_norm: false
+    batch_size: 4096
+    cin_layer_units: [64]
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    dnn_hidden_units: [400, 400, 400]
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./Avazu/xDeepFM_avazu_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+xDeepFM_avazu_x1_002_937cff08:
+    batch_norm: true
+    batch_size: 4096
+    cin_layer_units: [64]
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    dnn_hidden_units: [400, 400, 400]
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./Avazu/xDeepFM_avazu_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+xDeepFM_avazu_x1_003_b18d2c2c:
+    batch_norm: false
+    batch_size: 4096
+    cin_layer_units: [128]
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    dnn_hidden_units: [400, 400, 400]
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./Avazu/xDeepFM_avazu_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+xDeepFM_avazu_x1_004_40639bf6:
+    batch_norm: true
+    batch_size: 4096
+    cin_layer_units: [128]
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    dnn_hidden_units: [400, 400, 400]
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./Avazu/xDeepFM_avazu_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+xDeepFM_avazu_x1_005_e8a3465a:
+    batch_norm: false
+    batch_size: 4096
+    cin_layer_units: [32]
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    dnn_hidden_units: [400, 400, 400]
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./Avazu/xDeepFM_avazu_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+xDeepFM_avazu_x1_006_6ef1ee11:
+    batch_norm: true
+    batch_size: 4096
+    cin_layer_units: [32]
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    dnn_hidden_units: [400, 400, 400]
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./Avazu/xDeepFM_avazu_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+xDeepFM_avazu_x1_007_5eb76bbf:
+    batch_norm: false
+    batch_size: 4096
+    cin_layer_units: [32, 32]
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    dnn_hidden_units: [400, 400, 400]
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./Avazu/xDeepFM_avazu_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+xDeepFM_avazu_x1_008_62353ea8:
+    batch_norm: true
+    batch_size: 4096
+    cin_layer_units: [32, 32]
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    dnn_hidden_units: [400, 400, 400]
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./Avazu/xDeepFM_avazu_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+xDeepFM_avazu_x1_009_b54404de:
+    batch_norm: false
+    batch_size: 4096
+    cin_layer_units: [64]
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    dnn_hidden_units: [400, 400, 400]
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./Avazu/xDeepFM_avazu_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+xDeepFM_avazu_x1_010_c75e3a95:
+    batch_norm: true
+    batch_size: 4096
+    cin_layer_units: [64]
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    dnn_hidden_units: [400, 400, 400]
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./Avazu/xDeepFM_avazu_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+xDeepFM_avazu_x1_011_2fd7948e:
+    batch_norm: false
+    batch_size: 4096
+    cin_layer_units: [128]
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    dnn_hidden_units: [400, 400, 400]
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./Avazu/xDeepFM_avazu_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+xDeepFM_avazu_x1_012_9a6e8e85:
+    batch_norm: true
+    batch_size: 4096
+    cin_layer_units: [128]
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    dnn_hidden_units: [400, 400, 400]
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./Avazu/xDeepFM_avazu_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+xDeepFM_avazu_x1_013_cd22e250:
+    batch_norm: false
+    batch_size: 4096
+    cin_layer_units: [32]
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    dnn_hidden_units: [400, 400, 400]
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./Avazu/xDeepFM_avazu_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+xDeepFM_avazu_x1_014_1f09befd:
+    batch_norm: true
+    batch_size: 4096
+    cin_layer_units: [32]
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    dnn_hidden_units: [400, 400, 400]
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./Avazu/xDeepFM_avazu_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+xDeepFM_avazu_x1_015_350881a9:
+    batch_norm: false
+    batch_size: 4096
+    cin_layer_units: [32, 32]
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    dnn_hidden_units: [400, 400, 400]
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./Avazu/xDeepFM_avazu_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+xDeepFM_avazu_x1_016_944861ec:
+    batch_norm: true
+    batch_size: 4096
+    cin_layer_units: [32, 32]
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    dnn_hidden_units: [400, 400, 400]
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./Avazu/xDeepFM_avazu_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1

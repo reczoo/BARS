@@ -1,9 +1,8 @@
-## DeepFM_KKBox_x4_001
+## DeepFM_kkbox_x1
 
-A notebook to benchmark DeepFM on KKBox_x4_001 dataset.
+A hands-on guide to run the DeepFM model on the Kkbox_x1 dataset.
 
-Author: [XUEPAI Team](https://github.com/xue-pai)
-
+Author: [XUEPAI](https://github.com/xue-pai)
 
 ### Index
 [Environments](#Environments) | [Dataset](#Dataset) | [Code](#Code) | [Results](#Results) | [Logs](#Logs)
@@ -12,49 +11,60 @@ Author: [XUEPAI Team](https://github.com/xue-pai)
 + Hardware
 
   ```python
-  CPU: Intel(R) Xeon(R) CPU E5-2690 v4 @ 2.6GHz
-  RAM: 500G+
+  CPU: Intel(R) Xeon(R) CPU E5-2690 v4 @ 2.60GHz
+  GPU: Tesla P100 16G
+  RAM: 755G
+
   ```
+
 + Software
 
   ```python
+  CUDA: 10.0
   python: 3.6.5
-  pandas: 1.0.0
+  pytorch: 1.0.1.post2
+  pandas: 0.23.0
   numpy: 1.18.1
+  scipy: 1.1.0
+  sklearn: 0.23.1
+  pyyaml: 5.1
+  h5py: 2.7.1
+  tqdm: 4.59.0
+  fuxictr: 1.0.2
   ```
 
 ### Dataset
-In this setting, For all categorical fields, we replace infrequent features with a default <OOV> token by setting the threshold min_category_count=10.
-
-To make a fair comparison, we fix embedding_dim=128, which performs well.
-
+Dataset ID: [Kkbox_x1](https://github.com/openbenchmark/BARS/blob/master/ctr_prediction/datasets/Kkbox/README.md#Kkbox_x1). Please refer to the dataset details to get data ready.
 
 ### Code
-1. Install FuxiCTR
-  
-    Install FuxiCTR via `pip install fuxictr==1.0` to get all dependencies ready. Then download [the FuxiCTR repository](https://github.com/huawei-noah/benchmark/archive/53e314461c19dbc7f462b42bf0f0bfae020dc398.zip) to your local path.
 
-2. Downalod the dataset and run [the preprocessing script](https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/datasets/KKBox/KKBox_x4/split_kkbox_x4.py) for data splitting. 
+We use [FuxiCTR-v1.0.2](fuxictr_url) for this experiment. See model code: [DeepFM](https://github.com/xue-pai/FuxiCTR/blob/v1.0.2/fuxictr/pytorch/models/DeepFM.py).
 
-3. Download the hyper-parameter configuration file: [DeepFM_kkbox_x4_tuner_config_03.yaml](./DeepFM_kkbox_x4_tuner_config_03.yaml)
+Running steps:
 
-4. Run the following script to reproduce the result. 
-  + --config: The config file that defines the tuning space
-  + --tag: Specify which expid to run (each expid corresponds to a specific setting of hyper-parameters in the tunner space)
-  + --gpu: The available gpus for parameters tuning.
+1. Download [FuxiCTR-v1.0.2](fuxictr_url) and install all the dependencies listed in the [environments](#environments). Then modify [run_expid.py](./run_expid.py#L5) to add the FuxiCTR library to system path
+    
+    ```python
+    sys.path.append('YOUR_PATH_TO_FuxiCTR/')
+    ```
 
-  ```bash
-  cd FuxiCTR/benchmarks
-  python run_param_tuner.py --config YOUR_PATH/DeepFM_kkbox_x4_tuner_config_03.yaml --tag 005 --gpu 0
-  ```
+2. Create a data directory and put the downloaded csv files in `../data/Avazu/Avazu_x1`.
 
+3. Both `dataset_config.yaml` and `model_config.yaml` files are available in [DeepFM_kkbox_x1_tuner_config_03](./DeepFM_kkbox_x1_tuner_config_03). Make sure the data paths in `dataset_config.yaml` are correctly set to what we create in the last step.
 
+4. Run the following script to start.
 
+    ```bash
+    cd DeepFM_kkbox_x1
+    nohup python run_expid.py --config ./DeepFM_kkbox_x1_tuner_config_03 --expid DeepFM_kkbox_x1_005_32cb2ca8 --gpu 0 > run.log &
+    tail -f run.log
+    ```
 
 ### Results
-```python
-[Metrics] logloss: 0.478468 - AUC: 0.853109
-```
+
+| logloss | AUC  |
+|:--------------------:|:--------------------:|
+| 0.478468 | 0.853109  |
 
 
 ### Logs
@@ -274,7 +284,7 @@ To make a fair comparison, we fix embedding_dim=128, which performs well.
 2020-04-11 04:40:48,091 P36740 INFO --- 591/591 batches finished ---
 2020-04-11 04:40:48,153 P36740 INFO Train loss: 0.421003
 2020-04-11 04:40:48,153 P36740 INFO Training finished.
-2020-04-11 04:40:48,154 P36740 INFO Load best model: /home/xxx/xxx/OpenCTR1030/benchmarks/KKBox/DeepFM_kkbox/kkbox_x4_001_c5c9c6e3/DeepFM_kkbox_x4_005_4366b458_model.ckpt
+2020-04-11 04:40:48,154 P36740 INFO Load best model: /home/XXX/benchmarks/KKBox/DeepFM_kkbox/kkbox_x4_001_c5c9c6e3/DeepFM_kkbox_x4_005_4366b458_model.ckpt
 2020-04-11 04:40:48,376 P36740 INFO ****** Train/validation evaluation ******
 2020-04-11 04:42:28,598 P36740 INFO [Metrics] logloss: 0.379490 - AUC: 0.911731
 2020-04-11 04:42:41,196 P36740 INFO [Metrics] logloss: 0.478818 - AUC: 0.852763

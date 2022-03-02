@@ -1,8 +1,8 @@
 ## DeepFM_avazu_x1
 
-A guide to benchmark DeepFM on [Avazu_x1](https://github.com/openbenchmark/BARS/blob/master/ctr_prediction/datasets/Avazu/README.md#Avazu_x1).
+A hands-on guide to run the DeepFM model on the Avazu_x1 dataset.
 
-Author: [zhujiem](https://github.com/zhujiem)
+Author: [XUEPAI](https://github.com/xue-pai)
 
 ### Index
 [Environments](#Environments) | [Dataset](#Dataset) | [Code](#Code) | [Results](#Results) | [Logs](#Logs)
@@ -14,11 +14,13 @@ Author: [zhujiem](https://github.com/zhujiem)
   CPU: Intel(R) Xeon(R) CPU E5-2690 v4 @ 2.6GHz
   GPU: Tesla P100 16G
   RAM: 755G
+
   ```
+
 + Software
 
   ```python
-  CUDA: 10.0.130
+  CUDA: 11.4
   python: 3.6.5
   pytorch: 1.0.1.post2
   pandas: 0.23.0
@@ -28,39 +30,51 @@ Author: [zhujiem](https://github.com/zhujiem)
   pyyaml: 5.1
   h5py: 2.7.1
   tqdm: 4.59.0
+  fuxictr: 1.1.0
   ```
 
 ### Dataset
-
-To reproduce the dataset splitting, please follow the details of [Avazu_x1](https://github.com/openbenchmark/BARS/blob/master/ctr_prediction/datasets/Avazu/README.md#Avazu_x1) to get data ready.
+Dataset ID: [Avazu_x1](https://github.com/openbenchmark/BARS/blob/master/ctr_prediction/datasets/Avazu/README.md#Avazu_x1). Please refer to the dataset details to get data ready.
 
 ### Code
 
-We use [FuxiCTR v1.1](https://github.com/xue-pai/FuxiCTR/tree/v1.1.0) for this experiment. The model implementation can be found [here](https://github.com/xue-pai/FuxiCTR/blob/v1.1.0/fuxictr/pytorch/models/DeepFM.py).
+We use [FuxiCTR-v1.1.0](fuxictr_url) for this experiment. See model code: [DeepFM](https://github.com/xue-pai/FuxiCTR/blob/v1.1.0/fuxictr/pytorch/models/DeepFM.py).
 
-1. Install FuxiCTR and all the dependencies. 
-   ```bash
-   pip install fuxictr==1.1.*
-   ```
-   
-2. Put the downloaded dataset in `../data/Avazu/Avazu_x1`. 
+Running steps:
 
-3. The dataset_config and model_config files are available in the sub-folder [DeepFM_avazu_x1_tuner_config_02](./DeepFM_avazu_x1_tuner_config_02).
+1. Download [FuxiCTR-v1.1.0](fuxictr_url) and install all the dependencies listed in the [environments](#environments). Then modify [run_expid.py](./run_expid.py#L5) to add the FuxiCTR library to system path
+    
+    ```python
+    sys.path.append('YOUR_PATH_TO_FuxiCTR/')
+    ```
 
-   Note that in this setting, we follow the AFN work to fix embedding_dim=10, batch_size=4096, and MLP_hidden_units=[400, 400, 400] to make fair comparisons. Other hyper-parameters are tuned via grid search.
+2. Create a data directory and put the downloaded csv files in `../data/Avazu/Avazu_x1`.
+
+3. Both `dataset_config.yaml` and `model_config.yaml` files are available in [DeepFM_avazu_x1_tuner_config_02](./DeepFM_avazu_x1_tuner_config_02). Make sure the data paths in `dataset_config.yaml` are correctly set to what we create in the last step.
 
 4. Run the following script to start.
 
-  ```bash
-  cd BARS/ctr_prediction/benchmarks/DeepFM/DeepFM_avazu_x1
-  nohup python run_expid.py --version pytorch --config DeepFM_avazu_x1_tuner_config_02 --expid DeepFM_avazu_x1_004_514a2b87 --gpu 0 > run.log & 
-  tail -f run.log
-  ```
+    ```bash
+    cd DeepFM_avazu_x1
+    nohup python run_expid.py --config ./DeepFM_avazu_x1_tuner_config_02 --expid DeepFM_avazu_x1_004_514a2b87 --gpu 0 > run.log &
+    tail -f run.log
+    ```
 
 ### Results
-```python
-[Metrics] AUC: 0.764834 - logloss: 0.366694
-```
+
+Total 5 runs:
+
+| Runs | AUC | logloss  |
+|:--------------------:|:--------------------:|:--------------------:|
+| 1 | 0.764834 | 0.366694  |
+| 2 | 0.764245 | 0.367372  |
+| 3 | 0.764242 | 0.367065  |
+| 4 | 0.764264 | 0.367133  |
+| 5 | 0.765346 | 0.366591  |
+| | | | 
+| Avg | 0.764586 | 0.366971 |
+| Std | &#177;0.00044213 | &#177;0.00028879 |
+
 
 ### Logs
 ```python
@@ -168,7 +182,7 @@ We use [FuxiCTR v1.1](https://github.com/xue-pai/FuxiCTR/tree/v1.1.0) for this e
 2022-01-19 02:53:36,048 P4432 INFO --- 6910/6910 batches finished ---
 2022-01-19 02:53:36,082 P4432 INFO Train loss: 0.391931
 2022-01-19 02:53:36,082 P4432 INFO Training finished.
-2022-01-19 02:53:36,082 P4432 INFO Load best model: /home/xxx/FINAL/FuxiCTR/benchmarks/Avazu/DeepFM_avazu_x1/avazu_x1_3fb65689/DeepFM_avazu_x1_004_514a2b87.model
+2022-01-19 02:53:36,082 P4432 INFO Load best model: /home/XXX/FuxiCTR/benchmarks/Avazu/DeepFM_avazu_x1/avazu_x1_3fb65689/DeepFM_avazu_x1_004_514a2b87.model
 2022-01-19 02:53:39,365 P4432 INFO ****** Validation evaluation ******
 2022-01-19 02:53:54,595 P4432 INFO [Metrics] AUC: 0.746620 - logloss: 0.395728
 2022-01-19 02:53:54,669 P4432 INFO ******** Test evaluation ********

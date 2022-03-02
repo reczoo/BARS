@@ -1,9 +1,8 @@
-## CIN_Criteo_x4_001
+## CIN_criteo_x4_001
 
-A notebook to benchmark CIN on Criteo_x4_001 dataset.
+A hands-on guide to run the xDeepFM model on the Criteo_x4_001 dataset.
 
-Author: [XUEPAI Team](https://github.com/xue-pai)
-
+Author: [XUEPAI](https://github.com/xue-pai)
 
 ### Index
 [Environments](#Environments) | [Dataset](#Dataset) | [Code](#Code) | [Results](#Results) | [Logs](#Logs)
@@ -12,47 +11,60 @@ Author: [XUEPAI Team](https://github.com/xue-pai)
 + Hardware
 
   ```python
-  CPU: Intel(R) Xeon(R) CPU E5-2690 v4 @ 2.6GHz
-  RAM: 500G+
+  CPU: Intel(R) Xeon(R) Gold 6278C CPU @ 2.60GHz
+  GPU: Tesla V100 32G
+  RAM: 755G
+
   ```
+
 + Software
 
   ```python
-  python: 3.6.5
-  pandas: 1.0.0
-  numpy: 1.18.1
+  CUDA: 10.2
+  python: 3.6.4
+  pytorch: 1.0.0
+  pandas: 0.22.0
+  numpy: 1.19.2
+  scipy: 1.5.4
+  sklearn: 0.22.1
+  pyyaml: 5.4.1
+  h5py: 2.8.0
+  tqdm: 4.60.0
+  fuxictr: 1.0.2
   ```
 
 ### Dataset
-This dataset split follows the setting in the AutoInt work. Specifically, we randomly split the data into 8:1:1 as the training set, validation set, and test set, respectively. To make it exactly reproducible, we reuse the code provided by AutoInt and control the random seed (i.e., seed=2018) for splitting.
+Dataset ID: [Criteo_x4_001](https://github.com/openbenchmark/BARS/blob/master/ctr_prediction/datasets/Criteo/README.md#Criteo_x4_001). Please refer to the dataset details to get data ready.
 
 ### Code
-1. Install FuxiCTR
-  
-    Install FuxiCTR via `pip install fuxictr==1.0` to get all dependencies ready. Then download [the FuxiCTR repository](https://github.com/huawei-noah/benchmark/archive/53e314461c19dbc7f462b42bf0f0bfae020dc398.zip) to your local path.
 
-2. Downalod the dataset and run [the preprocessing script](https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/datasets/Criteo/Criteo_x4/split_criteo_x4.py) for data splitting. 
+We use [FuxiCTR-v1.0.2](fuxictr_url) for this experiment. See model code: [xDeepFM](https://github.com/xue-pai/FuxiCTR/blob/v1.0.2/fuxictr/pytorch/models/xDeepFM.py).
 
-3. Download the hyper-parameter configuration file: [CIN_criteo_x4_tuner_config_01.yaml](./CIN_criteo_x4_tuner_config_01.yaml)
+Running steps:
 
-4. Run the following script to reproduce the result. 
-  + --config: The config file that defines the tuning space
-  + --tag: Specify which expid to run (each expid corresponds to a specific setting of hyper-parameters in the tunner space)
-  + --gpu: The available gpus for parameters tuning.
+1. Download [FuxiCTR-v1.0.2](fuxictr_url) and install all the dependencies listed in the [environments](#environments). Then modify [run_expid.py](./run_expid.py#L5) to add the FuxiCTR library to system path
+    
+    ```python
+    sys.path.append('YOUR_PATH_TO_FuxiCTR/')
+    ```
 
-  ```bash
-  cd FuxiCTR/benchmarks
-  python run_param_tuner.py --config YOUR_PATH/CIN_criteo_x4_tuner_config_01.yaml --tag 007 --gpu 0
-  ```
+2. Create a data directory and put the downloaded csv files in `../data/Avazu/Avazu_x1`.
 
+3. Both `dataset_config.yaml` and `model_config.yaml` files are available in [CIN_criteo_x4_tuner_config_01](./CIN_criteo_x4_tuner_config_01). Make sure the data paths in `dataset_config.yaml` are correctly set to what we create in the last step.
 
+4. Run the following script to start.
 
-
+    ```bash
+    cd CIN_criteo_x4_001
+    nohup python run_expid.py --config ./CIN_criteo_x4_tuner_config_01 --expid xDeepFM_criteo_x4_007_f93ff06e --gpu 0 > run.log &
+    tail -f run.log
+    ```
 
 ### Results
-```python
-[Metrics] logloss: 0.439382 - AUC: 0.812719
-```
+
+| logloss | AUC  |
+|:--------------------:|:--------------------:|
+| 0.439382 | 0.812719  |
 
 
 ### Logs
@@ -187,7 +199,7 @@ This dataset split follows the setting in the AutoInt work. Specifically, we ran
 2020-07-13 12:40:14,779 P2861 INFO --- 3668/3668 batches finished ---
 2020-07-13 12:40:14,852 P2861 INFO Train loss: 0.430462
 2020-07-13 12:40:14,852 P2861 INFO Training finished.
-2020-07-13 12:40:14,852 P2861 INFO Load best model: /cache/xxx/FuxiCTR/benchmarks/Criteo/CIN_criteo/min10/criteo_x4_5c863b0f/xDeepFM_criteo_x4_5c863b0f_007_52d2bf35_model.ckpt
+2020-07-13 12:40:14,852 P2861 INFO Load best model: /cache/XXX/FuxiCTR/benchmarks/Criteo/CIN_criteo/min10/criteo_x4_5c863b0f/xDeepFM_criteo_x4_5c863b0f_007_52d2bf35_model.ckpt
 2020-07-13 12:40:15,118 P2861 INFO ****** Train/validation evaluation ******
 2020-07-13 12:44:00,792 P2861 INFO [Metrics] logloss: 0.426205 - AUC: 0.826317
 2020-07-13 12:44:27,269 P2861 INFO [Metrics] logloss: 0.439707 - AUC: 0.812359
@@ -197,6 +209,5 @@ This dataset split follows the setting in the AutoInt work. Specifically, we ran
 2020-07-13 12:44:28,334 P2861 INFO Test samples: total/4584062, pos/1174544, neg/3409518, ratio/25.62%
 2020-07-13 12:44:28,334 P2861 INFO Loading test data done.
 2020-07-13 12:44:58,411 P2861 INFO [Metrics] logloss: 0.439382 - AUC: 0.812719
-
 
 ```

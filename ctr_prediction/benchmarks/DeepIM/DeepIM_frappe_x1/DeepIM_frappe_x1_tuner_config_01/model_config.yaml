@@ -1,0 +1,33 @@
+DeepIM_frappe_x1_001_a11ff117:
+    batch_size: 4096
+    dataset_id: frappe_x1_04e961e9
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    im_batch_norm: false
+    im_order: 3
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DeepIM
+    model_id: DeepIM_base
+    model_root: ./Frappe/DeepIM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_batch_norm: true
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1

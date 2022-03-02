@@ -1,0 +1,1 @@
+ 20200211-164747,[command] python benchmark.py --version pytorch --config Criteo/FGCNN_criteo/FGCNN_criteo_x4_tuner_config_01 --expid FGCNN_criteo_x4_004_4e919cfc --gpu 2,[exp_id] FGCNN_criteo_x4_004_4e919cfc,[dataset_id] criteo_x4_001_be98441d,[train] logloss: 0.420347 - AUC: 0.832032,[val] logloss: 0.438523 - AUC: 0.813785,[test] logloss: 0.438142 - AUC: 0.814181

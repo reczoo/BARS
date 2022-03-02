@@ -1,0 +1,1 @@
+ 20210107-175038,[command] python benchmark.py --version pytorch --config MovielensLatest/FM_movielenslatest_x1/FM_movielenslatest_x1_tuner_config_03 --expid FM_movielenslatest_x1_003_b52fd4c1 --gpu 1,[exp_id] FM_movielenslatest_x1_003_b52fd4c1,[dataset_id] movielenslatest_x1_bcd26aed,[train] N.A.,[val] AUC: 0.943324 - logloss: 0.273150,[test] AUC: 0.943435 - logloss: 0.272893

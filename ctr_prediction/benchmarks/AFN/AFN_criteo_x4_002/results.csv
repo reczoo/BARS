@@ -1,0 +1,1 @@
+ 20220301-181052,[command] python run_expid.py --config Criteo/AFN_criteo_x4_002/AFN_criteo_x4_tuner_config_01 --expid AFN_criteo_x4_080_cf447dc2 --gpu 0,[exp_id] AFN_criteo_x4_080_cf447dc2,[dataset_id] criteo_x4_41e78b20,[train] N.A.,[val] logloss: 0.442363 - AUC: 0.809064,[test] logloss: 0.441816 - AUC: 0.809735

@@ -1,0 +1,1 @@
+ 20200511-194538,[command] python benchmark.py --version pytorch --config Avazu/AutoInt_avazu/AutoInt_avazu_x4_tuner_config_04 --expid AutoInt_avazu_x4_013_3a66ab94 --gpu 1,[exp_id] AutoInt_avazu_x4_013_3a66ab94,[dataset_id] avazu_x4_001_d45ad60e,[train] N.A.,[val] logloss: 0.372695 - AUC: 0.791962,[test] logloss: 0.372581 - AUC: 0.792228

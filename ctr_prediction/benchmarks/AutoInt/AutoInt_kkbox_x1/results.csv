@@ -1,0 +1,1 @@
+ 20200508-133147,[command] python benchmark.py --version pytorch --config KKBox/AutoInt_kkbox/AutoInt_kkbox_x1_tuner_config_03 --expid AutoInt_kkbox_x1_004_b4c26cf3 --gpu 0,[exp_id] AutoInt_kkbox_x1_004_b4c26cf3,[dataset_id] kkbox_x1_001_c5c9c6e3,[train] logloss: 0.414526 - AUC: 0.891056,[val] logloss: 0.492257 - AUC: 0.843571,[test] logloss: 0.491948 - AUC: 0.843641

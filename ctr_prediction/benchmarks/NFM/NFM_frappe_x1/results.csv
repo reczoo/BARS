@@ -1,0 +1,1 @@
+ 20220128-161830,[command] python run_expid.py --version pytorch --config Frappe/NFM_frappe_x1/NFM_frappe_x1_tuner_config_01 --expid NFM_frappe_x1_012_3ebff53c --gpu 1,[exp_id] NFM_frappe_x1_012_3ebff53c,[dataset_id] frappe_x1_04e961e9,[train] N.A.,[val] AUC: 0.980733 - logloss: 0.203337,[test] AUC: 0.980409 - logloss: 0.205795

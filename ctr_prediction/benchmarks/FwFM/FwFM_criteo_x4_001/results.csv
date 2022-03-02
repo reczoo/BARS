@@ -1,0 +1,1 @@
+ 20220302-181209,[command] python run_expid.py --config Criteo/FwFM_criteo_x4_001/FwFM_criteo_x4_tuner_config_02/ --expid FwFM_criteo_x4_002_3519edbe --gpu 1,[exp_id] FwFM_criteo_x4_002_3519edbe,[dataset_id] criteo_x4_9ea3bdfc,[train] N.A.,[val] logloss: 0.441087 - AUC: 0.810875,[test] logloss: 0.440797 - AUC: 0.811214

@@ -1,0 +1,1 @@
+ 20220120-082010,[command] python run_expid.py --version pytorch --config Frappe/FmFM_frappe_x1/FmFM_frappe_x1_tuner_config_02 --expid FmFM_frappe_x1_004_2445bd6f --gpu 0,[exp_id] FmFM_frappe_x1_004_2445bd6f,[dataset_id] frappe_x1_04e961e9,[train] N.A.,[val] AUC: 0.975792 - logloss: 0.196554,[test] AUC: 0.974947 - logloss: 0.200439

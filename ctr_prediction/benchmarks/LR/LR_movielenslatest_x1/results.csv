@@ -1,0 +1,1 @@
+ 20220125-140258,[command] python run_expid.py --version pytorch --config Movielens/LR_movielenslatest_x1/LR_movielenslatest_x1_tuner_config_02 --expid LR_movielenslatest_x1_001_7530c4ec --gpu 0,[exp_id] LR_movielenslatest_x1_001_7530c4ec,[dataset_id] movielenslatest_x1_cd32d937,[train] N.A.,[val] AUC: 0.934752 - logloss: 0.319903,[test] AUC: 0.934189 - logloss: 0.320077

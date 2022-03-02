@@ -1,0 +1,1 @@
+ 20220204-111604,[command] python run_expid.py --version pytorch --config Frappe/xDeepFM_frappe_x1/CIN_frappe_x1_tuner_config_03 --expid xDeepFM_frappe_x1_008_9e8759c4 --gpu 1,[exp_id] xDeepFM_frappe_x1_008_9e8759c4,[dataset_id] frappe_x1_04e961e9,[train] N.A.,[val] AUC: 0.979186 - logloss: 0.230473,[test] AUC: 0.978241 - logloss: 0.235220

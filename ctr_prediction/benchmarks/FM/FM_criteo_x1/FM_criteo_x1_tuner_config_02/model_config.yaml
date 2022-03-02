@@ -1,4 +1,4 @@
-FM_criteo_x1_001_8f8d954b:
+FM_criteo_x1_001_bea53d16:
     batch_size: 4096
     dataset_id: criteo_x1_7b681156
     debug: false
@@ -15,7 +15,6 @@ FM_criteo_x1_001_8f8d954b:
     monitor_mode: max
     num_workers: 3
     optimizer: adam
-    data_block_size: -1
     patience: 2
     pickle_feature_encoder: true
     regularizer: 5.0e-06
@@ -25,7 +24,7 @@ FM_criteo_x1_001_8f8d954b:
     task: binary_classification
     use_hdf5: true
     verbose: 1
-FM_criteo_x1_002_8c23840e:
+FM_criteo_x1_002_d1066fb4:
     batch_size: 4096
     dataset_id: criteo_x1_7b681156
     debug: false
@@ -42,7 +41,6 @@ FM_criteo_x1_002_8c23840e:
     monitor_mode: max
     num_workers: 3
     optimizer: adam
-    data_block_size: -1
     patience: 2
     pickle_feature_encoder: true
     regularizer: 5.0e-05

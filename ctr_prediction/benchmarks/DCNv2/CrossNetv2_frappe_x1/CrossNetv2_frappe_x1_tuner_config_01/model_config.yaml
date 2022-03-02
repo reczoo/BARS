@@ -1,0 +1,570 @@
+DCNv2_frappe_x1_001_881fe47a:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: frappe_x1_04e961e9
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Frappe/DCN_frappe_x1/
+    model_structure: crossnet_only
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_cross_layers: 4
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [500, 500, 500]
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_frappe_x1_002_ce45125c:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: frappe_x1_04e961e9
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Frappe/DCN_frappe_x1/
+    model_structure: crossnet_only
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_cross_layers: 5
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [500, 500, 500]
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_frappe_x1_003_d9ac4b92:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: frappe_x1_04e961e9
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Frappe/DCN_frappe_x1/
+    model_structure: crossnet_only
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_cross_layers: 6
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [500, 500, 500]
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_frappe_x1_004_a3c6c741:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: frappe_x1_04e961e9
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Frappe/DCN_frappe_x1/
+    model_structure: crossnet_only
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_cross_layers: 7
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [500, 500, 500]
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_frappe_x1_005_2fae2f5f:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: frappe_x1_04e961e9
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Frappe/DCN_frappe_x1/
+    model_structure: crossnet_only
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_cross_layers: 8
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [500, 500, 500]
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_frappe_x1_006_86eaff03:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: frappe_x1_04e961e9
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Frappe/DCN_frappe_x1/
+    model_structure: crossnet_only
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_cross_layers: 4
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [500, 500, 500]
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_frappe_x1_007_588bf12a:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: frappe_x1_04e961e9
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Frappe/DCN_frappe_x1/
+    model_structure: crossnet_only
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_cross_layers: 5
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [500, 500, 500]
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_frappe_x1_008_124b5a5a:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: frappe_x1_04e961e9
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Frappe/DCN_frappe_x1/
+    model_structure: crossnet_only
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_cross_layers: 6
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [500, 500, 500]
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_frappe_x1_009_1f294cb2:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: frappe_x1_04e961e9
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Frappe/DCN_frappe_x1/
+    model_structure: crossnet_only
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_cross_layers: 7
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [500, 500, 500]
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_frappe_x1_010_342c8c19:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: frappe_x1_04e961e9
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Frappe/DCN_frappe_x1/
+    model_structure: crossnet_only
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_cross_layers: 8
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [500, 500, 500]
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_frappe_x1_011_9edf5883:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: frappe_x1_04e961e9
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Frappe/DCN_frappe_x1/
+    model_structure: crossnet_only
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_cross_layers: 4
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [500, 500, 500]
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_frappe_x1_012_2eafe651:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: frappe_x1_04e961e9
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Frappe/DCN_frappe_x1/
+    model_structure: crossnet_only
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_cross_layers: 5
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [500, 500, 500]
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_frappe_x1_013_b8408aa5:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: frappe_x1_04e961e9
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Frappe/DCN_frappe_x1/
+    model_structure: crossnet_only
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_cross_layers: 6
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [500, 500, 500]
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_frappe_x1_014_65599c96:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: frappe_x1_04e961e9
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Frappe/DCN_frappe_x1/
+    model_structure: crossnet_only
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_cross_layers: 7
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [500, 500, 500]
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_frappe_x1_015_96da292d:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: frappe_x1_04e961e9
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Frappe/DCN_frappe_x1/
+    model_structure: crossnet_only
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_cross_layers: 8
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [500, 500, 500]
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1

@@ -1,0 +1,1 @@
+ 20220121-000702,[command] python run_expid.py --version pytorch --config Avazu/DCN_avazu_x1/CrossNet_avazu_x1_tuner_config_01 --expid DCN_avazu_x1_002_ffba88fe --gpu 1,[exp_id] DCN_avazu_x1_002_ffba88fe,[dataset_id] avazu_x1_3fb65689,[train] N.A.,[val] AUC: 0.743454 - logloss: 0.397401,[test] AUC: 0.759728 - logloss: 0.368561

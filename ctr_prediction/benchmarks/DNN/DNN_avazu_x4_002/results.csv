@@ -1,0 +1,1 @@
+ 20200223-114425,[command] python benchmark.py --version pytorch --config Avazu/DNN_avazu/DNN_avazu_x4_tuner_config_03 --expid DNN_avazu_x4_003_58ecaddc --gpu 1,[exp_id] DNN_avazu_x4_003_58ecaddc,[dataset_id] avazu_x4_001_d45ad60e,[train] logloss: 0.321095 - AUC: 0.867518,[val] logloss: 0.370621 - AUC: 0.795628,[test] logloss: 0.370475 - AUC: 0.795887

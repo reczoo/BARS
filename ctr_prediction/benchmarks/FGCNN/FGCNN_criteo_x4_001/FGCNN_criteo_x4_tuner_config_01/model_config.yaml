@@ -1,0 +1,702 @@
+FGCNN_criteo_x4_001_4832442e:
+    batch_size: 5000
+    channels: [38, 40, 42, 44]
+    conv_activation: Tanh
+    conv_batch_norm: true
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    dnn_activations: ReLU
+    dnn_batch_norm: false
+    dnn_hidden_units: [1000, 1000, 1000]
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: 9
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FGCNN
+    model_id: FGCNN_base
+    model_root: ./Criteo/FGCNN_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    pooling_sizes: 2
+    recombined_channels: 3
+    save_best_only: true
+    seed: 2019
+    share_embedding: false
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FGCNN_criteo_x4_002_6376b184:
+    batch_size: 5000
+    channels: [38, 40, 42, 44]
+    conv_activation: Tanh
+    conv_batch_norm: true
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    dnn_activations: ReLU
+    dnn_batch_norm: false
+    dnn_hidden_units: [1000, 1000, 1000, 1000]
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: 9
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FGCNN
+    model_id: FGCNN_base
+    model_root: ./Criteo/FGCNN_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    pooling_sizes: 2
+    recombined_channels: 3
+    save_best_only: true
+    seed: 2019
+    share_embedding: false
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FGCNN_criteo_x4_003_7e445412:
+    batch_size: 5000
+    channels: [38, 40, 42, 44]
+    conv_activation: Tanh
+    conv_batch_norm: true
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    dnn_activations: ReLU
+    dnn_batch_norm: false
+    dnn_hidden_units: [1000, 1000, 1000, 1000, 1000]
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: 9
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FGCNN
+    model_id: FGCNN_base
+    model_root: ./Criteo/FGCNN_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    pooling_sizes: 2
+    recombined_channels: 3
+    save_best_only: true
+    seed: 2019
+    share_embedding: false
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FGCNN_criteo_x4_004_c3426b65:
+    batch_size: 5000
+    channels: [38, 40, 42, 44]
+    conv_activation: Tanh
+    conv_batch_norm: true
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    dnn_activations: ReLU
+    dnn_batch_norm: false
+    dnn_hidden_units: [1000, 1000, 1000]
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: 9
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FGCNN
+    model_id: FGCNN_base
+    model_root: ./Criteo/FGCNN_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    pooling_sizes: 2
+    recombined_channels: 3
+    save_best_only: true
+    seed: 2019
+    share_embedding: false
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FGCNN_criteo_x4_005_85c25c11:
+    batch_size: 5000
+    channels: [38, 40, 42, 44]
+    conv_activation: Tanh
+    conv_batch_norm: true
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    dnn_activations: ReLU
+    dnn_batch_norm: false
+    dnn_hidden_units: [1000, 1000, 1000, 1000]
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: 9
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FGCNN
+    model_id: FGCNN_base
+    model_root: ./Criteo/FGCNN_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    pooling_sizes: 2
+    recombined_channels: 3
+    save_best_only: true
+    seed: 2019
+    share_embedding: false
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FGCNN_criteo_x4_006_261378b8:
+    batch_size: 5000
+    channels: [38, 40, 42, 44]
+    conv_activation: Tanh
+    conv_batch_norm: true
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    dnn_activations: ReLU
+    dnn_batch_norm: false
+    dnn_hidden_units: [1000, 1000, 1000, 1000, 1000]
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: 9
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FGCNN
+    model_id: FGCNN_base
+    model_root: ./Criteo/FGCNN_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    pooling_sizes: 2
+    recombined_channels: 3
+    save_best_only: true
+    seed: 2019
+    share_embedding: false
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FGCNN_criteo_x4_007_112af90f:
+    batch_size: 5000
+    channels: [38, 40, 42, 44]
+    conv_activation: Tanh
+    conv_batch_norm: true
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    dnn_activations: ReLU
+    dnn_batch_norm: false
+    dnn_hidden_units: [1000, 1000, 1000]
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: 9
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FGCNN
+    model_id: FGCNN_base
+    model_root: ./Criteo/FGCNN_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    pooling_sizes: 2
+    recombined_channels: 3
+    save_best_only: true
+    seed: 2019
+    share_embedding: false
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FGCNN_criteo_x4_008_44bd3299:
+    batch_size: 5000
+    channels: [38, 40, 42, 44]
+    conv_activation: Tanh
+    conv_batch_norm: true
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    dnn_activations: ReLU
+    dnn_batch_norm: false
+    dnn_hidden_units: [1000, 1000, 1000, 1000]
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: 9
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FGCNN
+    model_id: FGCNN_base
+    model_root: ./Criteo/FGCNN_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    pooling_sizes: 2
+    recombined_channels: 3
+    save_best_only: true
+    seed: 2019
+    share_embedding: false
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FGCNN_criteo_x4_009_62885845:
+    batch_size: 5000
+    channels: [38, 40, 42, 44]
+    conv_activation: Tanh
+    conv_batch_norm: true
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    dnn_activations: ReLU
+    dnn_batch_norm: false
+    dnn_hidden_units: [1000, 1000, 1000, 1000, 1000]
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: 9
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FGCNN
+    model_id: FGCNN_base
+    model_root: ./Criteo/FGCNN_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    pooling_sizes: 2
+    recombined_channels: 3
+    save_best_only: true
+    seed: 2019
+    share_embedding: false
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FGCNN_criteo_x4_010_19a0930a:
+    batch_size: 5000
+    channels: [38, 40, 42, 44]
+    conv_activation: Tanh
+    conv_batch_norm: true
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    dnn_activations: ReLU
+    dnn_batch_norm: false
+    dnn_hidden_units: [1000, 1000, 1000]
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: 9
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FGCNN
+    model_id: FGCNN_base
+    model_root: ./Criteo/FGCNN_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    pooling_sizes: 2
+    recombined_channels: 3
+    save_best_only: true
+    seed: 2019
+    share_embedding: false
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FGCNN_criteo_x4_011_4345c67f:
+    batch_size: 5000
+    channels: [38, 40, 42, 44]
+    conv_activation: Tanh
+    conv_batch_norm: true
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    dnn_activations: ReLU
+    dnn_batch_norm: false
+    dnn_hidden_units: [1000, 1000, 1000, 1000]
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: 9
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FGCNN
+    model_id: FGCNN_base
+    model_root: ./Criteo/FGCNN_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    pooling_sizes: 2
+    recombined_channels: 3
+    save_best_only: true
+    seed: 2019
+    share_embedding: false
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FGCNN_criteo_x4_012_daa256b4:
+    batch_size: 5000
+    channels: [38, 40, 42, 44]
+    conv_activation: Tanh
+    conv_batch_norm: true
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    dnn_activations: ReLU
+    dnn_batch_norm: false
+    dnn_hidden_units: [1000, 1000, 1000, 1000, 1000]
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: 9
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FGCNN
+    model_id: FGCNN_base
+    model_root: ./Criteo/FGCNN_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    pooling_sizes: 2
+    recombined_channels: 3
+    save_best_only: true
+    seed: 2019
+    share_embedding: false
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FGCNN_criteo_x4_013_b0b1a1d9:
+    batch_size: 5000
+    channels: [38, 40, 42, 44]
+    conv_activation: Tanh
+    conv_batch_norm: true
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    dnn_activations: ReLU
+    dnn_batch_norm: false
+    dnn_hidden_units: [1000, 1000, 1000]
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-07
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: 9
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FGCNN
+    model_id: FGCNN_base
+    model_root: ./Criteo/FGCNN_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    pooling_sizes: 2
+    recombined_channels: 3
+    save_best_only: true
+    seed: 2019
+    share_embedding: false
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FGCNN_criteo_x4_014_cb9f3a2a:
+    batch_size: 5000
+    channels: [38, 40, 42, 44]
+    conv_activation: Tanh
+    conv_batch_norm: true
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    dnn_activations: ReLU
+    dnn_batch_norm: false
+    dnn_hidden_units: [1000, 1000, 1000, 1000]
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-07
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: 9
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FGCNN
+    model_id: FGCNN_base
+    model_root: ./Criteo/FGCNN_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    pooling_sizes: 2
+    recombined_channels: 3
+    save_best_only: true
+    seed: 2019
+    share_embedding: false
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FGCNN_criteo_x4_015_e40efe53:
+    batch_size: 5000
+    channels: [38, 40, 42, 44]
+    conv_activation: Tanh
+    conv_batch_norm: true
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    dnn_activations: ReLU
+    dnn_batch_norm: false
+    dnn_hidden_units: [1000, 1000, 1000, 1000, 1000]
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-07
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: 9
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FGCNN
+    model_id: FGCNN_base
+    model_root: ./Criteo/FGCNN_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    pooling_sizes: 2
+    recombined_channels: 3
+    save_best_only: true
+    seed: 2019
+    share_embedding: false
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FGCNN_criteo_x4_016_b6b29a6e:
+    batch_size: 5000
+    channels: [38, 40, 42, 44]
+    conv_activation: Tanh
+    conv_batch_norm: true
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    dnn_activations: ReLU
+    dnn_batch_norm: false
+    dnn_hidden_units: [1000, 1000, 1000]
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-07
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: 9
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FGCNN
+    model_id: FGCNN_base
+    model_root: ./Criteo/FGCNN_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    pooling_sizes: 2
+    recombined_channels: 3
+    save_best_only: true
+    seed: 2019
+    share_embedding: false
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FGCNN_criteo_x4_017_aa1c5838:
+    batch_size: 5000
+    channels: [38, 40, 42, 44]
+    conv_activation: Tanh
+    conv_batch_norm: true
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    dnn_activations: ReLU
+    dnn_batch_norm: false
+    dnn_hidden_units: [1000, 1000, 1000, 1000]
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-07
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: 9
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FGCNN
+    model_id: FGCNN_base
+    model_root: ./Criteo/FGCNN_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    pooling_sizes: 2
+    recombined_channels: 3
+    save_best_only: true
+    seed: 2019
+    share_embedding: false
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FGCNN_criteo_x4_018_1269f3be:
+    batch_size: 5000
+    channels: [38, 40, 42, 44]
+    conv_activation: Tanh
+    conv_batch_norm: true
+    dataset_id: criteo_x4_9ea3bdfc
+    debug: false
+    dnn_activations: ReLU
+    dnn_batch_norm: false
+    dnn_hidden_units: [1000, 1000, 1000, 1000, 1000]
+    embedding_dim: 16
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-07
+    epochs: 100
+    every_x_epochs: 1
+    kernel_heights: 9
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FGCNN
+    model_id: FGCNN_base
+    model_root: ./Criteo/FGCNN_criteo_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    pooling_sizes: 2
+    recombined_channels: 3
+    save_best_only: true
+    seed: 2019
+    share_embedding: false
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3

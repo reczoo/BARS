@@ -1,0 +1,1 @@
+ 20220131-173450,[command] python run_expid.py --version pytorch --config Frappe/FiBiNET_frappe_x1/FiBiNET_frappe_x1_tuner_config_03 --expid FiBiNET_frappe_x1_002_aedd06a6 --gpu 1,[exp_id] FiBiNET_frappe_x1_002_aedd06a6,[dataset_id] frappe_x1_04e961e9,[train] N.A.,[val] AUC: 0.982882 - logloss: 0.192746,[test] AUC: 0.983182 - logloss: 0.194074

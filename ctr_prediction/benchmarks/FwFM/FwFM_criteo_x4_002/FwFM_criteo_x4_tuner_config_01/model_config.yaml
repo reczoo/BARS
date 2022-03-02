@@ -1,0 +1,324 @@
+FwFM_criteo_x4_001_fc1f0a5d:
+    batch_size: 5000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    linear_type: FiLV
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FwFM
+    model_id: FwFM_base
+    model_root: ./Criteo/FwFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 0
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FwFM_criteo_x4_002_0a953c85:
+    batch_size: 5000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    linear_type: LW
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FwFM
+    model_id: FwFM_base
+    model_root: ./Criteo/FwFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 0
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FwFM_criteo_x4_003_14b370a7:
+    batch_size: 5000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    linear_type: FeLV
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FwFM
+    model_id: FwFM_base
+    model_root: ./Criteo/FwFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 0
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FwFM_criteo_x4_004_12a61024:
+    batch_size: 5000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    linear_type: FiLV
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FwFM
+    model_id: FwFM_base
+    model_root: ./Criteo/FwFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 1.0e-09
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FwFM_criteo_x4_005_b86325f8:
+    batch_size: 5000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    linear_type: LW
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FwFM
+    model_id: FwFM_base
+    model_root: ./Criteo/FwFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 1.0e-09
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FwFM_criteo_x4_006_a505e821:
+    batch_size: 5000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    linear_type: FeLV
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FwFM
+    model_id: FwFM_base
+    model_root: ./Criteo/FwFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 1.0e-09
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FwFM_criteo_x4_007_8765290f:
+    batch_size: 5000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    linear_type: FiLV
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FwFM
+    model_id: FwFM_base
+    model_root: ./Criteo/FwFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 1.0e-08
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FwFM_criteo_x4_008_bff2ae77:
+    batch_size: 5000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    linear_type: LW
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FwFM
+    model_id: FwFM_base
+    model_root: ./Criteo/FwFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 1.0e-08
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FwFM_criteo_x4_009_dc95bd66:
+    batch_size: 5000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    linear_type: FeLV
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FwFM
+    model_id: FwFM_base
+    model_root: ./Criteo/FwFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 1.0e-08
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FwFM_criteo_x4_010_73051f95:
+    batch_size: 5000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    linear_type: FiLV
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FwFM
+    model_id: FwFM_base
+    model_root: ./Criteo/FwFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 1.0e-06
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FwFM_criteo_x4_011_425a16a8:
+    batch_size: 5000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    linear_type: LW
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FwFM
+    model_id: FwFM_base
+    model_root: ./Criteo/FwFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 1.0e-06
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FwFM_criteo_x4_012_92bb033d:
+    batch_size: 5000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    linear_type: FeLV
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FwFM
+    model_id: FwFM_base
+    model_root: ./Criteo/FwFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 1.0e-06
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3

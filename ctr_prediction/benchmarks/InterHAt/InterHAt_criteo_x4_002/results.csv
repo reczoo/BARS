@@ -1,0 +1,1 @@
+ 20200604-092200,[command] python benchmark.py --version pytorch --config Criteo/InterHAt_criteo/InterHAt_criteo_x4_tuner_config_11 --expid InterHAt_criteo_x4_001_be98441d_004_e0bea572 --gpu 0,[exp_id] InterHAt_criteo_x4_001_be98441d_004_e0bea572,[dataset_id] criteo_x4_001_be98441d,[train] N.A.,[val] logloss: 0.440507 - AUC: 0.811239,[test] logloss: 0.440131 - AUC: 0.811671

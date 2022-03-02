@@ -1,0 +1,1 @@
+ 20210908-123116,[command] python benchmark.py --version pytorch --config Criteo/LR_criteo_x4_001/LR_criteo_x4_tuner_config_01 --expid LR_criteo_x4_9ea3bdfc_003_0a7da2fd --gpu 2,[exp_id] LR_criteo_x4_9ea3bdfc_003_0a7da2fd,[dataset_id] criteo_x4_9ea3bdfc,[train] N.A.,[val] logloss: 0.457054 - AUC: 0.792952,[test] logloss: 0.456754 - AUC: 0.793359

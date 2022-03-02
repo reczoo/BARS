@@ -1,9 +1,8 @@
-## FM_Avazu_x0_001
+## FM_avazu_x1
 
-A notebook to benchmark FM on Avazu_x0_001 dataset.
+A hands-on guide to run the FM model on the Avazu_x1 dataset.
 
-Author: [XUEPAI Team](https://github.com/xue-pai)
-
+Author: [XUEPAI](https://github.com/xue-pai)
 
 ### Index
 [Environments](#Environments) | [Dataset](#Dataset) | [Code](#Code) | [Results](#Results) | [Logs](#Logs)
@@ -13,30 +12,59 @@ Author: [XUEPAI Team](https://github.com/xue-pai)
 
   ```python
   CPU: Intel(R) Xeon(R) CPU E5-2690 v4 @ 2.6GHz
-  RAM: 500G+
+  GPU: Tesla P100 16G
+  RAM: 755G
+
   ```
+
 + Software
 
   ```python
+  CUDA: 11.4
   python: 3.6.5
-  pandas: 1.0.0
+  pytorch: 1.0.1.post2
+  pandas: 0.23.0
   numpy: 1.18.1
+  scipy: 1.1.0
+  sklearn: 0.23.1
+  pyyaml: 5.1
+  h5py: 2.7.1
+  tqdm: 4.59.0
+  fuxictr: 1.1.0
   ```
 
 ### Dataset
-This dataset split follows the setting in the AFN work. That is, we randomly split the data into 8:1:1 as the training set, validation set, and test set, respectively. The data preprocessing script is provided on Github and we directly download the preprocessed data.
-In this setting, we follow the AFN work to fix embedding_dim=16, batch_size=4096, and MLP_hidden_units=[400, 400, 400] to make fair comparisons.
-
+Dataset ID: [Avazu_x1](https://github.com/openbenchmark/BARS/blob/master/ctr_prediction/datasets/Avazu/README.md#Avazu_x1). Please refer to the dataset details to get data ready.
 
 ### Code
 
+We use [FuxiCTR-v1.1.0](fuxictr_url) for this experiment. See model code: [FM](https://github.com/xue-pai/FuxiCTR/blob/v1.1.0/fuxictr/pytorch/models/FM.py).
 
+Running steps:
 
+1. Download [FuxiCTR-v1.1.0](fuxictr_url) and install all the dependencies listed in the [environments](#environments). Then modify [run_expid.py](./run_expid.py#L5) to add the FuxiCTR library to system path
+    
+    ```python
+    sys.path.append('YOUR_PATH_TO_FuxiCTR/')
+    ```
+
+2. Create a data directory and put the downloaded csv files in `../data/Avazu/Avazu_x1`.
+
+3. Both `dataset_config.yaml` and `model_config.yaml` files are available in [FM_avazu_x1_tuner_config_01](./FM_avazu_x1_tuner_config_01). Make sure the data paths in `dataset_config.yaml` are correctly set to what we create in the last step.
+
+4. Run the following script to start.
+
+    ```bash
+    cd FM_avazu_x1
+    nohup python run_expid.py --config ./FM_avazu_x1_tuner_config_01 --expid FM_avazu_x1_004_814f7d09 --gpu 0 > run.log &
+    tail -f run.log
+    ```
 
 ### Results
-```python
-[Metrics] AUC: 0.761253 - logloss: 0.367738
-```
+
+| AUC | logloss  |
+|:--------------------:|:--------------------:|
+| 0.761253 | 0.367738  |
 
 
 ### Logs
@@ -45,7 +73,7 @@ In this setting, we follow the AFN work to fix embedding_dim=16, batch_size=4096
     "batch_size": "4096",
     "data_format": "csv",
     "data_root": "../data/Avazu/",
-    "dataset_id": "avazu_x0_83355fc7",
+    "dataset_id": "avazu_x1_83355fc7",
     "debug": "False",
     "embedding_dim": "10",
     "embedding_dropout": "0",
@@ -59,8 +87,8 @@ In this setting, we follow the AFN work to fix embedding_dim=16, batch_size=4096
     "metrics": "['AUC', 'logloss']",
     "min_categr_count": "1",
     "model": "FM",
-    "model_id": "FM_avazu_x0_004_d20f45d4",
-    "model_root": "./Avazu/FM_avazu_x0/",
+    "model_id": "FM_avazu_x1_004_d20f45d4",
+    "model_root": "./Avazu/FM_avazu_x1/",
     "monitor": "AUC",
     "monitor_mode": "max",
     "num_workers": "3",
@@ -73,19 +101,19 @@ In this setting, we follow the AFN work to fix embedding_dim=16, batch_size=4096
     "seed": "2021",
     "shuffle": "True",
     "task": "binary_classification",
-    "test_data": "../data/Avazu/Avazu_x0/test.csv",
-    "train_data": "../data/Avazu/Avazu_x0/train.csv",
+    "test_data": "../data/Avazu/Avazu_x1/test.csv",
+    "train_data": "../data/Avazu/Avazu_x1/train.csv",
     "use_hdf5": "True",
-    "valid_data": "../data/Avazu/Avazu_x0/valid.csv",
+    "valid_data": "../data/Avazu/Avazu_x1/valid.csv",
     "verbose": "1",
     "version": "pytorch"
 }
 2021-01-09 23:51:17,927 P45106 INFO Set up feature encoder...
-2021-01-09 23:51:17,927 P45106 INFO Load feature_encoder from pickle: ../data/Avazu/avazu_x0_83355fc7/feature_encoder.pkl
+2021-01-09 23:51:17,927 P45106 INFO Load feature_encoder from pickle: ../data/Avazu/avazu_x1_83355fc7/feature_encoder.pkl
 2021-01-09 23:51:19,142 P45106 INFO Total number of parameters: 14284590.
 2021-01-09 23:51:19,143 P45106 INFO Loading data...
-2021-01-09 23:51:19,146 P45106 INFO Loading data from h5: ../data/Avazu/avazu_x0_83355fc7/train.h5
-2021-01-09 23:51:22,579 P45106 INFO Loading data from h5: ../data/Avazu/avazu_x0_83355fc7/valid.h5
+2021-01-09 23:51:19,146 P45106 INFO Loading data from h5: ../data/Avazu/avazu_x1_83355fc7/train.h5
+2021-01-09 23:51:22,579 P45106 INFO Loading data from h5: ../data/Avazu/avazu_x1_83355fc7/valid.h5
 2021-01-09 23:51:23,134 P45106 INFO Train samples: total/28300276, pos/4953382, neg/23346894, ratio/17.50%, blocks/1
 2021-01-09 23:51:23,135 P45106 INFO Validation samples: total/4042897, pos/678699, neg/3364198, ratio/16.79%, blocks/1
 2021-01-09 23:51:23,135 P45106 INFO Loading train data done.
@@ -135,15 +163,14 @@ In this setting, we follow the AFN work to fix embedding_dim=16, batch_size=4096
 2021-01-10 02:30:33,232 P45106 INFO --- 6910/6910 batches finished ---
 2021-01-10 02:30:33,420 P45106 INFO Train loss: 0.393510
 2021-01-10 02:30:33,421 P45106 INFO Training finished.
-2021-01-10 02:30:33,421 P45106 INFO Load best model: /home/xxx/xxx/FuxiCTR/benchmarks/Avazu/FM_avazu_x0/avazu_x0_83355fc7/FM_avazu_x0_004_d20f45d4_model.ckpt
+2021-01-10 02:30:33,421 P45106 INFO Load best model: /home/XXX/FuxiCTR/benchmarks/Avazu/FM_avazu_x1/avazu_x1_83355fc7/FM_avazu_x1_004_d20f45d4_model.ckpt
 2021-01-10 02:30:33,556 P45106 INFO ****** Train/validation evaluation ******
 2021-01-10 02:31:01,424 P45106 INFO [Metrics] AUC: 0.739279 - logloss: 0.400449
 2021-01-10 02:31:01,578 P45106 INFO ******** Test evaluation ********
 2021-01-10 02:31:01,578 P45106 INFO Loading data...
-2021-01-10 02:31:01,579 P45106 INFO Loading data from h5: ../data/Avazu/avazu_x0_83355fc7/test.h5
+2021-01-10 02:31:01,579 P45106 INFO Loading data from h5: ../data/Avazu/avazu_x1_83355fc7/test.h5
 2021-01-10 02:31:02,570 P45106 INFO Test samples: total/8085794, pos/1232985, neg/6852809, ratio/15.25%, blocks/1
 2021-01-10 02:31:02,570 P45106 INFO Loading test data done.
 2021-01-10 02:31:46,656 P45106 INFO [Metrics] AUC: 0.761253 - logloss: 0.367738
-
 
 ```

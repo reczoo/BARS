@@ -1,0 +1,50 @@
+LR_movielenslatest_x1_001_7530c4ec:
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: LR
+    model_id: LR_base
+    model_root: ./Movielens/LR_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 5.0e-06
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+LR_movielenslatest_x1_002_1487c7d4:
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: LR
+    model_id: LR_base
+    model_root: ./Movielens/LR_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 5.0e-07
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1

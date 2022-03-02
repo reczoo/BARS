@@ -1,0 +1,116 @@
+HOFM_criteo_x4_001_a187c06d:
+    batch_size: 3000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: [40, 5]
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HOFM
+    model_id: HOFM_base
+    model_root: ./Criteo/HOFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    order: 3
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 1.0e-05
+    reuse_embedding: false
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HOFM_criteo_x4_002_43fa1215:
+    batch_size: 3000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: [40, 5]
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HOFM
+    model_id: HOFM_base
+    model_root: ./Criteo/HOFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    order: 3
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 1.0e-06
+    reuse_embedding: false
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HOFM_criteo_x4_003_71f19421:
+    batch_size: 3000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: [40, 5]
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HOFM
+    model_id: HOFM_base
+    model_root: ./Criteo/HOFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    order: 3
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 1.0e-08
+    reuse_embedding: false
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HOFM_criteo_x4_004_1d0a32b2:
+    batch_size: 3000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: [40, 5]
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HOFM
+    model_id: HOFM_base
+    model_root: ./Criteo/HOFM_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    order: 3
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 0
+    reuse_embedding: false
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3

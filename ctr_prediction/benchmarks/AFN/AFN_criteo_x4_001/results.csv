@@ -1,0 +1,1 @@
+ 20200724-050820,[command] python benchmark.py --version pytorch --config Criteo/AFN_criteo/min10/AFN_criteo_x4_tuner_config_02 --expid AFN_criteo_x4_5c863b0f_012_363a38e8 --gpu 1,[exp_id] AFN_criteo_x4_5c863b0f_012_363a38e8,[dataset_id] criteo_x4_5c863b0f,[train] logloss: 0.427785 - AUC: 0.825324,[val] logloss: 0.440639 - AUC: 0.811021,[test] logloss: 0.440225 - AUC: 0.811513

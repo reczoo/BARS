@@ -1,0 +1,1 @@
+ 20220126-121712,[command] python run_expid.py --version pytorch --config Avazu/HOFM_avazu_x1/HOFM_avazu_x1_tuner_config_02 --expid HOFM_avazu_x1_002_11ff3102 --gpu 1,[exp_id] HOFM_avazu_x1_002_11ff3102,[dataset_id] avazu_x1_3fb65689,[train] N.A.,[val] AUC: 0.742307 - logloss: 0.399731,[test] AUC: 0.760137 - logloss: 0.368702

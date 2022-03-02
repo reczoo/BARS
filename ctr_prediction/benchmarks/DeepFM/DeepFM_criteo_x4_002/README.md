@@ -1,9 +1,8 @@
-## DeepFM_Criteo_x4_002
+## DeepFM_criteo_x4_002
 
-A notebook to benchmark DeepFM on Criteo_x4_002 dataset.
+A hands-on guide to run the DeepFM model on the Criteo_x4_002 dataset.
 
-Author: [XUEPAI Team](https://github.com/xue-pai)
-
+Author: [XUEPAI](https://github.com/xue-pai)
 
 ### Index
 [Environments](#Environments) | [Dataset](#Dataset) | [Code](#Code) | [Results](#Results) | [Logs](#Logs)
@@ -12,43 +11,60 @@ Author: [XUEPAI Team](https://github.com/xue-pai)
 + Hardware
 
   ```python
-  CPU: Intel(R) Xeon(R) CPU E5-2690 v4 @ 2.6GHz
-  RAM: 500G+
+  CPU: Intel(R) Xeon(R) CPU E5-2690 v4 @ 2.60GHz
+  GPU: Tesla P100 16G
+  RAM: 755G
+
   ```
+
 + Software
 
   ```python
+  CUDA: 10.0
   python: 3.6.5
-  pandas: 1.0.0
+  pytorch: 1.0.1.post2
+  pandas: 0.23.0
   numpy: 1.18.1
+  scipy: 1.1.0
+  sklearn: 0.23.1
+  pyyaml: 5.1
+  h5py: 2.7.1
+  tqdm: 4.59.0
+  fuxictr: 1.0.2
   ```
 
 ### Dataset
-In this setting, we follow the winner's solution of the Criteo challenge to discretize each integer value x to ⌊log2 (x)⌋, if x > 2; and x = 1 otherwise. For all categorical fields, we replace infrequent features with a default <OOV> token by setting the threshold min_category_count=2.
+Dataset ID: [Criteo_x4_002](https://github.com/openbenchmark/BARS/blob/master/ctr_prediction/datasets/Criteo/README.md#Criteo_x4_002). Please refer to the dataset details to get data ready.
 
-We fix embedding_dim=40 in this setting.
 ### Code
-1. Install FuxiCTR
-  
-    Install FuxiCTR via `pip install fuxictr==1.0` to get all dependencies ready. Then download [the FuxiCTR repository](https://github.com/huawei-noah/benchmark/archive/53e314461c19dbc7f462b42bf0f0bfae020dc398.zip) to your local path.
 
-2. Downalod the dataset and run [the preprocessing script](https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/datasets/Criteo/Criteo_x4/split_criteo_x4.py) for data splitting. 
+We use [FuxiCTR-v1.0.2](fuxictr_url) for this experiment. See model code: [DeepFM](https://github.com/xue-pai/FuxiCTR/blob/v1.0.2/fuxictr/pytorch/models/DeepFM.py).
 
-3. Download the hyper-parameter configuration file: [DeepFM_criteo_x4_tuner_config_03.yaml](./002/DeepFM_criteo_x4_tuner_config_03.yaml)
+Running steps:
 
-4. Run the following script to reproduce the result. 
-  + --config: The config file that defines the tuning space
-  + --tag: Specify which expid to run (each expid corresponds to a specific setting of hyper-parameters in the tunner space)
-  + --gpu: The available gpus for parameters tuning.
+1. Download [FuxiCTR-v1.0.2](fuxictr_url) and install all the dependencies listed in the [environments](#environments). Then modify [run_expid.py](./run_expid.py#L5) to add the FuxiCTR library to system path
+    
+    ```python
+    sys.path.append('YOUR_PATH_TO_FuxiCTR/')
+    ```
 
-  ```bash
-  cd FuxiCTR/benchmarks
-  python run_param_tuner.py --config YOUR_PATH/002/DeepFM_criteo_x4_tuner_config_03.yaml --tag 033 --gpu 0
-  ```
+2. Create a data directory and put the downloaded csv files in `../data/Avazu/Avazu_x1`.
+
+3. Both `dataset_config.yaml` and `model_config.yaml` files are available in [DeepFM_criteo_x4_tuner_config_03](./DeepFM_criteo_x4_tuner_config_03). Make sure the data paths in `dataset_config.yaml` are correctly set to what we create in the last step.
+
+4. Run the following script to start.
+
+    ```bash
+    cd DeepFM_criteo_x4_002
+    nohup python run_expid.py --config ./DeepFM_criteo_x4_tuner_config_03 --expid DeepFM_criteo_x4_033_eb777c4c --gpu 0 > run.log &
+    tail -f run.log
+    ```
+
 ### Results
-```python
-[Metrics] logloss: 0.437793 - AUC: 0.814069
-```
+
+| logloss | AUC  |
+|:--------------------:|:--------------------:|
+| 0.437793 | 0.814069  |
 
 
 ### Logs
@@ -71,7 +87,7 @@ We fix embedding_dim=40 in this setting.
     "loss": "binary_crossentropy",
     "metrics": "['logloss', 'AUC']",
     "model": "DeepFM",
-    "model_id": "DeepFM_criteo_x4_001_5cc29d4e",
+    "model_id": "DeepFM_criteo_x4_033_eb777c4c",
     "model_root": "./Criteo/MAEN_criteo/",
     "monitor": "{'AUC': 1, 'logloss': -1}",
     "monitor_mode": "max",
@@ -160,7 +176,7 @@ We fix embedding_dim=40 in this setting.
 2020-03-09 18:22:56,283 P20516 INFO --- 3668/3668 batches finished ---
 2020-03-09 18:22:56,338 P20516 INFO Train loss: 0.428222
 2020-03-09 18:22:56,338 P20516 INFO Training finished.
-2020-03-09 18:22:56,338 P20516 INFO Load best model: /home/xxx/zhujieming/OpenCTR1030/benchmarks/Criteo/MAEN_criteo/criteo_x4_001_41e78b20/DeepFM_criteo_x4_001_5cc29d4e_model.ckpt
+2020-03-09 18:22:56,338 P20516 INFO Load best model: /home/XXX/benchmarks/Criteo/criteo_x4_001_41e78b20/DeepFM_criteo_x4_001_5cc29d4e_model.ckpt
 2020-03-09 18:22:57,315 P20516 INFO ****** Train/validation evaluation ******
 2020-03-09 18:27:53,036 P20516 INFO [Metrics] logloss: 0.421343 - AUC: 0.831921
 2020-03-09 18:28:28,626 P20516 INFO [Metrics] logloss: 0.438184 - AUC: 0.813612
@@ -170,6 +186,5 @@ We fix embedding_dim=40 in this setting.
 2020-03-09 18:28:29,495 P20516 INFO Test samples: total/4584062, pos/1174544, neg/3409518, ratio/25.62%
 2020-03-09 18:28:29,495 P20516 INFO Loading test data done.
 2020-03-09 18:29:06,051 P20516 INFO [Metrics] logloss: 0.437793 - AUC: 0.814069
-
 
 ```

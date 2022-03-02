@@ -1,0 +1,1 @@
+ 20200615-181659,[command] python benchmark.py --version pytorch --config Avazu/DCN_avazu/min2/DCN_avazu_x4_tuner_config_11 --expid DCN_avazu_x4_3bbbc4c9_030_6039e913 --gpu 1,[exp_id] DCN_avazu_x4_3bbbc4c9_030_6039e913,[dataset_id] avazu_x4_3bbbc4c9,[train] logloss: 0.348514 - AUC: 0.830079,[val] logloss: 0.377932 - AUC: 0.783950,[test] logloss: 0.377924 - AUC: 0.783962

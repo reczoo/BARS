@@ -1,0 +1,1 @@
+ 20220126-050758,[command] python run_expid.py --version pytorch --config Criteo/FwFM_criteo_x1/FwFM_criteo_x1_tuner_config_01 --expid FwFM_criteo_x1_009_ff52575c --gpu 0,[exp_id] FwFM_criteo_x1_009_ff52575c,[dataset_id] criteo_x1_7b681156,[train] N.A.,[val] AUC: 0.806035 - logloss: 0.445729,[test] AUC: 0.806270 - logloss: 0.445394

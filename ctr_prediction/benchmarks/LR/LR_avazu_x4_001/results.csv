@@ -1,0 +1,1 @@
+ 20200503-013059,[command] python benchmark.py --version pytorch --config Avazu/LR_avazu/min2/LR_avazu_x4_tuner_config_01 --expid LR_avazu_x4_005_f828a69c --gpu 1,[exp_id] LR_avazu_x4_005_f828a69c,[dataset_id] avazu_x4_3bbbc4c9,[train] N.A.,[val] logloss: 0.381490 - AUC: 0.777502,[test] logloss: 0.381525 - AUC: 0.777457

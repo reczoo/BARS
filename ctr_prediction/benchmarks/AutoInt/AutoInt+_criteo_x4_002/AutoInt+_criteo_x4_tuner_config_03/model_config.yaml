@@ -1,0 +1,936 @@
+AutoInt_criteo_x4_001_4190dc63:
+    attention_dim: 64
+    attention_layers: 3
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    dnn_hidden_units: [5000, 5000, 5000]
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    every_x_epochs: 1
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./Criteo/AutoInt_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 1
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    use_scale: false
+    use_wide: true
+    verbose: 1
+    workers: 3
+AutoInt_criteo_x4_002_9d9c687c:
+    attention_dim: 64
+    attention_layers: 4
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    dnn_hidden_units: [5000, 5000, 5000]
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    every_x_epochs: 1
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./Criteo/AutoInt_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 1
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    use_scale: false
+    use_wide: true
+    verbose: 1
+    workers: 3
+AutoInt_criteo_x4_003_1a01a590:
+    attention_dim: 64
+    attention_layers: 5
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    dnn_hidden_units: [5000, 5000, 5000]
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    every_x_epochs: 1
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./Criteo/AutoInt_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 1
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    use_scale: false
+    use_wide: true
+    verbose: 1
+    workers: 3
+AutoInt_criteo_x4_004_c2727937:
+    attention_dim: 64
+    attention_layers: 3
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    dnn_hidden_units: [5000, 5000, 5000]
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    every_x_epochs: 1
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./Criteo/AutoInt_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 2
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    use_scale: false
+    use_wide: true
+    verbose: 1
+    workers: 3
+AutoInt_criteo_x4_005_af4d22dd:
+    attention_dim: 64
+    attention_layers: 4
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    dnn_hidden_units: [5000, 5000, 5000]
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    every_x_epochs: 1
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./Criteo/AutoInt_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 2
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    use_scale: false
+    use_wide: true
+    verbose: 1
+    workers: 3
+AutoInt_criteo_x4_006_0e611c46:
+    attention_dim: 64
+    attention_layers: 5
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    dnn_hidden_units: [5000, 5000, 5000]
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    every_x_epochs: 1
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./Criteo/AutoInt_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 2
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    use_scale: false
+    use_wide: true
+    verbose: 1
+    workers: 3
+AutoInt_criteo_x4_007_4cf099f8:
+    attention_dim: 64
+    attention_layers: 3
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    dnn_hidden_units: [1000, 1000, 1000, 1000]
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    every_x_epochs: 1
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./Criteo/AutoInt_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 1
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    use_scale: false
+    use_wide: true
+    verbose: 1
+    workers: 3
+AutoInt_criteo_x4_008_cc6e9e82:
+    attention_dim: 64
+    attention_layers: 4
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    dnn_hidden_units: [1000, 1000, 1000, 1000]
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    every_x_epochs: 1
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./Criteo/AutoInt_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 1
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    use_scale: false
+    use_wide: true
+    verbose: 1
+    workers: 3
+AutoInt_criteo_x4_009_61dfc815:
+    attention_dim: 64
+    attention_layers: 5
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    dnn_hidden_units: [1000, 1000, 1000, 1000]
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    every_x_epochs: 1
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./Criteo/AutoInt_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 1
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    use_scale: false
+    use_wide: true
+    verbose: 1
+    workers: 3
+AutoInt_criteo_x4_010_5910615f:
+    attention_dim: 64
+    attention_layers: 3
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    dnn_hidden_units: [1000, 1000, 1000, 1000]
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    every_x_epochs: 1
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./Criteo/AutoInt_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 2
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    use_scale: false
+    use_wide: true
+    verbose: 1
+    workers: 3
+AutoInt_criteo_x4_011_726807c0:
+    attention_dim: 64
+    attention_layers: 4
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    dnn_hidden_units: [1000, 1000, 1000, 1000]
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    every_x_epochs: 1
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./Criteo/AutoInt_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 2
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    use_scale: false
+    use_wide: true
+    verbose: 1
+    workers: 3
+AutoInt_criteo_x4_012_34f87e10:
+    attention_dim: 64
+    attention_layers: 5
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    dnn_hidden_units: [1000, 1000, 1000, 1000]
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    every_x_epochs: 1
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./Criteo/AutoInt_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 2
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    use_scale: false
+    use_wide: true
+    verbose: 1
+    workers: 3
+AutoInt_criteo_x4_013_3ad59453:
+    attention_dim: 64
+    attention_layers: 3
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    dnn_hidden_units: [2000, 2000, 2000, 2000]
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    every_x_epochs: 1
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./Criteo/AutoInt_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 1
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    use_scale: false
+    use_wide: true
+    verbose: 1
+    workers: 3
+AutoInt_criteo_x4_014_faa38b58:
+    attention_dim: 64
+    attention_layers: 4
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    dnn_hidden_units: [2000, 2000, 2000, 2000]
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    every_x_epochs: 1
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./Criteo/AutoInt_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 1
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    use_scale: false
+    use_wide: true
+    verbose: 1
+    workers: 3
+AutoInt_criteo_x4_015_f4efed41:
+    attention_dim: 64
+    attention_layers: 5
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    dnn_hidden_units: [2000, 2000, 2000, 2000]
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    every_x_epochs: 1
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./Criteo/AutoInt_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 1
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    use_scale: false
+    use_wide: true
+    verbose: 1
+    workers: 3
+AutoInt_criteo_x4_016_08c13b5d:
+    attention_dim: 64
+    attention_layers: 3
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    dnn_hidden_units: [2000, 2000, 2000, 2000]
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    every_x_epochs: 1
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./Criteo/AutoInt_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 2
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    use_scale: false
+    use_wide: true
+    verbose: 1
+    workers: 3
+AutoInt_criteo_x4_017_1e144248:
+    attention_dim: 64
+    attention_layers: 4
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    dnn_hidden_units: [2000, 2000, 2000, 2000]
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    every_x_epochs: 1
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./Criteo/AutoInt_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 2
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    use_scale: false
+    use_wide: true
+    verbose: 1
+    workers: 3
+AutoInt_criteo_x4_018_dc16d4f5:
+    attention_dim: 64
+    attention_layers: 5
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    dnn_hidden_units: [2000, 2000, 2000, 2000]
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    every_x_epochs: 1
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./Criteo/AutoInt_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 2
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    use_scale: false
+    use_wide: true
+    verbose: 1
+    workers: 3
+AutoInt_criteo_x4_019_fd9dc61b:
+    attention_dim: 64
+    attention_layers: 3
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    dnn_hidden_units: [5000, 5000, 5000, 5000]
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    every_x_epochs: 1
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./Criteo/AutoInt_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 1
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    use_scale: false
+    use_wide: true
+    verbose: 1
+    workers: 3
+AutoInt_criteo_x4_020_1d838063:
+    attention_dim: 64
+    attention_layers: 4
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    dnn_hidden_units: [5000, 5000, 5000, 5000]
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    every_x_epochs: 1
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./Criteo/AutoInt_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 1
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    use_scale: false
+    use_wide: true
+    verbose: 1
+    workers: 3
+AutoInt_criteo_x4_021_98b98148:
+    attention_dim: 64
+    attention_layers: 5
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    dnn_hidden_units: [5000, 5000, 5000, 5000]
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    every_x_epochs: 1
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./Criteo/AutoInt_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 1
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    use_scale: false
+    use_wide: true
+    verbose: 1
+    workers: 3
+AutoInt_criteo_x4_022_72eaab3c:
+    attention_dim: 64
+    attention_layers: 3
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    dnn_hidden_units: [5000, 5000, 5000, 5000]
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    every_x_epochs: 1
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./Criteo/AutoInt_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 2
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    use_scale: false
+    use_wide: true
+    verbose: 1
+    workers: 3
+AutoInt_criteo_x4_023_f814ea4a:
+    attention_dim: 64
+    attention_layers: 4
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    dnn_hidden_units: [5000, 5000, 5000, 5000]
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    every_x_epochs: 1
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./Criteo/AutoInt_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 2
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    use_scale: false
+    use_wide: true
+    verbose: 1
+    workers: 3
+AutoInt_criteo_x4_024_81268684:
+    attention_dim: 64
+    attention_layers: 5
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    dnn_hidden_units: [5000, 5000, 5000, 5000]
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    every_x_epochs: 1
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./Criteo/AutoInt_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 2
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    use_scale: false
+    use_wide: true
+    verbose: 1
+    workers: 3

@@ -1,0 +1,25 @@
+LR_criteo_x4_003_e33124a6:
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: LR
+    model_id: LR_base
+    model_root: ./Criteo/LR_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: l2(1.e-7)
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3

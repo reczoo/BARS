@@ -1,0 +1,1 @@
+ 20200429-061618,[command] python benchmark.py --version pytorch --config KKBox/CIN_kkbox/CIN_kkbox_x1_tuner_config_02 --expid xDeepFM_kkbox_x1_022_d115d58a --gpu 0,[exp_id] xDeepFM_kkbox_x1_022_d115d58a,[dataset_id] kkbox_x1_001_c5c9c6e3,[train] logloss: 0.393448 - AUC: 0.909427,[val] logloss: 0.490362 - AUC: 0.842968,[test] logloss: 0.490878 - AUC: 0.842620

@@ -1,0 +1,32 @@
+DCN_movielenslatest_x1_001_4810b636:
+    batch_norm: true
+    batch_size: 4096
+    crossing_layers: 4
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    dnn_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DCN
+    model_id: DCN_base
+    model_root: ./Movielens/DCN_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1

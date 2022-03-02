@@ -1,0 +1,1 @@
+ 20220301-165817,[command] python run_expid.py --config KKBox/DCN_kkbox_x1/DCN_kkbox_x1_tuner_config_05 --expid DCN_kkbox_x1_005_362e6c13 --gpu 1,[exp_id] DCN_kkbox_x1_005_362e6c13,[dataset_id] kkbox_x1_227d337d,[train] N.A.,[val] logloss: 0.476696 - AUC: 0.852906,[test] logloss: 0.476555 - AUC: 0.853114

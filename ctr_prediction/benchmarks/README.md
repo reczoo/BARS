@@ -1,4 +1,4 @@
-# Benchmark Scripts
+# Benchmarks
 
 To allow extensibility of the BARS benchmark, the code implementation is not binded to any single framework or library. But we strongly recommend the following libraries due to their abundant model implementations.
 
@@ -6,8 +6,9 @@ To allow extensibility of the BARS benchmark, the code implementation is not bin
 + DeepCTR (tensorflow): https://github.com/shenweichen/DeepCTR
 
 
-## Models Available
-The following models have been benchmarked with open-source code and detailed benchmarking artifacts.
+## Model List
+
+The following models have been benchmarked with open-source code and detailed reproducing steps.
 
 | Publication| Model  | Paper | 
 | :-----: | :-------: |:------------|

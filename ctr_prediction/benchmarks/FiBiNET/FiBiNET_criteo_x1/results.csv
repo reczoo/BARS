@@ -1,0 +1,1 @@
+ 20220128-055038,[command] python run_expid.py --version pytorch --config Criteo/FiBiNET_criteo_x1/FiBiNET_criteo_x1_tuner_config_03 --expid FiBiNET_criteo_x1_022_19ca3145 --gpu 5,[exp_id] FiBiNET_criteo_x1_022_19ca3145,[dataset_id] criteo_x1_7b681156,[train] N.A.,[val] AUC: 0.812741 - logloss: 0.439211,[test] AUC: 0.813010 - logloss: 0.438826

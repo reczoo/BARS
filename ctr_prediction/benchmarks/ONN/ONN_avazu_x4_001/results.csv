@@ -1,0 +1,1 @@
+ 20200718-025345,[command] python benchmark.py --version pytorch --config Avazu/ONN_avazu/min2/ONN_avazu_x4_tuner_config_01 --expid ONN_avazu_x4_3bbbc4c9_006_d669ec93 --gpu 1,[exp_id] ONN_avazu_x4_3bbbc4c9_006_d669ec93,[dataset_id] avazu_x4_3bbbc4c9,[train] logloss: 0.322398 - AUC: 0.866123,[val] logloss: 0.368429 - AUC: 0.798979,[test] logloss: 0.368328 - AUC: 0.799150

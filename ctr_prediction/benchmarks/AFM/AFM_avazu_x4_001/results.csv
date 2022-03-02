@@ -1,0 +1,1 @@
+ 20220224-181714,[command] python run_expid.py --config Avazu/AFM_avazu/min2/AFM_avazu_x4_tuner_config_01/ --expid AFM_avazu_x4_3bbbc4c9_008_8bd19e2a --gpu 0,[exp_id] AFM_avazu_x4_3bbbc4c9_008_8bd19e2a,[dataset_id] avazu_x4_3bbbc4c9,[train] N.A.,[val] logloss: 0.379473 - AUC: 0.782095,[test] logloss: 0.379283 - AUC: 0.782347

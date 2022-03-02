@@ -1,0 +1,612 @@
+FiBiNET_criteo_x4_001_5f27979e:
+    batch_norm: false
+    batch_size: 5000
+    bilinear_type: field_interaction
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-7)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [4096, 2048, 1024, 512, 256]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FiBiNET
+    model_id: FiBiNET_base
+    model_root: ./Criteo/FiBiNET_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    reduction_ratio: 3
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FiBiNET_criteo_x4_002_30904a69:
+    batch_norm: false
+    batch_size: 5000
+    bilinear_type: field_interaction
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-7)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [2000, 2000, 2000, 2000, 2000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FiBiNET
+    model_id: FiBiNET_base
+    model_root: ./Criteo/FiBiNET_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    reduction_ratio: 3
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FiBiNET_criteo_x4_003_3657d30f:
+    batch_norm: false
+    batch_size: 5000
+    bilinear_type: field_interaction
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-7)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FiBiNET
+    model_id: FiBiNET_base
+    model_root: ./Criteo/FiBiNET_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    reduction_ratio: 3
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FiBiNET_criteo_x4_004_7531d91b:
+    batch_norm: false
+    batch_size: 5000
+    bilinear_type: field_interaction
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-7)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FiBiNET
+    model_id: FiBiNET_base
+    model_root: ./Criteo/FiBiNET_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    reduction_ratio: 3
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FiBiNET_criteo_x4_005_150c9b5a:
+    batch_norm: false
+    batch_size: 5000
+    bilinear_type: field_interaction
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-7)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [2000, 2000, 2000, 2000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FiBiNET
+    model_id: FiBiNET_base
+    model_root: ./Criteo/FiBiNET_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    reduction_ratio: 3
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FiBiNET_criteo_x4_006_a1c69a59:
+    batch_norm: false
+    batch_size: 5000
+    bilinear_type: field_interaction
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-7)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [4096, 2048, 1024, 512]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FiBiNET
+    model_id: FiBiNET_base
+    model_root: ./Criteo/FiBiNET_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    reduction_ratio: 3
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FiBiNET_criteo_x4_007_ac0dbcea:
+    batch_norm: false
+    batch_size: 5000
+    bilinear_type: field_interaction
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [4096, 2048, 1024, 512, 256]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FiBiNET
+    model_id: FiBiNET_base
+    model_root: ./Criteo/FiBiNET_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    reduction_ratio: 3
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FiBiNET_criteo_x4_008_9356bdb4:
+    batch_norm: false
+    batch_size: 5000
+    bilinear_type: field_interaction
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [2000, 2000, 2000, 2000, 2000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FiBiNET
+    model_id: FiBiNET_base
+    model_root: ./Criteo/FiBiNET_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    reduction_ratio: 3
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FiBiNET_criteo_x4_009_8c6fcbc3:
+    batch_norm: false
+    batch_size: 5000
+    bilinear_type: field_interaction
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FiBiNET
+    model_id: FiBiNET_base
+    model_root: ./Criteo/FiBiNET_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    reduction_ratio: 3
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FiBiNET_criteo_x4_010_37fc49a8:
+    batch_norm: false
+    batch_size: 5000
+    bilinear_type: field_interaction
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FiBiNET
+    model_id: FiBiNET_base
+    model_root: ./Criteo/FiBiNET_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    reduction_ratio: 3
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FiBiNET_criteo_x4_011_1c8acde9:
+    batch_norm: false
+    batch_size: 5000
+    bilinear_type: field_interaction
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [2000, 2000, 2000, 2000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FiBiNET
+    model_id: FiBiNET_base
+    model_root: ./Criteo/FiBiNET_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    reduction_ratio: 3
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FiBiNET_criteo_x4_012_faef5b65:
+    batch_norm: false
+    batch_size: 5000
+    bilinear_type: field_interaction
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [4096, 2048, 1024, 512]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FiBiNET
+    model_id: FiBiNET_base
+    model_root: ./Criteo/FiBiNET_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    reduction_ratio: 3
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FiBiNET_criteo_x4_013_2d386827:
+    batch_norm: false
+    batch_size: 5000
+    bilinear_type: field_interaction
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [4096, 2048, 1024, 512, 256]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FiBiNET
+    model_id: FiBiNET_base
+    model_root: ./Criteo/FiBiNET_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    reduction_ratio: 3
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FiBiNET_criteo_x4_014_5b53d199:
+    batch_norm: false
+    batch_size: 5000
+    bilinear_type: field_interaction
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [2000, 2000, 2000, 2000, 2000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FiBiNET
+    model_id: FiBiNET_base
+    model_root: ./Criteo/FiBiNET_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    reduction_ratio: 3
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FiBiNET_criteo_x4_015_f6338d80:
+    batch_norm: false
+    batch_size: 5000
+    bilinear_type: field_interaction
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FiBiNET
+    model_id: FiBiNET_base
+    model_root: ./Criteo/FiBiNET_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    reduction_ratio: 3
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FiBiNET_criteo_x4_016_fd27b023:
+    batch_norm: false
+    batch_size: 5000
+    bilinear_type: field_interaction
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FiBiNET
+    model_id: FiBiNET_base
+    model_root: ./Criteo/FiBiNET_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    reduction_ratio: 3
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FiBiNET_criteo_x4_017_621f2497:
+    batch_norm: false
+    batch_size: 5000
+    bilinear_type: field_interaction
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [2000, 2000, 2000, 2000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FiBiNET
+    model_id: FiBiNET_base
+    model_root: ./Criteo/FiBiNET_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    reduction_ratio: 3
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FiBiNET_criteo_x4_018_3ac88276:
+    batch_norm: false
+    batch_size: 5000
+    bilinear_type: field_interaction
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [4096, 2048, 1024, 512]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FiBiNET
+    model_id: FiBiNET_base
+    model_root: ./Criteo/FiBiNET_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    reduction_ratio: 3
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3

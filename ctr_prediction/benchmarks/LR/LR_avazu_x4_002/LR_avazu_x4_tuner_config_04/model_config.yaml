@@ -1,0 +1,25 @@
+LR_avazu_x4_003_509815a1:
+    batch_size: 20000
+    dataset_id: avazu_x4_d102865a
+    debug: false
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: LR
+    model_id: LR_base
+    model_root: ./Avazu/LR_avazu_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: l2(1.e-8)
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3

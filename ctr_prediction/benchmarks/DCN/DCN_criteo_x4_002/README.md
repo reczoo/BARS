@@ -1,9 +1,8 @@
-## DCN_Criteo_x4_002
+## DCN_criteo_x4_002
 
-A notebook to benchmark DCN on Criteo_x4_002 dataset.
+A hands-on guide to run the DCN model on the Criteo_x4_002 dataset.
 
-Author: [XUEPAI Team](https://github.com/xue-pai)
-
+Author: [XUEPAI](https://github.com/xue-pai)
 
 ### Index
 [Environments](#Environments) | [Dataset](#Dataset) | [Code](#Code) | [Results](#Results) | [Logs](#Logs)
@@ -12,43 +11,60 @@ Author: [XUEPAI Team](https://github.com/xue-pai)
 + Hardware
 
   ```python
-  CPU: Intel(R) Xeon(R) CPU E5-2690 v4 @ 2.6GHz
-  RAM: 500G+
+  CPU: Intel(R) Xeon(R) Gold 6278C CPU @ 2.60GHz
+  GPU: Tesla V100 32G
+  RAM: 755G
+
   ```
+
 + Software
 
   ```python
-  python: 3.6.5
-  pandas: 1.0.0
-  numpy: 1.18.1
+  CUDA: 10.2
+  python: 3.6.4
+  pytorch: 1.0.0
+  pandas: 0.22.0
+  numpy: 1.19.2
+  scipy: 1.5.4
+  sklearn: 0.22.1
+  pyyaml: 5.4.1
+  h5py: 2.8.0
+  tqdm: 4.60.0
+  fuxictr: 1.0.2
   ```
 
 ### Dataset
-In this setting, we follow the winner's solution of the Criteo challenge to discretize each integer value x to ⌊log2 (x)⌋, if x > 2; and x = 1 otherwise. For all categorical fields, we replace infrequent features with a default <OOV> token by setting the threshold min_category_count=10. Note that we do not follow the exact preprocessing steps in AutoInt, because this preprocessing performs much better.
+Dataset ID: [Criteo_x4_002](https://github.com/openbenchmark/BARS/blob/master/ctr_prediction/datasets/Criteo/README.md#Criteo_x4_002). Please refer to the dataset details to get data ready.
 
-To make a fair comparison, we fix embedding_dim=16 as with AutoInt.
 ### Code
-1. Install FuxiCTR
-  
-    Install FuxiCTR via `pip install fuxictr==1.0` to get all dependencies ready. Then download [the FuxiCTR repository](https://github.com/huawei-noah/benchmark/archive/53e314461c19dbc7f462b42bf0f0bfae020dc398.zip) to your local path.
 
-2. Downalod the dataset and run [the preprocessing script](https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/datasets/Criteo/Criteo_x4/split_criteo_x4.py) for data splitting. 
+We use [FuxiCTR-v1.0.2](fuxictr_url) for this experiment. See model code: [DCN](https://github.com/xue-pai/FuxiCTR/blob/v1.0.2/fuxictr/pytorch/models/DCN.py).
 
-3. Download the hyper-parameter configuration file: [DCN_criteo_x4_tuner_config_04.yaml](./002/DCN_criteo_x4_tuner_config_04.yaml)
+Running steps:
 
-4. Run the following script to reproduce the result. 
-  + --config: The config file that defines the tuning space
-  + --tag: Specify which expid to run (each expid corresponds to a specific setting of hyper-parameters in the tunner space)
-  + --gpu: The available gpus for parameters tuning.
+1. Download [FuxiCTR-v1.0.2](fuxictr_url) and install all the dependencies listed in the [environments](#environments). Then modify [run_expid.py](./run_expid.py#L5) to add the FuxiCTR library to system path
+    
+    ```python
+    sys.path.append('YOUR_PATH_TO_FuxiCTR/')
+    ```
 
-  ```bash
-  cd FuxiCTR/benchmarks
-  python run_param_tuner.py --config YOUR_PATH/002/DCN_criteo_x4_tuner_config_04.yaml --tag 001 --gpu 0
-  ```
+2. Create a data directory and put the downloaded csv files in `../data/Avazu/Avazu_x1`.
+
+3. Both `dataset_config.yaml` and `model_config.yaml` files are available in [DCN_criteo_x4_tuner_config_04](./DCN_criteo_x4_tuner_config_04). Make sure the data paths in `dataset_config.yaml` are correctly set to what we create in the last step.
+
+4. Run the following script to start.
+
+    ```bash
+    cd DCN_criteo_x4_002
+    nohup python run_expid.py --config ./DCN_criteo_x4_tuner_config_04 --expid DCN_criteo_x4_001_0a86fe97 --gpu 0 > run.log &
+    tail -f run.log
+    ```
+
 ### Results
-```python
-[Metrics] logloss: 0.444297 - AUC: 0.807320
-```
+
+| logloss | AUC  |
+|:--------------------:|:--------------------:|
+| 0.437832 | 0.814073  |
 
 
 ### Logs
@@ -167,7 +183,7 @@ To make a fair comparison, we fix embedding_dim=16 as with AutoInt.
 2020-02-01 18:37:47,014 P601 INFO --- 3668/3668 batches finished ---
 2020-02-01 18:37:47,086 P601 INFO Train loss: 0.422349
 2020-02-01 18:37:47,086 P601 INFO Training finished.
-2020-02-01 18:37:47,086 P601 INFO Load best model: /cache/zhujieming/FuxiCTR/benchmarks/Criteo/DCN_criteo/criteo_x4_001_be98441d/DCN_criteo_x4_001_93ce629f_criteo_x4_001_be98441d_model.ckpt
+2020-02-01 18:37:47,086 P601 INFO Load best model: /cache/XXX/FuxiCTR/benchmarks/Criteo/DCN_criteo/criteo_x4_001_be98441d/DCN_criteo_x4_001_93ce629f_criteo_x4_001_be98441d_model.ckpt
 2020-02-01 18:37:48,870 P601 INFO ****** Train/validation evaluation ******
 2020-02-01 18:42:42,785 P601 INFO [Metrics] logloss: 0.419981 - AUC: 0.833309
 2020-02-01 18:43:19,555 P601 INFO [Metrics] logloss: 0.438299 - AUC: 0.813539
@@ -177,6 +193,5 @@ To make a fair comparison, we fix embedding_dim=16 as with AutoInt.
 2020-02-01 18:43:20,721 P601 INFO Test samples: total/4584062, pos/1174544, neg/3409518, ratio/25.62%
 2020-02-01 18:43:20,722 P601 INFO Loading test data done.
 2020-02-01 18:43:54,981 P601 INFO [Metrics] logloss: 0.437832 - AUC: 0.814073
-
 
 ```

@@ -1,0 +1,405 @@
+FwFM_avazu_x4_001_e3cb235e:
+    batch_size: 10000
+    dataset_id: avazu_x4_3bbbc4c9
+    debug: false
+    embedding_dim: 16
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    linear_type: LW
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FwFM
+    model_id: FwFM_base
+    model_root: ./Avazu/FwFM_avazu_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 0
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FwFM_avazu_x4_002_3bff2134:
+    batch_size: 10000
+    dataset_id: avazu_x4_3bbbc4c9
+    debug: false
+    embedding_dim: 16
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    linear_type: FeLV
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FwFM
+    model_id: FwFM_base
+    model_root: ./Avazu/FwFM_avazu_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 0
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FwFM_avazu_x4_003_94bb5702:
+    batch_size: 10000
+    dataset_id: avazu_x4_3bbbc4c9
+    debug: false
+    embedding_dim: 16
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    linear_type: FiLV
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FwFM
+    model_id: FwFM_base
+    model_root: ./Avazu/FwFM_avazu_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 0
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FwFM_avazu_x4_004_22bb7427:
+    batch_size: 10000
+    dataset_id: avazu_x4_3bbbc4c9
+    debug: false
+    embedding_dim: 16
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    linear_type: LW
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FwFM
+    model_id: FwFM_base
+    model_root: ./Avazu/FwFM_avazu_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 1.0e-08
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FwFM_avazu_x4_005_fa30ef3f:
+    batch_size: 10000
+    dataset_id: avazu_x4_3bbbc4c9
+    debug: false
+    embedding_dim: 16
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    linear_type: FeLV
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FwFM
+    model_id: FwFM_base
+    model_root: ./Avazu/FwFM_avazu_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 1.0e-08
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FwFM_avazu_x4_006_165a66a9:
+    batch_size: 10000
+    dataset_id: avazu_x4_3bbbc4c9
+    debug: false
+    embedding_dim: 16
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    linear_type: FiLV
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FwFM
+    model_id: FwFM_base
+    model_root: ./Avazu/FwFM_avazu_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 1.0e-08
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FwFM_avazu_x4_007_eb3eac81:
+    batch_size: 10000
+    dataset_id: avazu_x4_3bbbc4c9
+    debug: false
+    embedding_dim: 16
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    linear_type: LW
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FwFM
+    model_id: FwFM_base
+    model_root: ./Avazu/FwFM_avazu_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 1.0e-07
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FwFM_avazu_x4_008_ec59e746:
+    batch_size: 10000
+    dataset_id: avazu_x4_3bbbc4c9
+    debug: false
+    embedding_dim: 16
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    linear_type: FeLV
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FwFM
+    model_id: FwFM_base
+    model_root: ./Avazu/FwFM_avazu_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 1.0e-07
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FwFM_avazu_x4_009_fcc4609c:
+    batch_size: 10000
+    dataset_id: avazu_x4_3bbbc4c9
+    debug: false
+    embedding_dim: 16
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    linear_type: FiLV
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FwFM
+    model_id: FwFM_base
+    model_root: ./Avazu/FwFM_avazu_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 1.0e-07
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FwFM_avazu_x4_010_06a48357:
+    batch_size: 10000
+    dataset_id: avazu_x4_3bbbc4c9
+    debug: false
+    embedding_dim: 16
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    linear_type: LW
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FwFM
+    model_id: FwFM_base
+    model_root: ./Avazu/FwFM_avazu_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 1.0e-06
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FwFM_avazu_x4_011_20225394:
+    batch_size: 10000
+    dataset_id: avazu_x4_3bbbc4c9
+    debug: false
+    embedding_dim: 16
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    linear_type: FeLV
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FwFM
+    model_id: FwFM_base
+    model_root: ./Avazu/FwFM_avazu_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 1.0e-06
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FwFM_avazu_x4_012_3a5f1b67:
+    batch_size: 10000
+    dataset_id: avazu_x4_3bbbc4c9
+    debug: false
+    embedding_dim: 16
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    linear_type: FiLV
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FwFM
+    model_id: FwFM_base
+    model_root: ./Avazu/FwFM_avazu_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 1.0e-06
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FwFM_avazu_x4_013_74dfdb7b:
+    batch_size: 10000
+    dataset_id: avazu_x4_3bbbc4c9
+    debug: false
+    embedding_dim: 16
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    linear_type: LW
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FwFM
+    model_id: FwFM_base
+    model_root: ./Avazu/FwFM_avazu_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 1.0e-05
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FwFM_avazu_x4_014_2e922712:
+    batch_size: 10000
+    dataset_id: avazu_x4_3bbbc4c9
+    debug: false
+    embedding_dim: 16
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    linear_type: FeLV
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FwFM
+    model_id: FwFM_base
+    model_root: ./Avazu/FwFM_avazu_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 1.0e-05
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FwFM_avazu_x4_015_df3df709:
+    batch_size: 10000
+    dataset_id: avazu_x4_3bbbc4c9
+    debug: false
+    embedding_dim: 16
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    linear_type: FiLV
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FwFM
+    model_id: FwFM_base
+    model_root: ./Avazu/FwFM_avazu_x4_001/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 1.0e-05
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3

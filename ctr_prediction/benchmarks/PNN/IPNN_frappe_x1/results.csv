@@ -1,0 +1,1 @@
+ 20201224-222944,[command] python benchmark.py --version pytorch --config Frappe/PNN_frappe_x1/PNN_frappe_x1_tuner_config_06 --expid PNN_frappe_x1_020_f63bc10d --gpu 1,[exp_id] PNN_frappe_x1_020_f63bc10d,[dataset_id] frappe_x1_7f91d67a,[train] N.A.,[val] AUC: 0.984874 - logloss: 0.150045,[test] AUC: 0.984122 - logloss: 0.154003

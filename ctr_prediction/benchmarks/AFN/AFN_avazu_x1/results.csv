@@ -1,0 +1,1 @@
+ 20220121-161620,[command] python run_expid.py --version pytorch --config Avazu/AFN_avazu_x1/AFN_avazu_x1_tuner_config_01 --expid AFN_avazu_x1_014_af89ab38 --gpu 5,[exp_id] AFN_avazu_x1_014_af89ab38,[dataset_id] avazu_x1_3fb65689,[train] N.A.,[val] AUC: 0.731529 - logloss: 0.406079,[test] AUC: 0.754655 - logloss: 0.372925

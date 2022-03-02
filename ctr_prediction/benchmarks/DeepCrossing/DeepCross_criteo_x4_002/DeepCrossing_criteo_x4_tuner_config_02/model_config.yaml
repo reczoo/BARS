@@ -1,0 +1,2772 @@
+DeepCrossing_criteo_x4_001_3815dd41:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [5000, 5000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_002_06d941c4:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [5000, 5000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_003_e118db64:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [5000, 5000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_004_6beafee8:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [5000, 5000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_005_b9e6417a:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [1000, 1000, 1000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_006_20af9142:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [1000, 1000, 1000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_007_3c98859d:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [1000, 1000, 1000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_008_e8a6e789:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [1000, 1000, 1000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_009_5a21cc78:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [3000, 3000, 3000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_010_2f46ab91:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [3000, 3000, 3000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_011_c189f3e2:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [3000, 3000, 3000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_012_8d2af0af:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [3000, 3000, 3000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_013_76ff91da:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [5000, 5000, 5000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_014_fd1fa7d2:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [5000, 5000, 5000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_015_5a0e370a:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [5000, 5000, 5000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_016_467b473c:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [5000, 5000, 5000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_017_728eaed7:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [1000, 1000, 1000, 1000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_018_2846edf9:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [1000, 1000, 1000, 1000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_019_1aac773c:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [1000, 1000, 1000, 1000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_020_03d0b6ac:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [1000, 1000, 1000, 1000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_021_c466c42d:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [3000, 3000, 3000, 3000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_022_e8de89f9:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [3000, 3000, 3000, 3000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_023_d710c73d:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [3000, 3000, 3000, 3000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_024_5d3058fe:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [3000, 3000, 3000, 3000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_025_b77be977:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [5000, 5000, 5000, 5000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_026_b65b282e:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [5000, 5000, 5000, 5000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_027_034c02ac:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [5000, 5000, 5000, 5000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_028_670dfc36:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-6)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [5000, 5000, 5000, 5000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_029_26d08c57:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [5000, 5000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_030_1a39f3aa:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [5000, 5000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_031_aff0fd42:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [5000, 5000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_032_22099208:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [5000, 5000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_033_3742bd4e:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [1000, 1000, 1000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_034_bc1ba1af:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [1000, 1000, 1000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_035_0556713f:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [1000, 1000, 1000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_036_3d6afe12:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [1000, 1000, 1000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_037_6974c6c0:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [3000, 3000, 3000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_038_54ba1a72:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [3000, 3000, 3000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_039_86b83b76:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [3000, 3000, 3000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_040_1d98c701:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [3000, 3000, 3000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_041_93af19f1:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [5000, 5000, 5000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_042_5a9719e9:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [5000, 5000, 5000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_043_343f993a:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [5000, 5000, 5000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_044_44edd625:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [5000, 5000, 5000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_045_7b6486e1:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [1000, 1000, 1000, 1000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_046_a46fee56:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [1000, 1000, 1000, 1000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_047_2ecf4d2d:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [1000, 1000, 1000, 1000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_048_9b72180b:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [1000, 1000, 1000, 1000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_049_7b62205b:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [3000, 3000, 3000, 3000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_050_6aa23c11:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [3000, 3000, 3000, 3000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_051_4bf66a91:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [3000, 3000, 3000, 3000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_052_e2e71fd0:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [3000, 3000, 3000, 3000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_053_94b50aa3:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [5000, 5000, 5000, 5000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_054_3bd0c163:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [5000, 5000, 5000, 5000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_055_798acc0f:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [5000, 5000, 5000, 5000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_056_0f92ea50:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-5)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [5000, 5000, 5000, 5000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_057_a9f68872:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-4)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [5000, 5000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_058_d12474ef:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-4)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [5000, 5000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_059_95ce7126:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-4)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [5000, 5000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_060_6f4ebcef:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-4)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [5000, 5000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_061_05d7dcd3:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-4)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [1000, 1000, 1000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_062_74b1ebb7:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-4)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [1000, 1000, 1000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_063_95b33949:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-4)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [1000, 1000, 1000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_064_f154bb41:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-4)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [1000, 1000, 1000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_065_3fbc4646:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-4)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [3000, 3000, 3000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_066_b6efb266:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-4)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [3000, 3000, 3000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_067_a2eedd72:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-4)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [3000, 3000, 3000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_068_ee62321b:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-4)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [3000, 3000, 3000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_069_d6652302:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-4)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [5000, 5000, 5000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_070_54045e7c:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-4)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [5000, 5000, 5000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_071_600c1983:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-4)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [5000, 5000, 5000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_072_361aa551:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-4)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [5000, 5000, 5000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_073_ec319244:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-4)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [1000, 1000, 1000, 1000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_074_ccbb6848:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-4)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [1000, 1000, 1000, 1000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_075_6adde8c1:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-4)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [1000, 1000, 1000, 1000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_076_1c1c1038:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-4)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [1000, 1000, 1000, 1000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_077_aea1b89e:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-4)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [3000, 3000, 3000, 3000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_078_8686b92a:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-4)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [3000, 3000, 3000, 3000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_079_3ca6fd4a:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-4)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [3000, 3000, 3000, 3000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_080_c36c2883:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-4)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [3000, 3000, 3000, 3000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_081_1f76cd82:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-4)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [5000, 5000, 5000, 5000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_082_4b6a3009:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-4)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [5000, 5000, 5000, 5000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_083_97acd846:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-4)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [5000, 5000, 5000, 5000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3
+DeepCrossing_criteo_x4_084_332a9bf6:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_41e78b20
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 40
+    embedding_dropout: 0
+    embedding_regularizer: l2(1.e-4)
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepCrossing
+    model_id: DeepCrossing_base
+    model_root: ./Criteo/DeepCrossing_criteo_x4_002/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    residual_blocks: [5000, 5000, 5000, 5000]
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    use_residual: true
+    verbose: 1
+    workers: 3

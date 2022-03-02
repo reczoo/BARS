@@ -1,0 +1,1 @@
+ 20220219-174500,[command] python run_expid.py --version pytorch --config Frappe/DESTINE_frappe_x1/DESTINE_frappe_x1_tuner_config_01 --expid DESTINE_frappe_x1_018_8f368b53 --gpu 1,[exp_id] DESTINE_frappe_x1_018_8f368b53,[dataset_id] frappe_x1_04e961e9,[train] N.A.,[val] AUC: 0.985299 - logloss: 0.145737,[test] AUC: 0.985629 - logloss: 0.143421

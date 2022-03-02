@@ -1,0 +1,1 @@
+ 20220119-193534,[command] python run_expid.py --version pytorch --config Avazu/xDeepFM_avazu_x1/CIN_avazu_x1_tuner_config_01 --expid xDeepFM_avazu_x1_003_7f3fed32 --gpu 0,[exp_id] xDeepFM_avazu_x1_003_7f3fed32,[dataset_id] avazu_x1_3fb65689,[train] N.A.,[val] AUC: 0.747134 - logloss: 0.395617,[test] AUC: 0.762390 - logloss: 0.367299
