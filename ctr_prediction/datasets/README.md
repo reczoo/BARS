@@ -1,7 +1,7 @@
-# CTR Datasets
+# BARS-CTR Datasets
 
 
-## Reusable Dataset Splits
+## Reusable Data Splits
 
 | Dataset   | Dataset ID   | Benchmark Protocol     |  Used by                           |
 |:-----------|:--------------------|:------------------------|:---------------------------------------------|

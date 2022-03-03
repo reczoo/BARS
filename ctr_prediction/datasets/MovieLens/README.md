@@ -26,7 +26,7 @@ The MovieLens datasets are collected by GroupLens Research from the MovieLens we
       $ cd datasets/MovieLens/MovielensLatest_x1
       $ python convert_movielenslatest_x1.py (please modify the path accordingly)
       ```
-  + Solution#2: For ease of reuse, the preprocessed data are available for [downloading here](https://zenodo.org/record/5700987/files/Movielenslatest_x1.zip).
+  + Solution#2: For ease of reuse, the preprocessed data are available for [downloading here](https://zenodo.org/record/6324454/files/Movielenslatest_x1.zip?download=1).
   + Check the md5sum for consistency.
       ```bash
       $ md5sum train.csv valid.csv test.csv

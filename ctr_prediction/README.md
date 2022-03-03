@@ -1,13 +1,11 @@
-# BARS-CTR-Prediction
+# BARS-CTR Benchmark
 
-This repo is aimed for open benchmarking for CTR Prediction: https://openbenchmark.github.io/ctr-prediction
+Open Benchmarking for CTR Prediction https://openbenchmark.github.io/ctr-prediction
 
-The key details are available as follows:
+The repo contains four parts:
 
 + [Paper List](./papers.json)
 + [Dataset Splits](./datasets)
-+ [Benchmark Code](./benchmarks)
-
-
-
++ [Benchmark Models](./benchmarks)
++ [Benchmark Results](./leaderboard)
 

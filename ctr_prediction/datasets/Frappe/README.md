@@ -44,7 +44,7 @@ Any scientific publications that use this dataset should cite the following pape
       $ cd datasets/Frappe/Frappe_x1
       $ python convert_frappe_x1.py (please modify the path accordingly)
       ```
-  + Solution#2: For ease of reuse, the preprocessed data are available for [downloading here](https://zenodo.org/record/5700987/files/Frappe_x1.zip).
+  + Solution#2: For ease of reuse, the preprocessed data are available for [downloading here](https://zenodo.org/record/6324454/files/Frappe_x1.zip?download=1).
   + Check the md5sum for consistency.
       ```bash
       $ md5sum train.csv valid.csv test.csv
