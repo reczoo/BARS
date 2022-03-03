@@ -1,9 +1,9 @@
-# Benchmark Datasets
+# CTR Datasets
 
 
-## Dataset Splits
+## Reusable Dataset Splits
 
-| Dataset   | Dataset Split   | Benchmark Setting     |  Used by                           |
+| Dataset   | Dataset ID   | Benchmark Protocol     |  Used by                           |
 |:-----------|:--------------------|:------------------------|:---------------------------------------------|
 | [Criteo](./Criteo)    | [Criteo_x1](./Criteo/README.md#Criteo_x1)          | default     |  [Cheng et al., AAAI'20](https://ojs.aaai.org/index.php/AAAI/article/view/5768)     |
 |           | [Criteo_x2](./Criteo/README.md#Criteo_x2)          |  default        |  [Liu et al., SIGIR'20](https://dl.acm.org/doi/abs/10.1145/3397271.3401082)    |
@@ -20,7 +20,7 @@
 |     | [Taobao_x2](./Taobao/README.md#Taobao_x2)          | default       |  [Feng et al., IJCAI'19](https://arxiv.org/abs/1905.06482)  |
 | [MicroVideo1.7M](./MicroVideo1.7M)    | [MicroVideo1.7M_x1](./MicroVideo1.7M/README.md#MicroVideo17M_x1)          |  default        | [Chen et al., MM'18](https://dl.acm.org/doi/abs/10.1145/3240508.3240617) |
 | [Frappe](./Frappe)    | [Frappe_x1](./Frappe/README.md#Frappe_x1)          | default         |  [Cheng et al., AAAI'20](https://ojs.aaai.org/index.php/AAAI/article/view/5768) |
-| [Movielens](./Movielens) | [MovielensLatest_x1](./Movielens/README.md#MovielensLatest_x1) | default | [Cheng et al., AAAI'20](https://ojs.aaai.org/index.php/AAAI/article/view/5768)  |
+| [MovieLens](./MovieLens) | [MovielensLatest_x1](./MovieLens/README.md#MovielensLatest_x1) | default | [Cheng et al., AAAI'20](https://ojs.aaai.org/index.php/AAAI/article/view/5768)  |
 
 
 ## Tracking Records
