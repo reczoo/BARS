@@ -3,14 +3,14 @@
         {
             "year": "2001",
             "pub": "WWW'01",
-            "model": "ItemKNN",
+            "model": "ItemCF",
             "recall_20": "0.0736",
             "recall_50": "0.1175",
             "ndcg_20": "0.0606",
             "ndcg_50": "0.0771",
             "hitrate_20": "0.3765",
             "hitrate_50": "0.5234",
-            "link": "https://github.com/openbenchmark/BARS/tree/master/candidate_matching/benchmarks/ItemKNN/ItemKNN_amazonbooks_x1",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/candidate_matching/benchmarks/ItemCF/ItemCF_amazonbooks_x1",
             "contr": "Jinpeng Wang",
             "contr_url": ""
         }, 
@@ -263,7 +263,7 @@
             "hitrate_20": "0.2187",
             "hitrate_50": "0.3649",
             "link": "https://github.com/openbenchmark/BARS/tree/master/candidate_matching/benchmarks/ENMF/ENMF_amazonbooks_x1",
-            "contr": "JinPeng Wang",
+            "contr": "Jinpeng Wang",
             "contr_url": ""
         },
         {
