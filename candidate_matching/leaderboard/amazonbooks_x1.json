@@ -1,17 +1,5 @@
 {
-    "data": [{
-            "year": "",
-            "pub": "",
-            "model": "ItemPop",
-            "recall_20": "0.0051",
-            "recall_50": "0.0101",
-            "ndcg_20": "0.0044",
-            "ndcg_50": "0.0061",
-            "hit_rate_20": "0.0419",
-            "hit_rate_50": "0.0764",
-            "link": "https://github.com/xue-pai/Open-Match-Benchmark/blob/master/benchmarks/ItemPop/ItemPop_amazonbooks_x0.md",
-            "contr": "Kelong Mao"
-        },
+    "data": [
         {
             "year": "2001",
             "pub": "WWW'01",
@@ -20,11 +8,13 @@
             "recall_50": "0.1175",
             "ndcg_20": "0.0606",
             "ndcg_50": "0.0771",
-            "hit_rate_20": "0.3765",
-            "hit_rate_50": "0.5234",
-            "link": "https://github.com/xue-pai/Open-Match-Benchmark/blob/master/benchmarks/ItemKNN/ItemKNN_amazonbooks_x0.md",
-            "contr": "Jinpeng Wang"
-        }, {
+            "hitrate_20": "0.3765",
+            "hitrate_50": "0.5234",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/candidate_matching/benchmarks/ItemKNN/ItemKNN_amazonbooks_x1",
+            "contr": "Jinpeng Wang",
+            "contr_url": ""
+        }, 
+        {
             "year": "2009",
             "pub": "UAI'09",
             "model": "MF-BPR",
@@ -32,11 +22,13 @@
             "recall_50": "0.0660",
             "ndcg_20": "0.0261",
             "ndcg_50": "0.0380",
-            "hit_rate_20": "0.2103",
-            "hit_rate_50": "0.3530",
-            "link": "https://github.com/xue-pai/Open-Match-Benchmark/blob/master/benchmarks/MF_BPR/MF_BPR_amazonbooks_x0.md",
-            "contr": "XUEPAI"
-        }, {
+            "hitrate_20": "0.2103",
+            "hitrate_50": "0.3530",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/candidate_matching/benchmarks/MF_BPR/MF_BPR_amazonbooks_x1",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        }, 
+        {
             "year": "2011",
             "pub": "ICDM'11",
             "model": "SLIM",
@@ -44,11 +36,13 @@
             "recall_50": "0.1257",
             "ndcg_20": "0.0602",
             "ndcg_50": "0.0791",
-            "hit_rate_20": "0.3873",
-            "hit_rate_50": "0.5472",
-            "link": "https://github.com/xue-pai/Open-Match-Benchmark/blob/master/benchmarks/SLIM/SLIM_amazonbooks_x0.md",
-            "contr": "Kelong Mao"
-        }, {
+            "hitrate_20": "0.3873",
+            "hitrate_50": "0.5472",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/candidate_matching/benchmarks/SLIM/SLIM_amazonbooks_x1",
+            "contr": "Kelong Mao",
+            "contr_url": "https://github.com/kyriemao"
+        }, 
+        {
             "year": "2017",
             "pub": "CIKM'17",
             "model": "GRMF",
@@ -56,11 +50,13 @@
             "recall_50": "",
             "ndcg_20": "0.0270",
             "ndcg_50": "",
-            "hit_rate_20": "",
-            "hit_rate_50": "",
+            "hitrate_20": "",
+            "hitrate_50": "",
             "link": "",
-            "contr": "Reported by LightGCN paper"
-        }, {
+            "contr": "Reported by LightGCN",
+            "contr_url": "https://arxiv.org/abs/2002.02126"
+        }, 
+        {
             "year": "2016",
             "pub": "MLSP'16",
             "model": "Item2Vec",
@@ -68,11 +64,13 @@
             "recall_50": "0.0623",
             "ndcg_20": "0.0252",
             "ndcg_50": "0.0361",
-            "hit_rate_20": "0.1897",
-            "hit_rate_50": "0.3192",
-            "link": "https://github.com/xue-pai/Open-Match-Benchmark/blob/master/benchmarks/Item2Vec/Item2Vec_amazonbooks_x0.md",
-            "contr": "Yi Li"
-        }, {
+            "hitrate_20": "0.1897",
+            "hitrate_50": "0.3192",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/candidate_matching/benchmarks/Item2Vec/Item2Vec_amazonbooks_x1",
+            "contr": "Yi Li",
+            "contr_url": "https://github.com/ACnoWA"
+        }, 
+        {
             "year": "2016",
             "pub": "RecSys'16",
             "model": "YoutubeNet",
@@ -80,11 +78,13 @@
             "recall_50": "0.0924",
             "ndcg_20": "0.0388",
             "ndcg_50": "0.0545",
-            "hit_rate_20": "0.2757",
-            "hit_rate_50": "0.4354",
-            "link": "https://github.com/xue-pai/Open-Match-Benchmark/blob/master/benchmarks/YoutubeNet/YoutubeNet_amazonbooks_x0.md",
-            "contr": "XUEPAI"
-        }, {
+            "hitrate_20": "0.2757",
+            "hitrate_50": "0.4354",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/candidate_matching/benchmarks/YoutubeNet/YoutubeNet_amazonbooks_x1",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        }, 
+        {
             "year": "2017",
             "pub": "WWW'17",
             "model": "NeuMF",
@@ -92,11 +92,13 @@
             "recall_50": "",
             "ndcg_20": "0.0200",
             "ndcg_50": "",
-            "hit_rate_20": "",
-            "hit_rate_50": "",
+            "hitrate_20": "",
+            "hitrate_50": "",
             "link": "",
-            "contr": "Reported by NGCF paper"
-        }, {
+            "contr": "Reported by NGCF",
+            "contr_url": "https://arxiv.org/abs/1905.08108"
+        }, 
+        {
             "year": "2017",
             "pub": "WWW'07",
             "model": "CML",
@@ -104,11 +106,13 @@
             "recall_50": "0.0953",
             "ndcg_20": "0.0428",
             "ndcg_50": "0.0591",
-            "hit_rate_20": "0.2840",
-            "hit_rate_50": "0.4410",
-            "link": "https://github.com/xue-pai/Open-Match-Benchmark/blob/master/benchmarks/CML/CML_amazonbooks_x0.md",
-            "contr": "Jinpeng Wang"
-        }, {
+            "hitrate_20": "0.2840",
+            "hitrate_50": "0.4410",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/candidate_matching/benchmarks/CML/CML_amazonbooks_x1",
+            "contr": "Jinpeng Wang",
+            "contr_url": ""
+        }, 
+        {
             "year": "2018",
             "pub": "SIGIR'18",
             "model": "CMN",
@@ -116,11 +120,13 @@
             "recall_50": "",
             "ndcg_20": "0.0218",
             "ndcg_50": "",
-            "hit_rate_20": "",
-            "hit_rate_50": "",
+            "hitrate_20": "",
+            "hitrate_50": "",
             "link": "",
-            "contr": "Reported by NGCF paper"
-        }, {
+            "contr": "Reported by NGCF",
+            "contr_url": "https://arxiv.org/abs/1905.08108"
+        }, 
+        {
             "year": "2018",
             "pub": "KDDW'18",
             "model": "GC-MC",
@@ -128,11 +134,13 @@
             "recall_50": "",
             "ndcg_20": "0.0224",
             "ndcg_50": "",
-            "hit_rate_20": "",
-            "hit_rate_50": "",
+            "hitrate_20": "",
+            "hitrate_50": "",
             "link": "",
-            "contr": "Reported by NGCF paper"
-        }, {
+            "contr": "Reported by NGCF",
+            "contr_url": "https://arxiv.org/abs/1905.08108"
+        }, 
+        {
             "year": "2018",
             "pub": "KDD'18",
             "model": "PinSage",
@@ -140,11 +148,13 @@
             "recall_50": "",
             "ndcg_20": "0.0219",
             "ndcg_50": "",
-            "hit_rate_20": "",
-            "hit_rate_50": "",
+            "hitrate_20": "",
+            "hitrate_50": "",
             "link": "",
-            "contr": "Reported by NGCF paper"
-        }, {
+            "contr": "Reported by NGCF",
+            "contr_url": "https://arxiv.org/abs/1905.08108"
+        }, 
+        {
             "year": "2018",
             "pub": "RecSys'18",
             "model": "HOP-Rec",
@@ -152,11 +162,13 @@
             "recall_50": "",
             "ndcg_20": "0.0232",
             "ndcg_50": "",
-            "hit_rate_20": "",
-            "hit_rate_50": "",
+            "hitrate_20": "",
+            "hitrate_50": "",
             "link": "",
-            "contr": "Reported by NGCF paper"
-        }, {
+            "contr": "Reported by NGCF",
+            "contr_url": "https://arxiv.org/abs/1905.08108"
+        }, 
+        {
             "year": "2018",
             "pub": "ICLR'18",
             "model": "GAT",
@@ -164,23 +176,27 @@
             "recall_50": "",
             "ndcg_20": "0.0235",
             "ndcg_50": "",
-            "hit_rate_20": "",
-            "hit_rate_50": "",
+            "hitrate_20": "",
+            "hitrate_50": "",
             "link": "",
-            "contr": "Reported by NAT4Rec paper"
-        }, {
+            "contr": "Reported by NAT4Rec",
+            "contr_url": "https://arxiv.org/abs/2010.12256"
+        }, 
+        {
             "year": "2018",
             "pub": "WWW'18",
-            "model": "Mult-VAE",
+            "model": "MultVAE",
             "recall_20": "0.0407",
             "recall_50": "",
             "ndcg_20": "0.0315",
             "ndcg_50": "",
-            "hit_rate_20": "",
-            "hit_rate_50": "",
+            "hitrate_20": "",
+            "hitrate_50": "",
             "link": "",
-            "contr": "Reported by LightGCN paper"
-        }, {
+            "contr": "Reported by LightGCN",
+            "contr_url": "https://arxiv.org/abs/2002.02126"
+        }, 
+        {
             "year": "2019",
             "pub": "ICML'19",
             "model": "DisenGCN",
@@ -188,11 +204,13 @@
             "recall_50": "",
             "ndcg_20": "0.0254",
             "ndcg_50": "",
-            "hit_rate_20": "",
-            "hit_rate_50": "",
+            "hitrate_20": "",
+            "hitrate_50": "",
             "link": "",
-            "contr": "Reported by DGCF paper"
-        }, {
+            "contr": "Reported by DGCF",
+            "contr_url": "https://arxiv.org/pdf/2101.02844.pdf"
+        }, 
+        {
             "year": "2019",
             "pub": "SIGIR'19",
             "model": "NGCF",
@@ -200,11 +218,13 @@
             "recall_50": "",
             "ndcg_20": "0.0263",
             "ndcg_50": "",
-            "hit_rate_20": "",
-            "hit_rate_50": "",
+            "hitrate_20": "",
+            "hitrate_50": "",
             "link": "",
-            "contr": "Reported by NGCF paper"
-        }, {
+            "contr": "Reported by NGCF",
+            "contr_url": "https://arxiv.org/abs/1905.08108"
+        }, 
+        {
             "year": "2019",
             "pub": "NeurIPS'19",
             "model": "MacridVAE",
@@ -212,11 +232,13 @@
             "recall_50": "",
             "ndcg_20": "0.0295",
             "ndcg_50": "",
-            "hit_rate_20": "",
-            "hit_rate_50": "",
+            "hitrate_20": "",
+            "hitrate_50": "",
             "link": "",
-            "contr": "Reported by DGCF paper"
-        }, {
+            "contr": "Reported by DGCF",
+            "contr_url": "https://arxiv.org/pdf/2101.02844.pdf"
+        }, 
+        {
             "year": "2019",
             "pub": "WWW'19",
             "model": "EASE^R",
@@ -224,11 +246,13 @@
             "recall_50": "0.1177",
             "ndcg_20": "0.0567",
             "ndcg_50": "0.0744",
-            "hit_rate_20": "0.3710",
-            "hit_rate_50": "0.5293",
-            "link": "https://github.com/xue-pai/Open-Match-Benchmark/blob/master/benchmarks/EASE_r/EASE_amazonbooks_x0.md",
-            "contr": "XUEPAI"
-        }, {
+            "hitrate_20": "0.3710",
+            "hitrate_50": "0.5293",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/candidate_matching/benchmarks/EASE_r/EASE_amazonbooks_x1",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        }, 
+        {
             "year": "2020",
             "pub": "TOIS'20",
             "model": "ENMF",
@@ -236,10 +260,11 @@
             "recall_50": "0.0691",
             "ndcg_20": "0.0281",
             "ndcg_50": "0.0404",
-            "hit_rate_20": "0.2187",
-            "hit_rate_50": "0.3649",
-            "link": "https://github.com/xue-pai/Open-Match-Benchmark/blob/master/benchmarks/ENMF/ENMF_amazonbooks_x0.md",
-            "contr": "JinPeng Wang"
+            "hitrate_20": "0.2187",
+            "hitrate_50": "0.3649",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/candidate_matching/benchmarks/ENMF/ENMF_amazonbooks_x1",
+            "contr": "JinPeng Wang",
+            "contr_url": ""
         },
         {
             "year": "2020",
@@ -249,10 +274,11 @@
             "recall_50": "",
             "ndcg_20": "0.0265",
             "ndcg_50": "",
-            "hit_rate_20": "0.0349",
-            "hit_rate_50": "",
-            "link": "https://github.com/xue-pai/Open-Match-Benchmark/blob/master/benchmarks/LR-GCCF/LR-GCCF_amazonbooks_x0.md",
-            "contr": "Yi Li"
+            "hitrate_20": "0.0349",
+            "hitrate_50": "",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/candidate_matching/benchmarks/LR_GCCF/LR_GCCF_amazonbooks_x1",
+            "contr": "Yi Li",
+            "contr_url": "https://github.com/ACnoWA"
         },
         {
             "year": "2020",
@@ -262,36 +288,25 @@
             "recall_50": "",
             "ndcg_20": "0.0287",
             "ndcg_50": "",
-            "hit_rate_20": "",
-            "hit_rate_50": "",
+            "hitrate_20": "",
+            "hitrate_50": "",
             "link": "",
-            "contr": "Reported by NAT4Rec paper"
-        },
-        {
-            "year": "2020",
-            "pub": "SIGIR'20",
-            "model": "LightGCN",
-            "recall_20": "0.0411",
-            "recall_50": "",
-            "ndcg_20": "0.0315",
-            "ndcg_50": "",
-            "hit_rate_20": "",
-            "hit_rate_50": "",
-            "link": "",
-            "contr": "Reported by LightGCN paper"
+            "contr": "Reported by NGAT4Rec",
+            "contr_url": "https://arxiv.org/abs/2010.12256"
         },
         {
             "year": "2020",
             "pub": "SIGIR'2020",
-            "model": "LightGCN (ours)",
+            "model": "LightGCN",
             "recall_20": "0.0411",
             "recall_50": "0.0799",
             "ndcg_20": "0.0318",
             "ndcg_50": "0.0461",
-            "hit_rate_20": "0.2423",
-            "hit_rate_50": "0.4019",
-            "link": "https://github.com/xue-pai/Open-Match-Benchmark/blob/master/benchmarks/LightGCN/LightGCN_TF_amazonbooks_x0.md",
-            "contr": "Yi Li"
+            "hitrate_20": "0.2423",
+            "hitrate_50": "0.4019",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/candidate_matching/benchmarks/LightGCN/LightGCN_amazonbooks_x1",
+            "contr": "Yi Li",
+            "contr_url": "https://github.com/ACnoWA"
         },
         {
             "year": "2020",
@@ -301,10 +316,11 @@
             "recall_50": "",
             "ndcg_20": "0.0324",
             "ndcg_50": "",
-            "hit_rate_20": "",
-            "hit_rate_50": "",
+            "hitrate_20": "",
+            "hitrate_50": "",
             "link": "",
-            "contr": "Reported by DGCF paper"
+            "contr": "Reported by DGCF",
+            "contr_url": "https://arxiv.org/pdf/2101.02844.pdf"
         },
         {
             "year": "2020",
@@ -314,10 +330,11 @@
             "recall_50": "",
             "ndcg_20": "0.0358",
             "ndcg_50": "",
-            "hit_rate_20": "",
-            "hit_rate_50": "",
+            "hitrate_20": "",
+            "hitrate_50": "",
             "link": "",
-            "contr": "Reported by NAT4Rec paper"
+            "contr": "Reported by NGAT4Rec",
+            "contr_url": "https://arxiv.org/abs/2010.12256"
         },
         {
             "year": "2021",
@@ -327,10 +344,11 @@
             "recall_50": "",
             "ndcg_20": "0.0379",
             "ndcg_50": "",
-            "hit_rate_20": "",
-            "hit_rate_50": "",
+            "hitrate_20": "",
+            "hitrate_50": "",
             "link": "",
-            "contr": "Reported by SGL-ED paper"
+            "contr": "Reported by SGL-ED",
+            "contr_url": "https://arxiv.org/abs/2010.10783"
         },
         {
             "year": "2021",
@@ -340,10 +358,11 @@
             "recall_50": "0.1005",
             "ndcg_20": "0.0468",
             "ndcg_50": "0.0624",
-            "hit_rate_20": "0.3030",
-            "hit_rate_50": "0.4557",
-            "link": "https://github.com/xue-pai/Open-Match-Benchmark/blob/master/benchmarks/SimpleX/SimpleX_amazonbooks_x0.md",
-            "contr": "XUEPAI"
+            "hitrate_20": "0.3030",
+            "hitrate_50": "0.4557",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/candidate_matching/benchmarks/SimpleX/SimpleX_amazonbooks_x1",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
         },
         {
             "year": "2021",
@@ -353,10 +372,11 @@
             "recall_50": "",
             "ndcg_20": "0.0556",
             "ndcg_50": "",
-            "hit_rate_20": "",
-            "hit_rate_50": "",
+            "hitrate_20": "",
+            "hitrate_50": "",
             "link": "https://github.com/xue-pai/UltraGCN",
-            "contr": "XUEPAI"
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
         },
         {
             "year": "2021",
@@ -366,10 +386,11 @@
             "recall_50": "0.0961",
             "ndcg_20": "0.0447",
             "ndcg_50": "0.0596",
-            "hit_rate_20": "0.2943",
-            "hit_rate_50": "0.4427",
-            "link": "https://github.com/xue-pai/Open-Match-Benchmark/blob/master/benchmarks/MF_CCL/MF_CCL_amazonbooks_x0.md",
-            "contr": "XUEPAI"
+            "hitrate_20": "0.2943",
+            "hitrate_50": "0.4427",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/candidate_matching/benchmarks/MF_CCL/MF_CCL_amazonbooks_x1",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
         },
         {
             "year": "2021",
@@ -379,12 +400,11 @@
             "recall_50": "",
             "ndcg_20": "0.0584",
             "ndcg_50": "",
-            "hit_rate_20": "",
-            "hit_rate_50": "",
+            "hitrate_20": "",
+            "hitrate_50": "",
             "link": "",
-            "contr": "Reported by GF-CF paper"
+            "contr": "Reported by GF-CF",
+            "contr_url": "https://arxiv.org/abs/2108.07567"
         }
-
-
     ]
 }

@@ -1,5 +1,6 @@
 {
-    "data": [{
+    "data": [
+        {
             "year": "2020",
             "pub": "KDD'20",
             "model": "EBR",
@@ -7,7 +8,7 @@
             "authors": "Jui-Ting Huang, Ashish Sharma, Shuying Sun, Li Xia, David Zhang, Philip Pronin, Janani Padmanabhan, Giuseppe Ottaviano, Linjun Yang",
             "link": "https://arxiv.org/abs/2006.11632",
             "company": "Facebook, Microsoft",
-            "available": "N",
+            "code": "https://paperswithcode.com/paper/embedding-based-retrieval-in-facebook-search",
             "tags": "#Two-Tower"
         },
         {
@@ -18,7 +19,7 @@
             "authors": "Aditya Pal, Chantat Eksombatchai, Yitong Zhou, Bo Zhao, Charles Rosenberg, Jure Leskovec",
             "link": "https://arxiv.org/abs/2007.03634",
             "company": "Pinterest",
-            "available": "N",
+            "code": "",
             "tags": "#Multi-Interest"
         },
         {
@@ -29,7 +30,7 @@
             "authors": "Yukuo Cen, Jianwei Zhang, Xu Zou, Chang Zhou, Hongxia Yang, Jie Tang",
             "link": "https://arxiv.org/abs/2005.09347",
             "company": "Alibaba",
-            "available": "N",
+            "code": "https://paperswithcode.com/paper/controllable-multi-interest-framework-for",
             "tags": "#Multi-Interest"
         },
         {
@@ -40,7 +41,7 @@
             "authors": "Chao Li, Zhiyuan Liu, Mengmeng Wu, Yuchi Xu, Pipei Huang, Huan Zhao, Guoliang Kang, Qiwei Chen, Wei Li, Dik Lun Lee",
             "link": "https://dl.acm.org/doi/abs/10.1145/3357384.3357814",
             "company": "Alibaba",
-            "available": "N",
+            "code": "https://paperswithcode.com/paper/multi-interest-network-with-dynamic-routing",
             "tags": "#Multi-Interest"
         },
         {
@@ -51,7 +52,7 @@
             "authors": "Fei Sun, Jun Liu, Jian Wu, Changhua Pei, Xiao Lin, Wenwu Ou, Peng Jiang",
             "link": "https://arxiv.org/abs/1904.06690",
             "company": "Alibaba",
-            "available": "N",
+            "code": "https://paperswithcode.com/paper/bert4rec-sequential-recommendation-with",
             "tags": "#Sequential"
         },
         {
@@ -62,8 +63,8 @@
             "authors": "Han Zhu, Daqing Chang, Ziru Xu, Pengye Zhang, Xiang Li, Jie He, Han Li, Jian Xu, Kun Gai",
             "link": "https://arxiv.org/abs/1902.07565",
             "company": "Alibaba",
-            "available": "N",
-            "tags": "#End to End"
+            "code": "https://paperswithcode.com/paper/joint-optimization-of-tree-based-index-and",
+            "tags": "#Index"
         },
         {
             "year": "2018",
@@ -73,8 +74,8 @@
             "authors": "Han Zhu, Xiang Li, Pengye Zhang, Guozheng Li, Jie He, Han Li, Kun Gai",
             "link": "https://arxiv.org/abs/1801.02294",
             "company": "Alibaba",
-            "available": "N",
-            "tags": "#End to End"
+            "code": "https://paperswithcode.com/paper/learning-tree-based-deep-model-for",
+            "tags": "#Index"
         },
         {
             "year": "2019",
@@ -84,8 +85,8 @@
             "authors": "Yudan Liu, Kaikai Ge, Xu Zhang, Leyu Lin",
             "link": "https://arxiv.org/abs/1906.05022",
             "company": "Tencent",
-            "available": "N",
-            "tags": ""
+            "code": "https://paperswithcode.com/paper/real-time-attention-based-look-alike-model",
+            "tags": "#Look-alike"
         },
         {
             "year": "2018",
@@ -95,8 +96,8 @@
             "authors": "Kui Zhao, Yuechuan Li, Zhaoqian Shuai, Cheng Yang",
             "link": "https://arxiv.org/abs/1712.08289",
             "company": "Alibaba",
-            "available": "N",
-            "tags": ""
+            "code": "",
+            "tags": "#Embedding"
         },
         {
             "year": "2018",
@@ -106,19 +107,19 @@
             "authors": "Konstantina Christakopoulou, Alex Beutel, Rui Li, Sagar Jain, Ed H. Chi",
             "link": "http://alexbeutel.com/papers/q-and-r-kdd2018.pdf",
             "company": "Google",
-            "available": "N",
-            "tags": ""
+            "code": "",
+            "tags": "#Interactive"
         },
         {
             "year": "2001",
             "pub": "WWW'01",
-            "model": "ItemKNN",
-            "paper": "Item-based collaborative filtering recommendation algorithms",
+            "model": "ItemCF",
+            "paper": "Item-based Collaborative Filtering Recommendation Algorithms",
             "authors": "Badrul Sarwar, George Karypis, Joseph Konstan, John Riedl",
             "link": "https://dl.acm.org/doi/10.1145/371920.372071",
-            "company": "",
-            "available": "N",
-            "tags": ""
+            "company": "GroupLens",
+            "code": "https://github.com/AmazingDD/daisyRec",
+            "tags": "#CF"
         },
         {
             "year": "2009",
@@ -128,8 +129,8 @@
             "authors": "Steffen Rendle, Christoph Freudenthaler, Zeno Gantner, Lars Schmidt-Thieme",
             "link": "https://arxiv.org/abs/1205.2618",
             "company": "",
-            "available": "N",
-            "tags": ""
+            "code": "https://paperswithcode.com/paper/bpr-bayesian-personalized-ranking-from",
+            "tags": "#CF"
         },
         {
             "year": "2011",
@@ -139,8 +140,8 @@
             "authors": "Xia Ning, George Karypis",
             "link": "https://ieeexplore.ieee.org/abstract/document/6137254",
             "company": "",
-            "available": "N",
-            "tags": "#Autoencoder-based"
+            "code": "https://github.com/AmazingDD/daisyRec",
+            "tags": "#AutoEncoder"
         },
         {
             "year": "2016",
@@ -150,8 +151,8 @@
             "authors": "Paul Covington, Jay Adams, Emre Sargin",
             "link": "https://dl.acm.org/doi/10.1145/2959100.2959190",
             "company": "Google",
-            "available": "N",
-            "tags": "#Two-tower"
+            "code": "https://paperswithcode.com/paper/deep-neural-networks-for-youtube",
+            "tags": "#Two-Tower"
         },
         {
             "year": "2007",
@@ -161,8 +162,8 @@
             "authors": "Xiangnan He, Lizi Liao, Hanwang Zhang, Liqiang Nie, Xia Hu, Tat-Seng Chua",
             "link": "https://dl.acm.org/doi/abs/10.1145/3038912.3052569",
             "company": "",
-            "available": "N",
-            "tags": ""
+            "code": "https://paperswithcode.com/paper/neural-collaborative-filtering",
+            "tags": "#CF"
         },
         {
             "year": "2019",
@@ -172,8 +173,8 @@
             "authors": "Xiang Wang, Xiangnan He, Meng Wang, Fuli Feng, Tat-Seng Chua",
             "link": "https://arxiv.org/abs/1905.08108",
             "company": "",
-            "available": "N",
-            "tags": "#GNN-based"
+            "code": "https://paperswithcode.com/paper/neural-graph-collaborative-filtering",
+            "tags": "#GNN"
         },
         {
             "year": "2019",
@@ -183,19 +184,8 @@
             "authors": "Harald Steck",
             "link": "https://arxiv.org/abs/1905.03375",
             "company": "Netflix",
-            "available": "N",
-            "tags": "#Autoencoder-based"
-        },
-        {
-            "year": "2020",
-            "pub": "AAAI'20",
-            "model": "LR-GCCF",
-            "paper": "Revisiting Graph Based Collaborative Filtering: A Linear Residual Graph Convolutional Network Approach",
-            "authors": "Lei Chen, Le Wu, Richang Hong, Kun Zhang, Meng Wang",
-            "link": "https://ojs.aaai.org/index.php/AAAI/article/view/5330",
-            "company": "",
-            "available": "N",
-            "tags": "#GNN-based"
+            "code": "https://paperswithcode.com/paper/190503375",
+            "tags": "#AutoEncoder"
         },
         {
             "year": "2020",
@@ -205,8 +195,8 @@
             "authors": "Xiangnan He, Kuan Deng, Xiang Wang, Yan Li, Yongdong Zhang, Meng Wang",
             "link": "https://dl.acm.org/doi/abs/10.1145/3397271.3401063",
             "company": "Kuaishou",
-            "available": "N",
-            "tags": "#GNN-based"
+            "code": "https://paperswithcode.com/paper/lightgcn-simplifying-and-powering-graph",
+            "tags": "#GNN"
         },
         {
             "year": "2020",
@@ -216,20 +206,19 @@
             "authors": "Chong Chen, Min Zhang, Yongfeng Zhang, Yiqun Liu, Shaoping Ma",
             "link": "https://dl.acm.org/doi/abs/10.1145/3373807",
             "company": "",
-            "available": "N",
-            "tags": ""
+            "code": "https://github.com/chenchongthu/ENMF",
+            "tags": "#CF"
         },
-
         {
             "year": "2021",
             "pub": "CIKM'21",
-            "model": "SimpleX",
+            "model": "MF-CCL/SimpleX",
             "paper": "SimpleX: A Simple and Strong Baseline for Collaborative Filtering",
             "authors": "Kelong Mao, Jieming Zhu, Jinpeng Wang, Quanyu Dai, Zhenhua Dong, Xi Xiao, Xiuqiang He",
-            "link": "",
+            "link": "https://arxiv.org/abs/2109.12613",
             "company": "Huawei",
-            "available": "N",
-            "tags": "#Two-tower"
+            "code": "https://paperswithcode.com/paper/simplex-a-simple-and-strong-baseline-for",
+            "tags": "#CF"
         },
         {
             "year": "2021",
@@ -237,54 +226,32 @@
             "model": "UltraGCN",
             "paper": "UltraGCN: Ultra Simplification of Graph Convolutional Networks for Recommendation",
             "authors": "Kelong Mao, Jieming Zhu, Xi Xiao, Biao Lu, Zhaowei Wang, Xiuqiang He",
-            "link": "",
+            "link": "https://arxiv.org/abs/2110.15114",
             "company": "Huawei",
-            "available": "N",
-            "tags": "#GNN-based"
-        },
-        {
-            "year": "2020",
-            "pub": "SIGIR'20",
-            "model": "DGCF",
-            "paper": "Disentangled Graph Collaborative Filtering",
-            "authors": "Xiang Wang, Hongye Jin, An Zhang, Xiangnan He, Tong Xu, Tat-Seng Chua",
-            "link": "https://arxiv.org/abs/2007.01764",
-            "company": "",
-            "available": "N",
-            "tags": "#GNN-based"
+            "code": "https://paperswithcode.com/paper/ultragcn-ultra-simplification-of-graph",
+            "tags": "#GNN"
         },
         {
             "year": "2021",
             "pub": "SIGIR'21",
-            "model": "SGL-ED",
+            "model": "SGL",
             "paper": "Self-supervised Graph Learning for Recommendation",
             "authors": "Jiancan Wu, Xiang Wang, Fuli Feng, Xiangnan He, Liang Chen, Jianxun Lian, Xing Xie",
             "link": "https://arxiv.org/abs/2010.10783",
             "company": "",
-            "available": "N",
-            "tags": "#GNN-based"
-        },
-        {
-            "year": "2020",
-            "pub": "Arixv'20",
-            "model": "NGAT4Rec",
-            "paper": "NGAT4Rec: Neighbor-Aware Graph Attention Network For Recommendation",
-            "authors": "Jinbo Song, Chao Chang, Fei Sun, Xinbo Song, Peng Jiang",
-            "link": "https://arxiv.org/abs/2010.12256v2",
-            "company": "Kuaishou,Alibaba",
-            "available": "N",
-            "tags": ""
+            "code": "https://paperswithcode.com/paper/self-supervised-graph-learning-for",
+            "tags": "#GNN"
         },
         {
             "year": "2017",
             "pub": "WWW'17",
             "model": "CML",
             "paper": "Collaborative Metric Learning",
-            "authors": "Cheng-Kang Hsieh, Longqi Yang, Yin Cui , Tsung-Yi Lin, Serge Belongie, Deborah Estrin",
+            "authors": "Cheng-Kang Hsieh, Longqi Yang, Yin Cui, Tsung-Yi Lin, Serge Belongie, Deborah Estrin",
             "link": "https://dl.acm.org/doi/pdf/10.1145/3038912.3052639?download=true",
             "company": "",
-            "available": "N",
-            "tags": ""
+            "code": "https://paperswithcode.com/paper/collaborative-metric-learning",
+            "tags": "#CF"
         },
         {
             "year": "2018",
@@ -294,41 +261,19 @@
             "authors": "Travis Ebesu, Bin Shen, Yi Fang",
             "link": "https://arxiv.org/abs/1804.10862",
             "company": "Google",
-            "available": "N",
-            "tags": ""
-        },
-        {
-            "year": "2018",
-            "pub": "RecSys'18",
-            "model": "Hop-Rec",
-            "paper": "HOP-Rec: high-order proximity for implicit recommendation",
-            "authors": "Jheng-Hong Yang, Chih-Ming Chen, Chuan-Ju Wang, Ming-Feng Tsai",
-            "link": "https://dl.acm.org/doi/abs/10.1145/3240323.3240381",
-            "company": "",
-            "available": "N",
-            "tags": ""
-        },
-        {
-            "year": "2021",
-            "pub": "CIKM'21",
-            "model": "MF-CCL",
-            "paper": "SimpleX: A Simple and Strong Baseline for Collaborative Filtering",
-            "authors": "Kelong Mao, Jieming Zhu, Jinpeng Wang, Quanyu Dai, Zhenhua Dong, Xi Xiao, Xiuqiang He",
-            "link": "",
-            "company": "Huawei",
-            "available": "N",
-            "tags": "#CF-based"
+            "code": "https://paperswithcode.com/paper/collaborative-memory-network-for",
+            "tags": "#CF"
         },
         {
             "year": "2018",
             "pub": "WWW'18",
-            "model": "Mult-VAE",
+            "model": "MultVAE",
             "paper": "Variational Autoencoders for Collaborative Filtering",
             "authors": "Dawen Liang, Rahul G. Krishnan, Matthew D. Hoffman, Tony Jebara",
             "link": "https://dl.acm.org/doi/10.1145/3178876.3186150",
-            "company": "Netflix,Google",
-            "available": "N",
-            "tags": "#Autoencoder-based"
+            "company": "Netflix, Google",
+            "code": "https://paperswithcode.com/paper/variational-autoencoders-for-collaborative",
+            "tags": "#AutoEncoder"
         },
         {
             "year": "2019",
@@ -338,8 +283,8 @@
             "authors": "Jianxin Ma, Chang Zhou, Peng Cui, Hongxia Yang, Wenwu Zhu",
             "link": "https://papers.nips.cc/paper/2019/file/a2186aa7c086b46ad4e8bf81e2a3a19b-Paper.pdf",
             "company": "Alibaba",
-            "available": "N",
-            "tags": "#Autoencoder-based"
+            "code": "",
+            "tags": "#AutoEncoder"
         },
         {
             "year": "2014",
@@ -349,8 +294,8 @@
             "authors": "Yelong Shen, Xiaodong He, Jianfeng Gao, Li Deng, Grégoire Mesnil",
             "link": "https://dl.acm.org/doi/abs/10.1145/2567948.2577348",
             "company": "Microsoft",
-            "available": "N",
-            "tags": "#Two-tower"
+            "code": "",
+            "tags": "#Two-Tower"
         },
         {
             "year": "2021",
@@ -360,8 +305,8 @@
             "authors": "Yifei Shen, Yongji Wu, Yao Zhang, Caihua Shan, Jun Zhang, Khaled B. Letaief, Dongsheng Li",
             "link": "https://arxiv.org/abs/2108.07567",
             "company": "Microsoft",
-            "available": "N",
-            "tags": "#GNN-based"
+            "code": "https://paperswithcode.com/paper/how-powerful-is-graph-convolution-for",
+            "tags": "#GNN"
         },
         {
             "year": "2016",
@@ -371,19 +316,74 @@
             "authors": "Oren Barkan, Noam Koenigstein",
             "link": "https://arxiv.org/abs/1603.04259",
             "company": "Microsoft",
-            "available": "N",
-            "tags": ""
+            "code": "https://paperswithcode.com/paper/item2vec-neural-item-embedding-for",
+            "tags": "#Embedding"
         },
         {
-            "year": "2020",
-            "pub": "SIGIR'20",
-            "model": "NIA-GCN",
-            "paper": "Neighbor Interaction Aware Graph Convolution Networks for Recommendation",
-            "authors": "Jianing Sun, Yingxue Zhang, Wei Guo, Huifeng Guo, Ruiming Tang, Xiuqiang He, Chen Ma, Mark Coates",
-            "link": "https://dl.acm.org/doi/abs/10.1145/3397271.3401123",
-            "company": "Huawei",
-            "available": "N",
-            "tags": "GNN-based"
+            "year": "2018",
+            "pub": "KDD'18",
+            "model": "PinSage",
+            "paper": "Graph Convolutional Neural Networks for Web-Scale Recommender Systems",
+            "authors": "Rex Ying, Ruining He, Kaifeng Chen, Pong Eksombatchai, William L. Hamilton, Jure Leskovec",
+            "link": "https://arxiv.org/abs/1806.01973",
+            "company": "Pinterest",
+            "code": "https://paperswithcode.com/paper/graph-convolutional-neural-networks-for-web",
+            "tags": "#GNN"
+        },
+        {
+            "year": "2018",
+            "pub": "KDD'18",
+            "model": "EGES",
+            "paper": "Billion-scale Commodity Embedding for E-commerce Recommendation in Alibaba",
+            "authors": "Jizhe Wang, Pipei Huang, Huan Zhao, Zhibo Zhang, Binqiang Zhao, Dik Lun Lee",
+            "link": "https://arxiv.org/abs/1803.02349",
+            "company": "Alibaba",
+            "code": "https://paperswithcode.com/paper/billion-scale-commodity-embedding-for-e",
+            "tags": "#Embedding"
+        },
+        {
+            "year": "2018",
+            "pub": "ICDM'18",
+            "model": "SASRec",
+            "paper": "Self-Attentive Sequential Recommendation",
+            "authors": "Wang-Cheng Kang, Julian McAuley",
+            "link": "https://arxiv.org/abs/1808.09781",
+            "company": "",
+            "code": "https://paperswithcode.com/paper/180809781",
+            "tags": "#Sequential"
+        },
+        {
+            "year": "2021",
+            "pub": "WSDM'18",
+            "model": "SINE",
+            "paper": "Sparse-Interest Network for Sequential Recommendation",
+            "authors": "Qiaoyu Tan, Jianwei Zhang, Jiangchao Yao, Ninghao Liu, Jingren Zhou, Hongxia Yang, Xia Hu",
+            "link": "https://arxiv.org/abs/2102.09267",
+            "company": "Alibaba",
+            "code": "https://paperswithcode.com/paper/sparse-interest-network-for-sequential",
+            "tags": "#Multi-Interest"
+        },
+        {
+            "year": "2016",
+            "pub": "ICLR'16",
+            "model": "GRU4Rec",
+            "paper": "Session-based Recommendations with Recurrent Neural Networks",
+            "authors": "Balázs Hidasi, Alexandros Karatzoglou, Linas Baltrunas, Domonkos Tikk",
+            "link": "https://arxiv.org/abs/1511.06939",
+            "company": "Gravity, Telefonica, Netflix",
+            "code": "https://paperswithcode.com/paper/session-based-recommendations-with-recurrent",
+            "tags": "#Sequential"
+        },
+        {
+            "year": "2019",
+            "pub": "CIKM'19",
+            "model": "SDM",
+            "paper": "SDM: Sequential Deep Matching Model for Online Large-scale Recommender System",
+            "authors": "Fuyu Lv, Taiwei Jin, Changlong Yu, Fei Sun, Quan Lin, Keping Yang, Wilfred Ng",
+            "link": "https://arxiv.org/abs/1909.00385",
+            "company": "Alibaba",
+            "code": "https://paperswithcode.com/paper/sdm-sequential-deep-matching-model-for-online",
+            "tags": "#Sequential"
         }
     ]
 }
