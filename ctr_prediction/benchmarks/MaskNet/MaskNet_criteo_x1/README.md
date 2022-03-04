@@ -39,11 +39,11 @@ Dataset ID: [Criteo_x1](https://github.com/openbenchmark/BARS/blob/master/ctr_pr
 
 ### Code
 
-We use [FuxiCTR-v1.1.1](fuxictr_url) for this experiment. See model code: [MaskNet](https://github.com/xue-pai/FuxiCTR/blob/v1.1.1/fuxictr/pytorch/models/MaskNet.py).
+We use [FuxiCTR-v1.1.1](https://github.com/xue-pai/FuxiCTR/tree/v1.1.1) for this experiment. See the model code: [MaskNet](https://github.com/xue-pai/FuxiCTR/blob/v1.1.1/fuxictr/pytorch/models/MaskNet.py).
 
 Running steps:
 
-1. Download [FuxiCTR-v1.1.1](fuxictr_url) and install all the dependencies listed in the [environments](#environments). Then modify [run_expid.py](./run_expid.py#L5) to add the FuxiCTR library to system path
+1. Download [FuxiCTR-v1.1.1](https://github.com/xue-pai/FuxiCTR/archive/refs/tags/v1.1.1.zip) and install all the dependencies listed in the [environments](#environments). Then modify [run_expid.py](./run_expid.py#L5) to add the FuxiCTR library to system path
     
     ```python
     sys.path.append('YOUR_PATH_TO_FuxiCTR/')

@@ -1,0 +1,148 @@
+2022-02-01 23:16:28,245 P43776 INFO {
+    "batch_norm": "False",
+    "batch_size": "4096",
+    "data_format": "csv",
+    "data_root": "../data/Frappe/",
+    "dataset_id": "frappe_x1_04e961e9",
+    "debug": "False",
+    "embedding_dim": "10",
+    "embedding_regularizer": "0.0005",
+    "epochs": "100",
+    "every_x_epochs": "1",
+    "feature_cols": "[{'active': True, 'dtype': 'float', 'name': ['user', 'item', 'daytime', 'weekday', 'isweekend', 'homework', 'cost', 'weather', 'country', 'city'], 'type': 'categorical'}]",
+    "gpu": "0",
+    "hidden_activations": "relu",
+    "hidden_units": "[64, 64, 64]",
+    "interaction_type": "circular_convolution",
+    "label_col": "{'dtype': 'float', 'name': 'label'}",
+    "learning_rate": "0.001",
+    "loss": "binary_crossentropy",
+    "metrics": "['AUC', 'logloss']",
+    "min_categr_count": "1",
+    "model": "HFM",
+    "model_id": "HFM_frappe_x1_001_3755ddc7",
+    "model_root": "./Frappe/HFM_frappe_x1/",
+    "monitor": "AUC",
+    "monitor_mode": "max",
+    "net_dropout": "0",
+    "net_regularizer": "0",
+    "num_workers": "3",
+    "optimizer": "adam",
+    "patience": "2",
+    "pickle_feature_encoder": "True",
+    "save_best_only": "True",
+    "seed": "2021",
+    "shuffle": "True",
+    "task": "binary_classification",
+    "test_data": "../data/Frappe/Frappe_x1/test.csv",
+    "train_data": "../data/Frappe/Frappe_x1/train.csv",
+    "use_dnn": "False",
+    "use_hdf5": "True",
+    "valid_data": "../data/Frappe/Frappe_x1/valid.csv",
+    "verbose": "1",
+    "version": "pytorch"
+}
+2022-02-01 23:16:28,246 P43776 INFO Set up feature encoder...
+2022-02-01 23:16:28,246 P43776 INFO Load feature_map from json: ../data/Frappe/frappe_x1_04e961e9/feature_map.json
+2022-02-01 23:16:28,247 P43776 INFO Loading data...
+2022-02-01 23:16:28,251 P43776 INFO Loading data from h5: ../data/Frappe/frappe_x1_04e961e9/train.h5
+2022-02-01 23:16:28,286 P43776 INFO Loading data from h5: ../data/Frappe/frappe_x1_04e961e9/valid.h5
+2022-02-01 23:16:28,312 P43776 INFO Train samples: total/202027, pos/67604, neg/134423, ratio/33.46%, blocks/1
+2022-02-01 23:16:28,313 P43776 INFO Validation samples: total/57722, pos/19063, neg/38659, ratio/33.03%, blocks/1
+2022-02-01 23:16:28,313 P43776 INFO Loading train data done.
+2022-02-01 23:16:40,294 P43776 INFO Total number of parameters: 59290.
+2022-02-01 23:16:40,302 P43776 INFO Start training: 50 batches/epoch
+2022-02-01 23:16:40,303 P43776 INFO ************ Epoch=1 start ************
+2022-02-01 23:16:50,115 P43776 INFO [Metrics] AUC: 0.922366 - logloss: 0.561576
+2022-02-01 23:16:50,116 P43776 INFO Save best model: monitor(max): 0.922366
+2022-02-01 23:16:50,120 P43776 INFO --- 50/50 batches finished ---
+2022-02-01 23:16:50,395 P43776 INFO Train loss: 0.625790
+2022-02-01 23:16:50,395 P43776 INFO ************ Epoch=1 end ************
+2022-02-01 23:16:59,024 P43776 INFO [Metrics] AUC: 0.932913 - logloss: 0.359999
+2022-02-01 23:16:59,025 P43776 INFO Save best model: monitor(max): 0.932913
+2022-02-01 23:16:59,054 P43776 INFO --- 50/50 batches finished ---
+2022-02-01 23:16:59,314 P43776 INFO Train loss: 0.489383
+2022-02-01 23:16:59,314 P43776 INFO ************ Epoch=2 end ************
+2022-02-01 23:17:07,617 P43776 INFO [Metrics] AUC: 0.937927 - logloss: 0.287284
+2022-02-01 23:17:07,617 P43776 INFO Save best model: monitor(max): 0.937927
+2022-02-01 23:17:07,620 P43776 INFO --- 50/50 batches finished ---
+2022-02-01 23:17:07,714 P43776 INFO Train loss: 0.327655
+2022-02-01 23:17:07,715 P43776 INFO ************ Epoch=3 end ************
+2022-02-01 23:17:16,209 P43776 INFO [Metrics] AUC: 0.939570 - logloss: 0.281906
+2022-02-01 23:17:16,210 P43776 INFO Save best model: monitor(max): 0.939570
+2022-02-01 23:17:16,222 P43776 INFO --- 50/50 batches finished ---
+2022-02-01 23:17:16,373 P43776 INFO Train loss: 0.300322
+2022-02-01 23:17:16,373 P43776 INFO ************ Epoch=4 end ************
+2022-02-01 23:17:24,663 P43776 INFO [Metrics] AUC: 0.939937 - logloss: 0.280443
+2022-02-01 23:17:24,663 P43776 INFO Save best model: monitor(max): 0.939937
+2022-02-01 23:17:24,667 P43776 INFO --- 50/50 batches finished ---
+2022-02-01 23:17:24,790 P43776 INFO Train loss: 0.292912
+2022-02-01 23:17:24,790 P43776 INFO ************ Epoch=5 end ************
+2022-02-01 23:17:33,541 P43776 INFO [Metrics] AUC: 0.940234 - logloss: 0.280428
+2022-02-01 23:17:33,542 P43776 INFO Save best model: monitor(max): 0.940234
+2022-02-01 23:17:33,561 P43776 INFO --- 50/50 batches finished ---
+2022-02-01 23:17:33,674 P43776 INFO Train loss: 0.290172
+2022-02-01 23:17:33,674 P43776 INFO ************ Epoch=6 end ************
+2022-02-01 23:17:42,518 P43776 INFO [Metrics] AUC: 0.940012 - logloss: 0.280254
+2022-02-01 23:17:42,527 P43776 INFO Monitor(max) STOP: 0.940012 !
+2022-02-01 23:17:42,528 P43776 INFO Reduce learning rate on plateau: 0.000100
+2022-02-01 23:17:42,528 P43776 INFO --- 50/50 batches finished ---
+2022-02-01 23:17:42,661 P43776 INFO Train loss: 0.287488
+2022-02-01 23:17:42,661 P43776 INFO ************ Epoch=7 end ************
+2022-02-01 23:17:51,820 P43776 INFO [Metrics] AUC: 0.940381 - logloss: 0.279361
+2022-02-01 23:17:51,820 P43776 INFO Save best model: monitor(max): 0.940381
+2022-02-01 23:17:51,872 P43776 INFO --- 50/50 batches finished ---
+2022-02-01 23:17:52,066 P43776 INFO Train loss: 0.281476
+2022-02-01 23:17:52,066 P43776 INFO ************ Epoch=8 end ************
+2022-02-01 23:17:59,258 P43776 INFO [Metrics] AUC: 0.940501 - logloss: 0.279125
+2022-02-01 23:17:59,259 P43776 INFO Save best model: monitor(max): 0.940501
+2022-02-01 23:17:59,263 P43776 INFO --- 50/50 batches finished ---
+2022-02-01 23:17:59,377 P43776 INFO Train loss: 0.280973
+2022-02-01 23:17:59,377 P43776 INFO ************ Epoch=9 end ************
+2022-02-01 23:18:06,984 P43776 INFO [Metrics] AUC: 0.940516 - logloss: 0.279039
+2022-02-01 23:18:06,985 P43776 INFO Save best model: monitor(max): 0.940516
+2022-02-01 23:18:06,988 P43776 INFO --- 50/50 batches finished ---
+2022-02-01 23:18:07,120 P43776 INFO Train loss: 0.280606
+2022-02-01 23:18:07,121 P43776 INFO ************ Epoch=10 end ************
+2022-02-01 23:18:15,533 P43776 INFO [Metrics] AUC: 0.940565 - logloss: 0.278957
+2022-02-01 23:18:15,536 P43776 INFO Save best model: monitor(max): 0.940565
+2022-02-01 23:18:15,540 P43776 INFO --- 50/50 batches finished ---
+2022-02-01 23:18:15,762 P43776 INFO Train loss: 0.280422
+2022-02-01 23:18:15,762 P43776 INFO ************ Epoch=11 end ************
+2022-02-01 23:18:24,836 P43776 INFO [Metrics] AUC: 0.940588 - logloss: 0.278899
+2022-02-01 23:18:24,837 P43776 INFO Save best model: monitor(max): 0.940588
+2022-02-01 23:18:24,840 P43776 INFO --- 50/50 batches finished ---
+2022-02-01 23:18:25,033 P43776 INFO Train loss: 0.280423
+2022-02-01 23:18:25,033 P43776 INFO ************ Epoch=12 end ************
+2022-02-01 23:18:34,274 P43776 INFO [Metrics] AUC: 0.940597 - logloss: 0.278830
+2022-02-01 23:18:34,281 P43776 INFO Save best model: monitor(max): 0.940597
+2022-02-01 23:18:34,289 P43776 INFO --- 50/50 batches finished ---
+2022-02-01 23:18:34,482 P43776 INFO Train loss: 0.279921
+2022-02-01 23:18:34,482 P43776 INFO ************ Epoch=13 end ************
+2022-02-01 23:18:41,708 P43776 INFO [Metrics] AUC: 0.940612 - logloss: 0.278758
+2022-02-01 23:18:41,709 P43776 INFO Save best model: monitor(max): 0.940612
+2022-02-01 23:18:41,712 P43776 INFO --- 50/50 batches finished ---
+2022-02-01 23:18:41,865 P43776 INFO Train loss: 0.279577
+2022-02-01 23:18:41,865 P43776 INFO ************ Epoch=14 end ************
+2022-02-01 23:18:50,238 P43776 INFO [Metrics] AUC: 0.940612 - logloss: 0.278771
+2022-02-01 23:18:50,241 P43776 INFO Monitor(max) STOP: 0.940612 !
+2022-02-01 23:18:50,241 P43776 INFO Reduce learning rate on plateau: 0.000010
+2022-02-01 23:18:50,242 P43776 INFO --- 50/50 batches finished ---
+2022-02-01 23:18:50,420 P43776 INFO Train loss: 0.279453
+2022-02-01 23:18:50,420 P43776 INFO ************ Epoch=15 end ************
+2022-02-01 23:18:58,258 P43776 INFO [Metrics] AUC: 0.940611 - logloss: 0.278765
+2022-02-01 23:18:58,265 P43776 INFO Monitor(max) STOP: 0.940611 !
+2022-02-01 23:18:58,265 P43776 INFO Reduce learning rate on plateau: 0.000001
+2022-02-01 23:18:58,266 P43776 INFO Early stopping at epoch=16
+2022-02-01 23:18:58,266 P43776 INFO --- 50/50 batches finished ---
+2022-02-01 23:18:58,403 P43776 INFO Train loss: 0.279036
+2022-02-01 23:18:58,403 P43776 INFO Training finished.
+2022-02-01 23:18:58,403 P43776 INFO Load best model: /home/XXX/FuxiCTR/benchmarks/Frappe/HFM_frappe_x1/frappe_x1_04e961e9/HFM_frappe_x1_001_3755ddc7.model
+2022-02-01 23:18:58,423 P43776 INFO ****** Validation evaluation ******
+2022-02-01 23:19:00,441 P43776 INFO [Metrics] AUC: 0.940612 - logloss: 0.278758
+2022-02-01 23:19:00,538 P43776 INFO ******** Test evaluation ********
+2022-02-01 23:19:00,539 P43776 INFO Loading data...
+2022-02-01 23:19:00,540 P43776 INFO Loading data from h5: ../data/Frappe/frappe_x1_04e961e9/test.h5
+2022-02-01 23:19:00,543 P43776 INFO Test samples: total/28860, pos/9536, neg/19324, ratio/33.04%, blocks/1
+2022-02-01 23:19:00,544 P43776 INFO Loading test data done.
+2022-02-01 23:19:01,483 P43776 INFO [Metrics] AUC: 0.938632 - logloss: 0.281538

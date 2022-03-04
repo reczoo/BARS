@@ -1,0 +1,150 @@
+2022-03-01 01:31:06,439 P8677 INFO {
+    "afn_activations": "relu",
+    "afn_dropout": "0.1",
+    "afn_hidden_units": "[2000, 2000, 2000]",
+    "batch_norm": "True",
+    "batch_size": "2000",
+    "data_format": "csv",
+    "data_root": "../data/Criteo/",
+    "dataset_id": "criteo_x4_41e78b20",
+    "debug": "False",
+    "dnn_activations": "relu",
+    "dnn_dropout": "0",
+    "dnn_hidden_units": "[]",
+    "embedding_dim": "40",
+    "embedding_dropout": "0",
+    "embedding_regularizer": "1e-06",
+    "ensemble_dnn": "False",
+    "epochs": "100",
+    "every_x_epochs": "1",
+    "feature_cols": "[{'active': True, 'dtype': 'float', 'na_value': 0, 'name': ['I1', 'I2', 'I3', 'I4', 'I5', 'I6', 'I7', 'I8', 'I9', 'I10', 'I11', 'I12', 'I13'], 'preprocess': 'convert_to_bucket', 'type': 'categorical'}, {'active': True, 'dtype': 'str', 'na_value': '', 'name': ['C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9', 'C10', 'C11', 'C12', 'C13', 'C14', 'C15', 'C16', 'C17', 'C18', 'C19', 'C20', 'C21', 'C22', 'C23', 'C24', 'C25', 'C26'], 'type': 'categorical'}]",
+    "gpu": "0",
+    "label_col": "{'dtype': 'float', 'name': 'Label'}",
+    "learning_rate": "0.001",
+    "logarithmic_neurons": "1500",
+    "loss": "binary_crossentropy",
+    "metrics": "['logloss', 'AUC']",
+    "min_categr_count": "2",
+    "model": "AFN",
+    "model_id": "AFN_criteo_x4_080_cf447dc2",
+    "model_root": "./Criteo/AFN_criteo_x4_002/",
+    "monitor": "{'AUC': 1, 'logloss': -1}",
+    "monitor_mode": "max",
+    "net_regularizer": "0",
+    "optimizer": "adam",
+    "patience": "2",
+    "pickle_feature_encoder": "True",
+    "save_best_only": "True",
+    "seed": "2019",
+    "shuffle": "True",
+    "task": "binary_classification",
+    "test_data": "../data/Criteo/Criteo_x4/test.csv",
+    "train_data": "../data/Criteo/Criteo_x4/train.csv",
+    "use_hdf5": "True",
+    "valid_data": "../data/Criteo/Criteo_x4/valid.csv",
+    "verbose": "1",
+    "version": "pytorch",
+    "workers": "3"
+}
+2022-03-01 01:31:06,445 P8677 INFO Set up feature encoder...
+2022-03-01 01:31:06,446 P8677 INFO Reading file: ../data/Criteo/Criteo_x4/train.csv
+2022-03-01 01:52:07,306 P8677 INFO Preprocess feature columns...
+2022-03-01 03:10:40,921 P8677 INFO Fit feature encoder...
+2022-03-01 03:10:40,922 P8677 INFO Processing column: {'active': True, 'dtype': 'float', 'na_value': 0, 'name': 'I1', 'preprocess': 'convert_to_bucket', 'type': 'categorical'}
+2022-03-01 03:11:39,762 P8677 INFO Processing column: {'active': True, 'dtype': 'float', 'na_value': 0, 'name': 'I2', 'preprocess': 'convert_to_bucket', 'type': 'categorical'}
+2022-03-01 03:12:49,901 P8677 INFO Processing column: {'active': True, 'dtype': 'float', 'na_value': 0, 'name': 'I3', 'preprocess': 'convert_to_bucket', 'type': 'categorical'}
+2022-03-01 03:13:53,840 P8677 INFO Processing column: {'active': True, 'dtype': 'float', 'na_value': 0, 'name': 'I4', 'preprocess': 'convert_to_bucket', 'type': 'categorical'}
+2022-03-01 03:14:34,736 P8677 INFO Processing column: {'active': True, 'dtype': 'float', 'na_value': 0, 'name': 'I5', 'preprocess': 'convert_to_bucket', 'type': 'categorical'}
+2022-03-01 03:15:24,227 P8677 INFO Processing column: {'active': True, 'dtype': 'float', 'na_value': 0, 'name': 'I6', 'preprocess': 'convert_to_bucket', 'type': 'categorical'}
+2022-03-01 03:16:04,291 P8677 INFO Processing column: {'active': True, 'dtype': 'float', 'na_value': 0, 'name': 'I7', 'preprocess': 'convert_to_bucket', 'type': 'categorical'}
+2022-03-01 03:16:46,741 P8677 INFO Processing column: {'active': True, 'dtype': 'float', 'na_value': 0, 'name': 'I8', 'preprocess': 'convert_to_bucket', 'type': 'categorical'}
+2022-03-01 03:17:23,063 P8677 INFO Processing column: {'active': True, 'dtype': 'float', 'na_value': 0, 'name': 'I9', 'preprocess': 'convert_to_bucket', 'type': 'categorical'}
+2022-03-01 03:18:11,371 P8677 INFO Processing column: {'active': True, 'dtype': 'float', 'na_value': 0, 'name': 'I10', 'preprocess': 'convert_to_bucket', 'type': 'categorical'}
+2022-03-01 03:18:43,714 P8677 INFO Processing column: {'active': True, 'dtype': 'float', 'na_value': 0, 'name': 'I11', 'preprocess': 'convert_to_bucket', 'type': 'categorical'}
+2022-03-01 03:19:30,448 P8677 INFO Processing column: {'active': True, 'dtype': 'float', 'na_value': 0, 'name': 'I12', 'preprocess': 'convert_to_bucket', 'type': 'categorical'}
+2022-03-01 03:20:18,251 P8677 INFO Processing column: {'active': True, 'dtype': 'float', 'na_value': 0, 'name': 'I13', 'preprocess': 'convert_to_bucket', 'type': 'categorical'}
+2022-03-01 03:21:24,788 P8677 INFO Processing column: {'active': True, 'dtype': 'str', 'na_value': '', 'name': 'C1', 'type': 'categorical'}
+2022-03-01 03:21:41,548 P8677 INFO Processing column: {'active': True, 'dtype': 'str', 'na_value': '', 'name': 'C2', 'type': 'categorical'}
+2022-03-01 03:21:58,418 P8677 INFO Processing column: {'active': True, 'dtype': 'str', 'na_value': '', 'name': 'C3', 'type': 'categorical'}
+2022-03-01 03:22:57,003 P8677 INFO Processing column: {'active': True, 'dtype': 'str', 'na_value': '', 'name': 'C4', 'type': 'categorical'}
+2022-03-01 03:23:47,971 P8677 INFO Processing column: {'active': True, 'dtype': 'str', 'na_value': '', 'name': 'C5', 'type': 'categorical'}
+2022-03-01 03:24:11,110 P8677 INFO Processing column: {'active': True, 'dtype': 'str', 'na_value': '', 'name': 'C6', 'type': 'categorical'}
+2022-03-01 03:24:33,771 P8677 INFO Processing column: {'active': True, 'dtype': 'str', 'na_value': '', 'name': 'C7', 'type': 'categorical'}
+2022-03-01 03:25:08,601 P8677 INFO Processing column: {'active': True, 'dtype': 'str', 'na_value': '', 'name': 'C8', 'type': 'categorical'}
+2022-03-01 03:25:32,460 P8677 INFO Processing column: {'active': True, 'dtype': 'str', 'na_value': '', 'name': 'C9', 'type': 'categorical'}
+2022-03-01 03:25:55,797 P8677 INFO Processing column: {'active': True, 'dtype': 'str', 'na_value': '', 'name': 'C10', 'type': 'categorical'}
+2022-03-01 03:26:32,931 P8677 INFO Processing column: {'active': True, 'dtype': 'str', 'na_value': '', 'name': 'C11', 'type': 'categorical'}
+2022-03-01 03:27:05,093 P8677 INFO Processing column: {'active': True, 'dtype': 'str', 'na_value': '', 'name': 'C12', 'type': 'categorical'}
+2022-03-01 03:28:07,196 P8677 INFO Processing column: {'active': True, 'dtype': 'str', 'na_value': '', 'name': 'C13', 'type': 'categorical'}
+2022-03-01 03:28:39,291 P8677 INFO Processing column: {'active': True, 'dtype': 'str', 'na_value': '', 'name': 'C14', 'type': 'categorical'}
+2022-03-01 03:29:03,484 P8677 INFO Processing column: {'active': True, 'dtype': 'str', 'na_value': '', 'name': 'C15', 'type': 'categorical'}
+2022-03-01 03:29:36,603 P8677 INFO Processing column: {'active': True, 'dtype': 'str', 'na_value': '', 'name': 'C16', 'type': 'categorical'}
+2022-03-01 03:30:46,393 P8677 INFO Processing column: {'active': True, 'dtype': 'str', 'na_value': '', 'name': 'C17', 'type': 'categorical'}
+2022-03-01 03:31:25,942 P8677 INFO Processing column: {'active': True, 'dtype': 'str', 'na_value': '', 'name': 'C18', 'type': 'categorical'}
+2022-03-01 03:32:15,071 P8677 INFO Processing column: {'active': True, 'dtype': 'str', 'na_value': '', 'name': 'C19', 'type': 'categorical'}
+2022-03-01 03:32:52,017 P8677 INFO Processing column: {'active': True, 'dtype': 'str', 'na_value': '', 'name': 'C20', 'type': 'categorical'}
+2022-03-01 03:33:22,798 P8677 INFO Processing column: {'active': True, 'dtype': 'str', 'na_value': '', 'name': 'C21', 'type': 'categorical'}
+2022-03-01 03:34:56,048 P8677 INFO Processing column: {'active': True, 'dtype': 'str', 'na_value': '', 'name': 'C22', 'type': 'categorical'}
+2022-03-01 03:35:17,438 P8677 INFO Processing column: {'active': True, 'dtype': 'str', 'na_value': '', 'name': 'C23', 'type': 'categorical'}
+2022-03-01 03:35:51,019 P8677 INFO Processing column: {'active': True, 'dtype': 'str', 'na_value': '', 'name': 'C24', 'type': 'categorical'}
+2022-03-01 03:36:42,060 P8677 INFO Processing column: {'active': True, 'dtype': 'str', 'na_value': '', 'name': 'C25', 'type': 'categorical'}
+2022-03-01 03:37:00,088 P8677 INFO Processing column: {'active': True, 'dtype': 'str', 'na_value': '', 'name': 'C26', 'type': 'categorical'}
+2022-03-01 03:37:21,205 P8677 INFO Set feature index...
+2022-03-01 03:37:21,206 P8677 INFO Pickle feature_encode: ../data/Criteo/criteo_x4_41e78b20/feature_encoder.pkl
+2022-03-01 03:37:34,554 P8677 INFO Save feature_map to json: ../data/Criteo/criteo_x4_41e78b20/feature_map.json
+2022-03-01 03:37:34,565 P8677 INFO Set feature encoder done.
+2022-03-01 03:38:27,339 P8677 INFO Total number of parameters: 350050099.
+2022-03-01 03:38:27,340 P8677 INFO Loading data...
+2022-03-01 03:38:27,343 P8677 INFO Reading file: ../data/Criteo/Criteo_x4/train.csv
+2022-03-01 03:51:16,015 P8677 INFO Preprocess feature columns...
+2022-03-01 05:26:59,719 P8677 INFO Transform feature columns...
+2022-03-01 06:02:39,549 P8677 INFO Saving data to h5: ../data/Criteo/criteo_x4_41e78b20/train.h5
+2022-03-01 06:04:03,414 P8677 INFO Reading file: ../data/Criteo/Criteo_x4/valid.csv
+2022-03-01 06:05:31,449 P8677 INFO Preprocess feature columns...
+2022-03-01 06:12:16,724 P8677 INFO Transform feature columns...
+2022-03-01 06:18:16,842 P8677 INFO Saving data to h5: ../data/Criteo/criteo_x4_41e78b20/valid.h5
+2022-03-01 06:18:30,269 P8677 INFO Train samples: total/36672493, pos/9396350, neg/27276143, ratio/25.62%
+2022-03-01 06:18:31,158 P8677 INFO Validation samples: total/4584062, pos/1174544, neg/3409518, ratio/25.62%
+2022-03-01 06:18:31,158 P8677 INFO Loading train data done.
+2022-03-01 06:18:31,160 P8677 INFO Start training: 18337 batches/epoch
+2022-03-01 06:18:31,160 P8677 INFO ************ Epoch=1 start ************
+2022-03-01 08:38:18,945 P8677 INFO [Metrics] logloss: 0.447726 - AUC: 0.803390
+2022-03-01 08:38:18,952 P8677 INFO Save best model: monitor(max): 0.355664
+2022-03-01 08:38:23,154 P8677 INFO --- 18337/18337 batches finished ---
+2022-03-01 08:38:24,033 P8677 INFO Train loss: 0.460386
+2022-03-01 08:38:24,033 P8677 INFO ************ Epoch=1 end ************
+2022-03-01 10:59:33,025 P8677 INFO [Metrics] logloss: 0.443367 - AUC: 0.807998
+2022-03-01 10:59:33,035 P8677 INFO Save best model: monitor(max): 0.364631
+2022-03-01 10:59:39,006 P8677 INFO --- 18337/18337 batches finished ---
+2022-03-01 10:59:39,865 P8677 INFO Train loss: 0.451429
+2022-03-01 10:59:39,865 P8677 INFO ************ Epoch=2 end ************
+2022-03-01 13:16:56,773 P8677 INFO [Metrics] logloss: 0.442363 - AUC: 0.809064
+2022-03-01 13:16:56,774 P8677 INFO Save best model: monitor(max): 0.366701
+2022-03-01 13:17:04,495 P8677 INFO --- 18337/18337 batches finished ---
+2022-03-01 13:17:05,474 P8677 INFO Train loss: 0.447051
+2022-03-01 13:17:05,474 P8677 INFO ************ Epoch=3 end ************
+2022-03-01 15:27:45,493 P8677 INFO [Metrics] logloss: 0.444257 - AUC: 0.807147
+2022-03-01 15:27:45,494 P8677 INFO Monitor(max) STOP: 0.362890 !
+2022-03-01 15:27:45,495 P8677 INFO Reduce learning rate on plateau: 0.000100
+2022-03-01 15:27:45,495 P8677 INFO --- 18337/18337 batches finished ---
+2022-03-01 15:27:46,890 P8677 INFO Train loss: 0.440484
+2022-03-01 15:27:46,890 P8677 INFO ************ Epoch=4 end ************
+2022-03-01 17:42:03,406 P8677 INFO [Metrics] logloss: 0.467047 - AUC: 0.795902
+2022-03-01 17:42:03,411 P8677 INFO Monitor(max) STOP: 0.328855 !
+2022-03-01 17:42:03,411 P8677 INFO Reduce learning rate on plateau: 0.000010
+2022-03-01 17:42:03,411 P8677 INFO Early stopping at epoch=5
+2022-03-01 17:42:03,411 P8677 INFO --- 18337/18337 batches finished ---
+2022-03-01 17:42:04,136 P8677 INFO Train loss: 0.408461
+2022-03-01 17:42:04,136 P8677 INFO Training finished.
+2022-03-01 17:42:04,136 P8677 INFO Load best model: /home/XXX/FuxiCTR_v1.0/benchmarks/Criteo/AFN_criteo_x4_002/criteo_x4_41e78b20/AFN_criteo_x4_080_cf447dc2_model.ckpt
+2022-03-01 17:42:09,438 P8677 INFO ****** Validation evaluation ******
+2022-03-01 17:46:47,079 P8677 INFO [Metrics] logloss: 0.442363 - AUC: 0.809064
+2022-03-01 17:46:47,402 P8677 INFO ******** Test evaluation ********
+2022-03-01 17:46:47,402 P8677 INFO Loading data...
+2022-03-01 17:46:47,403 P8677 INFO Reading file: ../data/Criteo/Criteo_x4/test.csv
+2022-03-01 17:49:01,751 P8677 INFO Preprocess feature columns...
+2022-03-01 18:02:08,304 P8677 INFO Transform feature columns...
+2022-03-01 18:05:36,203 P8677 INFO Saving data to h5: ../data/Criteo/criteo_x4_41e78b20/test.h5
+2022-03-01 18:05:40,249 P8677 INFO Test samples: total/4584062, pos/1174544, neg/3409518, ratio/25.62%
+2022-03-01 18:05:40,249 P8677 INFO Loading test data done.
+2022-03-01 18:10:52,512 P8677 INFO [Metrics] logloss: 0.441816 - AUC: 0.809735
