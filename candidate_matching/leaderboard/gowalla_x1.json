@@ -143,14 +143,14 @@
         {
             "year": "2016",
             "pub": "RecSys'16",
-            "model": "YoutubeNet",
+            "model": "YoutubeDNN",
             "recall_20": "0.1754",
             "recall_50": "0.2711",
             "ndcg_20": "0.1473",
             "ndcg_50": "0.1772",
             "hitrate_20": "0.5628",
             "hitrate_50": "0.6978",
-            "link": "https://github.com/openbenchmark/BARS/tree/master/candidate_matching/benchmarks/YoutubeNet/YoutubeNet_gowalla_x1",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/candidate_matching/benchmarks/YoutubeDNN/YoutubeDNN_gowalla_x1",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
         },

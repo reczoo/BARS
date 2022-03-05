@@ -73,14 +73,14 @@
         {
             "year": "2016",
             "pub": "RecSys'16",
-            "model": "YoutubeNet",
+            "model": "YoutubeDNN",
             "recall_20": "0.0502",
             "recall_50": "0.0924",
             "ndcg_20": "0.0388",
             "ndcg_50": "0.0545",
             "hitrate_20": "0.2757",
             "hitrate_50": "0.4354",
-            "link": "https://github.com/openbenchmark/BARS/tree/master/candidate_matching/benchmarks/YoutubeNet/YoutubeNet_amazonbooks_x1",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/candidate_matching/benchmarks/YoutubeDNN/YoutubeDNN_amazonbooks_x1",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
         }, 

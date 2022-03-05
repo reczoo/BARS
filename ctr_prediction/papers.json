@@ -1,5 +1,50 @@
 {
-    "data": [{
+    "data": [
+        {
+            "year": "2021",
+            "pub": "KDD'21",
+            "model": "AOANet",
+            "paper": "Architecture and Operation Adaptive Network for Online Recommendations",
+            "authors": "Lang Lang, Zhenlong Zhu, Xuanye Liu, Jianxin Zhao, Jixing Xu, Minghui Shan",
+            "link": "https://dl.acm.org/doi/10.1145/3447548.3467133",
+            "company": "Didi Chuxing",
+            "code": "",
+            "tags": "#Feature-Interactions"
+        },
+        {
+            "year": "2020",
+            "pub": "CIKM'20",
+            "model": "DMIN",
+            "paper": "Deep Multi-Interest Network for Click-through Rate Prediction",
+            "authors": "Zhibo Xiao, Luwei Yang, Wen Jiang, Yi Wei, Yi Hu, Hao Wang",
+            "link": "https://www.researchgate.net/profile/Luwei-Yang-2/publication/345125472_Deep_Multi-Interest_Network_for_Click-through_Rate_Prediction/links/5f9e1d6b458515b7cfaeffce/Deep-Multi-Interest-Network-for-Click-through-Rate-Prediction.pdf",
+            "company": "Alibaba",
+            "code": "",
+            "tags": "#Behavior-Modeling"
+        },
+        {
+            "year": "2021",
+            "pub": "Arxiv'21",
+            "model": "ContextNet",
+            "paper": "ContextNet: A Click-Through Rate Prediction Framework Using Contextual information to Refine Feature Embedding",
+            "authors": "Zhiqiang Wang, Qingyun She, PengTao Zhang, Junlin Zhang",
+            "link": "https://arxiv.org/abs/2107.12025",
+            "company": "Sina Weibo",
+            "code": "https://paperswithcode.com/paper/contextnet-a-click-through-rate-prediction",
+            "tags": "#Feature-Interactions"
+        },
+        {
+            "year": "2019",
+            "pub": "Arxiv'19",
+            "model": "DLRM",
+            "paper": "Deep Learning Recommendation Model for Personalization and Recommendation Systems",
+            "authors": "Maxim Naumov, Dheevatsa Mudigere, Hao-Jun Michael Shi, Jianyu Huang, Narayanan Sundaraman, Jongsoo Park, Xiaodong Wang, Udit Gupta, Carole-Jean Wu, Alisson G. Azzolini, Dmytro Dzhulgakov, Andrey Mallevich, Ilia Cherniavskii, Yinghai Lu, Raghuraman Krishnamoorthi, Ansha Yu, Volodymyr Kondratenko, Stephanie Pereira, Xianjie Chen, Wenlin Chen, Vijay Rao, Bill Jia, Liang Xiong, Misha Smelyanskiy",
+            "link": "https://arxiv.org/abs/1906.00091",
+            "company": "Facebook",
+            "code": "https://paperswithcode.com/paper/190600091",
+            "tags": "#Feature-Interactions"
+        },
+        {
             "year": "2021",
             "pub": "CIKM'21",
             "model": "DCAP",

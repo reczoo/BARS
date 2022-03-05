@@ -155,8 +155,8 @@
             "tags": "#Two-Tower"
         },
         {
-            "year": "2007",
-            "pub": "WWW'07",
+            "year": "2017",
+            "pub": "WWW'17",
             "model": "NeuMF",
             "paper": "Neural Collaborative Filtering",
             "authors": "Xiangnan He, Lizi Liao, Hanwang Zhang, Liqiang Nie, Xia Hu, Tat-Seng Chua",
@@ -212,7 +212,7 @@
         {
             "year": "2021",
             "pub": "CIKM'21",
-            "model": "MF-CCL/SimpleX",
+            "model": "SimpleX / MF-CCL",
             "paper": "SimpleX: A Simple and Strong Baseline for Collaborative Filtering",
             "authors": "Kelong Mao, Jieming Zhu, Jinpeng Wang, Quanyu Dai, Zhenhua Dong, Xi Xiao, Xiuqiang He",
             "link": "https://arxiv.org/abs/2109.12613",
