@@ -1,0 +1,1 @@
+ 20220310-103537,[command] python run_expid.py --version pytorch --config KKBox/LorentzFM_kkbox_x1/LorentzFM_kkbox_x1_tuner_config_02 --expid LorentzFM_kkbox_x1_003_0455bdef --gpu 2,[exp_id] LorentzFM_kkbox_x1_003_0455bdef,[dataset_id] kkbox_x1_227d337d,[train] N.A.,[val] logloss: 0.519497 - AUC: 0.819686,[test] logloss: 0.518848 - AUC: 0.820207

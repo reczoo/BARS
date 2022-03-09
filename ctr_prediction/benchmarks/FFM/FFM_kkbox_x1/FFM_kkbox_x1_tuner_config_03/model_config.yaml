@@ -1,0 +1,648 @@
+FFM_kkbox_x1_001_f6205dfd:
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 64
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FFM
+    model_id: FFM_base
+    model_root: ./KKBox/FFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 0.0005
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FFM_kkbox_x1_002_cf624bbb:
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 32
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FFM
+    model_id: FFM_base
+    model_root: ./KKBox/FFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 0.0005
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FFM_kkbox_x1_003_b324edb5:
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 16
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FFM
+    model_id: FFM_base
+    model_root: ./KKBox/FFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 0.0005
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FFM_kkbox_x1_004_2ce9eb83:
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 8
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FFM
+    model_id: FFM_base
+    model_root: ./KKBox/FFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 0.0005
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FFM_kkbox_x1_005_0f71672e:
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 64
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FFM
+    model_id: FFM_base
+    model_root: ./KKBox/FFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 1.0e-05
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FFM_kkbox_x1_006_29192745:
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 32
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FFM
+    model_id: FFM_base
+    model_root: ./KKBox/FFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 1.0e-05
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FFM_kkbox_x1_007_017e6bc1:
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 16
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FFM
+    model_id: FFM_base
+    model_root: ./KKBox/FFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 1.0e-05
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FFM_kkbox_x1_008_b304e092:
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 8
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FFM
+    model_id: FFM_base
+    model_root: ./KKBox/FFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 1.0e-05
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FFM_kkbox_x1_009_fe0362e9:
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 64
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FFM
+    model_id: FFM_base
+    model_root: ./KKBox/FFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 5.0e-05
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FFM_kkbox_x1_010_3ade1014:
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 32
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FFM
+    model_id: FFM_base
+    model_root: ./KKBox/FFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 5.0e-05
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FFM_kkbox_x1_011_f03202bd:
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 16
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FFM
+    model_id: FFM_base
+    model_root: ./KKBox/FFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 5.0e-05
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FFM_kkbox_x1_012_fd708e7e:
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 8
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FFM
+    model_id: FFM_base
+    model_root: ./KKBox/FFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 5.0e-05
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FFM_kkbox_x1_013_be66bea0:
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 64
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FFM
+    model_id: FFM_base
+    model_root: ./KKBox/FFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 1.0e-06
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FFM_kkbox_x1_014_2b8aa28c:
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 32
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FFM
+    model_id: FFM_base
+    model_root: ./KKBox/FFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 1.0e-06
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FFM_kkbox_x1_015_5f01547d:
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 16
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FFM
+    model_id: FFM_base
+    model_root: ./KKBox/FFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 1.0e-06
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FFM_kkbox_x1_016_6c76b33c:
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 8
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FFM
+    model_id: FFM_base
+    model_root: ./KKBox/FFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 1.0e-06
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FFM_kkbox_x1_017_852fd9b3:
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 64
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FFM
+    model_id: FFM_base
+    model_root: ./KKBox/FFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 5.0e-06
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FFM_kkbox_x1_018_25f25be5:
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 32
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FFM
+    model_id: FFM_base
+    model_root: ./KKBox/FFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 5.0e-06
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FFM_kkbox_x1_019_2a4d63e4:
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 16
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FFM
+    model_id: FFM_base
+    model_root: ./KKBox/FFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 5.0e-06
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FFM_kkbox_x1_020_dc3f9724:
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 8
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FFM
+    model_id: FFM_base
+    model_root: ./KKBox/FFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 5.0e-06
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FFM_kkbox_x1_021_0bf27f66:
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 64
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FFM
+    model_id: FFM_base
+    model_root: ./KKBox/FFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 1.0e-07
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FFM_kkbox_x1_022_ad638899:
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 32
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FFM
+    model_id: FFM_base
+    model_root: ./KKBox/FFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 1.0e-07
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FFM_kkbox_x1_023_2d8a60cd:
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 16
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FFM
+    model_id: FFM_base
+    model_root: ./KKBox/FFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 1.0e-07
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+FFM_kkbox_x1_024_a1dd9d7c:
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 8
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FFM
+    model_id: FFM_base
+    model_root: ./KKBox/FFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 1.0e-07
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3

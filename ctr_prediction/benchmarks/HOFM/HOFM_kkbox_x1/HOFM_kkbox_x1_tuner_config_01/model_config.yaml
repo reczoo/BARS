@@ -27,7 +27,36 @@ HOFM_kkbox_x1_001_b3c49286:
     use_hdf5: true
     verbose: 1
     workers: 3
-HOFM_kkbox_x1_002_0b04fd80:
+HOFM_kkbox_x1_002_1e9ad59b:
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: [128, 128]
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HOFM
+    model_id: HOFM_base
+    model_root: ./KKBox/HOFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    order: 3
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 0
+    reuse_embedding: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HOFM_kkbox_x1_003_0b04fd80:
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
     debug: false
@@ -56,7 +85,36 @@ HOFM_kkbox_x1_002_0b04fd80:
     use_hdf5: true
     verbose: 1
     workers: 3
-HOFM_kkbox_x1_003_83bd25ec:
+HOFM_kkbox_x1_004_787f421a:
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: [128, 64]
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HOFM
+    model_id: HOFM_base
+    model_root: ./KKBox/HOFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    order: 3
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 0
+    reuse_embedding: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HOFM_kkbox_x1_005_83bd25ec:
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
     debug: false
@@ -85,7 +143,36 @@ HOFM_kkbox_x1_003_83bd25ec:
     use_hdf5: true
     verbose: 1
     workers: 3
-HOFM_kkbox_x1_004_4a8dfec8:
+HOFM_kkbox_x1_006_73113094:
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: [128, 32]
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HOFM
+    model_id: HOFM_base
+    model_root: ./KKBox/HOFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    order: 3
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 0
+    reuse_embedding: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HOFM_kkbox_x1_007_4a8dfec8:
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
     debug: false
@@ -114,7 +201,36 @@ HOFM_kkbox_x1_004_4a8dfec8:
     use_hdf5: true
     verbose: 1
     workers: 3
-HOFM_kkbox_x1_005_887fd1c6:
+HOFM_kkbox_x1_008_b57187f9:
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: [128, 128]
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HOFM
+    model_id: HOFM_base
+    model_root: ./KKBox/HOFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    order: 3
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 1.0e-06
+    reuse_embedding: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HOFM_kkbox_x1_009_887fd1c6:
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
     debug: false
@@ -143,7 +259,36 @@ HOFM_kkbox_x1_005_887fd1c6:
     use_hdf5: true
     verbose: 1
     workers: 3
-HOFM_kkbox_x1_006_69b5b673:
+HOFM_kkbox_x1_010_e09e6885:
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: [128, 64]
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HOFM
+    model_id: HOFM_base
+    model_root: ./KKBox/HOFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    order: 3
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 1.0e-06
+    reuse_embedding: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HOFM_kkbox_x1_011_69b5b673:
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
     debug: false
@@ -172,7 +317,36 @@ HOFM_kkbox_x1_006_69b5b673:
     use_hdf5: true
     verbose: 1
     workers: 3
-HOFM_kkbox_x1_007_2e45fd9d:
+HOFM_kkbox_x1_012_0ae29591:
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: [128, 32]
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HOFM
+    model_id: HOFM_base
+    model_root: ./KKBox/HOFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    order: 3
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 1.0e-06
+    reuse_embedding: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HOFM_kkbox_x1_013_2e45fd9d:
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
     debug: false
@@ -201,7 +375,36 @@ HOFM_kkbox_x1_007_2e45fd9d:
     use_hdf5: true
     verbose: 1
     workers: 3
-HOFM_kkbox_x1_008_2d0ee6bb:
+HOFM_kkbox_x1_014_00346126:
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: [128, 128]
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HOFM
+    model_id: HOFM_base
+    model_root: ./KKBox/HOFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    order: 3
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 1.0e-05
+    reuse_embedding: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HOFM_kkbox_x1_015_2d0ee6bb:
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
     debug: false
@@ -230,7 +433,36 @@ HOFM_kkbox_x1_008_2d0ee6bb:
     use_hdf5: true
     verbose: 1
     workers: 3
-HOFM_kkbox_x1_009_4b0da798:
+HOFM_kkbox_x1_016_32c1ad35:
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: [128, 64]
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HOFM
+    model_id: HOFM_base
+    model_root: ./KKBox/HOFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    order: 3
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 1.0e-05
+    reuse_embedding: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HOFM_kkbox_x1_017_4b0da798:
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
     debug: false
@@ -259,7 +491,36 @@ HOFM_kkbox_x1_009_4b0da798:
     use_hdf5: true
     verbose: 1
     workers: 3
-HOFM_kkbox_x1_010_de36de4c:
+HOFM_kkbox_x1_018_d272443d:
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: [128, 32]
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HOFM
+    model_id: HOFM_base
+    model_root: ./KKBox/HOFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    order: 3
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 1.0e-05
+    reuse_embedding: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HOFM_kkbox_x1_019_de36de4c:
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
     debug: false
@@ -288,7 +549,36 @@ HOFM_kkbox_x1_010_de36de4c:
     use_hdf5: true
     verbose: 1
     workers: 3
-HOFM_kkbox_x1_011_80a3f9a7:
+HOFM_kkbox_x1_020_d135136b:
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: [128, 128]
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HOFM
+    model_id: HOFM_base
+    model_root: ./KKBox/HOFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    order: 3
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 0.0001
+    reuse_embedding: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HOFM_kkbox_x1_021_80a3f9a7:
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
     debug: false
@@ -317,7 +607,36 @@ HOFM_kkbox_x1_011_80a3f9a7:
     use_hdf5: true
     verbose: 1
     workers: 3
-HOFM_kkbox_x1_012_06acb452:
+HOFM_kkbox_x1_022_d7393a39:
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: [128, 64]
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HOFM
+    model_id: HOFM_base
+    model_root: ./KKBox/HOFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    order: 3
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 0.0001
+    reuse_embedding: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HOFM_kkbox_x1_023_06acb452:
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
     debug: false
@@ -346,7 +665,36 @@ HOFM_kkbox_x1_012_06acb452:
     use_hdf5: true
     verbose: 1
     workers: 3
-HOFM_kkbox_x1_013_e8bb1ff4:
+HOFM_kkbox_x1_024_cc923596:
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: [128, 32]
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HOFM
+    model_id: HOFM_base
+    model_root: ./KKBox/HOFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    order: 3
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 0.0001
+    reuse_embedding: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HOFM_kkbox_x1_025_e8bb1ff4:
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
     debug: false
@@ -375,7 +723,36 @@ HOFM_kkbox_x1_013_e8bb1ff4:
     use_hdf5: true
     verbose: 1
     workers: 3
-HOFM_kkbox_x1_014_15a96413:
+HOFM_kkbox_x1_026_449ac923:
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: [128, 128]
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HOFM
+    model_id: HOFM_base
+    model_root: ./KKBox/HOFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    order: 3
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 0.001
+    reuse_embedding: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HOFM_kkbox_x1_027_15a96413:
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
     debug: false
@@ -404,7 +781,36 @@ HOFM_kkbox_x1_014_15a96413:
     use_hdf5: true
     verbose: 1
     workers: 3
-HOFM_kkbox_x1_015_927f0730:
+HOFM_kkbox_x1_028_faf18379:
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: [128, 64]
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HOFM
+    model_id: HOFM_base
+    model_root: ./KKBox/HOFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    order: 3
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 0.001
+    reuse_embedding: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HOFM_kkbox_x1_029_927f0730:
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
     debug: false
@@ -426,6 +832,35 @@ HOFM_kkbox_x1_015_927f0730:
     pickle_feature_encoder: true
     regularizer: 0.001
     reuse_embedding: false
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+HOFM_kkbox_x1_030_8b5cffc0:
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: [128, 32]
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: HOFM
+    model_id: HOFM_base
+    model_root: ./KKBox/HOFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    order: 3
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 0.001
+    reuse_embedding: true
     save_best_only: true
     seed: 2019
     shuffle: true

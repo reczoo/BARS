@@ -49,7 +49,7 @@ Running steps:
     sys.path.append('YOUR_PATH_TO_FuxiCTR/')
     ```
 
-2. Create a data directory and put the downloaded csv files in `../data/Avazu/Avazu_x1`.
+2. Create a data directory and put the downloaded csv files in `../data/Criteo/Criteo_x1`.
 
 3. Both `dataset_config.yaml` and `model_config.yaml` files are available in [DeepIM_criteo_x1_tuner_config_01](./DeepIM_criteo_x1_tuner_config_01). Make sure the data paths in `dataset_config.yaml` are correctly set to what we create in the last step.
 
@@ -72,7 +72,6 @@ Total 5 runs:
 | 3 | 0.813801 | 0.438088  |
 | 4 | 0.813840 | 0.438001  |
 | 5 | 0.813867 | 0.438036  |
-| | | | 
 | Avg | 0.813880 | 0.438006 |
 | Std | &#177;0.00005878 | &#177;0.00005142 |
 

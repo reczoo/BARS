@@ -1,4 +1,68 @@
-PNN_kkbox_x1_001_e73899de:
+PNN_kkbox_x1_001_617689ac:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: PNN
+    model_id: PNN_base
+    model_root: ./KKBox/PNN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+PNN_kkbox_x1_002_4e31bc12:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: PNN
+    model_id: PNN_base
+    model_root: ./KKBox/PNN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+PNN_kkbox_x1_003_e73899de:
     batch_norm: false
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
@@ -30,14 +94,110 @@ PNN_kkbox_x1_001_e73899de:
     use_hdf5: true
     verbose: 1
     workers: 3
-PNN_kkbox_x1_002_3eb11622:
+PNN_kkbox_x1_004_7d60c4f0:
     batch_norm: false
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
     debug: false
     embedding_dim: 128
     embedding_dropout: 0
-    embedding_regularizer: 0.005
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: PNN
+    model_id: PNN_base
+    model_root: ./KKBox/PNN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+PNN_kkbox_x1_005_ed71557d:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: PNN
+    model_id: PNN_base
+    model_root: ./KKBox/PNN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+PNN_kkbox_x1_006_86ee478e:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: PNN
+    model_id: PNN_base
+    model_root: ./KKBox/PNN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+PNN_kkbox_x1_007_d640264c:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
     epochs: 100
     every_x_epochs: 1
     hidden_activations: relu
@@ -62,7 +222,103 @@ PNN_kkbox_x1_002_3eb11622:
     use_hdf5: true
     verbose: 1
     workers: 3
-PNN_kkbox_x1_003_0bfc6d19:
+PNN_kkbox_x1_008_3fa15102:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: PNN
+    model_id: PNN_base
+    model_root: ./KKBox/PNN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+PNN_kkbox_x1_009_98dbcd80:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: PNN
+    model_id: PNN_base
+    model_root: ./KKBox/PNN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+PNN_kkbox_x1_010_060f867a:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: PNN
+    model_id: PNN_base
+    model_root: ./KKBox/PNN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+PNN_kkbox_x1_011_0bfc6d19:
     batch_norm: false
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
@@ -94,7 +350,103 @@ PNN_kkbox_x1_003_0bfc6d19:
     use_hdf5: true
     verbose: 1
     workers: 3
-PNN_kkbox_x1_004_1b4d837a:
+PNN_kkbox_x1_012_222ac8e3:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: PNN
+    model_id: PNN_base
+    model_root: ./KKBox/PNN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+PNN_kkbox_x1_013_dcf1463e:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [2000, 2000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: PNN
+    model_id: PNN_base
+    model_root: ./KKBox/PNN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+PNN_kkbox_x1_014_a9abb5cd:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [2000, 2000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: PNN
+    model_id: PNN_base
+    model_root: ./KKBox/PNN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+PNN_kkbox_x1_015_1b4d837a:
     batch_norm: false
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
@@ -126,14 +478,110 @@ PNN_kkbox_x1_004_1b4d837a:
     use_hdf5: true
     verbose: 1
     workers: 3
-PNN_kkbox_x1_005_f264f5ec:
+PNN_kkbox_x1_016_ce15def8:
     batch_norm: false
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
     debug: false
     embedding_dim: 128
     embedding_dropout: 0
-    embedding_regularizer: 0.005
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [2000, 2000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: PNN
+    model_id: PNN_base
+    model_root: ./KKBox/PNN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+PNN_kkbox_x1_017_7494b91e:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [2000, 2000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: PNN
+    model_id: PNN_base
+    model_root: ./KKBox/PNN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+PNN_kkbox_x1_018_355c7bb0:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [2000, 2000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: PNN
+    model_id: PNN_base
+    model_root: ./KKBox/PNN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+PNN_kkbox_x1_019_c826ea41:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
     epochs: 100
     every_x_epochs: 1
     hidden_activations: relu
@@ -158,7 +606,103 @@ PNN_kkbox_x1_005_f264f5ec:
     use_hdf5: true
     verbose: 1
     workers: 3
-PNN_kkbox_x1_006_82575433:
+PNN_kkbox_x1_020_35c7c60b:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [2000, 2000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: PNN
+    model_id: PNN_base
+    model_root: ./KKBox/PNN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+PNN_kkbox_x1_021_4e1cbea0:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [2000, 2000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: PNN
+    model_id: PNN_base
+    model_root: ./KKBox/PNN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+PNN_kkbox_x1_022_713e3250:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [2000, 2000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: PNN
+    model_id: PNN_base
+    model_root: ./KKBox/PNN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+PNN_kkbox_x1_023_82575433:
     batch_norm: false
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
@@ -179,6 +723,38 @@ PNN_kkbox_x1_006_82575433:
     monitor: {AUC: 1, logloss: -1}
     monitor_mode: max
     net_dropout: 0.2
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+PNN_kkbox_x1_024_b4a0f768:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [2000, 2000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: PNN
+    model_id: PNN_base
+    model_root: ./KKBox/PNN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.3
     net_regularizer: 0
     optimizer: adam
     patience: 2

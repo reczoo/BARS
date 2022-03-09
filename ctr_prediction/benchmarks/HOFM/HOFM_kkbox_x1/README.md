@@ -11,8 +11,8 @@ Author: [XUEPAI](https://github.com/xue-pai)
 + Hardware
 
   ```python
-  CPU: Intel(R) Xeon(R) CPU E5-2690 v4 @ 2.60GHz
-  GPU: Tesla P100 16G
+  CPU: Intel(R) Xeon(R) Gold 6278C CPU @ 2.60GHz
+  GPU: Tesla V100 32G
   RAM: 755G
 
   ```
@@ -20,21 +20,21 @@ Author: [XUEPAI](https://github.com/xue-pai)
 + Software
 
   ```python
-  CUDA: 10.0
-  python: 3.6.5
-  pytorch: 1.0.1.post2
-  pandas: 0.23.0
-  numpy: 1.18.1
-  scipy: 1.1.0
-  sklearn: 0.23.1
-  pyyaml: 5.1
-  h5py: 2.7.1
-  tqdm: 4.59.0
+  CUDA: 10.2
+  python: 3.6.4
+  pytorch: 1.0.0
+  pandas: 0.22.0
+  numpy: 1.19.2
+  scipy: 1.5.4
+  sklearn: 0.22.1
+  pyyaml: 5.4.1
+  h5py: 2.8.0
+  tqdm: 4.60.0
   fuxictr: 1.0.2
   ```
 
 ### Dataset
-Dataset ID: [KKBox_x1](https://github.com/openbenchmark/BARS/blob/master/ctr_prediction/datasets/KKBox/README.md#KKBox_x1). Please refer to the dataset details to get data ready.
+Dataset ID: [KKBox_x1](https://github.com/openbenchmark/BARS/blob/master/ctr_prediction/datasets/KKBox#KKBox_x1). Please refer to the dataset details to get data ready.
 
 ### Code
 
@@ -48,7 +48,7 @@ Running steps:
     sys.path.append('YOUR_PATH_TO_FuxiCTR/')
     ```
 
-2. Create a data directory and put the downloaded csv files in `../data/Avazu/Avazu_x1`.
+2. Create a data directory and put the downloaded csv files in `../data/KKBox/KKBox_x1`.
 
 3. Both `dataset_config.yaml` and `model_config.yaml` files are available in [HOFM_kkbox_x1_tuner_config_01](./HOFM_kkbox_x1_tuner_config_01). Make sure the data paths in `dataset_config.yaml` are correctly set to what we create in the last step.
 
@@ -56,7 +56,7 @@ Running steps:
 
     ```bash
     cd HOFM_kkbox_x1
-    nohup python run_expid.py --config ./HOFM_kkbox_x1_tuner_config_01 --expid HOFM_kkbox_x1_007_2e45fd9d --gpu 0 > run.log &
+    nohup python run_expid.py --config ./HOFM_kkbox_x1_tuner_config_01 --expid HOFM_kkbox_x1_017_4b0da798 --gpu 0 > run.log &
     tail -f run.log
     ```
 
@@ -64,10 +64,304 @@ Running steps:
 
 | logloss | AUC  |
 |:--------------------:|:--------------------:|
-| 0.505260 | 0.831284  |
+| 0.504805 | 0.831497  |
 
 
 ### Logs
 ```python
+2022-03-08 16:56:25,668 P76882 INFO {
+    "batch_size": "10000",
+    "data_format": "csv",
+    "data_root": "../data/KKBox/",
+    "dataset_id": "kkbox_x1_227d337d",
+    "debug": "False",
+    "embedding_dim": "[128, 32]",
+    "embedding_dropout": "0",
+    "epochs": "100",
+    "every_x_epochs": "1",
+    "feature_cols": "[{'active': True, 'dtype': 'str', 'name': ['msno', 'song_id', 'source_system_tab', 'source_screen_name', 'source_type', 'city', 'gender', 'registered_via', 'language'], 'type': 'categorical'}, {'active': True, 'dtype': 'str', 'encoder': 'MaskedSumPooling', 'max_len': 3, 'name': 'genre_ids', 'type': 'sequence'}, {'active': True, 'dtype': 'str', 'encoder': 'MaskedSumPooling', 'max_len': 3, 'name': 'artist_name', 'type': 'sequence'}, {'active': True, 'dtype': 'str', 'name': 'isrc', 'preprocess': 'extract_country_code', 'type': 'categorical'}, {'active': True, 'dtype': 'str', 'name': 'bd', 'preprocess': 'bucketize_age', 'type': 'categorical'}]",
+    "gpu": "0",
+    "label_col": "{'dtype': 'float', 'name': 'label'}",
+    "learning_rate": "0.001",
+    "loss": "binary_crossentropy",
+    "metrics": "['logloss', 'AUC']",
+    "min_categr_count": "10",
+    "model": "HOFM",
+    "model_id": "HOFM_kkbox_x1_017_4b0da798",
+    "model_root": "./KKBox/HOFM_kkbox_x1/",
+    "monitor": "{'AUC': 1, 'logloss': -1}",
+    "monitor_mode": "max",
+    "optimizer": "adam",
+    "order": "3",
+    "patience": "2",
+    "pickle_feature_encoder": "True",
+    "regularizer": "1e-05",
+    "reuse_embedding": "False",
+    "save_best_only": "True",
+    "seed": "2019",
+    "shuffle": "True",
+    "task": "binary_classification",
+    "test_data": "../data/KKBox/KKBox_x1/test.csv",
+    "train_data": "../data/KKBox/KKBox_x1/train.csv",
+    "use_hdf5": "True",
+    "valid_data": "../data/KKBox/KKBox_x1/valid.csv",
+    "verbose": "1",
+    "version": "pytorch",
+    "workers": "3"
+}
+2022-03-08 16:56:25,668 P76882 INFO Set up feature encoder...
+2022-03-08 16:56:25,669 P76882 INFO Load feature_encoder from pickle: ../data/KKBox/kkbox_x1_227d337d/feature_encoder.pkl
+2022-03-08 16:56:27,365 P76882 INFO Total number of parameters: 14851768.
+2022-03-08 16:56:27,366 P76882 INFO Loading data...
+2022-03-08 16:56:27,366 P76882 INFO Loading data from h5: ../data/KKBox/kkbox_x1_227d337d/train.h5
+2022-03-08 16:56:27,755 P76882 INFO Loading data from h5: ../data/KKBox/kkbox_x1_227d337d/valid.h5
+2022-03-08 16:56:28,068 P76882 INFO Train samples: total/5901932, pos/2971724, neg/2930208, ratio/50.35%
+2022-03-08 16:56:28,085 P76882 INFO Validation samples: total/737743, pos/371466, neg/366277, ratio/50.35%
+2022-03-08 16:56:28,085 P76882 INFO Loading train data done.
+2022-03-08 16:56:32,751 P76882 INFO Start training: 591 batches/epoch
+2022-03-08 16:56:32,752 P76882 INFO ************ Epoch=1 start ************
+2022-03-08 17:00:45,190 P76882 INFO [Metrics] logloss: 0.561925 - AUC: 0.780732
+2022-03-08 17:00:45,194 P76882 INFO Save best model: monitor(max): 0.218807
+2022-03-08 17:00:45,256 P76882 INFO --- 591/591 batches finished ---
+2022-03-08 17:00:45,292 P76882 INFO Train loss: 0.594602
+2022-03-08 17:00:45,293 P76882 INFO ************ Epoch=1 end ************
+2022-03-08 17:05:00,302 P76882 INFO [Metrics] logloss: 0.546489 - AUC: 0.796011
+2022-03-08 17:05:00,305 P76882 INFO Save best model: monitor(max): 0.249523
+2022-03-08 17:05:00,384 P76882 INFO --- 591/591 batches finished ---
+2022-03-08 17:05:00,419 P76882 INFO Train loss: 0.568343
+2022-03-08 17:05:00,419 P76882 INFO ************ Epoch=2 end ************
+2022-03-08 17:09:15,043 P76882 INFO [Metrics] logloss: 0.536704 - AUC: 0.804778
+2022-03-08 17:09:15,045 P76882 INFO Save best model: monitor(max): 0.268075
+2022-03-08 17:09:15,127 P76882 INFO --- 591/591 batches finished ---
+2022-03-08 17:09:15,165 P76882 INFO Train loss: 0.557190
+2022-03-08 17:09:15,165 P76882 INFO ************ Epoch=3 end ************
+2022-03-08 17:13:31,098 P76882 INFO [Metrics] logloss: 0.531035 - AUC: 0.809623
+2022-03-08 17:13:31,101 P76882 INFO Save best model: monitor(max): 0.278588
+2022-03-08 17:13:31,194 P76882 INFO --- 591/591 batches finished ---
+2022-03-08 17:13:31,230 P76882 INFO Train loss: 0.548805
+2022-03-08 17:13:31,230 P76882 INFO ************ Epoch=4 end ************
+2022-03-08 17:17:46,344 P76882 INFO [Metrics] logloss: 0.527348 - AUC: 0.812786
+2022-03-08 17:17:46,347 P76882 INFO Save best model: monitor(max): 0.285437
+2022-03-08 17:17:46,419 P76882 INFO --- 591/591 batches finished ---
+2022-03-08 17:17:46,454 P76882 INFO Train loss: 0.543028
+2022-03-08 17:17:46,454 P76882 INFO ************ Epoch=5 end ************
+2022-03-08 17:21:55,960 P76882 INFO [Metrics] logloss: 0.524639 - AUC: 0.814987
+2022-03-08 17:21:55,963 P76882 INFO Save best model: monitor(max): 0.290348
+2022-03-08 17:21:56,040 P76882 INFO --- 591/591 batches finished ---
+2022-03-08 17:21:56,075 P76882 INFO Train loss: 0.538872
+2022-03-08 17:21:56,075 P76882 INFO ************ Epoch=6 end ************
+2022-03-08 17:24:25,327 P76882 INFO [Metrics] logloss: 0.522816 - AUC: 0.816640
+2022-03-08 17:24:25,330 P76882 INFO Save best model: monitor(max): 0.293823
+2022-03-08 17:24:25,423 P76882 INFO --- 591/591 batches finished ---
+2022-03-08 17:24:25,458 P76882 INFO Train loss: 0.535576
+2022-03-08 17:24:25,458 P76882 INFO ************ Epoch=7 end ************
+2022-03-08 17:26:54,976 P76882 INFO [Metrics] logloss: 0.521811 - AUC: 0.817571
+2022-03-08 17:26:54,979 P76882 INFO Save best model: monitor(max): 0.295760
+2022-03-08 17:26:55,057 P76882 INFO --- 591/591 batches finished ---
+2022-03-08 17:26:55,092 P76882 INFO Train loss: 0.532730
+2022-03-08 17:26:55,092 P76882 INFO ************ Epoch=8 end ************
+2022-03-08 17:29:23,966 P76882 INFO [Metrics] logloss: 0.520335 - AUC: 0.818613
+2022-03-08 17:29:23,969 P76882 INFO Save best model: monitor(max): 0.298278
+2022-03-08 17:29:24,050 P76882 INFO --- 591/591 batches finished ---
+2022-03-08 17:29:24,085 P76882 INFO Train loss: 0.530301
+2022-03-08 17:29:24,085 P76882 INFO ************ Epoch=9 end ************
+2022-03-08 17:31:52,655 P76882 INFO [Metrics] logloss: 0.518894 - AUC: 0.820031
+2022-03-08 17:31:52,658 P76882 INFO Save best model: monitor(max): 0.301137
+2022-03-08 17:31:52,733 P76882 INFO --- 591/591 batches finished ---
+2022-03-08 17:31:52,768 P76882 INFO Train loss: 0.528131
+2022-03-08 17:31:52,769 P76882 INFO ************ Epoch=10 end ************
+2022-03-08 17:32:58,740 P76882 INFO [Metrics] logloss: 0.517777 - AUC: 0.821010
+2022-03-08 17:32:58,743 P76882 INFO Save best model: monitor(max): 0.303233
+2022-03-08 17:32:58,823 P76882 INFO --- 591/591 batches finished ---
+2022-03-08 17:32:58,859 P76882 INFO Train loss: 0.526230
+2022-03-08 17:32:58,859 P76882 INFO ************ Epoch=11 end ************
+2022-03-08 17:34:00,162 P76882 INFO [Metrics] logloss: 0.517483 - AUC: 0.821151
+2022-03-08 17:34:00,165 P76882 INFO Save best model: monitor(max): 0.303668
+2022-03-08 17:34:00,255 P76882 INFO --- 591/591 batches finished ---
+2022-03-08 17:34:00,290 P76882 INFO Train loss: 0.524499
+2022-03-08 17:34:00,290 P76882 INFO ************ Epoch=12 end ************
+2022-03-08 17:35:01,391 P76882 INFO [Metrics] logloss: 0.516424 - AUC: 0.822011
+2022-03-08 17:35:01,394 P76882 INFO Save best model: monitor(max): 0.305587
+2022-03-08 17:35:01,472 P76882 INFO --- 591/591 batches finished ---
+2022-03-08 17:35:01,507 P76882 INFO Train loss: 0.522815
+2022-03-08 17:35:01,507 P76882 INFO ************ Epoch=13 end ************
+2022-03-08 17:36:03,239 P76882 INFO [Metrics] logloss: 0.516308 - AUC: 0.822182
+2022-03-08 17:36:03,242 P76882 INFO Save best model: monitor(max): 0.305873
+2022-03-08 17:36:03,314 P76882 INFO --- 591/591 batches finished ---
+2022-03-08 17:36:03,357 P76882 INFO Train loss: 0.521273
+2022-03-08 17:36:03,357 P76882 INFO ************ Epoch=14 end ************
+2022-03-08 17:37:04,790 P76882 INFO [Metrics] logloss: 0.515684 - AUC: 0.822907
+2022-03-08 17:37:04,793 P76882 INFO Save best model: monitor(max): 0.307223
+2022-03-08 17:37:04,874 P76882 INFO --- 591/591 batches finished ---
+2022-03-08 17:37:04,911 P76882 INFO Train loss: 0.519888
+2022-03-08 17:37:04,911 P76882 INFO ************ Epoch=15 end ************
+2022-03-08 17:38:05,801 P76882 INFO [Metrics] logloss: 0.514759 - AUC: 0.823771
+2022-03-08 17:38:05,804 P76882 INFO Save best model: monitor(max): 0.309012
+2022-03-08 17:38:05,880 P76882 INFO --- 591/591 batches finished ---
+2022-03-08 17:38:05,914 P76882 INFO Train loss: 0.518500
+2022-03-08 17:38:05,914 P76882 INFO ************ Epoch=16 end ************
+2022-03-08 17:39:06,625 P76882 INFO [Metrics] logloss: 0.514331 - AUC: 0.823918
+2022-03-08 17:39:06,628 P76882 INFO Save best model: monitor(max): 0.309587
+2022-03-08 17:39:06,706 P76882 INFO --- 591/591 batches finished ---
+2022-03-08 17:39:06,741 P76882 INFO Train loss: 0.517268
+2022-03-08 17:39:06,742 P76882 INFO ************ Epoch=17 end ************
+2022-03-08 17:40:06,833 P76882 INFO [Metrics] logloss: 0.514187 - AUC: 0.824147
+2022-03-08 17:40:06,836 P76882 INFO Save best model: monitor(max): 0.309960
+2022-03-08 17:40:06,901 P76882 INFO --- 591/591 batches finished ---
+2022-03-08 17:40:06,936 P76882 INFO Train loss: 0.516184
+2022-03-08 17:40:06,937 P76882 INFO ************ Epoch=18 end ************
+2022-03-08 17:41:07,838 P76882 INFO [Metrics] logloss: 0.514109 - AUC: 0.824515
+2022-03-08 17:41:07,841 P76882 INFO Save best model: monitor(max): 0.310405
+2022-03-08 17:41:07,924 P76882 INFO --- 591/591 batches finished ---
+2022-03-08 17:41:07,962 P76882 INFO Train loss: 0.515047
+2022-03-08 17:41:07,962 P76882 INFO ************ Epoch=19 end ************
+2022-03-08 17:42:08,738 P76882 INFO [Metrics] logloss: 0.513650 - AUC: 0.824826
+2022-03-08 17:42:08,741 P76882 INFO Save best model: monitor(max): 0.311176
+2022-03-08 17:42:08,822 P76882 INFO --- 591/591 batches finished ---
+2022-03-08 17:42:08,864 P76882 INFO Train loss: 0.514110
+2022-03-08 17:42:08,864 P76882 INFO ************ Epoch=20 end ************
+2022-03-08 17:43:09,620 P76882 INFO [Metrics] logloss: 0.513806 - AUC: 0.824932
+2022-03-08 17:43:09,623 P76882 INFO Monitor(max) STOP: 0.311127 !
+2022-03-08 17:43:09,623 P76882 INFO Reduce learning rate on plateau: 0.000100
+2022-03-08 17:43:09,624 P76882 INFO --- 591/591 batches finished ---
+2022-03-08 17:43:09,661 P76882 INFO Train loss: 0.513086
+2022-03-08 17:43:09,661 P76882 INFO ************ Epoch=21 end ************
+2022-03-08 17:44:10,588 P76882 INFO [Metrics] logloss: 0.507473 - AUC: 0.829352
+2022-03-08 17:44:10,592 P76882 INFO Save best model: monitor(max): 0.321879
+2022-03-08 17:44:10,674 P76882 INFO --- 591/591 batches finished ---
+2022-03-08 17:44:10,708 P76882 INFO Train loss: 0.485825
+2022-03-08 17:44:10,708 P76882 INFO ************ Epoch=22 end ************
+2022-03-08 17:45:11,416 P76882 INFO [Metrics] logloss: 0.506379 - AUC: 0.830205
+2022-03-08 17:45:11,419 P76882 INFO Save best model: monitor(max): 0.323826
+2022-03-08 17:45:11,489 P76882 INFO --- 591/591 batches finished ---
+2022-03-08 17:45:11,524 P76882 INFO Train loss: 0.481939
+2022-03-08 17:45:11,524 P76882 INFO ************ Epoch=23 end ************
+2022-03-08 17:46:13,194 P76882 INFO [Metrics] logloss: 0.505870 - AUC: 0.830585
+2022-03-08 17:46:13,199 P76882 INFO Save best model: monitor(max): 0.324715
+2022-03-08 17:46:13,284 P76882 INFO --- 591/591 batches finished ---
+2022-03-08 17:46:13,323 P76882 INFO Train loss: 0.480188
+2022-03-08 17:46:13,323 P76882 INFO ************ Epoch=24 end ************
+2022-03-08 17:47:14,577 P76882 INFO [Metrics] logloss: 0.505621 - AUC: 0.830794
+2022-03-08 17:47:14,580 P76882 INFO Save best model: monitor(max): 0.325173
+2022-03-08 17:47:14,660 P76882 INFO --- 591/591 batches finished ---
+2022-03-08 17:47:14,695 P76882 INFO Train loss: 0.479130
+2022-03-08 17:47:14,695 P76882 INFO ************ Epoch=25 end ************
+2022-03-08 17:48:16,000 P76882 INFO [Metrics] logloss: 0.505537 - AUC: 0.830870
+2022-03-08 17:48:16,003 P76882 INFO Save best model: monitor(max): 0.325333
+2022-03-08 17:48:16,084 P76882 INFO --- 591/591 batches finished ---
+2022-03-08 17:48:16,124 P76882 INFO Train loss: 0.478328
+2022-03-08 17:48:16,124 P76882 INFO ************ Epoch=26 end ************
+2022-03-08 17:49:16,914 P76882 INFO [Metrics] logloss: 0.505538 - AUC: 0.830928
+2022-03-08 17:49:16,917 P76882 INFO Save best model: monitor(max): 0.325390
+2022-03-08 17:49:17,005 P76882 INFO --- 591/591 batches finished ---
+2022-03-08 17:49:17,041 P76882 INFO Train loss: 0.477609
+2022-03-08 17:49:17,041 P76882 INFO ************ Epoch=27 end ************
+2022-03-08 17:50:17,706 P76882 INFO [Metrics] logloss: 0.505530 - AUC: 0.830966
+2022-03-08 17:50:17,709 P76882 INFO Save best model: monitor(max): 0.325437
+2022-03-08 17:50:17,774 P76882 INFO --- 591/591 batches finished ---
+2022-03-08 17:50:17,810 P76882 INFO Train loss: 0.477025
+2022-03-08 17:50:17,810 P76882 INFO ************ Epoch=28 end ************
+2022-03-08 17:51:18,822 P76882 INFO [Metrics] logloss: 0.505477 - AUC: 0.831028
+2022-03-08 17:51:18,825 P76882 INFO Save best model: monitor(max): 0.325550
+2022-03-08 17:51:18,903 P76882 INFO --- 591/591 batches finished ---
+2022-03-08 17:51:18,939 P76882 INFO Train loss: 0.476472
+2022-03-08 17:51:18,940 P76882 INFO ************ Epoch=29 end ************
+2022-03-08 17:52:20,302 P76882 INFO [Metrics] logloss: 0.505487 - AUC: 0.831010
+2022-03-08 17:52:20,305 P76882 INFO Monitor(max) STOP: 0.325524 !
+2022-03-08 17:52:20,305 P76882 INFO Reduce learning rate on plateau: 0.000010
+2022-03-08 17:52:20,306 P76882 INFO --- 591/591 batches finished ---
+2022-03-08 17:52:20,342 P76882 INFO Train loss: 0.475951
+2022-03-08 17:52:20,342 P76882 INFO ************ Epoch=30 end ************
+2022-03-08 17:53:21,661 P76882 INFO [Metrics] logloss: 0.505388 - AUC: 0.831087
+2022-03-08 17:53:21,668 P76882 INFO Save best model: monitor(max): 0.325698
+2022-03-08 17:53:21,746 P76882 INFO --- 591/591 batches finished ---
+2022-03-08 17:53:21,781 P76882 INFO Train loss: 0.471484
+2022-03-08 17:53:21,781 P76882 INFO ************ Epoch=31 end ************
+2022-03-08 17:54:23,668 P76882 INFO [Metrics] logloss: 0.505368 - AUC: 0.831117
+2022-03-08 17:54:23,672 P76882 INFO Save best model: monitor(max): 0.325749
+2022-03-08 17:54:23,754 P76882 INFO --- 591/591 batches finished ---
+2022-03-08 17:54:23,792 P76882 INFO Train loss: 0.471373
+2022-03-08 17:54:23,792 P76882 INFO ************ Epoch=32 end ************
+2022-03-08 17:55:24,353 P76882 INFO [Metrics] logloss: 0.505366 - AUC: 0.831119
+2022-03-08 17:55:24,356 P76882 INFO Save best model: monitor(max): 0.325753
+2022-03-08 17:55:24,421 P76882 INFO --- 591/591 batches finished ---
+2022-03-08 17:55:24,455 P76882 INFO Train loss: 0.471298
+2022-03-08 17:55:24,456 P76882 INFO ************ Epoch=33 end ************
+2022-03-08 17:56:24,930 P76882 INFO [Metrics] logloss: 0.505364 - AUC: 0.831132
+2022-03-08 17:56:24,933 P76882 INFO Save best model: monitor(max): 0.325767
+2022-03-08 17:56:25,015 P76882 INFO --- 591/591 batches finished ---
+2022-03-08 17:56:25,049 P76882 INFO Train loss: 0.471231
+2022-03-08 17:56:25,049 P76882 INFO ************ Epoch=34 end ************
+2022-03-08 17:57:25,999 P76882 INFO [Metrics] logloss: 0.505357 - AUC: 0.831121
+2022-03-08 17:57:26,002 P76882 INFO Monitor(max) STOP: 0.325764 !
+2022-03-08 17:57:26,002 P76882 INFO Reduce learning rate on plateau: 0.000001
+2022-03-08 17:57:26,002 P76882 INFO --- 591/591 batches finished ---
+2022-03-08 17:57:26,036 P76882 INFO Train loss: 0.471165
+2022-03-08 17:57:26,036 P76882 INFO ************ Epoch=35 end ************
+2022-03-08 17:58:27,135 P76882 INFO [Metrics] logloss: 0.505355 - AUC: 0.831131
+2022-03-08 17:58:27,139 P76882 INFO Save best model: monitor(max): 0.325776
+2022-03-08 17:58:27,217 P76882 INFO --- 591/591 batches finished ---
+2022-03-08 17:58:27,254 P76882 INFO Train loss: 0.470682
+2022-03-08 17:58:27,255 P76882 INFO ************ Epoch=36 end ************
+2022-03-08 17:59:28,391 P76882 INFO [Metrics] logloss: 0.505355 - AUC: 0.831134
+2022-03-08 17:59:28,394 P76882 INFO Save best model: monitor(max): 0.325779
+2022-03-08 17:59:28,485 P76882 INFO --- 591/591 batches finished ---
+2022-03-08 17:59:28,521 P76882 INFO Train loss: 0.470691
+2022-03-08 17:59:28,522 P76882 INFO ************ Epoch=37 end ************
+2022-03-08 18:00:29,504 P76882 INFO [Metrics] logloss: 0.505355 - AUC: 0.831134
+2022-03-08 18:00:29,507 P76882 INFO Monitor(max) STOP: 0.325779 !
+2022-03-08 18:00:29,507 P76882 INFO Reduce learning rate on plateau: 0.000001
+2022-03-08 18:00:29,507 P76882 INFO --- 591/591 batches finished ---
+2022-03-08 18:00:29,541 P76882 INFO Train loss: 0.470684
+2022-03-08 18:00:29,541 P76882 INFO ************ Epoch=38 end ************
+2022-03-08 18:01:29,957 P76882 INFO [Metrics] logloss: 0.505355 - AUC: 0.831135
+2022-03-08 18:01:29,960 P76882 INFO Save best model: monitor(max): 0.325780
+2022-03-08 18:01:30,033 P76882 INFO --- 591/591 batches finished ---
+2022-03-08 18:01:30,068 P76882 INFO Train loss: 0.470651
+2022-03-08 18:01:30,068 P76882 INFO ************ Epoch=39 end ************
+2022-03-08 18:02:30,599 P76882 INFO [Metrics] logloss: 0.505355 - AUC: 0.831135
+2022-03-08 18:02:30,602 P76882 INFO Monitor(max) STOP: 0.325780 !
+2022-03-08 18:02:30,602 P76882 INFO Reduce learning rate on plateau: 0.000001
+2022-03-08 18:02:30,602 P76882 INFO --- 591/591 batches finished ---
+2022-03-08 18:02:30,636 P76882 INFO Train loss: 0.470669
+2022-03-08 18:02:30,637 P76882 INFO ************ Epoch=40 end ************
+2022-03-08 18:03:31,473 P76882 INFO [Metrics] logloss: 0.505355 - AUC: 0.831136
+2022-03-08 18:03:31,477 P76882 INFO Save best model: monitor(max): 0.325782
+2022-03-08 18:03:31,553 P76882 INFO --- 591/591 batches finished ---
+2022-03-08 18:03:31,587 P76882 INFO Train loss: 0.470644
+2022-03-08 18:03:31,587 P76882 INFO ************ Epoch=41 end ************
+2022-03-08 18:04:32,308 P76882 INFO [Metrics] logloss: 0.505355 - AUC: 0.831136
+2022-03-08 18:04:32,311 P76882 INFO Monitor(max) STOP: 0.325781 !
+2022-03-08 18:04:32,311 P76882 INFO Reduce learning rate on plateau: 0.000001
+2022-03-08 18:04:32,311 P76882 INFO --- 591/591 batches finished ---
+2022-03-08 18:04:32,346 P76882 INFO Train loss: 0.470660
+2022-03-08 18:04:32,346 P76882 INFO ************ Epoch=42 end ************
+2022-03-08 18:05:33,317 P76882 INFO [Metrics] logloss: 0.505355 - AUC: 0.831138
+2022-03-08 18:05:33,320 P76882 INFO Save best model: monitor(max): 0.325783
+2022-03-08 18:05:33,393 P76882 INFO --- 591/591 batches finished ---
+2022-03-08 18:05:33,427 P76882 INFO Train loss: 0.470652
+2022-03-08 18:05:33,427 P76882 INFO ************ Epoch=43 end ************
+2022-03-08 18:06:34,790 P76882 INFO [Metrics] logloss: 0.505355 - AUC: 0.831137
+2022-03-08 18:06:34,793 P76882 INFO Monitor(max) STOP: 0.325782 !
+2022-03-08 18:06:34,793 P76882 INFO Reduce learning rate on plateau: 0.000001
+2022-03-08 18:06:34,793 P76882 INFO --- 591/591 batches finished ---
+2022-03-08 18:06:34,832 P76882 INFO Train loss: 0.470651
+2022-03-08 18:06:34,832 P76882 INFO ************ Epoch=44 end ************
+2022-03-08 18:07:35,972 P76882 INFO [Metrics] logloss: 0.505355 - AUC: 0.831136
+2022-03-08 18:07:35,976 P76882 INFO Monitor(max) STOP: 0.325781 !
+2022-03-08 18:07:35,976 P76882 INFO Reduce learning rate on plateau: 0.000001
+2022-03-08 18:07:35,976 P76882 INFO Early stopping at epoch=45
+2022-03-08 18:07:35,976 P76882 INFO --- 591/591 batches finished ---
+2022-03-08 18:07:36,018 P76882 INFO Train loss: 0.470621
+2022-03-08 18:07:36,018 P76882 INFO Training finished.
+2022-03-08 18:07:36,018 P76882 INFO Load best model: /cache/FuxiCTR/benchmarks/KKBox/HOFM_kkbox_x1/kkbox_x1_227d337d/HOFM_kkbox_x1_017_4b0da798_model.ckpt
+2022-03-08 18:07:36,099 P76882 INFO ****** Validation evaluation ******
+2022-03-08 18:07:40,155 P76882 INFO [Metrics] logloss: 0.505355 - AUC: 0.831138
+2022-03-08 18:07:40,230 P76882 INFO ******** Test evaluation ********
+2022-03-08 18:07:40,230 P76882 INFO Loading data...
+2022-03-08 18:07:40,230 P76882 INFO Loading data from h5: ../data/KKBox/kkbox_x1_227d337d/test.h5
+2022-03-08 18:07:40,304 P76882 INFO Test samples: total/737743, pos/371466, neg/366277, ratio/50.35%
+2022-03-08 18:07:40,305 P76882 INFO Loading test data done.
+2022-03-08 18:07:44,124 P76882 INFO [Metrics] logloss: 0.504805 - AUC: 0.831497
 
 ```

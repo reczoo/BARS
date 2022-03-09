@@ -1,0 +1,612 @@
+FiBiNET_kkbox_x1_001_5bacc136:
+    batch_norm: false
+    batch_size: 10000
+    bilinear_type: field_interaction
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FiBiNET
+    model_id: FiBiNET_base
+    model_root: ./KKBox/FiBiNET_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.4
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    reduction_ratio: 3
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 0
+    workers: 3
+FiBiNET_kkbox_x1_002_72415615:
+    batch_norm: false
+    batch_size: 10000
+    bilinear_type: field_interaction
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FiBiNET
+    model_id: FiBiNET_base
+    model_root: ./KKBox/FiBiNET_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.5
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    reduction_ratio: 3
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 0
+    workers: 3
+FiBiNET_kkbox_x1_003_33f065ac:
+    batch_norm: false
+    batch_size: 10000
+    bilinear_type: field_interaction
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FiBiNET
+    model_id: FiBiNET_base
+    model_root: ./KKBox/FiBiNET_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.4
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    reduction_ratio: 5
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 0
+    workers: 3
+FiBiNET_kkbox_x1_004_fae3634f:
+    batch_norm: false
+    batch_size: 10000
+    bilinear_type: field_interaction
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FiBiNET
+    model_id: FiBiNET_base
+    model_root: ./KKBox/FiBiNET_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.5
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    reduction_ratio: 5
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 0
+    workers: 3
+FiBiNET_kkbox_x1_005_f5c8a2ac:
+    batch_norm: false
+    batch_size: 10000
+    bilinear_type: field_interaction
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FiBiNET
+    model_id: FiBiNET_base
+    model_root: ./KKBox/FiBiNET_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.4
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    reduction_ratio: 10
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 0
+    workers: 3
+FiBiNET_kkbox_x1_006_f0d38542:
+    batch_norm: false
+    batch_size: 10000
+    bilinear_type: field_interaction
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FiBiNET
+    model_id: FiBiNET_base
+    model_root: ./KKBox/FiBiNET_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.5
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    reduction_ratio: 10
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 0
+    workers: 3
+FiBiNET_kkbox_x1_007_f8ea597b:
+    batch_norm: false
+    batch_size: 10000
+    bilinear_type: field_interaction
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FiBiNET
+    model_id: FiBiNET_base
+    model_root: ./KKBox/FiBiNET_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.4
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    reduction_ratio: 3
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 0
+    workers: 3
+FiBiNET_kkbox_x1_008_59c7e528:
+    batch_norm: false
+    batch_size: 10000
+    bilinear_type: field_interaction
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FiBiNET
+    model_id: FiBiNET_base
+    model_root: ./KKBox/FiBiNET_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.5
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    reduction_ratio: 3
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 0
+    workers: 3
+FiBiNET_kkbox_x1_009_4af8b163:
+    batch_norm: false
+    batch_size: 10000
+    bilinear_type: field_interaction
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FiBiNET
+    model_id: FiBiNET_base
+    model_root: ./KKBox/FiBiNET_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.4
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    reduction_ratio: 5
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 0
+    workers: 3
+FiBiNET_kkbox_x1_010_2d3093cd:
+    batch_norm: false
+    batch_size: 10000
+    bilinear_type: field_interaction
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FiBiNET
+    model_id: FiBiNET_base
+    model_root: ./KKBox/FiBiNET_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.5
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    reduction_ratio: 5
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 0
+    workers: 3
+FiBiNET_kkbox_x1_011_98b57abd:
+    batch_norm: false
+    batch_size: 10000
+    bilinear_type: field_interaction
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FiBiNET
+    model_id: FiBiNET_base
+    model_root: ./KKBox/FiBiNET_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.4
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    reduction_ratio: 10
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 0
+    workers: 3
+FiBiNET_kkbox_x1_012_7ee7f19b:
+    batch_norm: false
+    batch_size: 10000
+    bilinear_type: field_interaction
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FiBiNET
+    model_id: FiBiNET_base
+    model_root: ./KKBox/FiBiNET_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.5
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    reduction_ratio: 10
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 0
+    workers: 3
+FiBiNET_kkbox_x1_013_f7cc21aa:
+    batch_norm: false
+    batch_size: 10000
+    bilinear_type: field_interaction
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FiBiNET
+    model_id: FiBiNET_base
+    model_root: ./KKBox/FiBiNET_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.4
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    reduction_ratio: 3
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 0
+    workers: 3
+FiBiNET_kkbox_x1_014_bc621202:
+    batch_norm: false
+    batch_size: 10000
+    bilinear_type: field_interaction
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FiBiNET
+    model_id: FiBiNET_base
+    model_root: ./KKBox/FiBiNET_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.5
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    reduction_ratio: 3
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 0
+    workers: 3
+FiBiNET_kkbox_x1_015_75863d54:
+    batch_norm: false
+    batch_size: 10000
+    bilinear_type: field_interaction
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FiBiNET
+    model_id: FiBiNET_base
+    model_root: ./KKBox/FiBiNET_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.4
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    reduction_ratio: 5
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 0
+    workers: 3
+FiBiNET_kkbox_x1_016_afe9b35f:
+    batch_norm: false
+    batch_size: 10000
+    bilinear_type: field_interaction
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FiBiNET
+    model_id: FiBiNET_base
+    model_root: ./KKBox/FiBiNET_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.5
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    reduction_ratio: 5
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 0
+    workers: 3
+FiBiNET_kkbox_x1_017_d98e7b2f:
+    batch_norm: false
+    batch_size: 10000
+    bilinear_type: field_interaction
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FiBiNET
+    model_id: FiBiNET_base
+    model_root: ./KKBox/FiBiNET_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.4
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    reduction_ratio: 10
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 0
+    workers: 3
+FiBiNET_kkbox_x1_018_bdae7ed4:
+    batch_norm: false
+    batch_size: 10000
+    bilinear_type: field_interaction
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FiBiNET
+    model_id: FiBiNET_base
+    model_root: ./KKBox/FiBiNET_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.5
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    reduction_ratio: 10
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 0
+    workers: 3

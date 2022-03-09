@@ -49,7 +49,7 @@ Running steps:
     sys.path.append('YOUR_PATH_TO_FuxiCTR/')
     ```
 
-2. Create a data directory and put the downloaded csv files in `../data/Avazu/Avazu_x1`.
+2. Create a data directory and put the downloaded csv files in `../data/Criteo/Criteo_x1`.
 
 3. Both `dataset_config.yaml` and `model_config.yaml` files are available in [MaskNet_criteo_x1_tuner_config_03](./MaskNet_criteo_x1_tuner_config_03). Make sure the data paths in `dataset_config.yaml` are correctly set to what we create in the last step.
 
@@ -72,7 +72,6 @@ Total 5 runs:
 | 3 | 0.813747 | 0.438105  |
 | 4 | 0.813554 | 0.438206  |
 | 5 | 0.813860 | 0.438186  |
-| | | | 
 | Avg | 0.813780 | 0.438115 |
 | Std | &#177;0.00012512 | &#177;0.00008442 |
 

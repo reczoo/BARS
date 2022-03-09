@@ -1,85 +1,4 @@
-FwFM_kkbox_x1_001_506d5b35:
-    batch_size: 10000
-    dataset_id: kkbox_x1_227d337d
-    debug: false
-    embedding_dim: 128
-    epochs: 100
-    every_x_epochs: 1
-    learning_rate: 0.001
-    linear_type: LW
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: FwFM
-    model_id: FwFM_base
-    model_root: ./KKBox/FwFM_kkbox_x1/
-    monitor: {AUC: 1, logloss: -1}
-    monitor_mode: max
-    optimizer: adam
-    patience: 2
-    pickle_feature_encoder: true
-    regularizer: 0
-    save_best_only: true
-    seed: 2019
-    shuffle: true
-    task: binary_classification
-    use_hdf5: true
-    verbose: 1
-    workers: 3
-FwFM_kkbox_x1_002_7433542a:
-    batch_size: 10000
-    dataset_id: kkbox_x1_227d337d
-    debug: false
-    embedding_dim: 128
-    epochs: 100
-    every_x_epochs: 1
-    learning_rate: 0.001
-    linear_type: FeLV
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: FwFM
-    model_id: FwFM_base
-    model_root: ./KKBox/FwFM_kkbox_x1/
-    monitor: {AUC: 1, logloss: -1}
-    monitor_mode: max
-    optimizer: adam
-    patience: 2
-    pickle_feature_encoder: true
-    regularizer: 0
-    save_best_only: true
-    seed: 2019
-    shuffle: true
-    task: binary_classification
-    use_hdf5: true
-    verbose: 1
-    workers: 3
-FwFM_kkbox_x1_003_504a9924:
-    batch_size: 10000
-    dataset_id: kkbox_x1_227d337d
-    debug: false
-    embedding_dim: 128
-    epochs: 100
-    every_x_epochs: 1
-    learning_rate: 0.001
-    linear_type: FiLV
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: FwFM
-    model_id: FwFM_base
-    model_root: ./KKBox/FwFM_kkbox_x1/
-    monitor: {AUC: 1, logloss: -1}
-    monitor_mode: max
-    optimizer: adam
-    patience: 2
-    pickle_feature_encoder: true
-    regularizer: 0
-    save_best_only: true
-    seed: 2019
-    shuffle: true
-    task: binary_classification
-    use_hdf5: true
-    verbose: 1
-    workers: 3
-FwFM_kkbox_x1_004_eeda49eb:
+FwFM_kkbox_x1_001_eeda49eb:
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
     debug: false
@@ -106,7 +25,7 @@ FwFM_kkbox_x1_004_eeda49eb:
     use_hdf5: true
     verbose: 1
     workers: 3
-FwFM_kkbox_x1_005_a8c04db1:
+FwFM_kkbox_x1_002_a8c04db1:
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
     debug: false
@@ -133,7 +52,7 @@ FwFM_kkbox_x1_005_a8c04db1:
     use_hdf5: true
     verbose: 1
     workers: 3
-FwFM_kkbox_x1_006_fc4319e9:
+FwFM_kkbox_x1_003_fc4319e9:
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
     debug: false
@@ -160,7 +79,7 @@ FwFM_kkbox_x1_006_fc4319e9:
     use_hdf5: true
     verbose: 1
     workers: 3
-FwFM_kkbox_x1_007_2c2cd9e4:
+FwFM_kkbox_x1_004_2c2cd9e4:
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
     debug: false
@@ -187,7 +106,7 @@ FwFM_kkbox_x1_007_2c2cd9e4:
     use_hdf5: true
     verbose: 1
     workers: 3
-FwFM_kkbox_x1_008_24842eae:
+FwFM_kkbox_x1_005_24842eae:
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
     debug: false
@@ -214,7 +133,7 @@ FwFM_kkbox_x1_008_24842eae:
     use_hdf5: true
     verbose: 1
     workers: 3
-FwFM_kkbox_x1_009_d4ec0630:
+FwFM_kkbox_x1_006_d4ec0630:
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
     debug: false
@@ -241,7 +160,7 @@ FwFM_kkbox_x1_009_d4ec0630:
     use_hdf5: true
     verbose: 1
     workers: 3
-FwFM_kkbox_x1_010_3b34fb1b:
+FwFM_kkbox_x1_007_3b34fb1b:
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
     debug: false
@@ -268,7 +187,7 @@ FwFM_kkbox_x1_010_3b34fb1b:
     use_hdf5: true
     verbose: 1
     workers: 3
-FwFM_kkbox_x1_011_02f8fad6:
+FwFM_kkbox_x1_008_02f8fad6:
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
     debug: false
@@ -295,7 +214,7 @@ FwFM_kkbox_x1_011_02f8fad6:
     use_hdf5: true
     verbose: 1
     workers: 3
-FwFM_kkbox_x1_012_3820ae7b:
+FwFM_kkbox_x1_009_3820ae7b:
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
     debug: false
@@ -322,7 +241,7 @@ FwFM_kkbox_x1_012_3820ae7b:
     use_hdf5: true
     verbose: 1
     workers: 3
-FwFM_kkbox_x1_013_6a4090c3:
+FwFM_kkbox_x1_010_6a4090c3:
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
     debug: false
@@ -349,7 +268,7 @@ FwFM_kkbox_x1_013_6a4090c3:
     use_hdf5: true
     verbose: 1
     workers: 3
-FwFM_kkbox_x1_014_18df6c4c:
+FwFM_kkbox_x1_011_18df6c4c:
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
     debug: false
@@ -376,7 +295,7 @@ FwFM_kkbox_x1_014_18df6c4c:
     use_hdf5: true
     verbose: 1
     workers: 3
-FwFM_kkbox_x1_015_91e72531:
+FwFM_kkbox_x1_012_91e72531:
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
     debug: false
@@ -403,7 +322,7 @@ FwFM_kkbox_x1_015_91e72531:
     use_hdf5: true
     verbose: 1
     workers: 3
-FwFM_kkbox_x1_016_3f44b990:
+FwFM_kkbox_x1_013_3f44b990:
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
     debug: false
@@ -430,7 +349,7 @@ FwFM_kkbox_x1_016_3f44b990:
     use_hdf5: true
     verbose: 1
     workers: 3
-FwFM_kkbox_x1_017_df1433c5:
+FwFM_kkbox_x1_014_df1433c5:
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
     debug: false
@@ -457,7 +376,7 @@ FwFM_kkbox_x1_017_df1433c5:
     use_hdf5: true
     verbose: 1
     workers: 3
-FwFM_kkbox_x1_018_158794af:
+FwFM_kkbox_x1_015_158794af:
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
     debug: false

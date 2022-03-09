@@ -1,0 +1,2048 @@
+NFM_kkbox_x1_001_7e5e7f7f:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [100, 100]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_002_c234c44f:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [100, 100]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_003_42d0c686:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [100, 100]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_004_d8745ae0:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [100, 100]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.4
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_005_f2c8def2:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_006_c568f1b9:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_007_a9f7c905:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_008_8e1936d0:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.4
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_009_70cee866:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_010_b788ee7e:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_011_447e8228:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_012_f3e7549e:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.4
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_013_fc7f5932:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_014_fa258ca6:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_015_cbae7b1e:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_016_bb60f2de:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.4
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_017_c601d3bd:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [100, 100]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_018_1b295c8f:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [100, 100]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_019_af233e8e:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [100, 100]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_020_4d391dc9:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [100, 100]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.4
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_021_35ec5697:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_022_d7b27e5f:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_023_fd9b5f0d:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_024_55a6a12e:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.4
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_025_942d036f:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_026_235740d0:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_027_7bec86fa:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_028_7b4d0444:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.4
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_029_bd728a81:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_030_7ff0ee4b:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_031_fa57251b:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_032_b5283b1b:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.4
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_033_1742fc2e:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [100, 100]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_034_af66c4e7:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [100, 100]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_035_3138eddd:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [100, 100]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_036_b45e1fc6:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [100, 100]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.4
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_037_8c37779f:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_038_e4b73b1c:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_039_cc896971:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_040_9f04ae74:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.4
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_041_c58855b9:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_042_ca4ee6a4:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_043_ed907c49:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_044_28e278dd:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.4
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_045_90774228:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_046_b06cf279:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_047_aceaea54:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_048_45a6169d:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.4
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_049_840e3fdd:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [100, 100]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_050_2aca02d7:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [100, 100]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_051_6ffd0033:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [100, 100]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_052_ae9a46e8:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [100, 100]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.4
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_053_06c485f6:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_054_410ff400:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_055_96dda1b8:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_056_5969f717:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.4
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_057_0cc794a3:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_058_1a08ee45:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_059_2f7f5024:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_060_1b4817f8:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.4
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_061_edade5d9:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_062_c35da345:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_063_26f58220:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+NFM_kkbox_x1_064_8e39ad26:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: NFM
+    model_id: NFM_base
+    model_root: ./KKBox/NFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.4
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3

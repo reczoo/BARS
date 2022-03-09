@@ -1,0 +1,1776 @@
+AFN_kkbox_x1_001_bb19badf:
+    afn_activations: relu
+    afn_dropout: 0
+    afn_hidden_units: [1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.1
+    dnn_hidden_units: [1000, 1000, 1000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 2000
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./KKBox/AFN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_kkbox_x1_002_b6c37243:
+    afn_activations: relu
+    afn_dropout: 0
+    afn_hidden_units: [1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.2
+    dnn_hidden_units: [1000, 1000, 1000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 2000
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./KKBox/AFN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_kkbox_x1_003_cbef40e2:
+    afn_activations: relu
+    afn_dropout: 0
+    afn_hidden_units: [1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.3
+    dnn_hidden_units: [1000, 1000, 1000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 2000
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./KKBox/AFN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_kkbox_x1_004_634a6d64:
+    afn_activations: relu
+    afn_dropout: 0.1
+    afn_hidden_units: [1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.1
+    dnn_hidden_units: [1000, 1000, 1000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 2000
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./KKBox/AFN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_kkbox_x1_005_1f2b8417:
+    afn_activations: relu
+    afn_dropout: 0.1
+    afn_hidden_units: [1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.2
+    dnn_hidden_units: [1000, 1000, 1000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 2000
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./KKBox/AFN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_kkbox_x1_006_92100a7f:
+    afn_activations: relu
+    afn_dropout: 0.1
+    afn_hidden_units: [1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.3
+    dnn_hidden_units: [1000, 1000, 1000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 2000
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./KKBox/AFN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_kkbox_x1_007_b14a1a29:
+    afn_activations: relu
+    afn_dropout: 0.2
+    afn_hidden_units: [1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.1
+    dnn_hidden_units: [1000, 1000, 1000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 2000
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./KKBox/AFN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_kkbox_x1_008_50a83de4:
+    afn_activations: relu
+    afn_dropout: 0.2
+    afn_hidden_units: [1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.2
+    dnn_hidden_units: [1000, 1000, 1000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 2000
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./KKBox/AFN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_kkbox_x1_009_078dfdb1:
+    afn_activations: relu
+    afn_dropout: 0.2
+    afn_hidden_units: [1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.3
+    dnn_hidden_units: [1000, 1000, 1000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 2000
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./KKBox/AFN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_kkbox_x1_010_16c5c5cf:
+    afn_activations: relu
+    afn_dropout: 0.3
+    afn_hidden_units: [1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.1
+    dnn_hidden_units: [1000, 1000, 1000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 2000
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./KKBox/AFN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_kkbox_x1_011_4cc1ed2d:
+    afn_activations: relu
+    afn_dropout: 0.3
+    afn_hidden_units: [1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.2
+    dnn_hidden_units: [1000, 1000, 1000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 2000
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./KKBox/AFN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_kkbox_x1_012_1db1f043:
+    afn_activations: relu
+    afn_dropout: 0.3
+    afn_hidden_units: [1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.3
+    dnn_hidden_units: [1000, 1000, 1000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 2000
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./KKBox/AFN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_kkbox_x1_013_3d9fe1ad:
+    afn_activations: relu
+    afn_dropout: 0
+    afn_hidden_units: [1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.1
+    dnn_hidden_units: [1000, 1000, 1000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1500
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./KKBox/AFN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_kkbox_x1_014_a8ea82ca:
+    afn_activations: relu
+    afn_dropout: 0
+    afn_hidden_units: [1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.2
+    dnn_hidden_units: [1000, 1000, 1000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1500
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./KKBox/AFN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_kkbox_x1_015_7554f4ca:
+    afn_activations: relu
+    afn_dropout: 0
+    afn_hidden_units: [1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.3
+    dnn_hidden_units: [1000, 1000, 1000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1500
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./KKBox/AFN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_kkbox_x1_016_f7aff44f:
+    afn_activations: relu
+    afn_dropout: 0.1
+    afn_hidden_units: [1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.1
+    dnn_hidden_units: [1000, 1000, 1000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1500
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./KKBox/AFN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_kkbox_x1_017_7f2aa6d0:
+    afn_activations: relu
+    afn_dropout: 0.1
+    afn_hidden_units: [1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.2
+    dnn_hidden_units: [1000, 1000, 1000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1500
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./KKBox/AFN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_kkbox_x1_018_ca3f49df:
+    afn_activations: relu
+    afn_dropout: 0.1
+    afn_hidden_units: [1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.3
+    dnn_hidden_units: [1000, 1000, 1000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1500
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./KKBox/AFN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_kkbox_x1_019_31ccf39b:
+    afn_activations: relu
+    afn_dropout: 0.2
+    afn_hidden_units: [1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.1
+    dnn_hidden_units: [1000, 1000, 1000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1500
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./KKBox/AFN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_kkbox_x1_020_1136e92a:
+    afn_activations: relu
+    afn_dropout: 0.2
+    afn_hidden_units: [1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.2
+    dnn_hidden_units: [1000, 1000, 1000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1500
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./KKBox/AFN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_kkbox_x1_021_f0f60ae2:
+    afn_activations: relu
+    afn_dropout: 0.2
+    afn_hidden_units: [1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.3
+    dnn_hidden_units: [1000, 1000, 1000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1500
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./KKBox/AFN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_kkbox_x1_022_2d6d5242:
+    afn_activations: relu
+    afn_dropout: 0.3
+    afn_hidden_units: [1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.1
+    dnn_hidden_units: [1000, 1000, 1000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1500
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./KKBox/AFN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_kkbox_x1_023_d0ae9eb8:
+    afn_activations: relu
+    afn_dropout: 0.3
+    afn_hidden_units: [1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.2
+    dnn_hidden_units: [1000, 1000, 1000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1500
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./KKBox/AFN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_kkbox_x1_024_e3f088dd:
+    afn_activations: relu
+    afn_dropout: 0.3
+    afn_hidden_units: [1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.3
+    dnn_hidden_units: [1000, 1000, 1000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0005
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1500
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./KKBox/AFN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_kkbox_x1_025_0a80c8ec:
+    afn_activations: relu
+    afn_dropout: 0
+    afn_hidden_units: [1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.1
+    dnn_hidden_units: [1000, 1000, 1000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 2000
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./KKBox/AFN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_kkbox_x1_026_2653e732:
+    afn_activations: relu
+    afn_dropout: 0
+    afn_hidden_units: [1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.2
+    dnn_hidden_units: [1000, 1000, 1000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 2000
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./KKBox/AFN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_kkbox_x1_027_b2e0ff39:
+    afn_activations: relu
+    afn_dropout: 0
+    afn_hidden_units: [1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.3
+    dnn_hidden_units: [1000, 1000, 1000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 2000
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./KKBox/AFN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_kkbox_x1_028_f9f139b2:
+    afn_activations: relu
+    afn_dropout: 0.1
+    afn_hidden_units: [1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.1
+    dnn_hidden_units: [1000, 1000, 1000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 2000
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./KKBox/AFN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_kkbox_x1_029_6e79a9a5:
+    afn_activations: relu
+    afn_dropout: 0.1
+    afn_hidden_units: [1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.2
+    dnn_hidden_units: [1000, 1000, 1000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 2000
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./KKBox/AFN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_kkbox_x1_030_4970f713:
+    afn_activations: relu
+    afn_dropout: 0.1
+    afn_hidden_units: [1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.3
+    dnn_hidden_units: [1000, 1000, 1000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 2000
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./KKBox/AFN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_kkbox_x1_031_7636e84c:
+    afn_activations: relu
+    afn_dropout: 0.2
+    afn_hidden_units: [1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.1
+    dnn_hidden_units: [1000, 1000, 1000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 2000
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./KKBox/AFN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_kkbox_x1_032_bb8ef736:
+    afn_activations: relu
+    afn_dropout: 0.2
+    afn_hidden_units: [1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.2
+    dnn_hidden_units: [1000, 1000, 1000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 2000
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./KKBox/AFN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_kkbox_x1_033_12cad8a8:
+    afn_activations: relu
+    afn_dropout: 0.2
+    afn_hidden_units: [1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.3
+    dnn_hidden_units: [1000, 1000, 1000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 2000
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./KKBox/AFN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_kkbox_x1_034_43fa0d86:
+    afn_activations: relu
+    afn_dropout: 0.3
+    afn_hidden_units: [1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.1
+    dnn_hidden_units: [1000, 1000, 1000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 2000
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./KKBox/AFN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_kkbox_x1_035_c96337ea:
+    afn_activations: relu
+    afn_dropout: 0.3
+    afn_hidden_units: [1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.2
+    dnn_hidden_units: [1000, 1000, 1000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 2000
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./KKBox/AFN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_kkbox_x1_036_65ac5b6b:
+    afn_activations: relu
+    afn_dropout: 0.3
+    afn_hidden_units: [1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.3
+    dnn_hidden_units: [1000, 1000, 1000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 2000
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./KKBox/AFN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_kkbox_x1_037_f2f6f917:
+    afn_activations: relu
+    afn_dropout: 0
+    afn_hidden_units: [1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.1
+    dnn_hidden_units: [1000, 1000, 1000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1500
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./KKBox/AFN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_kkbox_x1_038_a44d3753:
+    afn_activations: relu
+    afn_dropout: 0
+    afn_hidden_units: [1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.2
+    dnn_hidden_units: [1000, 1000, 1000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1500
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./KKBox/AFN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_kkbox_x1_039_918beb3d:
+    afn_activations: relu
+    afn_dropout: 0
+    afn_hidden_units: [1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.3
+    dnn_hidden_units: [1000, 1000, 1000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1500
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./KKBox/AFN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_kkbox_x1_040_eb5c2b0e:
+    afn_activations: relu
+    afn_dropout: 0.1
+    afn_hidden_units: [1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.1
+    dnn_hidden_units: [1000, 1000, 1000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1500
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./KKBox/AFN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_kkbox_x1_041_d27594c4:
+    afn_activations: relu
+    afn_dropout: 0.1
+    afn_hidden_units: [1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.2
+    dnn_hidden_units: [1000, 1000, 1000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1500
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./KKBox/AFN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_kkbox_x1_042_8c5d37f8:
+    afn_activations: relu
+    afn_dropout: 0.1
+    afn_hidden_units: [1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.3
+    dnn_hidden_units: [1000, 1000, 1000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1500
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./KKBox/AFN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_kkbox_x1_043_8343c186:
+    afn_activations: relu
+    afn_dropout: 0.2
+    afn_hidden_units: [1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.1
+    dnn_hidden_units: [1000, 1000, 1000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1500
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./KKBox/AFN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_kkbox_x1_044_0ebeb537:
+    afn_activations: relu
+    afn_dropout: 0.2
+    afn_hidden_units: [1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.2
+    dnn_hidden_units: [1000, 1000, 1000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1500
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./KKBox/AFN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_kkbox_x1_045_095d6fd3:
+    afn_activations: relu
+    afn_dropout: 0.2
+    afn_hidden_units: [1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.3
+    dnn_hidden_units: [1000, 1000, 1000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1500
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./KKBox/AFN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_kkbox_x1_046_592a4acf:
+    afn_activations: relu
+    afn_dropout: 0.3
+    afn_hidden_units: [1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.1
+    dnn_hidden_units: [1000, 1000, 1000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1500
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./KKBox/AFN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_kkbox_x1_047_8feac680:
+    afn_activations: relu
+    afn_dropout: 0.3
+    afn_hidden_units: [1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.2
+    dnn_hidden_units: [1000, 1000, 1000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1500
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./KKBox/AFN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+AFN_kkbox_x1_048_33be8768:
+    afn_activations: relu
+    afn_dropout: 0.3
+    afn_hidden_units: [1000, 1000, 1000]
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    dnn_activations: relu
+    dnn_dropout: 0.3
+    dnn_hidden_units: [1000, 1000, 1000]
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    ensemble_dnn: true
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    logarithmic_neurons: 1500
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_id: AFN_base
+    model_root: ./KKBox/AFN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3

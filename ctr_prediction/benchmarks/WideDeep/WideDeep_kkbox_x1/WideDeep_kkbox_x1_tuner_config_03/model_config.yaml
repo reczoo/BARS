@@ -1,4 +1,36 @@
-WideDeep_kkbox_x1_001_4b49a57e:
+WideDeep_kkbox_x1_001_9b099803:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: WideDeep
+    model_id: WideDeep_base
+    model_root: ./KKBox/WideDeep_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+WideDeep_kkbox_x1_002_4b49a57e:
     batch_norm: false
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
@@ -30,7 +62,7 @@ WideDeep_kkbox_x1_001_4b49a57e:
     use_hdf5: true
     verbose: 1
     workers: 3
-WideDeep_kkbox_x1_002_04605403:
+WideDeep_kkbox_x1_003_04605403:
     batch_norm: false
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
@@ -62,14 +94,14 @@ WideDeep_kkbox_x1_002_04605403:
     use_hdf5: true
     verbose: 1
     workers: 3
-WideDeep_kkbox_x1_003_eadc7ca8:
+WideDeep_kkbox_x1_004_4d832950:
     batch_norm: false
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
     debug: false
     embedding_dim: 128
     embedding_dropout: 0
-    embedding_regularizer: 0.0001
+    embedding_regularizer: 1.0e-05
     epochs: 100
     every_x_epochs: 1
     hidden_activations: relu
@@ -82,7 +114,7 @@ WideDeep_kkbox_x1_003_eadc7ca8:
     model_root: ./KKBox/WideDeep_kkbox_x1/
     monitor: {AUC: 1, logloss: -1}
     monitor_mode: max
-    net_dropout: 0.4
+    net_dropout: 0.1
     net_regularizer: 0
     optimizer: adam
     patience: 2
@@ -94,46 +126,14 @@ WideDeep_kkbox_x1_003_eadc7ca8:
     use_hdf5: true
     verbose: 1
     workers: 3
-WideDeep_kkbox_x1_004_4061472b:
+WideDeep_kkbox_x1_005_c8cd8ffb:
     batch_norm: false
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
     debug: false
     embedding_dim: 128
     embedding_dropout: 0
-    embedding_regularizer: 0.0001
-    epochs: 100
-    every_x_epochs: 1
-    hidden_activations: relu
-    hidden_units: [1000, 1000]
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: WideDeep
-    model_id: WideDeep_base
-    model_root: ./KKBox/WideDeep_kkbox_x1/
-    monitor: {AUC: 1, logloss: -1}
-    monitor_mode: max
-    net_dropout: 0.5
-    net_regularizer: 0
-    optimizer: adam
-    patience: 2
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2019
-    shuffle: true
-    task: binary_classification
-    use_hdf5: true
-    verbose: 1
-    workers: 3
-WideDeep_kkbox_x1_005_2ef773f2:
-    batch_norm: false
-    batch_size: 10000
-    dataset_id: kkbox_x1_227d337d
-    debug: false
-    embedding_dim: 128
-    embedding_dropout: 0
-    embedding_regularizer: 0.0005
+    embedding_regularizer: 1.0e-05
     epochs: 100
     every_x_epochs: 1
     hidden_activations: relu
@@ -158,14 +158,14 @@ WideDeep_kkbox_x1_005_2ef773f2:
     use_hdf5: true
     verbose: 1
     workers: 3
-WideDeep_kkbox_x1_006_30f7be34:
+WideDeep_kkbox_x1_006_eb8d3133:
     batch_norm: false
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
     debug: false
     embedding_dim: 128
     embedding_dropout: 0
-    embedding_regularizer: 0.0005
+    embedding_regularizer: 1.0e-05
     epochs: 100
     every_x_epochs: 1
     hidden_activations: relu
@@ -190,14 +190,14 @@ WideDeep_kkbox_x1_006_30f7be34:
     use_hdf5: true
     verbose: 1
     workers: 3
-WideDeep_kkbox_x1_007_35b2b450:
+WideDeep_kkbox_x1_007_547dcc76:
     batch_norm: false
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
     debug: false
     embedding_dim: 128
     embedding_dropout: 0
-    embedding_regularizer: 0.0005
+    embedding_regularizer: 0.001
     epochs: 100
     every_x_epochs: 1
     hidden_activations: relu
@@ -210,7 +210,7 @@ WideDeep_kkbox_x1_007_35b2b450:
     model_root: ./KKBox/WideDeep_kkbox_x1/
     monitor: {AUC: 1, logloss: -1}
     monitor_mode: max
-    net_dropout: 0.4
+    net_dropout: 0.1
     net_regularizer: 0
     optimizer: adam
     patience: 2
@@ -222,39 +222,7 @@ WideDeep_kkbox_x1_007_35b2b450:
     use_hdf5: true
     verbose: 1
     workers: 3
-WideDeep_kkbox_x1_008_acd0b353:
-    batch_norm: false
-    batch_size: 10000
-    dataset_id: kkbox_x1_227d337d
-    debug: false
-    embedding_dim: 128
-    embedding_dropout: 0
-    embedding_regularizer: 0.0005
-    epochs: 100
-    every_x_epochs: 1
-    hidden_activations: relu
-    hidden_units: [1000, 1000]
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: WideDeep
-    model_id: WideDeep_base
-    model_root: ./KKBox/WideDeep_kkbox_x1/
-    monitor: {AUC: 1, logloss: -1}
-    monitor_mode: max
-    net_dropout: 0.5
-    net_regularizer: 0
-    optimizer: adam
-    patience: 2
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2019
-    shuffle: true
-    task: binary_classification
-    use_hdf5: true
-    verbose: 1
-    workers: 3
-WideDeep_kkbox_x1_009_42e3b21e:
+WideDeep_kkbox_x1_008_42e3b21e:
     batch_norm: false
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
@@ -286,7 +254,7 @@ WideDeep_kkbox_x1_009_42e3b21e:
     use_hdf5: true
     verbose: 1
     workers: 3
-WideDeep_kkbox_x1_010_1bcc945a:
+WideDeep_kkbox_x1_009_1bcc945a:
     batch_norm: false
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
@@ -318,18 +286,18 @@ WideDeep_kkbox_x1_010_1bcc945a:
     use_hdf5: true
     verbose: 1
     workers: 3
-WideDeep_kkbox_x1_011_037aba96:
+WideDeep_kkbox_x1_010_fefdf855:
     batch_norm: false
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
     debug: false
     embedding_dim: 128
     embedding_dropout: 0
-    embedding_regularizer: 0.001
+    embedding_regularizer: 0.0001
     epochs: 100
     every_x_epochs: 1
     hidden_activations: relu
-    hidden_units: [1000, 1000]
+    hidden_units: [1000, 1000, 1000]
     learning_rate: 0.001
     loss: binary_crossentropy
     metrics: [logloss, AUC]
@@ -338,7 +306,7 @@ WideDeep_kkbox_x1_011_037aba96:
     model_root: ./KKBox/WideDeep_kkbox_x1/
     monitor: {AUC: 1, logloss: -1}
     monitor_mode: max
-    net_dropout: 0.4
+    net_dropout: 0.1
     net_regularizer: 0
     optimizer: adam
     patience: 2
@@ -350,39 +318,7 @@ WideDeep_kkbox_x1_011_037aba96:
     use_hdf5: true
     verbose: 1
     workers: 3
-WideDeep_kkbox_x1_012_dead6e8a:
-    batch_norm: false
-    batch_size: 10000
-    dataset_id: kkbox_x1_227d337d
-    debug: false
-    embedding_dim: 128
-    embedding_dropout: 0
-    embedding_regularizer: 0.001
-    epochs: 100
-    every_x_epochs: 1
-    hidden_activations: relu
-    hidden_units: [1000, 1000]
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: WideDeep
-    model_id: WideDeep_base
-    model_root: ./KKBox/WideDeep_kkbox_x1/
-    monitor: {AUC: 1, logloss: -1}
-    monitor_mode: max
-    net_dropout: 0.5
-    net_regularizer: 0
-    optimizer: adam
-    patience: 2
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2019
-    shuffle: true
-    task: binary_classification
-    use_hdf5: true
-    verbose: 1
-    workers: 3
-WideDeep_kkbox_x1_013_dfb95cb7:
+WideDeep_kkbox_x1_011_dfb95cb7:
     batch_norm: false
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
@@ -414,7 +350,7 @@ WideDeep_kkbox_x1_013_dfb95cb7:
     use_hdf5: true
     verbose: 1
     workers: 3
-WideDeep_kkbox_x1_014_62151ded:
+WideDeep_kkbox_x1_012_62151ded:
     batch_norm: false
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
@@ -446,14 +382,14 @@ WideDeep_kkbox_x1_014_62151ded:
     use_hdf5: true
     verbose: 1
     workers: 3
-WideDeep_kkbox_x1_015_5771e266:
+WideDeep_kkbox_x1_013_3ddbd6f8:
     batch_norm: false
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
     debug: false
     embedding_dim: 128
     embedding_dropout: 0
-    embedding_regularizer: 0.0001
+    embedding_regularizer: 1.0e-05
     epochs: 100
     every_x_epochs: 1
     hidden_activations: relu
@@ -466,7 +402,7 @@ WideDeep_kkbox_x1_015_5771e266:
     model_root: ./KKBox/WideDeep_kkbox_x1/
     monitor: {AUC: 1, logloss: -1}
     monitor_mode: max
-    net_dropout: 0.4
+    net_dropout: 0.1
     net_regularizer: 0
     optimizer: adam
     patience: 2
@@ -478,46 +414,14 @@ WideDeep_kkbox_x1_015_5771e266:
     use_hdf5: true
     verbose: 1
     workers: 3
-WideDeep_kkbox_x1_016_3a89a9cb:
+WideDeep_kkbox_x1_014_17650a0e:
     batch_norm: false
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
     debug: false
     embedding_dim: 128
     embedding_dropout: 0
-    embedding_regularizer: 0.0001
-    epochs: 100
-    every_x_epochs: 1
-    hidden_activations: relu
-    hidden_units: [1000, 1000, 1000]
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: WideDeep
-    model_id: WideDeep_base
-    model_root: ./KKBox/WideDeep_kkbox_x1/
-    monitor: {AUC: 1, logloss: -1}
-    monitor_mode: max
-    net_dropout: 0.5
-    net_regularizer: 0
-    optimizer: adam
-    patience: 2
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2019
-    shuffle: true
-    task: binary_classification
-    use_hdf5: true
-    verbose: 1
-    workers: 3
-WideDeep_kkbox_x1_017_09282602:
-    batch_norm: false
-    batch_size: 10000
-    dataset_id: kkbox_x1_227d337d
-    debug: false
-    embedding_dim: 128
-    embedding_dropout: 0
-    embedding_regularizer: 0.0005
+    embedding_regularizer: 1.0e-05
     epochs: 100
     every_x_epochs: 1
     hidden_activations: relu
@@ -542,14 +446,14 @@ WideDeep_kkbox_x1_017_09282602:
     use_hdf5: true
     verbose: 1
     workers: 3
-WideDeep_kkbox_x1_018_b88914fe:
+WideDeep_kkbox_x1_015_824e36c5:
     batch_norm: false
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
     debug: false
     embedding_dim: 128
     embedding_dropout: 0
-    embedding_regularizer: 0.0005
+    embedding_regularizer: 1.0e-05
     epochs: 100
     every_x_epochs: 1
     hidden_activations: relu
@@ -574,14 +478,14 @@ WideDeep_kkbox_x1_018_b88914fe:
     use_hdf5: true
     verbose: 1
     workers: 3
-WideDeep_kkbox_x1_019_9e17a734:
+WideDeep_kkbox_x1_016_c606ed13:
     batch_norm: false
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
     debug: false
     embedding_dim: 128
     embedding_dropout: 0
-    embedding_regularizer: 0.0005
+    embedding_regularizer: 0.001
     epochs: 100
     every_x_epochs: 1
     hidden_activations: relu
@@ -594,7 +498,7 @@ WideDeep_kkbox_x1_019_9e17a734:
     model_root: ./KKBox/WideDeep_kkbox_x1/
     monitor: {AUC: 1, logloss: -1}
     monitor_mode: max
-    net_dropout: 0.4
+    net_dropout: 0.1
     net_regularizer: 0
     optimizer: adam
     patience: 2
@@ -606,39 +510,7 @@ WideDeep_kkbox_x1_019_9e17a734:
     use_hdf5: true
     verbose: 1
     workers: 3
-WideDeep_kkbox_x1_020_d005fd02:
-    batch_norm: false
-    batch_size: 10000
-    dataset_id: kkbox_x1_227d337d
-    debug: false
-    embedding_dim: 128
-    embedding_dropout: 0
-    embedding_regularizer: 0.0005
-    epochs: 100
-    every_x_epochs: 1
-    hidden_activations: relu
-    hidden_units: [1000, 1000, 1000]
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: WideDeep
-    model_id: WideDeep_base
-    model_root: ./KKBox/WideDeep_kkbox_x1/
-    monitor: {AUC: 1, logloss: -1}
-    monitor_mode: max
-    net_dropout: 0.5
-    net_regularizer: 0
-    optimizer: adam
-    patience: 2
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2019
-    shuffle: true
-    task: binary_classification
-    use_hdf5: true
-    verbose: 1
-    workers: 3
-WideDeep_kkbox_x1_021_ac2044c7:
+WideDeep_kkbox_x1_017_ac2044c7:
     batch_norm: false
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
@@ -670,7 +542,7 @@ WideDeep_kkbox_x1_021_ac2044c7:
     use_hdf5: true
     verbose: 1
     workers: 3
-WideDeep_kkbox_x1_022_b701aa0f:
+WideDeep_kkbox_x1_018_b701aa0f:
     batch_norm: false
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
@@ -702,18 +574,18 @@ WideDeep_kkbox_x1_022_b701aa0f:
     use_hdf5: true
     verbose: 1
     workers: 3
-WideDeep_kkbox_x1_023_8633e2a6:
+WideDeep_kkbox_x1_019_64ba910c:
     batch_norm: false
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
     debug: false
     embedding_dim: 128
     embedding_dropout: 0
-    embedding_regularizer: 0.001
+    embedding_regularizer: 0.0001
     epochs: 100
     every_x_epochs: 1
     hidden_activations: relu
-    hidden_units: [1000, 1000, 1000]
+    hidden_units: [1000, 1000, 1000, 1000]
     learning_rate: 0.001
     loss: binary_crossentropy
     metrics: [logloss, AUC]
@@ -722,7 +594,7 @@ WideDeep_kkbox_x1_023_8633e2a6:
     model_root: ./KKBox/WideDeep_kkbox_x1/
     monitor: {AUC: 1, logloss: -1}
     monitor_mode: max
-    net_dropout: 0.4
+    net_dropout: 0.1
     net_regularizer: 0
     optimizer: adam
     patience: 2
@@ -734,39 +606,7 @@ WideDeep_kkbox_x1_023_8633e2a6:
     use_hdf5: true
     verbose: 1
     workers: 3
-WideDeep_kkbox_x1_024_9f16a2f9:
-    batch_norm: false
-    batch_size: 10000
-    dataset_id: kkbox_x1_227d337d
-    debug: false
-    embedding_dim: 128
-    embedding_dropout: 0
-    embedding_regularizer: 0.001
-    epochs: 100
-    every_x_epochs: 1
-    hidden_activations: relu
-    hidden_units: [1000, 1000, 1000]
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: WideDeep
-    model_id: WideDeep_base
-    model_root: ./KKBox/WideDeep_kkbox_x1/
-    monitor: {AUC: 1, logloss: -1}
-    monitor_mode: max
-    net_dropout: 0.5
-    net_regularizer: 0
-    optimizer: adam
-    patience: 2
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2019
-    shuffle: true
-    task: binary_classification
-    use_hdf5: true
-    verbose: 1
-    workers: 3
-WideDeep_kkbox_x1_025_2a9847b1:
+WideDeep_kkbox_x1_020_2a9847b1:
     batch_norm: false
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
@@ -798,7 +638,7 @@ WideDeep_kkbox_x1_025_2a9847b1:
     use_hdf5: true
     verbose: 1
     workers: 3
-WideDeep_kkbox_x1_026_d27cce4c:
+WideDeep_kkbox_x1_021_d27cce4c:
     batch_norm: false
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
@@ -830,14 +670,14 @@ WideDeep_kkbox_x1_026_d27cce4c:
     use_hdf5: true
     verbose: 1
     workers: 3
-WideDeep_kkbox_x1_027_b3388462:
+WideDeep_kkbox_x1_022_8b367a9b:
     batch_norm: false
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
     debug: false
     embedding_dim: 128
     embedding_dropout: 0
-    embedding_regularizer: 0.0001
+    embedding_regularizer: 1.0e-05
     epochs: 100
     every_x_epochs: 1
     hidden_activations: relu
@@ -850,7 +690,7 @@ WideDeep_kkbox_x1_027_b3388462:
     model_root: ./KKBox/WideDeep_kkbox_x1/
     monitor: {AUC: 1, logloss: -1}
     monitor_mode: max
-    net_dropout: 0.4
+    net_dropout: 0.1
     net_regularizer: 0
     optimizer: adam
     patience: 2
@@ -862,46 +702,14 @@ WideDeep_kkbox_x1_027_b3388462:
     use_hdf5: true
     verbose: 1
     workers: 3
-WideDeep_kkbox_x1_028_7f41554f:
+WideDeep_kkbox_x1_023_8e6bb502:
     batch_norm: false
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
     debug: false
     embedding_dim: 128
     embedding_dropout: 0
-    embedding_regularizer: 0.0001
-    epochs: 100
-    every_x_epochs: 1
-    hidden_activations: relu
-    hidden_units: [1000, 1000, 1000, 1000]
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: WideDeep
-    model_id: WideDeep_base
-    model_root: ./KKBox/WideDeep_kkbox_x1/
-    monitor: {AUC: 1, logloss: -1}
-    monitor_mode: max
-    net_dropout: 0.5
-    net_regularizer: 0
-    optimizer: adam
-    patience: 2
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2019
-    shuffle: true
-    task: binary_classification
-    use_hdf5: true
-    verbose: 1
-    workers: 3
-WideDeep_kkbox_x1_029_c7106aa9:
-    batch_norm: false
-    batch_size: 10000
-    dataset_id: kkbox_x1_227d337d
-    debug: false
-    embedding_dim: 128
-    embedding_dropout: 0
-    embedding_regularizer: 0.0005
+    embedding_regularizer: 1.0e-05
     epochs: 100
     every_x_epochs: 1
     hidden_activations: relu
@@ -926,14 +734,14 @@ WideDeep_kkbox_x1_029_c7106aa9:
     use_hdf5: true
     verbose: 1
     workers: 3
-WideDeep_kkbox_x1_030_d0c71c33:
+WideDeep_kkbox_x1_024_b1bcd43b:
     batch_norm: false
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
     debug: false
     embedding_dim: 128
     embedding_dropout: 0
-    embedding_regularizer: 0.0005
+    embedding_regularizer: 1.0e-05
     epochs: 100
     every_x_epochs: 1
     hidden_activations: relu
@@ -958,14 +766,14 @@ WideDeep_kkbox_x1_030_d0c71c33:
     use_hdf5: true
     verbose: 1
     workers: 3
-WideDeep_kkbox_x1_031_599034db:
+WideDeep_kkbox_x1_025_d8a3c152:
     batch_norm: false
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
     debug: false
     embedding_dim: 128
     embedding_dropout: 0
-    embedding_regularizer: 0.0005
+    embedding_regularizer: 0.001
     epochs: 100
     every_x_epochs: 1
     hidden_activations: relu
@@ -978,7 +786,7 @@ WideDeep_kkbox_x1_031_599034db:
     model_root: ./KKBox/WideDeep_kkbox_x1/
     monitor: {AUC: 1, logloss: -1}
     monitor_mode: max
-    net_dropout: 0.4
+    net_dropout: 0.1
     net_regularizer: 0
     optimizer: adam
     patience: 2
@@ -990,39 +798,7 @@ WideDeep_kkbox_x1_031_599034db:
     use_hdf5: true
     verbose: 1
     workers: 3
-WideDeep_kkbox_x1_032_cedc8da8:
-    batch_norm: false
-    batch_size: 10000
-    dataset_id: kkbox_x1_227d337d
-    debug: false
-    embedding_dim: 128
-    embedding_dropout: 0
-    embedding_regularizer: 0.0005
-    epochs: 100
-    every_x_epochs: 1
-    hidden_activations: relu
-    hidden_units: [1000, 1000, 1000, 1000]
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: WideDeep
-    model_id: WideDeep_base
-    model_root: ./KKBox/WideDeep_kkbox_x1/
-    monitor: {AUC: 1, logloss: -1}
-    monitor_mode: max
-    net_dropout: 0.5
-    net_regularizer: 0
-    optimizer: adam
-    patience: 2
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2019
-    shuffle: true
-    task: binary_classification
-    use_hdf5: true
-    verbose: 1
-    workers: 3
-WideDeep_kkbox_x1_033_dd5f6e45:
+WideDeep_kkbox_x1_026_dd5f6e45:
     batch_norm: false
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
@@ -1054,7 +830,7 @@ WideDeep_kkbox_x1_033_dd5f6e45:
     use_hdf5: true
     verbose: 1
     workers: 3
-WideDeep_kkbox_x1_034_e169b361:
+WideDeep_kkbox_x1_027_e169b361:
     batch_norm: false
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
@@ -1075,70 +851,6 @@ WideDeep_kkbox_x1_034_e169b361:
     monitor: {AUC: 1, logloss: -1}
     monitor_mode: max
     net_dropout: 0.3
-    net_regularizer: 0
-    optimizer: adam
-    patience: 2
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2019
-    shuffle: true
-    task: binary_classification
-    use_hdf5: true
-    verbose: 1
-    workers: 3
-WideDeep_kkbox_x1_035_dd1bfc19:
-    batch_norm: false
-    batch_size: 10000
-    dataset_id: kkbox_x1_227d337d
-    debug: false
-    embedding_dim: 128
-    embedding_dropout: 0
-    embedding_regularizer: 0.001
-    epochs: 100
-    every_x_epochs: 1
-    hidden_activations: relu
-    hidden_units: [1000, 1000, 1000, 1000]
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: WideDeep
-    model_id: WideDeep_base
-    model_root: ./KKBox/WideDeep_kkbox_x1/
-    monitor: {AUC: 1, logloss: -1}
-    monitor_mode: max
-    net_dropout: 0.4
-    net_regularizer: 0
-    optimizer: adam
-    patience: 2
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2019
-    shuffle: true
-    task: binary_classification
-    use_hdf5: true
-    verbose: 1
-    workers: 3
-WideDeep_kkbox_x1_036_6f6880c7:
-    batch_norm: false
-    batch_size: 10000
-    dataset_id: kkbox_x1_227d337d
-    debug: false
-    embedding_dim: 128
-    embedding_dropout: 0
-    embedding_regularizer: 0.001
-    epochs: 100
-    every_x_epochs: 1
-    hidden_activations: relu
-    hidden_units: [1000, 1000, 1000, 1000]
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: WideDeep
-    model_id: WideDeep_base
-    model_root: ./KKBox/WideDeep_kkbox_x1/
-    monitor: {AUC: 1, logloss: -1}
-    monitor_mode: max
-    net_dropout: 0.5
     net_regularizer: 0
     optimizer: adam
     patience: 2

@@ -1,0 +1,216 @@
+LorentzFM_kkbox_x1_001_ab6000d1:
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: LorentzFM
+    model_id: LorentzFM_base
+    model_root: ./KKBox/LorentzFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 1.0e-08
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+LorentzFM_kkbox_x1_002_22b5f5c3:
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: LorentzFM
+    model_id: LorentzFM_base
+    model_root: ./KKBox/LorentzFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 1.0e-07
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+LorentzFM_kkbox_x1_003_0455bdef:
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: LorentzFM
+    model_id: LorentzFM_base
+    model_root: ./KKBox/LorentzFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 1.0e-06
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+LorentzFM_kkbox_x1_004_ca0fd678:
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: LorentzFM
+    model_id: LorentzFM_base
+    model_root: ./KKBox/LorentzFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 5.0e-05
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+LorentzFM_kkbox_x1_005_af311e79:
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: LorentzFM
+    model_id: LorentzFM_base
+    model_root: ./KKBox/LorentzFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 1.0e-05
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+LorentzFM_kkbox_x1_006_bfac0971:
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: LorentzFM
+    model_id: LorentzFM_base
+    model_root: ./KKBox/LorentzFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 0.0005
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+LorentzFM_kkbox_x1_007_9211a5f1:
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: LorentzFM
+    model_id: LorentzFM_base
+    model_root: ./KKBox/LorentzFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 0.0001
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+LorentzFM_kkbox_x1_008_499c0e06:
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: LorentzFM
+    model_id: LorentzFM_base
+    model_root: ./KKBox/LorentzFM_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    regularizer: 0.001
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3

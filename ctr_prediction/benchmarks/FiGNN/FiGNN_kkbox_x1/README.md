@@ -11,8 +11,8 @@ Author: [XUEPAI](https://github.com/xue-pai)
 + Hardware
 
   ```python
-  CPU: Intel(R) Xeon(R) CPU E5-2690 v4 @ 2.60GHz
-  GPU: Tesla P100 16G
+  CPU: Intel(R) Xeon(R) Gold 6278C CPU @ 2.60GHz
+  GPU: Tesla V100 32G
   RAM: 755G
 
   ```
@@ -20,21 +20,21 @@ Author: [XUEPAI](https://github.com/xue-pai)
 + Software
 
   ```python
-  CUDA: 10.0
-  python: 3.6.5
-  pytorch: 1.0.1.post2
-  pandas: 0.23.0
-  numpy: 1.18.1
-  scipy: 1.1.0
-  sklearn: 0.23.1
-  pyyaml: 5.1
-  h5py: 2.7.1
-  tqdm: 4.59.0
+  CUDA: 10.2
+  python: 3.6.4
+  pytorch: 1.0.0
+  pandas: 0.22.0
+  numpy: 1.19.2
+  scipy: 1.5.4
+  sklearn: 0.22.1
+  pyyaml: 5.4.1
+  h5py: 2.8.0
+  tqdm: 4.60.0
   fuxictr: 1.0.2
   ```
 
 ### Dataset
-Dataset ID: [KKBox_x1](https://github.com/openbenchmark/BARS/blob/master/ctr_prediction/datasets/KKBox/README.md#KKBox_x1). Please refer to the dataset details to get data ready.
+Dataset ID: [KKBox_x1](https://github.com/openbenchmark/BARS/blob/master/ctr_prediction/datasets/KKBox#KKBox_x1). Please refer to the dataset details to get data ready.
 
 ### Code
 
@@ -48,15 +48,15 @@ Running steps:
     sys.path.append('YOUR_PATH_TO_FuxiCTR/')
     ```
 
-2. Create a data directory and put the downloaded csv files in `../data/Avazu/Avazu_x1`.
+2. Create a data directory and put the downloaded csv files in `../data/KKBox/KKBox_x1`.
 
-3. Both `dataset_config.yaml` and `model_config.yaml` files are available in [FiGNN_kkbox_x1_tuner_config_02](./FiGNN_kkbox_x1_tuner_config_02). Make sure the data paths in `dataset_config.yaml` are correctly set to what we create in the last step.
+3. Both `dataset_config.yaml` and `model_config.yaml` files are available in [FiGNN_kkbox_x1_tuner_config_04](./FiGNN_kkbox_x1_tuner_config_04). Make sure the data paths in `dataset_config.yaml` are correctly set to what we create in the last step.
 
 4. Run the following script to start.
 
     ```bash
     cd FiGNN_kkbox_x1
-    nohup python run_expid.py --config ./FiGNN_kkbox_x1_tuner_config_02 --expid FiGNN_kkbox_x1_005_38f02f9a --gpu 0 > run.log &
+    nohup python run_expid.py --config ./FiGNN_kkbox_x1_tuner_config_04 --expid FiGNN_kkbox_x1_003_92b4cef8 --gpu 0 > run.log &
     tail -f run.log
     ```
 
@@ -64,26 +64,33 @@ Running steps:
 
 | logloss | AUC  |
 |:--------------------:|:--------------------:|
-| 0.490226 | 0.846333  |
+| 0.489593 | 0.847155  |
 
 
 ### Logs
 ```python
-2020-05-02 17:42:26,690 P5831 INFO {
+2022-03-12 07:52:54,377 P47639 INFO {
     "batch_size": "2000",
-    "dataset_id": "kkbox_x1_001_c5c9c6e3",
+    "data_format": "csv",
+    "data_root": "../data/KKBox/",
+    "dataset_id": "kkbox_x1_227d337d",
+    "debug": "False",
     "embedding_dim": "128",
     "embedding_dropout": "0",
     "embedding_regularizer": "0.0001",
     "epochs": "100",
     "every_x_epochs": "1",
-    "gnn_layers": "3",
+    "feature_cols": "[{'active': True, 'dtype': 'str', 'name': ['msno', 'song_id', 'source_system_tab', 'source_screen_name', 'source_type', 'city', 'gender', 'registered_via', 'language'], 'type': 'categorical'}, {'active': True, 'dtype': 'str', 'encoder': 'MaskedSumPooling', 'max_len': 3, 'name': 'genre_ids', 'type': 'sequence'}, {'active': True, 'dtype': 'str', 'encoder': 'MaskedSumPooling', 'max_len': 3, 'name': 'artist_name', 'type': 'sequence'}, {'active': True, 'dtype': 'str', 'name': 'isrc', 'preprocess': 'extract_country_code', 'type': 'categorical'}, {'active': True, 'dtype': 'str', 'name': 'bd', 'preprocess': 'bucketize_age', 'type': 'categorical'}]",
+    "gnn_layers": "6",
+    "gpu": "2",
+    "label_col": "{'dtype': 'float', 'name': 'label'}",
     "learning_rate": "0.001",
     "loss": "binary_crossentropy",
     "metrics": "['logloss', 'AUC']",
+    "min_categr_count": "10",
     "model": "FiGNN",
-    "model_id": "FiGNN_kkbox_x1_005_58c5e171",
-    "model_root": "./KKBox/FiGNN_kkbox/",
+    "model_id": "FiGNN_kkbox_x1_003_92b4cef8",
+    "model_root": "./KKBox/FiGNN_kkbox_x1/",
     "monitor": "{'AUC': 1, 'logloss': -1}",
     "monitor_mode": "max",
     "net_regularizer": "0",
@@ -95,171 +102,144 @@ Running steps:
     "seed": "2019",
     "shuffle": "True",
     "task": "binary_classification",
+    "test_data": "../data/KKBox/KKBox_x1/test.csv",
+    "train_data": "../data/KKBox/KKBox_x1/train.csv",
     "use_gru": "True",
     "use_hdf5": "True",
     "use_residual": "True",
-    "verbose": "0",
-    "workers": "3",
-    "data_format": "h5",
-    "data_root": "../data/KKBox/",
-    "test_data": "../data/KKBox/kkbox_x1_001_c5c9c6e3/test.h5",
-    "train_data": "../data/KKBox/kkbox_x1_001_c5c9c6e3/train.h5",
-    "valid_data": "../data/KKBox/kkbox_x1_001_c5c9c6e3/valid.h5",
+    "valid_data": "../data/KKBox/KKBox_x1/valid.csv",
+    "verbose": "1",
     "version": "pytorch",
-    "gpu": "1"
+    "workers": "3"
 }
-2020-05-02 17:42:26,691 P5831 INFO Set up feature encoder...
-2020-05-02 17:42:26,691 P5831 INFO Load feature_map from json: ../data/KKBox/kkbox_x1_001_c5c9c6e3/feature_map.json
-2020-05-02 17:42:26,691 P5831 INFO Loading data...
-2020-05-02 17:42:26,694 P5831 INFO Loading data from h5: ../data/KKBox/kkbox_x1_001_c5c9c6e3/train.h5
-2020-05-02 17:42:28,766 P5831 INFO Loading data from h5: ../data/KKBox/kkbox_x1_001_c5c9c6e3/valid.h5
-2020-05-02 17:42:29,466 P5831 INFO Train samples: total/5901932, pos/2971724, neg/2930208, ratio/50.35%
-2020-05-02 17:42:29,493 P5831 INFO Validation samples: total/737743, pos/371466, neg/366277, ratio/50.35%
-2020-05-02 17:42:29,493 P5831 INFO Loading train data done.
-2020-05-02 17:42:36,194 P5831 INFO **** Start training: 2951 batches/epoch ****
-2020-05-02 18:04:04,502 P5831 INFO [Metrics] logloss: 0.550557 - AUC: 0.790746
-2020-05-02 18:04:04,523 P5831 INFO Save best model: monitor(max): 0.240190
-2020-05-02 18:04:04,567 P5831 INFO --- 2951/2951 batches finished ---
-2020-05-02 18:04:04,634 P5831 INFO Train loss: 0.598919
-2020-05-02 18:04:04,634 P5831 INFO ************ Epoch=1 end ************
-2020-05-02 18:25:32,942 P5831 INFO [Metrics] logloss: 0.534739 - AUC: 0.805514
-2020-05-02 18:25:32,963 P5831 INFO Save best model: monitor(max): 0.270775
-2020-05-02 18:25:33,030 P5831 INFO --- 2951/2951 batches finished ---
-2020-05-02 18:25:33,107 P5831 INFO Train loss: 0.569713
-2020-05-02 18:25:33,107 P5831 INFO ************ Epoch=2 end ************
-2020-05-02 18:47:03,283 P5831 INFO [Metrics] logloss: 0.526928 - AUC: 0.812327
-2020-05-02 18:47:03,300 P5831 INFO Save best model: monitor(max): 0.285399
-2020-05-02 18:47:03,365 P5831 INFO --- 2951/2951 batches finished ---
-2020-05-02 18:47:03,423 P5831 INFO Train loss: 0.560505
-2020-05-02 18:47:03,423 P5831 INFO ************ Epoch=3 end ************
-2020-05-02 19:08:31,435 P5831 INFO [Metrics] logloss: 0.522099 - AUC: 0.816474
-2020-05-02 19:08:31,458 P5831 INFO Save best model: monitor(max): 0.294375
-2020-05-02 19:08:32,021 P5831 INFO --- 2951/2951 batches finished ---
-2020-05-02 19:08:32,075 P5831 INFO Train loss: 0.555514
-2020-05-02 19:08:32,075 P5831 INFO ************ Epoch=4 end ************
-2020-05-02 19:30:01,209 P5831 INFO [Metrics] logloss: 0.518983 - AUC: 0.819045
-2020-05-02 19:30:01,230 P5831 INFO Save best model: monitor(max): 0.300062
-2020-05-02 19:30:01,296 P5831 INFO --- 2951/2951 batches finished ---
-2020-05-02 19:30:01,373 P5831 INFO Train loss: 0.552492
-2020-05-02 19:30:01,374 P5831 INFO ************ Epoch=5 end ************
-2020-05-02 19:51:29,124 P5831 INFO [Metrics] logloss: 0.516556 - AUC: 0.821256
-2020-05-02 19:51:29,141 P5831 INFO Save best model: monitor(max): 0.304700
-2020-05-02 19:51:29,202 P5831 INFO --- 2951/2951 batches finished ---
-2020-05-02 19:51:29,287 P5831 INFO Train loss: 0.550314
-2020-05-02 19:51:29,287 P5831 INFO ************ Epoch=6 end ************
-2020-05-02 20:12:58,735 P5831 INFO [Metrics] logloss: 0.514308 - AUC: 0.823212
-2020-05-02 20:12:58,767 P5831 INFO Save best model: monitor(max): 0.308904
-2020-05-02 20:12:58,845 P5831 INFO --- 2951/2951 batches finished ---
-2020-05-02 20:12:58,899 P5831 INFO Train loss: 0.548628
-2020-05-02 20:12:58,899 P5831 INFO ************ Epoch=7 end ************
-2020-05-02 20:34:27,751 P5831 INFO [Metrics] logloss: 0.512171 - AUC: 0.824753
-2020-05-02 20:34:27,769 P5831 INFO Save best model: monitor(max): 0.312583
-2020-05-02 20:34:27,835 P5831 INFO --- 2951/2951 batches finished ---
-2020-05-02 20:34:27,918 P5831 INFO Train loss: 0.547290
-2020-05-02 20:34:27,918 P5831 INFO ************ Epoch=8 end ************
-2020-05-02 20:55:58,119 P5831 INFO [Metrics] logloss: 0.510956 - AUC: 0.825652
-2020-05-02 20:55:58,137 P5831 INFO Save best model: monitor(max): 0.314696
-2020-05-02 20:55:58,204 P5831 INFO --- 2951/2951 batches finished ---
-2020-05-02 20:55:58,262 P5831 INFO Train loss: 0.546054
-2020-05-02 20:55:58,262 P5831 INFO ************ Epoch=9 end ************
-2020-05-02 21:17:26,716 P5831 INFO [Metrics] logloss: 0.509355 - AUC: 0.827064
-2020-05-02 21:17:26,735 P5831 INFO Save best model: monitor(max): 0.317709
-2020-05-02 21:17:26,802 P5831 INFO --- 2951/2951 batches finished ---
-2020-05-02 21:17:26,862 P5831 INFO Train loss: 0.545114
-2020-05-02 21:17:26,863 P5831 INFO ************ Epoch=10 end ************
-2020-05-02 21:38:56,501 P5831 INFO [Metrics] logloss: 0.507752 - AUC: 0.828349
-2020-05-02 21:38:56,519 P5831 INFO Save best model: monitor(max): 0.320598
-2020-05-02 21:38:56,580 P5831 INFO --- 2951/2951 batches finished ---
-2020-05-02 21:38:56,660 P5831 INFO Train loss: 0.544152
-2020-05-02 21:38:56,661 P5831 INFO ************ Epoch=11 end ************
-2020-05-02 22:00:24,100 P5831 INFO [Metrics] logloss: 0.507250 - AUC: 0.828856
-2020-05-02 22:00:24,118 P5831 INFO Save best model: monitor(max): 0.321606
-2020-05-02 22:00:24,179 P5831 INFO --- 2951/2951 batches finished ---
-2020-05-02 22:00:24,253 P5831 INFO Train loss: 0.543100
-2020-05-02 22:00:24,253 P5831 INFO ************ Epoch=12 end ************
-2020-05-02 22:21:51,516 P5831 INFO [Metrics] logloss: 0.506949 - AUC: 0.829106
-2020-05-02 22:21:51,541 P5831 INFO Save best model: monitor(max): 0.322157
-2020-05-02 22:21:52,692 P5831 INFO --- 2951/2951 batches finished ---
-2020-05-02 22:21:52,747 P5831 INFO Train loss: 0.542270
-2020-05-02 22:21:52,748 P5831 INFO ************ Epoch=13 end ************
-2020-05-02 22:43:19,514 P5831 INFO [Metrics] logloss: 0.505997 - AUC: 0.829738
-2020-05-02 22:43:19,539 P5831 INFO Save best model: monitor(max): 0.323742
-2020-05-02 22:43:20,283 P5831 INFO --- 2951/2951 batches finished ---
-2020-05-02 22:43:20,334 P5831 INFO Train loss: 0.541505
-2020-05-02 22:43:20,334 P5831 INFO ************ Epoch=14 end ************
-2020-05-02 23:04:48,553 P5831 INFO [Metrics] logloss: 0.505346 - AUC: 0.830425
-2020-05-02 23:04:48,576 P5831 INFO Save best model: monitor(max): 0.325079
-2020-05-02 23:04:48,656 P5831 INFO --- 2951/2951 batches finished ---
-2020-05-02 23:04:48,725 P5831 INFO Train loss: 0.540810
-2020-05-02 23:04:48,726 P5831 INFO ************ Epoch=15 end ************
-2020-05-02 23:26:16,602 P5831 INFO [Metrics] logloss: 0.504424 - AUC: 0.831215
-2020-05-02 23:26:16,622 P5831 INFO Save best model: monitor(max): 0.326791
-2020-05-02 23:26:16,687 P5831 INFO --- 2951/2951 batches finished ---
-2020-05-02 23:26:16,760 P5831 INFO Train loss: 0.540064
-2020-05-02 23:26:16,760 P5831 INFO ************ Epoch=16 end ************
-2020-05-02 23:47:45,498 P5831 INFO [Metrics] logloss: 0.504195 - AUC: 0.831542
-2020-05-02 23:47:45,518 P5831 INFO Save best model: monitor(max): 0.327347
-2020-05-02 23:47:45,579 P5831 INFO --- 2951/2951 batches finished ---
-2020-05-02 23:47:45,635 P5831 INFO Train loss: 0.539427
-2020-05-02 23:47:45,635 P5831 INFO ************ Epoch=17 end ************
-2020-05-03 00:09:12,926 P5831 INFO [Metrics] logloss: 0.503196 - AUC: 0.832344
-2020-05-03 00:09:12,950 P5831 INFO Save best model: monitor(max): 0.329148
-2020-05-03 00:09:13,041 P5831 INFO --- 2951/2951 batches finished ---
-2020-05-03 00:09:13,118 P5831 INFO Train loss: 0.538579
-2020-05-03 00:09:13,118 P5831 INFO ************ Epoch=18 end ************
-2020-05-03 00:30:42,058 P5831 INFO [Metrics] logloss: 0.503209 - AUC: 0.832513
-2020-05-03 00:30:42,079 P5831 INFO Save best model: monitor(max): 0.329304
-2020-05-03 00:30:42,151 P5831 INFO --- 2951/2951 batches finished ---
-2020-05-03 00:30:42,204 P5831 INFO Train loss: 0.538078
-2020-05-03 00:30:42,204 P5831 INFO ************ Epoch=19 end ************
-2020-05-03 00:52:10,258 P5831 INFO [Metrics] logloss: 0.502570 - AUC: 0.833020
-2020-05-03 00:52:10,281 P5831 INFO Save best model: monitor(max): 0.330451
-2020-05-03 00:52:10,351 P5831 INFO --- 2951/2951 batches finished ---
-2020-05-03 00:52:10,430 P5831 INFO Train loss: 0.537450
-2020-05-03 00:52:10,430 P5831 INFO ************ Epoch=20 end ************
-2020-05-03 01:13:38,352 P5831 INFO [Metrics] logloss: 0.502186 - AUC: 0.833270
-2020-05-03 01:13:38,374 P5831 INFO Save best model: monitor(max): 0.331084
-2020-05-03 01:13:38,437 P5831 INFO --- 2951/2951 batches finished ---
-2020-05-03 01:13:38,507 P5831 INFO Train loss: 0.536880
-2020-05-03 01:13:38,508 P5831 INFO ************ Epoch=21 end ************
-2020-05-03 01:35:07,358 P5831 INFO [Metrics] logloss: 0.502711 - AUC: 0.833081
-2020-05-03 01:35:07,386 P5831 INFO Monitor(max) STOP: 0.330370 !
-2020-05-03 01:35:07,386 P5831 INFO Reduce learning rate on plateau: 0.000100
-2020-05-03 01:35:07,387 P5831 INFO --- 2951/2951 batches finished ---
-2020-05-03 01:35:07,465 P5831 INFO Train loss: 0.536106
-2020-05-03 01:35:07,465 P5831 INFO ************ Epoch=22 end ************
-2020-05-03 01:56:36,786 P5831 INFO [Metrics] logloss: 0.490364 - AUC: 0.844749
-2020-05-03 01:56:36,802 P5831 INFO Save best model: monitor(max): 0.354385
-2020-05-03 01:56:36,865 P5831 INFO --- 2951/2951 batches finished ---
-2020-05-03 01:56:36,917 P5831 INFO Train loss: 0.483694
-2020-05-03 01:56:36,917 P5831 INFO ************ Epoch=23 end ************
-2020-05-03 02:18:06,756 P5831 INFO [Metrics] logloss: 0.490848 - AUC: 0.846058
-2020-05-03 02:18:06,775 P5831 INFO Save best model: monitor(max): 0.355209
-2020-05-03 02:18:06,844 P5831 INFO --- 2951/2951 batches finished ---
-2020-05-03 02:18:06,919 P5831 INFO Train loss: 0.459459
-2020-05-03 02:18:06,920 P5831 INFO ************ Epoch=24 end ************
-2020-05-03 02:39:33,212 P5831 INFO [Metrics] logloss: 0.494106 - AUC: 0.845933
-2020-05-03 02:39:33,237 P5831 INFO Monitor(max) STOP: 0.351827 !
-2020-05-03 02:39:33,237 P5831 INFO Reduce learning rate on plateau: 0.000010
-2020-05-03 02:39:33,238 P5831 INFO --- 2951/2951 batches finished ---
-2020-05-03 02:39:33,307 P5831 INFO Train loss: 0.448289
-2020-05-03 02:39:33,307 P5831 INFO ************ Epoch=25 end ************
-2020-05-03 03:01:02,264 P5831 INFO [Metrics] logloss: 0.500821 - AUC: 0.844863
-2020-05-03 03:01:02,282 P5831 INFO Monitor(max) STOP: 0.344042 !
-2020-05-03 03:01:02,282 P5831 INFO Reduce learning rate on plateau: 0.000001
-2020-05-03 03:01:02,282 P5831 INFO Early stopping at epoch=26
-2020-05-03 03:01:02,282 P5831 INFO --- 2951/2951 batches finished ---
-2020-05-03 03:01:02,359 P5831 INFO Train loss: 0.428128
-2020-05-03 03:01:02,359 P5831 INFO Training finished.
-2020-05-03 03:01:02,359 P5831 INFO Load best model: /home/XXX/FuxiCTR/benchmarks/KKBox/FiGNN_kkbox/kkbox_x1_001_c5c9c6e3/FiGNN_kkbox_x1_005_58c5e171_kkbox_x1_001_c5c9c6e3_model.ckpt
-2020-05-03 03:01:02,436 P5831 INFO ****** Train/validation evaluation ******
-2020-05-03 03:09:30,620 P5831 INFO [Metrics] logloss: 0.406920 - AUC: 0.895108
-2020-05-03 03:10:33,509 P5831 INFO [Metrics] logloss: 0.490848 - AUC: 0.846058
-2020-05-03 03:10:33,621 P5831 INFO ******** Test evaluation ********
-2020-05-03 03:10:33,622 P5831 INFO Loading data...
-2020-05-03 03:10:33,622 P5831 INFO Loading data from h5: ../data/KKBox/kkbox_x1_001_c5c9c6e3/test.h5
-2020-05-03 03:10:33,705 P5831 INFO Test samples: total/737743, pos/371466, neg/366277, ratio/50.35%
-2020-05-03 03:10:33,705 P5831 INFO Loading test data done.
-2020-05-03 03:11:36,109 P5831 INFO [Metrics] logloss: 0.490226 - AUC: 0.846333
+2022-03-12 07:52:54,378 P47639 INFO Set up feature encoder...
+2022-03-12 07:52:54,379 P47639 INFO Load feature_encoder from pickle: ../data/KKBox/kkbox_x1_227d337d/feature_encoder.pkl
+2022-03-12 07:52:55,259 P47639 INFO Total number of parameters: 14485376.
+2022-03-12 07:52:55,259 P47639 INFO Loading data...
+2022-03-12 07:52:55,259 P47639 INFO Loading data from h5: ../data/KKBox/kkbox_x1_227d337d/train.h5
+2022-03-12 07:52:55,627 P47639 INFO Loading data from h5: ../data/KKBox/kkbox_x1_227d337d/valid.h5
+2022-03-12 07:52:55,823 P47639 INFO Train samples: total/5901932, pos/2971724, neg/2930208, ratio/50.35%
+2022-03-12 07:52:55,842 P47639 INFO Validation samples: total/737743, pos/371466, neg/366277, ratio/50.35%
+2022-03-12 07:52:55,842 P47639 INFO Loading train data done.
+2022-03-12 07:52:59,641 P47639 INFO Start training: 2951 batches/epoch
+2022-03-12 07:52:59,641 P47639 INFO ************ Epoch=1 start ************
+2022-03-12 08:06:59,321 P47639 INFO [Metrics] logloss: 0.547198 - AUC: 0.794177
+2022-03-12 08:06:59,324 P47639 INFO Save best model: monitor(max): 0.246980
+2022-03-12 08:06:59,560 P47639 INFO --- 2951/2951 batches finished ---
+2022-03-12 08:06:59,589 P47639 INFO Train loss: 0.591372
+2022-03-12 08:06:59,589 P47639 INFO ************ Epoch=1 end ************
+2022-03-12 08:20:58,622 P47639 INFO [Metrics] logloss: 0.533039 - AUC: 0.807241
+2022-03-12 08:20:58,625 P47639 INFO Save best model: monitor(max): 0.274202
+2022-03-12 08:20:58,687 P47639 INFO --- 2951/2951 batches finished ---
+2022-03-12 08:20:58,726 P47639 INFO Train loss: 0.566705
+2022-03-12 08:20:58,726 P47639 INFO ************ Epoch=2 end ************
+2022-03-12 08:34:59,122 P47639 INFO [Metrics] logloss: 0.525146 - AUC: 0.814153
+2022-03-12 08:34:59,125 P47639 INFO Save best model: monitor(max): 0.289007
+2022-03-12 08:34:59,192 P47639 INFO --- 2951/2951 batches finished ---
+2022-03-12 08:34:59,230 P47639 INFO Train loss: 0.557188
+2022-03-12 08:34:59,230 P47639 INFO ************ Epoch=3 end ************
+2022-03-12 08:48:59,462 P47639 INFO [Metrics] logloss: 0.520442 - AUC: 0.817919
+2022-03-12 08:48:59,465 P47639 INFO Save best model: monitor(max): 0.297477
+2022-03-12 08:48:59,531 P47639 INFO --- 2951/2951 batches finished ---
+2022-03-12 08:48:59,563 P47639 INFO Train loss: 0.552129
+2022-03-12 08:48:59,563 P47639 INFO ************ Epoch=4 end ************
+2022-03-12 09:02:59,155 P47639 INFO [Metrics] logloss: 0.516305 - AUC: 0.821295
+2022-03-12 09:02:59,155 P47639 INFO Save best model: monitor(max): 0.304990
+2022-03-12 09:02:59,222 P47639 INFO --- 2951/2951 batches finished ---
+2022-03-12 09:02:59,253 P47639 INFO Train loss: 0.549180
+2022-03-12 09:02:59,253 P47639 INFO ************ Epoch=5 end ************
+2022-03-12 09:16:57,799 P47639 INFO [Metrics] logloss: 0.513276 - AUC: 0.823822
+2022-03-12 09:16:57,800 P47639 INFO Save best model: monitor(max): 0.310546
+2022-03-12 09:16:57,859 P47639 INFO --- 2951/2951 batches finished ---
+2022-03-12 09:16:57,898 P47639 INFO Train loss: 0.546934
+2022-03-12 09:16:57,898 P47639 INFO ************ Epoch=6 end ************
+2022-03-12 09:30:58,143 P47639 INFO [Metrics] logloss: 0.511793 - AUC: 0.825316
+2022-03-12 09:30:58,143 P47639 INFO Save best model: monitor(max): 0.313523
+2022-03-12 09:30:58,201 P47639 INFO --- 2951/2951 batches finished ---
+2022-03-12 09:30:58,237 P47639 INFO Train loss: 0.545030
+2022-03-12 09:30:58,237 P47639 INFO ************ Epoch=7 end ************
+2022-03-12 09:44:57,288 P47639 INFO [Metrics] logloss: 0.510450 - AUC: 0.826357
+2022-03-12 09:44:57,292 P47639 INFO Save best model: monitor(max): 0.315907
+2022-03-12 09:44:57,361 P47639 INFO --- 2951/2951 batches finished ---
+2022-03-12 09:44:57,398 P47639 INFO Train loss: 0.543703
+2022-03-12 09:44:57,398 P47639 INFO ************ Epoch=8 end ************
+2022-03-12 09:58:55,783 P47639 INFO [Metrics] logloss: 0.508012 - AUC: 0.828280
+2022-03-12 09:58:55,787 P47639 INFO Save best model: monitor(max): 0.320268
+2022-03-12 09:58:55,853 P47639 INFO --- 2951/2951 batches finished ---
+2022-03-12 09:58:55,891 P47639 INFO Train loss: 0.542347
+2022-03-12 09:58:55,891 P47639 INFO ************ Epoch=9 end ************
+2022-03-12 10:12:54,895 P47639 INFO [Metrics] logloss: 0.506771 - AUC: 0.829356
+2022-03-12 10:12:54,898 P47639 INFO Save best model: monitor(max): 0.322585
+2022-03-12 10:12:54,960 P47639 INFO --- 2951/2951 batches finished ---
+2022-03-12 10:12:54,993 P47639 INFO Train loss: 0.541276
+2022-03-12 10:12:54,993 P47639 INFO ************ Epoch=10 end ************
+2022-03-12 10:26:53,569 P47639 INFO [Metrics] logloss: 0.506022 - AUC: 0.829868
+2022-03-12 10:26:53,572 P47639 INFO Save best model: monitor(max): 0.323846
+2022-03-12 10:26:53,637 P47639 INFO --- 2951/2951 batches finished ---
+2022-03-12 10:26:53,674 P47639 INFO Train loss: 0.540264
+2022-03-12 10:26:53,674 P47639 INFO ************ Epoch=11 end ************
+2022-03-12 10:40:50,110 P47639 INFO [Metrics] logloss: 0.504779 - AUC: 0.830820
+2022-03-12 10:40:50,113 P47639 INFO Save best model: monitor(max): 0.326041
+2022-03-12 10:40:50,176 P47639 INFO --- 2951/2951 batches finished ---
+2022-03-12 10:40:50,207 P47639 INFO Train loss: 0.539319
+2022-03-12 10:40:50,207 P47639 INFO ************ Epoch=12 end ************
+2022-03-12 10:54:46,823 P47639 INFO [Metrics] logloss: 0.503699 - AUC: 0.832103
+2022-03-12 10:54:46,826 P47639 INFO Save best model: monitor(max): 0.328404
+2022-03-12 10:54:46,896 P47639 INFO --- 2951/2951 batches finished ---
+2022-03-12 10:54:46,925 P47639 INFO Train loss: 0.538414
+2022-03-12 10:54:46,925 P47639 INFO ************ Epoch=13 end ************
+2022-03-12 11:08:43,382 P47639 INFO [Metrics] logloss: 0.503026 - AUC: 0.832401
+2022-03-12 11:08:43,384 P47639 INFO Save best model: monitor(max): 0.329375
+2022-03-12 11:08:43,450 P47639 INFO --- 2951/2951 batches finished ---
+2022-03-12 11:08:43,481 P47639 INFO Train loss: 0.537611
+2022-03-12 11:08:43,481 P47639 INFO ************ Epoch=14 end ************
+2022-03-12 11:22:40,237 P47639 INFO [Metrics] logloss: 0.502594 - AUC: 0.832658
+2022-03-12 11:22:40,238 P47639 INFO Save best model: monitor(max): 0.330064
+2022-03-12 11:22:40,297 P47639 INFO --- 2951/2951 batches finished ---
+2022-03-12 11:22:40,327 P47639 INFO Train loss: 0.536884
+2022-03-12 11:22:40,327 P47639 INFO ************ Epoch=15 end ************
+2022-03-12 11:36:36,574 P47639 INFO [Metrics] logloss: 0.501443 - AUC: 0.833918
+2022-03-12 11:36:36,574 P47639 INFO Save best model: monitor(max): 0.332476
+2022-03-12 11:36:36,640 P47639 INFO --- 2951/2951 batches finished ---
+2022-03-12 11:36:36,675 P47639 INFO Train loss: 0.536097
+2022-03-12 11:36:36,675 P47639 INFO ************ Epoch=16 end ************
+2022-03-12 11:50:32,808 P47639 INFO [Metrics] logloss: 0.501407 - AUC: 0.833709
+2022-03-12 11:50:32,812 P47639 INFO Monitor(max) STOP: 0.332302 !
+2022-03-12 11:50:32,813 P47639 INFO Reduce learning rate on plateau: 0.000100
+2022-03-12 11:50:32,813 P47639 INFO --- 2951/2951 batches finished ---
+2022-03-12 11:50:32,843 P47639 INFO Train loss: 0.535273
+2022-03-12 11:50:32,843 P47639 INFO ************ Epoch=17 end ************
+2022-03-12 12:04:28,908 P47639 INFO [Metrics] logloss: 0.488668 - AUC: 0.845942
+2022-03-12 12:04:28,912 P47639 INFO Save best model: monitor(max): 0.357274
+2022-03-12 12:04:28,980 P47639 INFO --- 2951/2951 batches finished ---
+2022-03-12 12:04:29,012 P47639 INFO Train loss: 0.481175
+2022-03-12 12:04:29,012 P47639 INFO ************ Epoch=18 end ************
+2022-03-12 12:18:24,681 P47639 INFO [Metrics] logloss: 0.489386 - AUC: 0.847260
+2022-03-12 12:18:24,684 P47639 INFO Save best model: monitor(max): 0.357874
+2022-03-12 12:18:24,758 P47639 INFO --- 2951/2951 batches finished ---
+2022-03-12 12:18:24,797 P47639 INFO Train loss: 0.455649
+2022-03-12 12:18:24,797 P47639 INFO ************ Epoch=19 end ************
+2022-03-12 12:32:20,678 P47639 INFO [Metrics] logloss: 0.492988 - AUC: 0.846941
+2022-03-12 12:32:20,681 P47639 INFO Monitor(max) STOP: 0.353954 !
+2022-03-12 12:32:20,681 P47639 INFO Reduce learning rate on plateau: 0.000010
+2022-03-12 12:32:20,681 P47639 INFO --- 2951/2951 batches finished ---
+2022-03-12 12:32:20,713 P47639 INFO Train loss: 0.442881
+2022-03-12 12:32:20,713 P47639 INFO ************ Epoch=20 end ************
+2022-03-12 12:46:16,440 P47639 INFO [Metrics] logloss: 0.502942 - AUC: 0.845406
+2022-03-12 12:46:16,444 P47639 INFO Monitor(max) STOP: 0.342464 !
+2022-03-12 12:46:16,444 P47639 INFO Reduce learning rate on plateau: 0.000001
+2022-03-12 12:46:16,444 P47639 INFO Early stopping at epoch=21
+2022-03-12 12:46:16,444 P47639 INFO --- 2951/2951 batches finished ---
+2022-03-12 12:46:16,474 P47639 INFO Train loss: 0.419738
+2022-03-12 12:46:16,474 P47639 INFO Training finished.
+2022-03-12 12:46:16,474 P47639 INFO Load best model: /cache/FuxiCTR/benchmarks/KKBox/FiGNN_kkbox_x1/kkbox_x1_227d337d/FiGNN_kkbox_x1_003_92b4cef8_model.ckpt
+2022-03-12 12:46:16,584 P47639 INFO ****** Validation evaluation ******
+2022-03-12 12:46:49,578 P47639 INFO [Metrics] logloss: 0.489386 - AUC: 0.847260
+2022-03-12 12:46:49,640 P47639 INFO ******** Test evaluation ********
+2022-03-12 12:46:49,640 P47639 INFO Loading data...
+2022-03-12 12:46:49,640 P47639 INFO Loading data from h5: ../data/KKBox/kkbox_x1_227d337d/test.h5
+2022-03-12 12:46:49,712 P47639 INFO Test samples: total/737743, pos/371466, neg/366277, ratio/50.35%
+2022-03-12 12:46:49,712 P47639 INFO Loading test data done.
+2022-03-12 12:47:22,914 P47639 INFO [Metrics] logloss: 0.489593 - AUC: 0.847155
 
 ```

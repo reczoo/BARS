@@ -48,7 +48,7 @@ Running steps:
     sys.path.append('YOUR_PATH_TO_FuxiCTR/')
     ```
 
-2. Create a data directory and put the downloaded csv files in `../data/Avazu/Avazu_x1`.
+2. Create a data directory and put the downloaded csv files in `../data/Movielens/MovielensLatest_x1`.
 
 3. Both `dataset_config.yaml` and `model_config.yaml` files are available in [DCN_movielenslatest_x1_tuner_config_01](./DCN_movielenslatest_x1_tuner_config_01). Make sure the data paths in `dataset_config.yaml` are correctly set to what we create in the last step.
 
@@ -71,7 +71,6 @@ Total 5 runs:
 | 3 | 0.968355 | 0.213700  |
 | 4 | 0.968357 | 0.208969  |
 | 5 | 0.968990 | 0.215492  |
-| | | | 
 | Avg | 0.968356 | 0.213727 |
 | Std | &#177;0.00055312 | &#177;0.00250770 |
 

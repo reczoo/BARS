@@ -1,0 +1,1 @@
+ 20220125-135827,[command] python run_expid.py --version pytorch --config Movielens/FwFM_movielenslatest_x1/FwFM_movielenslatest_x1_tuner_config_02 --expid FwFM_movielenslatest_x1_006_e527bbd6 --gpu 1,[exp_id] FwFM_movielenslatest_x1_006_e527bbd6,[dataset_id] movielenslatest_x1_cd32d937,[train] N.A.,[val] AUC: 0.955890 - logloss: 0.242119,[test] AUC: 0.955799 - logloss: 0.242620

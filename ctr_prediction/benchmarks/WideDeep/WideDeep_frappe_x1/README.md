@@ -48,7 +48,7 @@ Running steps:
     sys.path.append('YOUR_PATH_TO_FuxiCTR/')
     ```
 
-2. Create a data directory and put the downloaded csv files in `../data/Avazu/Avazu_x1`.
+2. Create a data directory and put the downloaded csv files in `../data/Frappe/Frappe_x1`.
 
 3. Both `dataset_config.yaml` and `model_config.yaml` files are available in [WideDeep_frappe_x1_tuner_config_01](./WideDeep_frappe_x1_tuner_config_01). Make sure the data paths in `dataset_config.yaml` are correctly set to what we create in the last step.
 
@@ -71,7 +71,6 @@ Total 5 runs:
 | 3 | 0.981936 | 0.158301  |
 | 4 | 0.982485 | 0.152619  |
 | 5 | 0.983655 | 0.156184  |
-| | | | 
 | Avg | 0.983073 | 0.153978 |
 | Std | &#177;0.00078622 | &#177;0.00317706 |
 

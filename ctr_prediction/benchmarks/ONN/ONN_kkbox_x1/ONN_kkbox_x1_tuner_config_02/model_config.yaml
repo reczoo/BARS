@@ -1,4 +1,388 @@
-ONN_kkbox_x1_001_105b4cb0:
+ONN_kkbox_x1_001_6bb0336e:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: ONN
+    model_id: ONN_base
+    model_root: ./KKBox/ONN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+ONN_kkbox_x1_002_e9bab0c9:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: ONN
+    model_id: ONN_base
+    model_root: ./KKBox/ONN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+ONN_kkbox_x1_003_b3eecb3b:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: ONN
+    model_id: ONN_base
+    model_root: ./KKBox/ONN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+ONN_kkbox_x1_004_1459e9c9:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500, 500]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: ONN
+    model_id: ONN_base
+    model_root: ./KKBox/ONN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+ONN_kkbox_x1_005_01c9238a:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500, 500]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: ONN
+    model_id: ONN_base
+    model_root: ./KKBox/ONN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+ONN_kkbox_x1_006_084aaf04:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500, 500]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: ONN
+    model_id: ONN_base
+    model_root: ./KKBox/ONN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+ONN_kkbox_x1_007_62182190:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: ONN
+    model_id: ONN_base
+    model_root: ./KKBox/ONN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+ONN_kkbox_x1_008_cca2c615:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: ONN
+    model_id: ONN_base
+    model_root: ./KKBox/ONN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+ONN_kkbox_x1_009_b1e62567:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: ONN
+    model_id: ONN_base
+    model_root: ./KKBox/ONN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+ONN_kkbox_x1_010_b0de1319:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: ONN
+    model_id: ONN_base
+    model_root: ./KKBox/ONN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+ONN_kkbox_x1_011_bc1bca6c:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: ONN
+    model_id: ONN_base
+    model_root: ./KKBox/ONN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+ONN_kkbox_x1_012_845026ec:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: ONN
+    model_id: ONN_base
+    model_root: ./KKBox/ONN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+ONN_kkbox_x1_013_105b4cb0:
     batch_norm: false
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
@@ -15,7 +399,7 @@ ONN_kkbox_x1_001_105b4cb0:
     metrics: [logloss, AUC]
     model: ONN
     model_id: ONN_base
-    model_root: ./Avazu/ONN_kkbox_x1/
+    model_root: ./KKBox/ONN_kkbox_x1/
     monitor: {AUC: 1, logloss: -1}
     monitor_mode: max
     net_dropout: 0
@@ -30,7 +414,7 @@ ONN_kkbox_x1_001_105b4cb0:
     use_hdf5: true
     verbose: 1
     workers: 3
-ONN_kkbox_x1_002_ee307b3a:
+ONN_kkbox_x1_014_a7bd72d2:
     batch_norm: false
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
@@ -38,102 +422,6 @@ ONN_kkbox_x1_002_ee307b3a:
     embedding_dim: 128
     embedding_dropout: 0
     embedding_regularizer: 0.0001
-    epochs: 100
-    every_x_epochs: 1
-    hidden_activations: relu
-    hidden_units: [500, 500, 500]
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: ONN
-    model_id: ONN_base
-    model_root: ./Avazu/ONN_kkbox_x1/
-    monitor: {AUC: 1, logloss: -1}
-    monitor_mode: max
-    net_dropout: 0
-    net_regularizer: 0
-    optimizer: adam
-    patience: 2
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2019
-    shuffle: true
-    task: binary_classification
-    use_hdf5: true
-    verbose: 1
-    workers: 3
-ONN_kkbox_x1_003_1f25e669:
-    batch_norm: false
-    batch_size: 10000
-    dataset_id: kkbox_x1_227d337d
-    debug: false
-    embedding_dim: 128
-    embedding_dropout: 0
-    embedding_regularizer: 0.0001
-    epochs: 100
-    every_x_epochs: 1
-    hidden_activations: relu
-    hidden_units: [2000, 2000]
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: ONN
-    model_id: ONN_base
-    model_root: ./Avazu/ONN_kkbox_x1/
-    monitor: {AUC: 1, logloss: -1}
-    monitor_mode: max
-    net_dropout: 0
-    net_regularizer: 0
-    optimizer: adam
-    patience: 2
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2019
-    shuffle: true
-    task: binary_classification
-    use_hdf5: true
-    verbose: 1
-    workers: 3
-ONN_kkbox_x1_004_22ca11b1:
-    batch_norm: false
-    batch_size: 10000
-    dataset_id: kkbox_x1_227d337d
-    debug: false
-    embedding_dim: 128
-    embedding_dropout: 0
-    embedding_regularizer: 0.0001
-    epochs: 100
-    every_x_epochs: 1
-    hidden_activations: relu
-    hidden_units: [500, 500, 500, 500]
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: ONN
-    model_id: ONN_base
-    model_root: ./Avazu/ONN_kkbox_x1/
-    monitor: {AUC: 1, logloss: -1}
-    monitor_mode: max
-    net_dropout: 0
-    net_regularizer: 0
-    optimizer: adam
-    patience: 2
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2019
-    shuffle: true
-    task: binary_classification
-    use_hdf5: true
-    verbose: 1
-    workers: 3
-ONN_kkbox_x1_005_0a024c86:
-    batch_norm: false
-    batch_size: 10000
-    dataset_id: kkbox_x1_227d337d
-    debug: false
-    embedding_dim: 128
-    embedding_dropout: 0
-    embedding_regularizer: 0.0005
     epochs: 100
     every_x_epochs: 1
     hidden_activations: relu
@@ -143,10 +431,10 @@ ONN_kkbox_x1_005_0a024c86:
     metrics: [logloss, AUC]
     model: ONN
     model_id: ONN_base
-    model_root: ./Avazu/ONN_kkbox_x1/
+    model_root: ./KKBox/ONN_kkbox_x1/
     monitor: {AUC: 1, logloss: -1}
     monitor_mode: max
-    net_dropout: 0
+    net_dropout: 0.1
     net_regularizer: 0
     optimizer: adam
     patience: 2
@@ -158,110 +446,14 @@ ONN_kkbox_x1_005_0a024c86:
     use_hdf5: true
     verbose: 1
     workers: 3
-ONN_kkbox_x1_006_f9e1aff9:
+ONN_kkbox_x1_015_035b3170:
     batch_norm: false
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
     debug: false
     embedding_dim: 128
     embedding_dropout: 0
-    embedding_regularizer: 0.0005
-    epochs: 100
-    every_x_epochs: 1
-    hidden_activations: relu
-    hidden_units: [500, 500, 500]
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: ONN
-    model_id: ONN_base
-    model_root: ./Avazu/ONN_kkbox_x1/
-    monitor: {AUC: 1, logloss: -1}
-    monitor_mode: max
-    net_dropout: 0
-    net_regularizer: 0
-    optimizer: adam
-    patience: 2
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2019
-    shuffle: true
-    task: binary_classification
-    use_hdf5: true
-    verbose: 1
-    workers: 3
-ONN_kkbox_x1_007_fe75a621:
-    batch_norm: false
-    batch_size: 10000
-    dataset_id: kkbox_x1_227d337d
-    debug: false
-    embedding_dim: 128
-    embedding_dropout: 0
-    embedding_regularizer: 0.0005
-    epochs: 100
-    every_x_epochs: 1
-    hidden_activations: relu
-    hidden_units: [2000, 2000]
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: ONN
-    model_id: ONN_base
-    model_root: ./Avazu/ONN_kkbox_x1/
-    monitor: {AUC: 1, logloss: -1}
-    monitor_mode: max
-    net_dropout: 0
-    net_regularizer: 0
-    optimizer: adam
-    patience: 2
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2019
-    shuffle: true
-    task: binary_classification
-    use_hdf5: true
-    verbose: 1
-    workers: 3
-ONN_kkbox_x1_008_d8ef7764:
-    batch_norm: false
-    batch_size: 10000
-    dataset_id: kkbox_x1_227d337d
-    debug: false
-    embedding_dim: 128
-    embedding_dropout: 0
-    embedding_regularizer: 0.0005
-    epochs: 100
-    every_x_epochs: 1
-    hidden_activations: relu
-    hidden_units: [500, 500, 500, 500]
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: ONN
-    model_id: ONN_base
-    model_root: ./Avazu/ONN_kkbox_x1/
-    monitor: {AUC: 1, logloss: -1}
-    monitor_mode: max
-    net_dropout: 0
-    net_regularizer: 0
-    optimizer: adam
-    patience: 2
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2019
-    shuffle: true
-    task: binary_classification
-    use_hdf5: true
-    verbose: 1
-    workers: 3
-ONN_kkbox_x1_009_d0b7a89a:
-    batch_norm: false
-    batch_size: 10000
-    dataset_id: kkbox_x1_227d337d
-    debug: false
-    embedding_dim: 128
-    embedding_dropout: 0
-    embedding_regularizer: 0.001
+    embedding_regularizer: 0.0001
     epochs: 100
     every_x_epochs: 1
     hidden_activations: relu
@@ -271,10 +463,10 @@ ONN_kkbox_x1_009_d0b7a89a:
     metrics: [logloss, AUC]
     model: ONN
     model_id: ONN_base
-    model_root: ./Avazu/ONN_kkbox_x1/
+    model_root: ./KKBox/ONN_kkbox_x1/
     monitor: {AUC: 1, logloss: -1}
     monitor_mode: max
-    net_dropout: 0
+    net_dropout: 0.2
     net_regularizer: 0
     optimizer: adam
     patience: 2
@@ -286,14 +478,14 @@ ONN_kkbox_x1_009_d0b7a89a:
     use_hdf5: true
     verbose: 1
     workers: 3
-ONN_kkbox_x1_010_943d58f7:
+ONN_kkbox_x1_016_ee307b3a:
     batch_norm: false
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
     debug: false
     embedding_dim: 128
     embedding_dropout: 0
-    embedding_regularizer: 0.001
+    embedding_regularizer: 0.0001
     epochs: 100
     every_x_epochs: 1
     hidden_activations: relu
@@ -303,7 +495,7 @@ ONN_kkbox_x1_010_943d58f7:
     metrics: [logloss, AUC]
     model: ONN
     model_id: ONN_base
-    model_root: ./Avazu/ONN_kkbox_x1/
+    model_root: ./KKBox/ONN_kkbox_x1/
     monitor: {AUC: 1, logloss: -1}
     monitor_mode: max
     net_dropout: 0
@@ -318,24 +510,88 @@ ONN_kkbox_x1_010_943d58f7:
     use_hdf5: true
     verbose: 1
     workers: 3
-ONN_kkbox_x1_011_31d50cb5:
+ONN_kkbox_x1_017_b5e5ca24:
     batch_norm: false
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
     debug: false
     embedding_dim: 128
     embedding_dropout: 0
-    embedding_regularizer: 0.001
+    embedding_regularizer: 0.0001
     epochs: 100
     every_x_epochs: 1
     hidden_activations: relu
-    hidden_units: [2000, 2000]
+    hidden_units: [500, 500, 500]
     learning_rate: 0.001
     loss: binary_crossentropy
     metrics: [logloss, AUC]
     model: ONN
     model_id: ONN_base
-    model_root: ./Avazu/ONN_kkbox_x1/
+    model_root: ./KKBox/ONN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+ONN_kkbox_x1_018_e152b2a9:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500, 500]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: ONN
+    model_id: ONN_base
+    model_root: ./KKBox/ONN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+ONN_kkbox_x1_019_e0e2e989:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: ONN
+    model_id: ONN_base
+    model_root: ./KKBox/ONN_kkbox_x1/
     monitor: {AUC: 1, logloss: -1}
     monitor_mode: max
     net_dropout: 0
@@ -350,27 +606,539 @@ ONN_kkbox_x1_011_31d50cb5:
     use_hdf5: true
     verbose: 1
     workers: 3
-ONN_kkbox_x1_012_c959a907:
+ONN_kkbox_x1_020_fe7d06e9:
     batch_norm: false
     batch_size: 10000
     dataset_id: kkbox_x1_227d337d
     debug: false
     embedding_dim: 128
     embedding_dropout: 0
-    embedding_regularizer: 0.001
+    embedding_regularizer: 0.0001
     epochs: 100
     every_x_epochs: 1
     hidden_activations: relu
-    hidden_units: [500, 500, 500, 500]
+    hidden_units: [1000, 1000, 1000]
     learning_rate: 0.001
     loss: binary_crossentropy
     metrics: [logloss, AUC]
     model: ONN
     model_id: ONN_base
-    model_root: ./Avazu/ONN_kkbox_x1/
+    model_root: ./KKBox/ONN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+ONN_kkbox_x1_021_5c476d8c:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: ONN
+    model_id: ONN_base
+    model_root: ./KKBox/ONN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+ONN_kkbox_x1_022_d65efe28:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: ONN
+    model_id: ONN_base
+    model_root: ./KKBox/ONN_kkbox_x1/
     monitor: {AUC: 1, logloss: -1}
     monitor_mode: max
     net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+ONN_kkbox_x1_023_49d9f3c8:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: ONN
+    model_id: ONN_base
+    model_root: ./KKBox/ONN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+ONN_kkbox_x1_024_650b448f:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 0.0001
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: ONN
+    model_id: ONN_base
+    model_root: ./KKBox/ONN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+ONN_kkbox_x1_025_92037c94:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: ONN
+    model_id: ONN_base
+    model_root: ./KKBox/ONN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+ONN_kkbox_x1_026_931d47da:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: ONN
+    model_id: ONN_base
+    model_root: ./KKBox/ONN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+ONN_kkbox_x1_027_21732bd5:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: ONN
+    model_id: ONN_base
+    model_root: ./KKBox/ONN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+ONN_kkbox_x1_028_878cd2af:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500, 500]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: ONN
+    model_id: ONN_base
+    model_root: ./KKBox/ONN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+ONN_kkbox_x1_029_cbfdf253:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500, 500]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: ONN
+    model_id: ONN_base
+    model_root: ./KKBox/ONN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+ONN_kkbox_x1_030_89230be6:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [500, 500, 500]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: ONN
+    model_id: ONN_base
+    model_root: ./KKBox/ONN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+ONN_kkbox_x1_031_887f0ea0:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: ONN
+    model_id: ONN_base
+    model_root: ./KKBox/ONN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+ONN_kkbox_x1_032_bf9282e6:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: ONN
+    model_id: ONN_base
+    model_root: ./KKBox/ONN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+ONN_kkbox_x1_033_aec73325:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: ONN
+    model_id: ONN_base
+    model_root: ./KKBox/ONN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+ONN_kkbox_x1_034_bd6a0a4e:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: ONN
+    model_id: ONN_base
+    model_root: ./KKBox/ONN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+ONN_kkbox_x1_035_7e47c5de:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: ONN
+    model_id: ONN_base
+    model_root: ./KKBox/ONN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+    workers: 3
+ONN_kkbox_x1_036_3c5f5ef5:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: kkbox_x1_227d337d
+    debug: false
+    embedding_dim: 128
+    embedding_dropout: 0
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [1000, 1000]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: ONN
+    model_id: ONN_base
+    model_root: ./KKBox/ONN_kkbox_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
     net_regularizer: 0
     optimizer: adam
     patience: 2

@@ -212,7 +212,7 @@
         {
             "year": "2021",
             "pub": "CIKM'21",
-            "model": "SimpleX / MF-CCL",
+            "model": "SimpleX/ MF-CCL",
             "paper": "SimpleX: A Simple and Strong Baseline for Collaborative Filtering",
             "authors": "Kelong Mao, Jieming Zhu, Jinpeng Wang, Quanyu Dai, Zhenhua Dong, Xi Xiao, Xiuqiang He",
             "link": "https://arxiv.org/abs/2109.12613",
@@ -354,7 +354,7 @@
         },
         {
             "year": "2021",
-            "pub": "WSDM'18",
+            "pub": "WSDM'21",
             "model": "SINE",
             "paper": "Sparse-Interest Network for Sequential Recommendation",
             "authors": "Qiaoyu Tan, Jianwei Zhang, Jiangchao Yao, Ninghao Liu, Jingren Zhou, Hongxia Yang, Xia Hu",
