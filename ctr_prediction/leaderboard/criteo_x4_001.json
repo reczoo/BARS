@@ -137,8 +137,8 @@
             "pub": "ADKDD'17",
             "model": "CrossNet",
             "paper": "https://arxiv.org/abs/1708.05123",
-            "logloss": "0.4458",
-            "auc": "0.8058",
+            "logloss": "0.4456",
+            "auc": "0.8060",
             "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/DCN/CrossNet_criteo_x4_001",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
@@ -269,8 +269,8 @@
             "pub": "RecSys'19",
             "model": "FiBiNET",
             "paper": "https://arxiv.org/abs/1905.09433",
-            "logloss": "0.4383",
-            "auc": "0.8136",
+            "logloss": "0.4387",
+            "auc": "0.8131",
             "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/FiBiNET/FiBiNET_criteo_x4_001",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"

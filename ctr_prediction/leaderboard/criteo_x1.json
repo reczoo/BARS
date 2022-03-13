@@ -127,7 +127,7 @@
             "model": "DeepFM",
             "paper": "https://arxiv.org/abs/1703.04247",
             "logloss": "0.4381",
-            "auc": "0.8138",
+            "auc": "0.8137",
             "link": "https://github.com/openbenchmark/BARS/blob/master/ctr_prediction/benchmarks/DeepFM/DeepFM_criteo_x1",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
@@ -291,8 +291,8 @@
             "pub": "CIKM'20",
             "model": "DeepIM",
             "paper": "https://dl.acm.org/doi/abs/10.1145/3340531.3412077",
-            "logloss": "0.4381",
-            "auc": "0.8138",
+            "logloss": "0.4380",
+            "auc": "0.8139",
             "link": "https://github.com/openbenchmark/BARS/blob/master/ctr_prediction/benchmarks/DeepIM/DeepIM_criteo_x1",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"

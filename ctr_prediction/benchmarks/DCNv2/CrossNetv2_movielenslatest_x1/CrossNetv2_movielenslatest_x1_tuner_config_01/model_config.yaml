@@ -1,0 +1,532 @@
+DCNv2_movielenslatest_x1_001_a0d706c0:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Frappe/DCNv2_movielenslatest_x1/
+    model_structure: crossnet_only
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_cross_layers: 4
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [500, 500, 500]
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_movielenslatest_x1_002_fa8ef6fc:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Frappe/DCNv2_movielenslatest_x1/
+    model_structure: crossnet_only
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_cross_layers: 5
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [500, 500, 500]
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_movielenslatest_x1_003_5358b8e9:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Frappe/DCNv2_movielenslatest_x1/
+    model_structure: crossnet_only
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_cross_layers: 6
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [500, 500, 500]
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_movielenslatest_x1_004_86097b4f:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Frappe/DCNv2_movielenslatest_x1/
+    model_structure: crossnet_only
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_cross_layers: 7
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [500, 500, 500]
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_movielenslatest_x1_005_a53d8bd5:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Frappe/DCNv2_movielenslatest_x1/
+    model_structure: crossnet_only
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_cross_layers: 8
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [500, 500, 500]
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_movielenslatest_x1_006_4295980a:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Frappe/DCNv2_movielenslatest_x1/
+    model_structure: crossnet_only
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_cross_layers: 9
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [500, 500, 500]
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_movielenslatest_x1_007_729edc1b:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Frappe/DCNv2_movielenslatest_x1/
+    model_structure: crossnet_only
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_cross_layers: 10
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [500, 500, 500]
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_movielenslatest_x1_008_ddfd3d7b:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Frappe/DCNv2_movielenslatest_x1/
+    model_structure: crossnet_only
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_cross_layers: 4
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [500, 500, 500]
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_movielenslatest_x1_009_981f6eac:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Frappe/DCNv2_movielenslatest_x1/
+    model_structure: crossnet_only
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_cross_layers: 5
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [500, 500, 500]
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_movielenslatest_x1_010_79eaf1b7:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Frappe/DCNv2_movielenslatest_x1/
+    model_structure: crossnet_only
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_cross_layers: 6
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [500, 500, 500]
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_movielenslatest_x1_011_66bc29c0:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Frappe/DCNv2_movielenslatest_x1/
+    model_structure: crossnet_only
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_cross_layers: 7
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [500, 500, 500]
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_movielenslatest_x1_012_f98eb726:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Frappe/DCNv2_movielenslatest_x1/
+    model_structure: crossnet_only
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_cross_layers: 8
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [500, 500, 500]
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_movielenslatest_x1_013_49b306b3:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Frappe/DCNv2_movielenslatest_x1/
+    model_structure: crossnet_only
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_cross_layers: 9
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [500, 500, 500]
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_movielenslatest_x1_014_ff1ac34c:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Frappe/DCNv2_movielenslatest_x1/
+    model_structure: crossnet_only
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_cross_layers: 10
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [500, 500, 500]
+    partition_block_size: -1
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1

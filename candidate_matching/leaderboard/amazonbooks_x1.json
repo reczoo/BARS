@@ -296,7 +296,7 @@
         },
         {
             "year": "2020",
-            "pub": "SIGIR'2020",
+            "pub": "SIGIR'20",
             "model": "LightGCN",
             "recall_20": "0.0411",
             "recall_50": "0.0799",

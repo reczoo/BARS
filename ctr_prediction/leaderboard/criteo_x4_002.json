@@ -292,7 +292,7 @@
             "model": "LorentzFM",
             "paper": "https://arxiv.org/abs/1911.09821",
             "logloss": "0.4413",
-            "auc": "0.8106",
+            "auc": "0.8105",
             "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/LorentzFM/LorentzFM_criteo_x4_002",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"

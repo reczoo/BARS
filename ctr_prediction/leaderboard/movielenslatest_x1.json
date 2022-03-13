@@ -27,8 +27,8 @@
             "pub": "RecSys'16",
             "model": "FFM",
             "paper": "https://dl.acm.org/citation.cfm?id=2959134",
-            "logloss": "0.2626",
-            "auc": "0.9522",
+            "logloss": "0.2422",
+            "auc": "0.9556",
             "link": "https://github.com/openbenchmark/BARS/blob/master/ctr_prediction/benchmarks/FFM/FFM_movielenslatest_x1",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
