@@ -313,9 +313,64 @@
             "pub": "DLP-KDD'21",
             "model": "MaskNet",
             "paper": "https://arxiv.org/abs/2102.07619",
-            "logloss": "0.2266",
-            "auc": "0.9687",
+            "logloss": "0.2364",
+            "auc": "0.9672",
             "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/MaskNet/MaskNet_movielenslatest_x1",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2019",
+            "pub": "Arxiv'19",
+            "model": "DLRM",
+            "paper": "https://arxiv.org/abs/1906.00091",
+            "logloss": "0.2150",
+            "auc": "0.9691",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/DLRM/DLRM_movielenslatest_x1",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2021",
+            "pub": "CIKM'21",
+            "model": "EDCN",
+            "paper": "https://dlp-kdd.github.io/assets/pdf/DLP-KDD_2021_paper_12.pdf",
+            "logloss": "0.2666",
+            "auc": "0.9632",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/EDCN/EDCN_movielenslatest_x1",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2021",
+            "pub": "SIGIR'21",
+            "model": "SAM",
+            "paper": "https://arxiv.org/abs/2105.05563",
+            "logloss": "0.2667",
+            "auc": "0.9631",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/SAM/SAM_movielenslatest_x1",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2021",
+            "pub": "KDD'21",
+            "model": "AOANet",
+            "paper": "https://dl.acm.org/doi/10.1145/3447548.3467133",
+            "logloss": "0.2105",
+            "auc": "0.9694",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/AOANet/AOANet_movielenslatest_x1",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2013",
+            "pub": "CIKM'13",
+            "model": "DSSM",
+            "paper": "https://posenhuang.github.io/papers/cikm2013_DSSM_fullversion.pdf",
+            "logloss": "0.2130",
+            "auc": "0.9686",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/DSSM/DSSM_movielenslatest_x1",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
         }

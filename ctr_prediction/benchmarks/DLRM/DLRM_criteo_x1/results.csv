@@ -1,0 +1,1 @@
+ 20220529-135456,[command] python run_expid.py --version pytorch --config Criteo/DLRM_criteo_x1/DLRM_criteo_x1_tuner_config_02 --expid DLRM_criteo_x1_001_4d897285 --gpu 0,[exp_id] DLRM_criteo_x1_001_4d897285,[dataset_id] criteo_x1_7b681156,[train] N.A.,[val] AUC: 0.813497 - logloss: 0.438596,[test] AUC: 0.813804 - logloss: 0.438155

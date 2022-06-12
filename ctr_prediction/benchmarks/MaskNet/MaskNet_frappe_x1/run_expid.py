@@ -3,9 +3,9 @@ os.chdir(os.path.dirname(os.path.realpath(__file__)))
 import sys
 # Add FuxiCTR library to system path
 sys.path.append('YOUR_PATH_TO_FuxiCTR/')
-# FuxiCTR v1.1.x is required in this benchmark
+# FuxiCTR v1.2.1 is required in this benchmark
 import fuxictr
-assert fuxictr.__version__.startswith("1.1")
+assert fuxictr.__version__ == "v1.2.1"
 from fuxictr import datasets
 from datetime import datetime
 from fuxictr.utils import load_config, set_logger, print_to_json, print_to_list

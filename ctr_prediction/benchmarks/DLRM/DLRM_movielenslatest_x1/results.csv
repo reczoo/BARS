@@ -1,0 +1,1 @@
+ 20220527-174836,[command] python run_expid.py --version pytorch --config Movielens/DLRM_movielenslatest_x1/DLRM_movielenslatest_x1_tuner_config_04 --expid DLRM_movielenslatest_x1_002_333e0a39 --gpu 1,[exp_id] DLRM_movielenslatest_x1_002_333e0a39,[dataset_id] movielenslatest_x1_cd32d937,[train] N.A.,[val] AUC: 0.969119 - logloss: 0.214729,[test] AUC: 0.969071 - logloss: 0.214993

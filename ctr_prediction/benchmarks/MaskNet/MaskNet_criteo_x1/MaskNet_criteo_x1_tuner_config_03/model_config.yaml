@@ -1,6 +1,5 @@
-MaskNet_criteo_x1_001_d13b53b7:
+MaskNet_criteo_x1_001_82f326b9:
     batch_size: 4096
-    data_block_size: -1
     dataset_id: criteo_x1_7b681156
     debug: false
     dnn_hidden_activations: relu
@@ -35,9 +34,44 @@ MaskNet_criteo_x1_001_d13b53b7:
     task: binary_classification
     use_hdf5: true
     verbose: 0
-MaskNet_criteo_x1_002_5b7c4825:
+MaskNet_criteo_x1_002_7665dd90:
     batch_size: 4096
-    data_block_size: -1
+    dataset_id: criteo_x1_7b681156
+    debug: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    emb_layernorm: true
+    embedding_dim: 10
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: MaskNet
+    model_id: MaskNet_base
+    model_root: ./Criteo/MaskNet_criteo_x1/
+    model_type: SerialMaskNet
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: true
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    parallel_block_dim: 64
+    parallel_num_blocks: 1
+    patience: 2
+    pickle_feature_encoder: true
+    reduction_ratio: 0.1
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 0
+MaskNet_criteo_x1_003_1d20737f:
+    batch_size: 4096
     dataset_id: criteo_x1_7b681156
     debug: false
     dnn_hidden_activations: relu
@@ -72,9 +106,44 @@ MaskNet_criteo_x1_002_5b7c4825:
     task: binary_classification
     use_hdf5: true
     verbose: 0
-MaskNet_criteo_x1_003_6994aadc:
+MaskNet_criteo_x1_004_39503c20:
     batch_size: 4096
-    data_block_size: -1
+    dataset_id: criteo_x1_7b681156
+    debug: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    emb_layernorm: false
+    embedding_dim: 10
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: MaskNet
+    model_id: MaskNet_base
+    model_root: ./Criteo/MaskNet_criteo_x1/
+    model_type: SerialMaskNet
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: true
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    parallel_block_dim: 64
+    parallel_num_blocks: 1
+    patience: 2
+    pickle_feature_encoder: true
+    reduction_ratio: 0.1
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 0
+MaskNet_criteo_x1_005_64ab2543:
+    batch_size: 4096
     dataset_id: criteo_x1_7b681156
     debug: false
     dnn_hidden_activations: relu
@@ -109,9 +178,44 @@ MaskNet_criteo_x1_003_6994aadc:
     task: binary_classification
     use_hdf5: true
     verbose: 0
-MaskNet_criteo_x1_004_ba19cfbf:
+MaskNet_criteo_x1_006_a45661c5:
     batch_size: 4096
-    data_block_size: -1
+    dataset_id: criteo_x1_7b681156
+    debug: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    emb_layernorm: true
+    embedding_dim: 10
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: MaskNet
+    model_id: MaskNet_base
+    model_root: ./Criteo/MaskNet_criteo_x1/
+    model_type: SerialMaskNet
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: true
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    parallel_block_dim: 64
+    parallel_num_blocks: 1
+    patience: 2
+    pickle_feature_encoder: true
+    reduction_ratio: 0.2
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 0
+MaskNet_criteo_x1_007_752516ee:
+    batch_size: 4096
     dataset_id: criteo_x1_7b681156
     debug: false
     dnn_hidden_activations: relu
@@ -146,9 +250,44 @@ MaskNet_criteo_x1_004_ba19cfbf:
     task: binary_classification
     use_hdf5: true
     verbose: 0
-MaskNet_criteo_x1_005_b659c724:
+MaskNet_criteo_x1_008_7071fa3f:
     batch_size: 4096
-    data_block_size: -1
+    dataset_id: criteo_x1_7b681156
+    debug: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    emb_layernorm: false
+    embedding_dim: 10
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: MaskNet
+    model_id: MaskNet_base
+    model_root: ./Criteo/MaskNet_criteo_x1/
+    model_type: SerialMaskNet
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: true
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    parallel_block_dim: 64
+    parallel_num_blocks: 1
+    patience: 2
+    pickle_feature_encoder: true
+    reduction_ratio: 0.2
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 0
+MaskNet_criteo_x1_009_176449c5:
+    batch_size: 4096
     dataset_id: criteo_x1_7b681156
     debug: false
     dnn_hidden_activations: relu
@@ -183,9 +322,44 @@ MaskNet_criteo_x1_005_b659c724:
     task: binary_classification
     use_hdf5: true
     verbose: 0
-MaskNet_criteo_x1_006_fbab3d93:
+MaskNet_criteo_x1_010_c096c145:
     batch_size: 4096
-    data_block_size: -1
+    dataset_id: criteo_x1_7b681156
+    debug: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    emb_layernorm: true
+    embedding_dim: 10
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: MaskNet
+    model_id: MaskNet_base
+    model_root: ./Criteo/MaskNet_criteo_x1/
+    model_type: SerialMaskNet
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: true
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    parallel_block_dim: 64
+    parallel_num_blocks: 1
+    patience: 2
+    pickle_feature_encoder: true
+    reduction_ratio: 0.3
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 0
+MaskNet_criteo_x1_011_8a135262:
+    batch_size: 4096
     dataset_id: criteo_x1_7b681156
     debug: false
     dnn_hidden_activations: relu
@@ -220,9 +394,44 @@ MaskNet_criteo_x1_006_fbab3d93:
     task: binary_classification
     use_hdf5: true
     verbose: 0
-MaskNet_criteo_x1_007_bbb397e3:
+MaskNet_criteo_x1_012_7dc8e7ab:
     batch_size: 4096
-    data_block_size: -1
+    dataset_id: criteo_x1_7b681156
+    debug: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    emb_layernorm: false
+    embedding_dim: 10
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: MaskNet
+    model_id: MaskNet_base
+    model_root: ./Criteo/MaskNet_criteo_x1/
+    model_type: SerialMaskNet
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: true
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    parallel_block_dim: 64
+    parallel_num_blocks: 1
+    patience: 2
+    pickle_feature_encoder: true
+    reduction_ratio: 0.3
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 0
+MaskNet_criteo_x1_013_2c0a6946:
+    batch_size: 4096
     dataset_id: criteo_x1_7b681156
     debug: false
     dnn_hidden_activations: relu
@@ -257,9 +466,44 @@ MaskNet_criteo_x1_007_bbb397e3:
     task: binary_classification
     use_hdf5: true
     verbose: 0
-MaskNet_criteo_x1_008_3ea96ed0:
+MaskNet_criteo_x1_014_7bedf0c7:
     batch_size: 4096
-    data_block_size: -1
+    dataset_id: criteo_x1_7b681156
+    debug: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    emb_layernorm: true
+    embedding_dim: 10
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: MaskNet
+    model_id: MaskNet_base
+    model_root: ./Criteo/MaskNet_criteo_x1/
+    model_type: SerialMaskNet
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: true
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    parallel_block_dim: 64
+    parallel_num_blocks: 1
+    patience: 2
+    pickle_feature_encoder: true
+    reduction_ratio: 0.4
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 0
+MaskNet_criteo_x1_015_52647ccd:
+    batch_size: 4096
     dataset_id: criteo_x1_7b681156
     debug: false
     dnn_hidden_activations: relu
@@ -279,6 +523,42 @@ MaskNet_criteo_x1_008_3ea96ed0:
     monitor: AUC
     monitor_mode: max
     net_dropout: 0.3
+    net_layernorm: true
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    parallel_block_dim: 64
+    parallel_num_blocks: 1
+    patience: 2
+    pickle_feature_encoder: true
+    reduction_ratio: 0.4
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 0
+MaskNet_criteo_x1_016_08a94ab2:
+    batch_size: 4096
+    dataset_id: criteo_x1_7b681156
+    debug: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    emb_layernorm: false
+    embedding_dim: 10
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: MaskNet
+    model_id: MaskNet_base
+    model_root: ./Criteo/MaskNet_criteo_x1/
+    model_type: SerialMaskNet
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
     net_layernorm: true
     net_regularizer: 0
     num_workers: 3

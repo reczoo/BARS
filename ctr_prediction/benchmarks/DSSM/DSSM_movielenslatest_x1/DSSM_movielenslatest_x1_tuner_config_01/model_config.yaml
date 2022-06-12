@@ -1,0 +1,918 @@
+DSSM_movielenslatest_x1_001_945a31b2:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_06dcf7a5
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    item_tower_activations: ReLU
+    item_tower_dropout: 0.2
+    item_tower_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DSSM
+    model_id: DSSM_base
+    model_root: ./Movielens/DSSM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    user_tower_activations: ReLU
+    user_tower_dropout: 0.2
+    user_tower_units: [400, 400, 400]
+    verbose: 1
+DSSM_movielenslatest_x1_002_e056e360:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_06dcf7a5
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    item_tower_activations: ReLU
+    item_tower_dropout: 0.3
+    item_tower_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DSSM
+    model_id: DSSM_base
+    model_root: ./Movielens/DSSM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    user_tower_activations: ReLU
+    user_tower_dropout: 0.2
+    user_tower_units: [400, 400, 400]
+    verbose: 1
+DSSM_movielenslatest_x1_003_413508bf:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_06dcf7a5
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    item_tower_activations: ReLU
+    item_tower_dropout: 0.4
+    item_tower_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DSSM
+    model_id: DSSM_base
+    model_root: ./Movielens/DSSM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    user_tower_activations: ReLU
+    user_tower_dropout: 0.2
+    user_tower_units: [400, 400, 400]
+    verbose: 1
+DSSM_movielenslatest_x1_004_b8a1ba22:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_06dcf7a5
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    item_tower_activations: ReLU
+    item_tower_dropout: 0.2
+    item_tower_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DSSM
+    model_id: DSSM_base
+    model_root: ./Movielens/DSSM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    user_tower_activations: ReLU
+    user_tower_dropout: 0.3
+    user_tower_units: [400, 400, 400]
+    verbose: 1
+DSSM_movielenslatest_x1_005_87bfb17f:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_06dcf7a5
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    item_tower_activations: ReLU
+    item_tower_dropout: 0.3
+    item_tower_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DSSM
+    model_id: DSSM_base
+    model_root: ./Movielens/DSSM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    user_tower_activations: ReLU
+    user_tower_dropout: 0.3
+    user_tower_units: [400, 400, 400]
+    verbose: 1
+DSSM_movielenslatest_x1_006_00410885:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_06dcf7a5
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    item_tower_activations: ReLU
+    item_tower_dropout: 0.4
+    item_tower_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DSSM
+    model_id: DSSM_base
+    model_root: ./Movielens/DSSM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    user_tower_activations: ReLU
+    user_tower_dropout: 0.3
+    user_tower_units: [400, 400, 400]
+    verbose: 1
+DSSM_movielenslatest_x1_007_0abc7bd5:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_06dcf7a5
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    item_tower_activations: ReLU
+    item_tower_dropout: 0.2
+    item_tower_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DSSM
+    model_id: DSSM_base
+    model_root: ./Movielens/DSSM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    user_tower_activations: ReLU
+    user_tower_dropout: 0.4
+    user_tower_units: [400, 400, 400]
+    verbose: 1
+DSSM_movielenslatest_x1_008_975c0a60:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_06dcf7a5
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    item_tower_activations: ReLU
+    item_tower_dropout: 0.3
+    item_tower_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DSSM
+    model_id: DSSM_base
+    model_root: ./Movielens/DSSM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    user_tower_activations: ReLU
+    user_tower_dropout: 0.4
+    user_tower_units: [400, 400, 400]
+    verbose: 1
+DSSM_movielenslatest_x1_009_1c8aa03c:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_06dcf7a5
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    item_tower_activations: ReLU
+    item_tower_dropout: 0.4
+    item_tower_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DSSM
+    model_id: DSSM_base
+    model_root: ./Movielens/DSSM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    user_tower_activations: ReLU
+    user_tower_dropout: 0.4
+    user_tower_units: [400, 400, 400]
+    verbose: 1
+DSSM_movielenslatest_x1_010_c12b5efb:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_06dcf7a5
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    item_tower_activations: ReLU
+    item_tower_dropout: 0.2
+    item_tower_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DSSM
+    model_id: DSSM_base
+    model_root: ./Movielens/DSSM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    user_tower_activations: ReLU
+    user_tower_dropout: 0.2
+    user_tower_units: [400, 400, 400]
+    verbose: 1
+DSSM_movielenslatest_x1_011_896c9d6b:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_06dcf7a5
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    item_tower_activations: ReLU
+    item_tower_dropout: 0.3
+    item_tower_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DSSM
+    model_id: DSSM_base
+    model_root: ./Movielens/DSSM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    user_tower_activations: ReLU
+    user_tower_dropout: 0.2
+    user_tower_units: [400, 400, 400]
+    verbose: 1
+DSSM_movielenslatest_x1_012_bb1c5a03:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_06dcf7a5
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    item_tower_activations: ReLU
+    item_tower_dropout: 0.4
+    item_tower_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DSSM
+    model_id: DSSM_base
+    model_root: ./Movielens/DSSM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    user_tower_activations: ReLU
+    user_tower_dropout: 0.2
+    user_tower_units: [400, 400, 400]
+    verbose: 1
+DSSM_movielenslatest_x1_013_e1dd39ac:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_06dcf7a5
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    item_tower_activations: ReLU
+    item_tower_dropout: 0.2
+    item_tower_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DSSM
+    model_id: DSSM_base
+    model_root: ./Movielens/DSSM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    user_tower_activations: ReLU
+    user_tower_dropout: 0.3
+    user_tower_units: [400, 400, 400]
+    verbose: 1
+DSSM_movielenslatest_x1_014_1d3d49cb:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_06dcf7a5
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    item_tower_activations: ReLU
+    item_tower_dropout: 0.3
+    item_tower_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DSSM
+    model_id: DSSM_base
+    model_root: ./Movielens/DSSM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    user_tower_activations: ReLU
+    user_tower_dropout: 0.3
+    user_tower_units: [400, 400, 400]
+    verbose: 1
+DSSM_movielenslatest_x1_015_da52b690:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_06dcf7a5
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    item_tower_activations: ReLU
+    item_tower_dropout: 0.4
+    item_tower_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DSSM
+    model_id: DSSM_base
+    model_root: ./Movielens/DSSM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    user_tower_activations: ReLU
+    user_tower_dropout: 0.3
+    user_tower_units: [400, 400, 400]
+    verbose: 1
+DSSM_movielenslatest_x1_016_506f512e:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_06dcf7a5
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    item_tower_activations: ReLU
+    item_tower_dropout: 0.2
+    item_tower_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DSSM
+    model_id: DSSM_base
+    model_root: ./Movielens/DSSM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    user_tower_activations: ReLU
+    user_tower_dropout: 0.4
+    user_tower_units: [400, 400, 400]
+    verbose: 1
+DSSM_movielenslatest_x1_017_190ea0e6:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_06dcf7a5
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    item_tower_activations: ReLU
+    item_tower_dropout: 0.3
+    item_tower_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DSSM
+    model_id: DSSM_base
+    model_root: ./Movielens/DSSM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    user_tower_activations: ReLU
+    user_tower_dropout: 0.4
+    user_tower_units: [400, 400, 400]
+    verbose: 1
+DSSM_movielenslatest_x1_018_b869d225:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_06dcf7a5
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    item_tower_activations: ReLU
+    item_tower_dropout: 0.4
+    item_tower_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DSSM
+    model_id: DSSM_base
+    model_root: ./Movielens/DSSM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    user_tower_activations: ReLU
+    user_tower_dropout: 0.4
+    user_tower_units: [400, 400, 400]
+    verbose: 1
+DSSM_movielenslatest_x1_019_0f411ce3:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_06dcf7a5
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.1
+    epochs: 100
+    every_x_epochs: 1
+    item_tower_activations: ReLU
+    item_tower_dropout: 0.2
+    item_tower_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DSSM
+    model_id: DSSM_base
+    model_root: ./Movielens/DSSM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    user_tower_activations: ReLU
+    user_tower_dropout: 0.2
+    user_tower_units: [400, 400, 400]
+    verbose: 1
+DSSM_movielenslatest_x1_020_cffe26e3:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_06dcf7a5
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.1
+    epochs: 100
+    every_x_epochs: 1
+    item_tower_activations: ReLU
+    item_tower_dropout: 0.3
+    item_tower_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DSSM
+    model_id: DSSM_base
+    model_root: ./Movielens/DSSM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    user_tower_activations: ReLU
+    user_tower_dropout: 0.2
+    user_tower_units: [400, 400, 400]
+    verbose: 1
+DSSM_movielenslatest_x1_021_3b27dee7:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_06dcf7a5
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.1
+    epochs: 100
+    every_x_epochs: 1
+    item_tower_activations: ReLU
+    item_tower_dropout: 0.4
+    item_tower_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DSSM
+    model_id: DSSM_base
+    model_root: ./Movielens/DSSM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    user_tower_activations: ReLU
+    user_tower_dropout: 0.2
+    user_tower_units: [400, 400, 400]
+    verbose: 1
+DSSM_movielenslatest_x1_022_7b6ea7b7:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_06dcf7a5
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.1
+    epochs: 100
+    every_x_epochs: 1
+    item_tower_activations: ReLU
+    item_tower_dropout: 0.2
+    item_tower_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DSSM
+    model_id: DSSM_base
+    model_root: ./Movielens/DSSM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    user_tower_activations: ReLU
+    user_tower_dropout: 0.3
+    user_tower_units: [400, 400, 400]
+    verbose: 1
+DSSM_movielenslatest_x1_023_ff349341:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_06dcf7a5
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.1
+    epochs: 100
+    every_x_epochs: 1
+    item_tower_activations: ReLU
+    item_tower_dropout: 0.3
+    item_tower_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DSSM
+    model_id: DSSM_base
+    model_root: ./Movielens/DSSM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    user_tower_activations: ReLU
+    user_tower_dropout: 0.3
+    user_tower_units: [400, 400, 400]
+    verbose: 1
+DSSM_movielenslatest_x1_024_7214b38b:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_06dcf7a5
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.1
+    epochs: 100
+    every_x_epochs: 1
+    item_tower_activations: ReLU
+    item_tower_dropout: 0.4
+    item_tower_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DSSM
+    model_id: DSSM_base
+    model_root: ./Movielens/DSSM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    user_tower_activations: ReLU
+    user_tower_dropout: 0.3
+    user_tower_units: [400, 400, 400]
+    verbose: 1
+DSSM_movielenslatest_x1_025_9d51ff46:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_06dcf7a5
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.1
+    epochs: 100
+    every_x_epochs: 1
+    item_tower_activations: ReLU
+    item_tower_dropout: 0.2
+    item_tower_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DSSM
+    model_id: DSSM_base
+    model_root: ./Movielens/DSSM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    user_tower_activations: ReLU
+    user_tower_dropout: 0.4
+    user_tower_units: [400, 400, 400]
+    verbose: 1
+DSSM_movielenslatest_x1_026_27ccc31a:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_06dcf7a5
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.1
+    epochs: 100
+    every_x_epochs: 1
+    item_tower_activations: ReLU
+    item_tower_dropout: 0.3
+    item_tower_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DSSM
+    model_id: DSSM_base
+    model_root: ./Movielens/DSSM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    user_tower_activations: ReLU
+    user_tower_dropout: 0.4
+    user_tower_units: [400, 400, 400]
+    verbose: 1
+DSSM_movielenslatest_x1_027_fd9f4dd4:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_06dcf7a5
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.1
+    epochs: 100
+    every_x_epochs: 1
+    item_tower_activations: ReLU
+    item_tower_dropout: 0.4
+    item_tower_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DSSM
+    model_id: DSSM_base
+    model_root: ./Movielens/DSSM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    user_tower_activations: ReLU
+    user_tower_dropout: 0.4
+    user_tower_units: [400, 400, 400]
+    verbose: 1

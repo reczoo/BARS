@@ -1,0 +1,1088 @@
+DSSM_frappe_x1_001_87c9f9b4:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: frappe_x1_db5a3f58
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.1
+    epochs: 100
+    every_x_epochs: 1
+    item_tower_activations: ReLU
+    item_tower_dropout: 0.1
+    item_tower_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DSSM
+    model_id: DSSM_base
+    model_root: ./Frappe/DSSM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    user_tower_activations: ReLU
+    user_tower_dropout: 0
+    user_tower_units: [400, 400, 400]
+    verbose: 1
+DSSM_frappe_x1_002_ca696f61:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: frappe_x1_db5a3f58
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.1
+    epochs: 100
+    every_x_epochs: 1
+    item_tower_activations: ReLU
+    item_tower_dropout: 0.2
+    item_tower_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DSSM
+    model_id: DSSM_base
+    model_root: ./Frappe/DSSM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    user_tower_activations: ReLU
+    user_tower_dropout: 0
+    user_tower_units: [400, 400, 400]
+    verbose: 1
+DSSM_frappe_x1_003_ed9c91dd:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: frappe_x1_db5a3f58
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.1
+    epochs: 100
+    every_x_epochs: 1
+    item_tower_activations: ReLU
+    item_tower_dropout: 0.3
+    item_tower_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DSSM
+    model_id: DSSM_base
+    model_root: ./Frappe/DSSM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    user_tower_activations: ReLU
+    user_tower_dropout: 0
+    user_tower_units: [400, 400, 400]
+    verbose: 1
+DSSM_frappe_x1_004_1b16166a:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: frappe_x1_db5a3f58
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.1
+    epochs: 100
+    every_x_epochs: 1
+    item_tower_activations: ReLU
+    item_tower_dropout: 0.4
+    item_tower_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DSSM
+    model_id: DSSM_base
+    model_root: ./Frappe/DSSM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    user_tower_activations: ReLU
+    user_tower_dropout: 0
+    user_tower_units: [400, 400, 400]
+    verbose: 1
+DSSM_frappe_x1_005_3ec45128:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: frappe_x1_db5a3f58
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.1
+    epochs: 100
+    every_x_epochs: 1
+    item_tower_activations: ReLU
+    item_tower_dropout: 0.1
+    item_tower_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DSSM
+    model_id: DSSM_base
+    model_root: ./Frappe/DSSM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    user_tower_activations: ReLU
+    user_tower_dropout: 0.1
+    user_tower_units: [400, 400, 400]
+    verbose: 1
+DSSM_frappe_x1_006_4be388eb:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: frappe_x1_db5a3f58
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.1
+    epochs: 100
+    every_x_epochs: 1
+    item_tower_activations: ReLU
+    item_tower_dropout: 0.2
+    item_tower_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DSSM
+    model_id: DSSM_base
+    model_root: ./Frappe/DSSM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    user_tower_activations: ReLU
+    user_tower_dropout: 0.1
+    user_tower_units: [400, 400, 400]
+    verbose: 1
+DSSM_frappe_x1_007_ad64453b:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: frappe_x1_db5a3f58
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.1
+    epochs: 100
+    every_x_epochs: 1
+    item_tower_activations: ReLU
+    item_tower_dropout: 0.3
+    item_tower_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DSSM
+    model_id: DSSM_base
+    model_root: ./Frappe/DSSM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    user_tower_activations: ReLU
+    user_tower_dropout: 0.1
+    user_tower_units: [400, 400, 400]
+    verbose: 1
+DSSM_frappe_x1_008_5e85a8ac:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: frappe_x1_db5a3f58
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.1
+    epochs: 100
+    every_x_epochs: 1
+    item_tower_activations: ReLU
+    item_tower_dropout: 0.4
+    item_tower_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DSSM
+    model_id: DSSM_base
+    model_root: ./Frappe/DSSM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    user_tower_activations: ReLU
+    user_tower_dropout: 0.1
+    user_tower_units: [400, 400, 400]
+    verbose: 1
+DSSM_frappe_x1_009_8c1e143b:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: frappe_x1_db5a3f58
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.1
+    epochs: 100
+    every_x_epochs: 1
+    item_tower_activations: ReLU
+    item_tower_dropout: 0.1
+    item_tower_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DSSM
+    model_id: DSSM_base
+    model_root: ./Frappe/DSSM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    user_tower_activations: ReLU
+    user_tower_dropout: 0.2
+    user_tower_units: [400, 400, 400]
+    verbose: 1
+DSSM_frappe_x1_010_fa1e7593:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: frappe_x1_db5a3f58
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.1
+    epochs: 100
+    every_x_epochs: 1
+    item_tower_activations: ReLU
+    item_tower_dropout: 0.2
+    item_tower_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DSSM
+    model_id: DSSM_base
+    model_root: ./Frappe/DSSM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    user_tower_activations: ReLU
+    user_tower_dropout: 0.2
+    user_tower_units: [400, 400, 400]
+    verbose: 1
+DSSM_frappe_x1_011_0d775a23:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: frappe_x1_db5a3f58
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.1
+    epochs: 100
+    every_x_epochs: 1
+    item_tower_activations: ReLU
+    item_tower_dropout: 0.3
+    item_tower_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DSSM
+    model_id: DSSM_base
+    model_root: ./Frappe/DSSM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    user_tower_activations: ReLU
+    user_tower_dropout: 0.2
+    user_tower_units: [400, 400, 400]
+    verbose: 1
+DSSM_frappe_x1_012_32d678c5:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: frappe_x1_db5a3f58
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.1
+    epochs: 100
+    every_x_epochs: 1
+    item_tower_activations: ReLU
+    item_tower_dropout: 0.4
+    item_tower_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DSSM
+    model_id: DSSM_base
+    model_root: ./Frappe/DSSM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    user_tower_activations: ReLU
+    user_tower_dropout: 0.2
+    user_tower_units: [400, 400, 400]
+    verbose: 1
+DSSM_frappe_x1_013_65fa00fb:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: frappe_x1_db5a3f58
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.1
+    epochs: 100
+    every_x_epochs: 1
+    item_tower_activations: ReLU
+    item_tower_dropout: 0.1
+    item_tower_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DSSM
+    model_id: DSSM_base
+    model_root: ./Frappe/DSSM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    user_tower_activations: ReLU
+    user_tower_dropout: 0.3
+    user_tower_units: [400, 400, 400]
+    verbose: 1
+DSSM_frappe_x1_014_1ebd4478:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: frappe_x1_db5a3f58
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.1
+    epochs: 100
+    every_x_epochs: 1
+    item_tower_activations: ReLU
+    item_tower_dropout: 0.2
+    item_tower_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DSSM
+    model_id: DSSM_base
+    model_root: ./Frappe/DSSM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    user_tower_activations: ReLU
+    user_tower_dropout: 0.3
+    user_tower_units: [400, 400, 400]
+    verbose: 1
+DSSM_frappe_x1_015_46f22c07:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: frappe_x1_db5a3f58
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.1
+    epochs: 100
+    every_x_epochs: 1
+    item_tower_activations: ReLU
+    item_tower_dropout: 0.3
+    item_tower_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DSSM
+    model_id: DSSM_base
+    model_root: ./Frappe/DSSM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    user_tower_activations: ReLU
+    user_tower_dropout: 0.3
+    user_tower_units: [400, 400, 400]
+    verbose: 1
+DSSM_frappe_x1_016_8afa951c:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: frappe_x1_db5a3f58
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.1
+    epochs: 100
+    every_x_epochs: 1
+    item_tower_activations: ReLU
+    item_tower_dropout: 0.4
+    item_tower_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DSSM
+    model_id: DSSM_base
+    model_root: ./Frappe/DSSM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    user_tower_activations: ReLU
+    user_tower_dropout: 0.3
+    user_tower_units: [400, 400, 400]
+    verbose: 1
+DSSM_frappe_x1_017_e6436b8e:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: frappe_x1_db5a3f58
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    item_tower_activations: ReLU
+    item_tower_dropout: 0.1
+    item_tower_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DSSM
+    model_id: DSSM_base
+    model_root: ./Frappe/DSSM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    user_tower_activations: ReLU
+    user_tower_dropout: 0
+    user_tower_units: [400, 400, 400]
+    verbose: 1
+DSSM_frappe_x1_018_62bbaaa2:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: frappe_x1_db5a3f58
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    item_tower_activations: ReLU
+    item_tower_dropout: 0.2
+    item_tower_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DSSM
+    model_id: DSSM_base
+    model_root: ./Frappe/DSSM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    user_tower_activations: ReLU
+    user_tower_dropout: 0
+    user_tower_units: [400, 400, 400]
+    verbose: 1
+DSSM_frappe_x1_019_d319626b:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: frappe_x1_db5a3f58
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    item_tower_activations: ReLU
+    item_tower_dropout: 0.3
+    item_tower_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DSSM
+    model_id: DSSM_base
+    model_root: ./Frappe/DSSM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    user_tower_activations: ReLU
+    user_tower_dropout: 0
+    user_tower_units: [400, 400, 400]
+    verbose: 1
+DSSM_frappe_x1_020_8e220146:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: frappe_x1_db5a3f58
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    item_tower_activations: ReLU
+    item_tower_dropout: 0.4
+    item_tower_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DSSM
+    model_id: DSSM_base
+    model_root: ./Frappe/DSSM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    user_tower_activations: ReLU
+    user_tower_dropout: 0
+    user_tower_units: [400, 400, 400]
+    verbose: 1
+DSSM_frappe_x1_021_88378c40:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: frappe_x1_db5a3f58
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    item_tower_activations: ReLU
+    item_tower_dropout: 0.1
+    item_tower_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DSSM
+    model_id: DSSM_base
+    model_root: ./Frappe/DSSM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    user_tower_activations: ReLU
+    user_tower_dropout: 0.1
+    user_tower_units: [400, 400, 400]
+    verbose: 1
+DSSM_frappe_x1_022_625d5b07:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: frappe_x1_db5a3f58
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    item_tower_activations: ReLU
+    item_tower_dropout: 0.2
+    item_tower_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DSSM
+    model_id: DSSM_base
+    model_root: ./Frappe/DSSM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    user_tower_activations: ReLU
+    user_tower_dropout: 0.1
+    user_tower_units: [400, 400, 400]
+    verbose: 1
+DSSM_frappe_x1_023_1ee9d5d4:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: frappe_x1_db5a3f58
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    item_tower_activations: ReLU
+    item_tower_dropout: 0.3
+    item_tower_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DSSM
+    model_id: DSSM_base
+    model_root: ./Frappe/DSSM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    user_tower_activations: ReLU
+    user_tower_dropout: 0.1
+    user_tower_units: [400, 400, 400]
+    verbose: 1
+DSSM_frappe_x1_024_bcdc5905:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: frappe_x1_db5a3f58
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    item_tower_activations: ReLU
+    item_tower_dropout: 0.4
+    item_tower_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DSSM
+    model_id: DSSM_base
+    model_root: ./Frappe/DSSM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    user_tower_activations: ReLU
+    user_tower_dropout: 0.1
+    user_tower_units: [400, 400, 400]
+    verbose: 1
+DSSM_frappe_x1_025_4ea89bb5:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: frappe_x1_db5a3f58
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    item_tower_activations: ReLU
+    item_tower_dropout: 0.1
+    item_tower_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DSSM
+    model_id: DSSM_base
+    model_root: ./Frappe/DSSM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    user_tower_activations: ReLU
+    user_tower_dropout: 0.2
+    user_tower_units: [400, 400, 400]
+    verbose: 1
+DSSM_frappe_x1_026_d8666627:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: frappe_x1_db5a3f58
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    item_tower_activations: ReLU
+    item_tower_dropout: 0.2
+    item_tower_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DSSM
+    model_id: DSSM_base
+    model_root: ./Frappe/DSSM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    user_tower_activations: ReLU
+    user_tower_dropout: 0.2
+    user_tower_units: [400, 400, 400]
+    verbose: 1
+DSSM_frappe_x1_027_eac32eae:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: frappe_x1_db5a3f58
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    item_tower_activations: ReLU
+    item_tower_dropout: 0.3
+    item_tower_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DSSM
+    model_id: DSSM_base
+    model_root: ./Frappe/DSSM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    user_tower_activations: ReLU
+    user_tower_dropout: 0.2
+    user_tower_units: [400, 400, 400]
+    verbose: 1
+DSSM_frappe_x1_028_625965ef:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: frappe_x1_db5a3f58
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    item_tower_activations: ReLU
+    item_tower_dropout: 0.4
+    item_tower_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DSSM
+    model_id: DSSM_base
+    model_root: ./Frappe/DSSM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    user_tower_activations: ReLU
+    user_tower_dropout: 0.2
+    user_tower_units: [400, 400, 400]
+    verbose: 1
+DSSM_frappe_x1_029_1e84daf7:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: frappe_x1_db5a3f58
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    item_tower_activations: ReLU
+    item_tower_dropout: 0.1
+    item_tower_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DSSM
+    model_id: DSSM_base
+    model_root: ./Frappe/DSSM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    user_tower_activations: ReLU
+    user_tower_dropout: 0.3
+    user_tower_units: [400, 400, 400]
+    verbose: 1
+DSSM_frappe_x1_030_4f4ce4e4:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: frappe_x1_db5a3f58
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    item_tower_activations: ReLU
+    item_tower_dropout: 0.2
+    item_tower_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DSSM
+    model_id: DSSM_base
+    model_root: ./Frappe/DSSM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    user_tower_activations: ReLU
+    user_tower_dropout: 0.3
+    user_tower_units: [400, 400, 400]
+    verbose: 1
+DSSM_frappe_x1_031_66bf0262:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: frappe_x1_db5a3f58
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    item_tower_activations: ReLU
+    item_tower_dropout: 0.3
+    item_tower_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DSSM
+    model_id: DSSM_base
+    model_root: ./Frappe/DSSM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    user_tower_activations: ReLU
+    user_tower_dropout: 0.3
+    user_tower_units: [400, 400, 400]
+    verbose: 1
+DSSM_frappe_x1_032_f46f9fcc:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: frappe_x1_db5a3f58
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.05
+    epochs: 100
+    every_x_epochs: 1
+    item_tower_activations: ReLU
+    item_tower_dropout: 0.4
+    item_tower_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DSSM
+    model_id: DSSM_base
+    model_root: ./Frappe/DSSM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    user_tower_activations: ReLU
+    user_tower_dropout: 0.3
+    user_tower_units: [400, 400, 400]
+    verbose: 1

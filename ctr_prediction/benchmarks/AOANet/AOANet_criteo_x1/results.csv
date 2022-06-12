@@ -1,0 +1,1 @@
+ 20220601-202940,[command] python run_expid.py --version pytorch --config Criteo/AOANet_criteo_x1/AOANet_criteo_x1_tuner_config_03 --expid AOANet_criteo_x1_005_faa15d7f --gpu 4,[exp_id] AOANet_criteo_x1_005_faa15d7f,[dataset_id] criteo_x1_7b681156,[train] N.A.,[val] AUC: 0.813704 - logloss: 0.438395,[test] AUC: 0.814127 - logloss: 0.437825

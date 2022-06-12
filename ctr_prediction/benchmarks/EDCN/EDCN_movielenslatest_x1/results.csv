@@ -1,0 +1,1 @@
+ 20220528-160008,[command] python run_expid.py --version pytorch --config Movielens/EDCN_movielenslatest_x1/EDCN_movielenslatest_x1_tuner_config_02 --expid EDCN_movielenslatest_x1_004_174d2777 --gpu 1,[exp_id] EDCN_movielenslatest_x1_004_174d2777,[dataset_id] movielenslatest_x1_cd32d937,[train] N.A.,[val] AUC: 0.963323 - logloss: 0.266032,[test] AUC: 0.963164 - logloss: 0.266564

@@ -1,0 +1,1 @@
+ 20220527-210854,[command] python run_expid.py --version pytorch --config Avazu/DLRM_avazu_x1/DLRM_avazu_x1_tuner_config_01 --expid DLRM_avazu_x1_015_cf6fdabe --gpu 6,[exp_id] DLRM_avazu_x1_015_cf6fdabe,[dataset_id] avazu_x1_3fb65689,[train] N.A.,[val] AUC: 0.745650 - logloss: 0.396405,[test] AUC: 0.763934 - logloss: 0.366904

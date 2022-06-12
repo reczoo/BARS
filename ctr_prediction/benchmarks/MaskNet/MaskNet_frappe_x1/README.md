@@ -30,19 +30,19 @@ Author: [XUEPAI](https://github.com/xue-pai)
   pyyaml: 5.1
   h5py: 2.7.1
   tqdm: 4.59.0
-  fuxictr: 1.1.1
+  fuxictr: 1.2.1
   ```
 
 ### Dataset
-Dataset ID: [Frappe_x1](https://github.com/openbenchmark/BARS/blob/master/ctr_prediction/datasets/Frappe/README.md#Frappe_x1). Please refer to the dataset details to get data ready.
+Dataset ID: [Frappe_x1](https://github.com/openbenchmark/BARS/blob/master/ctr_prediction/datasets/Frappe#Frappe_x1). Please refer to the dataset details to get data ready.
 
 ### Code
 
-We use [FuxiCTR-v1.1.1](https://github.com/xue-pai/FuxiCTR/tree/v1.1.1) for this experiment. See the model code: [MaskNet](https://github.com/xue-pai/FuxiCTR/blob/v1.1.1/fuxictr/pytorch/models/MaskNet.py).
+We use [FuxiCTR-v1.2.1](https://github.com/xue-pai/FuxiCTR/tree/v1.2.1) for this experiment. See the model code: [MaskNet](https://github.com/xue-pai/FuxiCTR/blob/v1.2.1/fuxictr/pytorch/models/MaskNet.py).
 
 Running steps:
 
-1. Download [FuxiCTR-v1.1.1](https://github.com/xue-pai/FuxiCTR/archive/refs/tags/v1.1.1.zip) and install all the dependencies listed in the [environments](#environments). Then modify [run_expid.py](./run_expid.py#L5) to add the FuxiCTR library to system path
+1. Download [FuxiCTR-v1.2.1](https://github.com/xue-pai/FuxiCTR/archive/refs/tags/v1.2.1.zip) and install all the dependencies listed in the [environments](#environments). Then modify [run_expid.py](./run_expid.py#L5) to add the FuxiCTR library to system path
     
     ```python
     sys.path.append('YOUR_PATH_TO_FuxiCTR/')
@@ -50,35 +50,26 @@ Running steps:
 
 2. Create a data directory and put the downloaded csv files in `../data/Frappe/Frappe_x1`.
 
-3. Both `dataset_config.yaml` and `model_config.yaml` files are available in [MaskNet_frappe_x1_tuner_config_03](./MaskNet_frappe_x1_tuner_config_03). Make sure the data paths in `dataset_config.yaml` are correctly set to what we create in the last step.
+3. Both `dataset_config.yaml` and `model_config.yaml` files are available in [MaskNet_frappe_x1_tuner_config_05](./MaskNet_frappe_x1_tuner_config_05). Make sure the data paths in `dataset_config.yaml` are correctly set to what we create in the last step.
 
 4. Run the following script to start.
 
     ```bash
     cd MaskNet_frappe_x1
-    nohup python run_expid.py --config ./MaskNet_frappe_x1_tuner_config_03 --expid MaskNet_frappe_x1_053_bd4428a9 --gpu 0 > run.log &
+    nohup python run_expid.py --config ./MaskNet_frappe_x1_tuner_config_05 --expid MaskNet_frappe_x1_028_015da53e --gpu 0 > run.log &
     tail -f run.log
     ```
 
 ### Results
 
-Total 5 runs:
-
-| Runs | AUC | logloss  |
-|:--------------------:|:--------------------:|:--------------------:|
-| 1 | 0.984324 | 0.172650  |
-| 2 | 0.984245 | 0.165011  |
-| 3 | 0.982792 | 0.167315  |
-| 4 | 0.983408 | 0.166238  |
-| 5 | 0.983541 | 0.175635  |
-| Avg | 0.983662 | 0.169370 |
-| Std | &#177;0.00056819 | &#177;0.00407534 |
+| AUC | logloss  |
+|:--------------------:|:--------------------:|
+| 0.983683 | 0.169580  |
 
 
 ### Logs
 ```python
-2022-01-29 09:05:19,793 P18187 INFO {
-    "batch_norm": "False",
+2022-05-26 11:10:08,457 P41089 INFO {
     "batch_size": "4096",
     "data_format": "csv",
     "data_root": "../data/Frappe/",
@@ -86,35 +77,34 @@ Total 5 runs:
     "debug": "False",
     "dnn_hidden_activations": "relu",
     "dnn_hidden_units": "[400, 400, 400]",
-    "emb_layernorm": "True",
+    "emb_layernorm": "False",
     "embedding_dim": "10",
     "embedding_regularizer": "0.1",
     "epochs": "100",
     "every_x_epochs": "1",
     "feature_cols": "[{'active': True, 'dtype': 'float', 'name': ['user', 'item', 'daytime', 'weekday', 'isweekend', 'homework', 'cost', 'weather', 'country', 'city'], 'type': 'categorical'}]",
-    "gpu": "0",
+    "gpu": "1",
     "label_col": "{'dtype': 'float', 'name': 'label'}",
     "learning_rate": "0.001",
     "loss": "binary_crossentropy",
     "metrics": "['AUC', 'logloss']",
     "min_categr_count": "1",
     "model": "MaskNet",
-    "model_id": "MaskNet_frappe_x1_053_bd4428a9",
+    "model_id": "MaskNet_frappe_x1_028_015da53e",
     "model_root": "./Frappe/MaskNet_frappe_x1/",
-    "model_type": "SerialMaskNet",
+    "model_type": "ParallelMaskNet",
     "monitor": "AUC",
     "monitor_mode": "max",
-    "net_dropout": "0.3",
-    "net_layernorm": "False",
+    "net_dropout": "0.1",
+    "net_layernorm": "True",
     "net_regularizer": "0",
     "num_workers": "3",
     "optimizer": "adam",
-    "parallel_block_dim": "64",
-    "parallel_num_blocks": "1",
-    "partition_block_size": "-1",
+    "parallel_block_dim": "50",
+    "parallel_num_blocks": "3",
     "patience": "2",
     "pickle_feature_encoder": "True",
-    "reduction_ratio": "1",
+    "reduction_ratio": "2",
     "save_best_only": "True",
     "seed": "2021",
     "shuffle": "True",
@@ -126,104 +116,140 @@ Total 5 runs:
     "verbose": "1",
     "version": "pytorch"
 }
-2022-01-29 09:05:19,793 P18187 INFO Set up feature encoder...
-2022-01-29 09:05:19,793 P18187 INFO Load feature_map from json: ../data/Frappe/frappe_x1_04e961e9/feature_map.json
-2022-01-29 09:05:19,794 P18187 INFO Loading data...
-2022-01-29 09:05:19,796 P18187 INFO Loading data from h5: ../data/Frappe/frappe_x1_04e961e9/train.h5
-2022-01-29 09:05:19,807 P18187 INFO Loading data from h5: ../data/Frappe/frappe_x1_04e961e9/valid.h5
-2022-01-29 09:05:19,811 P18187 INFO Train samples: total/202027, pos/67604, neg/134423, ratio/33.46%, blocks/1
-2022-01-29 09:05:19,811 P18187 INFO Validation samples: total/57722, pos/19063, neg/38659, ratio/33.03%, blocks/1
-2022-01-29 09:05:19,811 P18187 INFO Loading train data done.
-2022-01-29 09:05:23,307 P18187 INFO Total number of parameters: 836291.
-2022-01-29 09:05:23,307 P18187 INFO Start training: 50 batches/epoch
-2022-01-29 09:05:23,307 P18187 INFO ************ Epoch=1 start ************
-2022-01-29 09:05:27,279 P18187 INFO [Metrics] AUC: 0.938796 - logloss: 0.284661
-2022-01-29 09:05:27,279 P18187 INFO Save best model: monitor(max): 0.938796
-2022-01-29 09:05:27,285 P18187 INFO --- 50/50 batches finished ---
-2022-01-29 09:05:27,322 P18187 INFO Train loss: 0.425931
-2022-01-29 09:05:27,322 P18187 INFO ************ Epoch=1 end ************
-2022-01-29 09:05:32,214 P18187 INFO [Metrics] AUC: 0.961596 - logloss: 0.230285
-2022-01-29 09:05:32,214 P18187 INFO Save best model: monitor(max): 0.961596
-2022-01-29 09:05:32,221 P18187 INFO --- 50/50 batches finished ---
-2022-01-29 09:05:32,257 P18187 INFO Train loss: 0.295892
-2022-01-29 09:05:32,258 P18187 INFO ************ Epoch=2 end ************
-2022-01-29 09:05:36,479 P18187 INFO [Metrics] AUC: 0.972209 - logloss: 0.194651
-2022-01-29 09:05:36,480 P18187 INFO Save best model: monitor(max): 0.972209
-2022-01-29 09:05:36,486 P18187 INFO --- 50/50 batches finished ---
-2022-01-29 09:05:36,530 P18187 INFO Train loss: 0.259941
-2022-01-29 09:05:36,530 P18187 INFO ************ Epoch=3 end ************
-2022-01-29 09:05:40,378 P18187 INFO [Metrics] AUC: 0.976468 - logloss: 0.175908
-2022-01-29 09:05:40,379 P18187 INFO Save best model: monitor(max): 0.976468
-2022-01-29 09:05:40,385 P18187 INFO --- 50/50 batches finished ---
-2022-01-29 09:05:40,424 P18187 INFO Train loss: 0.240686
-2022-01-29 09:05:40,424 P18187 INFO ************ Epoch=4 end ************
-2022-01-29 09:05:44,608 P18187 INFO [Metrics] AUC: 0.978210 - logloss: 0.168243
-2022-01-29 09:05:44,609 P18187 INFO Save best model: monitor(max): 0.978210
-2022-01-29 09:05:44,615 P18187 INFO --- 50/50 batches finished ---
-2022-01-29 09:05:44,655 P18187 INFO Train loss: 0.227718
-2022-01-29 09:05:44,655 P18187 INFO ************ Epoch=5 end ************
-2022-01-29 09:05:49,792 P18187 INFO [Metrics] AUC: 0.978924 - logloss: 0.165224
-2022-01-29 09:05:49,793 P18187 INFO Save best model: monitor(max): 0.978924
-2022-01-29 09:05:49,799 P18187 INFO --- 50/50 batches finished ---
-2022-01-29 09:05:49,834 P18187 INFO Train loss: 0.219551
-2022-01-29 09:05:49,835 P18187 INFO ************ Epoch=6 end ************
-2022-01-29 09:05:54,877 P18187 INFO [Metrics] AUC: 0.979004 - logloss: 0.166780
-2022-01-29 09:05:54,877 P18187 INFO Save best model: monitor(max): 0.979004
-2022-01-29 09:05:54,884 P18187 INFO --- 50/50 batches finished ---
-2022-01-29 09:05:54,918 P18187 INFO Train loss: 0.214804
-2022-01-29 09:05:54,918 P18187 INFO ************ Epoch=7 end ************
-2022-01-29 09:06:00,142 P18187 INFO [Metrics] AUC: 0.979923 - logloss: 0.161069
-2022-01-29 09:06:00,143 P18187 INFO Save best model: monitor(max): 0.979923
-2022-01-29 09:06:00,149 P18187 INFO --- 50/50 batches finished ---
-2022-01-29 09:06:00,185 P18187 INFO Train loss: 0.212766
-2022-01-29 09:06:00,185 P18187 INFO ************ Epoch=8 end ************
-2022-01-29 09:06:05,288 P18187 INFO [Metrics] AUC: 0.981073 - logloss: 0.157433
-2022-01-29 09:06:05,288 P18187 INFO Save best model: monitor(max): 0.981073
-2022-01-29 09:06:05,295 P18187 INFO --- 50/50 batches finished ---
-2022-01-29 09:06:05,329 P18187 INFO Train loss: 0.207458
-2022-01-29 09:06:05,329 P18187 INFO ************ Epoch=9 end ************
-2022-01-29 09:06:10,667 P18187 INFO [Metrics] AUC: 0.980679 - logloss: 0.157450
-2022-01-29 09:06:10,667 P18187 INFO Monitor(max) STOP: 0.980679 !
-2022-01-29 09:06:10,667 P18187 INFO Reduce learning rate on plateau: 0.000100
-2022-01-29 09:06:10,667 P18187 INFO --- 50/50 batches finished ---
-2022-01-29 09:06:10,710 P18187 INFO Train loss: 0.205637
-2022-01-29 09:06:10,710 P18187 INFO ************ Epoch=10 end ************
-2022-01-29 09:06:15,275 P18187 INFO [Metrics] AUC: 0.983833 - logloss: 0.153822
-2022-01-29 09:06:15,275 P18187 INFO Save best model: monitor(max): 0.983833
-2022-01-29 09:06:15,282 P18187 INFO --- 50/50 batches finished ---
-2022-01-29 09:06:15,322 P18187 INFO Train loss: 0.163112
-2022-01-29 09:06:15,322 P18187 INFO ************ Epoch=11 end ************
-2022-01-29 09:06:19,561 P18187 INFO [Metrics] AUC: 0.984651 - logloss: 0.157777
-2022-01-29 09:06:19,562 P18187 INFO Save best model: monitor(max): 0.984651
-2022-01-29 09:06:19,568 P18187 INFO --- 50/50 batches finished ---
-2022-01-29 09:06:19,606 P18187 INFO Train loss: 0.127349
-2022-01-29 09:06:19,606 P18187 INFO ************ Epoch=12 end ************
-2022-01-29 09:06:23,652 P18187 INFO [Metrics] AUC: 0.984704 - logloss: 0.169387
-2022-01-29 09:06:23,653 P18187 INFO Save best model: monitor(max): 0.984704
-2022-01-29 09:06:23,659 P18187 INFO --- 50/50 batches finished ---
-2022-01-29 09:06:23,697 P18187 INFO Train loss: 0.106299
-2022-01-29 09:06:23,697 P18187 INFO ************ Epoch=13 end ************
-2022-01-29 09:06:28,866 P18187 INFO [Metrics] AUC: 0.984417 - logloss: 0.181842
-2022-01-29 09:06:28,867 P18187 INFO Monitor(max) STOP: 0.984417 !
-2022-01-29 09:06:28,867 P18187 INFO Reduce learning rate on plateau: 0.000010
-2022-01-29 09:06:28,867 P18187 INFO --- 50/50 batches finished ---
-2022-01-29 09:06:28,902 P18187 INFO Train loss: 0.091695
-2022-01-29 09:06:28,902 P18187 INFO ************ Epoch=14 end ************
-2022-01-29 09:06:34,007 P18187 INFO [Metrics] AUC: 0.984299 - logloss: 0.191862
-2022-01-29 09:06:34,008 P18187 INFO Monitor(max) STOP: 0.984299 !
-2022-01-29 09:06:34,008 P18187 INFO Reduce learning rate on plateau: 0.000001
-2022-01-29 09:06:34,008 P18187 INFO Early stopping at epoch=15
-2022-01-29 09:06:34,008 P18187 INFO --- 50/50 batches finished ---
-2022-01-29 09:06:34,059 P18187 INFO Train loss: 0.080797
-2022-01-29 09:06:34,059 P18187 INFO Training finished.
-2022-01-29 09:06:34,059 P18187 INFO Load best model: /home/XXX/benchmarks/Frappe/MaskNet_frappe_x1/frappe_x1_04e961e9/MaskNet_frappe_x1_053_bd4428a9.model
-2022-01-29 09:06:34,077 P18187 INFO ****** Validation evaluation ******
-2022-01-29 09:06:34,473 P18187 INFO [Metrics] AUC: 0.984704 - logloss: 0.169387
-2022-01-29 09:06:34,531 P18187 INFO ******** Test evaluation ********
-2022-01-29 09:06:34,531 P18187 INFO Loading data...
-2022-01-29 09:06:34,531 P18187 INFO Loading data from h5: ../data/Frappe/frappe_x1_04e961e9/test.h5
-2022-01-29 09:06:34,534 P18187 INFO Test samples: total/28860, pos/9536, neg/19324, ratio/33.04%, blocks/1
-2022-01-29 09:06:34,534 P18187 INFO Loading test data done.
-2022-01-29 09:06:34,783 P18187 INFO [Metrics] AUC: 0.984324 - logloss: 0.172650
+2022-05-26 11:10:08,458 P41089 INFO Set up feature encoder...
+2022-05-26 11:10:08,458 P41089 INFO Load feature_map from json: ../data/Frappe/frappe_x1_04e961e9/feature_map.json
+2022-05-26 11:10:08,458 P41089 INFO Loading data...
+2022-05-26 11:10:08,460 P41089 INFO Loading data from h5: ../data/Frappe/frappe_x1_04e961e9/train.h5
+2022-05-26 11:10:08,472 P41089 INFO Loading data from h5: ../data/Frappe/frappe_x1_04e961e9/valid.h5
+2022-05-26 11:10:08,475 P41089 INFO Train samples: total/202027, pos/67604, neg/134423, ratio/33.46%, blocks/1
+2022-05-26 11:10:08,475 P41089 INFO Validation samples: total/57722, pos/19063, neg/38659, ratio/33.03%, blocks/1
+2022-05-26 11:10:08,476 P41089 INFO Loading train data done.
+2022-05-26 11:10:11,867 P41089 INFO Total number of parameters: 571691.
+2022-05-26 11:10:11,868 P41089 INFO Start training: 50 batches/epoch
+2022-05-26 11:10:11,868 P41089 INFO ************ Epoch=1 start ************
+2022-05-26 11:10:15,638 P41089 INFO [Metrics] AUC: 0.935571 - logloss: 0.286634
+2022-05-26 11:10:15,639 P41089 INFO Save best model: monitor(max): 0.935571
+2022-05-26 11:10:15,646 P41089 INFO --- 50/50 batches finished ---
+2022-05-26 11:10:15,690 P41089 INFO Train loss: 0.453737
+2022-05-26 11:10:15,690 P41089 INFO ************ Epoch=1 end ************
+2022-05-26 11:10:18,607 P41089 INFO [Metrics] AUC: 0.948610 - logloss: 0.257620
+2022-05-26 11:10:18,608 P41089 INFO Save best model: monitor(max): 0.948610
+2022-05-26 11:10:18,616 P41089 INFO --- 50/50 batches finished ---
+2022-05-26 11:10:18,662 P41089 INFO Train loss: 0.304144
+2022-05-26 11:10:18,662 P41089 INFO ************ Epoch=2 end ************
+2022-05-26 11:10:21,442 P41089 INFO [Metrics] AUC: 0.961067 - logloss: 0.226449
+2022-05-26 11:10:21,443 P41089 INFO Save best model: monitor(max): 0.961067
+2022-05-26 11:10:21,451 P41089 INFO --- 50/50 batches finished ---
+2022-05-26 11:10:21,493 P41089 INFO Train loss: 0.276798
+2022-05-26 11:10:21,493 P41089 INFO ************ Epoch=3 end ************
+2022-05-26 11:10:24,302 P41089 INFO [Metrics] AUC: 0.967092 - logloss: 0.206629
+2022-05-26 11:10:24,303 P41089 INFO Save best model: monitor(max): 0.967092
+2022-05-26 11:10:24,310 P41089 INFO --- 50/50 batches finished ---
+2022-05-26 11:10:24,354 P41089 INFO Train loss: 0.258479
+2022-05-26 11:10:24,355 P41089 INFO ************ Epoch=4 end ************
+2022-05-26 11:10:27,281 P41089 INFO [Metrics] AUC: 0.972343 - logloss: 0.189962
+2022-05-26 11:10:27,282 P41089 INFO Save best model: monitor(max): 0.972343
+2022-05-26 11:10:27,290 P41089 INFO --- 50/50 batches finished ---
+2022-05-26 11:10:27,340 P41089 INFO Train loss: 0.248212
+2022-05-26 11:10:27,340 P41089 INFO ************ Epoch=5 end ************
+2022-05-26 11:10:30,673 P41089 INFO [Metrics] AUC: 0.975098 - logloss: 0.179620
+2022-05-26 11:10:30,674 P41089 INFO Save best model: monitor(max): 0.975098
+2022-05-26 11:10:30,682 P41089 INFO --- 50/50 batches finished ---
+2022-05-26 11:10:30,724 P41089 INFO Train loss: 0.238668
+2022-05-26 11:10:30,724 P41089 INFO ************ Epoch=6 end ************
+2022-05-26 11:10:33,945 P41089 INFO [Metrics] AUC: 0.975828 - logloss: 0.176516
+2022-05-26 11:10:33,946 P41089 INFO Save best model: monitor(max): 0.975828
+2022-05-26 11:10:33,951 P41089 INFO --- 50/50 batches finished ---
+2022-05-26 11:10:33,994 P41089 INFO Train loss: 0.231681
+2022-05-26 11:10:33,995 P41089 INFO ************ Epoch=7 end ************
+2022-05-26 11:10:37,283 P41089 INFO [Metrics] AUC: 0.977100 - logloss: 0.170911
+2022-05-26 11:10:37,284 P41089 INFO Save best model: monitor(max): 0.977100
+2022-05-26 11:10:37,293 P41089 INFO --- 50/50 batches finished ---
+2022-05-26 11:10:37,344 P41089 INFO Train loss: 0.226163
+2022-05-26 11:10:37,344 P41089 INFO ************ Epoch=8 end ************
+2022-05-26 11:10:40,652 P41089 INFO [Metrics] AUC: 0.977644 - logloss: 0.167801
+2022-05-26 11:10:40,653 P41089 INFO Save best model: monitor(max): 0.977644
+2022-05-26 11:10:40,662 P41089 INFO --- 50/50 batches finished ---
+2022-05-26 11:10:40,722 P41089 INFO Train loss: 0.221765
+2022-05-26 11:10:40,722 P41089 INFO ************ Epoch=9 end ************
+2022-05-26 11:10:44,870 P41089 INFO [Metrics] AUC: 0.978607 - logloss: 0.165084
+2022-05-26 11:10:44,870 P41089 INFO Save best model: monitor(max): 0.978607
+2022-05-26 11:10:44,878 P41089 INFO --- 50/50 batches finished ---
+2022-05-26 11:10:44,950 P41089 INFO Train loss: 0.220618
+2022-05-26 11:10:44,950 P41089 INFO ************ Epoch=10 end ************
+2022-05-26 11:10:49,350 P41089 INFO [Metrics] AUC: 0.978411 - logloss: 0.165176
+2022-05-26 11:10:49,351 P41089 INFO Monitor(max) STOP: 0.978411 !
+2022-05-26 11:10:49,351 P41089 INFO Reduce learning rate on plateau: 0.000100
+2022-05-26 11:10:49,351 P41089 INFO --- 50/50 batches finished ---
+2022-05-26 11:10:49,398 P41089 INFO Train loss: 0.215685
+2022-05-26 11:10:49,398 P41089 INFO ************ Epoch=11 end ************
+2022-05-26 11:10:53,732 P41089 INFO [Metrics] AUC: 0.982073 - logloss: 0.153091
+2022-05-26 11:10:53,733 P41089 INFO Save best model: monitor(max): 0.982073
+2022-05-26 11:10:53,740 P41089 INFO --- 50/50 batches finished ---
+2022-05-26 11:10:53,776 P41089 INFO Train loss: 0.178363
+2022-05-26 11:10:53,776 P41089 INFO ************ Epoch=12 end ************
+2022-05-26 11:10:58,030 P41089 INFO [Metrics] AUC: 0.983386 - logloss: 0.151957
+2022-05-26 11:10:58,031 P41089 INFO Save best model: monitor(max): 0.983386
+2022-05-26 11:10:58,036 P41089 INFO --- 50/50 batches finished ---
+2022-05-26 11:10:58,073 P41089 INFO Train loss: 0.141984
+2022-05-26 11:10:58,073 P41089 INFO ************ Epoch=13 end ************
+2022-05-26 11:11:02,145 P41089 INFO [Metrics] AUC: 0.983713 - logloss: 0.154576
+2022-05-26 11:11:02,145 P41089 INFO Save best model: monitor(max): 0.983713
+2022-05-26 11:11:02,150 P41089 INFO --- 50/50 batches finished ---
+2022-05-26 11:11:02,186 P41089 INFO Train loss: 0.121058
+2022-05-26 11:11:02,186 P41089 INFO ************ Epoch=14 end ************
+2022-05-26 11:11:06,136 P41089 INFO [Metrics] AUC: 0.984101 - logloss: 0.156632
+2022-05-26 11:11:06,137 P41089 INFO Save best model: monitor(max): 0.984101
+2022-05-26 11:11:06,142 P41089 INFO --- 50/50 batches finished ---
+2022-05-26 11:11:06,196 P41089 INFO Train loss: 0.107267
+2022-05-26 11:11:06,196 P41089 INFO ************ Epoch=15 end ************
+2022-05-26 11:11:10,097 P41089 INFO [Metrics] AUC: 0.983920 - logloss: 0.160924
+2022-05-26 11:11:10,097 P41089 INFO Monitor(max) STOP: 0.983920 !
+2022-05-26 11:11:10,098 P41089 INFO Reduce learning rate on plateau: 0.000010
+2022-05-26 11:11:10,098 P41089 INFO --- 50/50 batches finished ---
+2022-05-26 11:11:10,136 P41089 INFO Train loss: 0.098089
+2022-05-26 11:11:10,136 P41089 INFO ************ Epoch=16 end ************
+2022-05-26 11:11:13,840 P41089 INFO [Metrics] AUC: 0.984202 - logloss: 0.161646
+2022-05-26 11:11:13,840 P41089 INFO Save best model: monitor(max): 0.984202
+2022-05-26 11:11:13,846 P41089 INFO --- 50/50 batches finished ---
+2022-05-26 11:11:13,881 P41089 INFO Train loss: 0.088258
+2022-05-26 11:11:13,881 P41089 INFO ************ Epoch=17 end ************
+2022-05-26 11:11:17,719 P41089 INFO [Metrics] AUC: 0.984271 - logloss: 0.162891
+2022-05-26 11:11:17,720 P41089 INFO Save best model: monitor(max): 0.984271
+2022-05-26 11:11:17,725 P41089 INFO --- 50/50 batches finished ---
+2022-05-26 11:11:17,760 P41089 INFO Train loss: 0.086822
+2022-05-26 11:11:17,760 P41089 INFO ************ Epoch=18 end ************
+2022-05-26 11:11:21,597 P41089 INFO [Metrics] AUC: 0.984278 - logloss: 0.164273
+2022-05-26 11:11:21,598 P41089 INFO Save best model: monitor(max): 0.984278
+2022-05-26 11:11:21,603 P41089 INFO --- 50/50 batches finished ---
+2022-05-26 11:11:21,638 P41089 INFO Train loss: 0.085214
+2022-05-26 11:11:21,638 P41089 INFO ************ Epoch=19 end ************
+2022-05-26 11:11:25,443 P41089 INFO [Metrics] AUC: 0.984296 - logloss: 0.165253
+2022-05-26 11:11:25,444 P41089 INFO Save best model: monitor(max): 0.984296
+2022-05-26 11:11:25,450 P41089 INFO --- 50/50 batches finished ---
+2022-05-26 11:11:25,510 P41089 INFO Train loss: 0.083892
+2022-05-26 11:11:25,510 P41089 INFO ************ Epoch=20 end ************
+2022-05-26 11:11:29,594 P41089 INFO [Metrics] AUC: 0.984217 - logloss: 0.166702
+2022-05-26 11:11:29,595 P41089 INFO Monitor(max) STOP: 0.984217 !
+2022-05-26 11:11:29,595 P41089 INFO Reduce learning rate on plateau: 0.000001
+2022-05-26 11:11:29,595 P41089 INFO --- 50/50 batches finished ---
+2022-05-26 11:11:29,637 P41089 INFO Train loss: 0.082970
+2022-05-26 11:11:29,638 P41089 INFO ************ Epoch=21 end ************
+2022-05-26 11:11:33,792 P41089 INFO [Metrics] AUC: 0.984227 - logloss: 0.166614
+2022-05-26 11:11:33,793 P41089 INFO Monitor(max) STOP: 0.984227 !
+2022-05-26 11:11:33,793 P41089 INFO Reduce learning rate on plateau: 0.000001
+2022-05-26 11:11:33,793 P41089 INFO Early stopping at epoch=22
+2022-05-26 11:11:33,793 P41089 INFO --- 50/50 batches finished ---
+2022-05-26 11:11:33,843 P41089 INFO Train loss: 0.081717
+2022-05-26 11:11:33,843 P41089 INFO Training finished.
+2022-05-26 11:11:33,843 P41089 INFO Load best model: /home/XXX/FuxiCTR/benchmarks/Frappe/MaskNet_frappe_x1/frappe_x1_04e961e9/MaskNet_frappe_x1_028_015da53e.model
+2022-05-26 11:11:36,765 P41089 INFO ****** Validation evaluation ******
+2022-05-26 11:11:37,170 P41089 INFO [Metrics] AUC: 0.984296 - logloss: 0.165253
+2022-05-26 11:11:37,205 P41089 INFO ******** Test evaluation ********
+2022-05-26 11:11:37,205 P41089 INFO Loading data...
+2022-05-26 11:11:37,206 P41089 INFO Loading data from h5: ../data/Frappe/frappe_x1_04e961e9/test.h5
+2022-05-26 11:11:37,208 P41089 INFO Test samples: total/28860, pos/9536, neg/19324, ratio/33.04%, blocks/1
+2022-05-26 11:11:37,208 P41089 INFO Loading test data done.
+2022-05-26 11:11:37,493 P41089 INFO [Metrics] AUC: 0.983683 - logloss: 0.169580
 
 ```

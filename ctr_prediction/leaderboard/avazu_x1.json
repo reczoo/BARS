@@ -314,8 +314,52 @@
             "model": "MaskNet",
             "paper": "https://arxiv.org/abs/2102.07619",
             "logloss": "0.3674",
-            "auc": "0.7649",
+            "auc": "0.7643",
             "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/MaskNet/MaskNet_avazu_x1",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2019",
+            "pub": "Arxiv'19",
+            "model": "DLRM",
+            "paper": "https://arxiv.org/abs/1906.00091",
+            "logloss": "0.3669",
+            "auc": "0.7639",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/DLRM/DLRM_avazu_x1",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2021",
+            "pub": "CIKM'21",
+            "model": "EDCN",
+            "paper": "https://dlp-kdd.github.io/assets/pdf/DLP-KDD_2021_paper_12.pdf",
+            "logloss": "0.3670",
+            "auc": "0.7647",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/EDCN/EDCN_avazu_x1",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2021",
+            "pub": "SIGIR'21",
+            "model": "SAM",
+            "paper": "https://arxiv.org/abs/2105.05563",
+            "logloss": "0.3672",
+            "auc": "0.7632",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/SAM/SAM_avazu_x1",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2021",
+            "pub": "KDD'21",
+            "model": "AOANet",
+            "paper": "https://dl.acm.org/doi/10.1145/3447548.3467133",
+            "logloss": "0.3664",
+            "auc": "0.7654",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/AOANet/AOANet_avazu_x1",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
         }

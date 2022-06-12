@@ -1,0 +1,840 @@
+DLRM_avazu_x1_001_85125f85:
+    batch_norm: true
+    batch_size: 4096
+    bottom_mlp_activations: ReLU
+    bottom_mlp_dropout: 0.2
+    bottom_mlp_units: [400, 400, 400]
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.1
+    epochs: 100
+    every_x_epochs: 1
+    interaction_op: dot
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DLRM
+    model_id: DLRM_base
+    model_root: ./Avazu/DLRM_avazu_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    top_mlp_activations: ReLU
+    top_mlp_dropout: 0.3
+    top_mlp_units: [400, 400, 400]
+    use_hdf5: true
+    verbose: 0
+DLRM_avazu_x1_002_6ec407b1:
+    batch_norm: false
+    batch_size: 4096
+    bottom_mlp_activations: ReLU
+    bottom_mlp_dropout: 0.2
+    bottom_mlp_units: [400, 400, 400]
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.1
+    epochs: 100
+    every_x_epochs: 1
+    interaction_op: dot
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DLRM
+    model_id: DLRM_base
+    model_root: ./Avazu/DLRM_avazu_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    top_mlp_activations: ReLU
+    top_mlp_dropout: 0.3
+    top_mlp_units: [400, 400, 400]
+    use_hdf5: true
+    verbose: 0
+DLRM_avazu_x1_003_97920eb4:
+    batch_norm: true
+    batch_size: 4096
+    bottom_mlp_activations: ReLU
+    bottom_mlp_dropout: 0.3
+    bottom_mlp_units: [400, 400, 400]
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.1
+    epochs: 100
+    every_x_epochs: 1
+    interaction_op: dot
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DLRM
+    model_id: DLRM_base
+    model_root: ./Avazu/DLRM_avazu_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    top_mlp_activations: ReLU
+    top_mlp_dropout: 0.3
+    top_mlp_units: [400, 400, 400]
+    use_hdf5: true
+    verbose: 0
+DLRM_avazu_x1_004_4daead8d:
+    batch_norm: false
+    batch_size: 4096
+    bottom_mlp_activations: ReLU
+    bottom_mlp_dropout: 0.3
+    bottom_mlp_units: [400, 400, 400]
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.1
+    epochs: 100
+    every_x_epochs: 1
+    interaction_op: dot
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DLRM
+    model_id: DLRM_base
+    model_root: ./Avazu/DLRM_avazu_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    top_mlp_activations: ReLU
+    top_mlp_dropout: 0.3
+    top_mlp_units: [400, 400, 400]
+    use_hdf5: true
+    verbose: 0
+DLRM_avazu_x1_005_4845436c:
+    batch_norm: true
+    batch_size: 4096
+    bottom_mlp_activations: ReLU
+    bottom_mlp_dropout: 0.4
+    bottom_mlp_units: [400, 400, 400]
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.1
+    epochs: 100
+    every_x_epochs: 1
+    interaction_op: dot
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DLRM
+    model_id: DLRM_base
+    model_root: ./Avazu/DLRM_avazu_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    top_mlp_activations: ReLU
+    top_mlp_dropout: 0.3
+    top_mlp_units: [400, 400, 400]
+    use_hdf5: true
+    verbose: 0
+DLRM_avazu_x1_006_c2a223e2:
+    batch_norm: false
+    batch_size: 4096
+    bottom_mlp_activations: ReLU
+    bottom_mlp_dropout: 0.4
+    bottom_mlp_units: [400, 400, 400]
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.1
+    epochs: 100
+    every_x_epochs: 1
+    interaction_op: dot
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DLRM
+    model_id: DLRM_base
+    model_root: ./Avazu/DLRM_avazu_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    top_mlp_activations: ReLU
+    top_mlp_dropout: 0.3
+    top_mlp_units: [400, 400, 400]
+    use_hdf5: true
+    verbose: 0
+DLRM_avazu_x1_007_ca92f51a:
+    batch_norm: true
+    batch_size: 4096
+    bottom_mlp_activations: ReLU
+    bottom_mlp_dropout: 0.2
+    bottom_mlp_units: [400, 400, 400]
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.1
+    epochs: 100
+    every_x_epochs: 1
+    interaction_op: dot
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DLRM
+    model_id: DLRM_base
+    model_root: ./Avazu/DLRM_avazu_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    top_mlp_activations: ReLU
+    top_mlp_dropout: 0.4
+    top_mlp_units: [400, 400, 400]
+    use_hdf5: true
+    verbose: 0
+DLRM_avazu_x1_008_857b9e9f:
+    batch_norm: false
+    batch_size: 4096
+    bottom_mlp_activations: ReLU
+    bottom_mlp_dropout: 0.2
+    bottom_mlp_units: [400, 400, 400]
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.1
+    epochs: 100
+    every_x_epochs: 1
+    interaction_op: dot
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DLRM
+    model_id: DLRM_base
+    model_root: ./Avazu/DLRM_avazu_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    top_mlp_activations: ReLU
+    top_mlp_dropout: 0.4
+    top_mlp_units: [400, 400, 400]
+    use_hdf5: true
+    verbose: 0
+DLRM_avazu_x1_009_111ae105:
+    batch_norm: true
+    batch_size: 4096
+    bottom_mlp_activations: ReLU
+    bottom_mlp_dropout: 0.3
+    bottom_mlp_units: [400, 400, 400]
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.1
+    epochs: 100
+    every_x_epochs: 1
+    interaction_op: dot
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DLRM
+    model_id: DLRM_base
+    model_root: ./Avazu/DLRM_avazu_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    top_mlp_activations: ReLU
+    top_mlp_dropout: 0.4
+    top_mlp_units: [400, 400, 400]
+    use_hdf5: true
+    verbose: 0
+DLRM_avazu_x1_010_32f22fbc:
+    batch_norm: false
+    batch_size: 4096
+    bottom_mlp_activations: ReLU
+    bottom_mlp_dropout: 0.3
+    bottom_mlp_units: [400, 400, 400]
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.1
+    epochs: 100
+    every_x_epochs: 1
+    interaction_op: dot
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DLRM
+    model_id: DLRM_base
+    model_root: ./Avazu/DLRM_avazu_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    top_mlp_activations: ReLU
+    top_mlp_dropout: 0.4
+    top_mlp_units: [400, 400, 400]
+    use_hdf5: true
+    verbose: 0
+DLRM_avazu_x1_011_c8553c25:
+    batch_norm: true
+    batch_size: 4096
+    bottom_mlp_activations: ReLU
+    bottom_mlp_dropout: 0.4
+    bottom_mlp_units: [400, 400, 400]
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.1
+    epochs: 100
+    every_x_epochs: 1
+    interaction_op: dot
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DLRM
+    model_id: DLRM_base
+    model_root: ./Avazu/DLRM_avazu_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    top_mlp_activations: ReLU
+    top_mlp_dropout: 0.4
+    top_mlp_units: [400, 400, 400]
+    use_hdf5: true
+    verbose: 0
+DLRM_avazu_x1_012_72dfe4d2:
+    batch_norm: false
+    batch_size: 4096
+    bottom_mlp_activations: ReLU
+    bottom_mlp_dropout: 0.4
+    bottom_mlp_units: [400, 400, 400]
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.1
+    epochs: 100
+    every_x_epochs: 1
+    interaction_op: dot
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DLRM
+    model_id: DLRM_base
+    model_root: ./Avazu/DLRM_avazu_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    top_mlp_activations: ReLU
+    top_mlp_dropout: 0.4
+    top_mlp_units: [400, 400, 400]
+    use_hdf5: true
+    verbose: 0
+DLRM_avazu_x1_013_0c56f4dc:
+    batch_norm: true
+    batch_size: 4096
+    bottom_mlp_activations: ReLU
+    bottom_mlp_dropout: 0.2
+    bottom_mlp_units: [400, 400, 400]
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    interaction_op: dot
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DLRM
+    model_id: DLRM_base
+    model_root: ./Avazu/DLRM_avazu_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    top_mlp_activations: ReLU
+    top_mlp_dropout: 0.3
+    top_mlp_units: [400, 400, 400]
+    use_hdf5: true
+    verbose: 0
+DLRM_avazu_x1_014_20119669:
+    batch_norm: false
+    batch_size: 4096
+    bottom_mlp_activations: ReLU
+    bottom_mlp_dropout: 0.2
+    bottom_mlp_units: [400, 400, 400]
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    interaction_op: dot
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DLRM
+    model_id: DLRM_base
+    model_root: ./Avazu/DLRM_avazu_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    top_mlp_activations: ReLU
+    top_mlp_dropout: 0.3
+    top_mlp_units: [400, 400, 400]
+    use_hdf5: true
+    verbose: 0
+DLRM_avazu_x1_015_cf6fdabe:
+    batch_norm: true
+    batch_size: 4096
+    bottom_mlp_activations: ReLU
+    bottom_mlp_dropout: 0.3
+    bottom_mlp_units: [400, 400, 400]
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    interaction_op: dot
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DLRM
+    model_id: DLRM_base
+    model_root: ./Avazu/DLRM_avazu_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    top_mlp_activations: ReLU
+    top_mlp_dropout: 0.3
+    top_mlp_units: [400, 400, 400]
+    use_hdf5: true
+    verbose: 0
+DLRM_avazu_x1_016_d73223a8:
+    batch_norm: false
+    batch_size: 4096
+    bottom_mlp_activations: ReLU
+    bottom_mlp_dropout: 0.3
+    bottom_mlp_units: [400, 400, 400]
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    interaction_op: dot
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DLRM
+    model_id: DLRM_base
+    model_root: ./Avazu/DLRM_avazu_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    top_mlp_activations: ReLU
+    top_mlp_dropout: 0.3
+    top_mlp_units: [400, 400, 400]
+    use_hdf5: true
+    verbose: 0
+DLRM_avazu_x1_017_00acb77b:
+    batch_norm: true
+    batch_size: 4096
+    bottom_mlp_activations: ReLU
+    bottom_mlp_dropout: 0.4
+    bottom_mlp_units: [400, 400, 400]
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    interaction_op: dot
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DLRM
+    model_id: DLRM_base
+    model_root: ./Avazu/DLRM_avazu_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    top_mlp_activations: ReLU
+    top_mlp_dropout: 0.3
+    top_mlp_units: [400, 400, 400]
+    use_hdf5: true
+    verbose: 0
+DLRM_avazu_x1_018_b0f83b1c:
+    batch_norm: false
+    batch_size: 4096
+    bottom_mlp_activations: ReLU
+    bottom_mlp_dropout: 0.4
+    bottom_mlp_units: [400, 400, 400]
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    interaction_op: dot
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DLRM
+    model_id: DLRM_base
+    model_root: ./Avazu/DLRM_avazu_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    top_mlp_activations: ReLU
+    top_mlp_dropout: 0.3
+    top_mlp_units: [400, 400, 400]
+    use_hdf5: true
+    verbose: 0
+DLRM_avazu_x1_019_29199097:
+    batch_norm: true
+    batch_size: 4096
+    bottom_mlp_activations: ReLU
+    bottom_mlp_dropout: 0.2
+    bottom_mlp_units: [400, 400, 400]
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    interaction_op: dot
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DLRM
+    model_id: DLRM_base
+    model_root: ./Avazu/DLRM_avazu_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    top_mlp_activations: ReLU
+    top_mlp_dropout: 0.4
+    top_mlp_units: [400, 400, 400]
+    use_hdf5: true
+    verbose: 0
+DLRM_avazu_x1_020_5df8660c:
+    batch_norm: false
+    batch_size: 4096
+    bottom_mlp_activations: ReLU
+    bottom_mlp_dropout: 0.2
+    bottom_mlp_units: [400, 400, 400]
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    interaction_op: dot
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DLRM
+    model_id: DLRM_base
+    model_root: ./Avazu/DLRM_avazu_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    top_mlp_activations: ReLU
+    top_mlp_dropout: 0.4
+    top_mlp_units: [400, 400, 400]
+    use_hdf5: true
+    verbose: 0
+DLRM_avazu_x1_021_c2558034:
+    batch_norm: true
+    batch_size: 4096
+    bottom_mlp_activations: ReLU
+    bottom_mlp_dropout: 0.3
+    bottom_mlp_units: [400, 400, 400]
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    interaction_op: dot
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DLRM
+    model_id: DLRM_base
+    model_root: ./Avazu/DLRM_avazu_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    top_mlp_activations: ReLU
+    top_mlp_dropout: 0.4
+    top_mlp_units: [400, 400, 400]
+    use_hdf5: true
+    verbose: 0
+DLRM_avazu_x1_022_268de2b8:
+    batch_norm: false
+    batch_size: 4096
+    bottom_mlp_activations: ReLU
+    bottom_mlp_dropout: 0.3
+    bottom_mlp_units: [400, 400, 400]
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    interaction_op: dot
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DLRM
+    model_id: DLRM_base
+    model_root: ./Avazu/DLRM_avazu_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    top_mlp_activations: ReLU
+    top_mlp_dropout: 0.4
+    top_mlp_units: [400, 400, 400]
+    use_hdf5: true
+    verbose: 0
+DLRM_avazu_x1_023_334c5718:
+    batch_norm: true
+    batch_size: 4096
+    bottom_mlp_activations: ReLU
+    bottom_mlp_dropout: 0.4
+    bottom_mlp_units: [400, 400, 400]
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    interaction_op: dot
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DLRM
+    model_id: DLRM_base
+    model_root: ./Avazu/DLRM_avazu_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    top_mlp_activations: ReLU
+    top_mlp_dropout: 0.4
+    top_mlp_units: [400, 400, 400]
+    use_hdf5: true
+    verbose: 0
+DLRM_avazu_x1_024_3df9ae3c:
+    batch_norm: false
+    batch_size: 4096
+    bottom_mlp_activations: ReLU
+    bottom_mlp_dropout: 0.4
+    bottom_mlp_units: [400, 400, 400]
+    dataset_id: avazu_x1_3fb65689
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    interaction_op: dot
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DLRM
+    model_id: DLRM_base
+    model_root: ./Avazu/DLRM_avazu_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    top_mlp_activations: ReLU
+    top_mlp_dropout: 0.4
+    top_mlp_units: [400, 400, 400]
+    use_hdf5: true
+    verbose: 0

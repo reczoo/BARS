@@ -1,0 +1,1 @@
+ 20220527-143606,[command] python run_expid.py --version pytorch --config Frappe/DLRM_frappe_x1/DLRM_frappe_x1_tuner_config_02 --expid DLRM_frappe_x1_006_216831a3 --gpu 0,[exp_id] DLRM_frappe_x1_006_216831a3,[dataset_id] frappe_x1_04e961e9,[train] N.A.,[val] AUC: 0.985190 - logloss: 0.139815,[test] AUC: 0.983995 - logloss: 0.144441

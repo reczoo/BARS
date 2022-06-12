@@ -318,6 +318,50 @@
             "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/MaskNet/MaskNet_criteo_x1",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2019",
+            "pub": "Arxiv'19",
+            "model": "DLRM",
+            "paper": "https://arxiv.org/abs/1906.00091",
+            "logloss": "0.4382",
+            "auc": "0.8138",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/DLRM/DLRM_criteo_x1",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2021",
+            "pub": "CIKM'21",
+            "model": "EDCN",
+            "paper": "https://dlp-kdd.github.io/assets/pdf/DLP-KDD_2021_paper_12.pdf",
+            "logloss": "0.4370",
+            "auc": "0.8148",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/EDCN/EDCN_criteo_x1",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2021",
+            "pub": "SIGIR'21",
+            "model": "SAM",
+            "paper": "https://arxiv.org/abs/2105.05563",
+            "logloss": "0.4389",
+            "auc": "0.8131",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/SAM/SAM_criteo_x1",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
+        },
+        {
+            "year": "2021",
+            "pub": "KDD'21",
+            "model": "AOANet",
+            "paper": "https://dl.acm.org/doi/10.1145/3447548.3467133",
+            "logloss": "0.4378",
+            "auc": "0.8141",
+            "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/AOANet/AOANet_criteo_x1",
+            "contr": "zhujiem",
+            "contr_url": "https://github.com/zhujiem"
         }
     ]
 }

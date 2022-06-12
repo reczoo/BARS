@@ -1,0 +1,1 @@
+ 20220413-115756,[command] python run_expid.py --version pytorch --config Frappe/DSSM_frappe_x1/DSSM_frappe_x1_tuner_config_02 --expid DSSM_frappe_x1_006_4be388eb --gpu 1,[exp_id] DSSM_frappe_x1_006_4be388eb,[dataset_id] frappe_x1_db5a3f58,[train] N.A.,[val] AUC: 0.984285 - logloss: 0.179113,[test] AUC: 0.983221 - logloss: 0.187438

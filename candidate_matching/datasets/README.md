@@ -1,6 +1,6 @@
-## BARS-Matching Datasets
+## Datasets
 
-### Reusable Data Splits
+### Data Splits
 
 | Dataset           | Dataset ID           | Used by           | Scenarios                          |
 |-------------------|----------------------|:-----------------|:-----------------------------------|

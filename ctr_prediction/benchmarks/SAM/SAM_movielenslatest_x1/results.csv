@@ -1,0 +1,1 @@
+ 20220412-165822,[command] python run_expid.py --version pytorch --config Movielens/SAM_movielenslatest_x1/SAM_movielenslatest_x1_tuner_config_06 --expid SAM_movielenslatest_x1_013_68a6bc8b --gpu 1,[exp_id] SAM_movielenslatest_x1_013_68a6bc8b,[dataset_id] movielenslatest_x1_cd32d937,[train] N.A.,[val] AUC: 0.963267 - logloss: 0.266475,[test] AUC: 0.963104 - logloss: 0.266696

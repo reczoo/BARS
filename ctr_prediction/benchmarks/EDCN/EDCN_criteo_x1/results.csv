@@ -1,0 +1,1 @@
+ 20220528-184304,[command] python run_expid.py --version pytorch --config Criteo/EDCN_criteo_x1/EDCN_criteo_x1_tuner_config_03 --expid EDCN_criteo_x1_005_5065d102 --gpu 4,[exp_id] EDCN_criteo_x1_005_5065d102,[dataset_id] criteo_x1_7b681156,[train] N.A.,[val] AUC: 0.814434 - logloss: 0.437542,[test] AUC: 0.814837 - logloss: 0.437013

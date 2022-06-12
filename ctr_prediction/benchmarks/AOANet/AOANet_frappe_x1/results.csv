@@ -1,0 +1,1 @@
+ 20220413-003837,[command] python run_expid.py --version pytorch --config Frappe/AOANet_frappe_x1/AOANet_frappe_x1_tuner_config_02 --expid AOANet_frappe_x1_009_29c57772 --gpu 0,[exp_id] AOANet_frappe_x1_009_29c57772,[dataset_id] frappe_x1_04e961e9,[train] N.A.,[val] AUC: 0.984972 - logloss: 0.142321,[test] AUC: 0.984400 - logloss: 0.142379

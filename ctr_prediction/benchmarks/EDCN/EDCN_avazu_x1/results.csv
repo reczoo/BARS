@@ -1,0 +1,1 @@
+ 20220528-014226,[command] python run_expid.py --version pytorch --config Avazu/EDCN_avazu_x1/EDCN_avazu_x1_tuner_config_03 --expid EDCN_avazu_x1_011_ba8f8c41 --gpu 2,[exp_id] EDCN_avazu_x1_011_ba8f8c41,[dataset_id] avazu_x1_3fb65689,[train] N.A.,[val] AUC: 0.748199 - logloss: 0.395193,[test] AUC: 0.764742 - logloss: 0.366979

@@ -14,5 +14,4 @@ sklearn: 0.22.1
 pyyaml: 5.4.1
 h5py: 2.8.0
 tqdm: 4.60.0
-fuxictr: 1.1.1
-
+fuxictr: 1.2.1

@@ -1,0 +1,1 @@
+ 20220531-170030,[command] python run_expid.py --version pytorch --config Criteo/SAM_criteo_x1/SAM_criteo_x1_tuner_config_03 --expid SAM_criteo_x1_012_55e25f89 --gpu 3,[exp_id] SAM_criteo_x1_012_55e25f89,[dataset_id] criteo_x1_7b681156,[train] N.A.,[val] AUC: 0.812786 - logloss: 0.439343,[test] AUC: 0.813098 - logloss: 0.438855

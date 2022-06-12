@@ -1,0 +1,1 @@
+ 20220612-171957,[command] python run_expid.py --version pytorch --config Movielens/DSSM_movielenslatest_x1/DSSM_movielenslatest_x1_tuner_config_01 --expid DSSM_movielenslatest_x1_001_945a31b2 --gpu 0,[exp_id] DSSM_movielenslatest_x1_001_945a31b2,[dataset_id] movielenslatest_x1_06dcf7a5,[train] N.A.,[val] AUC: 0.969027 - logloss: 0.211825,[test] AUC: 0.968624 - logloss: 0.212998
