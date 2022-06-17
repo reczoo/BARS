@@ -1,6 +1,6 @@
 # MicroVideo1.7M
 
-MicroVideo-1.7M is an open dataset provided by the paper of "[Temporal Hierarchical Attention at Category- and Item-Level for Micro-Video Click-Through Prediction](https://github.com/whn09/THACIL)" published in MM'2018. It contains 12,737,619 interactions that 10,986 users have made on 1,704,880 micro-videos. The labels include click or non-click, while the features include user_id, item_id, category, and the extracted image embedding vectors of cover images of micro-videos. 
+MicroVideo-1.7M is an open dataset provided by the paper of "[Temporal Hierarchical Attention at Category- and Item-Level for Micro-Video Click-Through Prediction](https://github.com/whn09/THACIL)" published in MM'2018. It contains 12,737,617 (ps: 12,737,619 rows including headers) interactions that 10,986 users have made on 1,704,880 micro-videos. The labels include click or non-click, while the features include user_id, item_id, category, and the extracted image embedding vectors of cover images of micro-videos. 
 
 
 ## MicroVideo1.7M_x1
