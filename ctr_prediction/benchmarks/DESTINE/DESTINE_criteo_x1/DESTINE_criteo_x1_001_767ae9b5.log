@@ -169,7 +169,7 @@
 2022-02-20 07:42:32,957 P93627 INFO --- 8058/8058 batches finished ---
 2022-02-20 07:42:33,003 P93627 INFO Train loss: 0.431329
 2022-02-20 07:42:33,004 P93627 INFO Training finished.
-2022-02-20 07:42:33,004 P93627 INFO Load best model: /cache/FuxiCTR/benchmarks/Criteo/DESTINE_criteo_x1/criteo_x1_7b681156/DESTINE_criteo_x1_001_767ae9b5.model
+2022-02-20 07:42:33,004 P93627 INFO Load best model: /cache/FuxiCTR/benchmarks_modelarts/Criteo/DESTINE_criteo_x1/criteo_x1_7b681156/DESTINE_criteo_x1_001_767ae9b5.model
 2022-02-20 07:42:33,097 P93627 INFO ****** Validation evaluation ******
 2022-02-20 07:43:33,623 P93627 INFO [Metrics] AUC: 0.813539 - logloss: 0.438458
 2022-02-20 07:43:33,720 P93627 INFO ******** Test evaluation ********

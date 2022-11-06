@@ -1,0 +1,133 @@
+2022-07-03 22:29:05,838 P13120 INFO {
+    "attention_dim": "128",
+    "attention_layers": "2",
+    "batch_norm": "True",
+    "batch_size": "4096",
+    "data_format": "csv",
+    "data_root": "../data/Movielens/",
+    "dataset_id": "movielenslatest_x1_cd32d937",
+    "debug": "False",
+    "dnn_activations": "relu",
+    "dnn_hidden_units": "[400, 400, 400]",
+    "embedding_dim": "10",
+    "embedding_regularizer": "0.01",
+    "epochs": "100",
+    "every_x_epochs": "1",
+    "feature_cols": "[{'active': True, 'dtype': 'float', 'name': ['user_id', 'item_id', 'tag_id'], 'type': 'categorical'}]",
+    "gpu": "1",
+    "label_col": "{'dtype': 'float', 'name': 'label'}",
+    "layer_norm": "True",
+    "learning_rate": "0.001",
+    "loss": "binary_crossentropy",
+    "metrics": "['AUC', 'logloss']",
+    "min_categr_count": "1",
+    "model": "AutoInt",
+    "model_id": "AutoInt_movielenslatest_x1_006_a5e56596",
+    "model_root": "./Movielens/AutoInt_movielenslatest_x1/",
+    "monitor": "AUC",
+    "monitor_mode": "max",
+    "net_dropout": "0.1",
+    "net_regularizer": "0",
+    "num_heads": "4",
+    "num_workers": "3",
+    "optimizer": "adam",
+    "patience": "2",
+    "pickle_feature_encoder": "True",
+    "save_best_only": "True",
+    "seed": "2021",
+    "shuffle": "True",
+    "task": "binary_classification",
+    "test_data": "../data/Movielens/MovielensLatest_x1/test.csv",
+    "train_data": "../data/Movielens/MovielensLatest_x1/train.csv",
+    "use_hdf5": "True",
+    "use_residual": "True",
+    "use_scale": "True",
+    "use_wide": "True",
+    "valid_data": "../data/Movielens/MovielensLatest_x1/valid.csv",
+    "verbose": "1",
+    "version": "pytorch"
+}
+2022-07-03 22:29:05,839 P13120 INFO Set up feature encoder...
+2022-07-03 22:29:05,839 P13120 INFO Load feature_map from json: ../data/Movielens/movielenslatest_x1_cd32d937/feature_map.json
+2022-07-03 22:29:05,839 P13120 INFO Loading data...
+2022-07-03 22:29:05,841 P13120 INFO Loading data from h5: ../data/Movielens/movielenslatest_x1_cd32d937/train.h5
+2022-07-03 22:29:05,867 P13120 INFO Loading data from h5: ../data/Movielens/movielenslatest_x1_cd32d937/valid.h5
+2022-07-03 22:29:05,875 P13120 INFO Train samples: total/1404801, pos/467878, neg/936923, ratio/33.31%, blocks/1
+2022-07-03 22:29:05,875 P13120 INFO Validation samples: total/401372, pos/134225, neg/267147, ratio/33.44%, blocks/1
+2022-07-03 22:29:05,875 P13120 INFO Loading train data done.
+2022-07-03 22:29:10,016 P13120 INFO Total number of parameters: 1383799.
+2022-07-03 22:29:10,017 P13120 INFO Start training: 343 batches/epoch
+2022-07-03 22:29:10,017 P13120 INFO ************ Epoch=1 start ************
+2022-07-03 22:30:13,019 P13120 INFO [Metrics] AUC: 0.937663 - logloss: 0.284440
+2022-07-03 22:30:13,020 P13120 INFO Save best model: monitor(max): 0.937663
+2022-07-03 22:30:13,028 P13120 INFO --- 343/343 batches finished ---
+2022-07-03 22:30:13,058 P13120 INFO Train loss: 0.385147
+2022-07-03 22:30:13,058 P13120 INFO ************ Epoch=1 end ************
+2022-07-03 22:31:18,612 P13120 INFO [Metrics] AUC: 0.946182 - logloss: 0.287991
+2022-07-03 22:31:18,613 P13120 INFO Save best model: monitor(max): 0.946182
+2022-07-03 22:31:18,622 P13120 INFO --- 343/343 batches finished ---
+2022-07-03 22:31:18,655 P13120 INFO Train loss: 0.368093
+2022-07-03 22:31:18,655 P13120 INFO ************ Epoch=2 end ************
+2022-07-03 22:32:24,765 P13120 INFO [Metrics] AUC: 0.950263 - logloss: 0.250355
+2022-07-03 22:32:24,766 P13120 INFO Save best model: monitor(max): 0.950263
+2022-07-03 22:32:24,775 P13120 INFO --- 343/343 batches finished ---
+2022-07-03 22:32:24,805 P13120 INFO Train loss: 0.369451
+2022-07-03 22:32:24,805 P13120 INFO ************ Epoch=3 end ************
+2022-07-03 22:33:30,191 P13120 INFO [Metrics] AUC: 0.951988 - logloss: 0.253689
+2022-07-03 22:33:30,191 P13120 INFO Save best model: monitor(max): 0.951988
+2022-07-03 22:33:30,200 P13120 INFO --- 343/343 batches finished ---
+2022-07-03 22:33:30,236 P13120 INFO Train loss: 0.372838
+2022-07-03 22:33:30,236 P13120 INFO ************ Epoch=4 end ************
+2022-07-03 22:34:34,897 P13120 INFO [Metrics] AUC: 0.953812 - logloss: 0.242734
+2022-07-03 22:34:34,897 P13120 INFO Save best model: monitor(max): 0.953812
+2022-07-03 22:34:34,907 P13120 INFO --- 343/343 batches finished ---
+2022-07-03 22:34:34,938 P13120 INFO Train loss: 0.375296
+2022-07-03 22:34:34,938 P13120 INFO ************ Epoch=5 end ************
+2022-07-03 22:35:41,128 P13120 INFO [Metrics] AUC: 0.954291 - logloss: 0.239010
+2022-07-03 22:35:41,129 P13120 INFO Save best model: monitor(max): 0.954291
+2022-07-03 22:35:41,138 P13120 INFO --- 343/343 batches finished ---
+2022-07-03 22:35:41,166 P13120 INFO Train loss: 0.376394
+2022-07-03 22:35:41,167 P13120 INFO ************ Epoch=6 end ************
+2022-07-03 22:36:47,508 P13120 INFO [Metrics] AUC: 0.954845 - logloss: 0.238665
+2022-07-03 22:36:47,509 P13120 INFO Save best model: monitor(max): 0.954845
+2022-07-03 22:36:47,518 P13120 INFO --- 343/343 batches finished ---
+2022-07-03 22:36:47,556 P13120 INFO Train loss: 0.377731
+2022-07-03 22:36:47,557 P13120 INFO ************ Epoch=7 end ************
+2022-07-03 22:37:52,600 P13120 INFO [Metrics] AUC: 0.954765 - logloss: 0.238342
+2022-07-03 22:37:52,600 P13120 INFO Monitor(max) STOP: 0.954765 !
+2022-07-03 22:37:52,600 P13120 INFO Reduce learning rate on plateau: 0.000100
+2022-07-03 22:37:52,600 P13120 INFO --- 343/343 batches finished ---
+2022-07-03 22:37:52,626 P13120 INFO Train loss: 0.378794
+2022-07-03 22:37:52,627 P13120 INFO ************ Epoch=8 end ************
+2022-07-03 22:38:57,616 P13120 INFO [Metrics] AUC: 0.967635 - logloss: 0.206114
+2022-07-03 22:38:57,616 P13120 INFO Save best model: monitor(max): 0.967635
+2022-07-03 22:38:57,625 P13120 INFO --- 343/343 batches finished ---
+2022-07-03 22:38:57,656 P13120 INFO Train loss: 0.274431
+2022-07-03 22:38:57,656 P13120 INFO ************ Epoch=9 end ************
+2022-07-03 22:40:02,269 P13120 INFO [Metrics] AUC: 0.969328 - logloss: 0.214030
+2022-07-03 22:40:02,270 P13120 INFO Save best model: monitor(max): 0.969328
+2022-07-03 22:40:02,279 P13120 INFO --- 343/343 batches finished ---
+2022-07-03 22:40:02,311 P13120 INFO Train loss: 0.182387
+2022-07-03 22:40:02,311 P13120 INFO ************ Epoch=10 end ************
+2022-07-03 22:41:08,341 P13120 INFO [Metrics] AUC: 0.967850 - logloss: 0.240925
+2022-07-03 22:41:08,342 P13120 INFO Monitor(max) STOP: 0.967850 !
+2022-07-03 22:41:08,342 P13120 INFO Reduce learning rate on plateau: 0.000010
+2022-07-03 22:41:08,342 P13120 INFO --- 343/343 batches finished ---
+2022-07-03 22:41:08,373 P13120 INFO Train loss: 0.134998
+2022-07-03 22:41:08,373 P13120 INFO ************ Epoch=11 end ************
+2022-07-03 22:42:13,252 P13120 INFO [Metrics] AUC: 0.967451 - logloss: 0.254764
+2022-07-03 22:42:13,252 P13120 INFO Monitor(max) STOP: 0.967451 !
+2022-07-03 22:42:13,252 P13120 INFO Reduce learning rate on plateau: 0.000001
+2022-07-03 22:42:13,253 P13120 INFO Early stopping at epoch=12
+2022-07-03 22:42:13,253 P13120 INFO --- 343/343 batches finished ---
+2022-07-03 22:42:13,282 P13120 INFO Train loss: 0.103227
+2022-07-03 22:42:13,282 P13120 INFO Training finished.
+2022-07-03 22:42:13,282 P13120 INFO Load best model: /home/FuxiCTR/benchmarks/Movielens/AutoInt_movielenslatest_x1/movielenslatest_x1_cd32d937/AutoInt_movielenslatest_x1_006_a5e56596.model
+2022-07-03 22:42:18,179 P13120 INFO ****** Validation evaluation ******
+2022-07-03 22:42:20,947 P13120 INFO [Metrics] AUC: 0.969328 - logloss: 0.214030
+2022-07-03 22:42:20,984 P13120 INFO ******** Test evaluation ********
+2022-07-03 22:42:20,984 P13120 INFO Loading data...
+2022-07-03 22:42:20,984 P13120 INFO Loading data from h5: ../data/Movielens/movielenslatest_x1_cd32d937/test.h5
+2022-07-03 22:42:20,988 P13120 INFO Test samples: total/200686, pos/66850, neg/133836, ratio/33.31%, blocks/1
+2022-07-03 22:42:20,988 P13120 INFO Loading test data done.
+2022-07-03 22:42:22,481 P13120 INFO [Metrics] AUC: 0.969188 - logloss: 0.214772

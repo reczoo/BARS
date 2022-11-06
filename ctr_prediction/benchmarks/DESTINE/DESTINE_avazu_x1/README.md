@@ -5,20 +5,21 @@ A hands-on guide to run the DESTINE model on the Avazu_x1 dataset.
 Author: [XUEPAI](https://github.com/xue-pai)
 
 ### Index
+
 [Environments](#Environments) | [Dataset](#Dataset) | [Code](#Code) | [Results](#Results) | [Logs](#Logs)
 
 ### Environments
-+ Hardware
 
++ Hardware
+  
   ```python
   CPU: Intel(R) Xeon(R) Gold 6278C CPU @ 2.60GHz
   GPU: Tesla V100 32G
   RAM: 755G
-
   ```
 
 + Software
-
+  
   ```python
   CUDA: 10.2
   python: 3.6.4
@@ -30,45 +31,45 @@ Author: [XUEPAI](https://github.com/xue-pai)
   pyyaml: 5.4.1
   h5py: 2.8.0
   tqdm: 4.60.0
-  fuxictr: 1.1.1
-
+  fuxictr: 1.2.2
   ```
 
 ### Dataset
-Dataset ID: [Avazu_x1](https://github.com/openbenchmark/BARS/blob/master/ctr_prediction/datasets/Avazu/README.md#Avazu_x1). Please refer to the dataset details to get data ready.
+
+Dataset ID: [Avazu_x1](https://github.com/openbenchmark/BARS/blob/master/ctr_prediction/datasets/Avazu#Avazu_x1). Please refer to the dataset details to get data ready.
 
 ### Code
 
-We use [FuxiCTR-v1.1.1](https://github.com/xue-pai/FuxiCTR/tree/v1.1.1) for this experiment. See the model code: [DESTINE](https://github.com/xue-pai/FuxiCTR/blob/v1.1.1/fuxictr/pytorch/models/DESTINE.py).
+We use [FuxiCTR-v1.2.2](https://github.com/xue-pai/FuxiCTR/tree/v1.2.2) for this experiment. See the model code: [DESTINE](https://github.com/xue-pai/FuxiCTR/blob/v1.2.2/fuxictr/pytorch/models/DESTINE.py).
 
 Running steps:
 
-1. Download [FuxiCTR-v1.1.1](https://github.com/xue-pai/FuxiCTR/archive/refs/tags/v1.1.1.zip) and install all the dependencies listed in the [environments](#environments). Then modify [run_expid.py](./run_expid.py#L5) to add the FuxiCTR library to system path
-    
-    ```python
-    sys.path.append('YOUR_PATH_TO_FuxiCTR/')
-    ```
+1. Download [FuxiCTR-v1.2.2](https://github.com/xue-pai/FuxiCTR/archive/refs/tags/v1.2.2.zip) and install all the dependencies listed in the [environments](#environments). Then modify [fuxictr_version.py](./fuxictr_version.py#L3) to add the FuxiCTR library to system path
+   
+   ```python
+   sys.path.append('YOUR_PATH_TO_FuxiCTR/')
+   ```
 
 2. Create a data directory and put the downloaded csv files in `../data/Avazu/Avazu_x1`.
 
 3. Both `dataset_config.yaml` and `model_config.yaml` files are available in [DESTINE_avazu_x1_tuner_config_02](./DESTINE_avazu_x1_tuner_config_02). Make sure the data paths in `dataset_config.yaml` are correctly set to what we create in the last step.
 
 4. Run the following script to start.
-
-    ```bash
-    cd DESTINE_avazu_x1
-    nohup python run_expid.py --config ./DESTINE_avazu_x1_tuner_config_02 --expid DESTINE_avazu_x1_016_61d63533 --gpu 0 > run.log &
-    tail -f run.log
-    ```
+   
+   ```bash
+   cd DESTINE_avazu_x1
+   nohup python run_expid.py --config ./DESTINE_avazu_x1_tuner_config_02 --expid DESTINE_avazu_x1_016_61d63533 --gpu 0 > run.log &
+   tail -f run.log
+   ```
 
 ### Results
 
-| AUC | logloss  |
-|:--------------------:|:--------------------:|
-| 0.766051 | 0.366124  |
-
+| AUC      | logloss  |
+|:--------:|:--------:|
+| 0.766051 | 0.366124 |
 
 ### Logs
+
 ```python
 2022-02-19 08:00:44,920 P80226 INFO {
     "att_dropout": "0",
@@ -182,7 +183,7 @@ Running steps:
 2022-02-19 10:42:48,259 P80226 INFO --- 6910/6910 batches finished ---
 2022-02-19 10:42:48,297 P80226 INFO Train loss: 0.390062
 2022-02-19 10:42:48,298 P80226 INFO Training finished.
-2022-02-19 10:42:48,298 P80226 INFO Load best model: /cache/FuxiCTR/benchmarks/Avazu/DESTINE_avazu_x1/avazu_x1_3fb65689/DESTINE_avazu_x1_016_61d63533.model
+2022-02-19 10:42:48,298 P80226 INFO Load best model: /cache/FuxiCTR/benchmarks_modelarts/Avazu/DESTINE_avazu_x1/avazu_x1_3fb65689/DESTINE_avazu_x1_016_61d63533.model
 2022-02-19 10:42:50,933 P80226 INFO ****** Validation evaluation ******
 2022-02-19 10:43:11,722 P80226 INFO [Metrics] AUC: 0.748386 - logloss: 0.395397
 2022-02-19 10:43:11,813 P80226 INFO ******** Test evaluation ********
@@ -191,5 +192,4 @@ Running steps:
 2022-02-19 10:43:12,660 P80226 INFO Test samples: total/8085794, pos/1232985, neg/6852809, ratio/15.25%, blocks/1
 2022-02-19 10:43:12,660 P80226 INFO Loading test data done.
 2022-02-19 10:43:55,194 P80226 INFO [Metrics] AUC: 0.766051 - logloss: 0.366124
-
 ```

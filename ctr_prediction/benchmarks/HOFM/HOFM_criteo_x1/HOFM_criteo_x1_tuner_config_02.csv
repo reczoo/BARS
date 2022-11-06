@@ -1,0 +1,1 @@
+ 20220128-123435,[command] python run_expid.py --version pytorch --config Criteo/HOFM_criteo_x1/HOFM_criteo_x1_tuner_config_02 --expid HOFM_criteo_x1_001_1b741ae5 --gpu 0,[exp_id] HOFM_criteo_x1_001_1b741ae5,[dataset_id] criteo_x1_7b681156,[train] N.A.,[val] AUC: 0.805172 - logloss: 0.446455,[test] AUC: 0.805478 - logloss: 0.446054

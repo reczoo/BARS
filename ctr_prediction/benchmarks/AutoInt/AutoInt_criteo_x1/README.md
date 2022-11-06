@@ -5,20 +5,21 @@ A hands-on guide to run the AutoInt model on the Criteo_x1 dataset.
 Author: [XUEPAI](https://github.com/xue-pai)
 
 ### Index
-[Environments](#Environments) | [Dataset](#Dataset) | [Code](#Code) | [Results](#Results) | [Logs](#Logs)
+
+[Environments](#Environments) | [Dataset](#Dataset) | [Code](#Code) | [Results](#Results) | [Logs](#Logs) | [Revision History](#Revision-History)
 
 ### Environments
-+ Hardware
 
++ Hardware
+  
   ```python
   CPU: Intel(R) Xeon(R) Gold 6278C CPU @ 2.60GHz
   GPU: Tesla V100 32G
   RAM: 755G
-
   ```
 
 + Software
-
+  
   ```python
   CUDA: 10.2
   python: 3.6.4
@@ -30,75 +31,49 @@ Author: [XUEPAI](https://github.com/xue-pai)
   pyyaml: 5.4.1
   h5py: 2.8.0
   tqdm: 4.60.0
-  fuxictr: 1.1.0
-
+  fuxictr: 1.2.2
   ```
 
 ### Dataset
-Dataset ID: [Criteo_x1](https://github.com/openbenchmark/BARS/blob/master/ctr_prediction/datasets/Criteo/README.md#Criteo_x1). Please refer to the dataset details to get data ready.
+
+Dataset ID: [Criteo_x1](https://github.com/openbenchmark/BARS/blob/master/ctr_prediction/datasets/Criteo#Criteo_x1). Please refer to the dataset details to get data ready.
 
 ### Code
 
-We use [FuxiCTR-v1.1.0](https://github.com/xue-pai/FuxiCTR/tree/v1.1.0) for this experiment. See the model code: [AutoInt](https://github.com/xue-pai/FuxiCTR/blob/v1.1.0/fuxictr/pytorch/models/AutoInt.py).
+We use [FuxiCTR-v1.2.2](https://github.com/xue-pai/FuxiCTR/tree/v1.2.2) for this experiment. See the model code: [AutoInt](https://github.com/xue-pai/FuxiCTR/blob/v1.2.2/fuxictr/pytorch/models/AutoInt.py).
 
 Running steps:
 
-1. Download [FuxiCTR-v1.1.0](https://github.com/xue-pai/FuxiCTR/archive/refs/tags/v1.1.0.zip) and install all the dependencies listed in the [environments](#environments). Then modify [run_expid.py](./run_expid.py#L5) to add the FuxiCTR library to system path
-    
-    ```python
-    sys.path.append('YOUR_PATH_TO_FuxiCTR/')
-    ```
+1. Download [FuxiCTR-v1.2.2](https://github.com/xue-pai/FuxiCTR/archive/refs/tags/v1.2.2.zip) and install all the dependencies listed in the [environments](#environments). Then modify [fuxictr_version.py](./fuxictr_version.py#L3) to add the FuxiCTR library to system path
+   
+   ```python
+   sys.path.append('YOUR_PATH_TO_FuxiCTR/')
+   ```
 
 2. Create a data directory and put the downloaded csv files in `../data/Criteo/Criteo_x1`.
 
-3. Both `dataset_config.yaml` and `model_config.yaml` files are available in [AutoInt_criteo_x1_tuner_config_02](./AutoInt_criteo_x1_tuner_config_02). Make sure the data paths in `dataset_config.yaml` are correctly set to what we create in the last step.
+3. Both `dataset_config.yaml` and `model_config.yaml` files are available in [AutoInt_criteo_x1_tuner_config_04](./AutoInt_criteo_x1_tuner_config_04). Make sure the data paths in `dataset_config.yaml` are correctly set to what we create in the last step.
 
 4. Run the following script to start.
-
-    ```bash
-    cd AutoInt_criteo_x1
-    nohup python run_expid.py --config ./AutoInt_criteo_x1_tuner_config_02 --expid AutoInt_criteo_x1_013_ccbbf1d8 --gpu 0 > run.log &
-    tail -f run.log
-    ```
+   
+   ```bash
+   cd AutoInt_criteo_x1
+   nohup python run_expid.py --config ./AutoInt_criteo_x1_tuner_config_04 --expid AutoInt_criteo_x1_012_e71394ec --gpu 0 > run.log &
+   tail -f run.log
+   ```
 
 ### Results
 
-Total 24 runs:
-| Runs | AUC | logloss  |
-|:--------------------:|:--------------------:|:--------------------:|
-| 1 | 0.811981 | 0.439840  |
-| 2 | 0.811905 | 0.439829  |
-| 3 | 0.811579 | 0.440198  |
-| 4 | 0.811557 | 0.440149  |
-| 5 | 0.811455 | 0.440230  |
-| 6 | 0.811243 | 0.440513  |
-| 7 | 0.810873 | 0.440857  |
-| 8 | 0.810578 | 0.441131  |
-| 9 | 0.810506 | 0.441105  |
-| 10 | 0.809768 | 0.441853  |
-| 11 | 0.809650 | 0.441965  |
-| 12 | 0.809357 | 0.442219  |
-| 13 | 0.809302 | 0.442284  |
-| 14 | 0.809241 | 0.442273  |
-| 15 | 0.807748 | 0.443683  |
-| 16 | 0.807171 | 0.444215  |
-| 17 | 0.807063 | 0.444298  |
-| 18 | 0.806792 | 0.444571  |
-| 19 | 0.806303 | 0.445028  |
-| 20 | 0.806103 | 0.445175  |
-| 21 | 0.805557 | 0.445535  |
-| 22 | 0.804361 | 0.446606  |
-| 23 | 0.803948 | 0.446969  |
-| 24 | 0.801775 | 0.449138  |
-| Avg | 0.8085756666666666 | 0.4429026666666665 |
-| Std | &#177;0.0027921850861924546 | &#177;0.0025262125251494993 |
-
+| AUC      | logloss  |
+|:--------:|:--------:|
+| 0.812593 | 0.439238 |
 
 ### Logs
+
 ```python
-2022-01-22 09:40:30,138 P846 INFO {
-    "attention_dim": "128",
-    "attention_layers": "6",
+2022-06-27 15:19:40,988 P31042 INFO {
+    "attention_dim": "256",
+    "attention_layers": "3",
     "batch_norm": "False",
     "batch_size": "4096",
     "data_format": "csv",
@@ -112,24 +87,23 @@ Total 24 runs:
     "epochs": "100",
     "every_x_epochs": "1",
     "feature_cols": "[{'active': True, 'dtype': 'float', 'name': ['I1', 'I2', 'I3', 'I4', 'I5', 'I6', 'I7', 'I8', 'I9', 'I10', 'I11', 'I12', 'I13'], 'type': 'numeric'}, {'active': True, 'dtype': 'float', 'name': ['C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9', 'C10', 'C11', 'C12', 'C13', 'C14', 'C15', 'C16', 'C17', 'C18', 'C19', 'C20', 'C21', 'C22', 'C23', 'C24', 'C25', 'C26'], 'type': 'categorical'}]",
-    "gpu": "4",
+    "gpu": "3",
     "label_col": "{'dtype': 'float', 'name': 'label'}",
-    "layer_norm": "False",
+    "layer_norm": "True",
     "learning_rate": "0.001",
     "loss": "binary_crossentropy",
     "metrics": "['AUC', 'logloss']",
     "min_categr_count": "1",
     "model": "AutoInt",
-    "model_id": "AutoInt_criteo_x1_013_ccbbf1d8",
+    "model_id": "AutoInt_criteo_x1_012_e71394ec",
     "model_root": "./Criteo/AutoInt_criteo_x1/",
     "monitor": "AUC",
     "monitor_mode": "max",
     "net_dropout": "0",
     "net_regularizer": "0",
-    "num_heads": "2",
+    "num_heads": "4",
     "num_workers": "3",
     "optimizer": "adam",
-    "partition_block_size": "-1",
     "patience": "2",
     "pickle_feature_encoder": "True",
     "save_best_only": "True",
@@ -140,140 +114,108 @@ Total 24 runs:
     "train_data": "../data/Criteo/Criteo_x1/train.csv",
     "use_hdf5": "True",
     "use_residual": "True",
-    "use_scale": "False",
+    "use_scale": "True",
     "use_wide": "True",
     "valid_data": "../data/Criteo/Criteo_x1/valid.csv",
-    "verbose": "1",
+    "verbose": "0",
     "version": "pytorch"
 }
-2022-01-22 09:40:30,139 P846 INFO Set up feature encoder...
-2022-01-22 09:40:30,139 P846 INFO Load feature_map from json: ../data/Criteo/criteo_x1_7b681156/feature_map.json
-2022-01-22 09:40:30,139 P846 INFO Loading data...
-2022-01-22 09:40:30,140 P846 INFO Loading data from h5: ../data/Criteo/criteo_x1_7b681156/train.h5
-2022-01-22 09:40:35,397 P846 INFO Loading data from h5: ../data/Criteo/criteo_x1_7b681156/valid.h5
-2022-01-22 09:40:36,573 P846 INFO Train samples: total/33003326, pos/8456369, neg/24546957, ratio/25.62%, blocks/1
-2022-01-22 09:40:36,573 P846 INFO Validation samples: total/8250124, pos/2114300, neg/6135824, ratio/25.63%, blocks/1
-2022-01-22 09:40:36,573 P846 INFO Loading train data done.
-2022-01-22 09:40:45,239 P846 INFO Total number of parameters: 23952741.
-2022-01-22 09:40:45,239 P846 INFO Start training: 8058 batches/epoch
-2022-01-22 09:40:45,239 P846 INFO ************ Epoch=1 start ************
-2022-01-22 10:35:28,992 P846 INFO [Metrics] AUC: 0.798473 - logloss: 0.452104
-2022-01-22 10:35:28,994 P846 INFO Save best model: monitor(max): 0.798473
-2022-01-22 10:35:29,308 P846 INFO --- 8058/8058 batches finished ---
-2022-01-22 10:35:29,348 P846 INFO Train loss: 0.467688
-2022-01-22 10:35:29,348 P846 INFO ************ Epoch=1 end ************
-2022-01-22 11:30:08,201 P846 INFO [Metrics] AUC: 0.802019 - logloss: 0.449048
-2022-01-22 11:30:08,203 P846 INFO Save best model: monitor(max): 0.802019
-2022-01-22 11:30:08,311 P846 INFO --- 8058/8058 batches finished ---
-2022-01-22 11:30:08,369 P846 INFO Train loss: 0.462339
-2022-01-22 11:30:08,369 P846 INFO ************ Epoch=2 end ************
-2022-01-22 12:24:47,038 P846 INFO [Metrics] AUC: 0.803972 - logloss: 0.447137
-2022-01-22 12:24:47,040 P846 INFO Save best model: monitor(max): 0.803972
-2022-01-22 12:24:47,154 P846 INFO --- 8058/8058 batches finished ---
-2022-01-22 12:24:47,200 P846 INFO Train loss: 0.459982
-2022-01-22 12:24:47,200 P846 INFO ************ Epoch=3 end ************
-2022-01-22 13:19:27,421 P846 INFO [Metrics] AUC: 0.804585 - logloss: 0.446581
-2022-01-22 13:19:27,422 P846 INFO Save best model: monitor(max): 0.804585
-2022-01-22 13:19:27,534 P846 INFO --- 8058/8058 batches finished ---
-2022-01-22 13:19:27,583 P846 INFO Train loss: 0.458843
-2022-01-22 13:19:27,583 P846 INFO ************ Epoch=4 end ************
-2022-01-22 14:14:07,823 P846 INFO [Metrics] AUC: 0.805493 - logloss: 0.445809
-2022-01-22 14:14:07,825 P846 INFO Save best model: monitor(max): 0.805493
-2022-01-22 14:14:07,946 P846 INFO --- 8058/8058 batches finished ---
-2022-01-22 14:14:07,990 P846 INFO Train loss: 0.458360
-2022-01-22 14:14:07,990 P846 INFO ************ Epoch=5 end ************
-2022-01-22 15:08:46,567 P846 INFO [Metrics] AUC: 0.805906 - logloss: 0.445856
-2022-01-22 15:08:46,569 P846 INFO Save best model: monitor(max): 0.805906
-2022-01-22 15:08:46,674 P846 INFO --- 8058/8058 batches finished ---
-2022-01-22 15:08:46,724 P846 INFO Train loss: 0.458048
-2022-01-22 15:08:46,724 P846 INFO ************ Epoch=6 end ************
-2022-01-22 16:03:25,779 P846 INFO [Metrics] AUC: 0.806013 - logloss: 0.445721
-2022-01-22 16:03:25,780 P846 INFO Save best model: monitor(max): 0.806013
-2022-01-22 16:03:25,899 P846 INFO --- 8058/8058 batches finished ---
-2022-01-22 16:03:25,945 P846 INFO Train loss: 0.457921
-2022-01-22 16:03:25,946 P846 INFO ************ Epoch=7 end ************
-2022-01-22 16:58:02,932 P846 INFO [Metrics] AUC: 0.806363 - logloss: 0.444973
-2022-01-22 16:58:02,934 P846 INFO Save best model: monitor(max): 0.806363
-2022-01-22 16:58:03,049 P846 INFO --- 8058/8058 batches finished ---
-2022-01-22 16:58:03,098 P846 INFO Train loss: 0.457892
-2022-01-22 16:58:03,099 P846 INFO ************ Epoch=8 end ************
-2022-01-22 17:52:42,480 P846 INFO [Metrics] AUC: 0.806632 - logloss: 0.444690
-2022-01-22 17:52:42,482 P846 INFO Save best model: monitor(max): 0.806632
-2022-01-22 17:52:42,591 P846 INFO --- 8058/8058 batches finished ---
-2022-01-22 17:52:42,641 P846 INFO Train loss: 0.457761
-2022-01-22 17:52:42,642 P846 INFO ************ Epoch=9 end ************
-2022-01-22 18:47:22,252 P846 INFO [Metrics] AUC: 0.806644 - logloss: 0.444698
-2022-01-22 18:47:22,254 P846 INFO Save best model: monitor(max): 0.806644
-2022-01-22 18:47:22,367 P846 INFO --- 8058/8058 batches finished ---
-2022-01-22 18:47:22,420 P846 INFO Train loss: 0.459089
-2022-01-22 18:47:22,421 P846 INFO ************ Epoch=10 end ************
-2022-01-22 19:42:01,284 P846 INFO [Metrics] AUC: 0.806733 - logloss: 0.444949
-2022-01-22 19:42:01,286 P846 INFO Save best model: monitor(max): 0.806733
-2022-01-22 19:42:01,389 P846 INFO --- 8058/8058 batches finished ---
-2022-01-22 19:42:01,437 P846 INFO Train loss: 0.458006
-2022-01-22 19:42:01,437 P846 INFO ************ Epoch=11 end ************
-2022-01-22 20:36:39,089 P846 INFO [Metrics] AUC: 0.806890 - logloss: 0.444523
-2022-01-22 20:36:39,090 P846 INFO Save best model: monitor(max): 0.806890
-2022-01-22 20:36:39,228 P846 INFO --- 8058/8058 batches finished ---
-2022-01-22 20:36:39,276 P846 INFO Train loss: 0.457696
-2022-01-22 20:36:39,277 P846 INFO ************ Epoch=12 end ************
-2022-01-22 21:31:17,450 P846 INFO [Metrics] AUC: 0.807093 - logloss: 0.444321
-2022-01-22 21:31:17,452 P846 INFO Save best model: monitor(max): 0.807093
-2022-01-22 21:31:17,555 P846 INFO --- 8058/8058 batches finished ---
-2022-01-22 21:31:17,618 P846 INFO Train loss: 0.457722
-2022-01-22 21:31:17,618 P846 INFO ************ Epoch=13 end ************
-2022-01-22 22:25:55,936 P846 INFO [Metrics] AUC: 0.807269 - logloss: 0.444377
-2022-01-22 22:25:55,938 P846 INFO Save best model: monitor(max): 0.807269
-2022-01-22 22:25:56,043 P846 INFO --- 8058/8058 batches finished ---
-2022-01-22 22:25:56,095 P846 INFO Train loss: 0.457857
-2022-01-22 22:25:56,096 P846 INFO ************ Epoch=14 end ************
-2022-01-22 23:20:34,820 P846 INFO [Metrics] AUC: 0.807412 - logloss: 0.444048
-2022-01-22 23:20:34,822 P846 INFO Save best model: monitor(max): 0.807412
-2022-01-22 23:20:34,932 P846 INFO --- 8058/8058 batches finished ---
-2022-01-22 23:20:34,984 P846 INFO Train loss: 0.458057
-2022-01-22 23:20:34,985 P846 INFO ************ Epoch=15 end ************
-2022-01-23 00:15:14,073 P846 INFO [Metrics] AUC: 0.807526 - logloss: 0.444205
-2022-01-23 00:15:14,075 P846 INFO Save best model: monitor(max): 0.807526
-2022-01-23 00:15:14,179 P846 INFO --- 8058/8058 batches finished ---
-2022-01-23 00:15:14,229 P846 INFO Train loss: 0.458265
-2022-01-23 00:15:14,230 P846 INFO ************ Epoch=16 end ************
-2022-01-23 01:09:50,402 P846 INFO [Metrics] AUC: 0.807278 - logloss: 0.444094
-2022-01-23 01:09:50,403 P846 INFO Monitor(max) STOP: 0.807278 !
-2022-01-23 01:09:50,403 P846 INFO Reduce learning rate on plateau: 0.000100
-2022-01-23 01:09:50,403 P846 INFO --- 8058/8058 batches finished ---
-2022-01-23 01:09:50,453 P846 INFO Train loss: 0.458332
-2022-01-23 01:09:50,454 P846 INFO ************ Epoch=17 end ************
-2022-01-23 02:24:54,747 P846 INFO [Metrics] AUC: 0.811468 - logloss: 0.440358
-2022-01-23 02:24:54,749 P846 INFO Save best model: monitor(max): 0.811468
-2022-01-23 02:24:54,865 P846 INFO --- 8058/8058 batches finished ---
-2022-01-23 02:24:54,917 P846 INFO Train loss: 0.444361
-2022-01-23 02:24:54,917 P846 INFO ************ Epoch=18 end ************
-2022-01-23 04:12:57,256 P846 INFO [Metrics] AUC: 0.811719 - logloss: 0.440203
-2022-01-23 04:12:57,258 P846 INFO Save best model: monitor(max): 0.811719
-2022-01-23 04:12:57,374 P846 INFO --- 8058/8058 batches finished ---
-2022-01-23 04:12:57,424 P846 INFO Train loss: 0.437278
-2022-01-23 04:12:57,424 P846 INFO ************ Epoch=19 end ************
-2022-01-23 06:00:49,514 P846 INFO [Metrics] AUC: 0.811415 - logloss: 0.440747
-2022-01-23 06:00:49,516 P846 INFO Monitor(max) STOP: 0.811415 !
-2022-01-23 06:00:49,516 P846 INFO Reduce learning rate on plateau: 0.000010
-2022-01-23 06:00:49,516 P846 INFO --- 8058/8058 batches finished ---
-2022-01-23 06:00:49,567 P846 INFO Train loss: 0.433806
-2022-01-23 06:00:49,568 P846 INFO ************ Epoch=20 end ************
-2022-01-23 07:48:09,205 P846 INFO [Metrics] AUC: 0.807058 - logloss: 0.447093
-2022-01-23 07:48:09,206 P846 INFO Monitor(max) STOP: 0.807058 !
-2022-01-23 07:48:09,206 P846 INFO Reduce learning rate on plateau: 0.000001
-2022-01-23 07:48:09,206 P846 INFO Early stopping at epoch=21
-2022-01-23 07:48:09,206 P846 INFO --- 8058/8058 batches finished ---
-2022-01-23 07:48:09,255 P846 INFO Train loss: 0.422650
-2022-01-23 07:48:09,255 P846 INFO Training finished.
-2022-01-23 07:48:09,255 P846 INFO Load best model: /cache/FuxiCTR/benchmarks_modelarts/Criteo/AutoInt_criteo_x1/criteo_x1_7b681156/AutoInt_criteo_x1_013_ccbbf1d8.model
-2022-01-23 07:48:15,956 P846 INFO ****** Validation evaluation ******
-2022-01-23 07:51:50,119 P846 INFO [Metrics] AUC: 0.811719 - logloss: 0.440203
-2022-01-23 07:51:50,206 P846 INFO ******** Test evaluation ********
-2022-01-23 07:51:50,207 P846 INFO Loading data...
-2022-01-23 07:51:50,207 P846 INFO Loading data from h5: ../data/Criteo/criteo_x1_7b681156/test.h5
-2022-01-23 07:51:51,019 P846 INFO Test samples: total/4587167, pos/1174769, neg/3412398, ratio/25.61%, blocks/1
-2022-01-23 07:51:51,019 P846 INFO Loading test data done.
-2022-01-23 07:53:49,975 P846 INFO [Metrics] AUC: 0.811981 - logloss: 0.439840
-
+2022-06-27 15:19:40,989 P31042 INFO Set up feature encoder...
+2022-06-27 15:19:40,989 P31042 INFO Load feature_map from json: ../data/Criteo/criteo_x1_7b681156/feature_map.json
+2022-06-27 15:19:40,989 P31042 INFO Loading data...
+2022-06-27 15:19:40,991 P31042 INFO Loading data from h5: ../data/Criteo/criteo_x1_7b681156/train.h5
+2022-06-27 15:19:45,339 P31042 INFO Loading data from h5: ../data/Criteo/criteo_x1_7b681156/valid.h5
+2022-06-27 15:19:46,468 P31042 INFO Train samples: total/33003326, pos/8456369, neg/24546957, ratio/25.62%, blocks/1
+2022-06-27 15:19:46,469 P31042 INFO Validation samples: total/8250124, pos/2114300, neg/6135824, ratio/25.63%, blocks/1
+2022-06-27 15:19:46,469 P31042 INFO Loading train data done.
+2022-06-27 15:19:53,069 P31042 INFO Total number of parameters: 23364453.
+2022-06-27 15:19:53,069 P31042 INFO Start training: 8058 batches/epoch
+2022-06-27 15:19:53,069 P31042 INFO ************ Epoch=1 start ************
+2022-06-27 16:30:52,622 P31042 INFO [Metrics] AUC: 0.800618 - logloss: 0.450328
+2022-06-27 16:30:52,624 P31042 INFO Save best model: monitor(max): 0.800618
+2022-06-27 16:30:52,911 P31042 INFO --- 8058/8058 batches finished ---
+2022-06-27 16:30:52,950 P31042 INFO Train loss: 0.468593
+2022-06-27 16:30:52,950 P31042 INFO ************ Epoch=1 end ************
+2022-06-27 17:41:28,653 P31042 INFO [Metrics] AUC: 0.803271 - logloss: 0.448144
+2022-06-27 17:41:28,654 P31042 INFO Save best model: monitor(max): 0.803271
+2022-06-27 17:41:28,803 P31042 INFO --- 8058/8058 batches finished ---
+2022-06-27 17:41:28,853 P31042 INFO Train loss: 0.463523
+2022-06-27 17:41:28,853 P31042 INFO ************ Epoch=2 end ************
+2022-06-27 18:52:33,102 P31042 INFO [Metrics] AUC: 0.804691 - logloss: 0.446762
+2022-06-27 18:52:33,103 P31042 INFO Save best model: monitor(max): 0.804691
+2022-06-27 18:52:33,217 P31042 INFO --- 8058/8058 batches finished ---
+2022-06-27 18:52:33,258 P31042 INFO Train loss: 0.461980
+2022-06-27 18:52:33,259 P31042 INFO ************ Epoch=3 end ************
+2022-06-27 20:03:39,556 P31042 INFO [Metrics] AUC: 0.805641 - logloss: 0.445644
+2022-06-27 20:03:39,557 P31042 INFO Save best model: monitor(max): 0.805641
+2022-06-27 20:03:39,669 P31042 INFO --- 8058/8058 batches finished ---
+2022-06-27 20:03:39,721 P31042 INFO Train loss: 0.461438
+2022-06-27 20:03:39,721 P31042 INFO ************ Epoch=4 end ************
+2022-06-27 21:14:48,058 P31042 INFO [Metrics] AUC: 0.805922 - logloss: 0.445489
+2022-06-27 21:14:48,059 P31042 INFO Save best model: monitor(max): 0.805922
+2022-06-27 21:14:48,171 P31042 INFO --- 8058/8058 batches finished ---
+2022-06-27 21:14:48,211 P31042 INFO Train loss: 0.461560
+2022-06-27 21:14:48,211 P31042 INFO ************ Epoch=5 end ************
+2022-06-27 22:25:45,397 P31042 INFO [Metrics] AUC: 0.806306 - logloss: 0.445055
+2022-06-27 22:25:45,399 P31042 INFO Save best model: monitor(max): 0.806306
+2022-06-27 22:25:45,508 P31042 INFO --- 8058/8058 batches finished ---
+2022-06-27 22:25:45,552 P31042 INFO Train loss: 0.462317
+2022-06-27 22:25:45,552 P31042 INFO ************ Epoch=6 end ************
+2022-06-27 23:36:49,378 P31042 INFO [Metrics] AUC: 0.806968 - logloss: 0.444379
+2022-06-27 23:36:49,379 P31042 INFO Save best model: monitor(max): 0.806968
+2022-06-27 23:36:49,488 P31042 INFO --- 8058/8058 batches finished ---
+2022-06-27 23:36:49,539 P31042 INFO Train loss: 0.463473
+2022-06-27 23:36:49,539 P31042 INFO ************ Epoch=7 end ************
+2022-06-28 00:47:48,101 P31042 INFO [Metrics] AUC: 0.807107 - logloss: 0.444366
+2022-06-28 00:47:48,102 P31042 INFO Save best model: monitor(max): 0.807107
+2022-06-28 00:47:48,234 P31042 INFO --- 8058/8058 batches finished ---
+2022-06-28 00:47:48,282 P31042 INFO Train loss: 0.464622
+2022-06-28 00:47:48,282 P31042 INFO ************ Epoch=8 end ************
+2022-06-28 01:58:50,287 P31042 INFO [Metrics] AUC: 0.807415 - logloss: 0.443980
+2022-06-28 01:58:50,289 P31042 INFO Save best model: monitor(max): 0.807415
+2022-06-28 01:58:50,399 P31042 INFO --- 8058/8058 batches finished ---
+2022-06-28 01:58:50,455 P31042 INFO Train loss: 0.465313
+2022-06-28 01:58:50,455 P31042 INFO ************ Epoch=9 end ************
+2022-06-28 03:09:52,083 P31042 INFO [Metrics] AUC: 0.807325 - logloss: 0.444099
+2022-06-28 03:09:52,084 P31042 INFO Monitor(max) STOP: 0.807325 !
+2022-06-28 03:09:52,084 P31042 INFO Reduce learning rate on plateau: 0.000100
+2022-06-28 03:09:52,084 P31042 INFO --- 8058/8058 batches finished ---
+2022-06-28 03:09:52,134 P31042 INFO Train loss: 0.465634
+2022-06-28 03:09:52,134 P31042 INFO ************ Epoch=10 end ************
+2022-06-28 04:20:52,710 P31042 INFO [Metrics] AUC: 0.812125 - logloss: 0.439700
+2022-06-28 04:20:52,711 P31042 INFO Save best model: monitor(max): 0.812125
+2022-06-28 04:20:52,809 P31042 INFO --- 8058/8058 batches finished ---
+2022-06-28 04:20:52,851 P31042 INFO Train loss: 0.446201
+2022-06-28 04:20:52,851 P31042 INFO ************ Epoch=11 end ************
+2022-06-28 05:31:48,055 P31042 INFO [Metrics] AUC: 0.812279 - logloss: 0.439670
+2022-06-28 05:31:48,056 P31042 INFO Save best model: monitor(max): 0.812279
+2022-06-28 05:31:48,156 P31042 INFO --- 8058/8058 batches finished ---
+2022-06-28 05:31:48,211 P31042 INFO Train loss: 0.436354
+2022-06-28 05:31:48,211 P31042 INFO ************ Epoch=12 end ************
+2022-06-28 06:42:36,333 P31042 INFO [Metrics] AUC: 0.811213 - logloss: 0.440935
+2022-06-28 06:42:36,334 P31042 INFO Monitor(max) STOP: 0.811213 !
+2022-06-28 06:42:36,334 P31042 INFO Reduce learning rate on plateau: 0.000010
+2022-06-28 06:42:36,334 P31042 INFO --- 8058/8058 batches finished ---
+2022-06-28 06:42:36,388 P31042 INFO Train loss: 0.431064
+2022-06-28 06:42:36,389 P31042 INFO ************ Epoch=13 end ************
+2022-06-28 07:53:36,846 P31042 INFO [Metrics] AUC: 0.802108 - logloss: 0.455672
+2022-06-28 07:53:36,847 P31042 INFO Monitor(max) STOP: 0.802108 !
+2022-06-28 07:53:36,847 P31042 INFO Reduce learning rate on plateau: 0.000001
+2022-06-28 07:53:36,847 P31042 INFO Early stopping at epoch=14
+2022-06-28 07:53:36,848 P31042 INFO --- 8058/8058 batches finished ---
+2022-06-28 07:53:36,899 P31042 INFO Train loss: 0.413014
+2022-06-28 07:53:36,899 P31042 INFO Training finished.
+2022-06-28 07:53:36,899 P31042 INFO Load best model: /cache/FuxiCTR/benchmarks/Criteo/AutoInt_criteo_x1/criteo_x1_7b681156/AutoInt_criteo_x1_012_e71394ec.model
+2022-06-28 07:53:41,894 P31042 INFO ****** Validation evaluation ******
+2022-06-28 07:56:45,439 P31042 INFO [Metrics] AUC: 0.812279 - logloss: 0.439670
+2022-06-28 07:56:45,523 P31042 INFO ******** Test evaluation ********
+2022-06-28 07:56:45,524 P31042 INFO Loading data...
+2022-06-28 07:56:45,524 P31042 INFO Loading data from h5: ../data/Criteo/criteo_x1_7b681156/test.h5
+2022-06-28 07:56:46,334 P31042 INFO Test samples: total/4587167, pos/1174769, neg/3412398, ratio/25.61%, blocks/1
+2022-06-28 07:56:46,334 P31042 INFO Loading test data done.
+2022-06-28 07:58:28,092 P31042 INFO [Metrics] AUC: 0.812593 - logloss: 0.439238
 ```
+
+### Revision History
+
+- [Version 1](https://github.com/openbenchmark/BARS/tree/88d3a0faa4565e975141ae89a52d35d3a8b56eda/ctr_prediction/benchmarks/AutoInt/AutoInt_criteo_x1#autoint_criteo_x1): deprecated due to bug fix [#30](https://github.com/xue-pai/FuxiCTR/issues/30) of FuxiCTR.

@@ -110,7 +110,7 @@
 2022-02-19 10:42:48,259 P80226 INFO --- 6910/6910 batches finished ---
 2022-02-19 10:42:48,297 P80226 INFO Train loss: 0.390062
 2022-02-19 10:42:48,298 P80226 INFO Training finished.
-2022-02-19 10:42:48,298 P80226 INFO Load best model: /cache/FuxiCTR/benchmarks/Avazu/DESTINE_avazu_x1/avazu_x1_3fb65689/DESTINE_avazu_x1_016_61d63533.model
+2022-02-19 10:42:48,298 P80226 INFO Load best model: /cache/FuxiCTR/benchmarks_modelarts/Avazu/DESTINE_avazu_x1/avazu_x1_3fb65689/DESTINE_avazu_x1_016_61d63533.model
 2022-02-19 10:42:50,933 P80226 INFO ****** Validation evaluation ******
 2022-02-19 10:43:11,722 P80226 INFO [Metrics] AUC: 0.748386 - logloss: 0.395397
 2022-02-19 10:43:11,813 P80226 INFO ******** Test evaluation ********

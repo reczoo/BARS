@@ -1,4 +1,337 @@
-DCNv2_movielenslatest_x1_001_98ea1c72:
+DCNv2_movielenslatest_x1_001_6f5aa7ea:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Movielens/DCN_movielenslatest_x1/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [400, 400, 400]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_movielenslatest_x1_002_2b19eb70:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Movielens/DCN_movielenslatest_x1/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [400, 400, 400]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_movielenslatest_x1_003_73963852:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Movielens/DCN_movielenslatest_x1/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.4
+    net_regularizer: 0
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [400, 400, 400]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_movielenslatest_x1_004_253306a9:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Movielens/DCN_movielenslatest_x1/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_cross_layers: 4
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [400, 400, 400]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_movielenslatest_x1_005_adeeaea6:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Movielens/DCN_movielenslatest_x1/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_cross_layers: 4
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [400, 400, 400]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_movielenslatest_x1_006_85b937d7:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Movielens/DCN_movielenslatest_x1/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.4
+    net_regularizer: 0
+    num_cross_layers: 4
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [400, 400, 400]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_movielenslatest_x1_007_a3715206:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Movielens/DCN_movielenslatest_x1/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_cross_layers: 5
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [400, 400, 400]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_movielenslatest_x1_008_5cff8ec3:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Movielens/DCN_movielenslatest_x1/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_cross_layers: 5
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [400, 400, 400]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_movielenslatest_x1_009_79bfff1d:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.001
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Movielens/DCN_movielenslatest_x1/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.4
+    net_regularizer: 0
+    num_cross_layers: 5
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [400, 400, 400]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_movielenslatest_x1_010_a3141461:
     batch_norm: true
     batch_size: 4096
     dataset_id: movielenslatest_x1_cd32d937
@@ -19,6 +352,302 @@ DCNv2_movielenslatest_x1_001_98ea1c72:
     monitor: AUC
     monitor_mode: max
     net_dropout: 0.2
+    net_regularizer: 0
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [400, 400, 400]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_movielenslatest_x1_011_821736df:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Movielens/DCN_movielenslatest_x1/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [400, 400, 400]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_movielenslatest_x1_012_c03e659e:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Movielens/DCN_movielenslatest_x1/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.4
+    net_regularizer: 0
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [400, 400, 400]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_movielenslatest_x1_013_08a23b81:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Movielens/DCN_movielenslatest_x1/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_cross_layers: 4
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [400, 400, 400]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_movielenslatest_x1_014_aeef927c:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Movielens/DCN_movielenslatest_x1/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_cross_layers: 4
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [400, 400, 400]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_movielenslatest_x1_015_5206a2b4:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Movielens/DCN_movielenslatest_x1/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.4
+    net_regularizer: 0
+    num_cross_layers: 4
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [400, 400, 400]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_movielenslatest_x1_016_98ea1c72:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Movielens/DCN_movielenslatest_x1/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_cross_layers: 5
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [400, 400, 400]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_movielenslatest_x1_017_73dc9f2c:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Movielens/DCN_movielenslatest_x1/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_cross_layers: 5
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [400, 400, 400]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_movielenslatest_x1_018_1051dfd1:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./Movielens/DCN_movielenslatest_x1/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.4
     net_regularizer: 0
     num_cross_layers: 5
     num_experts: 4

@@ -1,4 +1,697 @@
-DeepIM_movielenslatest_x1_001_eb1c9e99:
+DeepIM_movielenslatest_x1_001_25ee202b:
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    im_batch_norm: false
+    im_order: 2
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DeepIM
+    model_id: DeepIM_base
+    model_root: ./Movielens/DeepIM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_batch_norm: true
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+DeepIM_movielenslatest_x1_002_e0c6bb30:
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    im_batch_norm: false
+    im_order: 2
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DeepIM
+    model_id: DeepIM_base
+    model_root: ./Movielens/DeepIM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_batch_norm: true
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+DeepIM_movielenslatest_x1_003_7b668c03:
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    im_batch_norm: false
+    im_order: 2
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DeepIM
+    model_id: DeepIM_base
+    model_root: ./Movielens/DeepIM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_batch_norm: true
+    net_dropout: 0.4
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+DeepIM_movielenslatest_x1_004_2d34e469:
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    im_batch_norm: true
+    im_order: 2
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DeepIM
+    model_id: DeepIM_base
+    model_root: ./Movielens/DeepIM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_batch_norm: true
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+DeepIM_movielenslatest_x1_005_acbdcec1:
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    im_batch_norm: true
+    im_order: 2
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DeepIM
+    model_id: DeepIM_base
+    model_root: ./Movielens/DeepIM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_batch_norm: true
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+DeepIM_movielenslatest_x1_006_6dad744a:
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    im_batch_norm: true
+    im_order: 2
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DeepIM
+    model_id: DeepIM_base
+    model_root: ./Movielens/DeepIM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_batch_norm: true
+    net_dropout: 0.4
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+DeepIM_movielenslatest_x1_007_d53bd86b:
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    im_batch_norm: false
+    im_order: 3
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DeepIM
+    model_id: DeepIM_base
+    model_root: ./Movielens/DeepIM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_batch_norm: true
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+DeepIM_movielenslatest_x1_008_313809b0:
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    im_batch_norm: false
+    im_order: 3
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DeepIM
+    model_id: DeepIM_base
+    model_root: ./Movielens/DeepIM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_batch_norm: true
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+DeepIM_movielenslatest_x1_009_a5451ad8:
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    im_batch_norm: false
+    im_order: 3
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DeepIM
+    model_id: DeepIM_base
+    model_root: ./Movielens/DeepIM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_batch_norm: true
+    net_dropout: 0.4
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+DeepIM_movielenslatest_x1_010_3c9e667c:
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    im_batch_norm: true
+    im_order: 3
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DeepIM
+    model_id: DeepIM_base
+    model_root: ./Movielens/DeepIM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_batch_norm: true
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+DeepIM_movielenslatest_x1_011_17d1d981:
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    im_batch_norm: true
+    im_order: 3
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DeepIM
+    model_id: DeepIM_base
+    model_root: ./Movielens/DeepIM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_batch_norm: true
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+DeepIM_movielenslatest_x1_012_c2db651c:
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    im_batch_norm: true
+    im_order: 3
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DeepIM
+    model_id: DeepIM_base
+    model_root: ./Movielens/DeepIM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_batch_norm: true
+    net_dropout: 0.4
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+DeepIM_movielenslatest_x1_013_a8ad4631:
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    im_batch_norm: false
+    im_order: 4
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DeepIM
+    model_id: DeepIM_base
+    model_root: ./Movielens/DeepIM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_batch_norm: true
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+DeepIM_movielenslatest_x1_014_c24d5cb4:
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    im_batch_norm: false
+    im_order: 4
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DeepIM
+    model_id: DeepIM_base
+    model_root: ./Movielens/DeepIM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_batch_norm: true
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+DeepIM_movielenslatest_x1_015_c3677ce1:
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    im_batch_norm: false
+    im_order: 4
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DeepIM
+    model_id: DeepIM_base
+    model_root: ./Movielens/DeepIM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_batch_norm: true
+    net_dropout: 0.4
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+DeepIM_movielenslatest_x1_016_81c8f3e2:
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    im_batch_norm: true
+    im_order: 4
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DeepIM
+    model_id: DeepIM_base
+    model_root: ./Movielens/DeepIM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_batch_norm: true
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+DeepIM_movielenslatest_x1_017_5fca6e57:
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    im_batch_norm: true
+    im_order: 4
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DeepIM
+    model_id: DeepIM_base
+    model_root: ./Movielens/DeepIM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_batch_norm: true
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+DeepIM_movielenslatest_x1_018_135e8327:
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    im_batch_norm: true
+    im_order: 4
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DeepIM
+    model_id: DeepIM_base
+    model_root: ./Movielens/DeepIM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_batch_norm: true
+    net_dropout: 0.4
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+DeepIM_movielenslatest_x1_019_c40cdec0:
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    im_batch_norm: false
+    im_order: 5
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DeepIM
+    model_id: DeepIM_base
+    model_root: ./Movielens/DeepIM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_batch_norm: true
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+DeepIM_movielenslatest_x1_020_7b84f11e:
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    im_batch_norm: false
+    im_order: 5
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DeepIM
+    model_id: DeepIM_base
+    model_root: ./Movielens/DeepIM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_batch_norm: true
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+DeepIM_movielenslatest_x1_021_62682658:
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    im_batch_norm: false
+    im_order: 5
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DeepIM
+    model_id: DeepIM_base
+    model_root: ./Movielens/DeepIM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_batch_norm: true
+    net_dropout: 0.4
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+DeepIM_movielenslatest_x1_022_eb1c9e99:
     batch_size: 4096
     dataset_id: movielenslatest_x1_cd32d937
     debug: false
@@ -20,6 +713,72 @@ DeepIM_movielenslatest_x1_001_eb1c9e99:
     monitor_mode: max
     net_batch_norm: true
     net_dropout: 0.3
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+DeepIM_movielenslatest_x1_023_6b6604b9:
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    im_batch_norm: true
+    im_order: 5
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DeepIM
+    model_id: DeepIM_base
+    model_root: ./Movielens/DeepIM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_batch_norm: true
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+DeepIM_movielenslatest_x1_024_094ff8bf:
+    batch_size: 4096
+    dataset_id: movielenslatest_x1_cd32d937
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    im_batch_norm: true
+    im_order: 5
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DeepIM
+    model_id: DeepIM_base
+    model_root: ./Movielens/DeepIM_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_batch_norm: true
+    net_dropout: 0.4
     net_regularizer: 0
     num_workers: 3
     optimizer: adam

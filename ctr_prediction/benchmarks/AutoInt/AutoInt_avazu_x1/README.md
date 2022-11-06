@@ -5,20 +5,21 @@ A hands-on guide to run the AutoInt model on the Avazu_x1 dataset.
 Author: [XUEPAI](https://github.com/xue-pai)
 
 ### Index
-[Environments](#Environments) | [Dataset](#Dataset) | [Code](#Code) | [Results](#Results) | [Logs](#Logs)
+
+[Environments](#Environments) | [Dataset](#Dataset) | [Code](#Code) | [Results](#Results) | [Logs](#Logs) | [Revision History](#Revision-History)
 
 ### Environments
-+ Hardware
 
++ Hardware
+  
   ```python
   CPU: Intel(R) Xeon(R) Gold 6278C CPU @ 2.60GHz
   GPU: Tesla V100 32G
   RAM: 755G
-
   ```
 
 + Software
-
+  
   ```python
   CUDA: 10.2
   python: 3.6.4
@@ -30,48 +31,48 @@ Author: [XUEPAI](https://github.com/xue-pai)
   pyyaml: 5.4.1
   h5py: 2.8.0
   tqdm: 4.60.0
-  fuxictr: 1.1.0
-
+  fuxictr: 1.2.2
   ```
 
 ### Dataset
-Dataset ID: [Avazu_x1](https://github.com/openbenchmark/BARS/blob/master/ctr_prediction/datasets/Avazu/README.md#Avazu_x1). Please refer to the dataset details to get data ready.
+
+Dataset ID: [Avazu_x1](https://github.com/openbenchmark/BARS/blob/master/ctr_prediction/datasets/Avazu#Avazu_x1). Please refer to the dataset details to get data ready.
 
 ### Code
 
-We use [FuxiCTR-v1.1.0](https://github.com/xue-pai/FuxiCTR/tree/v1.1.0) for this experiment. See the model code: [AutoInt](https://github.com/xue-pai/FuxiCTR/blob/v1.1.0/fuxictr/pytorch/models/AutoInt.py).
+We use [FuxiCTR-v1.2.2](https://github.com/xue-pai/FuxiCTR/tree/v1.2.2) for this experiment. See the model code: [AutoInt](https://github.com/xue-pai/FuxiCTR/blob/v1.2.2/fuxictr/pytorch/models/AutoInt.py).
 
 Running steps:
 
-1. Download [FuxiCTR-v1.1.0](https://github.com/xue-pai/FuxiCTR/archive/refs/tags/v1.1.0.zip) and install all the dependencies listed in the [environments](#environments). Then modify [run_expid.py](./run_expid.py#L5) to add the FuxiCTR library to system path
-    
-    ```python
-    sys.path.append('YOUR_PATH_TO_FuxiCTR/')
-    ```
+1. Download [FuxiCTR-v1.2.2](https://github.com/xue-pai/FuxiCTR/archive/refs/tags/v1.2.2.zip) and install all the dependencies listed in the [environments](#environments). Then modify [fuxictr_version.py](./fuxictr_version.py#L3) to add the FuxiCTR library to system path
+   
+   ```python
+   sys.path.append('YOUR_PATH_TO_FuxiCTR/')
+   ```
 
 2. Create a data directory and put the downloaded csv files in `../data/Avazu/Avazu_x1`.
 
-3. Both `dataset_config.yaml` and `model_config.yaml` files are available in [AutoInt_avazu_x1_tuner_config_02](./AutoInt_avazu_x1_tuner_config_02). Make sure the data paths in `dataset_config.yaml` are correctly set to what we create in the last step.
+3. Both `dataset_config.yaml` and `model_config.yaml` files are available in [AutoInt_avazu_x1_tuner_config_03](./AutoInt_avazu_x1_tuner_config_03). Make sure the data paths in `dataset_config.yaml` are correctly set to what we create in the last step.
 
 4. Run the following script to start.
-
-    ```bash
-    cd AutoInt_avazu_x1
-    nohup python run_expid.py --config ./AutoInt_avazu_x1_tuner_config_02 --expid AutoInt_avazu_x1_004_37380bc5 --gpu 0 > run.log &
-    tail -f run.log
-    ```
+   
+   ```bash
+   cd AutoInt_avazu_x1
+   nohup python run_expid.py --config ./AutoInt_avazu_x1_tuner_config_03 --expid AutoInt_avazu_x1_001_af7937e6 --gpu 0 > run.log &
+   tail -f run.log
+   ```
 
 ### Results
 
-| AUC | logloss  |
-|:--------------------:|:--------------------:|
-| 0.761814 | 0.368381  |
-
+| AUC      | logloss  |
+|:--------:|:--------:|
+| 0.762373 | 0.367835 |
 
 ### Logs
+
 ```python
-2022-01-21 07:10:38,002 P800 INFO {
-    "attention_dim": "32",
+2022-06-26 11:15:13,911 P2572 INFO {
+    "attention_dim": "128",
     "attention_layers": "4",
     "batch_norm": "False",
     "batch_size": "4096",
@@ -86,7 +87,7 @@ Running steps:
     "epochs": "100",
     "every_x_epochs": "1",
     "feature_cols": "[{'active': True, 'dtype': 'float', 'name': ['feat_1', 'feat_2', 'feat_3', 'feat_4', 'feat_5', 'feat_6', 'feat_7', 'feat_8', 'feat_9', 'feat_10', 'feat_11', 'feat_12', 'feat_13', 'feat_14', 'feat_15', 'feat_16', 'feat_17', 'feat_18', 'feat_19', 'feat_20', 'feat_21', 'feat_22'], 'type': 'categorical'}]",
-    "gpu": "3",
+    "gpu": "0",
     "label_col": "{'dtype': 'float', 'name': 'label'}",
     "layer_norm": "True",
     "learning_rate": "0.001",
@@ -94,7 +95,7 @@ Running steps:
     "metrics": "['AUC', 'logloss']",
     "min_categr_count": "1",
     "model": "AutoInt",
-    "model_id": "AutoInt_avazu_x1_004_37380bc5",
+    "model_id": "AutoInt_avazu_x1_001_af7937e6",
     "model_root": "./Avazu/AutoInt_avazu_x1/",
     "monitor": "AUC",
     "monitor_mode": "max",
@@ -103,7 +104,6 @@ Running steps:
     "num_heads": "1",
     "num_workers": "3",
     "optimizer": "adam",
-    "partition_block_size": "-1",
     "patience": "2",
     "pickle_feature_encoder": "True",
     "save_best_only": "True",
@@ -120,59 +120,62 @@ Running steps:
     "verbose": "1",
     "version": "pytorch"
 }
-2022-01-21 07:10:38,003 P800 INFO Set up feature encoder...
-2022-01-21 07:10:38,003 P800 INFO Load feature_map from json: ../data/Avazu/avazu_x1_3fb65689/feature_map.json
-2022-01-21 07:10:38,003 P800 INFO Loading data...
-2022-01-21 07:10:38,004 P800 INFO Loading data from h5: ../data/Avazu/avazu_x1_3fb65689/train.h5
-2022-01-21 07:10:40,406 P800 INFO Loading data from h5: ../data/Avazu/avazu_x1_3fb65689/valid.h5
-2022-01-21 07:10:40,823 P800 INFO Train samples: total/28300276, pos/4953382, neg/23346894, ratio/17.50%, blocks/1
-2022-01-21 07:10:40,823 P800 INFO Validation samples: total/4042897, pos/678699, neg/3364198, ratio/16.79%, blocks/1
-2022-01-21 07:10:40,823 P800 INFO Loading train data done.
-2022-01-21 07:10:46,922 P800 INFO Total number of parameters: 12997447.
-2022-01-21 07:10:46,923 P800 INFO Start training: 6910 batches/epoch
-2022-01-21 07:10:46,923 P800 INFO ************ Epoch=1 start ************
-2022-01-21 07:27:43,783 P800 INFO [Metrics] AUC: 0.738708 - logloss: 0.399528
-2022-01-21 07:27:43,785 P800 INFO Save best model: monitor(max): 0.738708
-2022-01-21 07:27:44,032 P800 INFO --- 6910/6910 batches finished ---
-2022-01-21 07:27:44,067 P800 INFO Train loss: 0.470325
-2022-01-21 07:27:44,068 P800 INFO ************ Epoch=1 end ************
-2022-01-21 07:44:36,591 P800 INFO [Metrics] AUC: 0.741134 - logloss: 0.398834
-2022-01-21 07:44:36,595 P800 INFO Save best model: monitor(max): 0.741134
-2022-01-21 07:44:36,668 P800 INFO --- 6910/6910 batches finished ---
-2022-01-21 07:44:36,712 P800 INFO Train loss: 0.479222
-2022-01-21 07:44:36,712 P800 INFO ************ Epoch=2 end ************
-2022-01-21 08:01:25,274 P800 INFO [Metrics] AUC: 0.740770 - logloss: 0.398918
-2022-01-21 08:01:25,276 P800 INFO Monitor(max) STOP: 0.740770 !
-2022-01-21 08:01:25,276 P800 INFO Reduce learning rate on plateau: 0.000100
-2022-01-21 08:01:25,276 P800 INFO --- 6910/6910 batches finished ---
-2022-01-21 08:01:25,313 P800 INFO Train loss: 0.490323
-2022-01-21 08:01:25,313 P800 INFO ************ Epoch=3 end ************
-2022-01-21 08:18:05,938 P800 INFO [Metrics] AUC: 0.747576 - logloss: 0.395330
-2022-01-21 08:18:05,942 P800 INFO Save best model: monitor(max): 0.747576
-2022-01-21 08:18:06,013 P800 INFO --- 6910/6910 batches finished ---
-2022-01-21 08:18:06,051 P800 INFO Train loss: 0.418341
-2022-01-21 08:18:06,051 P800 INFO ************ Epoch=4 end ************
-2022-01-21 08:34:46,240 P800 INFO [Metrics] AUC: 0.746884 - logloss: 0.395974
-2022-01-21 08:34:46,242 P800 INFO Monitor(max) STOP: 0.746884 !
-2022-01-21 08:34:46,242 P800 INFO Reduce learning rate on plateau: 0.000010
-2022-01-21 08:34:46,242 P800 INFO --- 6910/6910 batches finished ---
-2022-01-21 08:34:46,279 P800 INFO Train loss: 0.424649
-2022-01-21 08:34:46,279 P800 INFO ************ Epoch=5 end ************
-2022-01-21 08:51:27,728 P800 INFO [Metrics] AUC: 0.743268 - logloss: 0.398538
-2022-01-21 08:51:27,731 P800 INFO Monitor(max) STOP: 0.743268 !
-2022-01-21 08:51:27,731 P800 INFO Reduce learning rate on plateau: 0.000001
-2022-01-21 08:51:27,731 P800 INFO Early stopping at epoch=6
-2022-01-21 08:51:27,731 P800 INFO --- 6910/6910 batches finished ---
-2022-01-21 08:51:27,768 P800 INFO Train loss: 0.398064
-2022-01-21 08:51:27,768 P800 INFO Training finished.
-2022-01-21 08:51:27,768 P800 INFO Load best model: /cache/FuxiCTR/benchmarks/Avazu/AutoInt_avazu_x1/avazu_x1_3fb65689/AutoInt_avazu_x1_004_37380bc5.model
-2022-01-21 08:51:34,067 P800 INFO ****** Validation evaluation ******
-2022-01-21 08:52:05,597 P800 INFO [Metrics] AUC: 0.747576 - logloss: 0.395330
-2022-01-21 08:52:05,677 P800 INFO ******** Test evaluation ********
-2022-01-21 08:52:05,677 P800 INFO Loading data...
-2022-01-21 08:52:05,677 P800 INFO Loading data from h5: ../data/Avazu/avazu_x1_3fb65689/test.h5
-2022-01-21 08:52:06,322 P800 INFO Test samples: total/8085794, pos/1232985, neg/6852809, ratio/15.25%, blocks/1
-2022-01-21 08:52:06,322 P800 INFO Loading test data done.
-2022-01-21 08:52:58,311 P800 INFO [Metrics] AUC: 0.761814 - logloss: 0.368381
-
+2022-06-26 11:15:13,912 P2572 INFO Set up feature encoder...
+2022-06-26 11:15:13,912 P2572 INFO Load feature_map from json: ../data/Avazu/avazu_x1_3fb65689/feature_map.json
+2022-06-26 11:15:13,913 P2572 INFO Loading data...
+2022-06-26 11:15:13,913 P2572 INFO Loading data from h5: ../data/Avazu/avazu_x1_3fb65689/train.h5
+2022-06-26 11:15:17,090 P2572 INFO Loading data from h5: ../data/Avazu/avazu_x1_3fb65689/valid.h5
+2022-06-26 11:15:17,528 P2572 INFO Train samples: total/28300276, pos/4953382, neg/23346894, ratio/17.50%, blocks/1
+2022-06-26 11:15:17,528 P2572 INFO Validation samples: total/4042897, pos/678699, neg/3364198, ratio/16.79%, blocks/1
+2022-06-26 11:15:17,528 P2572 INFO Loading train data done.
+2022-06-26 11:15:23,971 P2572 INFO Total number of parameters: 13142407.
+2022-06-26 11:15:23,971 P2572 INFO Start training: 6910 batches/epoch
+2022-06-26 11:15:23,971 P2572 INFO ************ Epoch=1 start ************
+2022-06-26 11:34:04,397 P2572 INFO [Metrics] AUC: 0.739827 - logloss: 0.399477
+2022-06-26 11:34:04,399 P2572 INFO Save best model: monitor(max): 0.739827
+2022-06-26 11:34:04,457 P2572 INFO --- 6910/6910 batches finished ---
+2022-06-26 11:34:04,506 P2572 INFO Train loss: 0.464762
+2022-06-26 11:34:04,506 P2572 INFO ************ Epoch=1 end ************
+2022-06-26 11:52:43,441 P2572 INFO [Metrics] AUC: 0.740997 - logloss: 0.399898
+2022-06-26 11:52:43,443 P2572 INFO Save best model: monitor(max): 0.740997
+2022-06-26 11:52:43,514 P2572 INFO --- 6910/6910 batches finished ---
+2022-06-26 11:52:43,556 P2572 INFO Train loss: 0.480839
+2022-06-26 11:52:43,557 P2572 INFO ************ Epoch=2 end ************
+2022-06-26 12:11:21,118 P2572 INFO [Metrics] AUC: 0.740723 - logloss: 0.398973
+2022-06-26 12:11:21,119 P2572 INFO Monitor(max) STOP: 0.740723 !
+2022-06-26 12:11:21,120 P2572 INFO Reduce learning rate on plateau: 0.000100
+2022-06-26 12:11:21,120 P2572 INFO --- 6910/6910 batches finished ---
+2022-06-26 12:11:21,163 P2572 INFO Train loss: 0.501063
+2022-06-26 12:11:21,163 P2572 INFO ************ Epoch=3 end ************
+2022-06-26 12:29:56,816 P2572 INFO [Metrics] AUC: 0.744060 - logloss: 0.396996
+2022-06-26 12:29:56,817 P2572 INFO Save best model: monitor(max): 0.744060
+2022-06-26 12:29:56,889 P2572 INFO --- 6910/6910 batches finished ---
+2022-06-26 12:29:56,930 P2572 INFO Train loss: 0.418401
+2022-06-26 12:29:56,930 P2572 INFO ************ Epoch=4 end ************
+2022-06-26 12:48:31,054 P2572 INFO [Metrics] AUC: 0.742162 - logloss: 0.398282
+2022-06-26 12:48:31,056 P2572 INFO Monitor(max) STOP: 0.742162 !
+2022-06-26 12:48:31,056 P2572 INFO Reduce learning rate on plateau: 0.000010
+2022-06-26 12:48:31,056 P2572 INFO --- 6910/6910 batches finished ---
+2022-06-26 12:48:31,099 P2572 INFO Train loss: 0.425549
+2022-06-26 12:48:31,099 P2572 INFO ************ Epoch=5 end ************
+2022-06-26 13:07:06,708 P2572 INFO [Metrics] AUC: 0.739204 - logloss: 0.400295
+2022-06-26 13:07:06,710 P2572 INFO Monitor(max) STOP: 0.739204 !
+2022-06-26 13:07:06,710 P2572 INFO Reduce learning rate on plateau: 0.000001
+2022-06-26 13:07:06,710 P2572 INFO Early stopping at epoch=6
+2022-06-26 13:07:06,710 P2572 INFO --- 6910/6910 batches finished ---
+2022-06-26 13:07:06,761 P2572 INFO Train loss: 0.397311
+2022-06-26 13:07:06,761 P2572 INFO Training finished.
+2022-06-26 13:07:06,761 P2572 INFO Load best model: /cache/FuxiCTR/benchmarks/Avazu/AutoInt_avazu_x1/avazu_x1_3fb65689/AutoInt_avazu_x1_001_af7937e6.model
+2022-06-26 13:07:06,846 P2572 INFO ****** Validation evaluation ******
+2022-06-26 13:07:44,123 P2572 INFO [Metrics] AUC: 0.744060 - logloss: 0.396996
+2022-06-26 13:07:44,193 P2572 INFO ******** Test evaluation ********
+2022-06-26 13:07:44,194 P2572 INFO Loading data...
+2022-06-26 13:07:44,194 P2572 INFO Loading data from h5: ../data/Avazu/avazu_x1_3fb65689/test.h5
+2022-06-26 13:07:44,921 P2572 INFO Test samples: total/8085794, pos/1232985, neg/6852809, ratio/15.25%, blocks/1
+2022-06-26 13:07:44,921 P2572 INFO Loading test data done.
+2022-06-26 13:08:59,611 P2572 INFO [Metrics] AUC: 0.762373 - logloss: 0.367835
 ```
+
+### Revision History
+
++ [Version 1](https://github.com/openbenchmark/BARS/tree/88d3a0faa4565e975141ae89a52d35d3a8b56eda/ctr_prediction/benchmarks/AutoInt/AutoInt_avazu_x1#autoint_avazu_x1): deprecated due to bug fix [#30](https://github.com/xue-pai/FuxiCTR/issues/30) of FuxiCTR.

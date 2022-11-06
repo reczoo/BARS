@@ -1,0 +1,1 @@
+ 20220118-110552,[command] python run_expid.py --version pytorch --config Frappe/DCN_frappe_x1/DCN_frappe_x1_tuner_config_02 --expid DCN_frappe_x1_013_efa58c31 --gpu 1,[exp_id] DCN_frappe_x1_013_efa58c31,[dataset_id] frappe_x1_04e961e9,[train] N.A.,[val] AUC: 0.984547 - logloss: 0.150780,[test] AUC: 0.983907 - logloss: 0.152660

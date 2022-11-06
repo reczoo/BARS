@@ -203,8 +203,8 @@
             "pub": "CIKM'19",
             "model": "AutoInt",
             "paper": "https://arxiv.org/abs/1810.11921",
-            "logloss": "0.2247",
-            "auc": "0.9672",
+            "logloss": "0.2228",
+            "auc": "0.9662",
             "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/AutoInt/AutoInt_movielenslatest_x1",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
@@ -214,8 +214,8 @@
             "pub": "CIKM'19",
             "model": "AutoInt+",
             "paper": "https://arxiv.org/abs/1810.11921",
-            "logloss": "0.2165",
-            "auc": "0.9693",
+            "logloss": "0.2148",
+            "auc": "0.9692",
             "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/AutoInt/AutoInt+_movielenslatest_x1",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
@@ -335,8 +335,8 @@
             "pub": "CIKM'21",
             "model": "EDCN",
             "paper": "https://dlp-kdd.github.io/assets/pdf/DLP-KDD_2021_paper_12.pdf",
-            "logloss": "0.2666",
-            "auc": "0.9632",
+            "logloss": "0.2122",
+            "auc": "0.9671",
             "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/EDCN/EDCN_movielenslatest_x1",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"

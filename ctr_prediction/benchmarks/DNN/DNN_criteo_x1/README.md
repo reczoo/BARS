@@ -5,20 +5,21 @@ A hands-on guide to run the DNN model on the Criteo_x1 dataset.
 Author: [XUEPAI](https://github.com/xue-pai)
 
 ### Index
+
 [Environments](#Environments) | [Dataset](#Dataset) | [Code](#Code) | [Results](#Results) | [Logs](#Logs)
 
 ### Environments
-+ Hardware
 
++ Hardware
+  
   ```python
   CPU: Intel(R) Xeon(R) Gold 6278C CPU @ 2.60GHz
   GPU: Tesla V100 32G
   RAM: 755G
-
   ```
 
 + Software
-
+  
   ```python
   CUDA: 10.2
   python: 3.6.4
@@ -31,10 +32,10 @@ Author: [XUEPAI](https://github.com/xue-pai)
   h5py: 2.8.0
   tqdm: 4.60.0
   fuxictr: 1.1.0
-
   ```
 
 ### Dataset
+
 Dataset ID: [Criteo_x1](https://github.com/openbenchmark/BARS/blob/master/ctr_prediction/datasets/Criteo/README.md#Criteo_x1). Please refer to the dataset details to get data ready.
 
 ### Code
@@ -44,39 +45,39 @@ We use [FuxiCTR-v1.1.0](https://github.com/xue-pai/FuxiCTR/tree/v1.1.0) for this
 Running steps:
 
 1. Download [FuxiCTR-v1.1.0](https://github.com/xue-pai/FuxiCTR/archive/refs/tags/v1.1.0.zip) and install all the dependencies listed in the [environments](#environments). Then modify [run_expid.py](./run_expid.py#L5) to add the FuxiCTR library to system path
-    
-    ```python
-    sys.path.append('YOUR_PATH_TO_FuxiCTR/')
-    ```
+   
+   ```python
+   sys.path.append('YOUR_PATH_TO_FuxiCTR/')
+   ```
 
 2. Create a data directory and put the downloaded csv files in `../data/Criteo/Criteo_x1`.
 
 3. Both `dataset_config.yaml` and `model_config.yaml` files are available in [DNN_criteo_x1_tuner_config_seeds](./DNN_criteo_x1_tuner_config_seeds). Make sure the data paths in `dataset_config.yaml` are correctly set to what we create in the last step.
 
 4. Run the following script to start.
-
-    ```bash
-    cd DNN_criteo_x1
-    nohup python run_expid.py --config ./DNN_criteo_x1_tuner_config_seeds --expid DNN_criteo_x1_001_be50edb0 --gpu 0 > run.log &
-    tail -f run.log
-    ```
+   
+   ```bash
+   cd DNN_criteo_x1
+   nohup python run_expid.py --config ./DNN_criteo_x1_tuner_config_01 --expid DNN_criteo_x1_001_be50edb0 --gpu 0 > run.log &
+   tail -f run.log
+   ```
 
 ### Results
 
 Total 5 runs:
 
-| Runs | AUC | logloss  |
-|:--------------------:|:--------------------:|:--------------------:|
-| 1 | 0.813668 | 0.438218  |
-| 2 | 0.813701 | 0.438166  |
-| 3 | 0.813791 | 0.438045  |
-| 4 | 0.813601 | 0.438197  |
-| 5 | 0.813630 | 0.438230  |
-| Avg | 0.813678 | 0.438171 |
-| Std | &#177;0.00006577 | &#177;0.00006673 |
-
+| Runs | AUC              | logloss          |
+|:----:|:----------------:|:----------------:|
+| 1    | 0.813668         | 0.438218         |
+| 2    | 0.813701         | 0.438166         |
+| 3    | 0.813791         | 0.438045         |
+| 4    | 0.813601         | 0.438197         |
+| 5    | 0.813630         | 0.438230         |
+| Avg  | 0.813678         | 0.438171         |
+| Std  | &#177;0.00006577 | &#177;0.00006673 |
 
 ### Logs
+
 ```python
 2022-02-08 10:00:08,437 P789 INFO {
     "batch_norm": "False",
@@ -235,5 +236,4 @@ Total 5 runs:
 2022-02-08 11:49:55,571 P789 INFO Test samples: total/4587167, pos/1174769, neg/3412398, ratio/25.61%, blocks/1
 2022-02-08 11:49:55,571 P789 INFO Loading test data done.
 2022-02-08 11:50:10,731 P789 INFO [Metrics] AUC: 0.813668 - logloss: 0.438218
-
 ```

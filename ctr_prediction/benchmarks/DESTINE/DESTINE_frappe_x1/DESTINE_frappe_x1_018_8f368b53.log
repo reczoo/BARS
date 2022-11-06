@@ -138,7 +138,7 @@
 2022-02-19 17:44:43,601 P12966 INFO --- 50/50 batches finished ---
 2022-02-19 17:44:43,754 P12966 INFO Train loss: 0.082209
 2022-02-19 17:44:43,754 P12966 INFO Training finished.
-2022-02-19 17:44:43,754 P12966 INFO Load best model: /home/XXX/FuxiCTR/benchmarks/Frappe/DESTINE_frappe_x1/frappe_x1_04e961e9/DESTINE_frappe_x1_018_8f368b53.model
+2022-02-19 17:44:43,754 P12966 INFO Load best model: /home/FuxiCTR/benchmarks/Frappe/DESTINE_frappe_x1/frappe_x1_04e961e9/DESTINE_frappe_x1_018_8f368b53.model
 2022-02-19 17:44:56,454 P12966 INFO ****** Validation evaluation ******
 2022-02-19 17:44:58,829 P12966 INFO [Metrics] AUC: 0.985299 - logloss: 0.145737
 2022-02-19 17:44:59,040 P12966 INFO ******** Test evaluation ********

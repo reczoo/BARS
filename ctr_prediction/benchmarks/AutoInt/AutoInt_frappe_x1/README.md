@@ -5,20 +5,21 @@ A hands-on guide to run the AutoInt model on the Frappe_x1 dataset.
 Author: [XUEPAI](https://github.com/xue-pai)
 
 ### Index
-[Environments](#Environments) | [Dataset](#Dataset) | [Code](#Code) | [Results](#Results) | [Logs](#Logs)
+
+[Environments](#Environments) | [Dataset](#Dataset) | [Code](#Code) | [Results](#Results) | [Logs](#Logs) | [Revision History](#Revision-History)
 
 ### Environments
-+ Hardware
 
++ Hardware
+  
   ```python
   CPU: Intel(R) Xeon(R) CPU E5-2690 v4 @ 2.6GHz
   GPU: Tesla P100 16G
   RAM: 755G
-
   ```
 
 + Software
-
+  
   ```python
   CUDA: 11.4
   python: 3.6.5
@@ -30,64 +31,49 @@ Author: [XUEPAI](https://github.com/xue-pai)
   pyyaml: 5.1
   h5py: 2.7.1
   tqdm: 4.59.0
-  fuxictr: 1.1.0
+  fuxictr: 1.2.2
   ```
 
 ### Dataset
-Dataset ID: [Frappe_x1](https://github.com/openbenchmark/BARS/blob/master/ctr_prediction/datasets/Frappe/README.md#Frappe_x1). Please refer to the dataset details to get data ready.
+
+Dataset ID: [Frappe_x1](https://github.com/openbenchmark/BARS/blob/master/ctr_prediction/datasets/Frappe#Frappe_x1). Please refer to the dataset details to get data ready.
 
 ### Code
 
-We use [FuxiCTR-v1.1.0](https://github.com/xue-pai/FuxiCTR/tree/v1.1.0) for this experiment. See the model code: [AutoInt](https://github.com/xue-pai/FuxiCTR/blob/v1.1.0/fuxictr/pytorch/models/AutoInt.py).
+We use [FuxiCTR-v1.2.2](https://github.com/xue-pai/FuxiCTR/tree/v1.2.2) for this experiment. See the model code: [AutoInt](https://github.com/xue-pai/FuxiCTR/blob/v1.2.2/fuxictr/pytorch/models/AutoInt.py).
 
 Running steps:
 
-1. Download [FuxiCTR-v1.1.0](https://github.com/xue-pai/FuxiCTR/archive/refs/tags/v1.1.0.zip) and install all the dependencies listed in the [environments](#environments). Then modify [run_expid.py](./run_expid.py#L5) to add the FuxiCTR library to system path
-    
-    ```python
-    sys.path.append('YOUR_PATH_TO_FuxiCTR/')
-    ```
+1. Download [FuxiCTR-v1.2.2](https://github.com/xue-pai/FuxiCTR/archive/refs/tags/v1.2.2.zip) and install all the dependencies listed in the [environments](#environments). Then modify [fuxictr_version.py](./fuxictr_version.py#L3) to add the FuxiCTR library to system path
+   
+   ```python
+   sys.path.append('YOUR_PATH_TO_FuxiCTR/')
+   ```
 
 2. Create a data directory and put the downloaded csv files in `../data/Frappe/Frappe_x1`.
 
-3. Both `dataset_config.yaml` and `model_config.yaml` files are available in [AutoInt_frappe_x1_tuner_config_03](./AutoInt_frappe_x1_tuner_config_03). Make sure the data paths in `dataset_config.yaml` are correctly set to what we create in the last step.
+3. Both `dataset_config.yaml` and `model_config.yaml` files are available in [AutoInt_frappe_x1_tuner_config_05](./AutoInt_frappe_x1_tuner_config_05). Make sure the data paths in `dataset_config.yaml` are correctly set to what we create in the last step.
 
 4. Run the following script to start.
-
-    ```bash
-    cd AutoInt_frappe_x1
-    nohup python run_expid.py --config ./AutoInt_frappe_x1_tuner_config_03 --expid AutoInt_frappe_x1_006_0eb83bd7 --gpu 0 > run.log &
-    tail -f run.log
-    ```
+   
+   ```bash
+   cd AutoInt_frappe_x1
+   nohup python run_expid.py --config ./AutoInt_frappe_x1_tuner_config_05 --expid AutoInt_frappe_x1_005_2b296630 --gpu 0 > run.log &
+   tail -f run.log
+   ```
 
 ### Results
 
-Total 14 runs:
-| Runs | AUC | logloss  |
-|:--------------------:|:--------------------:|:--------------------:|
-| 1 | 0.982263 | 0.169137  |
-| 2 | 0.982244 | 0.160713  |
-| 3 | 0.981941 | 0.171024  |
-| 4 | 0.981738 | 0.171480  |
-| 5 | 0.981281 | 0.174519  |
-| 6 | 0.980344 | 0.182125  |
-| 7 | 0.980277 | 0.183588  |
-| 8 | 0.979484 | 0.181713  |
-| 9 | 0.979331 | 0.170642  |
-| 10 | 0.979049 | 0.197980  |
-| 11 | 0.979044 | 0.191088  |
-| 12 | 0.978981 | 0.188947  |
-| 13 | 0.978515 | 0.183773  |
-| 14 | 0.978113 | 0.183440  |
-| Avg | 0.9801860714285714 | 0.17929778571428573 |
-| Std | &#177;0.0014049059177592945 | &#177;0.009734063864143511 |
-
+| AUC      | logloss  |
+|:--------:|:--------:|
+| 0.983085 | 0.163684 |
 
 ### Logs
+
 ```python
-2022-01-23 18:15:20,166 P15081 INFO {
+2022-06-27 08:11:52,662 P26323 INFO {
     "attention_dim": "128",
-    "attention_layers": "7",
+    "attention_layers": "6",
     "batch_norm": "False",
     "batch_size": "4096",
     "data_format": "csv",
@@ -101,7 +87,7 @@ Total 14 runs:
     "epochs": "100",
     "every_x_epochs": "1",
     "feature_cols": "[{'active': True, 'dtype': 'float', 'name': ['user', 'item', 'daytime', 'weekday', 'isweekend', 'homework', 'cost', 'weather', 'country', 'city'], 'type': 'categorical'}]",
-    "gpu": "1",
+    "gpu": "0",
     "label_col": "{'dtype': 'float', 'name': 'label'}",
     "layer_norm": "False",
     "learning_rate": "0.001",
@@ -109,16 +95,15 @@ Total 14 runs:
     "metrics": "['AUC', 'logloss']",
     "min_categr_count": "1",
     "model": "AutoInt",
-    "model_id": "AutoInt_frappe_x1_006_0eb83bd7",
+    "model_id": "AutoInt_frappe_x1_005_2b296630",
     "model_root": "./Frappe/AutoInt_frappe_x1/",
     "monitor": "AUC",
     "monitor_mode": "max",
     "net_dropout": "0",
     "net_regularizer": "0",
-    "num_heads": "1",
+    "num_heads": "4",
     "num_workers": "3",
     "optimizer": "adam",
-    "partition_block_size": "-1",
     "patience": "2",
     "pickle_feature_encoder": "True",
     "save_best_only": "True",
@@ -135,204 +120,187 @@ Total 14 runs:
     "verbose": "1",
     "version": "pytorch"
 }
-2022-01-23 18:15:20,167 P15081 INFO Set up feature encoder...
-2022-01-23 18:15:20,167 P15081 INFO Load feature_map from json: ../data/Frappe/frappe_x1_04e961e9/feature_map.json
-2022-01-23 18:15:20,167 P15081 INFO Loading data...
-2022-01-23 18:15:20,170 P15081 INFO Loading data from h5: ../data/Frappe/frappe_x1_04e961e9/train.h5
-2022-01-23 18:15:20,185 P15081 INFO Loading data from h5: ../data/Frappe/frappe_x1_04e961e9/valid.h5
-2022-01-23 18:15:20,192 P15081 INFO Train samples: total/202027, pos/67604, neg/134423, ratio/33.46%, blocks/1
-2022-01-23 18:15:20,192 P15081 INFO Validation samples: total/57722, pos/19063, neg/38659, ratio/33.03%, blocks/1
-2022-01-23 18:15:20,193 P15081 INFO Loading train data done.
-2022-01-23 18:15:25,296 P15081 INFO Total number of parameters: 355203.
-2022-01-23 18:15:25,296 P15081 INFO Start training: 50 batches/epoch
-2022-01-23 18:15:25,297 P15081 INFO ************ Epoch=1 start ************
-2022-01-23 18:15:47,641 P15081 INFO [Metrics] AUC: 0.929242 - logloss: 0.388581
-2022-01-23 18:15:47,641 P15081 INFO Save best model: monitor(max): 0.929242
-2022-01-23 18:15:47,647 P15081 INFO --- 50/50 batches finished ---
-2022-01-23 18:15:47,685 P15081 INFO Train loss: 0.565425
-2022-01-23 18:15:47,685 P15081 INFO ************ Epoch=1 end ************
-2022-01-23 18:16:09,482 P15081 INFO [Metrics] AUC: 0.936353 - logloss: 0.285543
-2022-01-23 18:16:09,482 P15081 INFO Save best model: monitor(max): 0.936353
-2022-01-23 18:16:09,487 P15081 INFO --- 50/50 batches finished ---
-2022-01-23 18:16:09,527 P15081 INFO Train loss: 0.330035
-2022-01-23 18:16:09,527 P15081 INFO ************ Epoch=2 end ************
-2022-01-23 18:16:31,012 P15081 INFO [Metrics] AUC: 0.939177 - logloss: 0.281787
-2022-01-23 18:16:31,013 P15081 INFO Save best model: monitor(max): 0.939177
-2022-01-23 18:16:31,017 P15081 INFO --- 50/50 batches finished ---
-2022-01-23 18:16:31,053 P15081 INFO Train loss: 0.305692
-2022-01-23 18:16:31,054 P15081 INFO ************ Epoch=3 end ************
-2022-01-23 18:16:52,908 P15081 INFO [Metrics] AUC: 0.941802 - logloss: 0.274546
-2022-01-23 18:16:52,909 P15081 INFO Save best model: monitor(max): 0.941802
-2022-01-23 18:16:52,913 P15081 INFO --- 50/50 batches finished ---
-2022-01-23 18:16:52,953 P15081 INFO Train loss: 0.296474
-2022-01-23 18:16:52,954 P15081 INFO ************ Epoch=4 end ************
-2022-01-23 18:17:14,817 P15081 INFO [Metrics] AUC: 0.948097 - logloss: 0.259215
-2022-01-23 18:17:14,818 P15081 INFO Save best model: monitor(max): 0.948097
-2022-01-23 18:17:14,822 P15081 INFO --- 50/50 batches finished ---
-2022-01-23 18:17:14,859 P15081 INFO Train loss: 0.288219
-2022-01-23 18:17:14,859 P15081 INFO ************ Epoch=5 end ************
-2022-01-23 18:17:36,624 P15081 INFO [Metrics] AUC: 0.953848 - logloss: 0.248725
-2022-01-23 18:17:36,624 P15081 INFO Save best model: monitor(max): 0.953848
-2022-01-23 18:17:36,628 P15081 INFO --- 50/50 batches finished ---
-2022-01-23 18:17:36,672 P15081 INFO Train loss: 0.277879
-2022-01-23 18:17:36,672 P15081 INFO ************ Epoch=6 end ************
-2022-01-23 18:17:58,380 P15081 INFO [Metrics] AUC: 0.956707 - logloss: 0.236726
-2022-01-23 18:17:58,381 P15081 INFO Save best model: monitor(max): 0.956707
-2022-01-23 18:17:58,385 P15081 INFO --- 50/50 batches finished ---
-2022-01-23 18:17:58,425 P15081 INFO Train loss: 0.268859
-2022-01-23 18:17:58,425 P15081 INFO ************ Epoch=7 end ************
-2022-01-23 18:18:20,362 P15081 INFO [Metrics] AUC: 0.960537 - logloss: 0.226316
-2022-01-23 18:18:20,363 P15081 INFO Save best model: monitor(max): 0.960537
-2022-01-23 18:18:20,367 P15081 INFO --- 50/50 batches finished ---
-2022-01-23 18:18:20,404 P15081 INFO Train loss: 0.258923
-2022-01-23 18:18:20,404 P15081 INFO ************ Epoch=8 end ************
-2022-01-23 18:18:42,496 P15081 INFO [Metrics] AUC: 0.961970 - logloss: 0.225191
-2022-01-23 18:18:42,497 P15081 INFO Save best model: monitor(max): 0.961970
-2022-01-23 18:18:42,501 P15081 INFO --- 50/50 batches finished ---
-2022-01-23 18:18:42,539 P15081 INFO Train loss: 0.254275
-2022-01-23 18:18:42,539 P15081 INFO ************ Epoch=9 end ************
-2022-01-23 18:19:04,140 P15081 INFO [Metrics] AUC: 0.963819 - logloss: 0.220582
-2022-01-23 18:19:04,140 P15081 INFO Save best model: monitor(max): 0.963819
-2022-01-23 18:19:04,144 P15081 INFO --- 50/50 batches finished ---
-2022-01-23 18:19:04,191 P15081 INFO Train loss: 0.248178
-2022-01-23 18:19:04,191 P15081 INFO ************ Epoch=10 end ************
-2022-01-23 18:19:25,565 P15081 INFO [Metrics] AUC: 0.964403 - logloss: 0.219453
-2022-01-23 18:19:25,565 P15081 INFO Save best model: monitor(max): 0.964403
-2022-01-23 18:19:25,569 P15081 INFO --- 50/50 batches finished ---
-2022-01-23 18:19:25,611 P15081 INFO Train loss: 0.244098
-2022-01-23 18:19:25,611 P15081 INFO ************ Epoch=11 end ************
-2022-01-23 18:19:47,153 P15081 INFO [Metrics] AUC: 0.965947 - logloss: 0.210579
-2022-01-23 18:19:47,153 P15081 INFO Save best model: monitor(max): 0.965947
-2022-01-23 18:19:47,157 P15081 INFO --- 50/50 batches finished ---
-2022-01-23 18:19:47,195 P15081 INFO Train loss: 0.238869
-2022-01-23 18:19:47,195 P15081 INFO ************ Epoch=12 end ************
-2022-01-23 18:20:09,182 P15081 INFO [Metrics] AUC: 0.967149 - logloss: 0.207849
-2022-01-23 18:20:09,183 P15081 INFO Save best model: monitor(max): 0.967149
-2022-01-23 18:20:09,187 P15081 INFO --- 50/50 batches finished ---
-2022-01-23 18:20:09,251 P15081 INFO Train loss: 0.237869
-2022-01-23 18:20:09,251 P15081 INFO ************ Epoch=13 end ************
-2022-01-23 18:20:31,148 P15081 INFO [Metrics] AUC: 0.969113 - logloss: 0.200254
-2022-01-23 18:20:31,148 P15081 INFO Save best model: monitor(max): 0.969113
-2022-01-23 18:20:31,152 P15081 INFO --- 50/50 batches finished ---
-2022-01-23 18:20:31,195 P15081 INFO Train loss: 0.233040
-2022-01-23 18:20:31,195 P15081 INFO ************ Epoch=14 end ************
-2022-01-23 18:20:52,901 P15081 INFO [Metrics] AUC: 0.969190 - logloss: 0.200513
-2022-01-23 18:20:52,901 P15081 INFO Save best model: monitor(max): 0.969190
-2022-01-23 18:20:52,905 P15081 INFO --- 50/50 batches finished ---
-2022-01-23 18:20:52,957 P15081 INFO Train loss: 0.231243
-2022-01-23 18:20:52,958 P15081 INFO ************ Epoch=15 end ************
-2022-01-23 18:21:14,468 P15081 INFO [Metrics] AUC: 0.971145 - logloss: 0.198363
-2022-01-23 18:21:14,469 P15081 INFO Save best model: monitor(max): 0.971145
-2022-01-23 18:21:14,473 P15081 INFO --- 50/50 batches finished ---
-2022-01-23 18:21:14,509 P15081 INFO Train loss: 0.227569
-2022-01-23 18:21:14,510 P15081 INFO ************ Epoch=16 end ************
-2022-01-23 18:21:36,381 P15081 INFO [Metrics] AUC: 0.971635 - logloss: 0.192158
-2022-01-23 18:21:36,381 P15081 INFO Save best model: monitor(max): 0.971635
-2022-01-23 18:21:36,385 P15081 INFO --- 50/50 batches finished ---
-2022-01-23 18:21:36,423 P15081 INFO Train loss: 0.225160
-2022-01-23 18:21:36,423 P15081 INFO ************ Epoch=17 end ************
-2022-01-23 18:21:57,936 P15081 INFO [Metrics] AUC: 0.971937 - logloss: 0.190683
-2022-01-23 18:21:57,936 P15081 INFO Save best model: monitor(max): 0.971937
-2022-01-23 18:21:57,940 P15081 INFO --- 50/50 batches finished ---
-2022-01-23 18:21:57,978 P15081 INFO Train loss: 0.223913
-2022-01-23 18:21:57,978 P15081 INFO ************ Epoch=18 end ************
-2022-01-23 18:22:19,804 P15081 INFO [Metrics] AUC: 0.972454 - logloss: 0.186339
-2022-01-23 18:22:19,805 P15081 INFO Save best model: monitor(max): 0.972454
-2022-01-23 18:22:19,809 P15081 INFO --- 50/50 batches finished ---
-2022-01-23 18:22:19,846 P15081 INFO Train loss: 0.220088
-2022-01-23 18:22:19,846 P15081 INFO ************ Epoch=19 end ************
-2022-01-23 18:22:41,589 P15081 INFO [Metrics] AUC: 0.973932 - logloss: 0.183628
-2022-01-23 18:22:41,590 P15081 INFO Save best model: monitor(max): 0.973932
-2022-01-23 18:22:41,594 P15081 INFO --- 50/50 batches finished ---
-2022-01-23 18:22:41,634 P15081 INFO Train loss: 0.217382
-2022-01-23 18:22:41,634 P15081 INFO ************ Epoch=20 end ************
-2022-01-23 18:23:03,480 P15081 INFO [Metrics] AUC: 0.974394 - logloss: 0.183487
-2022-01-23 18:23:03,480 P15081 INFO Save best model: monitor(max): 0.974394
-2022-01-23 18:23:03,485 P15081 INFO --- 50/50 batches finished ---
-2022-01-23 18:23:03,527 P15081 INFO Train loss: 0.213499
-2022-01-23 18:23:03,527 P15081 INFO ************ Epoch=21 end ************
-2022-01-23 18:23:25,439 P15081 INFO [Metrics] AUC: 0.975374 - logloss: 0.177700
-2022-01-23 18:23:25,439 P15081 INFO Save best model: monitor(max): 0.975374
-2022-01-23 18:23:25,443 P15081 INFO --- 50/50 batches finished ---
-2022-01-23 18:23:25,482 P15081 INFO Train loss: 0.211741
-2022-01-23 18:23:25,482 P15081 INFO ************ Epoch=22 end ************
-2022-01-23 18:23:47,159 P15081 INFO [Metrics] AUC: 0.975495 - logloss: 0.177530
-2022-01-23 18:23:47,159 P15081 INFO Save best model: monitor(max): 0.975495
-2022-01-23 18:23:47,163 P15081 INFO --- 50/50 batches finished ---
-2022-01-23 18:23:47,201 P15081 INFO Train loss: 0.211479
-2022-01-23 18:23:47,201 P15081 INFO ************ Epoch=23 end ************
-2022-01-23 18:24:08,891 P15081 INFO [Metrics] AUC: 0.975911 - logloss: 0.178364
-2022-01-23 18:24:08,892 P15081 INFO Save best model: monitor(max): 0.975911
-2022-01-23 18:24:08,898 P15081 INFO --- 50/50 batches finished ---
-2022-01-23 18:24:08,935 P15081 INFO Train loss: 0.208048
-2022-01-23 18:24:08,936 P15081 INFO ************ Epoch=24 end ************
-2022-01-23 18:24:30,712 P15081 INFO [Metrics] AUC: 0.976383 - logloss: 0.174331
-2022-01-23 18:24:30,712 P15081 INFO Save best model: monitor(max): 0.976383
-2022-01-23 18:24:30,716 P15081 INFO --- 50/50 batches finished ---
-2022-01-23 18:24:30,770 P15081 INFO Train loss: 0.208620
-2022-01-23 18:24:30,770 P15081 INFO ************ Epoch=25 end ************
-2022-01-23 18:24:52,551 P15081 INFO [Metrics] AUC: 0.977241 - logloss: 0.169820
-2022-01-23 18:24:52,551 P15081 INFO Save best model: monitor(max): 0.977241
-2022-01-23 18:24:52,556 P15081 INFO --- 50/50 batches finished ---
-2022-01-23 18:24:52,594 P15081 INFO Train loss: 0.206128
-2022-01-23 18:24:52,594 P15081 INFO ************ Epoch=26 end ************
-2022-01-23 18:25:14,072 P15081 INFO [Metrics] AUC: 0.976883 - logloss: 0.171011
-2022-01-23 18:25:14,072 P15081 INFO Monitor(max) STOP: 0.976883 !
-2022-01-23 18:25:14,073 P15081 INFO Reduce learning rate on plateau: 0.000100
-2022-01-23 18:25:14,073 P15081 INFO --- 50/50 batches finished ---
-2022-01-23 18:25:14,112 P15081 INFO Train loss: 0.202170
-2022-01-23 18:25:14,112 P15081 INFO ************ Epoch=27 end ************
-2022-01-23 18:25:32,685 P15081 INFO [Metrics] AUC: 0.980128 - logloss: 0.163108
-2022-01-23 18:25:32,685 P15081 INFO Save best model: monitor(max): 0.980128
-2022-01-23 18:25:32,689 P15081 INFO --- 50/50 batches finished ---
-2022-01-23 18:25:32,731 P15081 INFO Train loss: 0.167589
-2022-01-23 18:25:32,731 P15081 INFO ************ Epoch=28 end ************
-2022-01-23 18:25:54,236 P15081 INFO [Metrics] AUC: 0.981547 - logloss: 0.160892
-2022-01-23 18:25:54,237 P15081 INFO Save best model: monitor(max): 0.981547
-2022-01-23 18:25:54,241 P15081 INFO --- 50/50 batches finished ---
-2022-01-23 18:25:54,279 P15081 INFO Train loss: 0.139064
-2022-01-23 18:25:54,279 P15081 INFO ************ Epoch=29 end ************
-2022-01-23 18:26:16,172 P15081 INFO [Metrics] AUC: 0.981899 - logloss: 0.162492
-2022-01-23 18:26:16,173 P15081 INFO Save best model: monitor(max): 0.981899
-2022-01-23 18:26:16,177 P15081 INFO --- 50/50 batches finished ---
-2022-01-23 18:26:16,216 P15081 INFO Train loss: 0.122369
-2022-01-23 18:26:16,217 P15081 INFO ************ Epoch=30 end ************
-2022-01-23 18:26:38,024 P15081 INFO [Metrics] AUC: 0.981968 - logloss: 0.166729
-2022-01-23 18:26:38,024 P15081 INFO Save best model: monitor(max): 0.981968
-2022-01-23 18:26:38,028 P15081 INFO --- 50/50 batches finished ---
-2022-01-23 18:26:38,065 P15081 INFO Train loss: 0.110245
-2022-01-23 18:26:38,065 P15081 INFO ************ Epoch=31 end ************
-2022-01-23 18:26:59,991 P15081 INFO [Metrics] AUC: 0.982161 - logloss: 0.168569
-2022-01-23 18:26:59,991 P15081 INFO Save best model: monitor(max): 0.982161
-2022-01-23 18:26:59,995 P15081 INFO --- 50/50 batches finished ---
-2022-01-23 18:27:00,033 P15081 INFO Train loss: 0.101333
-2022-01-23 18:27:00,033 P15081 INFO ************ Epoch=32 end ************
-2022-01-23 18:27:21,895 P15081 INFO [Metrics] AUC: 0.982189 - logloss: 0.172185
-2022-01-23 18:27:21,895 P15081 INFO Save best model: monitor(max): 0.982189
-2022-01-23 18:27:21,899 P15081 INFO --- 50/50 batches finished ---
-2022-01-23 18:27:21,937 P15081 INFO Train loss: 0.093316
-2022-01-23 18:27:21,938 P15081 INFO ************ Epoch=33 end ************
-2022-01-23 18:27:43,545 P15081 INFO [Metrics] AUC: 0.982064 - logloss: 0.179178
-2022-01-23 18:27:43,545 P15081 INFO Monitor(max) STOP: 0.982064 !
-2022-01-23 18:27:43,545 P15081 INFO Reduce learning rate on plateau: 0.000010
-2022-01-23 18:27:43,545 P15081 INFO --- 50/50 batches finished ---
-2022-01-23 18:27:43,592 P15081 INFO Train loss: 0.086915
-2022-01-23 18:27:43,592 P15081 INFO ************ Epoch=34 end ************
-2022-01-23 18:28:05,170 P15081 INFO [Metrics] AUC: 0.982125 - logloss: 0.180170
-2022-01-23 18:28:05,170 P15081 INFO Monitor(max) STOP: 0.982125 !
-2022-01-23 18:28:05,170 P15081 INFO Reduce learning rate on plateau: 0.000001
-2022-01-23 18:28:05,170 P15081 INFO Early stopping at epoch=35
-2022-01-23 18:28:05,171 P15081 INFO --- 50/50 batches finished ---
-2022-01-23 18:28:05,207 P15081 INFO Train loss: 0.078901
-2022-01-23 18:28:05,207 P15081 INFO Training finished.
-2022-01-23 18:28:05,207 P15081 INFO Load best model: /home/XXX/FuxiCTR/benchmarks/Frappe/AutoInt_frappe_x1/frappe_x1_04e961e9/AutoInt_frappe_x1_006_0eb83bd7.model
-2022-01-23 18:28:11,334 P15081 INFO ****** Validation evaluation ******
-2022-01-23 18:28:12,443 P15081 INFO [Metrics] AUC: 0.982189 - logloss: 0.172185
-2022-01-23 18:28:12,478 P15081 INFO ******** Test evaluation ********
-2022-01-23 18:28:12,478 P15081 INFO Loading data...
-2022-01-23 18:28:12,479 P15081 INFO Loading data from h5: ../data/Frappe/frappe_x1_04e961e9/test.h5
-2022-01-23 18:28:12,481 P15081 INFO Test samples: total/28860, pos/9536, neg/19324, ratio/33.04%, blocks/1
-2022-01-23 18:28:12,481 P15081 INFO Loading test data done.
-2022-01-23 18:28:13,181 P15081 INFO [Metrics] AUC: 0.982263 - logloss: 0.169137
-
+2022-06-27 08:11:52,662 P26323 INFO Set up feature encoder...
+2022-06-27 08:11:52,662 P26323 INFO Load feature_map from json: ../data/Frappe/frappe_x1_04e961e9/feature_map.json
+2022-06-27 08:11:52,663 P26323 INFO Loading data...
+2022-06-27 08:11:52,664 P26323 INFO Loading data from h5: ../data/Frappe/frappe_x1_04e961e9/train.h5
+2022-06-27 08:11:52,675 P26323 INFO Loading data from h5: ../data/Frappe/frappe_x1_04e961e9/valid.h5
+2022-06-27 08:11:52,680 P26323 INFO Train samples: total/202027, pos/67604, neg/134423, ratio/33.46%, blocks/1
+2022-06-27 08:11:52,680 P26323 INFO Validation samples: total/57722, pos/19063, neg/38659, ratio/33.03%, blocks/1
+2022-06-27 08:11:52,680 P26323 INFO Loading train data done.
+2022-06-27 08:11:55,744 P26323 INFO Total number of parameters: 306051.
+2022-06-27 08:11:55,745 P26323 INFO Start training: 50 batches/epoch
+2022-06-27 08:11:55,745 P26323 INFO ************ Epoch=1 start ************
+2022-06-27 08:12:09,903 P26323 INFO [Metrics] AUC: 0.929346 - logloss: 0.389975
+2022-06-27 08:12:09,903 P26323 INFO Save best model: monitor(max): 0.929346
+2022-06-27 08:12:09,907 P26323 INFO --- 50/50 batches finished ---
+2022-06-27 08:12:09,940 P26323 INFO Train loss: 0.567680
+2022-06-27 08:12:09,940 P26323 INFO ************ Epoch=1 end ************
+2022-06-27 08:12:24,045 P26323 INFO [Metrics] AUC: 0.932565 - logloss: 0.291329
+2022-06-27 08:12:24,046 P26323 INFO Save best model: monitor(max): 0.932565
+2022-06-27 08:12:24,052 P26323 INFO --- 50/50 batches finished ---
+2022-06-27 08:12:24,083 P26323 INFO Train loss: 0.341109
+2022-06-27 08:12:24,083 P26323 INFO ************ Epoch=2 end ************
+2022-06-27 08:12:37,996 P26323 INFO [Metrics] AUC: 0.936331 - logloss: 0.288659
+2022-06-27 08:12:37,997 P26323 INFO Save best model: monitor(max): 0.936331
+2022-06-27 08:12:38,003 P26323 INFO --- 50/50 batches finished ---
+2022-06-27 08:12:38,035 P26323 INFO Train loss: 0.311964
+2022-06-27 08:12:38,035 P26323 INFO ************ Epoch=3 end ************
+2022-06-27 08:12:52,084 P26323 INFO [Metrics] AUC: 0.938286 - logloss: 0.285408
+2022-06-27 08:12:52,085 P26323 INFO Save best model: monitor(max): 0.938286
+2022-06-27 08:12:52,088 P26323 INFO --- 50/50 batches finished ---
+2022-06-27 08:12:52,123 P26323 INFO Train loss: 0.306016
+2022-06-27 08:12:52,123 P26323 INFO ************ Epoch=4 end ************
+2022-06-27 08:13:06,183 P26323 INFO [Metrics] AUC: 0.942865 - logloss: 0.273632
+2022-06-27 08:13:06,183 P26323 INFO Save best model: monitor(max): 0.942865
+2022-06-27 08:13:06,187 P26323 INFO --- 50/50 batches finished ---
+2022-06-27 08:13:06,221 P26323 INFO Train loss: 0.300813
+2022-06-27 08:13:06,221 P26323 INFO ************ Epoch=5 end ************
+2022-06-27 08:13:20,242 P26323 INFO [Metrics] AUC: 0.949183 - logloss: 0.258002
+2022-06-27 08:13:20,243 P26323 INFO Save best model: monitor(max): 0.949183
+2022-06-27 08:13:20,247 P26323 INFO --- 50/50 batches finished ---
+2022-06-27 08:13:20,278 P26323 INFO Train loss: 0.294925
+2022-06-27 08:13:20,278 P26323 INFO ************ Epoch=6 end ************
+2022-06-27 08:13:34,183 P26323 INFO [Metrics] AUC: 0.955690 - logloss: 0.239714
+2022-06-27 08:13:34,184 P26323 INFO Save best model: monitor(max): 0.955690
+2022-06-27 08:13:34,189 P26323 INFO --- 50/50 batches finished ---
+2022-06-27 08:13:34,222 P26323 INFO Train loss: 0.282001
+2022-06-27 08:13:34,222 P26323 INFO ************ Epoch=7 end ************
+2022-06-27 08:13:48,138 P26323 INFO [Metrics] AUC: 0.959647 - logloss: 0.228313
+2022-06-27 08:13:48,138 P26323 INFO Save best model: monitor(max): 0.959647
+2022-06-27 08:13:48,142 P26323 INFO --- 50/50 batches finished ---
+2022-06-27 08:13:48,173 P26323 INFO Train loss: 0.270141
+2022-06-27 08:13:48,173 P26323 INFO ************ Epoch=8 end ************
+2022-06-27 08:14:02,017 P26323 INFO [Metrics] AUC: 0.961786 - logloss: 0.225262
+2022-06-27 08:14:02,017 P26323 INFO Save best model: monitor(max): 0.961786
+2022-06-27 08:14:02,021 P26323 INFO --- 50/50 batches finished ---
+2022-06-27 08:14:02,063 P26323 INFO Train loss: 0.261778
+2022-06-27 08:14:02,063 P26323 INFO ************ Epoch=9 end ************
+2022-06-27 08:14:15,960 P26323 INFO [Metrics] AUC: 0.965417 - logloss: 0.212291
+2022-06-27 08:14:15,961 P26323 INFO Save best model: monitor(max): 0.965417
+2022-06-27 08:14:15,966 P26323 INFO --- 50/50 batches finished ---
+2022-06-27 08:14:16,012 P26323 INFO Train loss: 0.254553
+2022-06-27 08:14:16,012 P26323 INFO ************ Epoch=10 end ************
+2022-06-27 08:14:29,995 P26323 INFO [Metrics] AUC: 0.966631 - logloss: 0.208825
+2022-06-27 08:14:29,996 P26323 INFO Save best model: monitor(max): 0.966631
+2022-06-27 08:14:30,001 P26323 INFO --- 50/50 batches finished ---
+2022-06-27 08:14:30,052 P26323 INFO Train loss: 0.248408
+2022-06-27 08:14:30,053 P26323 INFO ************ Epoch=11 end ************
+2022-06-27 08:14:43,887 P26323 INFO [Metrics] AUC: 0.969565 - logloss: 0.198196
+2022-06-27 08:14:43,888 P26323 INFO Save best model: monitor(max): 0.969565
+2022-06-27 08:14:43,893 P26323 INFO --- 50/50 batches finished ---
+2022-06-27 08:14:43,927 P26323 INFO Train loss: 0.244414
+2022-06-27 08:14:43,927 P26323 INFO ************ Epoch=12 end ************
+2022-06-27 08:14:57,876 P26323 INFO [Metrics] AUC: 0.970447 - logloss: 0.195624
+2022-06-27 08:14:57,877 P26323 INFO Save best model: monitor(max): 0.970447
+2022-06-27 08:14:57,880 P26323 INFO --- 50/50 batches finished ---
+2022-06-27 08:14:57,913 P26323 INFO Train loss: 0.237312
+2022-06-27 08:14:57,913 P26323 INFO ************ Epoch=13 end ************
+2022-06-27 08:15:11,723 P26323 INFO [Metrics] AUC: 0.971478 - logloss: 0.191725
+2022-06-27 08:15:11,724 P26323 INFO Save best model: monitor(max): 0.971478
+2022-06-27 08:15:11,729 P26323 INFO --- 50/50 batches finished ---
+2022-06-27 08:15:11,763 P26323 INFO Train loss: 0.232111
+2022-06-27 08:15:11,763 P26323 INFO ************ Epoch=14 end ************
+2022-06-27 08:15:25,700 P26323 INFO [Metrics] AUC: 0.972812 - logloss: 0.187026
+2022-06-27 08:15:25,700 P26323 INFO Save best model: monitor(max): 0.972812
+2022-06-27 08:15:25,704 P26323 INFO --- 50/50 batches finished ---
+2022-06-27 08:15:25,749 P26323 INFO Train loss: 0.228942
+2022-06-27 08:15:25,749 P26323 INFO ************ Epoch=15 end ************
+2022-06-27 08:15:39,714 P26323 INFO [Metrics] AUC: 0.974048 - logloss: 0.183179
+2022-06-27 08:15:39,714 P26323 INFO Save best model: monitor(max): 0.974048
+2022-06-27 08:15:39,720 P26323 INFO --- 50/50 batches finished ---
+2022-06-27 08:15:39,752 P26323 INFO Train loss: 0.223017
+2022-06-27 08:15:39,752 P26323 INFO ************ Epoch=16 end ************
+2022-06-27 08:15:53,689 P26323 INFO [Metrics] AUC: 0.974515 - logloss: 0.183152
+2022-06-27 08:15:53,689 P26323 INFO Save best model: monitor(max): 0.974515
+2022-06-27 08:15:53,693 P26323 INFO --- 50/50 batches finished ---
+2022-06-27 08:15:53,738 P26323 INFO Train loss: 0.219969
+2022-06-27 08:15:53,739 P26323 INFO ************ Epoch=17 end ************
+2022-06-27 08:16:07,644 P26323 INFO [Metrics] AUC: 0.975063 - logloss: 0.179174
+2022-06-27 08:16:07,644 P26323 INFO Save best model: monitor(max): 0.975063
+2022-06-27 08:16:07,650 P26323 INFO --- 50/50 batches finished ---
+2022-06-27 08:16:07,682 P26323 INFO Train loss: 0.217608
+2022-06-27 08:16:07,682 P26323 INFO ************ Epoch=18 end ************
+2022-06-27 08:16:21,476 P26323 INFO [Metrics] AUC: 0.975183 - logloss: 0.178508
+2022-06-27 08:16:21,477 P26323 INFO Save best model: monitor(max): 0.975183
+2022-06-27 08:16:21,482 P26323 INFO --- 50/50 batches finished ---
+2022-06-27 08:16:21,515 P26323 INFO Train loss: 0.214375
+2022-06-27 08:16:21,515 P26323 INFO ************ Epoch=19 end ************
+2022-06-27 08:16:35,466 P26323 INFO [Metrics] AUC: 0.975895 - logloss: 0.177553
+2022-06-27 08:16:35,466 P26323 INFO Save best model: monitor(max): 0.975895
+2022-06-27 08:16:35,470 P26323 INFO --- 50/50 batches finished ---
+2022-06-27 08:16:35,502 P26323 INFO Train loss: 0.210745
+2022-06-27 08:16:35,502 P26323 INFO ************ Epoch=20 end ************
+2022-06-27 08:16:49,276 P26323 INFO [Metrics] AUC: 0.975978 - logloss: 0.176675
+2022-06-27 08:16:49,276 P26323 INFO Save best model: monitor(max): 0.975978
+2022-06-27 08:16:49,282 P26323 INFO --- 50/50 batches finished ---
+2022-06-27 08:16:49,329 P26323 INFO Train loss: 0.207246
+2022-06-27 08:16:49,329 P26323 INFO ************ Epoch=21 end ************
+2022-06-27 08:17:03,245 P26323 INFO [Metrics] AUC: 0.977693 - logloss: 0.168597
+2022-06-27 08:17:03,246 P26323 INFO Save best model: monitor(max): 0.977693
+2022-06-27 08:17:03,250 P26323 INFO --- 50/50 batches finished ---
+2022-06-27 08:17:03,283 P26323 INFO Train loss: 0.206541
+2022-06-27 08:17:03,283 P26323 INFO ************ Epoch=22 end ************
+2022-06-27 08:17:17,102 P26323 INFO [Metrics] AUC: 0.977174 - logloss: 0.168754
+2022-06-27 08:17:17,102 P26323 INFO Monitor(max) STOP: 0.977174 !
+2022-06-27 08:17:17,103 P26323 INFO Reduce learning rate on plateau: 0.000100
+2022-06-27 08:17:17,103 P26323 INFO --- 50/50 batches finished ---
+2022-06-27 08:17:17,149 P26323 INFO Train loss: 0.202790
+2022-06-27 08:17:17,149 P26323 INFO ************ Epoch=23 end ************
+2022-06-27 08:17:31,132 P26323 INFO [Metrics] AUC: 0.980868 - logloss: 0.158463
+2022-06-27 08:17:31,133 P26323 INFO Save best model: monitor(max): 0.980868
+2022-06-27 08:17:31,136 P26323 INFO --- 50/50 batches finished ---
+2022-06-27 08:17:31,168 P26323 INFO Train loss: 0.169093
+2022-06-27 08:17:31,168 P26323 INFO ************ Epoch=24 end ************
+2022-06-27 08:17:44,429 P26323 INFO [Metrics] AUC: 0.982040 - logloss: 0.156053
+2022-06-27 08:17:44,429 P26323 INFO Save best model: monitor(max): 0.982040
+2022-06-27 08:17:44,433 P26323 INFO --- 50/50 batches finished ---
+2022-06-27 08:17:44,481 P26323 INFO Train loss: 0.140114
+2022-06-27 08:17:44,482 P26323 INFO ************ Epoch=25 end ************
+2022-06-27 08:17:54,859 P26323 INFO [Metrics] AUC: 0.982484 - logloss: 0.158594
+2022-06-27 08:17:54,860 P26323 INFO Save best model: monitor(max): 0.982484
+2022-06-27 08:17:54,864 P26323 INFO --- 50/50 batches finished ---
+2022-06-27 08:17:54,905 P26323 INFO Train loss: 0.123262
+2022-06-27 08:17:54,905 P26323 INFO ************ Epoch=26 end ************
+2022-06-27 08:18:11,418 P26323 INFO [Metrics] AUC: 0.982674 - logloss: 0.159134
+2022-06-27 08:18:11,419 P26323 INFO Save best model: monitor(max): 0.982674
+2022-06-27 08:18:11,424 P26323 INFO --- 50/50 batches finished ---
+2022-06-27 08:18:11,457 P26323 INFO Train loss: 0.111381
+2022-06-27 08:18:11,458 P26323 INFO ************ Epoch=27 end ************
+2022-06-27 08:18:28,343 P26323 INFO [Metrics] AUC: 0.982680 - logloss: 0.163802
+2022-06-27 08:18:28,344 P26323 INFO Save best model: monitor(max): 0.982680
+2022-06-27 08:18:28,348 P26323 INFO --- 50/50 batches finished ---
+2022-06-27 08:18:28,394 P26323 INFO Train loss: 0.101737
+2022-06-27 08:18:28,394 P26323 INFO ************ Epoch=28 end ************
+2022-06-27 08:18:43,831 P26323 INFO [Metrics] AUC: 0.982810 - logloss: 0.164729
+2022-06-27 08:18:43,832 P26323 INFO Save best model: monitor(max): 0.982810
+2022-06-27 08:18:43,835 P26323 INFO --- 50/50 batches finished ---
+2022-06-27 08:18:43,868 P26323 INFO Train loss: 0.094030
+2022-06-27 08:18:43,868 P26323 INFO ************ Epoch=29 end ************
+2022-06-27 08:19:05,576 P26323 INFO [Metrics] AUC: 0.982492 - logloss: 0.170600
+2022-06-27 08:19:05,577 P26323 INFO Monitor(max) STOP: 0.982492 !
+2022-06-27 08:19:05,577 P26323 INFO Reduce learning rate on plateau: 0.000010
+2022-06-27 08:19:05,577 P26323 INFO --- 50/50 batches finished ---
+2022-06-27 08:19:05,631 P26323 INFO Train loss: 0.087360
+2022-06-27 08:19:05,632 P26323 INFO ************ Epoch=30 end ************
+2022-06-27 08:19:27,414 P26323 INFO [Metrics] AUC: 0.982676 - logloss: 0.170811
+2022-06-27 08:19:27,414 P26323 INFO Monitor(max) STOP: 0.982676 !
+2022-06-27 08:19:27,414 P26323 INFO Reduce learning rate on plateau: 0.000001
+2022-06-27 08:19:27,414 P26323 INFO Early stopping at epoch=31
+2022-06-27 08:19:27,415 P26323 INFO --- 50/50 batches finished ---
+2022-06-27 08:19:27,446 P26323 INFO Train loss: 0.078911
+2022-06-27 08:19:27,446 P26323 INFO Training finished.
+2022-06-27 08:19:27,446 P26323 INFO Load best model: /home/benchmarks/Frappe/AutoInt_frappe_x1/frappe_x1_04e961e9/AutoInt_frappe_x1_005_2b296630.model
+2022-06-27 08:19:27,575 P26323 INFO ****** Validation evaluation ******
+2022-06-27 08:19:28,818 P26323 INFO [Metrics] AUC: 0.982810 - logloss: 0.164729
+2022-06-27 08:19:28,851 P26323 INFO ******** Test evaluation ********
+2022-06-27 08:19:28,851 P26323 INFO Loading data...
+2022-06-27 08:19:28,851 P26323 INFO Loading data from h5: ../data/Frappe/frappe_x1_04e961e9/test.h5
+2022-06-27 08:19:28,853 P26323 INFO Test samples: total/28860, pos/9536, neg/19324, ratio/33.04%, blocks/1
+2022-06-27 08:19:28,854 P26323 INFO Loading test data done.
+2022-06-27 08:19:29,523 P26323 INFO [Metrics] AUC: 0.983085 - logloss: 0.163684
 ```
+
+### Revision History
+
+- [Version 1](https://github.com/openbenchmark/BARS/tree/88d3a0faa4565e975141ae89a52d35d3a8b56eda/ctr_prediction/benchmarks/AutoInt/AutoInt_frappe_x1#autoint_frappe_x1): deprecated due to bug fix [#30](https://github.com/xue-pai/FuxiCTR/issues/30) of FuxiCTR.

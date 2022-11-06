@@ -163,7 +163,7 @@
 2022-02-19 00:30:08,527 P42463 INFO --- 343/343 batches finished ---
 2022-02-19 00:30:08,562 P42463 INFO Train loss: 0.115975
 2022-02-19 00:30:08,563 P42463 INFO Training finished.
-2022-02-19 00:30:08,563 P42463 INFO Load best model: /home/XXX/benchmarks/Movielens/DESTINE_movielenslatest_x1/movielenslatest_x1_cd32d937/DESTINE_movielenslatest_x1_011_f64ca64d.model
+2022-02-19 00:30:08,563 P42463 INFO Load best model: /home/FuxiCTR/benchmarks/Movielens/DESTINE_movielenslatest_x1/movielenslatest_x1_cd32d937/DESTINE_movielenslatest_x1_011_f64ca64d.model
 2022-02-19 00:30:08,579 P42463 INFO ****** Validation evaluation ******
 2022-02-19 00:30:09,935 P42463 INFO [Metrics] AUC: 0.969631 - logloss: 0.211023
 2022-02-19 00:30:09,982 P42463 INFO ******** Test evaluation ********

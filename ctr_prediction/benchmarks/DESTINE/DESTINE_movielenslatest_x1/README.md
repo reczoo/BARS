@@ -1,24 +1,25 @@
 ## DESTINE_movielenslatest_x1
 
-A hands-on guide to run the DESTINE model on the Movielenslatest_x1 dataset.
+A hands-on guide to run the DESTINE model on the MovielensLatest_x1 dataset.
 
 Author: [XUEPAI](https://github.com/xue-pai)
 
 ### Index
+
 [Environments](#Environments) | [Dataset](#Dataset) | [Code](#Code) | [Results](#Results) | [Logs](#Logs)
 
 ### Environments
-+ Hardware
 
++ Hardware
+  
   ```python
   CPU: Intel(R) Xeon(R) CPU E5-2690 v4 @ 2.6GHz
   GPU: Tesla P100 16G
   RAM: 755G
-
   ```
 
 + Software
-
+  
   ```python
   CUDA: 11.4
   python: 3.6.5
@@ -30,44 +31,45 @@ Author: [XUEPAI](https://github.com/xue-pai)
   pyyaml: 5.1
   h5py: 2.7.1
   tqdm: 4.59.0
-  fuxictr: 1.1.1
+  fuxictr: 1.2.2
   ```
 
 ### Dataset
-Dataset ID: [Movielenslatest_x1](https://github.com/openbenchmark/BARS/blob/master/ctr_prediction/datasets/MovieLens/README.md#Movielenslatest_x1). Please refer to the dataset details to get data ready.
+
+Dataset ID: [MovielensLatest_x1](https://github.com/openbenchmark/BARS/blob/master/ctr_prediction/datasets/Movielens#MovielensLatest_x1). Please refer to the dataset details to get data ready.
 
 ### Code
 
-We use [FuxiCTR-v1.1.1](https://github.com/xue-pai/FuxiCTR/tree/v1.1.1) for this experiment. See the model code: [DESTINE](https://github.com/xue-pai/FuxiCTR/blob/v1.1.1/fuxictr/pytorch/models/DESTINE.py).
+We use [FuxiCTR-v1.2.2](https://github.com/xue-pai/FuxiCTR/tree/v1.2.2) for this experiment. See the model code: [DESTINE](https://github.com/xue-pai/FuxiCTR/blob/v1.2.2/fuxictr/pytorch/models/DESTINE.py).
 
 Running steps:
 
-1. Download [FuxiCTR-v1.1.1](https://github.com/xue-pai/FuxiCTR/archive/refs/tags/v1.1.1.zip) and install all the dependencies listed in the [environments](#environments). Then modify [run_expid.py](./run_expid.py#L5) to add the FuxiCTR library to system path
-    
-    ```python
-    sys.path.append('YOUR_PATH_TO_FuxiCTR/')
-    ```
+1. Download [FuxiCTR-v1.2.2](https://github.com/xue-pai/FuxiCTR/archive/refs/tags/v1.2.2.zip) and install all the dependencies listed in the [environments](#environments). Then modify [fuxictr_version.py](./fuxictr_version.py#L3) to add the FuxiCTR library to system path
+   
+   ```python
+   sys.path.append('YOUR_PATH_TO_FuxiCTR/')
+   ```
 
 2. Create a data directory and put the downloaded csv files in `../data/Movielens/MovielensLatest_x1`.
 
 3. Both `dataset_config.yaml` and `model_config.yaml` files are available in [DESTINE_movielenslatest_x1_tuner_config_03](./DESTINE_movielenslatest_x1_tuner_config_03). Make sure the data paths in `dataset_config.yaml` are correctly set to what we create in the last step.
 
 4. Run the following script to start.
-
-    ```bash
-    cd DESTINE_movielenslatest_x1
-    nohup python run_expid.py --config ./DESTINE_movielenslatest_x1_tuner_config_03 --expid DESTINE_movielenslatest_x1_011_f64ca64d --gpu 0 > run.log &
-    tail -f run.log
-    ```
+   
+   ```bash
+   cd DESTINE_movielenslatest_x1
+   nohup python run_expid.py --config ./DESTINE_movielenslatest_x1_tuner_config_03 --expid DESTINE_movielenslatest_x1_011_f64ca64d --gpu 0 > run.log &
+   tail -f run.log
+   ```
 
 ### Results
 
-| AUC | logloss  |
-|:--------------------:|:--------------------:|
-| 0.969395 | 0.212452  |
-
+| AUC      | logloss  |
+|:--------:|:--------:|
+| 0.969395 | 0.212452 |
 
 ### Logs
+
 ```python
 2022-02-19 00:19:35,759 P42463 INFO {
     "att_dropout": "0.1",
@@ -234,7 +236,7 @@ Running steps:
 2022-02-19 00:30:08,527 P42463 INFO --- 343/343 batches finished ---
 2022-02-19 00:30:08,562 P42463 INFO Train loss: 0.115975
 2022-02-19 00:30:08,563 P42463 INFO Training finished.
-2022-02-19 00:30:08,563 P42463 INFO Load best model: /home/XXX/benchmarks/Movielens/DESTINE_movielenslatest_x1/movielenslatest_x1_cd32d937/DESTINE_movielenslatest_x1_011_f64ca64d.model
+2022-02-19 00:30:08,563 P42463 INFO Load best model: /home/FuxiCTR/benchmarks/Movielens/DESTINE_movielenslatest_x1/movielenslatest_x1_cd32d937/DESTINE_movielenslatest_x1_011_f64ca64d.model
 2022-02-19 00:30:08,579 P42463 INFO ****** Validation evaluation ******
 2022-02-19 00:30:09,935 P42463 INFO [Metrics] AUC: 0.969631 - logloss: 0.211023
 2022-02-19 00:30:09,982 P42463 INFO ******** Test evaluation ********
@@ -243,5 +245,4 @@ Running steps:
 2022-02-19 00:30:09,987 P42463 INFO Test samples: total/200686, pos/66850, neg/133836, ratio/33.31%, blocks/1
 2022-02-19 00:30:09,987 P42463 INFO Loading test data done.
 2022-02-19 00:30:10,732 P42463 INFO [Metrics] AUC: 0.969395 - logloss: 0.212452
-
 ```

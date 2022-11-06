@@ -203,8 +203,8 @@
             "pub": "CIKM'19",
             "model": "AutoInt",
             "paper": "https://arxiv.org/abs/1810.11921",
-            "logloss": "0.3684",
-            "auc": "0.7618",
+            "logloss": "0.3678",
+            "auc": "0.7624",
             "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/AutoInt/AutoInt_avazu_x1",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
@@ -214,8 +214,8 @@
             "pub": "CIKM'19",
             "model": "AutoInt+",
             "paper": "https://arxiv.org/abs/1810.11921",
-            "logloss": "0.3665",
-            "auc": "0.7650",
+            "logloss": "0.3668",
+            "auc": "0.7645",
             "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/AutoInt/AutoInt+_avazu_x1",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"
@@ -336,7 +336,7 @@
             "model": "EDCN",
             "paper": "https://dlp-kdd.github.io/assets/pdf/DLP-KDD_2021_paper_12.pdf",
             "logloss": "0.3670",
-            "auc": "0.7647",
+            "auc": "0.7652",
             "link": "https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks/EDCN/EDCN_avazu_x1",
             "contr": "zhujiem",
             "contr_url": "https://github.com/zhujiem"

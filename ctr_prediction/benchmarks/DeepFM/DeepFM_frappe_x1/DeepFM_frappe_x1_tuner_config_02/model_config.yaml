@@ -29,7 +29,7 @@ DeepFM_frappe_x1_001_4ae3a56e:
     task: binary_classification
     use_hdf5: true
     verbose: 1
-DeepFM_frappe_x1_002_cf864b3d:
+DeepFM_frappe_x1_002_f79add5f:
     batch_norm: true
     batch_size: 4096
     dataset_id: frappe_x1_04e961e9
@@ -48,19 +48,19 @@ DeepFM_frappe_x1_002_cf864b3d:
     model_root: ./Frappe/DeepFM_frappe_x1/
     monitor: AUC
     monitor_mode: max
-    net_dropout: 0.2
+    net_dropout: 0.1
     net_regularizer: 0
     num_workers: 3
     optimizer: adam
     patience: 2
     pickle_feature_encoder: true
     save_best_only: true
-    seed: 190034
+    seed: 2021
     shuffle: true
     task: binary_classification
     use_hdf5: true
     verbose: 1
-DeepFM_frappe_x1_003_94fe9049:
+DeepFM_frappe_x1_003_b32458b9:
     batch_norm: true
     batch_size: 4096
     dataset_id: frappe_x1_04e961e9
@@ -79,25 +79,25 @@ DeepFM_frappe_x1_003_94fe9049:
     model_root: ./Frappe/DeepFM_frappe_x1/
     monitor: AUC
     monitor_mode: max
-    net_dropout: 0.2
+    net_dropout: 0
     net_regularizer: 0
     num_workers: 3
     optimizer: adam
     patience: 2
     pickle_feature_encoder: true
     save_best_only: true
-    seed: 992817
+    seed: 2021
     shuffle: true
     task: binary_classification
     use_hdf5: true
     verbose: 1
-DeepFM_frappe_x1_004_06c32cf4:
+DeepFM_frappe_x1_004_5f599efd:
     batch_norm: true
     batch_size: 4096
     dataset_id: frappe_x1_04e961e9
     debug: false
     embedding_dim: 10
-    embedding_regularizer: 0.05
+    embedding_regularizer: 0.1
     epochs: 100
     every_x_epochs: 1
     hidden_activations: relu
@@ -117,18 +117,80 @@ DeepFM_frappe_x1_004_06c32cf4:
     patience: 2
     pickle_feature_encoder: true
     save_best_only: true
-    seed: 27011
+    seed: 2021
     shuffle: true
     task: binary_classification
     use_hdf5: true
     verbose: 1
-DeepFM_frappe_x1_005_e2dc79f3:
+DeepFM_frappe_x1_005_88c5d36f:
     batch_norm: true
     batch_size: 4096
     dataset_id: frappe_x1_04e961e9
     debug: false
     embedding_dim: 10
-    embedding_regularizer: 0.05
+    embedding_regularizer: 0.1
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./Frappe/DeepFM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+DeepFM_frappe_x1_006_a97edb17:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: frappe_x1_04e961e9
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.1
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./Frappe/DeepFM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+DeepFM_frappe_x1_007_753b7bd9:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: frappe_x1_04e961e9
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.2
     epochs: 100
     every_x_epochs: 1
     hidden_activations: relu
@@ -148,7 +210,162 @@ DeepFM_frappe_x1_005_e2dc79f3:
     patience: 2
     pickle_feature_encoder: true
     save_best_only: true
-    seed: 948432
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+DeepFM_frappe_x1_008_1c3879d4:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: frappe_x1_04e961e9
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.2
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./Frappe/DeepFM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+DeepFM_frappe_x1_009_0493fda2:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: frappe_x1_04e961e9
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.2
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./Frappe/DeepFM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+DeepFM_frappe_x1_010_0afa376d:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: frappe_x1_04e961e9
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.5
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./Frappe/DeepFM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+DeepFM_frappe_x1_011_4f76500e:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: frappe_x1_04e961e9
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.5
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./Frappe/DeepFM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+DeepFM_frappe_x1_012_21f06e89:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: frappe_x1_04e961e9
+    debug: false
+    embedding_dim: 10
+    embedding_regularizer: 0.5
+    epochs: 100
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./Frappe/DeepFM_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
     shuffle: true
     task: binary_classification
     use_hdf5: true
