@@ -23,3 +23,4 @@ assert("d9568f246357d156c4b8030fadb8b623" == hashlib.md5(open('valid.csv', 'r').
 assert("9e2fe9c48705c9315ae7a0953eb57acf" == hashlib.md5(open('test.csv', 'r').read().encode('utf-8')).hexdigest())
 
 print("Reproducing data succeeded!")
+
