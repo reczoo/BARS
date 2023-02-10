@@ -1,4 +1,4 @@
-name: Deploy jupyter book to github pages
+name: github-pages
 
 # Only run this when the master branch changes
 on:
