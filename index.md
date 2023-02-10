@@ -23,7 +23,7 @@ In summary, BARS is built with the following key features:
 
 By establishing an open benchmarking standard, together with the freely available datasets, source code, and reproducing steps, we hope that the BARS project could benefit all researchers, practitioners, and educators in the community. Currently, the BARS benchmarks cover the following two tasks:
 
-![Open Benchmarking Pipeline](img/pipeline.jpg)
+![Open Benchmarking Pipeline](docs/img/pipeline.jpg)
 
 ## Benchmark Tasks
 
@@ -42,6 +42,6 @@ Ongoing projects:
 
 If you have any questions or feedback about the BARS benchamrk, please [start a discussion here](https://github.com/openbenchmark/BARS/discussions/new), or join our WeChat group.
 
-![Scan QR code](img/wechat.jpg)
+![Scan QR code](docs/img/wechat.jpg)
 
 

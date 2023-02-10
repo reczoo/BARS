@@ -1,4 +1,4 @@
-name: github-pages
+name: deploy-book
 
 # Only run this when the master branch changes
 on:
@@ -11,18 +11,12 @@ jobs:
   deploy-book:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-
     # Install dependencies
-    - name: Set up Python 3.7
-      uses: actions/setup-python@v1
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v3
       with:
         python-version: 3.7
-
-    - name: Install dependencies
-      run: |
-        pip install -r requirements.txt
-        pip install jupyter-book
+    - run: pip install jupyter-book
 
     # Build the book
     - name: Build the book
@@ -30,7 +24,7 @@ jobs:
         jupyter-book build .
 
     # Push the book's HTML to github-pages
-    - name: GitHub Pages action
+    - name: Deploy github-pages
       uses: peaceiris/actions-gh-pages@v3.6.1
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}

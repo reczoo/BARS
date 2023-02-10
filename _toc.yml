@@ -2,7 +2,7 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: docs/index.md
+root: index.md
 parts:
 - caption: Open Datasets
   chapters:
@@ -59,7 +59,7 @@ parts:
 
 - caption: Contribution
   chapters:
-  - file: docs/contribution.md
+  - file: contribution.md
 
 - caption: Resources
   chapters:
