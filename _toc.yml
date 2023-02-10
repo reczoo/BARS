@@ -1,0 +1,73 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: docs/index.md
+parts:
+- caption: Open Datasets
+  chapters:
+  - file: datasets/README.md
+
+- caption: CTR Prediction
+  chapters:
+  - file: ctr_prediction/index.md
+  - url: https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks
+    title: Benchmark Code
+  - file: ctr_prediction/leaderboard/README.md
+    sections:
+    - url: https://openbenchmark.github.io/BarsCTR/leaderboard/avazu_x1.html
+      title: Avazu_x1
+    - url: https://openbenchmark.github.io/BarsCTR/leaderboard/avazu_x4_001.html
+      title: Avazu_x4_001
+    - url: https://openbenchmark.github.io/BarsCTR/leaderboard/avazu_x4_002.html
+      title: Avazu_x4_002
+    - url: https://openbenchmark.github.io/BarsCTR/leaderboard/criteo_x1.html
+      title: Criteo_x1
+    - url: https://openbenchmark.github.io/BarsCTR/leaderboard/criteo_x4_001.html
+      title: Criteo_x4_001
+    - url: https://openbenchmark.github.io/BarsCTR/leaderboard/criteo_x4_002.html
+      title: Criteo_x4_002
+    - url: https://openbenchmark.github.io/BarsCTR/leaderboard/frappe_x1.html
+      title: Frappe_x1
+    - url: https://openbenchmark.github.io/BarsCTR/leaderboard/kkbox_x1.html
+      title: KKBox_x1
+    - url: https://openbenchmark.github.io/BarsCTR/leaderboard/movielenslatest_x1.html
+      title: MovielensLatest_x1
+  - url: https://openbenchmark.github.io/BarsCTR/papers.html
+    title: Related Papers
+
+  
+- caption: Candidate Matching
+  chapters:
+  - file: candidate_matching/index.md
+  - url: https://github.com/openbenchmark/BARS/tree/master/candidate_matching/benchmarks
+    title: Benchmark Code
+  - file: candidate_matching/leaderboard/README.md
+    sections:
+    - url: https://openbenchmark.github.io/BarsMatch/leaderboard/amazonbooks_m1.html
+      title: AmazonBooks_m1
+    - url: https://openbenchmark.github.io/BarsMatch/leaderboard/gowalla_m1.html
+      title: Gowalla_m1
+    - url: https://openbenchmark.github.io/BarsMatch/leaderboard/yelp18_m1.html
+      title: Yelp18_m1
+  - url: https://openbenchmark.github.io/BarsMatch/papers.html
+    title: Related Papers
+
+# - caption: Re-ranking
+
+# - caption: Multi-Task
+
+- caption: Contribution
+  chapters:
+  - file: docs/contribution.md
+
+- caption: Resources
+  chapters:
+  - url: https://github.com/ACMRecSys/recsys-datasets
+    title: RecSys Datasets
+  - url: https://github.com/ACMRecSys/recsys-evaluation-frameworks
+    title: RecSys Libraries
+  # - file: docs/reproducible.md
+
+
+

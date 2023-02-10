@@ -1,4 +1,4 @@
-# Call for Contributions
+# Contribute to BARS
 
 ## Datasets
 Recommender systems are a typical practical-oriented research topic. 
