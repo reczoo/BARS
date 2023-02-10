@@ -1,4 +1,4 @@
-name: deploy-book
+name: github-pages
 
 # Only run this when the master branch changes
 on:

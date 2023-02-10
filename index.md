@@ -21,9 +21,17 @@ In summary, BARS is built with the following key features:
 
 + **Strong maintainability**: BARS is open to the community. Anyone can contribute new datasets, implement new models, update new benchmarking results, or revise existing numbers through a pull request on Github. The contributor will be marked honorably along with the contributions accordingly.
 
-By establishing an open benchmarking standard, together with the freely available datasets, source code, and reproducing steps, we hope that the BARS project could benefit all researchers, practitioners, and educators in the community. Currently, the BARS benchmarks cover the following two tasks:
 
-![Open Benchmarking Pipeline](docs/img/pipeline.jpg)
+```{figure} docs/img/pipeline.jpg
+---
+height: 140
+alt : "pipeline.jpg"
+---
+The Open Benchmarking Pipeline
+```
+
+By establishing an open benchmarking standard, together with the freely available datasets, source code, and reproducing steps, we hope that the BARS project could benefit all researchers, practitioners, and educators in the community. 
+
 
 ## Benchmark Tasks
 

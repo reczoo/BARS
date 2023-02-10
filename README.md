@@ -6,8 +6,8 @@ Despite the significant progress made in both research and practice of recommend
 
 The BARS benchmark currently covers the following two tasks. 
 
-+ [BarsCTR: A Benchmark for CTR Prediction](https://openbenchmark.github.io/BARS)
-+ [BarsMatch: A Benchmark for Candidate Item Matching](https://openbenchmark.github.io/BARS)
++ [BarsCTR: A Benchmark for CTR Prediction](https://openbenchmark.github.io/BarsCTR)
++ [BarsMatch: A Benchmark for Candidate Item Matching](https://openbenchmark.github.io/BarsMatch)
 
 Ongoing projects:
 
@@ -17,12 +17,12 @@ Ongoing projects:
 
 ## Contributing
 
-We welcome any contribution that could help improve the BARS benchmark. Check the [start guide on how to contribute](./docs/contribution.md).
+We welcome any contribution that could help improve the BARS benchmark. Check the [start guide on how to contribute](./contribution.md).
 
 ## Discussion
 
 If you have any questions or feedback about the BARS benchamrk, please open a new issue or join our WeChat group.
 
-![Scan QR code](https://openbenchmark.github.io/BARS/img/wechat.jpg)
+![Scan QR code](https://openbenchmark.github.io/BARS/_images/wechat.jpg)
 
 
