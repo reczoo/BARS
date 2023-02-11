@@ -4,7 +4,7 @@ BarsCTR: An Open Benchmark for CTR Prediction https://openbenchmark.github.io/Ba
 
 Click-through rate (CTR) prediction (or user response prediction in general) is an important task in the ranking phase of recommender systems. The BARS project aims to build an open benchmark for CTR prediction, which consists of:
 
-+ [A curated list of CTR prediction models](./papers.md) which have been tagged into different topics, such as feature-interactions, behavior-sequence-modeling, multi-task learning, cross-domain modeling, AutoML, etc.
++ [A curated list of CTR prediction models](https://openbenchmark.github.io/BarsCTR/papers.html) which have been tagged into different topics, such as feature-interactions, behavior-sequence-modeling, multi-task learning, cross-domain modeling, AutoML, etc.
 
 + [A collection of open datasets](../datasets/README.md) for CTR prediction research, and unique dataset IDs to track specific data splits of each dataset.
 

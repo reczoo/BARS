@@ -1,7 +1,7 @@
 # Amazon
 
-+ [AmazonElectronics_x1](#AmazonElectronics_x1)
-+ [AmazonBooks_m1](#AmazonBooks_m1)
++ [AmazonElectronics_x1](#amazonelectronics_x1)
++ [AmazonBooks_m1](#amazonbooks_m1)
 
 
 ## AmazonElectronics_x1
@@ -12,7 +12,7 @@
   
 
 
-+ Default setting
++ Benchmark setting
   
   In this benchmark setting, we follow the AFN work to fix **embedding_dim=10**, **batch_size=4096**, and **MLP_hidden_units=[400, 400, 400]** to make fair comparisons.
 

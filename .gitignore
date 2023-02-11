@@ -103,3 +103,4 @@ venv.bak/
 .mypy_cache/
 .ipynb_checkpoints
 .DS_Store
+_build

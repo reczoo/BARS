@@ -1,7 +1,6 @@
 # Taobao
 
-+ [Taobao_x1](#Taobao_x1)
-+ [Taobao_x2](#Taobao_x2)
++ [TaobaoAd_x1](#taobaoad_x1)
 
 
 The dataset is [provided by Alibaba](https://tianchi.aliyun.com/dataset/dataDetail?dataId=56&userId=1), which contains 8 days of ad click logs that are randomly sampled from 1140000 users at the website of Taobao. The dataset has a total of 26 million records. By default, the first 7 days of samples are used as training samples (i.e., 20170506-20170512), and the last day's samples are used as test samples (i.e., 20170513). Meanwhile, the dataset also covers the shopping behavior of all users in the recent 22 days, including totally seven hundred million records.
@@ -45,41 +44,28 @@ raw_behavior_log:
 
 
 
-## Taobao_x1
+## TaobaoAd_x1
 
 + Dataset description
 
-    Taobao is a dataset provided by Alibaba, which contains 8 days of ad click-through data (26 million records) that are randomly sampled from 1140000 users. Following the original data split, we use the first 7 days (i.e., 20170506-20170512) of samples for training, and the last day's samples (i.e., 20170513) for testing. To enable reproducibility, we open the preprocessed data in the [BARS benchmark](https://github.com/openbenchmark/BARS/click_prediction/datasets).
+    Taobao is a dataset provided by Alibaba, which contains 8 days of ad click-through data (26 million records) that are randomly sampled from 1140000 users. Following the original data split, we use the first 7 days (i.e., 20170506-20170512) of samples for training, and the last day's samples (i.e., 20170513) for testing. To enable reproducibility, we open the preprocessed data in the [BARS benchmark](https://github.com/openbenchmark/BARS/datasets).
 
     The dataset statistics are summarized as follows:
 
     | Dataset Split  | Total | #Train | #Validation | #Test | 
     | :--------: | :-----: |:-----: | :----------: | :----: | 
-    | Taobao_x1 |  26,557,961     | 23,249,296   |      | 3,308,665    |             
+    | TaobaoAd_x1 |  26,557,961     | XX   |      | XX    |         
 
 
 + How to get the dataset?
-    + Solution#1: Download [the raw dataset](https://tianchi.aliyun.com/dataset/dataDetail?dataId=56&userId=1) and run the following scripts:
+    + Solution#1: Download [the preprocessed dataset](https://aistudio.baidu.com/aistudio/datasetdetail/81892) for the DMR work and run the following scripts:
       ```bash
-      $ cd datasets/Taobao/Taobao_x1
-      $ python split_taobao_x1.py
-      ```
-    + Solution#2: For ease of reuse, the preprocessed data are available for [downloading here](https://zenodo.org/record/5700987/files/Taobao_x1.zip).
-    + Check the md5sum for consistency.
-      ```bash
-      $ md5sum train.csv test.csv
-      e4487021d20750121725e880556bfdc1  train.csv
-      1de0b75cbb473b0c3ea2dd146dc4af28  test.csv
+      $ cd Taobao/TaobaoAd_x1
+      $ python convert_taobaoad_x1.py
       ```
 
-+ Default setting
++ Benchmark setting
 
-  In this setting, we replace infrequent categorical features with a default ``<OOV>`` token by setting the threshold min_category_count=10. We further set the length of user click sequence to be 128 via truncating or padding. To make a fair comparison, after some tuning, we fix **embedding_dim=10**, and **hidden_units=[512, 256, 128]** for all compared models.
-
-
-## Taobao_x2
-TBA
-
-
+  In this setting, we replace infrequent categorical features with a default <OOV> token by setting the threshold min_category_count=10. We further set the length of user click sequence to be 50 via truncating or padding. To make a fair comparison, after some tuning, we fix **embedding_dim=32**, and suggest **hidden_units=[512, 256, 128]** for fair comparisons.
 
 

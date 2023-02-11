@@ -24,7 +24,7 @@ In summary, BARS is built with the following key features:
 
 ```{figure} docs/img/pipeline.jpg
 ---
-height: 140
+scale: 10%
 alt : "pipeline.jpg"
 ---
 The Open Benchmarking Pipeline
@@ -37,7 +37,7 @@ By establishing an open benchmarking standard, together with the freely availabl
 
 The BARS benchmark currently covers the following two main recommendation tasks. 
 
-+ [BarsCTR: A Benchmark for CTR Prediction](https://openbenchmark.github.io/BARS/ctr-prediction)
++ [BarsCTR: A Benchmark for CTR Prediction](https://openbenchmark.github.io/BARS/ctr_prediction)
 + [BarsMatch: A Benchmark for Candidate Item Matching](https://openbenchmark.github.io/BARS/candidate_matching)
 
 Ongoing projects:

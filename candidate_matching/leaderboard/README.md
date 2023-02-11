@@ -1,4 +1,4 @@
-# Leaderboard
+# BarsMatch Leaderboard
 
 
 ```{tableofcontents}

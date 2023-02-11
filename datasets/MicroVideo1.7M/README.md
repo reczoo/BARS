@@ -30,7 +30,7 @@ MicroVideo-1.7M is an open dataset provided by the paper of "[Temporal Hierarchi
       9417a18304fb62411ac27c26c5e0de56  test.csv
       ```
 
-+ Default setting
++ Benchmark setting
 
   In this setting, we set the length of user click sequence to be 128 via truncating or padding. For fair comparisons, we fix **embedding_dim=64** as with THACIL, and set **hidden_units=[1024, 512, 256]** after some tuning.
 
