@@ -1,2 +1,1 @@
 fuxictr
-jupyter-book

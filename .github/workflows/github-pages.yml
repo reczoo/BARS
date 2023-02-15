@@ -4,7 +4,7 @@ name: github-pages
 on:
   push:
     branches:
-    - master
+    - main
 
 # This job installs dependencies, build the book, and pushes it to `gh-pages`
 jobs:
@@ -25,8 +25,11 @@ jobs:
 
     # Push the book's HTML to github-pages
     - name: Deploy github-pages
-      uses: peaceiris/actions-gh-pages@v3.6.1
+      uses: peaceiris/actions-gh-pages@v3
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        personal_token: ${{ secrets.PERSONAL_TOKEN }}
         publish_dir: ./_build/html
-
+        exclude_assets: '_sources'
+        external_repository: openbenchmark/openbenchmark.github.io
+        publish_branch: main
+        destination_dir: BARS
