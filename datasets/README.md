@@ -1,10 +1,11 @@
 # BARS Datasets
 
-+ [Datasets for CTR Prediction](#datasets-for-ctr-prediction)
-+ [Datasets for Candidate Item Matching](#datasets-for-candidate-item-matching)
-+ Datasets for Reranking
++ [BarsCTR Datasets](#barsctr-datasets)
++ [BarsMatch Datasets](#barsmatch-datasets)
++ BarsRerank Datasets
 
-## Datasets for CTR Prediction
+
+## BarsCTR Datasets
 
 | Dataset   | Dataset ID   |  Used by                           |  Domain  |  Target Topics   |
 |:-----------|:--------------------|:------------------------|:-------------------- |:---------------------------------------------|
@@ -25,7 +26,7 @@
 | [KuaiShou](https://github.com/openbenchmark/BARS/tree/master/datasets/KuaiShou)        |  [KuaiVideo_x1](https://github.com/openbenchmark/BARS/tree/master/datasets/KuaiShou#kuaivideo_x1)      |  [Li et al., MM'19](https://liyongqi67.github.io/papers/MM2019_Routing_Micro_videos_via_A_Temporal_Graph_guided_Recommendation_System.pdf)  |  MicroVideo  | Sequence, Multimodal |
 
 
-## Datasets for Candidate Item Matching
+## BarsMatch Datasets
 
 | Dataset           | Dataset ID           |     Used by           |  Domain | Target Topics                         |
 |-------------------|----------------------|:-----------------|:-------------|:----------------------|
@@ -48,7 +49,6 @@
 ## Tracking Records
 
 We track dataset splits from the published papers in order to make the research results reproducible and reusable. We directly reuse the data splits or preprocessing steps if a paper has open the details. If not, we request the data splits by sending emails to the authors.
-
 
 | Dataset Splits    |  Paper   |   
 |:-----------|:--------------------|

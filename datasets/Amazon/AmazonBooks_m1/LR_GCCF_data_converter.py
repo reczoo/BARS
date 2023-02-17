@@ -27,12 +27,9 @@ for _, line in enumerate(links_file):
     for i_id in tmp[1:]: 
         train_data_user[u_id].add(int(i_id))
         train_data_item[int(i_id)].add(u_id)
-np.save('./datanpy/training_set.npy',[train_data_user,train_data_item,num_u_i]) 
+np.save('./datanpy/train_set.npy',[train_data_user,train_data_item,num_u_i]) 
 print(num_u,num_u_i)
 
-
-
- 
 test_data_user = defaultdict(set)
 test_data_item = defaultdict(set) 
 links_file = open(testing_path)
@@ -47,9 +44,8 @@ for _, line in enumerate(links_file):
     for i_id in tmp[1:]: 
         test_data_user[u_id].add(int(i_id))
         test_data_item[int(i_id)].add(u_id)
-np.save('./datanpy/training_set.npy',[test_data_user,test_data_item,num_u_i]) 
+np.save('./datanpy/test_set.npy',[test_data_user,test_data_item,num_u_i]) 
 print(num_u,num_u_i)
-
 
 val_data_user = defaultdict(set)
 val_data_item = defaultdict(set) 
@@ -65,10 +61,8 @@ for _, line in enumerate(links_file):
     for i_id in tmp[1:]: 
         val_data_user[u_id].add(int(i_id))
         val_data_item[int(i_id)].add(u_id)
-np.save('./datanpy/training_set.npy',[val_data_user,val_data_item,num_u_i]) 
+np.save('./datanpy/val_set.npy',[val_data_user,val_data_item,num_u_i]) 
 print(num_u,num_u_i)
-
-
 
 user_rating_set_all = defaultdict(set)
 for u in range(num_u):
@@ -83,8 +77,5 @@ for u in range(num_u):
         val_tmp = val_data_user[u] 
     user_rating_set_all[u]=train_tmp|test_tmp|val_tmp
 np.save('./datanpy/user_rating_set_all.npy',user_rating_set_all) 
-
-
-
 
 
