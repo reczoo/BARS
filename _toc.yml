@@ -12,7 +12,7 @@ parts:
   chapters:
   - file: ctr_prediction/index.md
   - url: https://github.com/openbenchmark/BARS/tree/master/ctr_prediction/benchmarks
-    title: Benchmark Code
+    title: Benchmark Scripts
   - file: ctr_prediction/leaderboard/README.md
     sections:
     - url: https://openbenchmark.github.io/BarsCTR/leaderboard/avazu_x1.html
@@ -41,7 +41,7 @@ parts:
   chapters:
   - file: candidate_matching/index.md
   - url: https://github.com/openbenchmark/BARS/tree/master/candidate_matching/benchmarks
-    title: Benchmark Code
+    title: Benchmark Scripts
   - file: candidate_matching/leaderboard/README.md
     sections:
     - url: https://openbenchmark.github.io/BarsMatch/leaderboard/amazonbooks_m1.html
