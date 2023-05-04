@@ -6,6 +6,7 @@ Despite the significant progress made in both research and practice of recommend
 
 Openness is key to fostering progress in scientific research. BARS is such a project aimed for open BenchmArking for Recommender Systems, allowing better reproducibility and replicability of quantitative research results. The ultimate goal of BARS is to drive more reproducible research in the development of recommender systems. 
 
+
 ## Key Features
 In summary, BARS is built with the following key features:
 
@@ -44,6 +45,13 @@ Ongoing projects:
 
 + BarsRank: A Benchmark for Listwise Re-ranking
 + BarsMTL: A Benchmark for Multi-Task Recommendation
+
+
+## Citation
+
+*:bell: If you find our benchmarks helpful in your research, please kindly cite the following papers.*
+
+> Jieming Zhu, Quanyu Dai, Liangcai Su, Rong Ma, Jinyang Liu, Guohao Cai, Xi Xiao, Rui Zhang. [BARS: Towards Open Benchmarking for Recommender Systems](https://arxiv.org/abs/2205.09626). *The 45th International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR)*, 2022. [[Bibtex](https://dblp.org/rec/conf/sigir/ZhuDSMLCXZ22.html?view=bibtex)]
 
 
 ## Discussion

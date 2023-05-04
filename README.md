@@ -15,6 +15,13 @@ Ongoing projects:
 + BarsMTR: A Benchmark for Multi-Task Recommendation
 
 
+## Citation
+
+*:bell: If you find our benchmarks helpful in your research, please kindly cite the following papers.*
+
+> Jieming Zhu, Quanyu Dai, Liangcai Su, Rong Ma, Jinyang Liu, Guohao Cai, Xi Xiao, Rui Zhang. [BARS: Towards Open Benchmarking for Recommender Systems](https://arxiv.org/abs/2205.09626). *The 45th International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR)*, 2022. [[Bibtex](https://dblp.org/rec/conf/sigir/ZhuDSMLCXZ22.html?view=bibtex)]
+
+
 ## Contributing
 
 We welcome any contribution that could help improve the BARS benchmark. Check the [start guide on how to contribute](./contribution.md).
