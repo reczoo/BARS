@@ -1,0 +1,140 @@
+2022-08-23 19:07:34,812 P82559 INFO Params: {
+    "attention_dropout": "0.2",
+    "attention_hidden_activations": "ReLU",
+    "attention_hidden_units": "[512, 256]",
+    "attention_output_activation": "None",
+    "batch_norm": "False",
+    "batch_size": "8192",
+    "data_format": "csv",
+    "data_root": "../data/KuaiShou/",
+    "dataset_id": "kuaivideo_x1_dc7a3035",
+    "debug_mode": "False",
+    "din_sequence_field": "[('pos_items', 'pos_items_emb'), ('neg_items', 'neg_items_emb')]",
+    "din_target_field": "[('item_id', 'item_emb'), ('item_id', 'item_emb')]",
+    "din_use_softmax": "False",
+    "dnn_activations": "Dice",
+    "dnn_hidden_units": "[1024, 512, 256]",
+    "early_stop_patience": "2",
+    "embedding_dim": "64",
+    "embedding_regularizer": "0.0001",
+    "epochs": "100",
+    "eval_interval": "1",
+    "feature_cols": "[{'active': True, 'dtype': 'int', 'name': 'group_id', 'preprocess': 'copy_from(user_id)', 'remap': False, 'type': 'meta'}, {'active': True, 'dtype': 'str', 'name': 'user_id', 'type': 'categorical'}, {'active': True, 'dtype': 'str', 'name': 'item_id', 'type': 'categorical'}, {'active': True, 'dtype': 'str', 'embedding_dim': 64, 'min_categr_count': 1, 'name': 'item_emb', 'preprocess': 'copy_from(item_id)', 'pretrained_emb': '../data/KuaiShou/KuaiVideo_x1/item_visual_emb_dim64.h5', 'type': 'categorical'}, {'active': True, 'dtype': 'str', 'max_len': 100, 'name': 'pos_items', 'padding': 'pre', 'share_embedding': 'item_id', 'splitter': '^', 'type': 'sequence'}, {'active': True, 'dtype': 'str', 'max_len': 100, 'name': 'neg_items', 'padding': 'pre', 'share_embedding': 'item_id', 'splitter': '^', 'type': 'sequence'}, {'active': True, 'dtype': 'str', 'embedding_dim': 64, 'max_len': 100, 'min_categr_count': 1, 'name': 'pos_items_emb', 'padding': 'pre', 'preprocess': 'copy_from(pos_items)', 'pretrained_emb': '../data/KuaiShou/KuaiVideo_x1/item_visual_emb_dim64.h5', 'share_embedding': 'item_emb', 'splitter': '^', 'type': 'sequence'}, {'active': True, 'dtype': 'str', 'embedding_dim': 64, 'max_len': 100, 'min_categr_count': 1, 'name': 'neg_items_emb', 'padding': 'pre', 'preprocess': 'copy_from(neg_items)', 'pretrained_emb': '../data/KuaiShou/KuaiVideo_x1/item_visual_emb_dim64.h5', 'share_embedding': 'item_emb', 'splitter': '^', 'type': 'sequence'}]",
+    "feature_specs": "[{'feature_encoder': 'nn.Linear(64, 64, bias=False)', 'name': 'item_emb'}, {'feature_encoder': None, 'name': 'pos_items'}, {'feature_encoder': None, 'name': 'neg_items'}, {'feature_encoder': ['nn.Linear(64, 64, bias=False)'], 'name': 'pos_items_emb'}, {'feature_encoder': ['nn.Linear(64, 64, bias=False)'], 'name': 'neg_items_emb'}]",
+    "gpu": "6",
+    "group_id": "group_id",
+    "label_col": "{'dtype': 'float', 'name': 'is_click'}",
+    "learning_rate": "0.001",
+    "loss": "binary_crossentropy",
+    "metrics": "['gAUC', 'AUC', 'logloss']",
+    "min_categr_count": "10",
+    "model": "DIN",
+    "model_id": "DIN_kuaivideo_x1_013_fc4bf206",
+    "model_root": "./checkpoints/DIN_kuaivideo_x1/",
+    "monitor": "{'AUC': 1, 'gAUC': 1}",
+    "monitor_mode": "max",
+    "net_dropout": "0.1",
+    "net_regularizer": "0",
+    "num_workers": "3",
+    "optimizer": "adam",
+    "ordered_features": "None",
+    "pickle_feature_encoder": "True",
+    "save_best_only": "True",
+    "seed": "20222023",
+    "shuffle": "True",
+    "task": "binary_classification",
+    "test_data": "../data/KuaiShou/KuaiVideo_x1/test.csv",
+    "train_data": "../data/KuaiShou/KuaiVideo_x1/train.csv",
+    "valid_data": "../data/KuaiShou/KuaiVideo_x1/test.csv",
+    "verbose": "1"
+}
+2022-08-23 19:07:34,813 P82559 INFO Set up feature processor...
+2022-08-23 19:07:34,813 P82559 INFO Load feature_map from json: ../data/KuaiShou/kuaivideo_x1_dc7a3035/feature_map.json
+2022-08-23 19:07:34,814 P82559 INFO Set column index...
+2022-08-23 19:07:34,814 P82559 INFO Feature specs: {
+    "group_id": "{'type': 'meta'}",
+    "item_emb": "{'source': '', 'type': 'categorical', 'embedding_dim': 64, 'pretrained_emb': 'pretrained_emb.h5', 'freeze_emb': True, 'padding_idx': 0, 'oov_idx': 3242316, 'vocab_size': 3242317, 'feature_encoder': 'nn.Linear(64, 64, bias=False)'}",
+    "item_id": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'oov_idx': 632405, 'vocab_size': 632406}",
+    "neg_items": "{'source': '', 'type': 'sequence', 'feature_encoder': None, 'share_embedding': 'item_id', 'padding_idx': 0, 'oov_idx': 632405, 'vocab_size': 632406, 'max_len': 100}",
+    "neg_items_emb": "{'source': '', 'type': 'sequence', 'feature_encoder': ['nn.Linear(64, 64, bias=False)'], 'embedding_dim': 64, 'share_embedding': 'item_emb', 'padding_idx': 0, 'oov_idx': 3242316, 'vocab_size': 3242317, 'max_len': 100}",
+    "pos_items": "{'source': '', 'type': 'sequence', 'feature_encoder': None, 'share_embedding': 'item_id', 'padding_idx': 0, 'oov_idx': 632405, 'vocab_size': 632406, 'max_len': 100}",
+    "pos_items_emb": "{'source': '', 'type': 'sequence', 'feature_encoder': ['nn.Linear(64, 64, bias=False)'], 'embedding_dim': 64, 'share_embedding': 'item_emb', 'padding_idx': 0, 'oov_idx': 3242316, 'vocab_size': 3242317, 'max_len': 100}",
+    "user_id": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'oov_idx': 10001, 'vocab_size': 10002}"
+}
+2022-08-23 19:07:42,323 P82559 INFO Total number of parameters: 43032835.
+2022-08-23 19:07:42,324 P82559 INFO Loading data...
+2022-08-23 19:07:42,324 P82559 INFO Loading data from h5: ../data/KuaiShou/kuaivideo_x1_dc7a3035/train.h5
+2022-08-23 19:08:05,705 P82559 INFO Train samples: total/10931092, blocks/1
+2022-08-23 19:08:05,705 P82559 INFO Loading data from h5: ../data/KuaiShou/kuaivideo_x1_dc7a3035/valid.h5
+2022-08-23 19:08:12,096 P82559 INFO Validation samples: total/2730291, blocks/1
+2022-08-23 19:08:12,096 P82559 INFO Loading train and validation data done.
+2022-08-23 19:08:12,097 P82559 INFO Start training: 1335 batches/epoch
+2022-08-23 19:08:12,097 P82559 INFO ************ Epoch=1 start ************
+2022-08-23 19:20:40,825 P82559 INFO [Metrics] AUC: 0.726351 - gAUC: 0.638676
+2022-08-23 19:20:40,838 P82559 INFO Save best model: monitor(max): 1.365027
+2022-08-23 19:20:42,509 P82559 INFO --- 1335/1335 batches finished ---
+2022-08-23 19:20:42,577 P82559 INFO Train loss: 0.554710
+2022-08-23 19:20:42,577 P82559 INFO ************ Epoch=1 end ************
+2022-08-23 19:33:09,441 P82559 INFO [Metrics] AUC: 0.737016 - gAUC: 0.652635
+2022-08-23 19:33:09,447 P82559 INFO Save best model: monitor(max): 1.389650
+2022-08-23 19:33:11,596 P82559 INFO --- 1335/1335 batches finished ---
+2022-08-23 19:33:11,657 P82559 INFO Train loss: 0.451836
+2022-08-23 19:33:11,657 P82559 INFO ************ Epoch=2 end ************
+2022-08-23 19:45:44,351 P82559 INFO [Metrics] AUC: 0.738927 - gAUC: 0.655932
+2022-08-23 19:45:44,361 P82559 INFO Save best model: monitor(max): 1.394860
+2022-08-23 19:45:46,489 P82559 INFO --- 1335/1335 batches finished ---
+2022-08-23 19:45:46,554 P82559 INFO Train loss: 0.444099
+2022-08-23 19:45:46,554 P82559 INFO ************ Epoch=3 end ************
+2022-08-23 19:58:16,117 P82559 INFO [Metrics] AUC: 0.738789 - gAUC: 0.656717
+2022-08-23 19:58:16,122 P82559 INFO Save best model: monitor(max): 1.395505
+2022-08-23 19:58:18,110 P82559 INFO --- 1335/1335 batches finished ---
+2022-08-23 19:58:18,182 P82559 INFO Train loss: 0.441468
+2022-08-23 19:58:18,182 P82559 INFO ************ Epoch=4 end ************
+2022-08-23 20:10:45,612 P82559 INFO [Metrics] AUC: 0.742403 - gAUC: 0.661245
+2022-08-23 20:10:45,619 P82559 INFO Save best model: monitor(max): 1.403648
+2022-08-23 20:10:47,749 P82559 INFO --- 1335/1335 batches finished ---
+2022-08-23 20:10:47,828 P82559 INFO Train loss: 0.439536
+2022-08-23 20:10:47,828 P82559 INFO ************ Epoch=5 end ************
+2022-08-23 20:23:15,200 P82559 INFO [Metrics] AUC: 0.744736 - gAUC: 0.663581
+2022-08-23 20:23:15,210 P82559 INFO Save best model: monitor(max): 1.408318
+2022-08-23 20:23:17,297 P82559 INFO --- 1335/1335 batches finished ---
+2022-08-23 20:23:17,363 P82559 INFO Train loss: 0.438052
+2022-08-23 20:23:17,363 P82559 INFO ************ Epoch=6 end ************
+2022-08-23 20:35:42,635 P82559 INFO [Metrics] AUC: 0.746332 - gAUC: 0.665806
+2022-08-23 20:35:42,647 P82559 INFO Save best model: monitor(max): 1.412138
+2022-08-23 20:35:44,706 P82559 INFO --- 1335/1335 batches finished ---
+2022-08-23 20:35:44,767 P82559 INFO Train loss: 0.436757
+2022-08-23 20:35:44,767 P82559 INFO ************ Epoch=7 end ************
+2022-08-23 20:48:06,040 P82559 INFO [Metrics] AUC: 0.744140 - gAUC: 0.663761
+2022-08-23 20:48:06,052 P82559 INFO Monitor(max) STOP: 1.407901 !
+2022-08-23 20:48:06,052 P82559 INFO Reduce learning rate on plateau: 0.000100
+2022-08-23 20:48:06,053 P82559 INFO --- 1335/1335 batches finished ---
+2022-08-23 20:48:06,121 P82559 INFO Train loss: 0.435966
+2022-08-23 20:48:06,121 P82559 INFO ************ Epoch=8 end ************
+2022-08-23 21:00:30,769 P82559 INFO [Metrics] AUC: 0.749537 - gAUC: 0.669568
+2022-08-23 21:00:30,780 P82559 INFO Save best model: monitor(max): 1.419104
+2022-08-23 21:00:32,794 P82559 INFO --- 1335/1335 batches finished ---
+2022-08-23 21:00:32,859 P82559 INFO Train loss: 0.413917
+2022-08-23 21:00:32,859 P82559 INFO ************ Epoch=9 end ************
+2022-08-23 21:12:54,636 P82559 INFO [Metrics] AUC: 0.749469 - gAUC: 0.669368
+2022-08-23 21:12:54,643 P82559 INFO Monitor(max) STOP: 1.418837 !
+2022-08-23 21:12:54,643 P82559 INFO Reduce learning rate on plateau: 0.000010
+2022-08-23 21:12:54,644 P82559 INFO --- 1335/1335 batches finished ---
+2022-08-23 21:12:54,704 P82559 INFO Train loss: 0.405640
+2022-08-23 21:12:54,704 P82559 INFO ************ Epoch=10 end ************
+2022-08-23 21:25:18,812 P82559 INFO [Metrics] AUC: 0.747250 - gAUC: 0.667388
+2022-08-23 21:25:18,822 P82559 INFO Monitor(max) STOP: 1.414638 !
+2022-08-23 21:25:18,822 P82559 INFO Reduce learning rate on plateau: 0.000001
+2022-08-23 21:25:18,822 P82559 INFO ********* Epoch==11 early stop *********
+2022-08-23 21:25:18,823 P82559 INFO --- 1335/1335 batches finished ---
+2022-08-23 21:25:18,888 P82559 INFO Train loss: 0.394795
+2022-08-23 21:25:18,889 P82559 INFO Training finished.
+2022-08-23 21:25:18,889 P82559 INFO Load best model: /cache/FuxiCTR/benchmark/checkpoints/DIN_kuaivideo_x1/kuaivideo_x1_dc7a3035/DIN_kuaivideo_x1_013_fc4bf206.model
+2022-08-23 21:25:20,239 P82559 INFO ****** Validation evaluation ******
+2022-08-23 21:26:30,291 P82559 INFO [Metrics] gAUC: 0.669568 - AUC: 0.749537 - logloss: 0.432120
+2022-08-23 21:26:30,485 P82559 INFO ******** Test evaluation ********
+2022-08-23 21:26:30,485 P82559 INFO Loading data...
+2022-08-23 21:26:30,485 P82559 INFO Loading data from h5: ../data/KuaiShou/kuaivideo_x1_dc7a3035/test.h5
+2022-08-23 21:26:36,653 P82559 INFO Test samples: total/2730291, blocks/1
+2022-08-23 21:26:36,653 P82559 INFO Loading test data done.
+2022-08-23 21:27:45,642 P82559 INFO [Metrics] gAUC: 0.669568 - AUC: 0.749537 - logloss: 0.432120

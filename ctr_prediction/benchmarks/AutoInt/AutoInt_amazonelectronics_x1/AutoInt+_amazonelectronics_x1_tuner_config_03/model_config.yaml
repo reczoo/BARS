@@ -1,0 +1,1280 @@
+AutoInt_amazonelectronics_x1_001_176ccea9:
+    attention_dim: 512
+    attention_layers: 2
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    layer_norm: true
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_residual: true
+    use_scale: false
+    use_wide: true
+    verbose: 1
+AutoInt_amazonelectronics_x1_002_062a0cc7:
+    attention_dim: 512
+    attention_layers: 2
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_residual: true
+    use_scale: false
+    use_wide: true
+    verbose: 1
+AutoInt_amazonelectronics_x1_003_062a0cc7:
+    attention_dim: 512
+    attention_layers: 2
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    layer_norm: true
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_residual: false
+    use_scale: false
+    use_wide: true
+    verbose: 1
+AutoInt_amazonelectronics_x1_004_7a937c94:
+    attention_dim: 512
+    attention_layers: 2
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_residual: false
+    use_scale: false
+    use_wide: true
+    verbose: 1
+AutoInt_amazonelectronics_x1_005_16cff587:
+    attention_dim: 256
+    attention_layers: 2
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    layer_norm: true
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_residual: true
+    use_scale: false
+    use_wide: true
+    verbose: 1
+AutoInt_amazonelectronics_x1_006_520b55c5:
+    attention_dim: 256
+    attention_layers: 2
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_residual: true
+    use_scale: false
+    use_wide: true
+    verbose: 1
+AutoInt_amazonelectronics_x1_007_520b55c5:
+    attention_dim: 256
+    attention_layers: 2
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    layer_norm: true
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_residual: false
+    use_scale: false
+    use_wide: true
+    verbose: 1
+AutoInt_amazonelectronics_x1_008_11cd747c:
+    attention_dim: 256
+    attention_layers: 2
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_residual: false
+    use_scale: false
+    use_wide: true
+    verbose: 1
+AutoInt_amazonelectronics_x1_009_d5fa2b8a:
+    attention_dim: 512
+    attention_layers: 2
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    layer_norm: true
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 2
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_residual: true
+    use_scale: false
+    use_wide: true
+    verbose: 1
+AutoInt_amazonelectronics_x1_010_3e2762da:
+    attention_dim: 512
+    attention_layers: 2
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 2
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_residual: true
+    use_scale: false
+    use_wide: true
+    verbose: 1
+AutoInt_amazonelectronics_x1_011_3e2762da:
+    attention_dim: 512
+    attention_layers: 2
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    layer_norm: true
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 2
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_residual: false
+    use_scale: false
+    use_wide: true
+    verbose: 1
+AutoInt_amazonelectronics_x1_012_e24d4366:
+    attention_dim: 512
+    attention_layers: 2
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 2
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_residual: false
+    use_scale: false
+    use_wide: true
+    verbose: 1
+AutoInt_amazonelectronics_x1_013_fccf7124:
+    attention_dim: 256
+    attention_layers: 2
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    layer_norm: true
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 2
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_residual: true
+    use_scale: false
+    use_wide: true
+    verbose: 1
+AutoInt_amazonelectronics_x1_014_1c39421e:
+    attention_dim: 256
+    attention_layers: 2
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 2
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_residual: true
+    use_scale: false
+    use_wide: true
+    verbose: 1
+AutoInt_amazonelectronics_x1_015_1c39421e:
+    attention_dim: 256
+    attention_layers: 2
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    layer_norm: true
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 2
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_residual: false
+    use_scale: false
+    use_wide: true
+    verbose: 1
+AutoInt_amazonelectronics_x1_016_3029e2ef:
+    attention_dim: 256
+    attention_layers: 2
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 2
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_residual: false
+    use_scale: false
+    use_wide: true
+    verbose: 1
+AutoInt_amazonelectronics_x1_017_d1851197:
+    attention_dim: 512
+    attention_layers: 2
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    layer_norm: true
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_residual: true
+    use_scale: false
+    use_wide: true
+    verbose: 1
+AutoInt_amazonelectronics_x1_018_245252d0:
+    attention_dim: 512
+    attention_layers: 2
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_residual: true
+    use_scale: false
+    use_wide: true
+    verbose: 1
+AutoInt_amazonelectronics_x1_019_245252d0:
+    attention_dim: 512
+    attention_layers: 2
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    layer_norm: true
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_residual: false
+    use_scale: false
+    use_wide: true
+    verbose: 1
+AutoInt_amazonelectronics_x1_020_fd072d14:
+    attention_dim: 512
+    attention_layers: 2
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_residual: false
+    use_scale: false
+    use_wide: true
+    verbose: 1
+AutoInt_amazonelectronics_x1_021_8f23ba4a:
+    attention_dim: 256
+    attention_layers: 2
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    layer_norm: true
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_residual: true
+    use_scale: false
+    use_wide: true
+    verbose: 1
+AutoInt_amazonelectronics_x1_022_793229dc:
+    attention_dim: 256
+    attention_layers: 2
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_residual: true
+    use_scale: false
+    use_wide: true
+    verbose: 1
+AutoInt_amazonelectronics_x1_023_793229dc:
+    attention_dim: 256
+    attention_layers: 2
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    layer_norm: true
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_residual: false
+    use_scale: false
+    use_wide: true
+    verbose: 1
+AutoInt_amazonelectronics_x1_024_1bade77b:
+    attention_dim: 256
+    attention_layers: 2
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_residual: false
+    use_scale: false
+    use_wide: true
+    verbose: 1
+AutoInt_amazonelectronics_x1_025_ed8225f5:
+    attention_dim: 512
+    attention_layers: 2
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    layer_norm: true
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 8
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_residual: true
+    use_scale: false
+    use_wide: true
+    verbose: 1
+AutoInt_amazonelectronics_x1_026_d90f12c8:
+    attention_dim: 512
+    attention_layers: 2
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 8
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_residual: true
+    use_scale: false
+    use_wide: true
+    verbose: 1
+AutoInt_amazonelectronics_x1_027_d90f12c8:
+    attention_dim: 512
+    attention_layers: 2
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    layer_norm: true
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 8
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_residual: false
+    use_scale: false
+    use_wide: true
+    verbose: 1
+AutoInt_amazonelectronics_x1_028_0d3aa429:
+    attention_dim: 512
+    attention_layers: 2
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 8
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_residual: false
+    use_scale: false
+    use_wide: true
+    verbose: 1
+AutoInt_amazonelectronics_x1_029_b977484b:
+    attention_dim: 256
+    attention_layers: 2
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    layer_norm: true
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 8
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_residual: true
+    use_scale: false
+    use_wide: true
+    verbose: 1
+AutoInt_amazonelectronics_x1_030_0d74acfc:
+    attention_dim: 256
+    attention_layers: 2
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 8
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_residual: true
+    use_scale: false
+    use_wide: true
+    verbose: 1
+AutoInt_amazonelectronics_x1_031_0d74acfc:
+    attention_dim: 256
+    attention_layers: 2
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    layer_norm: true
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 8
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_residual: false
+    use_scale: false
+    use_wide: true
+    verbose: 1
+AutoInt_amazonelectronics_x1_032_30b346f0:
+    attention_dim: 256
+    attention_layers: 2
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 8
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_residual: false
+    use_scale: false
+    use_wide: true
+    verbose: 1

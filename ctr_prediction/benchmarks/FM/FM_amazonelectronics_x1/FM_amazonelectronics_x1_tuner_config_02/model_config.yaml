@@ -1,0 +1,336 @@
+FM_amazonelectronics_x1_001_52d54990:
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 0.005
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_amazonelectronics_x1_002_4bd4f8fa:
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 0.001
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_amazonelectronics_x1_003_948a2bc4:
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 0.0001
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_amazonelectronics_x1_004_3c91d671:
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 0.0005
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_amazonelectronics_x1_005_a3498619:
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 5.0e-05
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_amazonelectronics_x1_006_3a63536c:
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 1.0e-05
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_amazonelectronics_x1_007_94aedaad:
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 5.0e-06
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_amazonelectronics_x1_008_f98407ba:
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 1.0e-06
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_amazonelectronics_x1_009_a87f4871:
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 5.0e-07
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_amazonelectronics_x1_010_f4bd2554:
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 1.0e-07
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_amazonelectronics_x1_011_f3f41cf9:
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 1.0e-08
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_amazonelectronics_x1_012_24177582:
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 0
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1

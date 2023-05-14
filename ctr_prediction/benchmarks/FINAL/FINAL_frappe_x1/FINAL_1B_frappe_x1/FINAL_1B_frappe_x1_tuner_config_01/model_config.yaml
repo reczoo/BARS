@@ -1,0 +1,342 @@
+FINAL_frappe_x1_001_05cf211e:
+    batch_size: 4096
+    block1_dropout: 0
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0
+    block2_hidden_activations: null
+    block2_hidden_units: [64, 64, 64]
+    block_type: 1B
+    dataset_id: frappe_x1_47e6e0df
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 10
+    embedding_regularizer: 0.1
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FINAL
+    model_id: FINAL_default
+    model_root: ./checkpoints/FINAL_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    batch_norm: True
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_field_gate: false
+    verbose: 1
+FINAL_frappe_x1_002_023b07f6:
+    batch_size: 4096
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0
+    block2_hidden_activations: null
+    block2_hidden_units: [64, 64, 64]
+    block_type: 1B
+    dataset_id: frappe_x1_47e6e0df
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 10
+    embedding_regularizer: 0.1
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FINAL
+    model_id: FINAL_default
+    model_root: ./checkpoints/FINAL_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    batch_norm: True
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_field_gate: false
+    verbose: 1
+FINAL_frappe_x1_003_4b8d2cc1:
+    batch_size: 4096
+    block1_dropout: 0.2
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0
+    block2_hidden_activations: null
+    block2_hidden_units: [64, 64, 64]
+    block_type: 1B
+    dataset_id: frappe_x1_47e6e0df
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 10
+    embedding_regularizer: 0.1
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FINAL
+    model_id: FINAL_default
+    model_root: ./checkpoints/FINAL_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    batch_norm: True
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_field_gate: false
+    verbose: 1
+FINAL_frappe_x1_004_2a92ee93:
+    batch_size: 4096
+    block1_dropout: 0
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400]
+    block2_dropout: 0
+    block2_hidden_activations: null
+    block2_hidden_units: [64, 64, 64]
+    block_type: 1B
+    dataset_id: frappe_x1_47e6e0df
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 10
+    embedding_regularizer: 0.1
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FINAL
+    model_id: FINAL_default
+    model_root: ./checkpoints/FINAL_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    batch_norm: True
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_field_gate: false
+    verbose: 1
+FINAL_frappe_x1_005_bc54991f:
+    batch_size: 4096
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400]
+    block2_dropout: 0
+    block2_hidden_activations: null
+    block2_hidden_units: [64, 64, 64]
+    block_type: 1B
+    dataset_id: frappe_x1_47e6e0df
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 10
+    embedding_regularizer: 0.1
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FINAL
+    model_id: FINAL_default
+    model_root: ./checkpoints/FINAL_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    batch_norm: True
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_field_gate: false
+    verbose: 1
+FINAL_frappe_x1_006_75be0578:
+    batch_size: 4096
+    block1_dropout: 0.2
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400]
+    block2_dropout: 0
+    block2_hidden_activations: null
+    block2_hidden_units: [64, 64, 64]
+    block_type: 1B
+    dataset_id: frappe_x1_47e6e0df
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 10
+    embedding_regularizer: 0.1
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FINAL
+    model_id: FINAL_default
+    model_root: ./checkpoints/FINAL_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    batch_norm: True
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_field_gate: false
+    verbose: 1
+FINAL_frappe_x1_007_7b1a0866:
+    batch_size: 4096
+    block1_dropout: 0
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400]
+    block2_dropout: 0
+    block2_hidden_activations: null
+    block2_hidden_units: [64, 64, 64]
+    block_type: 1B
+    dataset_id: frappe_x1_47e6e0df
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 10
+    embedding_regularizer: 0.1
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FINAL
+    model_id: FINAL_default
+    model_root: ./checkpoints/FINAL_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    batch_norm: True
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_field_gate: false
+    verbose: 1
+FINAL_frappe_x1_008_88cb0265:
+    batch_size: 4096
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400]
+    block2_dropout: 0
+    block2_hidden_activations: null
+    block2_hidden_units: [64, 64, 64]
+    block_type: 1B
+    dataset_id: frappe_x1_47e6e0df
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 10
+    embedding_regularizer: 0.1
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FINAL
+    model_id: FINAL_default
+    model_root: ./checkpoints/FINAL_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    batch_norm: True
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_field_gate: false
+    verbose: 1
+FINAL_frappe_x1_009_f20320fc:
+    batch_size: 4096
+    block1_dropout: 0.2
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400]
+    block2_dropout: 0
+    block2_hidden_activations: null
+    block2_hidden_units: [64, 64, 64]
+    block_type: 1B
+    dataset_id: frappe_x1_47e6e0df
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 10
+    embedding_regularizer: 0.1
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FINAL
+    model_id: FINAL_default
+    model_root: ./checkpoints/FINAL_frappe_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    batch_norm: True
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_field_gate: false
+    verbose: 1

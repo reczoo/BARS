@@ -1,0 +1,47 @@
+base_config: ../model_zoo/DeepFM/config/
+base_expid: DeepFM_default
+dataset_id: microvideo1.7m_x1
+
+dataset_config:
+    microvideo1.7m_x1:
+        data_root: ../data/MicroVideo1.7M/
+        data_format: csv
+        train_data: ../data/MicroVideo1.7M/MicroVideo1.7M_x1/train.csv
+        valid_data: ../data/MicroVideo1.7M/MicroVideo1.7M_x1/test.csv # no validation data split in original paper
+        test_data: ../data/MicroVideo1.7M/MicroVideo1.7M_x1/test.csv
+        min_categr_count: 1
+        feature_cols:
+            - {name: group_id, active: True, dtype: int, type: meta, preprocess: "copy_from(user_id)", remap: False}
+            - {name: user_id, active: True, dtype: str, type: categorical}
+            - {name: item_id, active: True, dtype: str, type: categorical, embedding_dim: 64, 
+               pretrained_emb: "../data/MicroVideo1.7M/MicroVideo1.7M_x1/item_image_emb_dim64.h5"}
+            - {name: cate_id, active: True, dtype: str, type: categorical}
+            - {name: clicked_items, active: True, dtype: str, type: sequence, splitter: ^, max_len: 100, embedding_dim: 64, 
+               padding: pre, pretrained_emb: "../data/MicroVideo1.7M/MicroVideo1.7M_x1/item_image_emb_dim64.h5"}
+            - {name: clicked_categories, active: True, dtype: str, type: sequence, splitter: ^, max_len: 100, padding: pre,
+               share_embedding: cate_id}
+            - {name: timestamp, active: False, dtype: str, type: categorical}
+        label_col: {name: is_click, dtype: float}
+
+
+tuner_space:
+    model_root: './checkpoints/DeepFM_microvideo1.7m_x1/'
+    feature_specs: [[
+            {name: item_id, feature_encoder: "nn.Linear(64, 64, bias=False)"},
+            {name: clicked_items, feature_encoder: ["layers.MaskedAveragePooling()", "nn.Linear(64, 64, bias=False)"]},
+            {name: clicked_categories, feature_encoder: "layers.MaskedAveragePooling()"}
+        ]]
+    embedding_dim: 64
+    hidden_units: [[1024, 512, 256]]
+    embedding_regularizer: [1.e-4, 1.e-3, 5.e-4]
+    net_dropout: [0.1, 0.2, 0.3, 0.4]
+    batch_norm: [False, True]
+    learning_rate: 5.e-4
+    batch_size: 2048
+    seed: 2022
+    group_id: group_id
+    metrics: [[gAUC, AUC, logloss]]
+    monitor: {"gAUC": 1, "AUC": 1}
+    verbose: 0
+
+  

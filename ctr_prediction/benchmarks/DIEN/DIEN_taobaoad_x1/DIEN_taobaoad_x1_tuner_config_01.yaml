@@ -1,0 +1,53 @@
+base_config: ../model_zoo/DIEN/config/
+base_expid: DIEN_default
+dataset_id: taobaoad_x1
+
+dataset_config:
+    taobaoad_x1:
+        data_root: ../data/Taobao/
+        data_format: csv
+        train_data: ../data/Taobao/TaobaoAd_x1/train.csv
+        valid_data: ../data/Taobao/TaobaoAd_x1/test.csv
+        test_data: ../data/Taobao/TaobaoAd_x1/test.csv
+        min_categr_count: 10
+        feature_cols:
+            - {name: "group_id", active: True, dtype: int, type: meta, preprocess: "copy_from(userid)", remap: False}
+            - {name: ["userid","cms_segid","cms_group_id","final_gender_code","age_level","pvalue_level","shopping_level",
+                      "occupation","new_user_class_level","adgroup_id","cate_id","campaign_id","customer","brand","pid","btag"],
+                      active: True, dtype: str, type: categorical}
+            - {name: price, active: True, dtype: float, type: numeric}
+            - {name: cate_his, active: True, dtype: str, splitter: ^, type: sequence, max_len: 50, padding: post,
+               share_embedding: cate_id}
+            - {name: brand_his, active: True, dtype: str, splitter: ^, type: sequence, max_len: 50, padding: post,
+               share_embedding: brand}
+            - {name: btag_his, active: True, dtype: str, splitter: ^, type: sequence, max_len: 50, padding: post,
+               share_embedding: btag}
+        label_col: {name: clk, dtype: float}
+
+tuner_space:
+    model_root: './checkpoints/DIEN_taobaoad_x1/'
+    feature_specs: [[
+        {name: [cate_his, brand_his, btag_his], feature_encoder: null}
+        ]]
+    embedding_dim: 32
+    dnn_hidden_units: [[512, 256, 128]]
+    dien_target_field: [!!python/tuple [cate_id, brand, btag]]
+    dien_sequence_field: [!!python/tuple [cate_his, brand_his, btag_his]]
+    gru_type: AUGRU
+    attention_type: [bilinear_attention, din_attention]
+    attention_hidden_units: [[512, 256], [256, 128]]
+    use_attention_softmax: True
+    attention_dropout: [0, 0.1, 0.2]
+    attention_activation: Dice
+    dnn_activations: ReLU
+    embedding_regularizer: 5.e-6
+    net_dropout: [0, 0.1]
+    batch_norm: False
+    learning_rate: 1.e-3
+    batch_size: 8192
+    seed: 20222023
+    early_stop_patience: 1
+    group_id: group_id
+    metrics: [[gAUC, AUC, logloss]]
+    monitor: {"gAUC": 1, "AUC": 1}
+

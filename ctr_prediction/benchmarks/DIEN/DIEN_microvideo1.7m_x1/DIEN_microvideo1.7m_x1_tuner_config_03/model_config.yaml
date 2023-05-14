@@ -1,0 +1,800 @@
+DIEN_microvideo1.7m_x1_001_9d7cd63e:
+    attention_activation: Dice
+    attention_dropout: 0.2
+    attention_hidden_units: [256, 128]
+    attention_type: din_attention
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_alpha: 0
+    batch_norm: true
+    batch_size: 2048
+    dataset_id: microvideo1.7m_x1_83b31456
+    debug_mode: false
+    dien_neg_seq_field: []
+    dien_sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    dien_target_field: !!python/tuple [item_id, cate_id]
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    gru_type: AUGRU
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIEN
+    model_id: DIEN_default
+    model_root: ./checkpoints/DIEN_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_attention_softmax: true
+    use_features: null
+    verbose: 1
+DIEN_microvideo1.7m_x1_002_e5595f65:
+    attention_activation: Dice
+    attention_dropout: 0.2
+    attention_hidden_units: [256, 256]
+    attention_type: din_attention
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_alpha: 0
+    batch_norm: true
+    batch_size: 2048
+    dataset_id: microvideo1.7m_x1_83b31456
+    debug_mode: false
+    dien_neg_seq_field: []
+    dien_sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    dien_target_field: !!python/tuple [item_id, cate_id]
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    gru_type: AUGRU
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIEN
+    model_id: DIEN_default
+    model_root: ./checkpoints/DIEN_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_attention_softmax: true
+    use_features: null
+    verbose: 1
+DIEN_microvideo1.7m_x1_003_e23829c4:
+    attention_activation: Dice
+    attention_dropout: 0.2
+    attention_hidden_units: [256, 128]
+    attention_type: din_attention
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_alpha: 0
+    batch_norm: true
+    batch_size: 2048
+    dataset_id: microvideo1.7m_x1_83b31456
+    debug_mode: false
+    dien_neg_seq_field: []
+    dien_sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    dien_target_field: !!python/tuple [item_id, cate_id]
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    gru_type: AGRU
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIEN
+    model_id: DIEN_default
+    model_root: ./checkpoints/DIEN_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_attention_softmax: true
+    use_features: null
+    verbose: 1
+DIEN_microvideo1.7m_x1_004_729cb59e:
+    attention_activation: Dice
+    attention_dropout: 0.2
+    attention_hidden_units: [256, 256]
+    attention_type: din_attention
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_alpha: 0
+    batch_norm: true
+    batch_size: 2048
+    dataset_id: microvideo1.7m_x1_83b31456
+    debug_mode: false
+    dien_neg_seq_field: []
+    dien_sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    dien_target_field: !!python/tuple [item_id, cate_id]
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    gru_type: AGRU
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIEN
+    model_id: DIEN_default
+    model_root: ./checkpoints/DIEN_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_attention_softmax: true
+    use_features: null
+    verbose: 1
+DIEN_microvideo1.7m_x1_005_51a96eb7:
+    attention_activation: Dice
+    attention_dropout: 0.2
+    attention_hidden_units: [256, 128]
+    attention_type: din_attention
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_alpha: 0
+    batch_norm: true
+    batch_size: 2048
+    dataset_id: microvideo1.7m_x1_83b31456
+    debug_mode: false
+    dien_neg_seq_field: []
+    dien_sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    dien_target_field: !!python/tuple [item_id, cate_id]
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    gru_type: AUGRU
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIEN
+    model_id: DIEN_default
+    model_root: ./checkpoints/DIEN_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_attention_softmax: true
+    use_features: null
+    verbose: 1
+DIEN_microvideo1.7m_x1_006_5e958ada:
+    attention_activation: Dice
+    attention_dropout: 0.2
+    attention_hidden_units: [256, 256]
+    attention_type: din_attention
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_alpha: 0
+    batch_norm: true
+    batch_size: 2048
+    dataset_id: microvideo1.7m_x1_83b31456
+    debug_mode: false
+    dien_neg_seq_field: []
+    dien_sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    dien_target_field: !!python/tuple [item_id, cate_id]
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    gru_type: AUGRU
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIEN
+    model_id: DIEN_default
+    model_root: ./checkpoints/DIEN_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_attention_softmax: true
+    use_features: null
+    verbose: 1
+DIEN_microvideo1.7m_x1_007_5d8fe189:
+    attention_activation: Dice
+    attention_dropout: 0.2
+    attention_hidden_units: [256, 128]
+    attention_type: din_attention
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_alpha: 0
+    batch_norm: true
+    batch_size: 2048
+    dataset_id: microvideo1.7m_x1_83b31456
+    debug_mode: false
+    dien_neg_seq_field: []
+    dien_sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    dien_target_field: !!python/tuple [item_id, cate_id]
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    gru_type: AGRU
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIEN
+    model_id: DIEN_default
+    model_root: ./checkpoints/DIEN_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_attention_softmax: true
+    use_features: null
+    verbose: 1
+DIEN_microvideo1.7m_x1_008_81c662f7:
+    attention_activation: Dice
+    attention_dropout: 0.2
+    attention_hidden_units: [256, 256]
+    attention_type: din_attention
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_alpha: 0
+    batch_norm: true
+    batch_size: 2048
+    dataset_id: microvideo1.7m_x1_83b31456
+    debug_mode: false
+    dien_neg_seq_field: []
+    dien_sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    dien_target_field: !!python/tuple [item_id, cate_id]
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    gru_type: AGRU
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIEN
+    model_id: DIEN_default
+    model_root: ./checkpoints/DIEN_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_attention_softmax: true
+    use_features: null
+    verbose: 1
+DIEN_microvideo1.7m_x1_009_c6d9d5d4:
+    attention_activation: Dice
+    attention_dropout: 0.2
+    attention_hidden_units: [256, 128]
+    attention_type: din_attention
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_alpha: 0
+    batch_norm: true
+    batch_size: 2048
+    dataset_id: microvideo1.7m_x1_83b31456
+    debug_mode: false
+    dien_neg_seq_field: []
+    dien_sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    dien_target_field: !!python/tuple [item_id, cate_id]
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0005
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    gru_type: AUGRU
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIEN
+    model_id: DIEN_default
+    model_root: ./checkpoints/DIEN_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_attention_softmax: true
+    use_features: null
+    verbose: 1
+DIEN_microvideo1.7m_x1_010_aa7749c3:
+    attention_activation: Dice
+    attention_dropout: 0.2
+    attention_hidden_units: [256, 256]
+    attention_type: din_attention
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_alpha: 0
+    batch_norm: true
+    batch_size: 2048
+    dataset_id: microvideo1.7m_x1_83b31456
+    debug_mode: false
+    dien_neg_seq_field: []
+    dien_sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    dien_target_field: !!python/tuple [item_id, cate_id]
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0005
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    gru_type: AUGRU
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIEN
+    model_id: DIEN_default
+    model_root: ./checkpoints/DIEN_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_attention_softmax: true
+    use_features: null
+    verbose: 1
+DIEN_microvideo1.7m_x1_011_e6eceef8:
+    attention_activation: Dice
+    attention_dropout: 0.2
+    attention_hidden_units: [256, 128]
+    attention_type: din_attention
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_alpha: 0
+    batch_norm: true
+    batch_size: 2048
+    dataset_id: microvideo1.7m_x1_83b31456
+    debug_mode: false
+    dien_neg_seq_field: []
+    dien_sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    dien_target_field: !!python/tuple [item_id, cate_id]
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0005
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    gru_type: AGRU
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIEN
+    model_id: DIEN_default
+    model_root: ./checkpoints/DIEN_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_attention_softmax: true
+    use_features: null
+    verbose: 1
+DIEN_microvideo1.7m_x1_012_ff7dfdab:
+    attention_activation: Dice
+    attention_dropout: 0.2
+    attention_hidden_units: [256, 256]
+    attention_type: din_attention
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_alpha: 0
+    batch_norm: true
+    batch_size: 2048
+    dataset_id: microvideo1.7m_x1_83b31456
+    debug_mode: false
+    dien_neg_seq_field: []
+    dien_sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    dien_target_field: !!python/tuple [item_id, cate_id]
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0005
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    gru_type: AGRU
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIEN
+    model_id: DIEN_default
+    model_root: ./checkpoints/DIEN_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_attention_softmax: true
+    use_features: null
+    verbose: 1
+DIEN_microvideo1.7m_x1_013_a9650956:
+    attention_activation: Dice
+    attention_dropout: 0.2
+    attention_hidden_units: [256, 128]
+    attention_type: din_attention
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_alpha: 0
+    batch_norm: true
+    batch_size: 2048
+    dataset_id: microvideo1.7m_x1_83b31456
+    debug_mode: false
+    dien_neg_seq_field: []
+    dien_sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    dien_target_field: !!python/tuple [item_id, cate_id]
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0005
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    gru_type: AUGRU
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIEN
+    model_id: DIEN_default
+    model_root: ./checkpoints/DIEN_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_attention_softmax: true
+    use_features: null
+    verbose: 1
+DIEN_microvideo1.7m_x1_014_59081e6d:
+    attention_activation: Dice
+    attention_dropout: 0.2
+    attention_hidden_units: [256, 256]
+    attention_type: din_attention
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_alpha: 0
+    batch_norm: true
+    batch_size: 2048
+    dataset_id: microvideo1.7m_x1_83b31456
+    debug_mode: false
+    dien_neg_seq_field: []
+    dien_sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    dien_target_field: !!python/tuple [item_id, cate_id]
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0005
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    gru_type: AUGRU
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIEN
+    model_id: DIEN_default
+    model_root: ./checkpoints/DIEN_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_attention_softmax: true
+    use_features: null
+    verbose: 1
+DIEN_microvideo1.7m_x1_015_b235630a:
+    attention_activation: Dice
+    attention_dropout: 0.2
+    attention_hidden_units: [256, 128]
+    attention_type: din_attention
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_alpha: 0
+    batch_norm: true
+    batch_size: 2048
+    dataset_id: microvideo1.7m_x1_83b31456
+    debug_mode: false
+    dien_neg_seq_field: []
+    dien_sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    dien_target_field: !!python/tuple [item_id, cate_id]
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0005
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    gru_type: AGRU
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIEN
+    model_id: DIEN_default
+    model_root: ./checkpoints/DIEN_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_attention_softmax: true
+    use_features: null
+    verbose: 1
+DIEN_microvideo1.7m_x1_016_57229120:
+    attention_activation: Dice
+    attention_dropout: 0.2
+    attention_hidden_units: [256, 256]
+    attention_type: din_attention
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_alpha: 0
+    batch_norm: true
+    batch_size: 2048
+    dataset_id: microvideo1.7m_x1_83b31456
+    debug_mode: false
+    dien_neg_seq_field: []
+    dien_sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    dien_target_field: !!python/tuple [item_id, cate_id]
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0005
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    gru_type: AGRU
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIEN
+    model_id: DIEN_default
+    model_root: ./checkpoints/DIEN_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_attention_softmax: true
+    use_features: null
+    verbose: 1

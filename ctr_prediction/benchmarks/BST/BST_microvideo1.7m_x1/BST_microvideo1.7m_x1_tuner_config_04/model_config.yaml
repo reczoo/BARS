@@ -1,0 +1,1472 @@
+BST_microvideo1.7m_x1_001_aeb40ba9:
+    attention_dropout: 0
+    batch_norm: true
+    batch_size: 2048
+    bst_sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: false
+    use_residual: false
+    verbose: 1
+BST_microvideo1.7m_x1_002_3105eb8d:
+    attention_dropout: 0
+    batch_norm: true
+    batch_size: 2048
+    bst_sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: true
+    use_position_emb: false
+    use_residual: false
+    verbose: 1
+BST_microvideo1.7m_x1_003_2327b096:
+    attention_dropout: 0
+    batch_norm: true
+    batch_size: 2048
+    bst_sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: false
+    use_residual: false
+    verbose: 1
+BST_microvideo1.7m_x1_004_f88aebc6:
+    attention_dropout: 0
+    batch_norm: true
+    batch_size: 2048
+    bst_sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: true
+    use_position_emb: false
+    use_residual: false
+    verbose: 1
+BST_microvideo1.7m_x1_005_be003dc8:
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 2048
+    bst_sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: false
+    use_residual: false
+    verbose: 1
+BST_microvideo1.7m_x1_006_0faf29ae:
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 2048
+    bst_sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: true
+    use_position_emb: false
+    use_residual: false
+    verbose: 1
+BST_microvideo1.7m_x1_007_553126e3:
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 2048
+    bst_sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: false
+    use_residual: false
+    verbose: 1
+BST_microvideo1.7m_x1_008_13733e66:
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 2048
+    bst_sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: true
+    use_position_emb: false
+    use_residual: false
+    verbose: 1
+BST_microvideo1.7m_x1_009_2327b096:
+    attention_dropout: 0
+    batch_norm: true
+    batch_size: 2048
+    bst_sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 2
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: false
+    use_residual: false
+    verbose: 1
+BST_microvideo1.7m_x1_010_f88aebc6:
+    attention_dropout: 0
+    batch_norm: true
+    batch_size: 2048
+    bst_sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 2
+    task: binary_classification
+    use_causal_mask: true
+    use_position_emb: false
+    use_residual: false
+    verbose: 1
+BST_microvideo1.7m_x1_011_7fe65333:
+    attention_dropout: 0
+    batch_norm: true
+    batch_size: 2048
+    bst_sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 2
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: false
+    use_residual: false
+    verbose: 1
+BST_microvideo1.7m_x1_012_eed82af4:
+    attention_dropout: 0
+    batch_norm: true
+    batch_size: 2048
+    bst_sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 2
+    task: binary_classification
+    use_causal_mask: true
+    use_position_emb: false
+    use_residual: false
+    verbose: 1
+BST_microvideo1.7m_x1_013_553126e3:
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 2048
+    bst_sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 2
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: false
+    use_residual: false
+    verbose: 1
+BST_microvideo1.7m_x1_014_13733e66:
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 2048
+    bst_sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 2
+    task: binary_classification
+    use_causal_mask: true
+    use_position_emb: false
+    use_residual: false
+    verbose: 1
+BST_microvideo1.7m_x1_015_04429872:
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 2048
+    bst_sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 2
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: false
+    use_residual: false
+    verbose: 1
+BST_microvideo1.7m_x1_016_5fdd1692:
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 2048
+    bst_sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 2
+    task: binary_classification
+    use_causal_mask: true
+    use_position_emb: false
+    use_residual: false
+    verbose: 1
+BST_microvideo1.7m_x1_017_8e18bcee:
+    attention_dropout: 0
+    batch_norm: true
+    batch_size: 2048
+    bst_sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: false
+    use_residual: false
+    verbose: 1
+BST_microvideo1.7m_x1_018_736b7fbf:
+    attention_dropout: 0
+    batch_norm: true
+    batch_size: 2048
+    bst_sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: true
+    use_position_emb: false
+    use_residual: false
+    verbose: 1
+BST_microvideo1.7m_x1_019_b6c077ef:
+    attention_dropout: 0
+    batch_norm: true
+    batch_size: 2048
+    bst_sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: false
+    use_residual: false
+    verbose: 1
+BST_microvideo1.7m_x1_020_678c7bcc:
+    attention_dropout: 0
+    batch_norm: true
+    batch_size: 2048
+    bst_sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: true
+    use_position_emb: false
+    use_residual: false
+    verbose: 1
+BST_microvideo1.7m_x1_021_c05a2c83:
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 2048
+    bst_sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: false
+    use_residual: false
+    verbose: 1
+BST_microvideo1.7m_x1_022_12ba9098:
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 2048
+    bst_sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: true
+    use_position_emb: false
+    use_residual: false
+    verbose: 1
+BST_microvideo1.7m_x1_023_fa238c63:
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 2048
+    bst_sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: false
+    use_residual: false
+    verbose: 1
+BST_microvideo1.7m_x1_024_bc2f067e:
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 2048
+    bst_sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: true
+    use_position_emb: false
+    use_residual: false
+    verbose: 1
+BST_microvideo1.7m_x1_025_b6c077ef:
+    attention_dropout: 0
+    batch_norm: true
+    batch_size: 2048
+    bst_sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 2
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: false
+    use_residual: false
+    verbose: 1
+BST_microvideo1.7m_x1_026_678c7bcc:
+    attention_dropout: 0
+    batch_norm: true
+    batch_size: 2048
+    bst_sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 2
+    task: binary_classification
+    use_causal_mask: true
+    use_position_emb: false
+    use_residual: false
+    verbose: 1
+BST_microvideo1.7m_x1_027_b5407015:
+    attention_dropout: 0
+    batch_norm: true
+    batch_size: 2048
+    bst_sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 2
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: false
+    use_residual: false
+    verbose: 1
+BST_microvideo1.7m_x1_028_52a32e7c:
+    attention_dropout: 0
+    batch_norm: true
+    batch_size: 2048
+    bst_sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 2
+    task: binary_classification
+    use_causal_mask: true
+    use_position_emb: false
+    use_residual: false
+    verbose: 1
+BST_microvideo1.7m_x1_029_fa238c63:
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 2048
+    bst_sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 2
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: false
+    use_residual: false
+    verbose: 1
+BST_microvideo1.7m_x1_030_bc2f067e:
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 2048
+    bst_sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 2
+    task: binary_classification
+    use_causal_mask: true
+    use_position_emb: false
+    use_residual: false
+    verbose: 1
+BST_microvideo1.7m_x1_031_ed3b4cf2:
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 2048
+    bst_sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 2
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: false
+    use_residual: false
+    verbose: 1
+BST_microvideo1.7m_x1_032_4f9a1166:
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 2048
+    bst_sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2022
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 2
+    task: binary_classification
+    use_causal_mask: true
+    use_position_emb: false
+    use_residual: false
+    verbose: 1

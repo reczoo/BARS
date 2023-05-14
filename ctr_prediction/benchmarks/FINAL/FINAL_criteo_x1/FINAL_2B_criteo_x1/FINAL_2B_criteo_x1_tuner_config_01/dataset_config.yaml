@@ -1,0 +1,18 @@
+criteo_x1_49102577:
+    data_format: csv
+    data_root: ../data/Criteo/
+    feature_cols:
+    -   active: true
+        dtype: float
+        name: [I1, I2, I3, I4, I5, I6, I7, I8, I9, I10, I11, I12, I13]
+        type: numeric
+    -   active: true
+        dtype: float
+        name: [C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12, C13, C14, C15, C16,
+            C17, C18, C19, C20, C21, C22, C23, C24, C25, C26]
+        type: categorical
+    label_col: {dtype: float, name: label}
+    min_categr_count: 1
+    test_data: ../data/Criteo/Criteo_x1/test.csv
+    train_data: ../data/Criteo/Criteo_x1/train.csv
+    valid_data: ../data/Criteo/Criteo_x1/valid.csv

@@ -1,0 +1,13 @@
+movielenslatest_x1_233328b6:
+    data_format: csv
+    data_root: ../data/Movielens/
+    feature_cols:
+    -   active: true
+        dtype: float
+        name: [user_id, item_id, tag_id]
+        type: categorical
+    label_col: {dtype: float, name: label}
+    min_categr_count: 1
+    test_data: ../data/Movielens/MovielensLatest_x1/test.csv
+    train_data: ../data/Movielens/MovielensLatest_x1/train.csv
+    valid_data: ../data/Movielens/MovielensLatest_x1/valid.csv

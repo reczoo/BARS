@@ -1,0 +1,39 @@
+base_config: ../model_zoo/FmFM/config/
+base_expid: FmFM_default
+dataset_id: amazonelectronics_x1
+
+dataset_config:
+    amazonelectronics_x1:
+        data_root: ../data/Amazon/
+        data_format: csv
+        train_data: ../data/Amazon/AmazonElectronics_x1/train.csv
+        valid_data: ../data/Amazon/AmazonElectronics_x1/test.csv # no validation data split in original paper
+        test_data: ../data/Amazon/AmazonElectronics_x1/test.csv
+        min_categr_count: 1
+        feature_cols:
+            - {name: user_id, active: True, dtype: int, type: meta}
+            - {name: item_id, active: True, dtype: str, type: categorical}
+            - {name: cate_id, active: True, dtype: str, type: categorical}
+            - {name: item_history, active: True, dtype: str, type: sequence, splitter: ^, max_len: 100, 
+               feature_encoder: "layers.MaskedAveragePooling()", share_embedding: item_id}
+            - {name: cate_history, active: True, dtype: str, type: sequence, splitter: ^, max_len: 100,
+               feature_encoder: "layers.MaskedAveragePooling()", share_embedding: cate_id}
+        label_col: {name: label, dtype: float}
+
+
+tuner_space:
+    model_root: './Amazon/FmFM_amazonelectronics_x1/'
+    embedding_dim: 64
+    field_interaction_type: [matrixed, vectorized]
+    regularizer: [1.e-3, 5.e-4, 1.e-4, 5.e-5, 1.e-5, 5.e-6, 1.e-6, 5.e-7, 1.e-7, 5.e-8, 1.e-8, 0]
+    learning_rate: 5.e-4
+    batch_size: 1024
+    seed: 2022
+    group_index: user_id
+    metrics: [[gAUC, AUC, logloss]]
+    monitor: {"gAUC": 1, "AUC": 1}
+    verbose: 0
+
+
+
+

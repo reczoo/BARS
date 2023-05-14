@@ -1,0 +1,1680 @@
+AOANet_amazonelectronics_x1_001_9c958d54:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_hidden_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AOANet
+    model_id: AOANet_base
+    model_root: ./checkpoints/AOANet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_interaction_layers: 1
+    num_subspaces: 8
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+AOANet_amazonelectronics_x1_002_eeeb5317:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_hidden_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AOANet
+    model_id: AOANet_base
+    model_root: ./checkpoints/AOANet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_interaction_layers: 1
+    num_subspaces: 8
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+AOANet_amazonelectronics_x1_003_0ddf9d6b:
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_hidden_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AOANet
+    model_id: AOANet_base
+    model_root: ./checkpoints/AOANet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_interaction_layers: 1
+    num_subspaces: 8
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+AOANet_amazonelectronics_x1_004_27367122:
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_hidden_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AOANet
+    model_id: AOANet_base
+    model_root: ./checkpoints/AOANet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_interaction_layers: 1
+    num_subspaces: 8
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+AOANet_amazonelectronics_x1_005_f66a0048:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_hidden_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AOANet
+    model_id: AOANet_base
+    model_root: ./checkpoints/AOANet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_interaction_layers: 1
+    num_subspaces: 16
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+AOANet_amazonelectronics_x1_006_6c2a8cd5:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_hidden_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AOANet
+    model_id: AOANet_base
+    model_root: ./checkpoints/AOANet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_interaction_layers: 1
+    num_subspaces: 16
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+AOANet_amazonelectronics_x1_007_f1813c78:
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_hidden_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AOANet
+    model_id: AOANet_base
+    model_root: ./checkpoints/AOANet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_interaction_layers: 1
+    num_subspaces: 16
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+AOANet_amazonelectronics_x1_008_3e1a4c19:
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_hidden_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AOANet
+    model_id: AOANet_base
+    model_root: ./checkpoints/AOANet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_interaction_layers: 1
+    num_subspaces: 16
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+AOANet_amazonelectronics_x1_009_c84b049e:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_hidden_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AOANet
+    model_id: AOANet_base
+    model_root: ./checkpoints/AOANet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_interaction_layers: 1
+    num_subspaces: 32
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+AOANet_amazonelectronics_x1_010_73725380:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_hidden_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AOANet
+    model_id: AOANet_base
+    model_root: ./checkpoints/AOANet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_interaction_layers: 1
+    num_subspaces: 32
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+AOANet_amazonelectronics_x1_011_2f48ef60:
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_hidden_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AOANet
+    model_id: AOANet_base
+    model_root: ./checkpoints/AOANet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_interaction_layers: 1
+    num_subspaces: 32
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+AOANet_amazonelectronics_x1_012_393f71e4:
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_hidden_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AOANet
+    model_id: AOANet_base
+    model_root: ./checkpoints/AOANet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_interaction_layers: 1
+    num_subspaces: 32
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+AOANet_amazonelectronics_x1_013_2608d2f4:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_hidden_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AOANet
+    model_id: AOANet_base
+    model_root: ./checkpoints/AOANet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_interaction_layers: 2
+    num_subspaces: 8
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+AOANet_amazonelectronics_x1_014_ec710eca:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_hidden_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AOANet
+    model_id: AOANet_base
+    model_root: ./checkpoints/AOANet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_interaction_layers: 2
+    num_subspaces: 8
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+AOANet_amazonelectronics_x1_015_fce277de:
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_hidden_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AOANet
+    model_id: AOANet_base
+    model_root: ./checkpoints/AOANet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_interaction_layers: 2
+    num_subspaces: 8
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+AOANet_amazonelectronics_x1_016_4d8015d6:
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_hidden_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AOANet
+    model_id: AOANet_base
+    model_root: ./checkpoints/AOANet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_interaction_layers: 2
+    num_subspaces: 8
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+AOANet_amazonelectronics_x1_017_51399344:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_hidden_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AOANet
+    model_id: AOANet_base
+    model_root: ./checkpoints/AOANet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_interaction_layers: 2
+    num_subspaces: 16
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+AOANet_amazonelectronics_x1_018_1f258df1:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_hidden_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AOANet
+    model_id: AOANet_base
+    model_root: ./checkpoints/AOANet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_interaction_layers: 2
+    num_subspaces: 16
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+AOANet_amazonelectronics_x1_019_10e12ee2:
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_hidden_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AOANet
+    model_id: AOANet_base
+    model_root: ./checkpoints/AOANet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_interaction_layers: 2
+    num_subspaces: 16
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+AOANet_amazonelectronics_x1_020_0ec2c84b:
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_hidden_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AOANet
+    model_id: AOANet_base
+    model_root: ./checkpoints/AOANet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_interaction_layers: 2
+    num_subspaces: 16
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+AOANet_amazonelectronics_x1_021_aa46a099:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_hidden_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AOANet
+    model_id: AOANet_base
+    model_root: ./checkpoints/AOANet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_interaction_layers: 2
+    num_subspaces: 32
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+AOANet_amazonelectronics_x1_022_48253aae:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_hidden_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AOANet
+    model_id: AOANet_base
+    model_root: ./checkpoints/AOANet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_interaction_layers: 2
+    num_subspaces: 32
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+AOANet_amazonelectronics_x1_023_024c0ad0:
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_hidden_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AOANet
+    model_id: AOANet_base
+    model_root: ./checkpoints/AOANet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_interaction_layers: 2
+    num_subspaces: 32
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+AOANet_amazonelectronics_x1_024_8188c22a:
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_hidden_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AOANet
+    model_id: AOANet_base
+    model_root: ./checkpoints/AOANet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_interaction_layers: 2
+    num_subspaces: 32
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+AOANet_amazonelectronics_x1_025_0afc30be:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_hidden_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AOANet
+    model_id: AOANet_base
+    model_root: ./checkpoints/AOANet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_interaction_layers: 1
+    num_subspaces: 8
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+AOANet_amazonelectronics_x1_026_25f9e49c:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_hidden_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AOANet
+    model_id: AOANet_base
+    model_root: ./checkpoints/AOANet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_interaction_layers: 1
+    num_subspaces: 8
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+AOANet_amazonelectronics_x1_027_93030397:
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_hidden_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AOANet
+    model_id: AOANet_base
+    model_root: ./checkpoints/AOANet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_interaction_layers: 1
+    num_subspaces: 8
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+AOANet_amazonelectronics_x1_028_ea7ec0be:
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_hidden_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AOANet
+    model_id: AOANet_base
+    model_root: ./checkpoints/AOANet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_interaction_layers: 1
+    num_subspaces: 8
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+AOANet_amazonelectronics_x1_029_db99a042:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_hidden_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AOANet
+    model_id: AOANet_base
+    model_root: ./checkpoints/AOANet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_interaction_layers: 1
+    num_subspaces: 16
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+AOANet_amazonelectronics_x1_030_ee86788d:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_hidden_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AOANet
+    model_id: AOANet_base
+    model_root: ./checkpoints/AOANet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_interaction_layers: 1
+    num_subspaces: 16
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+AOANet_amazonelectronics_x1_031_759cf64e:
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_hidden_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AOANet
+    model_id: AOANet_base
+    model_root: ./checkpoints/AOANet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_interaction_layers: 1
+    num_subspaces: 16
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+AOANet_amazonelectronics_x1_032_ac929e0e:
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_hidden_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AOANet
+    model_id: AOANet_base
+    model_root: ./checkpoints/AOANet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_interaction_layers: 1
+    num_subspaces: 16
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+AOANet_amazonelectronics_x1_033_d9cf6556:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_hidden_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AOANet
+    model_id: AOANet_base
+    model_root: ./checkpoints/AOANet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_interaction_layers: 1
+    num_subspaces: 32
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+AOANet_amazonelectronics_x1_034_0d16b28b:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_hidden_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AOANet
+    model_id: AOANet_base
+    model_root: ./checkpoints/AOANet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_interaction_layers: 1
+    num_subspaces: 32
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+AOANet_amazonelectronics_x1_035_e784873d:
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_hidden_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AOANet
+    model_id: AOANet_base
+    model_root: ./checkpoints/AOANet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_interaction_layers: 1
+    num_subspaces: 32
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+AOANet_amazonelectronics_x1_036_1cbf29e6:
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_hidden_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AOANet
+    model_id: AOANet_base
+    model_root: ./checkpoints/AOANet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_interaction_layers: 1
+    num_subspaces: 32
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+AOANet_amazonelectronics_x1_037_22f272fb:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_hidden_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AOANet
+    model_id: AOANet_base
+    model_root: ./checkpoints/AOANet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_interaction_layers: 2
+    num_subspaces: 8
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+AOANet_amazonelectronics_x1_038_c306e713:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_hidden_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AOANet
+    model_id: AOANet_base
+    model_root: ./checkpoints/AOANet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_interaction_layers: 2
+    num_subspaces: 8
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+AOANet_amazonelectronics_x1_039_84b2d896:
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_hidden_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AOANet
+    model_id: AOANet_base
+    model_root: ./checkpoints/AOANet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_interaction_layers: 2
+    num_subspaces: 8
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+AOANet_amazonelectronics_x1_040_789bee1e:
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_hidden_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AOANet
+    model_id: AOANet_base
+    model_root: ./checkpoints/AOANet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_interaction_layers: 2
+    num_subspaces: 8
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+AOANet_amazonelectronics_x1_041_e68a1564:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_hidden_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AOANet
+    model_id: AOANet_base
+    model_root: ./checkpoints/AOANet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_interaction_layers: 2
+    num_subspaces: 16
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+AOANet_amazonelectronics_x1_042_495ca218:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_hidden_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AOANet
+    model_id: AOANet_base
+    model_root: ./checkpoints/AOANet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_interaction_layers: 2
+    num_subspaces: 16
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+AOANet_amazonelectronics_x1_043_138d966b:
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_hidden_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AOANet
+    model_id: AOANet_base
+    model_root: ./checkpoints/AOANet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_interaction_layers: 2
+    num_subspaces: 16
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+AOANet_amazonelectronics_x1_044_ac142790:
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_hidden_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AOANet
+    model_id: AOANet_base
+    model_root: ./checkpoints/AOANet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_interaction_layers: 2
+    num_subspaces: 16
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+AOANet_amazonelectronics_x1_045_1054a262:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_hidden_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AOANet
+    model_id: AOANet_base
+    model_root: ./checkpoints/AOANet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_interaction_layers: 2
+    num_subspaces: 32
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+AOANet_amazonelectronics_x1_046_2d5fd27e:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_hidden_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AOANet
+    model_id: AOANet_base
+    model_root: ./checkpoints/AOANet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_interaction_layers: 2
+    num_subspaces: 32
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+AOANet_amazonelectronics_x1_047_810e0d63:
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_hidden_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AOANet
+    model_id: AOANet_base
+    model_root: ./checkpoints/AOANet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_interaction_layers: 2
+    num_subspaces: 32
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+AOANet_amazonelectronics_x1_048_da44bc1a:
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_hidden_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AOANet
+    model_id: AOANet_base
+    model_root: ./checkpoints/AOANet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_interaction_layers: 2
+    num_subspaces: 32
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1

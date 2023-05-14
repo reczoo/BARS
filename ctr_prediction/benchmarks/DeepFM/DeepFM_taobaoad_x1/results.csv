@@ -1,0 +1,1 @@
+ 20220812-012256,[command] python run_expid.py --config Taobao/DeepFM_taobaoad_x1/DeepFM_taobaoad_x1_tuner_config_01 --expid DeepFM_taobaoad_x1_009_afab5940 --gpu 0,[exp_id] DeepFM_taobaoad_x1_009_afab5940,[dataset_id] taobaoad_x1_2753db8a,[train] N.A.,[val] gAUC: 0.569739 - AUC: 0.636426 - logloss: 0.196501,[test] gAUC: 0.569739 - AUC: 0.636426 - logloss: 0.196501

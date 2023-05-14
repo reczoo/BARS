@@ -1,0 +1,1 @@
+ 20230101-004836,[command] python run_expid.py --config Criteo/FINAL_criteo_x1/FINAL_1B_criteo_x1_tuner_config_04 --expid FINAL_criteo_x1_007_b4783421 --gpu 6,[exp_id] FINAL_criteo_x1_007_b4783421,[dataset_id] criteo_x1_49102577,[train] N.A.,[val] AUC: 0.814054 - logloss: 0.437986,[test] AUC: 0.814403 - logloss: 0.437479

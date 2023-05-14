@@ -1,0 +1,1 @@
+ 20230514-032925,[command] python run_expid.py --config KuaiShou/DIEN_kuaivideo_x1/DIEN_kuaivideo_x1_tuner_config_02 --expid DIEN_kuaivideo_x1_009_657021a9 --gpu 3,[exp_id] DIEN_kuaivideo_x1_009_657021a9,[dataset_id] kuaivideo_x1_60f6c91a,[train] N.A.,[val] gAUC: 0.671148 - AUC: 0.750372 - logloss: 0.433049,[test] gAUC: 0.671148 - AUC: 0.750372 - logloss: 0.433049

@@ -1,0 +1,1 @@
+ 20220823-225440,[command] python run_expid.py --config KuaiShou/AutoInt_kuaivideo_x1/AutoInt+_kuaivideo_x1_tuner_config_02 --expid AutoInt_kuaivideo_x1_011_9ed2831b --gpu 0,[exp_id] AutoInt_kuaivideo_x1_011_9ed2831b,[dataset_id] kuaivideo_x1_dc7a3035,[train] N.A.,[val] gAUC: 0.666719 - AUC: 0.746899 - logloss: 0.435692,[test] gAUC: 0.666719 - AUC: 0.746899 - logloss: 0.435692

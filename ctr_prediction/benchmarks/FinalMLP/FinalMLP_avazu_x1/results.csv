@@ -1,0 +1,1 @@
+ 20221217-011614,[command] python run_expid.py --config Avazu/FinalMLP_avazu_x1/FinalMLP_avazu_x1_tuner_config_03 --expid FinalMLP_avazu_x1_018_488deefd --gpu 0,[exp_id] FinalMLP_avazu_x1_018_488deefd,[dataset_id] avazu_x1_0bbde04e,[train] N.A.,[val] AUC: 0.749080 - logloss: 0.394400,[test] AUC: 0.766566 - logloss: 0.365803

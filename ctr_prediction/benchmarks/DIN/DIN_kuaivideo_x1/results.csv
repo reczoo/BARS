@@ -1,0 +1,1 @@
+ 20220823-212745,[command] python run_expid.py --config KuaiShou/DIN_kuaivideo_x1/DIN_kuaivideo_x1_tuner_config_02 --expid DIN_kuaivideo_x1_013_fc4bf206 --gpu 6,[exp_id] DIN_kuaivideo_x1_013_fc4bf206,[dataset_id] kuaivideo_x1_dc7a3035,[train] N.A.,[val] gAUC: 0.669568 - AUC: 0.749537 - logloss: 0.432120,[test] gAUC: 0.669568 - AUC: 0.749537 - logloss: 0.432120

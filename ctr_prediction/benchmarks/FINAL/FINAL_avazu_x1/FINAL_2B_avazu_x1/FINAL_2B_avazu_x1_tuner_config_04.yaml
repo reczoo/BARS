@@ -1,0 +1,39 @@
+base_config: ../model_zoo/FINAL/config/
+base_expid: FINAL_default
+dataset_id: avazu_x1
+
+dataset_config:
+    avazu_x1:
+        data_root: ../data/Avazu/
+        data_format: csv
+        train_data: ../data/Avazu/Avazu_x1/train.csv
+        valid_data: ../data/Avazu/Avazu_x1/valid.csv
+        test_data: ../data/Avazu/Avazu_x1/test.csv
+        min_categr_count: 1
+        feature_cols:
+            - {name: ["feat_1", "feat_2", "feat_3", "feat_4", "feat_5", "feat_6", "feat_7", "feat_8", "feat_9", "feat_10",
+                      "feat_11", "feat_12", "feat_13", "feat_14", "feat_15", "feat_16", "feat_17", "feat_18", "feat_19", 
+                      "feat_20", "feat_21", "feat_22"],
+               active: True, dtype: float, type: categorical}
+        label_col: {name: label, dtype: float}
+
+
+tuner_space:
+    model_root: './checkpoints/FINAL_avazu_x1/'
+    embedding_dim: 10
+    embedding_regularizer: 5.e-2
+    block_type: "2B"
+    batch_norm: True
+    use_field_gate: True
+    block1_hidden_units: [[1200], [1000], [800]]
+    block1_hidden_activations: ReLU
+    block1_dropout: [0.2, 0.3]
+    block2_hidden_units: [[400, 400], [800, 800]]
+    block2_hidden_activations: ReLU
+    block2_dropout: [0.2, 0.3]
+    learning_rate: 1.e-3
+    batch_size: 4096
+    seed: 2021
+    monitor: 'AUC'
+    monitor_mode: 'max'
+    metrics: [['AUC', 'logloss']]

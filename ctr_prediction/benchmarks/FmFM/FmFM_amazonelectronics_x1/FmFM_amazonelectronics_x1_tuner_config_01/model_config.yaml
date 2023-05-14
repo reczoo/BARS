@@ -1,0 +1,648 @@
+FmFM_amazonelectronics_x1_001_817ebd86:
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_3beb3171
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    field_interaction_type: matrixed
+    group_index: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FmFM
+    model_id: FmFM_base
+    model_root: ./Amazon/FmFM_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    regularizer: 0.001
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    verbose: 0
+FmFM_amazonelectronics_x1_002_1485a5f7:
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_3beb3171
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    field_interaction_type: vectorized
+    group_index: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FmFM
+    model_id: FmFM_base
+    model_root: ./Amazon/FmFM_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    regularizer: 0.001
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    verbose: 0
+FmFM_amazonelectronics_x1_003_b907db36:
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_3beb3171
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    field_interaction_type: matrixed
+    group_index: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FmFM
+    model_id: FmFM_base
+    model_root: ./Amazon/FmFM_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    regularizer: 0.0005
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    verbose: 0
+FmFM_amazonelectronics_x1_004_b6dec05b:
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_3beb3171
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    field_interaction_type: vectorized
+    group_index: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FmFM
+    model_id: FmFM_base
+    model_root: ./Amazon/FmFM_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    regularizer: 0.0005
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    verbose: 0
+FmFM_amazonelectronics_x1_005_ec283974:
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_3beb3171
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    field_interaction_type: matrixed
+    group_index: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FmFM
+    model_id: FmFM_base
+    model_root: ./Amazon/FmFM_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    regularizer: 0.0001
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    verbose: 0
+FmFM_amazonelectronics_x1_006_8a20f3b2:
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_3beb3171
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    field_interaction_type: vectorized
+    group_index: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FmFM
+    model_id: FmFM_base
+    model_root: ./Amazon/FmFM_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    regularizer: 0.0001
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    verbose: 0
+FmFM_amazonelectronics_x1_007_336185a9:
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_3beb3171
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    field_interaction_type: matrixed
+    group_index: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FmFM
+    model_id: FmFM_base
+    model_root: ./Amazon/FmFM_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    regularizer: 5.0e-05
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    verbose: 0
+FmFM_amazonelectronics_x1_008_5962ba0a:
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_3beb3171
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    field_interaction_type: vectorized
+    group_index: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FmFM
+    model_id: FmFM_base
+    model_root: ./Amazon/FmFM_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    regularizer: 5.0e-05
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    verbose: 0
+FmFM_amazonelectronics_x1_009_9c219fc1:
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_3beb3171
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    field_interaction_type: matrixed
+    group_index: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FmFM
+    model_id: FmFM_base
+    model_root: ./Amazon/FmFM_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    regularizer: 1.0e-05
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    verbose: 0
+FmFM_amazonelectronics_x1_010_4249888a:
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_3beb3171
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    field_interaction_type: vectorized
+    group_index: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FmFM
+    model_id: FmFM_base
+    model_root: ./Amazon/FmFM_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    regularizer: 1.0e-05
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    verbose: 0
+FmFM_amazonelectronics_x1_011_eb015129:
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_3beb3171
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    field_interaction_type: matrixed
+    group_index: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FmFM
+    model_id: FmFM_base
+    model_root: ./Amazon/FmFM_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    regularizer: 5.0e-06
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    verbose: 0
+FmFM_amazonelectronics_x1_012_78fb86b4:
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_3beb3171
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    field_interaction_type: vectorized
+    group_index: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FmFM
+    model_id: FmFM_base
+    model_root: ./Amazon/FmFM_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    regularizer: 5.0e-06
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    verbose: 0
+FmFM_amazonelectronics_x1_013_91382015:
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_3beb3171
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    field_interaction_type: matrixed
+    group_index: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FmFM
+    model_id: FmFM_base
+    model_root: ./Amazon/FmFM_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    regularizer: 1.0e-06
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    verbose: 0
+FmFM_amazonelectronics_x1_014_1b014d45:
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_3beb3171
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    field_interaction_type: vectorized
+    group_index: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FmFM
+    model_id: FmFM_base
+    model_root: ./Amazon/FmFM_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    regularizer: 1.0e-06
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    verbose: 0
+FmFM_amazonelectronics_x1_015_f24dcbb7:
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_3beb3171
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    field_interaction_type: matrixed
+    group_index: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FmFM
+    model_id: FmFM_base
+    model_root: ./Amazon/FmFM_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    regularizer: 5.0e-07
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    verbose: 0
+FmFM_amazonelectronics_x1_016_552fbd6d:
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_3beb3171
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    field_interaction_type: vectorized
+    group_index: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FmFM
+    model_id: FmFM_base
+    model_root: ./Amazon/FmFM_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    regularizer: 5.0e-07
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    verbose: 0
+FmFM_amazonelectronics_x1_017_26fc63bf:
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_3beb3171
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    field_interaction_type: matrixed
+    group_index: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FmFM
+    model_id: FmFM_base
+    model_root: ./Amazon/FmFM_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    regularizer: 1.0e-07
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    verbose: 0
+FmFM_amazonelectronics_x1_018_9412925c:
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_3beb3171
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    field_interaction_type: vectorized
+    group_index: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FmFM
+    model_id: FmFM_base
+    model_root: ./Amazon/FmFM_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    regularizer: 1.0e-07
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    verbose: 0
+FmFM_amazonelectronics_x1_019_33f077f9:
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_3beb3171
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    field_interaction_type: matrixed
+    group_index: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FmFM
+    model_id: FmFM_base
+    model_root: ./Amazon/FmFM_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    regularizer: 5.0e-08
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    verbose: 0
+FmFM_amazonelectronics_x1_020_3477a69f:
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_3beb3171
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    field_interaction_type: vectorized
+    group_index: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FmFM
+    model_id: FmFM_base
+    model_root: ./Amazon/FmFM_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    regularizer: 5.0e-08
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    verbose: 0
+FmFM_amazonelectronics_x1_021_b4710315:
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_3beb3171
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    field_interaction_type: matrixed
+    group_index: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FmFM
+    model_id: FmFM_base
+    model_root: ./Amazon/FmFM_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    regularizer: 1.0e-08
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    verbose: 0
+FmFM_amazonelectronics_x1_022_b5489cdf:
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_3beb3171
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    field_interaction_type: vectorized
+    group_index: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FmFM
+    model_id: FmFM_base
+    model_root: ./Amazon/FmFM_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    regularizer: 1.0e-08
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    verbose: 0
+FmFM_amazonelectronics_x1_023_ffbfc584:
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_3beb3171
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    field_interaction_type: matrixed
+    group_index: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FmFM
+    model_id: FmFM_base
+    model_root: ./Amazon/FmFM_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    regularizer: 0
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    verbose: 0
+FmFM_amazonelectronics_x1_024_0bbb7771:
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_3beb3171
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    field_interaction_type: vectorized
+    group_index: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FmFM
+    model_id: FmFM_base
+    model_root: ./Amazon/FmFM_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    regularizer: 0
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    verbose: 0

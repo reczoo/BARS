@@ -1,0 +1,178 @@
+## FmFM_amazonelectronics_x1
+
+A hands-on guide to run the FmFM model on the AmazonElectronics_x1 dataset.
+
+Author: [XUEPAI](https://github.com/xue-pai)
+
+
+| [Environments](#Environments) | [Dataset](#Dataset) | [Code](#Code) | [Results](#Results) | [Logs](#Logs) |
+|:-----------------------------:|:-----------:|:--------:|:--------:|-------|
+### Environments
++ Hardware
+
+  ```python
+  CPU: Intel(R) Xeon(R) Gold 6278C CPU @ 2.60GHz
+  GPU: Tesla V100 32G
+  RAM: 755G
+
+  ```
+
++ Software
+
+  ```python
+  cuda: 10.2
+  python: 3.7.10
+  pytorch: 1.11.0
+  pandas: 1.1.5
+  numpy: 1.19.5
+  scipy: 1.5.2
+  sklearn: 0.22.1
+  pyyaml: 6.0
+  h5py: 2.8.0
+  tqdm: 4.64.0
+  fuxictr: 2.0.1
+
+  ```
+
+### Dataset
+Please refer to the BARS dataset [AmazonElectronics_x1](https://github.com/openbenchmark/BARS/blob/main/datasets/Amazon#AmazonElectronics_x1) to get data ready.
+
+### Code
+
+We use the [FmFM](https://github.com/xue-pai/FuxiCTR/blob/v2.0.1/model_zoo/FmFM) model code from [FuxiCTR-v2.0.1](https://github.com/xue-pai/FuxiCTR/tree/v2.0.1) for this experiment.
+
+Running steps:
+
+1. Download [FuxiCTR-v2.0.1](https://github.com/xue-pai/FuxiCTR/archive/refs/tags/v2.0.1.zip) and install all the dependencies listed in the [environments](#environments).
+    
+    ```bash
+    pip uninstall fuxictr
+    pip install fuxictr==2.0.1
+    ```
+
+2. Create a data directory and put the downloaded data files in `../data/Amazon/AmazonElectronics_x1`.
+
+3. Both `dataset_config.yaml` and `model_config.yaml` files are available in [FmFM_amazonelectronics_x1_tuner_config_01](./FmFM_amazonelectronics_x1_tuner_config_01). Make sure that the data paths in `dataset_config.yaml` are correctly set.
+
+4. Run the following script to start training and evaluation.
+
+    ```bash
+    cd FuxiCTR/model_zoo/FmFM
+    nohup python run_expid.py --config XXX/benchmarks/FmFM/FmFM_amazonelectronics_x1_tuner_config_01 --expid FmFM_amazonelectronics_x1_011_eb015129 --gpu 0 > run.log &
+    tail -f run.log
+    ```
+
+### Results
+
+| gAUC | AUC | logloss  |
+|:--------------------:|:--------------------:|:--------------------:|
+| 0.852076 | 0.853685 | 0.479621  |
+
+
+### Logs
+```python
+2022-06-18 11:35:51,506 P61313 INFO {
+    "batch_size": "1024",
+    "data_format": "csv",
+    "data_root": "../data/Amazon/",
+    "dataset_id": "amazonelectronics_x1_3beb3171",
+    "debug_mode": "False",
+    "early_stop_patience": "2",
+    "embedding_dim": "64",
+    "epochs": "100",
+    "eval_interval": "1",
+    "feature_cols": "[{'active': True, 'dtype': 'int', 'name': 'user_id', 'type': 'meta'}, {'active': True, 'dtype': 'str', 'name': 'item_id', 'type': 'categorical'}, {'active': True, 'dtype': 'str', 'name': 'cate_id', 'type': 'categorical'}, {'active': True, 'dtype': 'str', 'feature_encoder': 'layers.MaskedAveragePooling()', 'max_len': 100, 'name': 'item_history', 'share_embedding': 'item_id', 'splitter': '^', 'type': 'sequence'}, {'active': True, 'dtype': 'str', 'feature_encoder': 'layers.MaskedAveragePooling()', 'max_len': 100, 'name': 'cate_history', 'share_embedding': 'cate_id', 'splitter': '^', 'type': 'sequence'}]",
+    "field_interaction_type": "matrixed",
+    "gpu": "2",
+    "group_index": "user_id",
+    "label_col": "{'dtype': 'float', 'name': 'label'}",
+    "learning_rate": "0.0005",
+    "loss": "binary_crossentropy",
+    "metrics": "['gAUC', 'AUC', 'logloss']",
+    "min_categr_count": "1",
+    "model": "FmFM",
+    "model_id": "FmFM_amazonelectronics_x1_011_eb015129",
+    "model_root": "./Amazon/FmFM_amazonelectronics_x1/",
+    "monitor": "{'AUC': 1, 'gAUC': 1}",
+    "monitor_mode": "max",
+    "num_workers": "3",
+    "optimizer": "adam",
+    "pickle_feature_encoder": "True",
+    "regularizer": "5e-06",
+    "save_best_only": "True",
+    "seed": "2022",
+    "shuffle": "True",
+    "task": "binary_classification",
+    "test_data": "../data/Amazon/AmazonElectronics_x1/test.csv",
+    "train_data": "../data/Amazon/AmazonElectronics_x1/train.csv",
+    "valid_data": "../data/Amazon/AmazonElectronics_x1/test.csv",
+    "verbose": "0",
+    "version": "pytorch"
+}
+2022-06-18 11:35:51,510 P61313 INFO Set up feature processor...
+2022-06-18 11:35:51,511 P61313 INFO Load feature_map from json: ../data/Amazon/amazonelectronics_x1_3beb3171/feature_map.json
+2022-06-18 11:35:51,511 P61313 INFO Set column index...
+2022-06-18 11:35:58,396 P61313 INFO Total number of parameters: 4235773.
+2022-06-18 11:35:58,396 P61313 INFO Loading init embeddings from ../data/Amazon/amazonelectronics_x1_3beb3171/init_embs.h5
+2022-06-18 11:35:58,429 P61313 INFO Loading data...
+2022-06-18 11:35:58,430 P61313 INFO Loading data from h5: ../data/Amazon/amazonelectronics_x1_3beb3171/train.h5
+2022-06-18 11:36:01,717 P61313 INFO Train samples: total/2608764, blocks/1
+2022-06-18 11:36:01,717 P61313 INFO Loading data from h5: ../data/Amazon/amazonelectronics_x1_3beb3171/valid.h5
+2022-06-18 11:36:02,147 P61313 INFO Validation samples: total/384806, blocks/1
+2022-06-18 11:36:02,147 P61313 INFO Loading train data done.
+2022-06-18 11:36:02,147 P61313 INFO Start training: 2548 batches/epoch
+2022-06-18 11:36:02,147 P61313 INFO ************ Epoch=1 start ************
+2022-06-18 11:47:19,033 P61313 INFO [Metrics] AUC: 0.816891 - gAUC: 0.814088
+2022-06-18 11:47:19,216 P61313 INFO Save best model: monitor(max): 1.630980
+2022-06-18 11:47:19,275 P61313 INFO --- 2548/2548 batches finished ---
+2022-06-18 11:47:19,371 P61313 INFO Train loss: 0.541579
+2022-06-18 11:47:19,371 P61313 INFO ************ Epoch=1 end ************
+2022-06-18 11:58:32,728 P61313 INFO [Metrics] AUC: 0.830499 - gAUC: 0.827451
+2022-06-18 11:58:32,952 P61313 INFO Save best model: monitor(max): 1.657950
+2022-06-18 11:58:32,993 P61313 INFO --- 2548/2548 batches finished ---
+2022-06-18 11:58:33,195 P61313 INFO Train loss: 0.491293
+2022-06-18 11:58:33,195 P61313 INFO ************ Epoch=2 end ************
+2022-06-18 12:09:48,577 P61313 INFO [Metrics] AUC: 0.841499 - gAUC: 0.838656
+2022-06-18 12:09:48,766 P61313 INFO Save best model: monitor(max): 1.680155
+2022-06-18 12:09:48,860 P61313 INFO --- 2548/2548 batches finished ---
+2022-06-18 12:09:49,003 P61313 INFO Train loss: 0.467473
+2022-06-18 12:09:49,003 P61313 INFO ************ Epoch=3 end ************
+2022-06-18 12:20:52,847 P61313 INFO [Metrics] AUC: 0.847336 - gAUC: 0.844228
+2022-06-18 12:20:53,021 P61313 INFO Save best model: monitor(max): 1.691564
+2022-06-18 12:20:53,115 P61313 INFO --- 2548/2548 batches finished ---
+2022-06-18 12:20:53,237 P61313 INFO Train loss: 0.447889
+2022-06-18 12:20:53,237 P61313 INFO ************ Epoch=4 end ************
+2022-06-18 12:32:03,214 P61313 INFO [Metrics] AUC: 0.850612 - gAUC: 0.848802
+2022-06-18 12:32:03,423 P61313 INFO Save best model: monitor(max): 1.699413
+2022-06-18 12:32:03,494 P61313 INFO --- 2548/2548 batches finished ---
+2022-06-18 12:32:03,636 P61313 INFO Train loss: 0.432451
+2022-06-18 12:32:03,637 P61313 INFO ************ Epoch=5 end ************
+2022-06-18 12:43:09,574 P61313 INFO [Metrics] AUC: 0.853685 - gAUC: 0.852076
+2022-06-18 12:43:09,767 P61313 INFO Save best model: monitor(max): 1.705761
+2022-06-18 12:43:09,857 P61313 INFO --- 2548/2548 batches finished ---
+2022-06-18 12:43:10,012 P61313 INFO Train loss: 0.417939
+2022-06-18 12:43:10,012 P61313 INFO ************ Epoch=6 end ************
+2022-06-18 12:54:01,733 P61313 INFO [Metrics] AUC: 0.853739 - gAUC: 0.851640
+2022-06-18 12:54:01,918 P61313 INFO Monitor(max) STOP: 1.705379 !
+2022-06-18 12:54:01,919 P61313 INFO Reduce learning rate on plateau: 0.000050
+2022-06-18 12:54:01,919 P61313 INFO --- 2548/2548 batches finished ---
+2022-06-18 12:54:02,116 P61313 INFO Train loss: 0.403250
+2022-06-18 12:54:02,116 P61313 INFO ************ Epoch=7 end ************
+2022-06-18 13:05:05,725 P61313 INFO [Metrics] AUC: 0.852483 - gAUC: 0.850720
+2022-06-18 13:05:05,918 P61313 INFO Monitor(max) STOP: 1.703203 !
+2022-06-18 13:05:05,918 P61313 INFO Reduce learning rate on plateau: 0.000005
+2022-06-18 13:05:05,918 P61313 INFO Early stopping at epoch=8
+2022-06-18 13:05:05,918 P61313 INFO --- 2548/2548 batches finished ---
+2022-06-18 13:05:06,017 P61313 INFO Train loss: 0.358723
+2022-06-18 13:05:06,017 P61313 INFO Training finished.
+2022-06-18 13:05:06,017 P61313 INFO Load best model: /cache/FuxiCTR/benchmarks/Amazon/FmFM_amazonelectronics_x1/amazonelectronics_x1_3beb3171/FmFM_amazonelectronics_x1_011_eb015129.model
+2022-06-18 13:05:12,014 P61313 INFO ****** Validation evaluation ******
+2022-06-18 13:07:41,514 P61313 INFO [Metrics] gAUC: 0.852076 - AUC: 0.853685 - logloss: 0.479621
+2022-06-18 13:07:41,739 P61313 INFO ******** Test evaluation ********
+2022-06-18 13:07:41,740 P61313 INFO Loading data...
+2022-06-18 13:07:41,741 P61313 INFO Loading data from h5: ../data/Amazon/amazonelectronics_x1_3beb3171/test.h5
+2022-06-18 13:07:42,251 P61313 INFO Test samples: total/384806, blocks/1
+2022-06-18 13:07:42,251 P61313 INFO Loading test data done.
+2022-06-18 13:10:11,437 P61313 INFO [Metrics] gAUC: 0.852076 - AUC: 0.853685 - logloss: 0.479621
+
+```

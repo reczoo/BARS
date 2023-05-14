@@ -1,0 +1,1044 @@
+DIEN_kuaivideo_x1_001_4deac4cf:
+    attention_activation: Dice
+    attention_dropout: 0.1
+    attention_hidden_units: [512, 256]
+    attention_type: din_attention
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_alpha: 0
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: kuaivideo_x1_60f6c91a
+    debug_mode: false
+    dien_neg_seq_field: []
+    dien_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    dien_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    gru_type: AUGRU
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIEN
+    model_id: DIEN_default
+    model_root: ./checkpoints/DIEN_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_attention_softmax: true
+    use_features: null
+    verbose: 1
+DIEN_kuaivideo_x1_002_6b67672b:
+    attention_activation: Dice
+    attention_dropout: 0.2
+    attention_hidden_units: [512, 256]
+    attention_type: din_attention
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_alpha: 0
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: kuaivideo_x1_60f6c91a
+    debug_mode: false
+    dien_neg_seq_field: []
+    dien_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    dien_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    gru_type: AUGRU
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIEN
+    model_id: DIEN_default
+    model_root: ./checkpoints/DIEN_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_attention_softmax: true
+    use_features: null
+    verbose: 1
+DIEN_kuaivideo_x1_003_1b79f593:
+    attention_activation: Dice
+    attention_dropout: 0.3
+    attention_hidden_units: [512, 256]
+    attention_type: din_attention
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_alpha: 0
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: kuaivideo_x1_60f6c91a
+    debug_mode: false
+    dien_neg_seq_field: []
+    dien_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    dien_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    gru_type: AUGRU
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIEN
+    model_id: DIEN_default
+    model_root: ./checkpoints/DIEN_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_attention_softmax: true
+    use_features: null
+    verbose: 1
+DIEN_kuaivideo_x1_004_0c908a2c:
+    attention_activation: Dice
+    attention_dropout: 0.1
+    attention_hidden_units: [256, 128]
+    attention_type: din_attention
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_alpha: 0
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: kuaivideo_x1_60f6c91a
+    debug_mode: false
+    dien_neg_seq_field: []
+    dien_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    dien_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    gru_type: AUGRU
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIEN
+    model_id: DIEN_default
+    model_root: ./checkpoints/DIEN_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_attention_softmax: true
+    use_features: null
+    verbose: 1
+DIEN_kuaivideo_x1_005_f2cd14aa:
+    attention_activation: Dice
+    attention_dropout: 0.2
+    attention_hidden_units: [256, 128]
+    attention_type: din_attention
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_alpha: 0
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: kuaivideo_x1_60f6c91a
+    debug_mode: false
+    dien_neg_seq_field: []
+    dien_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    dien_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    gru_type: AUGRU
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIEN
+    model_id: DIEN_default
+    model_root: ./checkpoints/DIEN_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_attention_softmax: true
+    use_features: null
+    verbose: 1
+DIEN_kuaivideo_x1_006_cc7362f1:
+    attention_activation: Dice
+    attention_dropout: 0.3
+    attention_hidden_units: [256, 128]
+    attention_type: din_attention
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_alpha: 0
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: kuaivideo_x1_60f6c91a
+    debug_mode: false
+    dien_neg_seq_field: []
+    dien_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    dien_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    gru_type: AUGRU
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIEN
+    model_id: DIEN_default
+    model_root: ./checkpoints/DIEN_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_attention_softmax: true
+    use_features: null
+    verbose: 1
+DIEN_kuaivideo_x1_007_89bff76e:
+    attention_activation: Dice
+    attention_dropout: 0.1
+    attention_hidden_units: [256, 256]
+    attention_type: din_attention
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_alpha: 0
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: kuaivideo_x1_60f6c91a
+    debug_mode: false
+    dien_neg_seq_field: []
+    dien_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    dien_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    gru_type: AUGRU
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIEN
+    model_id: DIEN_default
+    model_root: ./checkpoints/DIEN_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_attention_softmax: true
+    use_features: null
+    verbose: 1
+DIEN_kuaivideo_x1_008_09a97133:
+    attention_activation: Dice
+    attention_dropout: 0.2
+    attention_hidden_units: [256, 256]
+    attention_type: din_attention
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_alpha: 0
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: kuaivideo_x1_60f6c91a
+    debug_mode: false
+    dien_neg_seq_field: []
+    dien_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    dien_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    gru_type: AUGRU
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIEN
+    model_id: DIEN_default
+    model_root: ./checkpoints/DIEN_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_attention_softmax: true
+    use_features: null
+    verbose: 1
+DIEN_kuaivideo_x1_009_657021a9:
+    attention_activation: Dice
+    attention_dropout: 0.3
+    attention_hidden_units: [256, 256]
+    attention_type: din_attention
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_alpha: 0
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: kuaivideo_x1_60f6c91a
+    debug_mode: false
+    dien_neg_seq_field: []
+    dien_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    dien_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    gru_type: AUGRU
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIEN
+    model_id: DIEN_default
+    model_root: ./checkpoints/DIEN_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_attention_softmax: true
+    use_features: null
+    verbose: 1
+DIEN_kuaivideo_x1_010_6b67672b:
+    attention_activation: Dice
+    attention_dropout: 0.1
+    attention_hidden_units: [512, 256]
+    attention_type: din_attention
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_alpha: 0
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: kuaivideo_x1_60f6c91a
+    debug_mode: false
+    dien_neg_seq_field: []
+    dien_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    dien_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    gru_type: AUGRU
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIEN
+    model_id: DIEN_default
+    model_root: ./checkpoints/DIEN_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_attention_softmax: true
+    use_features: null
+    verbose: 1
+DIEN_kuaivideo_x1_011_ed7377b2:
+    attention_activation: Dice
+    attention_dropout: 0.2
+    attention_hidden_units: [512, 256]
+    attention_type: din_attention
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_alpha: 0
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: kuaivideo_x1_60f6c91a
+    debug_mode: false
+    dien_neg_seq_field: []
+    dien_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    dien_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    gru_type: AUGRU
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIEN
+    model_id: DIEN_default
+    model_root: ./checkpoints/DIEN_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_attention_softmax: true
+    use_features: null
+    verbose: 1
+DIEN_kuaivideo_x1_012_8a42c207:
+    attention_activation: Dice
+    attention_dropout: 0.3
+    attention_hidden_units: [512, 256]
+    attention_type: din_attention
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_alpha: 0
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: kuaivideo_x1_60f6c91a
+    debug_mode: false
+    dien_neg_seq_field: []
+    dien_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    dien_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    gru_type: AUGRU
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIEN
+    model_id: DIEN_default
+    model_root: ./checkpoints/DIEN_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_attention_softmax: true
+    use_features: null
+    verbose: 1
+DIEN_kuaivideo_x1_013_f2cd14aa:
+    attention_activation: Dice
+    attention_dropout: 0.1
+    attention_hidden_units: [256, 128]
+    attention_type: din_attention
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_alpha: 0
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: kuaivideo_x1_60f6c91a
+    debug_mode: false
+    dien_neg_seq_field: []
+    dien_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    dien_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    gru_type: AUGRU
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIEN
+    model_id: DIEN_default
+    model_root: ./checkpoints/DIEN_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_attention_softmax: true
+    use_features: null
+    verbose: 1
+DIEN_kuaivideo_x1_014_f1dafa63:
+    attention_activation: Dice
+    attention_dropout: 0.2
+    attention_hidden_units: [256, 128]
+    attention_type: din_attention
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_alpha: 0
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: kuaivideo_x1_60f6c91a
+    debug_mode: false
+    dien_neg_seq_field: []
+    dien_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    dien_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    gru_type: AUGRU
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIEN
+    model_id: DIEN_default
+    model_root: ./checkpoints/DIEN_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_attention_softmax: true
+    use_features: null
+    verbose: 1
+DIEN_kuaivideo_x1_015_6dbf2cab:
+    attention_activation: Dice
+    attention_dropout: 0.3
+    attention_hidden_units: [256, 128]
+    attention_type: din_attention
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_alpha: 0
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: kuaivideo_x1_60f6c91a
+    debug_mode: false
+    dien_neg_seq_field: []
+    dien_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    dien_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    gru_type: AUGRU
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIEN
+    model_id: DIEN_default
+    model_root: ./checkpoints/DIEN_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_attention_softmax: true
+    use_features: null
+    verbose: 1
+DIEN_kuaivideo_x1_016_09a97133:
+    attention_activation: Dice
+    attention_dropout: 0.1
+    attention_hidden_units: [256, 256]
+    attention_type: din_attention
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_alpha: 0
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: kuaivideo_x1_60f6c91a
+    debug_mode: false
+    dien_neg_seq_field: []
+    dien_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    dien_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    gru_type: AUGRU
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIEN
+    model_id: DIEN_default
+    model_root: ./checkpoints/DIEN_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_attention_softmax: true
+    use_features: null
+    verbose: 1
+DIEN_kuaivideo_x1_017_236f94e5:
+    attention_activation: Dice
+    attention_dropout: 0.2
+    attention_hidden_units: [256, 256]
+    attention_type: din_attention
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_alpha: 0
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: kuaivideo_x1_60f6c91a
+    debug_mode: false
+    dien_neg_seq_field: []
+    dien_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    dien_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    gru_type: AUGRU
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIEN
+    model_id: DIEN_default
+    model_root: ./checkpoints/DIEN_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_attention_softmax: true
+    use_features: null
+    verbose: 1
+DIEN_kuaivideo_x1_018_ed92d21e:
+    attention_activation: Dice
+    attention_dropout: 0.3
+    attention_hidden_units: [256, 256]
+    attention_type: din_attention
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_alpha: 0
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: kuaivideo_x1_60f6c91a
+    debug_mode: false
+    dien_neg_seq_field: []
+    dien_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    dien_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    gru_type: AUGRU
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIEN
+    model_id: DIEN_default
+    model_root: ./checkpoints/DIEN_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_attention_softmax: true
+    use_features: null
+    verbose: 1

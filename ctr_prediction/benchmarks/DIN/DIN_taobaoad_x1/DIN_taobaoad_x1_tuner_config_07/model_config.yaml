@@ -1,0 +1,504 @@
+DIN_taobaoad_x1_001_6c779213:
+    attention_dropout: 0.2
+    attention_hidden_activations: ReLU
+    attention_hidden_units: [512, 256]
+    attention_output_activation: null
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    din_sequence_field: !!python/tuple [cate_his, brand_his, btag_his]
+    din_target_field: !!python/tuple [cate_id, brand, btag]
+    din_use_softmax: false
+    dnn_activations: relu
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    -   feature_encoder: null
+        name: [cate_his, brand_his, btag_his]
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIN
+    model_id: DIN_base
+    model_root: ./checkpoints/DIN_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DIN_taobaoad_x1_002_5f3df4a0:
+    attention_dropout: 0.2
+    attention_hidden_activations: ReLU
+    attention_hidden_units: [512, 256]
+    attention_output_activation: null
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    din_sequence_field: !!python/tuple [cate_his, brand_his, btag_his]
+    din_target_field: !!python/tuple [cate_id, brand, btag]
+    din_use_softmax: false
+    dnn_activations: relu
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    -   feature_encoder: null
+        name: [cate_his, brand_his, btag_his]
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIN
+    model_id: DIN_base
+    model_root: ./checkpoints/DIN_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DIN_taobaoad_x1_003_5bd06f20:
+    attention_dropout: 0.3
+    attention_hidden_activations: ReLU
+    attention_hidden_units: [512, 256]
+    attention_output_activation: null
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    din_sequence_field: !!python/tuple [cate_his, brand_his, btag_his]
+    din_target_field: !!python/tuple [cate_id, brand, btag]
+    din_use_softmax: false
+    dnn_activations: relu
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    -   feature_encoder: null
+        name: [cate_his, brand_his, btag_his]
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIN
+    model_id: DIN_base
+    model_root: ./checkpoints/DIN_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DIN_taobaoad_x1_004_420df106:
+    attention_dropout: 0.3
+    attention_hidden_activations: ReLU
+    attention_hidden_units: [512, 256]
+    attention_output_activation: null
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    din_sequence_field: !!python/tuple [cate_his, brand_his, btag_his]
+    din_target_field: !!python/tuple [cate_id, brand, btag]
+    din_use_softmax: false
+    dnn_activations: relu
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    -   feature_encoder: null
+        name: [cate_his, brand_his, btag_his]
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIN
+    model_id: DIN_base
+    model_root: ./checkpoints/DIN_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DIN_taobaoad_x1_005_22f093c9:
+    attention_dropout: 0.4
+    attention_hidden_activations: ReLU
+    attention_hidden_units: [512, 256]
+    attention_output_activation: null
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    din_sequence_field: !!python/tuple [cate_his, brand_his, btag_his]
+    din_target_field: !!python/tuple [cate_id, brand, btag]
+    din_use_softmax: false
+    dnn_activations: relu
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    -   feature_encoder: null
+        name: [cate_his, brand_his, btag_his]
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIN
+    model_id: DIN_base
+    model_root: ./checkpoints/DIN_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DIN_taobaoad_x1_006_1b7c4342:
+    attention_dropout: 0.4
+    attention_hidden_activations: ReLU
+    attention_hidden_units: [512, 256]
+    attention_output_activation: null
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    din_sequence_field: !!python/tuple [cate_his, brand_his, btag_his]
+    din_target_field: !!python/tuple [cate_id, brand, btag]
+    din_use_softmax: false
+    dnn_activations: relu
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    -   feature_encoder: null
+        name: [cate_his, brand_his, btag_his]
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIN
+    model_id: DIN_base
+    model_root: ./checkpoints/DIN_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DIN_taobaoad_x1_007_4218eb44:
+    attention_dropout: 0.2
+    attention_hidden_activations: ReLU
+    attention_hidden_units: [512, 256]
+    attention_output_activation: null
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    din_sequence_field: !!python/tuple [cate_his, brand_his, btag_his]
+    din_target_field: !!python/tuple [cate_id, brand, btag]
+    din_use_softmax: false
+    dnn_activations: relu
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    -   feature_encoder: null
+        name: [cate_his, brand_his, btag_his]
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIN
+    model_id: DIN_base
+    model_root: ./checkpoints/DIN_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DIN_taobaoad_x1_008_f0488172:
+    attention_dropout: 0.2
+    attention_hidden_activations: ReLU
+    attention_hidden_units: [512, 256]
+    attention_output_activation: null
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    din_sequence_field: !!python/tuple [cate_his, brand_his, btag_his]
+    din_target_field: !!python/tuple [cate_id, brand, btag]
+    din_use_softmax: false
+    dnn_activations: relu
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    -   feature_encoder: null
+        name: [cate_his, brand_his, btag_his]
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIN
+    model_id: DIN_base
+    model_root: ./checkpoints/DIN_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DIN_taobaoad_x1_009_a1e37221:
+    attention_dropout: 0.3
+    attention_hidden_activations: ReLU
+    attention_hidden_units: [512, 256]
+    attention_output_activation: null
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    din_sequence_field: !!python/tuple [cate_his, brand_his, btag_his]
+    din_target_field: !!python/tuple [cate_id, brand, btag]
+    din_use_softmax: false
+    dnn_activations: relu
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    -   feature_encoder: null
+        name: [cate_his, brand_his, btag_his]
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIN
+    model_id: DIN_base
+    model_root: ./checkpoints/DIN_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DIN_taobaoad_x1_010_a81ab196:
+    attention_dropout: 0.3
+    attention_hidden_activations: ReLU
+    attention_hidden_units: [512, 256]
+    attention_output_activation: null
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    din_sequence_field: !!python/tuple [cate_his, brand_his, btag_his]
+    din_target_field: !!python/tuple [cate_id, brand, btag]
+    din_use_softmax: false
+    dnn_activations: relu
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    -   feature_encoder: null
+        name: [cate_his, brand_his, btag_his]
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIN
+    model_id: DIN_base
+    model_root: ./checkpoints/DIN_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DIN_taobaoad_x1_011_35c84f84:
+    attention_dropout: 0.4
+    attention_hidden_activations: ReLU
+    attention_hidden_units: [512, 256]
+    attention_output_activation: null
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    din_sequence_field: !!python/tuple [cate_his, brand_his, btag_his]
+    din_target_field: !!python/tuple [cate_id, brand, btag]
+    din_use_softmax: false
+    dnn_activations: relu
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    -   feature_encoder: null
+        name: [cate_his, brand_his, btag_his]
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIN
+    model_id: DIN_base
+    model_root: ./checkpoints/DIN_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DIN_taobaoad_x1_012_13c23a36:
+    attention_dropout: 0.4
+    attention_hidden_activations: ReLU
+    attention_hidden_units: [512, 256]
+    attention_output_activation: null
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    din_sequence_field: !!python/tuple [cate_his, brand_his, btag_his]
+    din_target_field: !!python/tuple [cate_id, brand, btag]
+    din_use_softmax: false
+    dnn_activations: relu
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    -   feature_encoder: null
+        name: [cate_his, brand_his, btag_his]
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIN
+    model_id: DIN_base
+    model_root: ./checkpoints/DIN_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1

@@ -1,0 +1,102 @@
+xDeepFM_amazonelectronics_x1_001_f1ace6be:
+    batch_norm: false
+    batch_size: 1024
+    cin_hidden_units: [32, 32, 32]
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    hidden_activations: relu
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./checkpoints/xDeepFM_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+xDeepFM_amazonelectronics_x1_008_05be2f45:
+    batch_norm: true
+    batch_size: 1024
+    cin_hidden_units: [64, 64, 64]
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    hidden_activations: relu
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./checkpoints/xDeepFM_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+xDeepFM_amazonelectronics_x1_016_3ee97cf2:
+    batch_norm: true
+    batch_size: 1024
+    cin_hidden_units: [128, 128, 128]
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: user_id
+    hidden_activations: relu
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./checkpoints/xDeepFM_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1

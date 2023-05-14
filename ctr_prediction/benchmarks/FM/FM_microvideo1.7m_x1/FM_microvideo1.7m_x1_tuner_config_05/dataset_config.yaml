@@ -1,0 +1,21 @@
+microvideo1.7m_x1_0d855fe6:
+    data_format: csv
+    data_root: ../data/MicroVideo1.7M/
+    feature_cols:
+    - {active: true, dtype: int, name: group_id, preprocess: copy_from(user_id), remap: false,
+        type: meta}
+    - {active: true, dtype: str, name: user_id, type: categorical}
+    - {active: true, dtype: str, embedding_dim: 64, name: item_id, pretrained_emb: ../data/MicroVideo1.7M/MicroVideo1.7M_x1/item_image_emb_dim64.h5,
+        type: categorical}
+    - {active: true, dtype: str, name: cate_id, type: categorical}
+    - {active: true, dtype: str, embedding_dim: 64, max_len: 100, name: clicked_items,
+        padding: pre, pretrained_emb: ../data/MicroVideo1.7M/MicroVideo1.7M_x1/item_image_emb_dim64.h5,
+        splitter: ^, type: sequence}
+    - {active: true, dtype: str, max_len: 100, name: clicked_categories, padding: pre,
+        share_embedding: cate_id, splitter: ^, type: sequence}
+    - {active: false, dtype: str, name: timestamp, type: categorical}
+    label_col: {dtype: float, name: is_click}
+    min_categr_count: 1
+    test_data: ../data/MicroVideo1.7M/MicroVideo1.7M_x1/test.csv
+    train_data: ../data/MicroVideo1.7M/MicroVideo1.7M_x1/train.csv
+    valid_data: ../data/MicroVideo1.7M/MicroVideo1.7M_x1/test.csv

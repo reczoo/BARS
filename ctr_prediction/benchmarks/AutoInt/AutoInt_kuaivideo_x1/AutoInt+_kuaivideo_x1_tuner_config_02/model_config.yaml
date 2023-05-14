@@ -1,0 +1,1128 @@
+AutoInt_kuaivideo_x1_001_43ed729f:
+    attention_dim: 256
+    attention_layers: 3
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_residual: true
+    use_scale: false
+    use_wide: false
+    verbose: 1
+AutoInt_kuaivideo_x1_002_8aebe927:
+    attention_dim: 256
+    attention_layers: 3
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_residual: true
+    use_scale: false
+    use_wide: true
+    verbose: 1
+AutoInt_kuaivideo_x1_003_957c431a:
+    attention_dim: 512
+    attention_layers: 3
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_residual: true
+    use_scale: false
+    use_wide: false
+    verbose: 1
+AutoInt_kuaivideo_x1_004_e5534895:
+    attention_dim: 512
+    attention_layers: 3
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_residual: true
+    use_scale: false
+    use_wide: true
+    verbose: 1
+AutoInt_kuaivideo_x1_005_48ef065a:
+    attention_dim: 256
+    attention_layers: 3
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_heads: 2
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_residual: true
+    use_scale: false
+    use_wide: false
+    verbose: 1
+AutoInt_kuaivideo_x1_006_232b8aca:
+    attention_dim: 256
+    attention_layers: 3
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_heads: 2
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_residual: true
+    use_scale: false
+    use_wide: true
+    verbose: 1
+AutoInt_kuaivideo_x1_007_19f030a4:
+    attention_dim: 512
+    attention_layers: 3
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_heads: 2
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_residual: true
+    use_scale: false
+    use_wide: false
+    verbose: 1
+AutoInt_kuaivideo_x1_008_02f49674:
+    attention_dim: 512
+    attention_layers: 3
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_heads: 2
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_residual: true
+    use_scale: false
+    use_wide: true
+    verbose: 1
+AutoInt_kuaivideo_x1_009_8d3b72d4:
+    attention_dim: 256
+    attention_layers: 3
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_residual: true
+    use_scale: false
+    use_wide: false
+    verbose: 1
+AutoInt_kuaivideo_x1_010_fe1ddb38:
+    attention_dim: 256
+    attention_layers: 3
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_residual: true
+    use_scale: false
+    use_wide: true
+    verbose: 1
+AutoInt_kuaivideo_x1_011_9ed2831b:
+    attention_dim: 512
+    attention_layers: 3
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_residual: true
+    use_scale: false
+    use_wide: false
+    verbose: 1
+AutoInt_kuaivideo_x1_012_15ee9160:
+    attention_dim: 512
+    attention_layers: 3
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_residual: true
+    use_scale: false
+    use_wide: true
+    verbose: 1
+AutoInt_kuaivideo_x1_013_b2ad0029:
+    attention_dim: 256
+    attention_layers: 3
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_residual: true
+    use_scale: false
+    use_wide: false
+    verbose: 1
+AutoInt_kuaivideo_x1_014_f3823cd5:
+    attention_dim: 256
+    attention_layers: 3
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_residual: true
+    use_scale: false
+    use_wide: true
+    verbose: 1
+AutoInt_kuaivideo_x1_015_3e7f87fe:
+    attention_dim: 512
+    attention_layers: 3
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_residual: true
+    use_scale: false
+    use_wide: false
+    verbose: 1
+AutoInt_kuaivideo_x1_016_03261808:
+    attention_dim: 512
+    attention_layers: 3
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_residual: true
+    use_scale: false
+    use_wide: true
+    verbose: 1
+AutoInt_kuaivideo_x1_017_26fd0c3b:
+    attention_dim: 256
+    attention_layers: 3
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 2
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_residual: true
+    use_scale: false
+    use_wide: false
+    verbose: 1
+AutoInt_kuaivideo_x1_018_3b7ce5be:
+    attention_dim: 256
+    attention_layers: 3
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 2
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_residual: true
+    use_scale: false
+    use_wide: true
+    verbose: 1
+AutoInt_kuaivideo_x1_019_06691c60:
+    attention_dim: 512
+    attention_layers: 3
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 2
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_residual: true
+    use_scale: false
+    use_wide: false
+    verbose: 1
+AutoInt_kuaivideo_x1_020_34795d9c:
+    attention_dim: 512
+    attention_layers: 3
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 2
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_residual: true
+    use_scale: false
+    use_wide: true
+    verbose: 1
+AutoInt_kuaivideo_x1_021_7e20c914:
+    attention_dim: 256
+    attention_layers: 3
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_residual: true
+    use_scale: false
+    use_wide: false
+    verbose: 1
+AutoInt_kuaivideo_x1_022_18ed4540:
+    attention_dim: 256
+    attention_layers: 3
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_residual: true
+    use_scale: false
+    use_wide: true
+    verbose: 1
+AutoInt_kuaivideo_x1_023_4591ca0f:
+    attention_dim: 512
+    attention_layers: 3
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_residual: true
+    use_scale: false
+    use_wide: false
+    verbose: 1
+AutoInt_kuaivideo_x1_024_1f6ed906:
+    attention_dim: 512
+    attention_layers: 3
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_residual: true
+    use_scale: false
+    use_wide: true
+    verbose: 1

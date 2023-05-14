@@ -1,0 +1,1 @@
+ 20230106-224752,[command] python run_expid.py --config Frappe/FINAL_frappe_x1/FINAL_1B_frappe_x1_tuner_config_01 --expid FINAL_frappe_x1_006_75be0578 --gpu 1,[exp_id] FINAL_frappe_x1_006_75be0578,[dataset_id] frappe_x1_47e6e0df,[train] N.A.,[val] AUC: 0.985643 - logloss: 0.133350,[test] AUC: 0.985223 - logloss: 0.136554

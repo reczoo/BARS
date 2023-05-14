@@ -1,0 +1,24 @@
+taobaoad_x1_2753db8a:
+    data_format: csv
+    data_root: ../data/Taobao/
+    feature_cols:
+    - {active: true, dtype: int, name: group_id, preprocess: copy_from(userid), remap: false,
+        type: meta}
+    -   active: true
+        dtype: str
+        name: [userid, cms_segid, cms_group_id, final_gender_code, age_level, pvalue_level,
+            shopping_level, occupation, new_user_class_level, adgroup_id, cate_id,
+            campaign_id, customer, brand, pid, btag]
+        type: categorical
+    - {active: true, dtype: float, name: price, type: numeric}
+    - {active: true, dtype: str, max_len: 50, name: cate_his, padding: pre, share_embedding: cate_id,
+        splitter: ^, type: sequence}
+    - {active: true, dtype: str, max_len: 50, name: brand_his, padding: pre, share_embedding: brand,
+        splitter: ^, type: sequence}
+    - {active: true, dtype: str, max_len: 50, name: btag_his, padding: pre, share_embedding: btag,
+        splitter: ^, type: sequence}
+    label_col: {dtype: float, name: clk}
+    min_categr_count: 10
+    test_data: ../data/Taobao/TaobaoAd_x1/test.csv
+    train_data: ../data/Taobao/TaobaoAd_x1/train.csv
+    valid_data: ../data/Taobao/TaobaoAd_x1/test.csv

@@ -1,0 +1,792 @@
+FmFM_microvideo1.7m_x1_001_743c8da8:
+    batch_size: 2048
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: clicked_items
+    - {feature_encoder: layers.MaskedAveragePooling(), name: clicked_categories}
+    field_interaction_type: matrixed
+    group_id: group_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FmFM
+    model_id: FmFM_base
+    model_root: ./checkpoints/FmFM_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 0.001
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FmFM_microvideo1.7m_x1_002_5e06ecb6:
+    batch_size: 2048
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: clicked_items
+    - {feature_encoder: layers.MaskedAveragePooling(), name: clicked_categories}
+    field_interaction_type: vectorized
+    group_id: group_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FmFM
+    model_id: FmFM_base
+    model_root: ./checkpoints/FmFM_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 0.001
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FmFM_microvideo1.7m_x1_003_83d17e35:
+    batch_size: 2048
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: clicked_items
+    - {feature_encoder: layers.MaskedAveragePooling(), name: clicked_categories}
+    field_interaction_type: matrixed
+    group_id: group_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FmFM
+    model_id: FmFM_base
+    model_root: ./checkpoints/FmFM_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 0.0005
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FmFM_microvideo1.7m_x1_004_dd0e009d:
+    batch_size: 2048
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: clicked_items
+    - {feature_encoder: layers.MaskedAveragePooling(), name: clicked_categories}
+    field_interaction_type: vectorized
+    group_id: group_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FmFM
+    model_id: FmFM_base
+    model_root: ./checkpoints/FmFM_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 0.0005
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FmFM_microvideo1.7m_x1_005_d7d2f1ea:
+    batch_size: 2048
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: clicked_items
+    - {feature_encoder: layers.MaskedAveragePooling(), name: clicked_categories}
+    field_interaction_type: matrixed
+    group_id: group_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FmFM
+    model_id: FmFM_base
+    model_root: ./checkpoints/FmFM_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 0.0001
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FmFM_microvideo1.7m_x1_006_d1ed9817:
+    batch_size: 2048
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: clicked_items
+    - {feature_encoder: layers.MaskedAveragePooling(), name: clicked_categories}
+    field_interaction_type: vectorized
+    group_id: group_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FmFM
+    model_id: FmFM_base
+    model_root: ./checkpoints/FmFM_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 0.0001
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FmFM_microvideo1.7m_x1_007_6006ccf9:
+    batch_size: 2048
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: clicked_items
+    - {feature_encoder: layers.MaskedAveragePooling(), name: clicked_categories}
+    field_interaction_type: matrixed
+    group_id: group_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FmFM
+    model_id: FmFM_base
+    model_root: ./checkpoints/FmFM_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 5.0e-05
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FmFM_microvideo1.7m_x1_008_b522838a:
+    batch_size: 2048
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: clicked_items
+    - {feature_encoder: layers.MaskedAveragePooling(), name: clicked_categories}
+    field_interaction_type: vectorized
+    group_id: group_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FmFM
+    model_id: FmFM_base
+    model_root: ./checkpoints/FmFM_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 5.0e-05
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FmFM_microvideo1.7m_x1_009_f23927a5:
+    batch_size: 2048
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: clicked_items
+    - {feature_encoder: layers.MaskedAveragePooling(), name: clicked_categories}
+    field_interaction_type: matrixed
+    group_id: group_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FmFM
+    model_id: FmFM_base
+    model_root: ./checkpoints/FmFM_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 1.0e-05
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FmFM_microvideo1.7m_x1_010_5bda3dcb:
+    batch_size: 2048
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: clicked_items
+    - {feature_encoder: layers.MaskedAveragePooling(), name: clicked_categories}
+    field_interaction_type: vectorized
+    group_id: group_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FmFM
+    model_id: FmFM_base
+    model_root: ./checkpoints/FmFM_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 1.0e-05
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FmFM_microvideo1.7m_x1_011_81bc94d7:
+    batch_size: 2048
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: clicked_items
+    - {feature_encoder: layers.MaskedAveragePooling(), name: clicked_categories}
+    field_interaction_type: matrixed
+    group_id: group_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FmFM
+    model_id: FmFM_base
+    model_root: ./checkpoints/FmFM_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 5.0e-06
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FmFM_microvideo1.7m_x1_012_6f6f0bb7:
+    batch_size: 2048
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: clicked_items
+    - {feature_encoder: layers.MaskedAveragePooling(), name: clicked_categories}
+    field_interaction_type: vectorized
+    group_id: group_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FmFM
+    model_id: FmFM_base
+    model_root: ./checkpoints/FmFM_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 5.0e-06
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FmFM_microvideo1.7m_x1_013_f4c4ed2f:
+    batch_size: 2048
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: clicked_items
+    - {feature_encoder: layers.MaskedAveragePooling(), name: clicked_categories}
+    field_interaction_type: matrixed
+    group_id: group_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FmFM
+    model_id: FmFM_base
+    model_root: ./checkpoints/FmFM_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 1.0e-06
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FmFM_microvideo1.7m_x1_014_462e22ea:
+    batch_size: 2048
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: clicked_items
+    - {feature_encoder: layers.MaskedAveragePooling(), name: clicked_categories}
+    field_interaction_type: vectorized
+    group_id: group_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FmFM
+    model_id: FmFM_base
+    model_root: ./checkpoints/FmFM_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 1.0e-06
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FmFM_microvideo1.7m_x1_015_eff017f7:
+    batch_size: 2048
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: clicked_items
+    - {feature_encoder: layers.MaskedAveragePooling(), name: clicked_categories}
+    field_interaction_type: matrixed
+    group_id: group_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FmFM
+    model_id: FmFM_base
+    model_root: ./checkpoints/FmFM_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 5.0e-07
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FmFM_microvideo1.7m_x1_016_cd7fecbe:
+    batch_size: 2048
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: clicked_items
+    - {feature_encoder: layers.MaskedAveragePooling(), name: clicked_categories}
+    field_interaction_type: vectorized
+    group_id: group_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FmFM
+    model_id: FmFM_base
+    model_root: ./checkpoints/FmFM_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 5.0e-07
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FmFM_microvideo1.7m_x1_017_474afd49:
+    batch_size: 2048
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: clicked_items
+    - {feature_encoder: layers.MaskedAveragePooling(), name: clicked_categories}
+    field_interaction_type: matrixed
+    group_id: group_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FmFM
+    model_id: FmFM_base
+    model_root: ./checkpoints/FmFM_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 1.0e-07
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FmFM_microvideo1.7m_x1_018_f8f86e2f:
+    batch_size: 2048
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: clicked_items
+    - {feature_encoder: layers.MaskedAveragePooling(), name: clicked_categories}
+    field_interaction_type: vectorized
+    group_id: group_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FmFM
+    model_id: FmFM_base
+    model_root: ./checkpoints/FmFM_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 1.0e-07
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FmFM_microvideo1.7m_x1_019_1b6910c7:
+    batch_size: 2048
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: clicked_items
+    - {feature_encoder: layers.MaskedAveragePooling(), name: clicked_categories}
+    field_interaction_type: matrixed
+    group_id: group_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FmFM
+    model_id: FmFM_base
+    model_root: ./checkpoints/FmFM_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 5.0e-08
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FmFM_microvideo1.7m_x1_020_f658f5a6:
+    batch_size: 2048
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: clicked_items
+    - {feature_encoder: layers.MaskedAveragePooling(), name: clicked_categories}
+    field_interaction_type: vectorized
+    group_id: group_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FmFM
+    model_id: FmFM_base
+    model_root: ./checkpoints/FmFM_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 5.0e-08
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FmFM_microvideo1.7m_x1_021_064ab134:
+    batch_size: 2048
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: clicked_items
+    - {feature_encoder: layers.MaskedAveragePooling(), name: clicked_categories}
+    field_interaction_type: matrixed
+    group_id: group_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FmFM
+    model_id: FmFM_base
+    model_root: ./checkpoints/FmFM_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 1.0e-08
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FmFM_microvideo1.7m_x1_022_1d379203:
+    batch_size: 2048
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: clicked_items
+    - {feature_encoder: layers.MaskedAveragePooling(), name: clicked_categories}
+    field_interaction_type: vectorized
+    group_id: group_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FmFM
+    model_id: FmFM_base
+    model_root: ./checkpoints/FmFM_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 1.0e-08
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FmFM_microvideo1.7m_x1_023_7e5933d5:
+    batch_size: 2048
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: clicked_items
+    - {feature_encoder: layers.MaskedAveragePooling(), name: clicked_categories}
+    field_interaction_type: matrixed
+    group_id: group_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FmFM
+    model_id: FmFM_base
+    model_root: ./checkpoints/FmFM_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 0
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FmFM_microvideo1.7m_x1_024_e7dabc40:
+    batch_size: 2048
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: clicked_items
+    - {feature_encoder: layers.MaskedAveragePooling(), name: clicked_categories}
+    field_interaction_type: vectorized
+    group_id: group_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FmFM
+    model_id: FmFM_base
+    model_root: ./checkpoints/FmFM_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 0
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    verbose: 1

@@ -1,0 +1,1 @@
+ 20220908-023345,[command] python run_expid.py --config Taobao/BST_taobaoad_x1/BST_taobaoad_x1_tuner_config_03 --expid BST_taobaoad_x1_021_e30ae99a --gpu 7,[exp_id] BST_taobaoad_x1_021_e30ae99a,[dataset_id] taobaoad_x1_2753db8a,[train] N.A.,[val] gAUC: 0.576304 - AUC: 0.651131 - logloss: 0.192842,[test] gAUC: 0.576304 - AUC: 0.651131 - logloss: 0.192842

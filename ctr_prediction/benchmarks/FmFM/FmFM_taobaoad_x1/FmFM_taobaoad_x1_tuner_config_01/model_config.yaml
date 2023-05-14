@@ -1,0 +1,145 @@
+FmFM_taobaoad_x1_001_f68e07f7:
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    early_stop_patience: 1
+    embedding_dim: 32
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    field_interaction_type: matrixed
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FmFM
+    model_id: FmFM_base
+    model_root: ./checkpoints/FmFM_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 0.0001
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FmFM_taobaoad_x1_002_1f6bc8ae:
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    early_stop_patience: 1
+    embedding_dim: 32
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    field_interaction_type: vectorized
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FmFM
+    model_id: FmFM_base
+    model_root: ./checkpoints/FmFM_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 0.0001
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FmFM_taobaoad_x1_007_00035c60:
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    early_stop_patience: 1
+    embedding_dim: 32
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    field_interaction_type: matrixed
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FmFM
+    model_id: FmFM_base
+    model_root: ./checkpoints/FmFM_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 1.0e-06
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FmFM_taobaoad_x1_011_ad81de04:
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    early_stop_patience: 1
+    embedding_dim: 32
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    field_interaction_type: matrixed
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FmFM
+    model_id: FmFM_base
+    model_root: ./checkpoints/FmFM_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 1.0e-07
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FmFM_taobaoad_x1_013_868e2693:
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    early_stop_patience: 1
+    embedding_dim: 32
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    field_interaction_type: matrixed
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FmFM
+    model_id: FmFM_base
+    model_root: ./checkpoints/FmFM_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 1.0e-08
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1

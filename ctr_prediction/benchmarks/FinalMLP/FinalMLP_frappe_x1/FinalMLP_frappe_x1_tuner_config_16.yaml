@@ -1,0 +1,40 @@
+base_config: ../model_zoo/FinalMLP/config/
+base_expid: FinalMLP_default
+dataset_id: frappe_x1
+
+dataset_config:
+    frappe_x1:
+        data_root: ../data/Frappe/
+        data_format: csv
+        train_data: ../data/Frappe/Frappe_x1/train.csv
+        valid_data: ../data/Frappe/Frappe_x1/valid.csv
+        test_data: ../data/Frappe/Frappe_x1/test.csv
+        min_categr_count: 1
+        feature_cols:
+            - {name: ["user", "item", "daytime", "weekday", "isweekend", "homework", "cost", "weather", "country", "city"],
+               active: True, dtype: float, type: categorical}
+        label_col: {name: label, dtype: float}
+
+tuner_space:
+    model_root: './checkpoints/FinalMLP_frappe_x1/'
+    embedding_dim: 10
+    embedding_regularizer: 5.e-2
+    mlp1_batch_norm: True
+    mlp2_batch_norm: True
+    mlp1_hidden_units: [[400]]
+    mlp2_hidden_units: [[100]]
+    mlp1_dropout: [0.4, 0.5]
+    mlp2_dropout: [0.4, 0.3]
+    use_fs: [True, False]
+    fs_hidden_units: [[800], [400]]
+    fs1_context: [["user"]]
+    fs2_context: [["item"]]
+    num_heads: [2, 5]
+    learning_rate: 1.e-3
+    batch_size: 4096
+    seed: 2021
+    monitor: 'AUC'
+    monitor_mode: 'max'
+    metrics: [['AUC', 'logloss']]
+
+ 

@@ -1,0 +1,15 @@
+avazu_x1_0bbde04e:
+    data_format: csv
+    data_root: ../data/Avazu/
+    feature_cols:
+    -   active: true
+        dtype: float
+        name: [feat_1, feat_2, feat_3, feat_4, feat_5, feat_6, feat_7, feat_8, feat_9,
+            feat_10, feat_11, feat_12, feat_13, feat_14, feat_15, feat_16, feat_17,
+            feat_18, feat_19, feat_20, feat_21, feat_22]
+        type: categorical
+    label_col: {dtype: float, name: label}
+    min_categr_count: 1
+    test_data: ../data/Avazu/Avazu_x1/test.csv
+    train_data: ../data/Avazu/Avazu_x1/train.csv
+    valid_data: ../data/Avazu/Avazu_x1/valid.csv

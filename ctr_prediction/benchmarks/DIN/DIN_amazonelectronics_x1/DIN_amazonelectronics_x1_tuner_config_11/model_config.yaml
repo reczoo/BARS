@@ -1,0 +1,1008 @@
+DIN_amazonelectronics_x1_001_ee7bf953:
+    attention_dropout: 0.2
+    attention_hidden_activations: Dice
+    attention_hidden_units: [512, 256]
+    attention_output_activation: null
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    din_sequence_field: !!python/tuple [item_history, cate_history]
+    din_target_field: !!python/tuple [item_id, cate_id]
+    din_use_softmax: true
+    dnn_activations: Dice
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIN
+    model_id: DIN_base
+    model_root: ./checkpoints/DIN_amazonelectronics_x1/
+    monitor: gAUC
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DIN_amazonelectronics_x1_002_1eb4800b:
+    attention_dropout: 0.2
+    attention_hidden_activations: Dice
+    attention_hidden_units: [512, 256]
+    attention_output_activation: null
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    din_sequence_field: !!python/tuple [item_history, cate_history]
+    din_target_field: !!python/tuple [item_id, cate_id]
+    din_use_softmax: true
+    dnn_activations: Dice
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIN
+    model_id: DIN_base
+    model_root: ./checkpoints/DIN_amazonelectronics_x1/
+    monitor: gAUC
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DIN_amazonelectronics_x1_003_827bc0f8:
+    attention_dropout: 0.2
+    attention_hidden_activations: Dice
+    attention_hidden_units: [512, 256]
+    attention_output_activation: null
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    din_sequence_field: !!python/tuple [item_history, cate_history]
+    din_target_field: !!python/tuple [item_id, cate_id]
+    din_use_softmax: true
+    dnn_activations: Dice
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIN
+    model_id: DIN_base
+    model_root: ./checkpoints/DIN_amazonelectronics_x1/
+    monitor: gAUC
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DIN_amazonelectronics_x1_004_0a1b36d8:
+    attention_dropout: 0.2
+    attention_hidden_activations: Dice
+    attention_hidden_units: [512, 256]
+    attention_output_activation: null
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    din_sequence_field: !!python/tuple [item_history, cate_history]
+    din_target_field: !!python/tuple [item_id, cate_id]
+    din_use_softmax: true
+    dnn_activations: Dice
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIN
+    model_id: DIN_base
+    model_root: ./checkpoints/DIN_amazonelectronics_x1/
+    monitor: gAUC
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DIN_amazonelectronics_x1_005_ee3db411:
+    attention_dropout: 0.2
+    attention_hidden_activations: Dice
+    attention_hidden_units: [512, 256]
+    attention_output_activation: null
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    din_sequence_field: !!python/tuple [item_history, cate_history]
+    din_target_field: !!python/tuple [item_id, cate_id]
+    din_use_softmax: true
+    dnn_activations: Dice
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIN
+    model_id: DIN_base
+    model_root: ./checkpoints/DIN_amazonelectronics_x1/
+    monitor: gAUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DIN_amazonelectronics_x1_006_0d5bbb14:
+    attention_dropout: 0.2
+    attention_hidden_activations: Dice
+    attention_hidden_units: [512, 256]
+    attention_output_activation: null
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    din_sequence_field: !!python/tuple [item_history, cate_history]
+    din_target_field: !!python/tuple [item_id, cate_id]
+    din_use_softmax: true
+    dnn_activations: Dice
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIN
+    model_id: DIN_base
+    model_root: ./checkpoints/DIN_amazonelectronics_x1/
+    monitor: gAUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DIN_amazonelectronics_x1_007_1eb4800b:
+    attention_dropout: 0.2
+    attention_hidden_activations: Dice
+    attention_hidden_units: [512, 256]
+    attention_output_activation: null
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    din_sequence_field: !!python/tuple [item_history, cate_history]
+    din_target_field: !!python/tuple [item_id, cate_id]
+    din_use_softmax: false
+    dnn_activations: Dice
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIN
+    model_id: DIN_base
+    model_root: ./checkpoints/DIN_amazonelectronics_x1/
+    monitor: gAUC
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DIN_amazonelectronics_x1_008_39ee1b1f:
+    attention_dropout: 0.2
+    attention_hidden_activations: Dice
+    attention_hidden_units: [512, 256]
+    attention_output_activation: null
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    din_sequence_field: !!python/tuple [item_history, cate_history]
+    din_target_field: !!python/tuple [item_id, cate_id]
+    din_use_softmax: false
+    dnn_activations: Dice
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIN
+    model_id: DIN_base
+    model_root: ./checkpoints/DIN_amazonelectronics_x1/
+    monitor: gAUC
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DIN_amazonelectronics_x1_009_0a1b36d8:
+    attention_dropout: 0.2
+    attention_hidden_activations: Dice
+    attention_hidden_units: [512, 256]
+    attention_output_activation: null
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    din_sequence_field: !!python/tuple [item_history, cate_history]
+    din_target_field: !!python/tuple [item_id, cate_id]
+    din_use_softmax: false
+    dnn_activations: Dice
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIN
+    model_id: DIN_base
+    model_root: ./checkpoints/DIN_amazonelectronics_x1/
+    monitor: gAUC
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DIN_amazonelectronics_x1_010_416e404a:
+    attention_dropout: 0.2
+    attention_hidden_activations: Dice
+    attention_hidden_units: [512, 256]
+    attention_output_activation: null
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    din_sequence_field: !!python/tuple [item_history, cate_history]
+    din_target_field: !!python/tuple [item_id, cate_id]
+    din_use_softmax: false
+    dnn_activations: Dice
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIN
+    model_id: DIN_base
+    model_root: ./checkpoints/DIN_amazonelectronics_x1/
+    monitor: gAUC
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DIN_amazonelectronics_x1_011_0d5bbb14:
+    attention_dropout: 0.2
+    attention_hidden_activations: Dice
+    attention_hidden_units: [512, 256]
+    attention_output_activation: null
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    din_sequence_field: !!python/tuple [item_history, cate_history]
+    din_target_field: !!python/tuple [item_id, cate_id]
+    din_use_softmax: false
+    dnn_activations: Dice
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIN
+    model_id: DIN_base
+    model_root: ./checkpoints/DIN_amazonelectronics_x1/
+    monitor: gAUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DIN_amazonelectronics_x1_012_8a301f3b:
+    attention_dropout: 0.2
+    attention_hidden_activations: Dice
+    attention_hidden_units: [512, 256]
+    attention_output_activation: null
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    din_sequence_field: !!python/tuple [item_history, cate_history]
+    din_target_field: !!python/tuple [item_id, cate_id]
+    din_use_softmax: false
+    dnn_activations: Dice
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIN
+    model_id: DIN_base
+    model_root: ./checkpoints/DIN_amazonelectronics_x1/
+    monitor: gAUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DIN_amazonelectronics_x1_013_1e9fefba:
+    attention_dropout: 0.1
+    attention_hidden_activations: Dice
+    attention_hidden_units: [512, 256]
+    attention_output_activation: null
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    din_sequence_field: !!python/tuple [item_history, cate_history]
+    din_target_field: !!python/tuple [item_id, cate_id]
+    din_use_softmax: true
+    dnn_activations: Dice
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIN
+    model_id: DIN_base
+    model_root: ./checkpoints/DIN_amazonelectronics_x1/
+    monitor: gAUC
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DIN_amazonelectronics_x1_014_7644c2d1:
+    attention_dropout: 0.1
+    attention_hidden_activations: Dice
+    attention_hidden_units: [512, 256]
+    attention_output_activation: null
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    din_sequence_field: !!python/tuple [item_history, cate_history]
+    din_target_field: !!python/tuple [item_id, cate_id]
+    din_use_softmax: true
+    dnn_activations: Dice
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIN
+    model_id: DIN_base
+    model_root: ./checkpoints/DIN_amazonelectronics_x1/
+    monitor: gAUC
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DIN_amazonelectronics_x1_015_8539c013:
+    attention_dropout: 0.1
+    attention_hidden_activations: Dice
+    attention_hidden_units: [512, 256]
+    attention_output_activation: null
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    din_sequence_field: !!python/tuple [item_history, cate_history]
+    din_target_field: !!python/tuple [item_id, cate_id]
+    din_use_softmax: true
+    dnn_activations: Dice
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIN
+    model_id: DIN_base
+    model_root: ./checkpoints/DIN_amazonelectronics_x1/
+    monitor: gAUC
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DIN_amazonelectronics_x1_016_ef79ccc1:
+    attention_dropout: 0.1
+    attention_hidden_activations: Dice
+    attention_hidden_units: [512, 256]
+    attention_output_activation: null
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    din_sequence_field: !!python/tuple [item_history, cate_history]
+    din_target_field: !!python/tuple [item_id, cate_id]
+    din_use_softmax: true
+    dnn_activations: Dice
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIN
+    model_id: DIN_base
+    model_root: ./checkpoints/DIN_amazonelectronics_x1/
+    monitor: gAUC
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DIN_amazonelectronics_x1_017_827bc0f8:
+    attention_dropout: 0.1
+    attention_hidden_activations: Dice
+    attention_hidden_units: [512, 256]
+    attention_output_activation: null
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    din_sequence_field: !!python/tuple [item_history, cate_history]
+    din_target_field: !!python/tuple [item_id, cate_id]
+    din_use_softmax: true
+    dnn_activations: Dice
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIN
+    model_id: DIN_base
+    model_root: ./checkpoints/DIN_amazonelectronics_x1/
+    monitor: gAUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DIN_amazonelectronics_x1_018_0a1b36d8:
+    attention_dropout: 0.1
+    attention_hidden_activations: Dice
+    attention_hidden_units: [512, 256]
+    attention_output_activation: null
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    din_sequence_field: !!python/tuple [item_history, cate_history]
+    din_target_field: !!python/tuple [item_id, cate_id]
+    din_use_softmax: true
+    dnn_activations: Dice
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIN
+    model_id: DIN_base
+    model_root: ./checkpoints/DIN_amazonelectronics_x1/
+    monitor: gAUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DIN_amazonelectronics_x1_019_7644c2d1:
+    attention_dropout: 0.1
+    attention_hidden_activations: Dice
+    attention_hidden_units: [512, 256]
+    attention_output_activation: null
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    din_sequence_field: !!python/tuple [item_history, cate_history]
+    din_target_field: !!python/tuple [item_id, cate_id]
+    din_use_softmax: false
+    dnn_activations: Dice
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIN
+    model_id: DIN_base
+    model_root: ./checkpoints/DIN_amazonelectronics_x1/
+    monitor: gAUC
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DIN_amazonelectronics_x1_020_fba78283:
+    attention_dropout: 0.1
+    attention_hidden_activations: Dice
+    attention_hidden_units: [512, 256]
+    attention_output_activation: null
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    din_sequence_field: !!python/tuple [item_history, cate_history]
+    din_target_field: !!python/tuple [item_id, cate_id]
+    din_use_softmax: false
+    dnn_activations: Dice
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIN
+    model_id: DIN_base
+    model_root: ./checkpoints/DIN_amazonelectronics_x1/
+    monitor: gAUC
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DIN_amazonelectronics_x1_021_ef79ccc1:
+    attention_dropout: 0.1
+    attention_hidden_activations: Dice
+    attention_hidden_units: [512, 256]
+    attention_output_activation: null
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    din_sequence_field: !!python/tuple [item_history, cate_history]
+    din_target_field: !!python/tuple [item_id, cate_id]
+    din_use_softmax: false
+    dnn_activations: Dice
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIN
+    model_id: DIN_base
+    model_root: ./checkpoints/DIN_amazonelectronics_x1/
+    monitor: gAUC
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DIN_amazonelectronics_x1_022_2cd7ad4a:
+    attention_dropout: 0.1
+    attention_hidden_activations: Dice
+    attention_hidden_units: [512, 256]
+    attention_output_activation: null
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    din_sequence_field: !!python/tuple [item_history, cate_history]
+    din_target_field: !!python/tuple [item_id, cate_id]
+    din_use_softmax: false
+    dnn_activations: Dice
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIN
+    model_id: DIN_base
+    model_root: ./checkpoints/DIN_amazonelectronics_x1/
+    monitor: gAUC
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DIN_amazonelectronics_x1_023_0a1b36d8:
+    attention_dropout: 0.1
+    attention_hidden_activations: Dice
+    attention_hidden_units: [512, 256]
+    attention_output_activation: null
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    din_sequence_field: !!python/tuple [item_history, cate_history]
+    din_target_field: !!python/tuple [item_id, cate_id]
+    din_use_softmax: false
+    dnn_activations: Dice
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIN
+    model_id: DIN_base
+    model_root: ./checkpoints/DIN_amazonelectronics_x1/
+    monitor: gAUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DIN_amazonelectronics_x1_024_416e404a:
+    attention_dropout: 0.1
+    attention_hidden_activations: Dice
+    attention_hidden_units: [512, 256]
+    attention_output_activation: null
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    din_sequence_field: !!python/tuple [item_history, cate_history]
+    din_target_field: !!python/tuple [item_id, cate_id]
+    din_use_softmax: false
+    dnn_activations: Dice
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DIN
+    model_id: DIN_base
+    model_root: ./checkpoints/DIN_amazonelectronics_x1/
+    monitor: gAUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1

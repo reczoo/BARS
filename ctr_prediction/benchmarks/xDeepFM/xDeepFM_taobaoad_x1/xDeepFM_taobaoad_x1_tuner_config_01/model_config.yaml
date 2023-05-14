@@ -1,0 +1,136 @@
+xDeepFM_taobaoad_x1_012_d3448353:
+    batch_norm: false
+    batch_size: 8192
+    cin_hidden_units: [32, 32, 32]
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./checkpoints/xDeepFM_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+xDeepFM_taobaoad_x1_025_f9100226:
+    batch_norm: false
+    batch_size: 8192
+    cin_hidden_units: [256]
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./checkpoints/xDeepFM_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+xDeepFM_taobaoad_x1_029_ebcc4574:
+    batch_norm: false
+    batch_size: 8192
+    cin_hidden_units: [256, 256, 256]
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./checkpoints/xDeepFM_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+xDeepFM_taobaoad_x1_030_b051469d:
+    batch_norm: false
+    batch_size: 8192
+    cin_hidden_units: [256, 256, 256]
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    hidden_activations: relu
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: xDeepFM
+    model_id: xDeepFM_base
+    model_root: ./checkpoints/xDeepFM_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1

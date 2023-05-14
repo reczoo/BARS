@@ -1,0 +1,243 @@
+## DCN_microvideo1.7m_x1
+
+A hands-on guide to run the DCN model on the MicroVideo1.7M_x1 dataset.
+
+Author: [XUEPAI](https://github.com/xue-pai)
+
+
+| [Environments](#Environments) | [Dataset](#Dataset) | [Code](#Code) | [Results](#Results) | [Logs](#Logs) |
+|:-----------------------------:|:-----------:|:--------:|:--------:|-------|
+### Environments
++ Hardware
+
+  ```python
+  CPU: Intel(R) Xeon(R) Gold 6278C CPU @ 2.60GHz
+  GPU: Tesla V100 32G
+  RAM: 755G
+
+  ```
+
++ Software
+
+  ```python
+  cuda: 10.2
+  python: 3.7.10
+  pytorch: 1.11.0
+  pandas: 1.1.5
+  numpy: 1.19.5
+  scipy: 1.5.2
+  sklearn: 0.22.1
+  pyyaml: 6.0
+  h5py: 2.8.0
+  tqdm: 4.64.0
+  fuxictr: 2.0.1
+
+  ```
+
+### Dataset
+Please refer to the BARS dataset [MicroVideo1.7M_x1](https://github.com/openbenchmark/BARS/blob/main/datasets/MicroVideo1.7M#MicroVideo17M_x1) to get data ready.
+
+### Code
+
+We use the [DCN](https://github.com/xue-pai/FuxiCTR/blob/v2.0.1/model_zoo/DCN) model code from [FuxiCTR-v2.0.1](https://github.com/xue-pai/FuxiCTR/tree/v2.0.1) for this experiment.
+
+Running steps:
+
+1. Download [FuxiCTR-v2.0.1](https://github.com/xue-pai/FuxiCTR/archive/refs/tags/v2.0.1.zip) and install all the dependencies listed in the [environments](#environments).
+    
+    ```bash
+    pip uninstall fuxictr
+    pip install fuxictr==2.0.1
+    ```
+
+2. Create a data directory and put the downloaded data files in `../data/MicroVideo1.7M/MicroVideo1.7M_x1`.
+
+3. Both `dataset_config.yaml` and `model_config.yaml` files are available in [DCN_microvideo1.7m_x1_tuner_config_07](./DCN_microvideo1.7m_x1_tuner_config_07). Make sure that the data paths in `dataset_config.yaml` are correctly set.
+
+4. Run the following script to start training and evaluation.
+
+    ```bash
+    cd FuxiCTR/model_zoo/DCN
+    nohup python run_expid.py --config XXX/benchmarks/DCN/DCN_microvideo1.7m_x1_tuner_config_07 --expid DCN_microvideo1 --gpu 0 > run.log &
+    tail -f run.log
+    ```
+
+### Results
+
+| gAUC | AUC | logloss  |
+|:--------------------:|:--------------------:|:--------------------:|
+| 0.685458 | 0.734198 | 0.413294  |
+
+
+### Logs
+```python
+2022-08-13 07:19:25,319 P45390 INFO Params: {
+    "batch_norm": "True",
+    "batch_size": "2048",
+    "data_format": "csv",
+    "data_root": "../data/MicroVideo1.7M/",
+    "dataset_id": "microvideo1.7m_x1_0d855fe6",
+    "debug_mode": "False",
+    "dnn_activations": "relu",
+    "dnn_hidden_units": "[1024, 512, 256]",
+    "early_stop_patience": "2",
+    "embedding_dim": "64",
+    "embedding_regularizer": "0.001",
+    "epochs": "100",
+    "eval_interval": "1",
+    "feature_cols": "[{'active': True, 'dtype': 'int', 'name': 'group_id', 'preprocess': 'copy_from(user_id)', 'remap': False, 'type': 'meta'}, {'active': True, 'dtype': 'str', 'name': 'user_id', 'type': 'categorical'}, {'active': True, 'dtype': 'str', 'embedding_dim': 64, 'name': 'item_id', 'pretrained_emb': '../data/MicroVideo1.7M/MicroVideo1.7M_x1/item_image_emb_dim64.h5', 'type': 'categorical'}, {'active': True, 'dtype': 'str', 'name': 'cate_id', 'type': 'categorical'}, {'active': True, 'dtype': 'str', 'embedding_dim': 64, 'max_len': 100, 'name': 'clicked_items', 'padding': 'pre', 'pretrained_emb': '../data/MicroVideo1.7M/MicroVideo1.7M_x1/item_image_emb_dim64.h5', 'splitter': '^', 'type': 'sequence'}, {'active': True, 'dtype': 'str', 'max_len': 100, 'name': 'clicked_categories', 'padding': 'pre', 'share_embedding': 'cate_id', 'splitter': '^', 'type': 'sequence'}, {'active': False, 'dtype': 'str', 'name': 'timestamp', 'type': 'categorical'}]",
+    "feature_specs": "[{'feature_encoder': 'nn.Linear(64, 64, bias=False)', 'name': 'item_id'}, {'feature_encoder': ['layers.MaskedAveragePooling()', 'nn.Linear(64, 64, bias=False)'], 'name': 'clicked_items'}, {'feature_encoder': 'layers.MaskedAveragePooling()', 'name': 'clicked_categories'}]",
+    "gpu": "1",
+    "group_id": "group_id",
+    "label_col": "{'dtype': 'float', 'name': 'is_click'}",
+    "learning_rate": "0.0005",
+    "loss": "binary_crossentropy",
+    "metrics": "['gAUC', 'AUC', 'logloss']",
+    "min_categr_count": "1",
+    "model": "DCN",
+    "model_id": "DCN_microvideo1.7m_x1_010_a992df63",
+    "model_root": "./checkpoints/DCN_microvideo1.7m_x1/",
+    "monitor": "{'AUC': 1, 'gAUC': 1}",
+    "monitor_mode": "max",
+    "net_dropout": "0.2",
+    "net_regularizer": "0",
+    "num_cross_layers": "2",
+    "num_workers": "3",
+    "optimizer": "adam",
+    "ordered_features": "None",
+    "pickle_feature_encoder": "True",
+    "save_best_only": "True",
+    "seed": "2022",
+    "shuffle": "True",
+    "task": "binary_classification",
+    "test_data": "../data/MicroVideo1.7M/MicroVideo1.7M_x1/test.csv",
+    "train_data": "../data/MicroVideo1.7M/MicroVideo1.7M_x1/train.csv",
+    "valid_data": "../data/MicroVideo1.7M/MicroVideo1.7M_x1/test.csv",
+    "verbose": "1"
+}
+2022-08-13 07:19:25,319 P45390 INFO Set up feature processor...
+2022-08-13 07:19:25,320 P45390 INFO Load feature_map from json: ../data/MicroVideo1.7M/microvideo1.7m_x1_0d855fe6/feature_map.json
+2022-08-13 07:19:25,320 P45390 INFO Set column index...
+2022-08-13 07:19:25,320 P45390 INFO Feature specs: {
+    "cate_id": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'oov_idx': 513, 'vocab_size': 514}",
+    "clicked_categories": "{'source': '', 'type': 'sequence', 'feature_encoder': 'layers.MaskedAveragePooling()', 'share_embedding': 'cate_id', 'padding_idx': 0, 'oov_idx': 513, 'vocab_size': 514, 'max_len': 100}",
+    "clicked_items": "{'source': '', 'type': 'sequence', 'feature_encoder': ['layers.MaskedAveragePooling()', 'nn.Linear(64, 64, bias=False)'], 'embedding_dim': 64, 'pretrained_emb': 'pretrained_emb.h5', 'freeze_emb': True, 'padding_idx': 0, 'oov_idx': 1704881, 'vocab_size': 1704882, 'max_len': 100}",
+    "group_id": "{'type': 'meta'}",
+    "item_id": "{'source': '', 'type': 'categorical', 'embedding_dim': 64, 'pretrained_emb': 'pretrained_emb.h5', 'freeze_emb': True, 'padding_idx': 0, 'oov_idx': 1704881, 'vocab_size': 1704882, 'feature_encoder': 'nn.Linear(64, 64, bias=False)'}",
+    "user_id": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'oov_idx': 10987, 'vocab_size': 10988}"
+}
+2022-08-13 07:19:37,019 P45390 INFO Total number of parameters: 1734593.
+2022-08-13 07:19:37,019 P45390 INFO Loading data...
+2022-08-13 07:19:37,020 P45390 INFO Loading data from h5: ../data/MicroVideo1.7M/microvideo1.7m_x1_0d855fe6/train.h5
+2022-08-13 07:19:49,819 P45390 INFO Train samples: total/8970309, blocks/1
+2022-08-13 07:19:49,819 P45390 INFO Loading data from h5: ../data/MicroVideo1.7M/microvideo1.7m_x1_0d855fe6/valid.h5
+2022-08-13 07:19:55,198 P45390 INFO Validation samples: total/3767308, blocks/1
+2022-08-13 07:19:55,198 P45390 INFO Loading train and validation data done.
+2022-08-13 07:19:55,199 P45390 INFO Start training: 4381 batches/epoch
+2022-08-13 07:19:55,199 P45390 INFO ************ Epoch=1 start ************
+2022-08-13 07:42:31,981 P45390 INFO [Metrics] AUC: 0.716901 - gAUC: 0.670156
+2022-08-13 07:42:31,999 P45390 INFO Save best model: monitor(max): 1.387057
+2022-08-13 07:42:33,840 P45390 INFO --- 4381/4381 batches finished ---
+2022-08-13 07:42:33,901 P45390 INFO Train loss: 0.464233
+2022-08-13 07:42:33,901 P45390 INFO ************ Epoch=1 end ************
+2022-08-13 08:05:06,849 P45390 INFO [Metrics] AUC: 0.720181 - gAUC: 0.672399
+2022-08-13 08:05:06,869 P45390 INFO Save best model: monitor(max): 1.392580
+2022-08-13 08:05:09,567 P45390 INFO --- 4381/4381 batches finished ---
+2022-08-13 08:05:09,654 P45390 INFO Train loss: 0.443595
+2022-08-13 08:05:09,654 P45390 INFO ************ Epoch=2 end ************
+2022-08-13 08:27:40,161 P45390 INFO [Metrics] AUC: 0.720626 - gAUC: 0.672804
+2022-08-13 08:27:40,172 P45390 INFO Save best model: monitor(max): 1.393430
+2022-08-13 08:27:42,372 P45390 INFO --- 4381/4381 batches finished ---
+2022-08-13 08:27:42,451 P45390 INFO Train loss: 0.441318
+2022-08-13 08:27:42,451 P45390 INFO ************ Epoch=3 end ************
+2022-08-13 08:50:16,316 P45390 INFO [Metrics] AUC: 0.722902 - gAUC: 0.674953
+2022-08-13 08:50:16,326 P45390 INFO Save best model: monitor(max): 1.397855
+2022-08-13 08:50:18,597 P45390 INFO --- 4381/4381 batches finished ---
+2022-08-13 08:50:18,734 P45390 INFO Train loss: 0.440183
+2022-08-13 08:50:18,734 P45390 INFO ************ Epoch=4 end ************
+2022-08-13 09:12:52,245 P45390 INFO [Metrics] AUC: 0.724100 - gAUC: 0.676645
+2022-08-13 09:12:52,254 P45390 INFO Save best model: monitor(max): 1.400744
+2022-08-13 09:12:54,735 P45390 INFO --- 4381/4381 batches finished ---
+2022-08-13 09:12:54,863 P45390 INFO Train loss: 0.439432
+2022-08-13 09:12:54,863 P45390 INFO ************ Epoch=5 end ************
+2022-08-13 09:35:22,864 P45390 INFO [Metrics] AUC: 0.725017 - gAUC: 0.678261
+2022-08-13 09:35:22,873 P45390 INFO Save best model: monitor(max): 1.403278
+2022-08-13 09:35:24,982 P45390 INFO --- 4381/4381 batches finished ---
+2022-08-13 09:35:25,089 P45390 INFO Train loss: 0.438773
+2022-08-13 09:35:25,089 P45390 INFO ************ Epoch=6 end ************
+2022-08-13 09:57:58,452 P45390 INFO [Metrics] AUC: 0.726113 - gAUC: 0.677897
+2022-08-13 09:57:58,483 P45390 INFO Save best model: monitor(max): 1.404009
+2022-08-13 09:58:00,624 P45390 INFO --- 4381/4381 batches finished ---
+2022-08-13 09:58:00,710 P45390 INFO Train loss: 0.438114
+2022-08-13 09:58:00,711 P45390 INFO ************ Epoch=7 end ************
+2022-08-13 10:20:38,078 P45390 INFO [Metrics] AUC: 0.725582 - gAUC: 0.676780
+2022-08-13 10:20:38,084 P45390 INFO Monitor(max) STOP: 1.402362 !
+2022-08-13 10:20:38,084 P45390 INFO Reduce learning rate on plateau: 0.000050
+2022-08-13 10:20:38,084 P45390 INFO --- 4381/4381 batches finished ---
+2022-08-13 10:20:38,179 P45390 INFO Train loss: 0.437489
+2022-08-13 10:20:38,180 P45390 INFO ************ Epoch=8 end ************
+2022-08-13 10:43:08,554 P45390 INFO [Metrics] AUC: 0.732548 - gAUC: 0.683904
+2022-08-13 10:43:08,565 P45390 INFO Save best model: monitor(max): 1.416452
+2022-08-13 10:43:10,620 P45390 INFO --- 4381/4381 batches finished ---
+2022-08-13 10:43:10,721 P45390 INFO Train loss: 0.426782
+2022-08-13 10:43:10,721 P45390 INFO ************ Epoch=9 end ************
+2022-08-13 11:05:40,587 P45390 INFO [Metrics] AUC: 0.733216 - gAUC: 0.684316
+2022-08-13 11:05:40,599 P45390 INFO Save best model: monitor(max): 1.417532
+2022-08-13 11:05:42,905 P45390 INFO --- 4381/4381 batches finished ---
+2022-08-13 11:05:43,000 P45390 INFO Train loss: 0.422588
+2022-08-13 11:05:43,000 P45390 INFO ************ Epoch=10 end ************
+2022-08-13 11:28:01,007 P45390 INFO [Metrics] AUC: 0.733513 - gAUC: 0.684526
+2022-08-13 11:28:01,033 P45390 INFO Save best model: monitor(max): 1.418039
+2022-08-13 11:28:03,283 P45390 INFO --- 4381/4381 batches finished ---
+2022-08-13 11:28:03,360 P45390 INFO Train loss: 0.420838
+2022-08-13 11:28:03,360 P45390 INFO ************ Epoch=11 end ************
+2022-08-13 11:49:11,777 P45390 INFO [Metrics] AUC: 0.733971 - gAUC: 0.685108
+2022-08-13 11:49:11,788 P45390 INFO Save best model: monitor(max): 1.419079
+2022-08-13 11:49:14,083 P45390 INFO --- 4381/4381 batches finished ---
+2022-08-13 11:49:14,189 P45390 INFO Train loss: 0.419491
+2022-08-13 11:49:14,189 P45390 INFO ************ Epoch=12 end ************
+2022-08-13 12:09:04,812 P45390 INFO [Metrics] AUC: 0.734009 - gAUC: 0.685219
+2022-08-13 12:09:04,822 P45390 INFO Save best model: monitor(max): 1.419229
+2022-08-13 12:09:06,839 P45390 INFO --- 4381/4381 batches finished ---
+2022-08-13 12:09:06,917 P45390 INFO Train loss: 0.418437
+2022-08-13 12:09:06,917 P45390 INFO ************ Epoch=13 end ************
+2022-08-13 12:27:36,034 P45390 INFO [Metrics] AUC: 0.734068 - gAUC: 0.685197
+2022-08-13 12:27:36,062 P45390 INFO Save best model: monitor(max): 1.419265
+2022-08-13 12:27:38,111 P45390 INFO --- 4381/4381 batches finished ---
+2022-08-13 12:27:38,189 P45390 INFO Train loss: 0.417516
+2022-08-13 12:27:38,189 P45390 INFO ************ Epoch=14 end ************
+2022-08-13 12:44:29,850 P45390 INFO [Metrics] AUC: 0.733804 - gAUC: 0.685180
+2022-08-13 12:44:29,860 P45390 INFO Monitor(max) STOP: 1.418984 !
+2022-08-13 12:44:29,860 P45390 INFO Reduce learning rate on plateau: 0.000005
+2022-08-13 12:44:29,860 P45390 INFO --- 4381/4381 batches finished ---
+2022-08-13 12:44:29,933 P45390 INFO Train loss: 0.416779
+2022-08-13 12:44:29,933 P45390 INFO ************ Epoch=15 end ************
+2022-08-13 12:56:52,047 P45390 INFO [Metrics] AUC: 0.734198 - gAUC: 0.685458
+2022-08-13 12:56:52,061 P45390 INFO Save best model: monitor(max): 1.419656
+2022-08-13 12:56:53,979 P45390 INFO --- 4381/4381 batches finished ---
+2022-08-13 12:56:54,051 P45390 INFO Train loss: 0.411965
+2022-08-13 12:56:54,051 P45390 INFO ************ Epoch=16 end ************
+2022-08-13 13:05:08,390 P45390 INFO [Metrics] AUC: 0.734223 - gAUC: 0.685274
+2022-08-13 13:05:08,404 P45390 INFO Monitor(max) STOP: 1.419497 !
+2022-08-13 13:05:08,404 P45390 INFO Reduce learning rate on plateau: 0.000001
+2022-08-13 13:05:08,405 P45390 INFO --- 4381/4381 batches finished ---
+2022-08-13 13:05:08,480 P45390 INFO Train loss: 0.411140
+2022-08-13 13:05:08,481 P45390 INFO ************ Epoch=17 end ************
+2022-08-13 13:11:51,404 P45390 INFO [Metrics] AUC: 0.734237 - gAUC: 0.685355
+2022-08-13 13:11:51,417 P45390 INFO Monitor(max) STOP: 1.419592 !
+2022-08-13 13:11:51,417 P45390 INFO Reduce learning rate on plateau: 0.000001
+2022-08-13 13:11:51,417 P45390 INFO ********* Epoch==18 early stop *********
+2022-08-13 13:11:51,418 P45390 INFO --- 4381/4381 batches finished ---
+2022-08-13 13:11:51,485 P45390 INFO Train loss: 0.410250
+2022-08-13 13:11:51,485 P45390 INFO Training finished.
+2022-08-13 13:11:51,485 P45390 INFO Load best model: /cache/FuxiCTRv2.0/benchmark/checkpoints/DCN_microvideo1.7m_x1/microvideo1.7m_x1_0d855fe6/DCN_microvideo1.7m_x1_010_a992df63.model
+2022-08-13 13:11:52,274 P45390 INFO ****** Validation evaluation ******
+2022-08-13 13:13:30,410 P45390 INFO [Metrics] gAUC: 0.685458 - AUC: 0.734198 - logloss: 0.413294
+2022-08-13 13:13:30,526 P45390 INFO ******** Test evaluation ********
+2022-08-13 13:13:30,526 P45390 INFO Loading data...
+2022-08-13 13:13:30,526 P45390 INFO Loading data from h5: ../data/MicroVideo1.7M/microvideo1.7m_x1_0d855fe6/test.h5
+2022-08-13 13:13:34,823 P45390 INFO Test samples: total/3767308, blocks/1
+2022-08-13 13:13:34,823 P45390 INFO Loading test data done.
+2022-08-13 13:15:18,016 P45390 INFO [Metrics] gAUC: 0.685458 - AUC: 0.734198 - logloss: 0.413294
+
+```

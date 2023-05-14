@@ -1,0 +1,304 @@
+FINAL_criteo_x1_001_066c6b97:
+    batch_size: 4096
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1200, 1200]
+    block2_dropout: 0
+    block2_hidden_activations: null
+    block2_hidden_units: [64, 64, 64]
+    block_type: 1B
+    dataset_id: criteo_x1_49102577
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 10
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FINAL
+    model_id: FINAL_default
+    model_root: ./checkpoints/FINAL_criteo_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    batch_norm: True
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_field_gate: true
+    verbose: 1
+FINAL_criteo_x1_002_dd45f732:
+    batch_size: 4096
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1200, 1200]
+    block2_dropout: 0
+    block2_hidden_activations: null
+    block2_hidden_units: [64, 64, 64]
+    block_type: 1B
+    dataset_id: criteo_x1_49102577
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 10
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FINAL
+    model_id: FINAL_default
+    model_root: ./checkpoints/FINAL_criteo_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    batch_norm: True
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_field_gate: true
+    verbose: 1
+FINAL_criteo_x1_003_00624c04:
+    batch_size: 4096
+    block1_dropout: 0.2
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1200, 1200]
+    block2_dropout: 0
+    block2_hidden_activations: null
+    block2_hidden_units: [64, 64, 64]
+    block_type: 1B
+    dataset_id: criteo_x1_49102577
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 10
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FINAL
+    model_id: FINAL_default
+    model_root: ./checkpoints/FINAL_criteo_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    batch_norm: True
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_field_gate: true
+    verbose: 1
+FINAL_criteo_x1_004_081ea5a2:
+    batch_size: 4096
+    block1_dropout: 0.2
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1200, 1200]
+    block2_dropout: 0
+    block2_hidden_activations: null
+    block2_hidden_units: [64, 64, 64]
+    block_type: 1B
+    dataset_id: criteo_x1_49102577
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 10
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FINAL
+    model_id: FINAL_default
+    model_root: ./checkpoints/FINAL_criteo_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    batch_norm: True
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_field_gate: true
+    verbose: 1
+FINAL_criteo_x1_005_a6d63c74:
+    batch_size: 4096
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000]
+    block2_dropout: 0
+    block2_hidden_activations: null
+    block2_hidden_units: [64, 64, 64]
+    block_type: 1B
+    dataset_id: criteo_x1_49102577
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 10
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FINAL
+    model_id: FINAL_default
+    model_root: ./checkpoints/FINAL_criteo_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    batch_norm: True
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_field_gate: true
+    verbose: 1
+FINAL_criteo_x1_006_2115c56f:
+    batch_size: 4096
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000]
+    block2_dropout: 0
+    block2_hidden_activations: null
+    block2_hidden_units: [64, 64, 64]
+    block_type: 1B
+    dataset_id: criteo_x1_49102577
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 10
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FINAL
+    model_id: FINAL_default
+    model_root: ./checkpoints/FINAL_criteo_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    batch_norm: True
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_field_gate: true
+    verbose: 1
+FINAL_criteo_x1_007_b4783421:
+    batch_size: 4096
+    block1_dropout: 0.2
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000]
+    block2_dropout: 0
+    block2_hidden_activations: null
+    block2_hidden_units: [64, 64, 64]
+    block_type: 1B
+    dataset_id: criteo_x1_49102577
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 10
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FINAL
+    model_id: FINAL_default
+    model_root: ./checkpoints/FINAL_criteo_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    batch_norm: True
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_field_gate: true
+    verbose: 1
+FINAL_criteo_x1_008_fcef6720:
+    batch_size: 4096
+    block1_dropout: 0.2
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000]
+    block2_dropout: 0
+    block2_hidden_activations: null
+    block2_hidden_units: [64, 64, 64]
+    block_type: 1B
+    dataset_id: criteo_x1_49102577
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 10
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FINAL
+    model_id: FINAL_default
+    model_root: ./checkpoints/FINAL_criteo_x1/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    batch_norm: True
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_field_gate: true
+    verbose: 1

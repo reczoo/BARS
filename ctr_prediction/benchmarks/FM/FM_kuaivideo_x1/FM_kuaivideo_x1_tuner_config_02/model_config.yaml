@@ -1,0 +1,1680 @@
+FM_kuaivideo_x1_001_a01b893f:
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 0.005
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_kuaivideo_x1_002_ef8f7baf:
+    batch_size: 4096
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 0.005
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_kuaivideo_x1_003_724c5d0b:
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 0.001
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_kuaivideo_x1_004_46393b8c:
+    batch_size: 4096
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 0.001
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_kuaivideo_x1_005_ae152a8f:
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 0.0001
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_kuaivideo_x1_006_a3b7cdc4:
+    batch_size: 4096
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 0.0001
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_kuaivideo_x1_007_e47aa67a:
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 0.0005
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_kuaivideo_x1_008_20927d3e:
+    batch_size: 4096
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 0.0005
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_kuaivideo_x1_009_3b863f92:
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 5.0e-05
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_kuaivideo_x1_010_e67642a9:
+    batch_size: 4096
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 5.0e-05
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_kuaivideo_x1_011_af672d27:
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 1.0e-05
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_kuaivideo_x1_012_35007647:
+    batch_size: 4096
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 1.0e-05
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_kuaivideo_x1_013_1b7db4d9:
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 5.0e-06
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_kuaivideo_x1_014_2365aada:
+    batch_size: 4096
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 5.0e-06
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_kuaivideo_x1_015_50bf49d7:
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 1.0e-06
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_kuaivideo_x1_016_ee946d93:
+    batch_size: 4096
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 1.0e-06
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_kuaivideo_x1_017_d5891604:
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 5.0e-07
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_kuaivideo_x1_018_b6088a19:
+    batch_size: 4096
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 5.0e-07
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_kuaivideo_x1_019_93a8f2d7:
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 1.0e-07
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_kuaivideo_x1_020_4a753ee2:
+    batch_size: 4096
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 1.0e-07
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_kuaivideo_x1_021_f6ae5c52:
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 1.0e-08
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_kuaivideo_x1_022_e6ae8dd1:
+    batch_size: 4096
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 1.0e-08
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_kuaivideo_x1_023_6f1dc2c0:
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 0
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_kuaivideo_x1_024_bb91cf52:
+    batch_size: 4096
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 0
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_kuaivideo_x1_025_4efb7517:
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 0.005
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_kuaivideo_x1_026_467e0373:
+    batch_size: 4096
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 0.005
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_kuaivideo_x1_027_e47aa67a:
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 0.001
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_kuaivideo_x1_028_20927d3e:
+    batch_size: 4096
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 0.001
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_kuaivideo_x1_029_74fdfe29:
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 0.0001
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_kuaivideo_x1_030_2df445e1:
+    batch_size: 4096
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 0.0001
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_kuaivideo_x1_031_9e037b7e:
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 0.0005
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_kuaivideo_x1_032_dfc5cab9:
+    batch_size: 4096
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 0.0005
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_kuaivideo_x1_033_9f009efd:
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 5.0e-05
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_kuaivideo_x1_034_25781505:
+    batch_size: 4096
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 5.0e-05
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_kuaivideo_x1_035_e9ef1669:
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 1.0e-05
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_kuaivideo_x1_036_97a04690:
+    batch_size: 4096
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 1.0e-05
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_kuaivideo_x1_037_5a16d025:
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 5.0e-06
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_kuaivideo_x1_038_af22b195:
+    batch_size: 4096
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 5.0e-06
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_kuaivideo_x1_039_f2fa82b3:
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 1.0e-06
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_kuaivideo_x1_040_2b12bcae:
+    batch_size: 4096
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 1.0e-06
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_kuaivideo_x1_041_acb364a4:
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 5.0e-07
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_kuaivideo_x1_042_dd831b20:
+    batch_size: 4096
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 5.0e-07
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_kuaivideo_x1_043_740e6a3f:
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 1.0e-07
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_kuaivideo_x1_044_d4d3129f:
+    batch_size: 4096
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 1.0e-07
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_kuaivideo_x1_045_d8a477d0:
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 1.0e-08
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_kuaivideo_x1_046_0d013de7:
+    batch_size: 4096
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 1.0e-08
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_kuaivideo_x1_047_b5c06440:
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 0
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_kuaivideo_x1_048_0ce15e81:
+    batch_size: 4096
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 0
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1

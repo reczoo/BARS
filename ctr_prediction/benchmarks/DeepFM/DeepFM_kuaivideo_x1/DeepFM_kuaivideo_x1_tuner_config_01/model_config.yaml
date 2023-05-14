@@ -1,0 +1,1200 @@
+DeepFM_kuaivideo_x1_001_bdaf89d8:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    hidden_activations: relu
+    hidden_units: [1024, 512, 256]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./checkpoints/DeepFM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DeepFM_kuaivideo_x1_002_fd4bc522:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    hidden_activations: relu
+    hidden_units: [1024, 512, 256]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./checkpoints/DeepFM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DeepFM_kuaivideo_x1_003_a7784cdb:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    hidden_activations: relu
+    hidden_units: [1024, 512, 256]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./checkpoints/DeepFM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DeepFM_kuaivideo_x1_004_dea3b920:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    hidden_activations: relu
+    hidden_units: [1024, 512, 256]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./checkpoints/DeepFM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DeepFM_kuaivideo_x1_005_4f0bba60:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    hidden_activations: relu
+    hidden_units: [1024, 512, 256]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./checkpoints/DeepFM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.4
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DeepFM_kuaivideo_x1_006_28082639:
+    batch_norm: true
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    hidden_activations: relu
+    hidden_units: [1024, 512, 256]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./checkpoints/DeepFM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DeepFM_kuaivideo_x1_007_5acbcabd:
+    batch_norm: true
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    hidden_activations: relu
+    hidden_units: [1024, 512, 256]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./checkpoints/DeepFM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DeepFM_kuaivideo_x1_008_97940762:
+    batch_norm: true
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    hidden_activations: relu
+    hidden_units: [1024, 512, 256]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./checkpoints/DeepFM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DeepFM_kuaivideo_x1_009_d5d13eeb:
+    batch_norm: true
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    hidden_activations: relu
+    hidden_units: [1024, 512, 256]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./checkpoints/DeepFM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DeepFM_kuaivideo_x1_010_2f27d04d:
+    batch_norm: true
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    hidden_activations: relu
+    hidden_units: [1024, 512, 256]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./checkpoints/DeepFM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.4
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DeepFM_kuaivideo_x1_011_366a7bf5:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    hidden_activations: relu
+    hidden_units: [1024, 512, 256]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./checkpoints/DeepFM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DeepFM_kuaivideo_x1_012_efdd314c:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    hidden_activations: relu
+    hidden_units: [1024, 512, 256]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./checkpoints/DeepFM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DeepFM_kuaivideo_x1_013_30e45e5b:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    hidden_activations: relu
+    hidden_units: [1024, 512, 256]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./checkpoints/DeepFM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DeepFM_kuaivideo_x1_014_94c99b0c:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    hidden_activations: relu
+    hidden_units: [1024, 512, 256]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./checkpoints/DeepFM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DeepFM_kuaivideo_x1_015_9241ebe2:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    hidden_activations: relu
+    hidden_units: [1024, 512, 256]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./checkpoints/DeepFM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.4
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DeepFM_kuaivideo_x1_016_b73ebf34:
+    batch_norm: true
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    hidden_activations: relu
+    hidden_units: [1024, 512, 256]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./checkpoints/DeepFM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DeepFM_kuaivideo_x1_017_8fee4c16:
+    batch_norm: true
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    hidden_activations: relu
+    hidden_units: [1024, 512, 256]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./checkpoints/DeepFM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DeepFM_kuaivideo_x1_018_798b839d:
+    batch_norm: true
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    hidden_activations: relu
+    hidden_units: [1024, 512, 256]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./checkpoints/DeepFM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DeepFM_kuaivideo_x1_019_60c4d6da:
+    batch_norm: true
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    hidden_activations: relu
+    hidden_units: [1024, 512, 256]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./checkpoints/DeepFM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DeepFM_kuaivideo_x1_020_969a59e3:
+    batch_norm: true
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    hidden_activations: relu
+    hidden_units: [1024, 512, 256]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./checkpoints/DeepFM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.4
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DeepFM_kuaivideo_x1_021_04dc4272:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 5.0e-05
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    hidden_activations: relu
+    hidden_units: [1024, 512, 256]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./checkpoints/DeepFM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DeepFM_kuaivideo_x1_022_6b45d32d:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 5.0e-05
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    hidden_activations: relu
+    hidden_units: [1024, 512, 256]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./checkpoints/DeepFM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DeepFM_kuaivideo_x1_023_ecf4c807:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 5.0e-05
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    hidden_activations: relu
+    hidden_units: [1024, 512, 256]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./checkpoints/DeepFM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DeepFM_kuaivideo_x1_024_3c430f67:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 5.0e-05
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    hidden_activations: relu
+    hidden_units: [1024, 512, 256]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./checkpoints/DeepFM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DeepFM_kuaivideo_x1_025_ed060a7f:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 5.0e-05
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    hidden_activations: relu
+    hidden_units: [1024, 512, 256]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./checkpoints/DeepFM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.4
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DeepFM_kuaivideo_x1_026_63d817cd:
+    batch_norm: true
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 5.0e-05
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    hidden_activations: relu
+    hidden_units: [1024, 512, 256]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./checkpoints/DeepFM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DeepFM_kuaivideo_x1_027_db0460a8:
+    batch_norm: true
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 5.0e-05
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    hidden_activations: relu
+    hidden_units: [1024, 512, 256]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./checkpoints/DeepFM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DeepFM_kuaivideo_x1_028_856c1e89:
+    batch_norm: true
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 5.0e-05
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    hidden_activations: relu
+    hidden_units: [1024, 512, 256]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./checkpoints/DeepFM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DeepFM_kuaivideo_x1_029_da202df2:
+    batch_norm: true
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 5.0e-05
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    hidden_activations: relu
+    hidden_units: [1024, 512, 256]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./checkpoints/DeepFM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+DeepFM_kuaivideo_x1_030_2a7a50e1:
+    batch_norm: true
+    batch_size: 8192
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 5.0e-05
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: pos_items}
+    - {feature_encoder: layers.MaskedAveragePooling(), name: neg_items}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    hidden_activations: relu
+    hidden_units: [1024, 512, 256]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ./checkpoints/DeepFM_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.4
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1

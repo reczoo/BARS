@@ -1,0 +1,1 @@
+ 20220823-013621,[command] python run_expid.py --config KuaiShou/FmFM_kuaivideo_x1/FmFM_kuaivideo_x1_tuner_config_02 --expid FmFM_kuaivideo_x1_007_a04f176e --gpu 6,[exp_id] FmFM_kuaivideo_x1_007_a04f176e,[dataset_id] kuaivideo_x1_dc7a3035,[train] N.A.,[val] gAUC: 0.655220 - AUC: 0.738873 - logloss: 0.442923,[test] gAUC: 0.655220 - AUC: 0.738873 - logloss: 0.442923

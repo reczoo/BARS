@@ -1,0 +1,156 @@
+2022-12-17 00:24:52,075 P75746 INFO Params: {
+    "batch_size": "4096",
+    "data_format": "csv",
+    "data_root": "../data/Avazu/",
+    "dataset_id": "avazu_x1_0bbde04e",
+    "debug_mode": "False",
+    "early_stop_patience": "2",
+    "embedding_dim": "10",
+    "embedding_regularizer": "0.05",
+    "epochs": "100",
+    "eval_interval": "1",
+    "feature_cols": "[{'active': True, 'dtype': 'float', 'name': ['feat_1', 'feat_2', 'feat_3', 'feat_4', 'feat_5', 'feat_6', 'feat_7', 'feat_8', 'feat_9', 'feat_10', 'feat_11', 'feat_12', 'feat_13', 'feat_14', 'feat_15', 'feat_16', 'feat_17', 'feat_18', 'feat_19', 'feat_20', 'feat_21', 'feat_22'], 'type': 'categorical'}]",
+    "feature_specs": "None",
+    "fs1_context": "[]",
+    "fs2_context": "[]",
+    "fs_hidden_units": "[800]",
+    "gpu": "0",
+    "group_id": "None",
+    "label_col": "{'dtype': 'float', 'name': 'label'}",
+    "learning_rate": "0.001",
+    "loss": "binary_crossentropy",
+    "metrics": "['AUC', 'logloss']",
+    "min_categr_count": "1",
+    "mlp1_batch_norm": "True",
+    "mlp1_dropout": "0.3",
+    "mlp1_hidden_activations": "relu",
+    "mlp1_hidden_units": "[400, 400, 400]",
+    "mlp2_batch_norm": "True",
+    "mlp2_dropout": "0.3",
+    "mlp2_hidden_activations": "relu",
+    "mlp2_hidden_units": "[800]",
+    "model": "FinalMLP",
+    "model_id": "FinalMLP_avazu_x1_018_488deefd",
+    "model_root": "./checkpoints/FinalMLP_avazu_x1/",
+    "monitor": "AUC",
+    "monitor_mode": "max",
+    "net_regularizer": "0",
+    "num_heads": "10",
+    "num_workers": "3",
+    "optimizer": "adam",
+    "ordered_features": "None",
+    "pickle_feature_encoder": "True",
+    "save_best_only": "True",
+    "seed": "2021",
+    "shuffle": "True",
+    "task": "binary_classification",
+    "test_data": "../data/Avazu/Avazu_x1/test.csv",
+    "train_data": "../data/Avazu/Avazu_x1/train.csv",
+    "use_fs": "True",
+    "valid_data": "../data/Avazu/Avazu_x1/valid.csv",
+    "verbose": "0"
+}
+2022-12-17 00:24:52,077 P75746 INFO Load feature_map from json: ../data/Avazu/avazu_x1_0bbde04e/feature_map.json
+2022-12-17 00:24:52,077 P75746 INFO Set column index...
+2022-12-17 00:24:52,077 P75746 INFO Feature specs: {
+    "feat_1": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'oov_idx': 8, 'vocab_size': 9}",
+    "feat_10": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'oov_idx': 1048284, 'vocab_size': 1048285}",
+    "feat_11": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'oov_idx': 6514, 'vocab_size': 6515}",
+    "feat_12": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'oov_idx': 5, 'vocab_size': 6}",
+    "feat_13": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'oov_idx': 5, 'vocab_size': 6}",
+    "feat_14": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'oov_idx': 1939, 'vocab_size': 1940}",
+    "feat_15": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'oov_idx': 9, 'vocab_size': 10}",
+    "feat_16": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'oov_idx': 10, 'vocab_size': 11}",
+    "feat_17": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'oov_idx': 348, 'vocab_size': 349}",
+    "feat_18": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'oov_idx': 5, 'vocab_size': 6}",
+    "feat_19": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'oov_idx': 60, 'vocab_size': 61}",
+    "feat_2": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'oov_idx': 8, 'vocab_size': 9}",
+    "feat_20": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'oov_idx': 170, 'vocab_size': 171}",
+    "feat_21": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'oov_idx': 51, 'vocab_size': 52}",
+    "feat_22": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'oov_idx': 25, 'vocab_size': 26}",
+    "feat_3": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'oov_idx': 3479, 'vocab_size': 3480}",
+    "feat_4": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'oov_idx': 4270, 'vocab_size': 4271}",
+    "feat_5": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'oov_idx': 25, 'vocab_size': 26}",
+    "feat_6": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'oov_idx': 4863, 'vocab_size': 4864}",
+    "feat_7": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'oov_idx': 304, 'vocab_size': 305}",
+    "feat_8": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'oov_idx': 32, 'vocab_size': 33}",
+    "feat_9": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'oov_idx': 228185, 'vocab_size': 228186}"
+}
+2022-12-17 00:24:55,483 P75746 INFO Total number of parameters: 13979472.
+2022-12-17 00:24:55,483 P75746 INFO Loading data...
+2022-12-17 00:24:55,484 P75746 INFO Loading data from h5: ../data/Avazu/avazu_x1_0bbde04e/train.h5
+2022-12-17 00:25:07,930 P75746 INFO Train samples: total/28300276, blocks/1
+2022-12-17 00:25:07,930 P75746 INFO Loading data from h5: ../data/Avazu/avazu_x1_0bbde04e/valid.h5
+2022-12-17 00:25:09,638 P75746 INFO Validation samples: total/4042897, blocks/1
+2022-12-17 00:25:09,638 P75746 INFO Loading train and validation data done.
+2022-12-17 00:25:09,638 P75746 INFO Start training: 6910 batches/epoch
+2022-12-17 00:25:09,638 P75746 INFO ************ Epoch=1 start ************
+2022-12-17 00:29:45,920 P75746 INFO [Metrics] AUC: 0.728187
+2022-12-17 00:29:45,924 P75746 INFO Save best model: monitor(max): 0.728187
+2022-12-17 00:29:46,029 P75746 INFO --- 6910/6910 batches finished ---
+2022-12-17 00:29:46,070 P75746 INFO Train loss @epoch 1: 0.448881
+2022-12-17 00:29:46,070 P75746 INFO ************ Epoch=1 end ************
+2022-12-17 00:34:19,844 P75746 INFO [Metrics] AUC: 0.732383
+2022-12-17 00:34:19,848 P75746 INFO Save best model: monitor(max): 0.732383
+2022-12-17 00:34:19,957 P75746 INFO --- 6910/6910 batches finished ---
+2022-12-17 00:34:20,012 P75746 INFO Train loss @epoch 2: 0.439928
+2022-12-17 00:34:20,012 P75746 INFO ************ Epoch=2 end ************
+2022-12-17 00:38:55,746 P75746 INFO [Metrics] AUC: 0.740434
+2022-12-17 00:38:55,749 P75746 INFO Save best model: monitor(max): 0.740434
+2022-12-17 00:38:55,861 P75746 INFO --- 6910/6910 batches finished ---
+2022-12-17 00:38:55,919 P75746 INFO Train loss @epoch 3: 0.438254
+2022-12-17 00:38:55,919 P75746 INFO ************ Epoch=3 end ************
+2022-12-17 00:43:37,608 P75746 INFO [Metrics] AUC: 0.731555
+2022-12-17 00:43:37,611 P75746 INFO Monitor(max) STOP: 0.731555 !
+2022-12-17 00:43:37,611 P75746 INFO Reduce learning rate on plateau: 0.000100
+2022-12-17 00:43:37,612 P75746 INFO --- 6910/6910 batches finished ---
+2022-12-17 00:43:37,674 P75746 INFO Train loss @epoch 4: 0.437088
+2022-12-17 00:43:37,674 P75746 INFO ************ Epoch=4 end ************
+2022-12-17 00:48:17,682 P75746 INFO [Metrics] AUC: 0.744107
+2022-12-17 00:48:17,686 P75746 INFO Save best model: monitor(max): 0.744107
+2022-12-17 00:48:17,809 P75746 INFO --- 6910/6910 batches finished ---
+2022-12-17 00:48:17,859 P75746 INFO Train loss @epoch 5: 0.407487
+2022-12-17 00:48:17,860 P75746 INFO ************ Epoch=5 end ************
+2022-12-17 00:52:54,799 P75746 INFO [Metrics] AUC: 0.746713
+2022-12-17 00:52:54,802 P75746 INFO Save best model: monitor(max): 0.746713
+2022-12-17 00:52:54,910 P75746 INFO --- 6910/6910 batches finished ---
+2022-12-17 00:52:54,972 P75746 INFO Train loss @epoch 6: 0.409100
+2022-12-17 00:52:54,972 P75746 INFO ************ Epoch=6 end ************
+2022-12-17 00:57:29,481 P75746 INFO [Metrics] AUC: 0.747923
+2022-12-17 00:57:29,485 P75746 INFO Save best model: monitor(max): 0.747923
+2022-12-17 00:57:29,595 P75746 INFO --- 6910/6910 batches finished ---
+2022-12-17 00:57:29,646 P75746 INFO Train loss @epoch 7: 0.409826
+2022-12-17 00:57:29,646 P75746 INFO ************ Epoch=7 end ************
+2022-12-17 01:02:01,731 P75746 INFO [Metrics] AUC: 0.746786
+2022-12-17 01:02:01,736 P75746 INFO Monitor(max) STOP: 0.746786 !
+2022-12-17 01:02:01,736 P75746 INFO Reduce learning rate on plateau: 0.000010
+2022-12-17 01:02:01,737 P75746 INFO --- 6910/6910 batches finished ---
+2022-12-17 01:02:01,799 P75746 INFO Train loss @epoch 8: 0.410241
+2022-12-17 01:02:01,799 P75746 INFO ************ Epoch=8 end ************
+2022-12-17 01:06:35,833 P75746 INFO [Metrics] AUC: 0.749080
+2022-12-17 01:06:35,839 P75746 INFO Save best model: monitor(max): 0.749080
+2022-12-17 01:06:35,952 P75746 INFO --- 6910/6910 batches finished ---
+2022-12-17 01:06:36,007 P75746 INFO Train loss @epoch 9: 0.396847
+2022-12-17 01:06:36,007 P75746 INFO ************ Epoch=9 end ************
+2022-12-17 01:11:03,021 P75746 INFO [Metrics] AUC: 0.747825
+2022-12-17 01:11:03,025 P75746 INFO Monitor(max) STOP: 0.747825 !
+2022-12-17 01:11:03,025 P75746 INFO Reduce learning rate on plateau: 0.000001
+2022-12-17 01:11:03,026 P75746 INFO --- 6910/6910 batches finished ---
+2022-12-17 01:11:03,085 P75746 INFO Train loss @epoch 10: 0.394170
+2022-12-17 01:11:03,085 P75746 INFO ************ Epoch=10 end ************
+2022-12-17 01:15:31,641 P75746 INFO [Metrics] AUC: 0.747233
+2022-12-17 01:15:31,646 P75746 INFO Monitor(max) STOP: 0.747233 !
+2022-12-17 01:15:31,646 P75746 INFO Reduce learning rate on plateau: 0.000001
+2022-12-17 01:15:31,646 P75746 INFO ********* Epoch==11 early stop *********
+2022-12-17 01:15:31,647 P75746 INFO --- 6910/6910 batches finished ---
+2022-12-17 01:15:31,690 P75746 INFO Train loss @epoch 11: 0.390108
+2022-12-17 01:15:31,691 P75746 INFO Training finished.
+2022-12-17 01:15:31,691 P75746 INFO Load best model: /cache/FuxiCTR/benchmark/checkpoints/FinalMLP_avazu_x1/avazu_x1_0bbde04e/FinalMLP_avazu_x1_018_488deefd.model
+2022-12-17 01:15:31,752 P75746 INFO ****** Validation evaluation ******
+2022-12-17 01:15:44,260 P75746 INFO [Metrics] AUC: 0.749080 - logloss: 0.394400
+2022-12-17 01:15:44,353 P75746 INFO ******** Test evaluation ********
+2022-12-17 01:15:44,353 P75746 INFO Loading data...
+2022-12-17 01:15:44,353 P75746 INFO Loading data from h5: ../data/Avazu/avazu_x1_0bbde04e/test.h5
+2022-12-17 01:15:47,808 P75746 INFO Test samples: total/8085794, blocks/1
+2022-12-17 01:15:47,809 P75746 INFO Loading test data done.
+2022-12-17 01:16:14,167 P75746 INFO [Metrics] AUC: 0.766566 - logloss: 0.365803

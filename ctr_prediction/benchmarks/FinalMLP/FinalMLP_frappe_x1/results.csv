@@ -1,0 +1,1 @@
+ 20221217-143408,[command] python run_expid.py --config Frappe/FinalMLP_frappe_x1/FinalMLP_frappe_x1_tuner_config_16 --expid FinalMLP_frappe_x1_004_e1ab402f --gpu 1,[exp_id] FinalMLP_frappe_x1_004_e1ab402f,[dataset_id] frappe_x1_47e6e0df,[train] N.A.,[val] AUC: 0.986631 - logloss: 0.144852,[test] AUC: 0.986072 - logloss: 0.148415

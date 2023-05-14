@@ -1,0 +1,1280 @@
+AutoInt_taobaoad_x1_001_e3918aca:
+    attention_dim: 128
+    attention_layers: 2
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_residual: true
+    use_scale: false
+    use_wide: true
+    verbose: 1
+AutoInt_taobaoad_x1_002_5a796587:
+    attention_dim: 128
+    attention_layers: 2
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_residual: true
+    use_scale: false
+    use_wide: false
+    verbose: 1
+AutoInt_taobaoad_x1_003_5a796587:
+    attention_dim: 128
+    attention_layers: 2
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_residual: true
+    use_scale: false
+    use_wide: true
+    verbose: 1
+AutoInt_taobaoad_x1_004_8e65c44f:
+    attention_dim: 128
+    attention_layers: 2
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_residual: true
+    use_scale: false
+    use_wide: false
+    verbose: 1
+AutoInt_taobaoad_x1_005_5a796587:
+    attention_dim: 128
+    attention_layers: 2
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_residual: false
+    use_scale: false
+    use_wide: true
+    verbose: 1
+AutoInt_taobaoad_x1_006_8e65c44f:
+    attention_dim: 128
+    attention_layers: 2
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_residual: false
+    use_scale: false
+    use_wide: false
+    verbose: 1
+AutoInt_taobaoad_x1_007_8e65c44f:
+    attention_dim: 128
+    attention_layers: 2
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_residual: false
+    use_scale: false
+    use_wide: true
+    verbose: 1
+AutoInt_taobaoad_x1_008_d5118103:
+    attention_dim: 128
+    attention_layers: 2
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_residual: false
+    use_scale: false
+    use_wide: false
+    verbose: 1
+AutoInt_taobaoad_x1_009_b6af6e28:
+    attention_dim: 128
+    attention_layers: 3
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_residual: true
+    use_scale: false
+    use_wide: true
+    verbose: 1
+AutoInt_taobaoad_x1_010_3895c2eb:
+    attention_dim: 128
+    attention_layers: 3
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_residual: true
+    use_scale: false
+    use_wide: false
+    verbose: 1
+AutoInt_taobaoad_x1_011_3895c2eb:
+    attention_dim: 128
+    attention_layers: 3
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_residual: true
+    use_scale: false
+    use_wide: true
+    verbose: 1
+AutoInt_taobaoad_x1_012_778cf7e5:
+    attention_dim: 128
+    attention_layers: 3
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_residual: true
+    use_scale: false
+    use_wide: false
+    verbose: 1
+AutoInt_taobaoad_x1_013_3895c2eb:
+    attention_dim: 128
+    attention_layers: 3
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_residual: false
+    use_scale: false
+    use_wide: true
+    verbose: 1
+AutoInt_taobaoad_x1_014_778cf7e5:
+    attention_dim: 128
+    attention_layers: 3
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_residual: false
+    use_scale: false
+    use_wide: false
+    verbose: 1
+AutoInt_taobaoad_x1_015_778cf7e5:
+    attention_dim: 128
+    attention_layers: 3
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_residual: false
+    use_scale: false
+    use_wide: true
+    verbose: 1
+AutoInt_taobaoad_x1_016_9834d1ed:
+    attention_dim: 128
+    attention_layers: 3
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_residual: false
+    use_scale: false
+    use_wide: false
+    verbose: 1
+AutoInt_taobaoad_x1_017_df73aacb:
+    attention_dim: 128
+    attention_layers: 2
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_residual: true
+    use_scale: false
+    use_wide: true
+    verbose: 1
+AutoInt_taobaoad_x1_018_d094e7b5:
+    attention_dim: 128
+    attention_layers: 2
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_residual: true
+    use_scale: false
+    use_wide: false
+    verbose: 1
+AutoInt_taobaoad_x1_019_d094e7b5:
+    attention_dim: 128
+    attention_layers: 2
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_residual: true
+    use_scale: false
+    use_wide: true
+    verbose: 1
+AutoInt_taobaoad_x1_020_e423aae2:
+    attention_dim: 128
+    attention_layers: 2
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_residual: true
+    use_scale: false
+    use_wide: false
+    verbose: 1
+AutoInt_taobaoad_x1_021_d094e7b5:
+    attention_dim: 128
+    attention_layers: 2
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_residual: false
+    use_scale: false
+    use_wide: true
+    verbose: 1
+AutoInt_taobaoad_x1_022_e423aae2:
+    attention_dim: 128
+    attention_layers: 2
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_residual: false
+    use_scale: false
+    use_wide: false
+    verbose: 1
+AutoInt_taobaoad_x1_023_e423aae2:
+    attention_dim: 128
+    attention_layers: 2
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_residual: false
+    use_scale: false
+    use_wide: true
+    verbose: 1
+AutoInt_taobaoad_x1_024_90460607:
+    attention_dim: 128
+    attention_layers: 2
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_residual: false
+    use_scale: false
+    use_wide: false
+    verbose: 1
+AutoInt_taobaoad_x1_025_f06e339b:
+    attention_dim: 128
+    attention_layers: 3
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_residual: true
+    use_scale: false
+    use_wide: true
+    verbose: 1
+AutoInt_taobaoad_x1_026_d0094b42:
+    attention_dim: 128
+    attention_layers: 3
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_residual: true
+    use_scale: false
+    use_wide: false
+    verbose: 1
+AutoInt_taobaoad_x1_027_d0094b42:
+    attention_dim: 128
+    attention_layers: 3
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_residual: true
+    use_scale: false
+    use_wide: true
+    verbose: 1
+AutoInt_taobaoad_x1_028_5e3fc85e:
+    attention_dim: 128
+    attention_layers: 3
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_residual: true
+    use_scale: false
+    use_wide: false
+    verbose: 1
+AutoInt_taobaoad_x1_029_d0094b42:
+    attention_dim: 128
+    attention_layers: 3
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_residual: false
+    use_scale: false
+    use_wide: true
+    verbose: 1
+AutoInt_taobaoad_x1_030_5e3fc85e:
+    attention_dim: 128
+    attention_layers: 3
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_residual: false
+    use_scale: false
+    use_wide: false
+    verbose: 1
+AutoInt_taobaoad_x1_031_5e3fc85e:
+    attention_dim: 128
+    attention_layers: 3
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_residual: false
+    use_scale: false
+    use_wide: true
+    verbose: 1
+AutoInt_taobaoad_x1_032_34109d94:
+    attention_dim: 128
+    attention_layers: 3
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: AutoInt
+    model_id: AutoInt_base
+    model_root: ./checkpoints/AutoInt_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_residual: false
+    use_scale: false
+    use_wide: false
+    verbose: 1

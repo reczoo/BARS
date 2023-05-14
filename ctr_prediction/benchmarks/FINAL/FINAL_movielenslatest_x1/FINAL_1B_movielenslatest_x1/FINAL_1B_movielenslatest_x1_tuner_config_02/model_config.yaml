@@ -1,0 +1,342 @@
+FINAL_movielenslatest_x1_001_f91f7fb1:
+    batch_size: 4096
+    block1_dropout: 0
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0
+    block2_hidden_activations: null
+    block2_hidden_units: [64, 64, 64]
+    block_type: 1B
+    dataset_id: movielenslatest_x1_233328b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FINAL
+    model_id: FINAL_default
+    model_root: ./checkpoints/FINAL_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    batch_norm: True
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_field_gate: false
+    verbose: 1
+FINAL_movielenslatest_x1_002_9d52daa3:
+    batch_size: 4096
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0
+    block2_hidden_activations: null
+    block2_hidden_units: [64, 64, 64]
+    block_type: 1B
+    dataset_id: movielenslatest_x1_233328b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FINAL
+    model_id: FINAL_default
+    model_root: ./checkpoints/FINAL_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    batch_norm: True
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_field_gate: false
+    verbose: 1
+FINAL_movielenslatest_x1_003_4c8bed0d:
+    batch_size: 4096
+    block1_dropout: 0.2
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0
+    block2_hidden_activations: null
+    block2_hidden_units: [64, 64, 64]
+    block_type: 1B
+    dataset_id: movielenslatest_x1_233328b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FINAL
+    model_id: FINAL_default
+    model_root: ./checkpoints/FINAL_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    batch_norm: True
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_field_gate: false
+    verbose: 1
+FINAL_movielenslatest_x1_004_40099d6a:
+    batch_size: 4096
+    block1_dropout: 0
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400]
+    block2_dropout: 0
+    block2_hidden_activations: null
+    block2_hidden_units: [64, 64, 64]
+    block_type: 1B
+    dataset_id: movielenslatest_x1_233328b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FINAL
+    model_id: FINAL_default
+    model_root: ./checkpoints/FINAL_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    batch_norm: True
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_field_gate: false
+    verbose: 1
+FINAL_movielenslatest_x1_005_64aa24c9:
+    batch_size: 4096
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400]
+    block2_dropout: 0
+    block2_hidden_activations: null
+    block2_hidden_units: [64, 64, 64]
+    block_type: 1B
+    dataset_id: movielenslatest_x1_233328b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FINAL
+    model_id: FINAL_default
+    model_root: ./checkpoints/FINAL_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    batch_norm: True
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_field_gate: false
+    verbose: 1
+FINAL_movielenslatest_x1_006_8bbd4182:
+    batch_size: 4096
+    block1_dropout: 0.2
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400]
+    block2_dropout: 0
+    block2_hidden_activations: null
+    block2_hidden_units: [64, 64, 64]
+    block_type: 1B
+    dataset_id: movielenslatest_x1_233328b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FINAL
+    model_id: FINAL_default
+    model_root: ./checkpoints/FINAL_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    batch_norm: True
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_field_gate: false
+    verbose: 1
+FINAL_movielenslatest_x1_007_1b9e7989:
+    batch_size: 4096
+    block1_dropout: 0
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400]
+    block2_dropout: 0
+    block2_hidden_activations: null
+    block2_hidden_units: [64, 64, 64]
+    block_type: 1B
+    dataset_id: movielenslatest_x1_233328b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FINAL
+    model_id: FINAL_default
+    model_root: ./checkpoints/FINAL_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    batch_norm: True
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_field_gate: false
+    verbose: 1
+FINAL_movielenslatest_x1_008_f8e20ee7:
+    batch_size: 4096
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400]
+    block2_dropout: 0
+    block2_hidden_activations: null
+    block2_hidden_units: [64, 64, 64]
+    block_type: 1B
+    dataset_id: movielenslatest_x1_233328b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FINAL
+    model_id: FINAL_default
+    model_root: ./checkpoints/FINAL_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    batch_norm: True
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_field_gate: false
+    verbose: 1
+FINAL_movielenslatest_x1_009_6546077b:
+    batch_size: 4096
+    block1_dropout: 0.2
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400]
+    block2_dropout: 0
+    block2_hidden_activations: null
+    block2_hidden_units: [64, 64, 64]
+    block_type: 1B
+    dataset_id: movielenslatest_x1_233328b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 10
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FINAL
+    model_id: FINAL_default
+    model_root: ./checkpoints/FINAL_movielenslatest_x1/
+    monitor: AUC
+    monitor_mode: max
+    net_regularizer: 0
+    batch_norm: True
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2021
+    shuffle: true
+    task: binary_classification
+    use_field_gate: false
+    verbose: 1

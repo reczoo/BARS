@@ -1,0 +1,37 @@
+base_config: ../model_zoo/FINAL/config/
+base_expid: FINAL_default
+dataset_id: frappe_x1
+
+dataset_config:
+    frappe_x1:
+        data_root: ../data/Frappe/
+        data_format: csv
+        train_data: ../data/Frappe/Frappe_x1/train.csv
+        valid_data: ../data/Frappe/Frappe_x1/valid.csv
+        test_data: ../data/Frappe/Frappe_x1/test.csv
+        min_categr_count: 1
+        feature_cols:
+            - {name: ["user", "item", "daytime", "weekday", "isweekend", "homework", "cost", "weather", "country", "city"],
+               active: True, dtype: float, type: categorical}
+        label_col: {name: label, dtype: float}
+
+
+tuner_space:
+    model_root: './checkpoints/FINAL_frappe_x1/'
+    embedding_dim: 10
+    embedding_regularizer: 0.1
+    block_type: "2B"
+    batch_norm: True
+    use_field_gate: True
+    block1_hidden_units: [[400, 400], [400]]
+    block1_hidden_activations: ReLU
+    block1_dropout: [0.1, 0.2]
+    block2_hidden_units: [[400, 400], [400]]
+    block2_hidden_activations: ReLU
+    block2_dropout: [0.1, 0.2]
+    learning_rate: 1.e-3
+    batch_size: 4096
+    seed: 2021
+    monitor: 'AUC'
+    monitor_mode: 'max'
+    metrics: [['AUC', 'logloss']]

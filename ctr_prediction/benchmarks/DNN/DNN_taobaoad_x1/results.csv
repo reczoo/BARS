@@ -1,0 +1,1 @@
+ 20221118-172350,[command] python run_expid.py --config Taobao/DNN_taobao_x1/DNN_taobao_x1_tuner_config_01 --expid DNN_taobaoad_x1_009_0f4cc5a8 --gpu 0,[exp_id] DNN_taobaoad_x1_009_0f4cc5a8,[dataset_id] taobaoad_x1_2753db8a,[train] N.A.,[val] gAUC: 0.573269 - AUC: 0.646715 - logloss: 0.193133,[test] gAUC: 0.573269 - AUC: 0.646715 - logloss: 0.193133

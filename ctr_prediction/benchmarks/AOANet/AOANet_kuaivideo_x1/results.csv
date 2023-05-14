@@ -1,0 +1,1 @@
+ 20220824-224042,[command] python run_expid.py --config KuaiShou/AOANet_kuaivideo_x1/AOANet_kuaivideo_x1_tuner_config_03 --expid AOANet_kuaivideo_x1_006_71fb5d8c --gpu 5,[exp_id] AOANet_kuaivideo_x1_006_71fb5d8c,[dataset_id] kuaivideo_x1_dc7a3035,[train] N.A.,[val] gAUC: 0.667875 - AUC: 0.747020 - logloss: 0.438034,[test] gAUC: 0.667875 - AUC: 0.747020 - logloss: 0.438034

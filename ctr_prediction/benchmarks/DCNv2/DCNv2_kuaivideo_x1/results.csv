@@ -1,0 +1,1 @@
+ 20220823-114028,[command] python run_expid.py --config KuaiShou/DCNv2_kuaivideo_x1/DCNv2_kuaivideo_x1_tuner_config_01 --expid DCNv2_kuaivideo_x1_008_7047bff3 --gpu 7,[exp_id] DCNv2_kuaivideo_x1_008_7047bff3,[dataset_id] kuaivideo_x1_dc7a3035,[train] N.A.,[val] gAUC: 0.667472 - AUC: 0.746953 - logloss: 0.437494,[test] gAUC: 0.667472 - AUC: 0.746953 - logloss: 0.437494

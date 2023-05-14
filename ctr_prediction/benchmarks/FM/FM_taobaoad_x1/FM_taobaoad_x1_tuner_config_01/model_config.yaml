@@ -1,0 +1,336 @@
+FM_taobaoad_x1_001_1f0a0bba:
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    early_stop_patience: 1
+    embedding_dim: 32
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 0.005
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_taobaoad_x1_002_9edc1e08:
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    early_stop_patience: 1
+    embedding_dim: 32
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 0.001
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_taobaoad_x1_003_909bc1f6:
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    early_stop_patience: 1
+    embedding_dim: 32
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 0.0001
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_taobaoad_x1_004_c83b21b7:
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    early_stop_patience: 1
+    embedding_dim: 32
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 0.0005
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_taobaoad_x1_005_8e99293c:
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    early_stop_patience: 1
+    embedding_dim: 32
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 5.0e-05
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_taobaoad_x1_006_53960ffc:
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    early_stop_patience: 1
+    embedding_dim: 32
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 1.0e-05
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_taobaoad_x1_007_a034ca96:
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    early_stop_patience: 1
+    embedding_dim: 32
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 5.0e-06
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_taobaoad_x1_008_a9a82bc8:
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    early_stop_patience: 1
+    embedding_dim: 32
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 1.0e-06
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_taobaoad_x1_009_a28e6634:
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    early_stop_patience: 1
+    embedding_dim: 32
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 5.0e-07
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_taobaoad_x1_010_ee526bb0:
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    early_stop_patience: 1
+    embedding_dim: 32
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 1.0e-07
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_taobaoad_x1_011_82024416:
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    early_stop_patience: 1
+    embedding_dim: 32
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 1.0e-08
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1
+FM_taobaoad_x1_012_221c90a7:
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    early_stop_patience: 1
+    embedding_dim: 32
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: FM
+    model_id: FM_base
+    model_root: ./checkpoints/FM_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    regularizer: 0
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    verbose: 1

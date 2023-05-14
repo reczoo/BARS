@@ -1,0 +1,2160 @@
+BST_amazonelectronics_x1_001_4a2d99cc:
+    attention_dropout: 0
+    batch_norm: true
+    batch_size: 1024
+    bst_sequence_field: !!python/tuple [item_history, cate_history]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: mean
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_amazonelectronics_x1_002_81e3993b:
+    attention_dropout: 0
+    batch_norm: true
+    batch_size: 1024
+    bst_sequence_field: !!python/tuple [item_history, cate_history]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_amazonelectronics_x1_003_baa2b18a:
+    attention_dropout: 0
+    batch_norm: true
+    batch_size: 1024
+    bst_sequence_field: !!python/tuple [item_history, cate_history]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: mean
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: true
+    verbose: 1
+BST_amazonelectronics_x1_004_e9007558:
+    attention_dropout: 0
+    batch_norm: true
+    batch_size: 1024
+    bst_sequence_field: !!python/tuple [item_history, cate_history]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: true
+    verbose: 1
+BST_amazonelectronics_x1_005_f326d94d:
+    attention_dropout: 0
+    batch_norm: true
+    batch_size: 1024
+    bst_sequence_field: !!python/tuple [item_history, cate_history]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: mean
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_amazonelectronics_x1_006_5f323a3f:
+    attention_dropout: 0
+    batch_norm: true
+    batch_size: 1024
+    bst_sequence_field: !!python/tuple [item_history, cate_history]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_amazonelectronics_x1_007_e0bed67b:
+    attention_dropout: 0
+    batch_norm: true
+    batch_size: 1024
+    bst_sequence_field: !!python/tuple [item_history, cate_history]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: mean
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: true
+    verbose: 1
+BST_amazonelectronics_x1_008_9cf76141:
+    attention_dropout: 0
+    batch_norm: true
+    batch_size: 1024
+    bst_sequence_field: !!python/tuple [item_history, cate_history]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: true
+    verbose: 1
+BST_amazonelectronics_x1_009_b2ddd152:
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 1024
+    bst_sequence_field: !!python/tuple [item_history, cate_history]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: mean
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_amazonelectronics_x1_010_e74e4952:
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 1024
+    bst_sequence_field: !!python/tuple [item_history, cate_history]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_amazonelectronics_x1_011_78a6fe1e:
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 1024
+    bst_sequence_field: !!python/tuple [item_history, cate_history]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: mean
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: true
+    verbose: 1
+BST_amazonelectronics_x1_012_add5c1e4:
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 1024
+    bst_sequence_field: !!python/tuple [item_history, cate_history]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: true
+    verbose: 1
+BST_amazonelectronics_x1_013_675f2e31:
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 1024
+    bst_sequence_field: !!python/tuple [item_history, cate_history]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: mean
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_amazonelectronics_x1_014_6253623e:
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 1024
+    bst_sequence_field: !!python/tuple [item_history, cate_history]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_amazonelectronics_x1_015_02070fd7:
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 1024
+    bst_sequence_field: !!python/tuple [item_history, cate_history]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: mean
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: true
+    verbose: 1
+BST_amazonelectronics_x1_016_567e79da:
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 1024
+    bst_sequence_field: !!python/tuple [item_history, cate_history]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: true
+    verbose: 1
+BST_amazonelectronics_x1_017_bd71a106:
+    attention_dropout: 0
+    batch_norm: true
+    batch_size: 1024
+    bst_sequence_field: !!python/tuple [item_history, cate_history]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: mean
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_amazonelectronics_x1_018_cb9c07f1:
+    attention_dropout: 0
+    batch_norm: true
+    batch_size: 1024
+    bst_sequence_field: !!python/tuple [item_history, cate_history]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_amazonelectronics_x1_019_475418f9:
+    attention_dropout: 0
+    batch_norm: true
+    batch_size: 1024
+    bst_sequence_field: !!python/tuple [item_history, cate_history]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: mean
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: true
+    verbose: 1
+BST_amazonelectronics_x1_020_34577feb:
+    attention_dropout: 0
+    batch_norm: true
+    batch_size: 1024
+    bst_sequence_field: !!python/tuple [item_history, cate_history]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: true
+    verbose: 1
+BST_amazonelectronics_x1_021_572931e7:
+    attention_dropout: 0
+    batch_norm: true
+    batch_size: 1024
+    bst_sequence_field: !!python/tuple [item_history, cate_history]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: mean
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_amazonelectronics_x1_022_33509c2a:
+    attention_dropout: 0
+    batch_norm: true
+    batch_size: 1024
+    bst_sequence_field: !!python/tuple [item_history, cate_history]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_amazonelectronics_x1_023_d5061b98:
+    attention_dropout: 0
+    batch_norm: true
+    batch_size: 1024
+    bst_sequence_field: !!python/tuple [item_history, cate_history]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: mean
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: true
+    verbose: 1
+BST_amazonelectronics_x1_024_98f25c53:
+    attention_dropout: 0
+    batch_norm: true
+    batch_size: 1024
+    bst_sequence_field: !!python/tuple [item_history, cate_history]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: true
+    verbose: 1
+BST_amazonelectronics_x1_025_5e5e0dfc:
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 1024
+    bst_sequence_field: !!python/tuple [item_history, cate_history]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: mean
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_amazonelectronics_x1_026_90c6ea1a:
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 1024
+    bst_sequence_field: !!python/tuple [item_history, cate_history]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_amazonelectronics_x1_027_cf4adff7:
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 1024
+    bst_sequence_field: !!python/tuple [item_history, cate_history]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: mean
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: true
+    verbose: 1
+BST_amazonelectronics_x1_028_360bf224:
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 1024
+    bst_sequence_field: !!python/tuple [item_history, cate_history]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: true
+    verbose: 1
+BST_amazonelectronics_x1_029_c6040ac9:
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 1024
+    bst_sequence_field: !!python/tuple [item_history, cate_history]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: mean
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_amazonelectronics_x1_030_05dd2cd4:
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 1024
+    bst_sequence_field: !!python/tuple [item_history, cate_history]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_amazonelectronics_x1_031_91b2fe70:
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 1024
+    bst_sequence_field: !!python/tuple [item_history, cate_history]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: mean
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: true
+    verbose: 1
+BST_amazonelectronics_x1_032_6dd66836:
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 1024
+    bst_sequence_field: !!python/tuple [item_history, cate_history]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: true
+    verbose: 1
+BST_amazonelectronics_x1_033_5c41d0a1:
+    attention_dropout: 0
+    batch_norm: true
+    batch_size: 1024
+    bst_sequence_field: !!python/tuple [item_history, cate_history]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 8
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: mean
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_amazonelectronics_x1_034_60fa1ae2:
+    attention_dropout: 0
+    batch_norm: true
+    batch_size: 1024
+    bst_sequence_field: !!python/tuple [item_history, cate_history]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 8
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_amazonelectronics_x1_035_8016e369:
+    attention_dropout: 0
+    batch_norm: true
+    batch_size: 1024
+    bst_sequence_field: !!python/tuple [item_history, cate_history]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 8
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: mean
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: true
+    verbose: 1
+BST_amazonelectronics_x1_036_f67decda:
+    attention_dropout: 0
+    batch_norm: true
+    batch_size: 1024
+    bst_sequence_field: !!python/tuple [item_history, cate_history]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 8
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: true
+    verbose: 1
+BST_amazonelectronics_x1_037_05c76c3e:
+    attention_dropout: 0
+    batch_norm: true
+    batch_size: 1024
+    bst_sequence_field: !!python/tuple [item_history, cate_history]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 8
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: mean
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_amazonelectronics_x1_038_8a59dcc0:
+    attention_dropout: 0
+    batch_norm: true
+    batch_size: 1024
+    bst_sequence_field: !!python/tuple [item_history, cate_history]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 8
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_amazonelectronics_x1_039_ce8a9172:
+    attention_dropout: 0
+    batch_norm: true
+    batch_size: 1024
+    bst_sequence_field: !!python/tuple [item_history, cate_history]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 8
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: mean
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: true
+    verbose: 1
+BST_amazonelectronics_x1_040_b0474307:
+    attention_dropout: 0
+    batch_norm: true
+    batch_size: 1024
+    bst_sequence_field: !!python/tuple [item_history, cate_history]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 8
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: true
+    verbose: 1
+BST_amazonelectronics_x1_041_915fdb12:
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 1024
+    bst_sequence_field: !!python/tuple [item_history, cate_history]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 8
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: mean
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_amazonelectronics_x1_042_51ac19f4:
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 1024
+    bst_sequence_field: !!python/tuple [item_history, cate_history]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 8
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_amazonelectronics_x1_043_3c4f21fa:
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 1024
+    bst_sequence_field: !!python/tuple [item_history, cate_history]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 8
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: mean
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: true
+    verbose: 1
+BST_amazonelectronics_x1_044_3f4303a7:
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 1024
+    bst_sequence_field: !!python/tuple [item_history, cate_history]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 8
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: true
+    verbose: 1
+BST_amazonelectronics_x1_045_633f9fe7:
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 1024
+    bst_sequence_field: !!python/tuple [item_history, cate_history]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 8
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: mean
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_amazonelectronics_x1_046_fe4ba59f:
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 1024
+    bst_sequence_field: !!python/tuple [item_history, cate_history]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 8
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_amazonelectronics_x1_047_15100420:
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 1024
+    bst_sequence_field: !!python/tuple [item_history, cate_history]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 8
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: mean
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: true
+    verbose: 1
+BST_amazonelectronics_x1_048_220407ae:
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 1024
+    bst_sequence_field: !!python/tuple [item_history, cate_history]
+    bst_target_field: !!python/tuple [item_id, cate_id]
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    layer_norm: false
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 8
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: true
+    verbose: 1

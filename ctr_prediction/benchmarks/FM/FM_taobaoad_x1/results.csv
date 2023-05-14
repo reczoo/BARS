@@ -1,0 +1,1 @@
+ 20220811-204348,[command] python run_expid.py --config Taobao/FM_taobaoad_x1/FM_taobaoad_x1_tuner_config_01 --expid FM_taobaoad_x1_009_a28e6634 --gpu 0,[exp_id] FM_taobaoad_x1_009_a28e6634,[dataset_id] taobaoad_x1_2753db8a,[train] N.A.,[val] gAUC: 0.563808 - AUC: 0.623407 - logloss: 0.196925,[test] gAUC: 0.563808 - AUC: 0.623407 - logloss: 0.196925

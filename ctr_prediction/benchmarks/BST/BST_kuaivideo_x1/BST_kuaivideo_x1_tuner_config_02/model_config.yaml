@@ -1,0 +1,2592 @@
+BST_kuaivideo_x1_001_5935014d:
+    attention_dropout: 0.1
+    batch_norm: false
+    batch_size: 4096
+    bst_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    bst_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 8
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: mean
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_kuaivideo_x1_002_e88abce1:
+    attention_dropout: 0.1
+    batch_norm: false
+    batch_size: 4096
+    bst_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    bst_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 8
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: mean
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: true
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_kuaivideo_x1_003_7ed4faca:
+    attention_dropout: 0.1
+    batch_norm: false
+    batch_size: 4096
+    bst_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    bst_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 8
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_kuaivideo_x1_004_7e76495a:
+    attention_dropout: 0.1
+    batch_norm: false
+    batch_size: 4096
+    bst_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    bst_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 8
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: true
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_kuaivideo_x1_005_b66d4f6f:
+    attention_dropout: 0.1
+    batch_norm: false
+    batch_size: 4096
+    bst_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    bst_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 8
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: mean
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_kuaivideo_x1_006_3ccb29f9:
+    attention_dropout: 0.1
+    batch_norm: false
+    batch_size: 4096
+    bst_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    bst_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 8
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: mean
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: true
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_kuaivideo_x1_007_9f849c85:
+    attention_dropout: 0.1
+    batch_norm: false
+    batch_size: 4096
+    bst_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    bst_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 8
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_kuaivideo_x1_008_5ea67d4e:
+    attention_dropout: 0.1
+    batch_norm: false
+    batch_size: 4096
+    bst_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    bst_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 8
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: true
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_kuaivideo_x1_009_4d44bf55:
+    attention_dropout: 0
+    batch_norm: false
+    batch_size: 4096
+    bst_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    bst_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 8
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: mean
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_kuaivideo_x1_010_02b44ee6:
+    attention_dropout: 0
+    batch_norm: false
+    batch_size: 4096
+    bst_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    bst_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 8
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: mean
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: true
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_kuaivideo_x1_011_882979f5:
+    attention_dropout: 0
+    batch_norm: false
+    batch_size: 4096
+    bst_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    bst_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 8
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_kuaivideo_x1_012_86233d75:
+    attention_dropout: 0
+    batch_norm: false
+    batch_size: 4096
+    bst_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    bst_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 8
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: true
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_kuaivideo_x1_013_756cbc00:
+    attention_dropout: 0
+    batch_norm: false
+    batch_size: 4096
+    bst_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    bst_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 8
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: mean
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_kuaivideo_x1_014_bd47836a:
+    attention_dropout: 0
+    batch_norm: false
+    batch_size: 4096
+    bst_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    bst_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 8
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: mean
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: true
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_kuaivideo_x1_015_9c2c2195:
+    attention_dropout: 0
+    batch_norm: false
+    batch_size: 4096
+    bst_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    bst_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 8
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_kuaivideo_x1_016_dd416fb2:
+    attention_dropout: 0
+    batch_norm: false
+    batch_size: 4096
+    bst_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    bst_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 8
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: true
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_kuaivideo_x1_017_3f717b45:
+    attention_dropout: 0.1
+    batch_norm: false
+    batch_size: 4096
+    bst_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    bst_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: mean
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_kuaivideo_x1_018_5e56e515:
+    attention_dropout: 0.1
+    batch_norm: false
+    batch_size: 4096
+    bst_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    bst_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: mean
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: true
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_kuaivideo_x1_019_25a84dcb:
+    attention_dropout: 0.1
+    batch_norm: false
+    batch_size: 4096
+    bst_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    bst_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_kuaivideo_x1_020_232c0a65:
+    attention_dropout: 0.1
+    batch_norm: false
+    batch_size: 4096
+    bst_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    bst_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: true
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_kuaivideo_x1_021_0d6b76f5:
+    attention_dropout: 0.1
+    batch_norm: false
+    batch_size: 4096
+    bst_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    bst_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: mean
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_kuaivideo_x1_022_e82de668:
+    attention_dropout: 0.1
+    batch_norm: false
+    batch_size: 4096
+    bst_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    bst_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: mean
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: true
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_kuaivideo_x1_023_3a83f39a:
+    attention_dropout: 0.1
+    batch_norm: false
+    batch_size: 4096
+    bst_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    bst_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_kuaivideo_x1_024_8ed0894c:
+    attention_dropout: 0.1
+    batch_norm: false
+    batch_size: 4096
+    bst_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    bst_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: true
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_kuaivideo_x1_025_12d4eb2d:
+    attention_dropout: 0
+    batch_norm: false
+    batch_size: 4096
+    bst_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    bst_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: mean
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_kuaivideo_x1_026_d3b51d6d:
+    attention_dropout: 0
+    batch_norm: false
+    batch_size: 4096
+    bst_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    bst_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: mean
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: true
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_kuaivideo_x1_027_e6f636c0:
+    attention_dropout: 0
+    batch_norm: false
+    batch_size: 4096
+    bst_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    bst_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_kuaivideo_x1_028_be5ed9bc:
+    attention_dropout: 0
+    batch_norm: false
+    batch_size: 4096
+    bst_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    bst_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: true
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_kuaivideo_x1_029_87c5b1f9:
+    attention_dropout: 0
+    batch_norm: false
+    batch_size: 4096
+    bst_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    bst_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: mean
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_kuaivideo_x1_030_06d29b6c:
+    attention_dropout: 0
+    batch_norm: false
+    batch_size: 4096
+    bst_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    bst_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: mean
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: true
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_kuaivideo_x1_031_a13d748f:
+    attention_dropout: 0
+    batch_norm: false
+    batch_size: 4096
+    bst_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    bst_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_kuaivideo_x1_032_31d78c99:
+    attention_dropout: 0
+    batch_norm: false
+    batch_size: 4096
+    bst_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    bst_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: true
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_kuaivideo_x1_033_cc11b559:
+    attention_dropout: 0.1
+    batch_norm: false
+    batch_size: 4096
+    bst_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    bst_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: mean
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_kuaivideo_x1_034_dbede134:
+    attention_dropout: 0.1
+    batch_norm: false
+    batch_size: 4096
+    bst_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    bst_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: mean
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: true
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_kuaivideo_x1_035_e11603b4:
+    attention_dropout: 0.1
+    batch_norm: false
+    batch_size: 4096
+    bst_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    bst_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_kuaivideo_x1_036_5ad8ef4e:
+    attention_dropout: 0.1
+    batch_norm: false
+    batch_size: 4096
+    bst_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    bst_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: true
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_kuaivideo_x1_037_75597fc7:
+    attention_dropout: 0.1
+    batch_norm: false
+    batch_size: 4096
+    bst_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    bst_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: mean
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_kuaivideo_x1_038_9c802367:
+    attention_dropout: 0.1
+    batch_norm: false
+    batch_size: 4096
+    bst_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    bst_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: mean
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: true
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_kuaivideo_x1_039_4b4a8a8a:
+    attention_dropout: 0.1
+    batch_norm: false
+    batch_size: 4096
+    bst_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    bst_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_kuaivideo_x1_040_b68a0d0f:
+    attention_dropout: 0.1
+    batch_norm: false
+    batch_size: 4096
+    bst_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    bst_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: true
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_kuaivideo_x1_041_baf3a604:
+    attention_dropout: 0
+    batch_norm: false
+    batch_size: 4096
+    bst_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    bst_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: mean
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_kuaivideo_x1_042_fbaeb48a:
+    attention_dropout: 0
+    batch_norm: false
+    batch_size: 4096
+    bst_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    bst_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: mean
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: true
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_kuaivideo_x1_043_397af77b:
+    attention_dropout: 0
+    batch_norm: false
+    batch_size: 4096
+    bst_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    bst_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_kuaivideo_x1_044_76a1d474:
+    attention_dropout: 0
+    batch_norm: false
+    batch_size: 4096
+    bst_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    bst_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: true
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_kuaivideo_x1_045_94814d5c:
+    attention_dropout: 0
+    batch_norm: false
+    batch_size: 4096
+    bst_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    bst_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: mean
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_kuaivideo_x1_046_ff25e818:
+    attention_dropout: 0
+    batch_norm: false
+    batch_size: 4096
+    bst_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    bst_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: mean
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: true
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_kuaivideo_x1_047_16770672:
+    attention_dropout: 0
+    batch_norm: false
+    batch_size: 4096
+    bst_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    bst_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: false
+    verbose: 1
+BST_kuaivideo_x1_048_30d4cd0e:
+    attention_dropout: 0
+    batch_norm: false
+    batch_size: 4096
+    bst_sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    bst_target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    dataset_id: kuaivideo_x1_dc7a3035
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: true
+    use_position_emb: true
+    use_residual: false
+    verbose: 1

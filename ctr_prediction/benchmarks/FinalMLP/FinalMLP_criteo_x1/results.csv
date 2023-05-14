@@ -1,0 +1,1 @@
+ 20221218-125308,[command] python run_expid.py --config Criteo/FinalMLP_criteo_x1/FinalMLP_criteo_x1_tuner_config_07 --expid FinalMLP_criteo_x1_004_d5d36917 --gpu 3,[exp_id] FinalMLP_criteo_x1_004_d5d36917,[dataset_id] criteo_x1_49102577,[train] N.A.,[val] AUC: 0.814554 - logloss: 0.437523,[test] AUC: 0.814902 - logloss: 0.437025

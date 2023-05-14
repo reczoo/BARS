@@ -1,0 +1,135 @@
+BST_taobaoad_x1_001_1af0261c:
+    attention_dropout: 0.2
+    batch_norm: false
+    batch_size: 8192
+    bst_sequence_field: !!python/tuple [cate_his, brand_his, btag_his]
+    bst_target_field: !!python/tuple [cate_id, brand, btag]
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    -   feature_encoder: null
+        name: [cate_his, brand_his, btag_his]
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 8
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: true
+    verbose: 1
+BST_taobaoad_x1_004_1af0261c:
+    attention_dropout: 0.2
+    batch_norm: false
+    batch_size: 8192
+    bst_sequence_field: !!python/tuple [cate_his, brand_his, btag_his]
+    bst_target_field: !!python/tuple [cate_id, brand, btag]
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    -   feature_encoder: null
+        name: [cate_his, brand_his, btag_his]
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 8
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: target
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: true
+    use_position_emb: false
+    use_residual: true
+    verbose: 1
+BST_taobaoad_x1_005_69b56b49:
+    attention_dropout: 0.2
+    batch_norm: false
+    batch_size: 8192
+    bst_sequence_field: !!python/tuple [cate_his, brand_his, btag_his]
+    bst_target_field: !!python/tuple [cate_id, brand, btag]
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs:
+    -   feature_encoder: null
+        name: [cate_his, brand_his, btag_his]
+    group_id: group_id
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: BST
+    model_id: BST_base
+    model_root: ./checkpoints/BST_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 8
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    seq_pooling_type: mean
+    shuffle: true
+    stacked_transformer_layers: 1
+    task: binary_classification
+    use_causal_mask: false
+    use_position_emb: true
+    use_residual: true
+    verbose: 1

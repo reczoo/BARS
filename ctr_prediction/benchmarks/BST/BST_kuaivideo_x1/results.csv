@@ -1,0 +1,1 @@
+ 20220908-145321,[command] python run_expid.py --config KuaiShou/BST_kuaivideo_x1/BST_kuaivideo_x1_tuner_config_02 --expid BST_kuaivideo_x1_003_7ed4faca --gpu 2,[exp_id] BST_kuaivideo_x1_003_7ed4faca,[dataset_id] kuaivideo_x1_dc7a3035,[train] N.A.,[val] gAUC: 0.669039 - AUC: 0.748407 - logloss: 0.433819,[test] gAUC: 0.669039 - AUC: 0.748407 - logloss: 0.433819

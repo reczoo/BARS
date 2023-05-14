@@ -1,0 +1,1 @@
+ 20221231-170245,[command] python run_expid.py --config Avazu/FINAL_avazu_x1/FINAL_2B_avazu_x1_tuner_config_04 --expid FINAL_avazu_x1_023_9d3d37bd --gpu 7,[exp_id] FINAL_avazu_x1_023_9d3d37bd,[dataset_id] avazu_x1_0bbde04e,[train] N.A.,[val] AUC: 0.748371 - logloss: 0.395190,[test] AUC: 0.767159 - logloss: 0.365334

@@ -1,0 +1,55 @@
+base_config: ../model_zoo/DCNv2/config/
+base_expid: DCNv2_default
+dataset_id: kuaivideo_x1
+
+dataset_config:
+    kuaivideo_x1:
+        data_root: ../data/KuaiShou/
+        data_format: csv
+        train_data: ../data/KuaiShou/KuaiVideo_x1/train.csv
+        valid_data: ../data/KuaiShou/KuaiVideo_x1/test.csv # no validation data split in original paper
+        test_data: ../data/KuaiShou/KuaiVideo_x1/test.csv
+        min_categr_count: 10
+        feature_cols:
+            - {name: group_id, active: True, dtype: int, type: meta, preprocess: "copy_from(user_id)", remap: False}
+            - {name: user_id, active: True, dtype: str, type: categorical}
+            - {name: item_id, active: True, dtype: str, type: categorical}
+            - {name: item_emb, active: True, dtype: str, type: categorical, embedding_dim: 64, preprocess: "copy_from(item_id)", 
+               pretrained_emb: "../data/KuaiShou/KuaiVideo_x1/item_visual_emb_dim64.h5", min_categr_count: 1}
+            - {name: pos_items, active: True, dtype: str, type: sequence, splitter: ^, max_len: 100, padding: pre,
+               share_embedding: item_id}
+            - {name: neg_items, active: True, dtype: str, type: sequence, splitter: ^, max_len: 100, padding: pre, 
+               share_embedding: item_id}
+            - {name: pos_items_emb, active: True, dtype: str, type: sequence, splitter: ^, max_len: 100, embedding_dim: 64, 
+               padding: pre, pretrained_emb: "../data/KuaiShou/KuaiVideo_x1/item_visual_emb_dim64.h5", min_categr_count: 1,
+               share_embedding: item_emb, preprocess: "copy_from(pos_items)"}
+            - {name: neg_items_emb, active: True, dtype: str, type: sequence, splitter: ^, max_len: 100, embedding_dim: 64, 
+               padding: pre, pretrained_emb: "../data/KuaiShou/KuaiVideo_x1/item_visual_emb_dim64.h5", min_categr_count: 1,
+               share_embedding: item_emb, preprocess: "copy_from(neg_items)"}
+        label_col: {name: is_click, dtype: float}
+
+
+tuner_space:
+    model_root: './checkpoints/DCNv2_kuaivideo_x1/'
+    feature_specs: [[
+            {name: item_emb, feature_encoder: "nn.Linear(64, 64, bias=False)"},
+            {name: pos_items, feature_encoder: "layers.MaskedAveragePooling()"},
+            {name: neg_items, feature_encoder: "layers.MaskedAveragePooling()"},
+            {name: pos_items_emb, feature_encoder: ["layers.MaskedAveragePooling()", "nn.Linear(64, 64, bias=False)"]},
+            {name: neg_items_emb, feature_encoder: ["layers.MaskedAveragePooling()", "nn.Linear(64, 64, bias=False)"]}
+        ]]
+    embedding_dim: 64
+    parallel_dnn_hidden_units: [[1024, 512, 256]]
+    model_structure: parallel
+    use_low_rank_mixture: False
+    num_cross_layers: [1, 2, 3, 4, 5]
+    embedding_regularizer: 1.e-4
+    net_dropout: [0.1, 0.2, 0.3]
+    batch_norm: [False, True]
+    learning_rate: 1.e-3
+    batch_size: 8192
+    seed: 20222023
+    group_id: group_id
+    metrics: [[gAUC, AUC, logloss]]
+    monitor: {"gAUC": 1, "AUC": 1}
+

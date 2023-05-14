@@ -1,0 +1,1872 @@
+DCNv2_taobaoad_x1_001_59e0eb17:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./checkpoints/DCNv2_taobaoad_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_cross_layers: 2
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    parallel_dnn_hidden_units: [512, 256, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_taobaoad_x1_002_01e1c47a:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./checkpoints/DCNv2_taobaoad_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_cross_layers: 2
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    parallel_dnn_hidden_units: [512, 256, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_taobaoad_x1_003_b9f9fb25:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./checkpoints/DCNv2_taobaoad_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_cross_layers: 2
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    parallel_dnn_hidden_units: [512, 256, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_taobaoad_x1_004_5c30793f:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./checkpoints/DCNv2_taobaoad_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_cross_layers: 2
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    parallel_dnn_hidden_units: [512, 256, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_taobaoad_x1_005_3757b1c4:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./checkpoints/DCNv2_taobaoad_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    parallel_dnn_hidden_units: [512, 256, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_taobaoad_x1_006_4b9a182d:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./checkpoints/DCNv2_taobaoad_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    parallel_dnn_hidden_units: [512, 256, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_taobaoad_x1_007_5c30793f:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./checkpoints/DCNv2_taobaoad_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    parallel_dnn_hidden_units: [512, 256, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_taobaoad_x1_008_c43267a2:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./checkpoints/DCNv2_taobaoad_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    parallel_dnn_hidden_units: [512, 256, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_taobaoad_x1_009_8c5c0ef0:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./checkpoints/DCNv2_taobaoad_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_cross_layers: 4
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    parallel_dnn_hidden_units: [512, 256, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_taobaoad_x1_010_3368cfd1:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./checkpoints/DCNv2_taobaoad_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_cross_layers: 4
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    parallel_dnn_hidden_units: [512, 256, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_taobaoad_x1_011_bcf850f7:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./checkpoints/DCNv2_taobaoad_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_cross_layers: 4
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    parallel_dnn_hidden_units: [512, 256, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_taobaoad_x1_012_e478026e:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./checkpoints/DCNv2_taobaoad_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_cross_layers: 4
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    parallel_dnn_hidden_units: [512, 256, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_taobaoad_x1_013_b1265cd7:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./checkpoints/DCNv2_taobaoad_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_cross_layers: 5
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    parallel_dnn_hidden_units: [512, 256, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_taobaoad_x1_014_c2281244:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./checkpoints/DCNv2_taobaoad_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_cross_layers: 5
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    parallel_dnn_hidden_units: [512, 256, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_taobaoad_x1_015_af581aad:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./checkpoints/DCNv2_taobaoad_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_cross_layers: 5
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    parallel_dnn_hidden_units: [512, 256, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_taobaoad_x1_016_1c0920a1:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./checkpoints/DCNv2_taobaoad_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_cross_layers: 5
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    parallel_dnn_hidden_units: [512, 256, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_taobaoad_x1_017_1c071c88:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./checkpoints/DCNv2_taobaoad_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_cross_layers: 2
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    parallel_dnn_hidden_units: [512, 256, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_taobaoad_x1_018_af581aad:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./checkpoints/DCNv2_taobaoad_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_cross_layers: 2
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    parallel_dnn_hidden_units: [512, 256, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_taobaoad_x1_019_e07ae8c9:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./checkpoints/DCNv2_taobaoad_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_cross_layers: 2
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    parallel_dnn_hidden_units: [512, 256, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_taobaoad_x1_020_1454a4ca:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./checkpoints/DCNv2_taobaoad_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_cross_layers: 2
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    parallel_dnn_hidden_units: [512, 256, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_taobaoad_x1_021_0ba69df3:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./checkpoints/DCNv2_taobaoad_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    parallel_dnn_hidden_units: [512, 256, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_taobaoad_x1_022_1c0920a1:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./checkpoints/DCNv2_taobaoad_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    parallel_dnn_hidden_units: [512, 256, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_taobaoad_x1_023_1454a4ca:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./checkpoints/DCNv2_taobaoad_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    parallel_dnn_hidden_units: [512, 256, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_taobaoad_x1_024_5e2a3660:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./checkpoints/DCNv2_taobaoad_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    parallel_dnn_hidden_units: [512, 256, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_taobaoad_x1_025_151ca0b4:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./checkpoints/DCNv2_taobaoad_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_cross_layers: 4
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    parallel_dnn_hidden_units: [512, 256, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_taobaoad_x1_026_55d3948a:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./checkpoints/DCNv2_taobaoad_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_cross_layers: 4
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    parallel_dnn_hidden_units: [512, 256, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_taobaoad_x1_027_3f17134d:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./checkpoints/DCNv2_taobaoad_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_cross_layers: 4
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    parallel_dnn_hidden_units: [512, 256, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_taobaoad_x1_028_1fdec9d4:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./checkpoints/DCNv2_taobaoad_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_cross_layers: 4
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    parallel_dnn_hidden_units: [512, 256, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_taobaoad_x1_029_35465c83:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./checkpoints/DCNv2_taobaoad_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_cross_layers: 5
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    parallel_dnn_hidden_units: [512, 256, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_taobaoad_x1_030_dcac8de9:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./checkpoints/DCNv2_taobaoad_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_cross_layers: 5
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    parallel_dnn_hidden_units: [512, 256, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_taobaoad_x1_031_f72352bf:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./checkpoints/DCNv2_taobaoad_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_cross_layers: 5
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    parallel_dnn_hidden_units: [512, 256, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_taobaoad_x1_032_c8490bbf:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./checkpoints/DCNv2_taobaoad_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_cross_layers: 5
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    parallel_dnn_hidden_units: [512, 256, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_taobaoad_x1_033_b923771e:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./checkpoints/DCNv2_taobaoad_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_cross_layers: 2
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    parallel_dnn_hidden_units: [512, 256, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_taobaoad_x1_034_0ec48d19:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./checkpoints/DCNv2_taobaoad_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_cross_layers: 2
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    parallel_dnn_hidden_units: [512, 256, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_taobaoad_x1_035_6290d037:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./checkpoints/DCNv2_taobaoad_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_cross_layers: 2
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    parallel_dnn_hidden_units: [512, 256, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_taobaoad_x1_036_9ef5ba93:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./checkpoints/DCNv2_taobaoad_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_cross_layers: 2
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    parallel_dnn_hidden_units: [512, 256, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_taobaoad_x1_037_36d9ff92:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./checkpoints/DCNv2_taobaoad_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    parallel_dnn_hidden_units: [512, 256, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_taobaoad_x1_038_685f122e:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./checkpoints/DCNv2_taobaoad_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    parallel_dnn_hidden_units: [512, 256, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_taobaoad_x1_039_9ef5ba93:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./checkpoints/DCNv2_taobaoad_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    parallel_dnn_hidden_units: [512, 256, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_taobaoad_x1_040_6f122099:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./checkpoints/DCNv2_taobaoad_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    parallel_dnn_hidden_units: [512, 256, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_taobaoad_x1_041_3e7d410a:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./checkpoints/DCNv2_taobaoad_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_cross_layers: 4
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    parallel_dnn_hidden_units: [512, 256, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_taobaoad_x1_042_5a007904:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./checkpoints/DCNv2_taobaoad_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_cross_layers: 4
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    parallel_dnn_hidden_units: [512, 256, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_taobaoad_x1_043_7e5088f6:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./checkpoints/DCNv2_taobaoad_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_cross_layers: 4
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    parallel_dnn_hidden_units: [512, 256, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_taobaoad_x1_044_6df05a39:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./checkpoints/DCNv2_taobaoad_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_cross_layers: 4
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    parallel_dnn_hidden_units: [512, 256, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_taobaoad_x1_045_d57620ea:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./checkpoints/DCNv2_taobaoad_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_cross_layers: 5
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    parallel_dnn_hidden_units: [512, 256, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_taobaoad_x1_046_b608b212:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./checkpoints/DCNv2_taobaoad_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_cross_layers: 5
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    parallel_dnn_hidden_units: [512, 256, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_taobaoad_x1_047_84674026:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./checkpoints/DCNv2_taobaoad_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_cross_layers: 5
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    parallel_dnn_hidden_units: [512, 256, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_taobaoad_x1_048_e848f187:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 1
+    embedding_dim: 32
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_interval: 1
+    feature_specs: null
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ./checkpoints/DCNv2_taobaoad_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_cross_layers: 5
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    parallel_dnn_hidden_units: [512, 256, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_low_rank_mixture: false
+    verbose: 1

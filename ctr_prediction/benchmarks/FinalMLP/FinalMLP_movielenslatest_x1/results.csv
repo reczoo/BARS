@@ -1,0 +1,1 @@
+ 20221217-142535,[command] python run_expid.py --config Movielens/FinalMLP_movielenslatest_x1/FinalMLP_movielenslatest_x1_tuner_config_06 --expid FinalMLP_movielenslatest_x1_004_498f3e4f --gpu 1,[exp_id] FinalMLP_movielenslatest_x1_004_498f3e4f,[dataset_id] movielenslatest_x1_233328b6,[train] N.A.,[val] AUC: 0.972100 - logloss: 0.196004,[test] AUC: 0.971968 - logloss: 0.196645

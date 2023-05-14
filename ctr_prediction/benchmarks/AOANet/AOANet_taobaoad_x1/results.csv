@@ -1,0 +1,1 @@
+ 20220812-200703,[command] python run_expid.py --config Taobao/AOANet_taobaoad_x1/AOANet_taobaoad_x1_tuner_config_01 --expid AOANet_taobaoad_x1_005_26a70b74 --gpu 4,[exp_id] AOANet_taobaoad_x1_005_26a70b74,[dataset_id] taobaoad_x1_2753db8a,[train] N.A.,[val] gAUC: 0.573251 - AUC: 0.650041 - logloss: 0.192513,[test] gAUC: 0.573251 - AUC: 0.650041 - logloss: 0.192513

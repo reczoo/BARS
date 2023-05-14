@@ -1,0 +1,251 @@
+## FINAL_1B_movielenslatest_x1
+
+A hands-on guide to run the FINAL model on the MovielensLatest_x1 dataset.
+
+Author: [XUEPAI](https://github.com/xue-pai)
+
+
+| [Environments](#Environments) | [Dataset](#Dataset) | [Code](#Code) | [Results](#Results) | [Logs](#Logs) |
+|:-----------------------------:|:-----------:|:--------:|:--------:|-------|
+### Environments
++ Hardware
+
+  ```python
+  CPU: Intel(R) Xeon(R) CPU E5-2690 v4 @ 2.60GHz
+  GPU: Tesla P100 16G
+  RAM: 755G
+
+  ```
+
++ Software
+
+  ```python
+  CUDA: 10.0
+  python: 3.6.5
+  pytorch: 1.0.1.post2
+  pandas: 0.23.0
+  numpy: 1.18.1
+  scipy: 1.1.0
+  sklearn: 0.23.1
+  pyyaml: 5.1
+  h5py: 2.7.1
+  tqdm: 4.59.0
+  fuxictr: 2.0.2
+  ```
+
+### Dataset
+Please refer to the BARS dataset [MovielensLatest_x1](https://github.com/openbenchmark/BARS/blob/main/datasets/MovieLens#MovielensLatest_x1) to get data ready.
+
+### Code
+
+We use the [FINAL](https://github.com/xue-pai/FuxiCTR/blob/v2.0.2/model_zoo/FINAL) model code from [FuxiCTR-v2.0.2](https://github.com/xue-pai/FuxiCTR/tree/v2.0.2) for this experiment.
+
+Running steps:
+
+1. Download [FuxiCTR-v2.0.2](https://github.com/xue-pai/FuxiCTR/archive/refs/tags/v2.0.2.zip) and install all the dependencies listed in the [environments](#environments).
+    
+    ```bash
+    pip uninstall fuxictr
+    pip install fuxictr==2.0.2
+    ```
+
+2. Create a data directory and put the downloaded data files in `../data/MovieLens/MovielensLatest_x1`.
+
+3. Both `dataset_config.yaml` and `model_config.yaml` files are available in [FINAL_1B_movielenslatest_x1_tuner_config_02](./FINAL_1B_movielenslatest_x1_tuner_config_02). Make sure that the data paths in `dataset_config.yaml` are correctly set.
+
+4. Run the following script to start training and evaluation.
+
+    ```bash
+    cd FuxiCTR/model_zoo/FINAL
+    nohup python run_expid.py --config XXX/benchmarks/FINAL/FINAL_1B_movielenslatest_x1_tuner_config_02 --expid FINAL_movielenslatest_x1_008_f8e20ee7 --gpu 0 > run.log &
+    tail -f run.log
+    ```
+
+### Results
+
+| AUC | logloss  |
+|:--------------------:|:--------------------:|
+| 0.970560 | 0.200110  |
+
+
+### Logs
+```python
+2023-01-07 10:44:28,777 P36485 INFO Params: {
+    "batch_size": "4096",
+    "block1_dropout": "0.1",
+    "block1_hidden_activations": "ReLU",
+    "block1_hidden_units": "[400]",
+    "block2_dropout": "0",
+    "block2_hidden_activations": "None",
+    "block2_hidden_units": "[64, 64, 64]",
+    "block_type": "1B",
+    "data_format": "csv",
+    "data_root": "../data/Movielens/",
+    "dataset_id": "movielenslatest_x1_233328b6",
+    "debug_mode": "False",
+    "early_stop_patience": "2",
+    "embedding_dim": "10",
+    "embedding_regularizer": "0.01",
+    "epochs": "100",
+    "eval_interval": "1",
+    "feature_cols": "[{'active': True, 'dtype': 'float', 'name': ['user_id', 'item_id', 'tag_id'], 'type': 'categorical'}]",
+    "feature_specs": "None",
+    "gpu": "1",
+    "group_id": "None",
+    "label_col": "{'dtype': 'float', 'name': 'label'}",
+    "learning_rate": "0.001",
+    "loss": "binary_crossentropy",
+    "metrics": "['AUC', 'logloss']",
+    "min_categr_count": "1",
+    "model": "FINAL",
+    "model_id": "FINAL_movielenslatest_x1_008_f8e20ee7",
+    "model_root": "./checkpoints/FINAL_movielenslatest_x1/",
+    "monitor": "AUC",
+    "monitor_mode": "max",
+    "net_regularizer": "0",
+    "norm_type": "BN",
+    "num_workers": "3",
+    "optimizer": "adam",
+    "ordered_features": "None",
+    "pickle_feature_encoder": "True",
+    "save_best_only": "True",
+    "seed": "2021",
+    "shuffle": "True",
+    "task": "binary_classification",
+    "test_data": "../data/Movielens/MovielensLatest_x1/test.csv",
+    "train_data": "../data/Movielens/MovielensLatest_x1/train.csv",
+    "use_field_gate": "False",
+    "valid_data": "../data/Movielens/MovielensLatest_x1/valid.csv",
+    "verbose": "1"
+}
+2023-01-07 10:44:28,778 P36485 INFO Load feature_map from json: ../data/Movielens/movielenslatest_x1_233328b6/feature_map.json
+2023-01-07 10:44:28,778 P36485 INFO Set column index...
+2023-01-07 10:44:28,778 P36485 INFO Feature specs: {
+    "item_id": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'oov_idx': 23605, 'vocab_size': 23606}",
+    "tag_id": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'oov_idx': 49658, 'vocab_size': 49659}",
+    "user_id": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'oov_idx': 16976, 'vocab_size': 16977}"
+}
+2023-01-07 10:44:32,734 P36485 INFO Total number of parameters: 916021.
+2023-01-07 10:44:32,734 P36485 INFO Loading data...
+2023-01-07 10:44:32,734 P36485 INFO Loading data from h5: ../data/Movielens/movielenslatest_x1_233328b6/train.h5
+2023-01-07 10:44:32,796 P36485 INFO Train samples: total/1404801, blocks/1
+2023-01-07 10:44:32,796 P36485 INFO Loading data from h5: ../data/Movielens/movielenslatest_x1_233328b6/valid.h5
+2023-01-07 10:44:32,808 P36485 INFO Validation samples: total/401372, blocks/1
+2023-01-07 10:44:32,808 P36485 INFO Loading train and validation data done.
+2023-01-07 10:44:32,808 P36485 INFO Start training: 343 batches/epoch
+2023-01-07 10:44:32,808 P36485 INFO ************ Epoch=1 start ************
+2023-01-07 10:44:47,320 P36485 INFO [Metrics] AUC: 0.929556
+2023-01-07 10:44:47,320 P36485 INFO Save best model: monitor(max): 0.929556
+2023-01-07 10:44:47,325 P36485 INFO --- 343/343 batches finished ---
+2023-01-07 10:44:47,373 P36485 INFO Train loss @epoch 1: 0.381827
+2023-01-07 10:44:47,373 P36485 INFO ************ Epoch=1 end ************
+2023-01-07 10:45:00,974 P36485 INFO [Metrics] AUC: 0.939968
+2023-01-07 10:45:00,974 P36485 INFO Save best model: monitor(max): 0.939968
+2023-01-07 10:45:00,980 P36485 INFO --- 343/343 batches finished ---
+2023-01-07 10:45:01,025 P36485 INFO Train loss @epoch 2: 0.374020
+2023-01-07 10:45:01,025 P36485 INFO ************ Epoch=2 end ************
+2023-01-07 10:45:15,673 P36485 INFO [Metrics] AUC: 0.944001
+2023-01-07 10:45:15,673 P36485 INFO Save best model: monitor(max): 0.944001
+2023-01-07 10:45:15,679 P36485 INFO --- 343/343 batches finished ---
+2023-01-07 10:45:15,723 P36485 INFO Train loss @epoch 3: 0.373770
+2023-01-07 10:45:15,723 P36485 INFO ************ Epoch=3 end ************
+2023-01-07 10:45:28,010 P36485 INFO [Metrics] AUC: 0.947098
+2023-01-07 10:45:28,011 P36485 INFO Save best model: monitor(max): 0.947098
+2023-01-07 10:45:28,018 P36485 INFO --- 343/343 batches finished ---
+2023-01-07 10:45:28,072 P36485 INFO Train loss @epoch 4: 0.373943
+2023-01-07 10:45:28,072 P36485 INFO ************ Epoch=4 end ************
+2023-01-07 10:45:40,338 P36485 INFO [Metrics] AUC: 0.948263
+2023-01-07 10:45:40,339 P36485 INFO Save best model: monitor(max): 0.948263
+2023-01-07 10:45:40,344 P36485 INFO --- 343/343 batches finished ---
+2023-01-07 10:45:40,388 P36485 INFO Train loss @epoch 5: 0.377303
+2023-01-07 10:45:40,388 P36485 INFO ************ Epoch=5 end ************
+2023-01-07 10:45:52,519 P36485 INFO [Metrics] AUC: 0.949904
+2023-01-07 10:45:52,520 P36485 INFO Save best model: monitor(max): 0.949904
+2023-01-07 10:45:52,529 P36485 INFO --- 343/343 batches finished ---
+2023-01-07 10:45:52,574 P36485 INFO Train loss @epoch 6: 0.377750
+2023-01-07 10:45:52,574 P36485 INFO ************ Epoch=6 end ************
+2023-01-07 10:46:02,229 P36485 INFO [Metrics] AUC: 0.951865
+2023-01-07 10:46:02,229 P36485 INFO Save best model: monitor(max): 0.951865
+2023-01-07 10:46:02,235 P36485 INFO --- 343/343 batches finished ---
+2023-01-07 10:46:02,287 P36485 INFO Train loss @epoch 7: 0.376190
+2023-01-07 10:46:02,287 P36485 INFO ************ Epoch=7 end ************
+2023-01-07 10:46:13,582 P36485 INFO [Metrics] AUC: 0.952255
+2023-01-07 10:46:13,583 P36485 INFO Save best model: monitor(max): 0.952255
+2023-01-07 10:46:13,590 P36485 INFO --- 343/343 batches finished ---
+2023-01-07 10:46:13,641 P36485 INFO Train loss @epoch 8: 0.374959
+2023-01-07 10:46:13,641 P36485 INFO ************ Epoch=8 end ************
+2023-01-07 10:46:23,357 P36485 INFO [Metrics] AUC: 0.953453
+2023-01-07 10:46:23,357 P36485 INFO Save best model: monitor(max): 0.953453
+2023-01-07 10:46:23,363 P36485 INFO --- 343/343 batches finished ---
+2023-01-07 10:46:23,452 P36485 INFO Train loss @epoch 9: 0.372702
+2023-01-07 10:46:23,452 P36485 INFO ************ Epoch=9 end ************
+2023-01-07 10:46:33,878 P36485 INFO [Metrics] AUC: 0.953908
+2023-01-07 10:46:33,878 P36485 INFO Save best model: monitor(max): 0.953908
+2023-01-07 10:46:33,884 P36485 INFO --- 343/343 batches finished ---
+2023-01-07 10:46:33,930 P36485 INFO Train loss @epoch 10: 0.371646
+2023-01-07 10:46:33,930 P36485 INFO ************ Epoch=10 end ************
+2023-01-07 10:46:43,816 P36485 INFO [Metrics] AUC: 0.954243
+2023-01-07 10:46:43,816 P36485 INFO Save best model: monitor(max): 0.954243
+2023-01-07 10:46:43,821 P36485 INFO --- 343/343 batches finished ---
+2023-01-07 10:46:43,872 P36485 INFO Train loss @epoch 11: 0.370726
+2023-01-07 10:46:43,873 P36485 INFO ************ Epoch=11 end ************
+2023-01-07 10:46:54,366 P36485 INFO [Metrics] AUC: 0.954656
+2023-01-07 10:46:54,366 P36485 INFO Save best model: monitor(max): 0.954656
+2023-01-07 10:46:54,371 P36485 INFO --- 343/343 batches finished ---
+2023-01-07 10:46:54,426 P36485 INFO Train loss @epoch 12: 0.369841
+2023-01-07 10:46:54,426 P36485 INFO ************ Epoch=12 end ************
+2023-01-07 10:47:05,376 P36485 INFO [Metrics] AUC: 0.955787
+2023-01-07 10:47:05,376 P36485 INFO Save best model: monitor(max): 0.955787
+2023-01-07 10:47:05,382 P36485 INFO --- 343/343 batches finished ---
+2023-01-07 10:47:05,447 P36485 INFO Train loss @epoch 13: 0.369469
+2023-01-07 10:47:05,448 P36485 INFO ************ Epoch=13 end ************
+2023-01-07 10:47:15,053 P36485 INFO [Metrics] AUC: 0.956245
+2023-01-07 10:47:15,054 P36485 INFO Save best model: monitor(max): 0.956245
+2023-01-07 10:47:15,059 P36485 INFO --- 343/343 batches finished ---
+2023-01-07 10:47:15,112 P36485 INFO Train loss @epoch 14: 0.369913
+2023-01-07 10:47:15,112 P36485 INFO ************ Epoch=14 end ************
+2023-01-07 10:47:23,797 P36485 INFO [Metrics] AUC: 0.955952
+2023-01-07 10:47:23,798 P36485 INFO Monitor(max) STOP: 0.955952 !
+2023-01-07 10:47:23,798 P36485 INFO Reduce learning rate on plateau: 0.000100
+2023-01-07 10:47:23,798 P36485 INFO --- 343/343 batches finished ---
+2023-01-07 10:47:23,855 P36485 INFO Train loss @epoch 15: 0.369701
+2023-01-07 10:47:23,855 P36485 INFO ************ Epoch=15 end ************
+2023-01-07 10:47:34,333 P36485 INFO [Metrics] AUC: 0.967735
+2023-01-07 10:47:34,333 P36485 INFO Save best model: monitor(max): 0.967735
+2023-01-07 10:47:34,338 P36485 INFO --- 343/343 batches finished ---
+2023-01-07 10:47:34,388 P36485 INFO Train loss @epoch 16: 0.273053
+2023-01-07 10:47:34,388 P36485 INFO ************ Epoch=16 end ************
+2023-01-07 10:47:44,375 P36485 INFO [Metrics] AUC: 0.970503
+2023-01-07 10:47:44,375 P36485 INFO Save best model: monitor(max): 0.970503
+2023-01-07 10:47:44,381 P36485 INFO --- 343/343 batches finished ---
+2023-01-07 10:47:44,430 P36485 INFO Train loss @epoch 17: 0.191786
+2023-01-07 10:47:44,431 P36485 INFO ************ Epoch=17 end ************
+2023-01-07 10:47:54,695 P36485 INFO [Metrics] AUC: 0.970712
+2023-01-07 10:47:54,695 P36485 INFO Save best model: monitor(max): 0.970712
+2023-01-07 10:47:54,701 P36485 INFO --- 343/343 batches finished ---
+2023-01-07 10:47:54,745 P36485 INFO Train loss @epoch 18: 0.152779
+2023-01-07 10:47:54,745 P36485 INFO ************ Epoch=18 end ************
+2023-01-07 10:48:04,751 P36485 INFO [Metrics] AUC: 0.970288
+2023-01-07 10:48:04,751 P36485 INFO Monitor(max) STOP: 0.970288 !
+2023-01-07 10:48:04,751 P36485 INFO Reduce learning rate on plateau: 0.000010
+2023-01-07 10:48:04,752 P36485 INFO --- 343/343 batches finished ---
+2023-01-07 10:48:04,795 P36485 INFO Train loss @epoch 19: 0.130871
+2023-01-07 10:48:04,795 P36485 INFO ************ Epoch=19 end ************
+2023-01-07 10:48:15,287 P36485 INFO [Metrics] AUC: 0.970544
+2023-01-07 10:48:15,288 P36485 INFO Monitor(max) STOP: 0.970544 !
+2023-01-07 10:48:15,288 P36485 INFO Reduce learning rate on plateau: 0.000001
+2023-01-07 10:48:15,288 P36485 INFO ********* Epoch==20 early stop *********
+2023-01-07 10:48:15,288 P36485 INFO --- 343/343 batches finished ---
+2023-01-07 10:48:15,358 P36485 INFO Train loss @epoch 20: 0.104218
+2023-01-07 10:48:15,358 P36485 INFO Training finished.
+2023-01-07 10:48:15,358 P36485 INFO Load best model: /home/FuxiCTRv2.0/benchmark/checkpoints/FINAL_movielenslatest_x1/movielenslatest_x1_233328b6/FINAL_movielenslatest_x1_008_f8e20ee7.model
+2023-01-07 10:48:15,364 P36485 INFO ****** Validation evaluation ******
+2023-01-07 10:48:17,096 P36485 INFO [Metrics] AUC: 0.970712 - logloss: 0.199763
+2023-01-07 10:48:17,157 P36485 INFO ******** Test evaluation ********
+2023-01-07 10:48:17,157 P36485 INFO Loading data...
+2023-01-07 10:48:17,157 P36485 INFO Loading data from h5: ../data/Movielens/movielenslatest_x1_233328b6/test.h5
+2023-01-07 10:48:17,164 P36485 INFO Test samples: total/200686, blocks/1
+2023-01-07 10:48:17,165 P36485 INFO Loading test data done.
+2023-01-07 10:48:17,999 P36485 INFO [Metrics] AUC: 0.970560 - logloss: 0.200110
+
+```

@@ -1,0 +1,42 @@
+base_config: ../model_zoo/FmFM/config/
+base_expid: FmFM_default
+dataset_id: taobaoad_x1
+
+dataset_config:
+    taobaoad_x1:
+        data_root: ../data/Taobao/
+        data_format: csv
+        train_data: ../data/Taobao/TaobaoAd_x1/train.csv
+        valid_data: ../data/Taobao/TaobaoAd_x1/test.csv
+        test_data: ../data/Taobao/TaobaoAd_x1/test.csv
+        min_categr_count: 10
+        feature_cols:
+            - {name: "group_id", active: True, dtype: int, type: meta, preprocess: "copy_from(userid)", remap: False}
+            - {name: ["userid","cms_segid","cms_group_id","final_gender_code","age_level","pvalue_level","shopping_level",
+                      "occupation","new_user_class_level","adgroup_id","cate_id","campaign_id","customer","brand","pid","btag"],
+                      active: True, dtype: str, type: categorical}
+            - {name: price, active: True, dtype: float, type: numeric}
+            - {name: cate_his, active: True, dtype: str, splitter: ^, type: sequence, max_len: 50, padding: pre,
+               share_embedding: cate_id}
+            - {name: brand_his, active: True, dtype: str, splitter: ^, type: sequence, max_len: 50, padding: pre,
+               share_embedding: brand}
+            - {name: btag_his, active: True, dtype: str, splitter: ^, type: sequence, max_len: 50, padding: pre,
+               share_embedding: btag}
+        label_col: {name: clk, dtype: float}
+
+tuner_space:
+    model_root: './checkpoints/FmFM_taobaoad_x1/'
+    embedding_dim: 32
+    field_interaction_type: [matrixed, vectorized]
+    regularizer: [1.e-4, 1.e-5, 5.e-6, 1.e-6, 5.e-7, 1.e-7, 1.e-8, 0]
+    learning_rate: 1.e-3
+    batch_size: 8192
+    seed: 20222023
+    early_stop_patience: 1
+    group_id: group_id
+    metrics: [[gAUC, AUC, logloss]]
+    monitor: {"gAUC": 1, "AUC": 1}
+
+
+
+

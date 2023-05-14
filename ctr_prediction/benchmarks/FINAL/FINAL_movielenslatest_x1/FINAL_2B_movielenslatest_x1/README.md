@@ -1,0 +1,278 @@
+## FINAL_2B_movielenslatest_x1
+
+A hands-on guide to run the FINAL model on the MovielensLatest_x1 dataset.
+
+Author: [XUEPAI](https://github.com/xue-pai)
+
+
+| [Environments](#Environments) | [Dataset](#Dataset) | [Code](#Code) | [Results](#Results) | [Logs](#Logs) |
+|:-----------------------------:|:-----------:|:--------:|:--------:|-------|
+### Environments
++ Hardware
+
+  ```python
+  CPU: Intel(R) Xeon(R) CPU E5-2690 v4 @ 2.60GHz
+  GPU: Tesla P100 16G
+  RAM: 755G
+
+  ```
+
++ Software
+
+  ```python
+  CUDA: 10.0
+  python: 3.6.5
+  pytorch: 1.0.1.post2
+  pandas: 0.23.0
+  numpy: 1.18.1
+  scipy: 1.1.0
+  sklearn: 0.23.1
+  pyyaml: 5.1
+  h5py: 2.7.1
+  tqdm: 4.59.0
+  fuxictr: 2.0.2
+  ```
+
+### Dataset
+Please refer to the BARS dataset [MovielensLatest_x1](https://github.com/openbenchmark/BARS/blob/main/datasets/MovieLens#MovielensLatest_x1) to get data ready.
+
+### Code
+
+We use the [FINAL](https://github.com/xue-pai/FuxiCTR/blob/v2.0.2/model_zoo/FINAL) model code from [FuxiCTR-v2.0.2](https://github.com/xue-pai/FuxiCTR/tree/v2.0.2) for this experiment.
+
+Running steps:
+
+1. Download [FuxiCTR-v2.0.2](https://github.com/xue-pai/FuxiCTR/archive/refs/tags/v2.0.2.zip) and install all the dependencies listed in the [environments](#environments).
+    
+    ```bash
+    pip uninstall fuxictr
+    pip install fuxictr==2.0.2
+    ```
+
+2. Create a data directory and put the downloaded data files in `../data/MovieLens/MovielensLatest_x1`.
+
+3. Both `dataset_config.yaml` and `model_config.yaml` files are available in [FINAL_2B_movielenslatest_x1_tuner_config_03](./FINAL_2B_movielenslatest_x1_tuner_config_03). Make sure that the data paths in `dataset_config.yaml` are correctly set.
+
+4. Run the following script to start training and evaluation.
+
+    ```bash
+    cd FuxiCTR/model_zoo/FINAL
+    nohup python run_expid.py --config XXX/benchmarks/FINAL/FINAL_2B_movielenslatest_x1_tuner_config_03 --expid FINAL_movielenslatest_x1_014_50fc5f7f --gpu 0 > run.log &
+    tail -f run.log
+    ```
+
+### Results
+
+Total 24 runs:
+
+| Runs | AUC | logloss  |
+|:--------------------:|:--------------------:|:--------------------:|
+| 1 | 0.972538 | 0.194088  |
+| 2 | 0.972323 | 0.194453  |
+| 3 | 0.972193 | 0.220668  |
+| 4 | 0.971924 | 0.195909  |
+| 5 | 0.971904 | 0.196101  |
+| 6 | 0.971880 | 0.196334  |
+| 7 | 0.971863 | 0.196348  |
+| 8 | 0.971814 | 0.195842  |
+| 9 | 0.971776 | 0.196409  |
+| 10 | 0.971623 | 0.221721  |
+| 11 | 0.971620 | 0.196990  |
+| 12 | 0.971589 | 0.196540  |
+| 13 | 0.971560 | 0.196326  |
+| 14 | 0.971487 | 0.196600  |
+| 15 | 0.971455 | 0.220937  |
+| 16 | 0.971321 | 0.223801  |
+| 17 | 0.971265 | 0.199285  |
+| 18 | 0.971078 | 0.199163  |
+| 19 | 0.971048 | 0.198434  |
+| 20 | 0.970982 | 0.225456  |
+| 21 | 0.970886 | 0.198727  |
+| 22 | 0.970875 | 0.227597  |
+| 23 | 0.970794 | 0.222911  |
+| 24 | 0.970713 | 0.198299  |
+| Avg | 0.971521 | 0.204539 |
+| Std | &#177;0.00048669 | &#177;0.01216678 |
+
+
+### Logs
+```python
+2023-01-07 10:55:20,496 P45851 INFO Params: {
+    "batch_size": "4096",
+    "block1_dropout": "0",
+    "block1_hidden_activations": "ReLU",
+    "block1_hidden_units": "[400, 400]",
+    "block2_dropout": "0",
+    "block2_hidden_activations": "ReLU",
+    "block2_hidden_units": "[500]",
+    "block_type": "2B",
+    "data_format": "csv",
+    "data_root": "../data/Movielens/",
+    "dataset_id": "movielenslatest_x1_233328b6",
+    "debug_mode": "False",
+    "early_stop_patience": "2",
+    "embedding_dim": "10",
+    "embedding_regularizer": "0.01",
+    "epochs": "100",
+    "eval_interval": "1",
+    "feature_cols": "[{'active': True, 'dtype': 'float', 'name': ['user_id', 'item_id', 'tag_id'], 'type': 'categorical'}]",
+    "feature_specs": "None",
+    "gpu": "0",
+    "group_id": "None",
+    "label_col": "{'dtype': 'float', 'name': 'label'}",
+    "learning_rate": "0.001",
+    "loss": "binary_crossentropy",
+    "metrics": "['AUC', 'logloss']",
+    "min_categr_count": "1",
+    "model": "FINAL",
+    "model_id": "FINAL_movielenslatest_x1_014_50fc5f7f",
+    "model_root": "./checkpoints/FINAL_movielenslatest_x1/",
+    "monitor": "AUC",
+    "monitor_mode": "max",
+    "net_regularizer": "0",
+    "norm_type": "BN",
+    "num_workers": "3",
+    "optimizer": "adam",
+    "ordered_features": "None",
+    "pickle_feature_encoder": "True",
+    "save_best_only": "True",
+    "seed": "2021",
+    "shuffle": "True",
+    "task": "binary_classification",
+    "test_data": "../data/Movielens/MovielensLatest_x1/test.csv",
+    "train_data": "../data/Movielens/MovielensLatest_x1/train.csv",
+    "use_field_gate": "True",
+    "valid_data": "../data/Movielens/MovielensLatest_x1/valid.csv",
+    "verbose": "1"
+}
+2023-01-07 10:55:20,497 P45851 INFO Load feature_map from json: ../data/Movielens/movielenslatest_x1_233328b6/feature_map.json
+2023-01-07 10:55:20,497 P45851 INFO Set column index...
+2023-01-07 10:55:20,497 P45851 INFO Feature specs: {
+    "item_id": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'oov_idx': 23605, 'vocab_size': 23606}",
+    "tag_id": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'oov_idx': 49658, 'vocab_size': 49659}",
+    "user_id": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'oov_idx': 16976, 'vocab_size': 16977}"
+}
+2023-01-07 10:55:24,108 P45851 INFO Total number of parameters: 1106234.
+2023-01-07 10:55:24,108 P45851 INFO Loading data...
+2023-01-07 10:55:24,109 P45851 INFO Loading data from h5: ../data/Movielens/movielenslatest_x1_233328b6/train.h5
+2023-01-07 10:55:24,175 P45851 INFO Train samples: total/1404801, blocks/1
+2023-01-07 10:55:24,176 P45851 INFO Loading data from h5: ../data/Movielens/movielenslatest_x1_233328b6/valid.h5
+2023-01-07 10:55:24,190 P45851 INFO Validation samples: total/401372, blocks/1
+2023-01-07 10:55:24,190 P45851 INFO Loading train and validation data done.
+2023-01-07 10:55:24,191 P45851 INFO Start training: 343 batches/epoch
+2023-01-07 10:55:24,191 P45851 INFO ************ Epoch=1 start ************
+2023-01-07 10:55:41,754 P45851 INFO [Metrics] AUC: 0.937445
+2023-01-07 10:55:41,754 P45851 INFO Save best model: monitor(max): 0.937445
+2023-01-07 10:55:41,764 P45851 INFO --- 343/343 batches finished ---
+2023-01-07 10:55:41,820 P45851 INFO Train loss @epoch 1: 1.039659
+2023-01-07 10:55:41,820 P45851 INFO ************ Epoch=1 end ************
+2023-01-07 10:55:58,603 P45851 INFO [Metrics] AUC: 0.946209
+2023-01-07 10:55:58,604 P45851 INFO Save best model: monitor(max): 0.946209
+2023-01-07 10:55:58,612 P45851 INFO --- 343/343 batches finished ---
+2023-01-07 10:55:58,662 P45851 INFO Train loss @epoch 2: 0.898384
+2023-01-07 10:55:58,662 P45851 INFO ************ Epoch=2 end ************
+2023-01-07 10:56:13,606 P45851 INFO [Metrics] AUC: 0.949074
+2023-01-07 10:56:13,607 P45851 INFO Save best model: monitor(max): 0.949074
+2023-01-07 10:56:13,614 P45851 INFO --- 343/343 batches finished ---
+2023-01-07 10:56:13,666 P45851 INFO Train loss @epoch 3: 0.867050
+2023-01-07 10:56:13,666 P45851 INFO ************ Epoch=3 end ************
+2023-01-07 10:56:31,277 P45851 INFO [Metrics] AUC: 0.952046
+2023-01-07 10:56:31,277 P45851 INFO Save best model: monitor(max): 0.952046
+2023-01-07 10:56:31,284 P45851 INFO --- 343/343 batches finished ---
+2023-01-07 10:56:31,334 P45851 INFO Train loss @epoch 4: 0.848404
+2023-01-07 10:56:31,334 P45851 INFO ************ Epoch=4 end ************
+2023-01-07 10:56:49,305 P45851 INFO [Metrics] AUC: 0.953276
+2023-01-07 10:56:49,305 P45851 INFO Save best model: monitor(max): 0.953276
+2023-01-07 10:56:49,313 P45851 INFO --- 343/343 batches finished ---
+2023-01-07 10:56:49,366 P45851 INFO Train loss @epoch 5: 0.833489
+2023-01-07 10:56:49,366 P45851 INFO ************ Epoch=5 end ************
+2023-01-07 10:57:02,928 P45851 INFO [Metrics] AUC: 0.953963
+2023-01-07 10:57:02,929 P45851 INFO Save best model: monitor(max): 0.953963
+2023-01-07 10:57:02,936 P45851 INFO --- 343/343 batches finished ---
+2023-01-07 10:57:02,986 P45851 INFO Train loss @epoch 6: 0.824910
+2023-01-07 10:57:02,986 P45851 INFO ************ Epoch=6 end ************
+2023-01-07 10:57:20,532 P45851 INFO [Metrics] AUC: 0.955384
+2023-01-07 10:57:20,533 P45851 INFO Save best model: monitor(max): 0.955384
+2023-01-07 10:57:20,540 P45851 INFO --- 343/343 batches finished ---
+2023-01-07 10:57:20,593 P45851 INFO Train loss @epoch 7: 0.814345
+2023-01-07 10:57:20,593 P45851 INFO ************ Epoch=7 end ************
+2023-01-07 10:57:37,798 P45851 INFO [Metrics] AUC: 0.956419
+2023-01-07 10:57:37,798 P45851 INFO Save best model: monitor(max): 0.956419
+2023-01-07 10:57:37,806 P45851 INFO --- 343/343 batches finished ---
+2023-01-07 10:57:37,857 P45851 INFO Train loss @epoch 8: 0.807156
+2023-01-07 10:57:37,857 P45851 INFO ************ Epoch=8 end ************
+2023-01-07 10:57:55,421 P45851 INFO [Metrics] AUC: 0.956520
+2023-01-07 10:57:55,421 P45851 INFO Save best model: monitor(max): 0.956520
+2023-01-07 10:57:55,429 P45851 INFO --- 343/343 batches finished ---
+2023-01-07 10:57:55,480 P45851 INFO Train loss @epoch 9: 0.801726
+2023-01-07 10:57:55,480 P45851 INFO ************ Epoch=9 end ************
+2023-01-07 10:58:12,960 P45851 INFO [Metrics] AUC: 0.957886
+2023-01-07 10:58:12,961 P45851 INFO Save best model: monitor(max): 0.957886
+2023-01-07 10:58:12,968 P45851 INFO --- 343/343 batches finished ---
+2023-01-07 10:58:13,020 P45851 INFO Train loss @epoch 10: 0.795237
+2023-01-07 10:58:13,020 P45851 INFO ************ Epoch=10 end ************
+2023-01-07 10:58:30,075 P45851 INFO [Metrics] AUC: 0.958036
+2023-01-07 10:58:30,075 P45851 INFO Save best model: monitor(max): 0.958036
+2023-01-07 10:58:30,083 P45851 INFO --- 343/343 batches finished ---
+2023-01-07 10:58:30,151 P45851 INFO Train loss @epoch 11: 0.790306
+2023-01-07 10:58:30,151 P45851 INFO ************ Epoch=11 end ************
+2023-01-07 10:58:48,333 P45851 INFO [Metrics] AUC: 0.958115
+2023-01-07 10:58:48,333 P45851 INFO Save best model: monitor(max): 0.958115
+2023-01-07 10:58:48,340 P45851 INFO --- 343/343 batches finished ---
+2023-01-07 10:58:48,393 P45851 INFO Train loss @epoch 12: 0.787541
+2023-01-07 10:58:48,394 P45851 INFO ************ Epoch=12 end ************
+2023-01-07 10:59:05,884 P45851 INFO [Metrics] AUC: 0.958250
+2023-01-07 10:59:05,884 P45851 INFO Save best model: monitor(max): 0.958250
+2023-01-07 10:59:05,892 P45851 INFO --- 343/343 batches finished ---
+2023-01-07 10:59:05,943 P45851 INFO Train loss @epoch 13: 0.782213
+2023-01-07 10:59:05,943 P45851 INFO ************ Epoch=13 end ************
+2023-01-07 10:59:23,680 P45851 INFO [Metrics] AUC: 0.959086
+2023-01-07 10:59:23,681 P45851 INFO Save best model: monitor(max): 0.959086
+2023-01-07 10:59:23,688 P45851 INFO --- 343/343 batches finished ---
+2023-01-07 10:59:23,742 P45851 INFO Train loss @epoch 14: 0.779252
+2023-01-07 10:59:23,742 P45851 INFO ************ Epoch=14 end ************
+2023-01-07 10:59:41,468 P45851 INFO [Metrics] AUC: 0.959310
+2023-01-07 10:59:41,468 P45851 INFO Save best model: monitor(max): 0.959310
+2023-01-07 10:59:41,476 P45851 INFO --- 343/343 batches finished ---
+2023-01-07 10:59:41,569 P45851 INFO Train loss @epoch 15: 0.777190
+2023-01-07 10:59:41,570 P45851 INFO ************ Epoch=15 end ************
+2023-01-07 10:59:59,529 P45851 INFO [Metrics] AUC: 0.959108
+2023-01-07 10:59:59,530 P45851 INFO Monitor(max) STOP: 0.959108 !
+2023-01-07 10:59:59,530 P45851 INFO Reduce learning rate on plateau: 0.000100
+2023-01-07 10:59:59,530 P45851 INFO --- 343/343 batches finished ---
+2023-01-07 10:59:59,579 P45851 INFO Train loss @epoch 16: 0.773588
+2023-01-07 10:59:59,579 P45851 INFO ************ Epoch=16 end ************
+2023-01-07 11:00:17,362 P45851 INFO [Metrics] AUC: 0.970156
+2023-01-07 11:00:17,362 P45851 INFO Save best model: monitor(max): 0.970156
+2023-01-07 11:00:17,370 P45851 INFO --- 343/343 batches finished ---
+2023-01-07 11:00:17,436 P45851 INFO Train loss @epoch 17: 0.596601
+2023-01-07 11:00:17,436 P45851 INFO ************ Epoch=17 end ************
+2023-01-07 11:00:35,159 P45851 INFO [Metrics] AUC: 0.972341
+2023-01-07 11:00:35,159 P45851 INFO Save best model: monitor(max): 0.972341
+2023-01-07 11:00:35,167 P45851 INFO --- 343/343 batches finished ---
+2023-01-07 11:00:35,213 P45851 INFO Train loss @epoch 18: 0.418616
+2023-01-07 11:00:35,213 P45851 INFO ************ Epoch=18 end ************
+2023-01-07 11:00:52,882 P45851 INFO [Metrics] AUC: 0.971949
+2023-01-07 11:00:52,883 P45851 INFO Monitor(max) STOP: 0.971949 !
+2023-01-07 11:00:52,883 P45851 INFO Reduce learning rate on plateau: 0.000010
+2023-01-07 11:00:52,883 P45851 INFO --- 343/343 batches finished ---
+2023-01-07 11:00:52,930 P45851 INFO Train loss @epoch 19: 0.322704
+2023-01-07 11:00:52,931 P45851 INFO ************ Epoch=19 end ************
+2023-01-07 11:01:10,688 P45851 INFO [Metrics] AUC: 0.972086
+2023-01-07 11:01:10,688 P45851 INFO Monitor(max) STOP: 0.972086 !
+2023-01-07 11:01:10,689 P45851 INFO Reduce learning rate on plateau: 0.000001
+2023-01-07 11:01:10,689 P45851 INFO ********* Epoch==20 early stop *********
+2023-01-07 11:01:10,689 P45851 INFO --- 343/343 batches finished ---
+2023-01-07 11:01:10,735 P45851 INFO Train loss @epoch 20: 0.254288
+2023-01-07 11:01:10,735 P45851 INFO Training finished.
+2023-01-07 11:01:10,735 P45851 INFO Load best model: /home/FuxiCTRv2.0/benchmark/checkpoints/FINAL_movielenslatest_x1/movielenslatest_x1_233328b6/FINAL_movielenslatest_x1_014_50fc5f7f.model
+2023-01-07 11:01:10,749 P45851 INFO ****** Validation evaluation ******
+2023-01-07 11:01:12,324 P45851 INFO [Metrics] AUC: 0.972341 - logloss: 0.194526
+2023-01-07 11:01:12,373 P45851 INFO ******** Test evaluation ********
+2023-01-07 11:01:12,373 P45851 INFO Loading data...
+2023-01-07 11:01:12,374 P45851 INFO Loading data from h5: ../data/Movielens/movielenslatest_x1_233328b6/test.h5
+2023-01-07 11:01:12,380 P45851 INFO Test samples: total/200686, blocks/1
+2023-01-07 11:01:12,380 P45851 INFO Loading test data done.
+2023-01-07 11:01:13,179 P45851 INFO [Metrics] AUC: 0.972538 - logloss: 0.194088
+
+```

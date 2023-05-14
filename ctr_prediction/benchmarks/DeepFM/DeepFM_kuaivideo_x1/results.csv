@@ -1,0 +1,1 @@
+ 20220823-012030,[command] python run_expid.py --config KuaiShou/DeepFM_kuaivideo_x1/DeepFM_kuaivideo_x1_tuner_config_01 --expid DeepFM_kuaivideo_x1_003_a7784cdb --gpu 2,[exp_id] DeepFM_kuaivideo_x1_003_a7784cdb,[dataset_id] kuaivideo_x1_dc7a3035,[train] N.A.,[val] gAUC: 0.666502 - AUC: 0.745152 - logloss: 0.440012,[test] gAUC: 0.666502 - AUC: 0.745152 - logloss: 0.440012

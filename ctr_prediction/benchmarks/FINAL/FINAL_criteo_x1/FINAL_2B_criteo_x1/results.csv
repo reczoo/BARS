@@ -1,0 +1,1 @@
+ 20221231-172915,[command] python run_expid.py --config Criteo/FINAL_criteo_x1/FINAL_2B_criteo_x1_tuner_config_01 --expid FINAL_criteo_x1_028_b6c861e4 --gpu 2,[exp_id] FINAL_criteo_x1_028_b6c861e4,[dataset_id] criteo_x1_49102577,[train] N.A.,[val] AUC: 0.815126 - logloss: 0.436976,[test] AUC: 0.815438 - logloss: 0.436520

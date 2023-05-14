@@ -1,0 +1,35 @@
+base_config: ../model_zoo/FINAL/config/
+base_expid: FINAL_default
+dataset_id: movielenslatest_x1
+
+dataset_config:
+    movielenslatest_x1:
+        data_root: ../data/Movielens/
+        data_format: csv
+        train_data: ../data/Movielens/MovielensLatest_x1/train.csv
+        valid_data: ../data/Movielens/MovielensLatest_x1/valid.csv
+        test_data: ../data/Movielens/MovielensLatest_x1/test.csv
+        min_categr_count: 1
+        feature_cols:
+            - {name: ["user_id", "item_id", "tag_id"],
+               active: True, dtype: float, type: categorical}
+        label_col: {name: label, dtype: float}
+
+
+tuner_space:
+    model_root: './checkpoints/FINAL_movielenslatest_x1/'
+    embedding_dim: 10
+    embedding_regularizer: 1.e-2
+    block_type: "1B"
+    batch_norm: True
+    use_field_gate: False
+    block1_hidden_units: [[400, 400, 400], [400, 400], [400]]
+    block1_hidden_activations: ReLU
+    block1_dropout: [0, 0.1, 0.2]
+    learning_rate: 1.e-3
+    batch_size: 4096
+    seed: 2021
+    monitor: 'AUC'
+    monitor_mode: 'max'
+    metrics: [['AUC', 'logloss']]
+

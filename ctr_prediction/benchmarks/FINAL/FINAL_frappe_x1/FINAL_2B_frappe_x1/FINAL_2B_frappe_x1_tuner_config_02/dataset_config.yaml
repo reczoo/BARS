@@ -1,0 +1,14 @@
+frappe_x1_47e6e0df:
+    data_format: csv
+    data_root: ../data/Frappe/
+    feature_cols:
+    -   active: true
+        dtype: float
+        name: [user, item, daytime, weekday, isweekend, homework, cost, weather, country,
+            city]
+        type: categorical
+    label_col: {dtype: float, name: label}
+    min_categr_count: 1
+    test_data: ../data/Frappe/Frappe_x1/test.csv
+    train_data: ../data/Frappe/Frappe_x1/train.csv
+    valid_data: ../data/Frappe/Frappe_x1/valid.csv

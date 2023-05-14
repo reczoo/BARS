@@ -1,0 +1,45 @@
+base_config: ../model_zoo/FinalMLP/config/
+base_expid: FinalMLP_default
+dataset_id: criteo_x1
+
+dataset_config:
+    criteo_x1:
+        data_root: ../data/Criteo/
+        data_format: csv
+        train_data: ../data/Criteo/Criteo_x1/train.csv
+        valid_data: ../data/Criteo/Criteo_x1/valid.csv
+        test_data: ../data/Criteo/Criteo_x1/test.csv
+        min_categr_count: 1
+        feature_cols:
+            - {name: ["I1", "I2", "I3", "I4", "I5", "I6", "I7", "I8", "I9", "I10", "I11", "I12", "I13"],
+               active: True, dtype: float, type: numeric}
+            - {name: ["C1", "C2", "C3", "C4", "C5", "C6", "C7", "C8", "C9", "C10",
+                      "C11", "C12", "C13", "C14", "C15", "C16", "C17", "C18", "C19", "C20", "C21", "C22", 
+                      "C23", "C24", "C25", "C26"], active: True, dtype: float, type: categorical}
+        label_col: {name: label, dtype: float}
+
+tuner_space:
+    model_root: './checkpoints/FinalMLP_criteo_x1/'
+    embedding_dim: 10
+    embedding_regularizer: 1.e-5
+    mlp1_batch_norm: True
+    mlp2_batch_norm: True
+    mlp1_hidden_units: [[400, 400, 400]]
+    mlp2_hidden_units: [[1000]]
+    mlp1_dropout: 0.2
+    mlp2_dropout: 0.3
+    use_fs: True
+    fs_hidden_units: [[800]]
+    fs1_context: [["I1", "I2", "I3", "I4", "I5", "I6", "I7", "I8", "I9", "I10", "I11", "I12", "I13"]]
+    fs2_context: [["C1"], ["C2"], ["C5"], ["C6"], ["C8"], ["C9"], ["C14"], ["C17"]]
+    num_heads: 200
+    learning_rate: 1.e-3
+    batch_size: 4096
+    seed: 2021
+    monitor: 'AUC'
+    monitor_mode: 'max'
+    metrics: [['AUC', 'logloss']]
+    verbose: 0
+
+
+ 
