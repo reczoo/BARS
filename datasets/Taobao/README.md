@@ -47,7 +47,7 @@ raw_behavior_log:
 
 + Dataset description
 
-    Taobao is a dataset provided by Alibaba, which contains 8 days of ad click-through data (26 million records) that are randomly sampled from 1140000 users. Following the original data split, we use the first 7 days (i.e., 20170506-20170512) of samples for training, and the last day's samples (i.e., 20170513) for testing. We follow the preprocessing steps that have been applied to [reproducing the DMR work](https://aistudio.baidu.com/aistudio/projectdetail/1805731). Note that a small part (~5%) of samples have been dropped during preprocessing due the missing of user or item profiles. The preprocessed data can be accessed from the [BARS benchmark](https://github.com/openbenchmark/BARS/tree/main/datasets).
+    Taobao is a dataset provided by Alibaba, which contains 8 days of ad click-through data (26 million records) that are randomly sampled from 1140000 users. Following the original data split, we use the first 7 days (i.e., 20170506-20170512) of samples for training, and the last day's samples (i.e., 20170513) for testing. We follow the preprocessing steps that have been applied to [reproducing the DMR work](https://aistudio.baidu.com/aistudio/projectdetail/1805731). Note that in their code, a small part (~5%) of samples have been dropped during preprocessing due the missing of user or item profiles. The preprocessed data can be accessed from the [BARS benchmark](https://github.com/openbenchmark/BARS/tree/main/datasets).
 
     The dataset statistics are summarized as follows.
 
