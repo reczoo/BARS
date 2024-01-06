@@ -10,11 +10,11 @@ jupytext:
     jupytext_version: 1.14.5
 ---
 
-# Criteo_x1
+# Frappe_x1
 
 ```{note}
 Please use the following evaluation settings for this benchmark:
-+ Dataset split: [Criteo_x1](https://github.com/reczoo/Datasets/tree/main/Criteo/Criteo_x1)
++ Dataset split: [Frappe_x1](https://github.com/reczoo/Datasets/tree/main/Frappe/Frappe_x1)
 + Rare features filtering: min_categr_count=1
 + Embedding size: 10
 ```
@@ -23,6 +23,6 @@ Please use the following evaluation settings for this benchmark:
 
 ```{code-cell}
 from plots import show_table, show_plot
-show_plot("criteo_x1.csv")
-show_table("criteo_x1.csv")
+show_plot("frappe_x1.csv")
+show_table("frappe_x1.csv")
 ```

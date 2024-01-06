@@ -1,5 +1,0 @@
-# BarsCTR Leaderboard
-
-```{tableofcontents}
-```
-

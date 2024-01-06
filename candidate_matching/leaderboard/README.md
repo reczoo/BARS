@@ -1,5 +1,0 @@
-# BarsMatch Leaderboard
-
-
-```{tableofcontents}
-```

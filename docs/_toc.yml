@@ -1,0 +1,51 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: index.md
+parts:
+- caption: PAPER LIST
+  chapters:
+  - file: CTR/papers.md
+  - file: Matching/papers.md
+
+- caption: "CTR PREDICTION"
+  chapters:
+  - file: CTR/index.md
+  - url: https://reczoo.github.io/datasets/CTR
+    title: Benchmark Datasets
+  - url: https://github.com/openbenchmark/BARS/tree/main/ranking/ctr
+    title: Benchmark Code
+  - file: CTR/leaderboard/index.md
+    sections:
+    - file: CTR/leaderboard/avazu_x1.md
+    - file: CTR/leaderboard/avazu_x4.md
+    - file: CTR/leaderboard/criteo_x1.md
+    - file: CTR/leaderboard/criteo_x4.md
+    - file: CTR/leaderboard/frappe_x1.md
+    - file: CTR/leaderboard/kkbox_x1.md
+    - file: CTR/leaderboard/kuaivideo_x1.md
+    - file: CTR/leaderboard/microvideo1.7m_x1.md
+    - file: CTR/leaderboard/movielenslatest_x1.md
+    - file: CTR/leaderboard/taobaoad_x1.md
+
+- caption: "CANDIDATE MATCHING"
+  chapters:
+  - file: Matching/index.md
+  - url: https://reczoo.github.io/datasets/Matching
+    title: Benchmark Datasets
+  - url: https://github.com/openbenchmark/BARS/tree/main/matching
+    title: Benchmark Code
+  - file: Matching/leaderboard/index.md
+    sections:
+    - file: Matching/leaderboard/amazonbooks_m1.md
+    - file: Matching/leaderboard/gowalla_m1.md
+    - file: Matching/leaderboard/yelp18_m1.md
+
+# - caption: RE-RANKING BENCHMARK
+
+# - caption: PRE-TRAINING BENCHMARK
+
+- caption: CONTRIBUTION
+  chapters:
+  - file: contribution.md
