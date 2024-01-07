@@ -31,7 +31,7 @@ Please use the following evaluation settings for this benchmark:
 ```{admonition} Avazu_x4_002
 :class: note
 Please use the following evaluation settings for this benchmark:
-+ Dataset split: [avazu_x4](https://github.com/reczoo/Datasets/tree/main/Avazu/Avazu_x4)
++ Dataset split: [Avazu_x4](https://github.com/reczoo/Datasets/tree/main/Avazu/Avazu_x4)
 + Rare features filtering: min_categr_count=1
 + Embedding size: 40
 ```

@@ -22,7 +22,7 @@ If you find our benchmarks helpful in your research, please kindly cite the foll
 
 ## Contributing
 
-We welcome any contribution that could help improve the BARS benchmark. Check the [start guide on how to contribute](./contribution.md).
+We welcome any contribution that could help improve the BARS benchmark. Check the [start guide on how to contribute](./docs/contribution.md).
 
 ## Discussion
 

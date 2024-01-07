@@ -1,0 +1,5 @@
+jupyter-book==0.15.1
+docutils==0.17.1
+itables==1.6.3
+pandas==1.0.1
+plotly==5.18.0

@@ -12,6 +12,7 @@ def show_table(csv_path):
     df["Running Steps"] = df["Running Steps"].map(lambda x: f"<a href={x}>🔗</a>")
     df = df.sort_values(by=["AUC"], ascending=False).reset_index(drop=True)
     df.insert(0, "Rank", range(1, len(df) + 1))
+    df[['AUC', 'Logloss']] = df[['AUC', 'Logloss']].applymap('{:.4f}'.format)
     show(df, lengthMenu=[10, 20, 50, 100], classes="display")
 
 def show_plot(csv_path):
@@ -19,12 +20,12 @@ def show_plot(csv_path):
     fig = make_subplots(specs=[[{"secondary_y": True}]])
     fig.add_trace(
         go.Scatter(x=df["Model"], y=df["AUC"], name="AUC", mode='lines+markers',
-                   line=dict(color="#0071a7"), marker=dict(size=7)),
+                   line=dict(color="#0071a7", shape="spline", smoothing=1.3), marker=dict(size=7)),
         secondary_y=False,
     )
     fig.add_trace(
         go.Scatter(x=df["Model"], y=df["Logloss"], name="Logloss", mode='lines+markers',
-                   line=dict(color="#ff404e"), marker=dict(size=7)),
+                   line=dict(color="#ff404e", shape="spline", smoothing=1.3), marker=dict(size=7)),
         secondary_y=True,
     )
 

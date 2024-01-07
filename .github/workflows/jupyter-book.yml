@@ -9,18 +9,16 @@ on:
 # This job installs dependencies, build the book, and pushes it to `gh-pages`
 jobs:
   deploy-book:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
-    # Install dependencies
+    # Install dependencies and build the book
     - uses: actions/checkout@v3
     - uses: actions/setup-python@v3
       with:
         python-version: 3.7
-    - run: pip install jupyter-book==0.15.1, docutils==0.17.1
-
-    # Build the book
-    - name: Build the book
-      run: |
+    - run: |
+        cd docs
+        pip install -r requirements.txt
         jupyter-book build .
 
     # Push the book's HTML to github-pages
@@ -28,8 +26,8 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         personal_token: ${{ secrets.PERSONAL_TOKEN }}
-        publish_dir: ./_build/html
-        exclude_assets: '_sources'
         external_repository: openbenchmark/openbenchmark.github.io
         publish_branch: main
+        publish_dir: ./docs/_build/html
+        exclude_assets: '_sources'
         destination_dir: BARS

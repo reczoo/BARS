@@ -6,13 +6,14 @@ import itables.options as opt
 opt.columnDefs = [{"className": "dt-center", "targets": "_all"}]
 
 def show_table(csv_path):
-    df = pd.read_csv(csv_path)
-    df = df.fillna("")
+    df = pd.read_csv(csv_path).fillna("")
     df["Model"] = df.apply(lambda x: f"<a href={x['Paper URL']}>{x['Model']}</a>", axis=1)
     del df["Paper URL"], df["Recall@50"], df["NDCG@50"], df["HitRate@50"]
     df["Running Steps"] = df["Running Steps"].map(lambda x: f"<a href={x}>🔗</a>")
     df = df.sort_values(by=["Recall@20"], ascending=False).reset_index(drop=True)
     df.insert(0, "Rank", range(1, len(df) + 1))
+    df[['Recall@20', 'NDCG@20', 'HitRate@20']] = df[['Recall@20', 'NDCG@20', 'HitRate@20']].applymap(
+        lambda x: '{:.4f}'.format(x) if x else "")
     show(df, lengthMenu=[10, 20, 50, 100], classes="display")
 
 def show_plot(csv_path):
@@ -20,12 +21,12 @@ def show_plot(csv_path):
     fig = make_subplots(specs=[[{"secondary_y": True}]])
     fig.add_trace(
         go.Scatter(x=df["Model"], y=df["Recall@20"], name="Recall@20", mode='lines+markers',
-                   line=dict(color="#0071a7"), marker=dict(size=7)),
+                   line=dict(color="#0071a7", shape="spline", smoothing=1.3), marker=dict(size=7)),
         secondary_y=False,
     )
     fig.add_trace(
         go.Scatter(x=df["Model"], y=df["NDCG@20"], name="NDCG@20", mode='lines+markers',
-                   line=dict(color="#ff404e"), marker=dict(size=7)),
+                   line=dict(color="#ff404e", shape="spline", smoothing=1.3), marker=dict(size=7)),
         secondary_y=True,
     )
 
