@@ -20,7 +20,7 @@
     "metrics": "['AUC', 'logloss']",
     "min_categr_count": "1",
     "model": "DCN",
-    "model_id": "DCN_frappe_x1_005_880c69b8",
+    "model_id": "DCN_frappe_x1_005_b755b0b0",
     "model_root": "./Frappe/DCN_frappe_x1/",
     "monitor": "AUC",
     "monitor_mode": "max",

@@ -50,13 +50,13 @@ Running steps:
 
 2. Create a data directory and put the downloaded csv files in `../data/Frappe/Frappe_x1`.
 
-3. Both `dataset_config.yaml` and `model_config.yaml` files are available in [CrossNet_criteo_x1_tuner_config_02](./CrossNet_criteo_x1_tuner_config_02). Make sure the data paths in `dataset_config.yaml` are correctly set to what we create in the last step.
+3. Both `dataset_config.yaml` and `model_config.yaml` files are available in [CrossNet_frappe_x1_tuner_config_02](./CrossNet_frappe_x1_tuner_config_02). Make sure the data paths in `dataset_config.yaml` are correctly set to what we create in the last step.
 
 4. Run the following script to start.
 
     ```bash
     cd CrossNet_frappe_x1
-    nohup python run_expid.py --config ./CrossNet_criteo_x1_tuner_config_02 --expid DCN_frappe_x1_005_880c69b8 --gpu 0 > run.log &
+    nohup python run_expid.py --config ./CrossNet_frappe_x1_tuner_config_02 --expid DCN_frappe_x1_005_b755b0b0 --gpu 0 > run.log &
     tail -f run.log
     ```
 
@@ -91,7 +91,7 @@ Running steps:
     "metrics": "['AUC', 'logloss']",
     "min_categr_count": "1",
     "model": "DCN",
-    "model_id": "DCN_frappe_x1_005_880c69b8",
+    "model_id": "DCN_frappe_x1_005_b755b0b0",
     "model_root": "./Frappe/DCN_frappe_x1/",
     "monitor": "AUC",
     "monitor_mode": "max",
