@@ -8,11 +8,11 @@ A curated list of CTR prediction models
 |   |   |   |    |    | 
 | :---------:|:------:|:------:|:------:|:------:|
 |  **2023**  |  [FinalNet](https://dl.acm.org/doi/10.1145/3539618.3591988) {cite}`FinalNet`<br>SIGIR'23<br>Huawei   | [FinalMLP](https://arxiv.org/abs/2304.00902) {cite}`FinalMLP`<br>AAAI'23<br>Huawei    | [EulerNet](https://arxiv.org/abs/2304.10711) {cite}`EulerNet`<br>SIGIR'23<br>Huawei |  [GDCN](https://arxiv.org/abs/2311.04635) {cite}`GDCN`<br>CIKM'23<br>Microsoft  |  
-|  | [MemoNet](https://arxiv.org/abs/2211.01334) {cite}`MemoNet`<br>CIKM'23<br>Sina Weibo | 
-|  **2022**  |    [FRNet](https://arxiv.org/abs/2204.08758) {cite}`FRNet`<br>SIGIR'22<br>Microsoft |   [APG](https://arxiv.org/abs/2203.16218) {cite}`APG`<br>NeurIPS'22<br>Alibaba   | [FINT](https://arxiv.org/abs/2107.01999) {cite}`FINT`<br>ICASSP'22<br>iQIYI    | 
+|  | [MemoNet](https://arxiv.org/abs/2211.01334) {cite}`MemoNet`<br>CIKM'23<br>Sina Weibo | [AdaEnsemble](https://arxiv.org/abs/2301.08353) {cite}`AdaEnsemble`<br>AdKDD'23<br>Credit Karma |
+|  **2022**  |    [FRNet](https://arxiv.org/abs/2204.08758) {cite}`FRNet`<br>SIGIR'22<br>Microsoft |   [APG](https://arxiv.org/abs/2203.16218) {cite}`APG`<br>NeurIPS'22<br>Alibaba   | [FINT](https://arxiv.org/abs/2107.01999) {cite}`FINT`<br>ICASSP'22<br>iQIYI    | [DHEN](https://arxiv.org/abs/2203.11014) {cite}`DHEN`<br>DLP-KDD'22<br>Meta |
 |  **2021**  |  [DCN-V2](https://arxiv.org/abs/2008.13535) {cite}`DCNv2`<br>WWW'21<br>Google  |  [FM2](https://arxiv.org/abs/2102.12994) {cite}`FM2`<br>WWW'21<br>Yahoo  |  [EDCN](https://dlp-kdd.github.io/assets/pdf/DLP-KDD_2021_paper_12.pdf) {cite}`EDCN`<br>CIKM'21<br>Huawei  | [DESTINE](https://arxiv.org/abs/2101.03654) {cite}`DESTINE`<br>CIKM'21<br>Alibaba | 
 |   |  [SAM](https://arxiv.org/abs/2105.05563) {cite}`SAM`<br>SIGIR'21<br>BOSS Zhipin  |   [PCF-GNN](https://arxiv.org/abs/2105.07752) {cite}`PCF-GNN`<br>SIGIR'21<br>Alibaba | [xLightFM](https://dl.acm.org/doi/10.1145/3404835.3462941) {cite}`xLightFM`<br>SIGIR'21  |    [AOANet](https://dl.acm.org/doi/10.1145/3447548.3467133) {cite}`AOANet`<br>KDD'21<br>Didi Chuxing  | 
-|      | [DCAP](https://arxiv.org/abs/2105.08649) {cite}`DCAP`<br> CIKM'21 | |
+|      | [DCAP](https://arxiv.org/abs/2105.08649) {cite}`DCAP`<br> CIKM'21 |  [xDeepInt](https://arxiv.org/abs/2301.01089) {cite}`xDeepInt`<br>DLP-KDD'21<br>Credit Karma  |
 |  **2020**   |  [AFN](https://ojs.aaai.org/index.php/AAAI/article/view/5768) {cite}`AFN`<br>AAAI'20 |   [DeepIM](https://dl.acm.org/doi/10.1145/3340531.3412077) {cite}`DeepIM`<br>CIKM'20<br>Alibaba  |  [AutoGroup](https://dl.acm.org/doi/abs/10.1145/3397271.3401082) {cite}`AutoGroup`<br>SIGIR'20<br>Huawei | [FWL](https://arxiv.org/abs/2012.00202) {cite}`FWL`<br>NeurIPS'20 | 
 |   |  [ONN](https://arxiv.org/pdf/1904.12579) {cite}`ONN`<br>NeuralNets'20  |  [DIFM](https://www.ijcai.org/Proceedings/2020/0434.pdf) {cite}`DIFM`<br>IJCAI'20   | [AutoFIS](https://arxiv.org/abs/2003.11235) {cite}`AutoFIS`<br>KDD'20<br>Huawei | [AutoCTR](https://arxiv.org/abs/2007.06434) {cite}`AutoCTR`<br>KDD'20<br>Facebook | 
 |      |[GLIDER](https://arxiv.org/abs/2006.10966) {cite}`GLIDER`<br>ICLR'20<br>Facebook  | 
@@ -41,9 +41,12 @@ A curated list of CTR prediction models
 
 |   |   |   |    |    | |
 | :---------:|:------:|:------:|:------:|:------:|:------:|
-| **2023**  | [SATrans](https://dl.acm.org/doi/10.1145/3580305.3599936) {cite}`SATrans`<br>KDD'23<br>Tencent | 
-|  **2021**   | [STAR](https://arxiv.org/abs/2101.11427) {cite}`STAR`<br>CIKM'21<br>Alibaba |     [DASL](https://arxiv.org/abs/2106.02768) {cite}`DASL`<br>KDD'21<br>Alibaba  |   
+| **2023**  | [SATrans](https://dl.acm.org/doi/10.1145/3580305.3599936) {cite}`SATrans`<br>KDD'23<br>Tencent | [DFFM](https://dl.acm.org/doi/10.1145/3583780.3615469) {cite}`DFFM`<br>CIKM'23<br>Huawei |
+|  **2022**   | [M2M](https://arxiv.org/pdf/2201.06814) {cite}`M2M`<br>WSDM'22<br>Alibaba   |
+|  **2021**   | [STAR](https://arxiv.org/abs/2101.11427) {cite}`STAR`<br>CIKM'21<br>Alibaba |     [DASL](https://arxiv.org/abs/2106.02768) {cite}`DASL`<br>KDD'21<br>Alibaba  |   [GemNN](https://github.com/tangxyw/RecSysPapers/blob/main/Industry/CreativeSelection/%5B2021%5D%5BBaidu%5D%5BGemNN%5D%20GemNN%20-%20Gating-Enhanced%20Multi-Task%20Neural%20Networks%20with%20Feature%20Interaction%20Learning%20for%20CTR%20Prediction.pdf) {cite}`GemNN`<br>SIGIR'21<br>Baidu | [MTMS](https://github.com/tangxyw/RecSysPapers/blob/main/Multi-Scenario/%5B2021%5D%5BBaidu%5D%20Multi-Task%20and%20Multi-Scene%20Unified%20Ranking%20Model%20for%20Online%20Advertising.pdf) {cite}`MTMS`<br>BigData'21<br>Baidu |
 | **2019** |  [DeepMCP](https://arxiv.org/abs/1906.04365) {cite}`DeepMCP`<br>IJCAI'19<br>Alibaba |   
+
+
 
 ## Embedding Learning
 
@@ -52,12 +55,13 @@ A curated list of CTR prediction models
 |  **2021**  | [AutoDis](https://arxiv.org/abs/2012.08986) {cite}`AutoDis`<br>KDD'21<br>Huawei |     [DG-ENN](https://arxiv.org/abs/2106.00314) {cite}`DG-ENN`<br>KDD'21<br>Huawei  |    [GME](https://arxiv.org/abs/2105.08909) {cite}`GME`<br>KDD'21<br>Alibaba  | 
 |  **2019**  |  [MetaEmbedding](https://arxiv.org/abs/1904.11547) {cite}`MetaEmbedding`<br>SIGIR'19   |
 
-## Pretraining
+## Pre-training
 
 |   |   |   |    |    | |
 | :---------:|:------:|:------:|:------:|:------:|:------:|
-| **2023**   | [MAP](https://arxiv.org/abs/2308.01737) {cite}`MAP`<br>KDD'23<br>Huawei |   [BERT4CTR](https://arxiv.org/abs/2308.11527) {cite}`BERT4CTR`<br>KDD'23<br>Microsoft | 
-
+| **2023**   | [MAP](https://arxiv.org/abs/2308.01737) {cite}`MAP`<br>KDD'23<br>Huawei |   [BERT4CTR](https://arxiv.org/abs/2308.11527) {cite}`BERT4CTR`<br>KDD'23<br>Microsoft |  [SUM](https://arxiv.org/abs/2311.09544) {cite}`SUM`<br>Arxiv'23<br>Meta | [UniM^2Rec](https://arxiv.org/abs/2311.01831) {cite}`UniM2Rec`<br>Arxiv'23<br>Tencent | 
+|  | [SGP](https://assets.amazon.science/b7/42/03be071743d5a57cb1656e6caa34/scaling-generative-pre-training-for-user-ad-activity-sequences.pdf) {cite}`SGP`<br>AdKDD'23<br>Amazon | 
+| **2022**   | [GUIM](https://arxiv.org/abs/2207.00750) {cite}`GUIM`<br>Arxiv'22<br>Alibaba |  
 
 
 ## References
