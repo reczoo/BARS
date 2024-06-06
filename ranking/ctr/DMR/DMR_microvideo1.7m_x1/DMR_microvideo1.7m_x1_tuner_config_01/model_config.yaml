@@ -1,0 +1,400 @@
+DMR_microvideo1.7m_x1_001_c25fe1ce:
+    attention_activation: Dice
+    attention_dropout: 0.1
+    attention_hidden_units: [512, 256]
+    aux_loss_beta: 0
+    batch_norm: true
+    batch_size: 2048
+    bn_only_once: false
+    context_field: null
+    dataset_id: microvideo1.7m_x1_83b31456
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    enable_i2i_rel: false
+    enable_sum_pooling: false
+    enable_u2i_rel: true
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMR
+    model_root: ./checkpoints/DMR_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 2
+    save_best_only: true
+    seed: 2022
+    sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    shuffle: true
+    target_field: !!python/tuple [item_id, cate_id]
+    task: binary_classification
+    use_features: null
+    use_pos_emb: false
+    verbose: 1
+DMR_microvideo1.7m_x1_002_6062b653:
+    attention_activation: Dice
+    attention_dropout: 0.1
+    attention_hidden_units: [512, 256]
+    aux_loss_beta: 0
+    batch_norm: true
+    batch_size: 2048
+    bn_only_once: false
+    context_field: null
+    dataset_id: microvideo1.7m_x1_83b31456
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    enable_i2i_rel: false
+    enable_sum_pooling: false
+    enable_u2i_rel: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMR
+    model_root: ./checkpoints/DMR_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 2
+    save_best_only: true
+    seed: 2022
+    sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    shuffle: true
+    target_field: !!python/tuple [item_id, cate_id]
+    task: binary_classification
+    use_features: null
+    use_pos_emb: false
+    verbose: 1
+DMR_microvideo1.7m_x1_003_679e4c7d:
+    attention_activation: Dice
+    attention_dropout: 0.2
+    attention_hidden_units: [512, 256]
+    aux_loss_beta: 0
+    batch_norm: true
+    batch_size: 2048
+    bn_only_once: false
+    context_field: null
+    dataset_id: microvideo1.7m_x1_83b31456
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    enable_i2i_rel: false
+    enable_sum_pooling: false
+    enable_u2i_rel: true
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMR
+    model_root: ./checkpoints/DMR_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 2
+    save_best_only: true
+    seed: 2022
+    sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    shuffle: true
+    target_field: !!python/tuple [item_id, cate_id]
+    task: binary_classification
+    use_features: null
+    use_pos_emb: false
+    verbose: 1
+DMR_microvideo1.7m_x1_004_5b4b54a8:
+    attention_activation: Dice
+    attention_dropout: 0.2
+    attention_hidden_units: [512, 256]
+    aux_loss_beta: 0
+    batch_norm: true
+    batch_size: 2048
+    bn_only_once: false
+    context_field: null
+    dataset_id: microvideo1.7m_x1_83b31456
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    enable_i2i_rel: false
+    enable_sum_pooling: false
+    enable_u2i_rel: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMR
+    model_root: ./checkpoints/DMR_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 2
+    save_best_only: true
+    seed: 2022
+    sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    shuffle: true
+    target_field: !!python/tuple [item_id, cate_id]
+    task: binary_classification
+    use_features: null
+    use_pos_emb: false
+    verbose: 1
+DMR_microvideo1.7m_x1_005_8c2f4603:
+    attention_activation: Dice
+    attention_dropout: 0.1
+    attention_hidden_units: [512, 256]
+    aux_loss_beta: 0
+    batch_norm: true
+    batch_size: 2048
+    bn_only_once: false
+    context_field: null
+    dataset_id: microvideo1.7m_x1_83b31456
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0005
+    enable_i2i_rel: false
+    enable_sum_pooling: false
+    enable_u2i_rel: true
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMR
+    model_root: ./checkpoints/DMR_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 2
+    save_best_only: true
+    seed: 2022
+    sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    shuffle: true
+    target_field: !!python/tuple [item_id, cate_id]
+    task: binary_classification
+    use_features: null
+    use_pos_emb: false
+    verbose: 1
+DMR_microvideo1.7m_x1_006_6a090266:
+    attention_activation: Dice
+    attention_dropout: 0.1
+    attention_hidden_units: [512, 256]
+    aux_loss_beta: 0
+    batch_norm: true
+    batch_size: 2048
+    bn_only_once: false
+    context_field: null
+    dataset_id: microvideo1.7m_x1_83b31456
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0005
+    enable_i2i_rel: false
+    enable_sum_pooling: false
+    enable_u2i_rel: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMR
+    model_root: ./checkpoints/DMR_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 2
+    save_best_only: true
+    seed: 2022
+    sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    shuffle: true
+    target_field: !!python/tuple [item_id, cate_id]
+    task: binary_classification
+    use_features: null
+    use_pos_emb: false
+    verbose: 1
+DMR_microvideo1.7m_x1_007_591028ea:
+    attention_activation: Dice
+    attention_dropout: 0.2
+    attention_hidden_units: [512, 256]
+    aux_loss_beta: 0
+    batch_norm: true
+    batch_size: 2048
+    bn_only_once: false
+    context_field: null
+    dataset_id: microvideo1.7m_x1_83b31456
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0005
+    enable_i2i_rel: false
+    enable_sum_pooling: false
+    enable_u2i_rel: true
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMR
+    model_root: ./checkpoints/DMR_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 2
+    save_best_only: true
+    seed: 2022
+    sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    shuffle: true
+    target_field: !!python/tuple [item_id, cate_id]
+    task: binary_classification
+    use_features: null
+    use_pos_emb: false
+    verbose: 1
+DMR_microvideo1.7m_x1_008_dac65736:
+    attention_activation: Dice
+    attention_dropout: 0.2
+    attention_hidden_units: [512, 256]
+    aux_loss_beta: 0
+    batch_norm: true
+    batch_size: 2048
+    bn_only_once: false
+    context_field: null
+    dataset_id: microvideo1.7m_x1_83b31456
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0005
+    enable_i2i_rel: false
+    enable_sum_pooling: false
+    enable_u2i_rel: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMR
+    model_root: ./checkpoints/DMR_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 2
+    save_best_only: true
+    seed: 2022
+    sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    shuffle: true
+    target_field: !!python/tuple [item_id, cate_id]
+    task: binary_classification
+    use_features: null
+    use_pos_emb: false
+    verbose: 1

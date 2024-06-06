@@ -1,0 +1,612 @@
+DMIN_amazonelectronics_x1_001_a107bec3:
+    attention_activation: Dice
+    attention_dropout: 0.1
+    attention_hidden_units: [256, 128]
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_lambda: 0
+    batch_norm: true
+    batch_size: 1024
+    bn_only_once: true
+    dataset_id: amazonelectronics_x1_51836f99
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    enable_sum_pooling: true
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    layer_norm: true
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMIN
+    model_root: ./checkpoints/DMIN_amazonelectronics_x1/
+    monitor: gAUC
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 8
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 4
+    save_best_only: true
+    seed: 20222023
+    sequence_field: !!python/tuple [item_history, cate_history]
+    shuffle: true
+    target_field: !!python/tuple [item_id, cate_id]
+    task: binary_classification
+    use_behavior_refiner: true
+    use_features: null
+    use_pos_emb: true
+    verbose: 1
+DMIN_amazonelectronics_x1_002_239f4f9c:
+    attention_activation: Dice
+    attention_dropout: 0.1
+    attention_hidden_units: [256, 128]
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_lambda: 0
+    batch_norm: true
+    batch_size: 1024
+    bn_only_once: true
+    dataset_id: amazonelectronics_x1_51836f99
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    enable_sum_pooling: true
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    layer_norm: true
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMIN
+    model_root: ./checkpoints/DMIN_amazonelectronics_x1/
+    monitor: gAUC
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 8
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 8
+    save_best_only: true
+    seed: 20222023
+    sequence_field: !!python/tuple [item_history, cate_history]
+    shuffle: true
+    target_field: !!python/tuple [item_id, cate_id]
+    task: binary_classification
+    use_behavior_refiner: true
+    use_features: null
+    use_pos_emb: true
+    verbose: 1
+DMIN_amazonelectronics_x1_003_2caca3c0:
+    attention_activation: Dice
+    attention_dropout: 0.1
+    attention_hidden_units: [256, 128]
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_lambda: 0
+    batch_norm: true
+    batch_size: 1024
+    bn_only_once: true
+    dataset_id: amazonelectronics_x1_51836f99
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    enable_sum_pooling: true
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    layer_norm: true
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMIN
+    model_root: ./checkpoints/DMIN_amazonelectronics_x1/
+    monitor: gAUC
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 8
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 16
+    save_best_only: true
+    seed: 20222023
+    sequence_field: !!python/tuple [item_history, cate_history]
+    shuffle: true
+    target_field: !!python/tuple [item_id, cate_id]
+    task: binary_classification
+    use_behavior_refiner: true
+    use_features: null
+    use_pos_emb: true
+    verbose: 1
+DMIN_amazonelectronics_x1_004_04fd36fe:
+    attention_activation: Dice
+    attention_dropout: 0.2
+    attention_hidden_units: [256, 128]
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_lambda: 0
+    batch_norm: true
+    batch_size: 1024
+    bn_only_once: true
+    dataset_id: amazonelectronics_x1_51836f99
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    enable_sum_pooling: true
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    layer_norm: true
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMIN
+    model_root: ./checkpoints/DMIN_amazonelectronics_x1/
+    monitor: gAUC
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 8
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 4
+    save_best_only: true
+    seed: 20222023
+    sequence_field: !!python/tuple [item_history, cate_history]
+    shuffle: true
+    target_field: !!python/tuple [item_id, cate_id]
+    task: binary_classification
+    use_behavior_refiner: true
+    use_features: null
+    use_pos_emb: true
+    verbose: 1
+DMIN_amazonelectronics_x1_005_4392f024:
+    attention_activation: Dice
+    attention_dropout: 0.2
+    attention_hidden_units: [256, 128]
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_lambda: 0
+    batch_norm: true
+    batch_size: 1024
+    bn_only_once: true
+    dataset_id: amazonelectronics_x1_51836f99
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    enable_sum_pooling: true
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    layer_norm: true
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMIN
+    model_root: ./checkpoints/DMIN_amazonelectronics_x1/
+    monitor: gAUC
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 8
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 8
+    save_best_only: true
+    seed: 20222023
+    sequence_field: !!python/tuple [item_history, cate_history]
+    shuffle: true
+    target_field: !!python/tuple [item_id, cate_id]
+    task: binary_classification
+    use_behavior_refiner: true
+    use_features: null
+    use_pos_emb: true
+    verbose: 1
+DMIN_amazonelectronics_x1_006_30327662:
+    attention_activation: Dice
+    attention_dropout: 0.2
+    attention_hidden_units: [256, 128]
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_lambda: 0
+    batch_norm: true
+    batch_size: 1024
+    bn_only_once: true
+    dataset_id: amazonelectronics_x1_51836f99
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    enable_sum_pooling: true
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    layer_norm: true
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMIN
+    model_root: ./checkpoints/DMIN_amazonelectronics_x1/
+    monitor: gAUC
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 8
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 16
+    save_best_only: true
+    seed: 20222023
+    sequence_field: !!python/tuple [item_history, cate_history]
+    shuffle: true
+    target_field: !!python/tuple [item_id, cate_id]
+    task: binary_classification
+    use_behavior_refiner: true
+    use_features: null
+    use_pos_emb: true
+    verbose: 1
+DMIN_amazonelectronics_x1_007_2401549e:
+    attention_activation: Dice
+    attention_dropout: 0.1
+    attention_hidden_units: [256, 128]
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_lambda: 0
+    batch_norm: true
+    batch_size: 1024
+    bn_only_once: true
+    dataset_id: amazonelectronics_x1_51836f99
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    layer_norm: true
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMIN
+    model_root: ./checkpoints/DMIN_amazonelectronics_x1/
+    monitor: gAUC
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 8
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 4
+    save_best_only: true
+    seed: 20222023
+    sequence_field: !!python/tuple [item_history, cate_history]
+    shuffle: true
+    target_field: !!python/tuple [item_id, cate_id]
+    task: binary_classification
+    use_behavior_refiner: true
+    use_features: null
+    use_pos_emb: true
+    verbose: 1
+DMIN_amazonelectronics_x1_008_9b7d44c5:
+    attention_activation: Dice
+    attention_dropout: 0.1
+    attention_hidden_units: [256, 128]
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_lambda: 0
+    batch_norm: true
+    batch_size: 1024
+    bn_only_once: true
+    dataset_id: amazonelectronics_x1_51836f99
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    layer_norm: true
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMIN
+    model_root: ./checkpoints/DMIN_amazonelectronics_x1/
+    monitor: gAUC
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 8
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 8
+    save_best_only: true
+    seed: 20222023
+    sequence_field: !!python/tuple [item_history, cate_history]
+    shuffle: true
+    target_field: !!python/tuple [item_id, cate_id]
+    task: binary_classification
+    use_behavior_refiner: true
+    use_features: null
+    use_pos_emb: true
+    verbose: 1
+DMIN_amazonelectronics_x1_009_f93efb92:
+    attention_activation: Dice
+    attention_dropout: 0.1
+    attention_hidden_units: [256, 128]
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_lambda: 0
+    batch_norm: true
+    batch_size: 1024
+    bn_only_once: true
+    dataset_id: amazonelectronics_x1_51836f99
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    layer_norm: true
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMIN
+    model_root: ./checkpoints/DMIN_amazonelectronics_x1/
+    monitor: gAUC
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 8
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 16
+    save_best_only: true
+    seed: 20222023
+    sequence_field: !!python/tuple [item_history, cate_history]
+    shuffle: true
+    target_field: !!python/tuple [item_id, cate_id]
+    task: binary_classification
+    use_behavior_refiner: true
+    use_features: null
+    use_pos_emb: true
+    verbose: 1
+DMIN_amazonelectronics_x1_010_0a9faf2c:
+    attention_activation: Dice
+    attention_dropout: 0.2
+    attention_hidden_units: [256, 128]
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_lambda: 0
+    batch_norm: true
+    batch_size: 1024
+    bn_only_once: true
+    dataset_id: amazonelectronics_x1_51836f99
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    layer_norm: true
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMIN
+    model_root: ./checkpoints/DMIN_amazonelectronics_x1/
+    monitor: gAUC
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 8
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 4
+    save_best_only: true
+    seed: 20222023
+    sequence_field: !!python/tuple [item_history, cate_history]
+    shuffle: true
+    target_field: !!python/tuple [item_id, cate_id]
+    task: binary_classification
+    use_behavior_refiner: true
+    use_features: null
+    use_pos_emb: true
+    verbose: 1
+DMIN_amazonelectronics_x1_011_7367e024:
+    attention_activation: Dice
+    attention_dropout: 0.2
+    attention_hidden_units: [256, 128]
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_lambda: 0
+    batch_norm: true
+    batch_size: 1024
+    bn_only_once: true
+    dataset_id: amazonelectronics_x1_51836f99
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    layer_norm: true
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMIN
+    model_root: ./checkpoints/DMIN_amazonelectronics_x1/
+    monitor: gAUC
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 8
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 8
+    save_best_only: true
+    seed: 20222023
+    sequence_field: !!python/tuple [item_history, cate_history]
+    shuffle: true
+    target_field: !!python/tuple [item_id, cate_id]
+    task: binary_classification
+    use_behavior_refiner: true
+    use_features: null
+    use_pos_emb: true
+    verbose: 1
+DMIN_amazonelectronics_x1_012_10a6586c:
+    attention_activation: Dice
+    attention_dropout: 0.2
+    attention_hidden_units: [256, 128]
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_lambda: 0
+    batch_norm: true
+    batch_size: 1024
+    bn_only_once: true
+    dataset_id: amazonelectronics_x1_51836f99
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: null, name: item_history}
+    - {feature_encoder: null, name: cate_history}
+    group_id: user_id
+    layer_norm: true
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMIN
+    model_root: ./checkpoints/DMIN_amazonelectronics_x1/
+    monitor: gAUC
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 8
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 16
+    save_best_only: true
+    seed: 20222023
+    sequence_field: !!python/tuple [item_history, cate_history]
+    shuffle: true
+    target_field: !!python/tuple [item_id, cate_id]
+    task: binary_classification
+    use_behavior_refiner: true
+    use_features: null
+    use_pos_emb: true
+    verbose: 1

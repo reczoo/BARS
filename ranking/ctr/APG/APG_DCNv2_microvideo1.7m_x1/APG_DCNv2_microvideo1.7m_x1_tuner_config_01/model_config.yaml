@@ -1,0 +1,424 @@
+APG_DCNv2_microvideo1.7m_x1_001_072a8997:
+    batch_norm: true
+    batch_size: 2048
+    condition_features: null
+    condition_mode: self-wise
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: clicked_items
+    - {feature_encoder: layers.MaskedAveragePooling(), name: clicked_categories}
+    generate_bias: true
+    group_id: group_id
+    hypernet_config:
+        dropout_rates: 0.1
+        hidden_activations: relu
+        hidden_units: []
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: APG_DCNv2
+    model_root: ./checkpoints/APG_DCNv2_microvideo1.7m_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    new_condition_emb: false
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    overparam_p: null
+    parallel_dnn_hidden_units: [1024, 512, 256]
+    pickle_feature_encoder: true
+    rank_k: null
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_features: null
+    use_low_rank_mixture: false
+    verbose: 1
+APG_DCNv2_microvideo1.7m_x1_002_61953eea:
+    batch_norm: true
+    batch_size: 2048
+    condition_features: null
+    condition_mode: self-wise
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: clicked_items
+    - {feature_encoder: layers.MaskedAveragePooling(), name: clicked_categories}
+    generate_bias: true
+    group_id: group_id
+    hypernet_config:
+        dropout_rates: 0.1
+        hidden_activations: relu
+        hidden_units: []
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: APG_DCNv2
+    model_root: ./checkpoints/APG_DCNv2_microvideo1.7m_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    new_condition_emb: false
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    overparam_p: [64, 32, 16]
+    parallel_dnn_hidden_units: [1024, 512, 256]
+    pickle_feature_encoder: true
+    rank_k: null
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_features: null
+    use_low_rank_mixture: false
+    verbose: 1
+APG_DCNv2_microvideo1.7m_x1_003_8789fb51:
+    batch_norm: true
+    batch_size: 2048
+    condition_features: null
+    condition_mode: self-wise
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: clicked_items
+    - {feature_encoder: layers.MaskedAveragePooling(), name: clicked_categories}
+    generate_bias: true
+    group_id: group_id
+    hypernet_config:
+        dropout_rates: 0.1
+        hidden_activations: relu
+        hidden_units: []
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: APG_DCNv2
+    model_root: ./checkpoints/APG_DCNv2_microvideo1.7m_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    new_condition_emb: false
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    overparam_p: [32, 16, 8]
+    parallel_dnn_hidden_units: [1024, 512, 256]
+    pickle_feature_encoder: true
+    rank_k: null
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_features: null
+    use_low_rank_mixture: false
+    verbose: 1
+APG_DCNv2_microvideo1.7m_x1_004_0cadbacd:
+    batch_norm: true
+    batch_size: 2048
+    condition_features: null
+    condition_mode: self-wise
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: clicked_items
+    - {feature_encoder: layers.MaskedAveragePooling(), name: clicked_categories}
+    generate_bias: true
+    group_id: group_id
+    hypernet_config:
+        dropout_rates: 0.1
+        hidden_activations: relu
+        hidden_units: []
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: APG_DCNv2
+    model_root: ./checkpoints/APG_DCNv2_microvideo1.7m_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    new_condition_emb: false
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    overparam_p: [512, 256, 128]
+    parallel_dnn_hidden_units: [1024, 512, 256]
+    pickle_feature_encoder: true
+    rank_k: null
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_features: null
+    use_low_rank_mixture: false
+    verbose: 1
+APG_DCNv2_microvideo1.7m_x1_005_8789fb51:
+    batch_norm: true
+    batch_size: 2048
+    condition_features: null
+    condition_mode: self-wise
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: clicked_items
+    - {feature_encoder: layers.MaskedAveragePooling(), name: clicked_categories}
+    generate_bias: true
+    group_id: group_id
+    hypernet_config:
+        dropout_rates: 0.1
+        hidden_activations: relu
+        hidden_units: []
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: APG_DCNv2
+    model_root: ./checkpoints/APG_DCNv2_microvideo1.7m_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    new_condition_emb: false
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    overparam_p: null
+    parallel_dnn_hidden_units: [1024, 512, 256]
+    pickle_feature_encoder: true
+    rank_k: [32, 16, 8]
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_features: null
+    use_low_rank_mixture: false
+    verbose: 1
+APG_DCNv2_microvideo1.7m_x1_006_f53201f0:
+    batch_norm: true
+    batch_size: 2048
+    condition_features: null
+    condition_mode: self-wise
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: clicked_items
+    - {feature_encoder: layers.MaskedAveragePooling(), name: clicked_categories}
+    generate_bias: true
+    group_id: group_id
+    hypernet_config:
+        dropout_rates: 0.1
+        hidden_activations: relu
+        hidden_units: []
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: APG_DCNv2
+    model_root: ./checkpoints/APG_DCNv2_microvideo1.7m_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    new_condition_emb: false
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    overparam_p: [64, 32, 16]
+    parallel_dnn_hidden_units: [1024, 512, 256]
+    pickle_feature_encoder: true
+    rank_k: [32, 16, 8]
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_features: null
+    use_low_rank_mixture: false
+    verbose: 1
+APG_DCNv2_microvideo1.7m_x1_007_863bfc5f:
+    batch_norm: true
+    batch_size: 2048
+    condition_features: null
+    condition_mode: self-wise
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: clicked_items
+    - {feature_encoder: layers.MaskedAveragePooling(), name: clicked_categories}
+    generate_bias: true
+    group_id: group_id
+    hypernet_config:
+        dropout_rates: 0.1
+        hidden_activations: relu
+        hidden_units: []
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: APG_DCNv2
+    model_root: ./checkpoints/APG_DCNv2_microvideo1.7m_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    new_condition_emb: false
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    overparam_p: [32, 16, 8]
+    parallel_dnn_hidden_units: [1024, 512, 256]
+    pickle_feature_encoder: true
+    rank_k: [32, 16, 8]
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_features: null
+    use_low_rank_mixture: false
+    verbose: 1
+APG_DCNv2_microvideo1.7m_x1_008_3e0047f5:
+    batch_norm: true
+    batch_size: 2048
+    condition_features: null
+    condition_mode: self-wise
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: clicked_items
+    - {feature_encoder: layers.MaskedAveragePooling(), name: clicked_categories}
+    generate_bias: true
+    group_id: group_id
+    hypernet_config:
+        dropout_rates: 0.1
+        hidden_activations: relu
+        hidden_units: []
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: APG_DCNv2
+    model_root: ./checkpoints/APG_DCNv2_microvideo1.7m_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    new_condition_emb: false
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    overparam_p: [512, 256, 128]
+    parallel_dnn_hidden_units: [1024, 512, 256]
+    pickle_feature_encoder: true
+    rank_k: [32, 16, 8]
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_features: null
+    use_low_rank_mixture: false
+    verbose: 1

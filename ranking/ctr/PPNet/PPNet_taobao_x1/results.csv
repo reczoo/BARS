@@ -1,0 +1,1 @@
+ 20230602-042956,[command] python run_expid.py --config Taobao/PPNet_taobao_x1/PPNet_taobaoad_x1_tuner_config_01 --expid PPNet_taobaoad_x1_023_a59da105 --gpu 7,[exp_id] PPNet_taobaoad_x1_023_a59da105,[dataset_id] taobaoad_x1_2753db8a,[train] N.A.,[val] gAUC: 0.572597 - AUC: 0.647442 - logloss: 0.194488,[test] gAUC: 0.572597 - AUC: 0.647442 - logloss: 0.194488

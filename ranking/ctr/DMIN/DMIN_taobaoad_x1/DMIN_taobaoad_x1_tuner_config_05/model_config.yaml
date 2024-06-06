@@ -1,0 +1,1632 @@
+DMIN_taobaoad_x1_001_3e76899d:
+    attention_activation: ReLU
+    attention_dropout: 0.1
+    attention_hidden_units: [512, 256]
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_lambda: 0
+    batch_norm: false
+    batch_size: 8192
+    bn_only_once: false
+    dataset_id: taobaoad_x1_bf8c47ea
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    -   feature_encoder: null
+        name: [cate_his, brand_his, btag_his]
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMIN
+    model_root: ./checkpoints/DMIN_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 4
+    save_best_only: true
+    seed: 20222023
+    sequence_field: !!python/tuple [cate_his, brand_his, btag_his]
+    shuffle: true
+    target_field: !!python/tuple [cate_id, brand, btag]
+    task: binary_classification
+    use_behavior_refiner: true
+    use_features: null
+    use_pos_emb: true
+    verbose: 1
+DMIN_taobaoad_x1_002_b4f08285:
+    attention_activation: ReLU
+    attention_dropout: 0.1
+    attention_hidden_units: [512, 256]
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_lambda: 0
+    batch_norm: false
+    batch_size: 8192
+    bn_only_once: false
+    dataset_id: taobaoad_x1_bf8c47ea
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    -   feature_encoder: null
+        name: [cate_his, brand_his, btag_his]
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMIN
+    model_root: ./checkpoints/DMIN_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 32
+    save_best_only: true
+    seed: 20222023
+    sequence_field: !!python/tuple [cate_his, brand_his, btag_his]
+    shuffle: true
+    target_field: !!python/tuple [cate_id, brand, btag]
+    task: binary_classification
+    use_behavior_refiner: true
+    use_features: null
+    use_pos_emb: true
+    verbose: 1
+DMIN_taobaoad_x1_003_33112c82:
+    attention_activation: ReLU
+    attention_dropout: 0.2
+    attention_hidden_units: [512, 256]
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_lambda: 0
+    batch_norm: false
+    batch_size: 8192
+    bn_only_once: false
+    dataset_id: taobaoad_x1_bf8c47ea
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    -   feature_encoder: null
+        name: [cate_his, brand_his, btag_his]
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMIN
+    model_root: ./checkpoints/DMIN_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 4
+    save_best_only: true
+    seed: 20222023
+    sequence_field: !!python/tuple [cate_his, brand_his, btag_his]
+    shuffle: true
+    target_field: !!python/tuple [cate_id, brand, btag]
+    task: binary_classification
+    use_behavior_refiner: true
+    use_features: null
+    use_pos_emb: true
+    verbose: 1
+DMIN_taobaoad_x1_004_7e9f7bc6:
+    attention_activation: ReLU
+    attention_dropout: 0.2
+    attention_hidden_units: [512, 256]
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_lambda: 0
+    batch_norm: false
+    batch_size: 8192
+    bn_only_once: false
+    dataset_id: taobaoad_x1_bf8c47ea
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    -   feature_encoder: null
+        name: [cate_his, brand_his, btag_his]
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMIN
+    model_root: ./checkpoints/DMIN_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 32
+    save_best_only: true
+    seed: 20222023
+    sequence_field: !!python/tuple [cate_his, brand_his, btag_his]
+    shuffle: true
+    target_field: !!python/tuple [cate_id, brand, btag]
+    task: binary_classification
+    use_behavior_refiner: true
+    use_features: null
+    use_pos_emb: true
+    verbose: 1
+DMIN_taobaoad_x1_005_e0e309ad:
+    attention_activation: ReLU
+    attention_dropout: 0.1
+    attention_hidden_units: [512, 256]
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_lambda: 0
+    batch_norm: false
+    batch_size: 8192
+    bn_only_once: false
+    dataset_id: taobaoad_x1_bf8c47ea
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    -   feature_encoder: null
+        name: [cate_his, brand_his, btag_his]
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMIN
+    model_root: ./checkpoints/DMIN_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 4
+    save_best_only: true
+    seed: 20222023
+    sequence_field: !!python/tuple [cate_his, brand_his, btag_his]
+    shuffle: true
+    target_field: !!python/tuple [cate_id, brand, btag]
+    task: binary_classification
+    use_behavior_refiner: true
+    use_features: null
+    use_pos_emb: true
+    verbose: 1
+DMIN_taobaoad_x1_006_105b7543:
+    attention_activation: ReLU
+    attention_dropout: 0.1
+    attention_hidden_units: [512, 256]
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_lambda: 0
+    batch_norm: false
+    batch_size: 8192
+    bn_only_once: false
+    dataset_id: taobaoad_x1_bf8c47ea
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    -   feature_encoder: null
+        name: [cate_his, brand_his, btag_his]
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMIN
+    model_root: ./checkpoints/DMIN_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 32
+    save_best_only: true
+    seed: 20222023
+    sequence_field: !!python/tuple [cate_his, brand_his, btag_his]
+    shuffle: true
+    target_field: !!python/tuple [cate_id, brand, btag]
+    task: binary_classification
+    use_behavior_refiner: true
+    use_features: null
+    use_pos_emb: true
+    verbose: 1
+DMIN_taobaoad_x1_007_f0047d18:
+    attention_activation: ReLU
+    attention_dropout: 0.2
+    attention_hidden_units: [512, 256]
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_lambda: 0
+    batch_norm: false
+    batch_size: 8192
+    bn_only_once: false
+    dataset_id: taobaoad_x1_bf8c47ea
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    -   feature_encoder: null
+        name: [cate_his, brand_his, btag_his]
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMIN
+    model_root: ./checkpoints/DMIN_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 4
+    save_best_only: true
+    seed: 20222023
+    sequence_field: !!python/tuple [cate_his, brand_his, btag_his]
+    shuffle: true
+    target_field: !!python/tuple [cate_id, brand, btag]
+    task: binary_classification
+    use_behavior_refiner: true
+    use_features: null
+    use_pos_emb: true
+    verbose: 1
+DMIN_taobaoad_x1_008_11927827:
+    attention_activation: ReLU
+    attention_dropout: 0.2
+    attention_hidden_units: [512, 256]
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_lambda: 0
+    batch_norm: false
+    batch_size: 8192
+    bn_only_once: false
+    dataset_id: taobaoad_x1_bf8c47ea
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    -   feature_encoder: null
+        name: [cate_his, brand_his, btag_his]
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMIN
+    model_root: ./checkpoints/DMIN_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 32
+    save_best_only: true
+    seed: 20222023
+    sequence_field: !!python/tuple [cate_his, brand_his, btag_his]
+    shuffle: true
+    target_field: !!python/tuple [cate_id, brand, btag]
+    task: binary_classification
+    use_behavior_refiner: true
+    use_features: null
+    use_pos_emb: true
+    verbose: 1
+DMIN_taobaoad_x1_009_3572948b:
+    attention_activation: ReLU
+    attention_dropout: 0.1
+    attention_hidden_units: [512, 256]
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_lambda: 0
+    batch_norm: false
+    batch_size: 8192
+    bn_only_once: false
+    dataset_id: taobaoad_x1_bf8c47ea
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    -   feature_encoder: null
+        name: [cate_his, brand_his, btag_his]
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMIN
+    model_root: ./checkpoints/DMIN_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 4
+    save_best_only: true
+    seed: 20222023
+    sequence_field: !!python/tuple [cate_his, brand_his, btag_his]
+    shuffle: true
+    target_field: !!python/tuple [cate_id, brand, btag]
+    task: binary_classification
+    use_behavior_refiner: false
+    use_features: null
+    use_pos_emb: true
+    verbose: 1
+DMIN_taobaoad_x1_010_94186132:
+    attention_activation: ReLU
+    attention_dropout: 0.1
+    attention_hidden_units: [512, 256]
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_lambda: 0
+    batch_norm: false
+    batch_size: 8192
+    bn_only_once: false
+    dataset_id: taobaoad_x1_bf8c47ea
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    -   feature_encoder: null
+        name: [cate_his, brand_his, btag_his]
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMIN
+    model_root: ./checkpoints/DMIN_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 32
+    save_best_only: true
+    seed: 20222023
+    sequence_field: !!python/tuple [cate_his, brand_his, btag_his]
+    shuffle: true
+    target_field: !!python/tuple [cate_id, brand, btag]
+    task: binary_classification
+    use_behavior_refiner: false
+    use_features: null
+    use_pos_emb: true
+    verbose: 1
+DMIN_taobaoad_x1_011_0be611e8:
+    attention_activation: ReLU
+    attention_dropout: 0.2
+    attention_hidden_units: [512, 256]
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_lambda: 0
+    batch_norm: false
+    batch_size: 8192
+    bn_only_once: false
+    dataset_id: taobaoad_x1_bf8c47ea
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    -   feature_encoder: null
+        name: [cate_his, brand_his, btag_his]
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMIN
+    model_root: ./checkpoints/DMIN_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 4
+    save_best_only: true
+    seed: 20222023
+    sequence_field: !!python/tuple [cate_his, brand_his, btag_his]
+    shuffle: true
+    target_field: !!python/tuple [cate_id, brand, btag]
+    task: binary_classification
+    use_behavior_refiner: false
+    use_features: null
+    use_pos_emb: true
+    verbose: 1
+DMIN_taobaoad_x1_012_f37486b2:
+    attention_activation: ReLU
+    attention_dropout: 0.2
+    attention_hidden_units: [512, 256]
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_lambda: 0
+    batch_norm: false
+    batch_size: 8192
+    bn_only_once: false
+    dataset_id: taobaoad_x1_bf8c47ea
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    -   feature_encoder: null
+        name: [cate_his, brand_his, btag_his]
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMIN
+    model_root: ./checkpoints/DMIN_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 32
+    save_best_only: true
+    seed: 20222023
+    sequence_field: !!python/tuple [cate_his, brand_his, btag_his]
+    shuffle: true
+    target_field: !!python/tuple [cate_id, brand, btag]
+    task: binary_classification
+    use_behavior_refiner: false
+    use_features: null
+    use_pos_emb: true
+    verbose: 1
+DMIN_taobaoad_x1_013_f562e713:
+    attention_activation: ReLU
+    attention_dropout: 0.1
+    attention_hidden_units: [512, 256]
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_lambda: 0
+    batch_norm: false
+    batch_size: 8192
+    bn_only_once: false
+    dataset_id: taobaoad_x1_bf8c47ea
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    -   feature_encoder: null
+        name: [cate_his, brand_his, btag_his]
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMIN
+    model_root: ./checkpoints/DMIN_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 4
+    save_best_only: true
+    seed: 20222023
+    sequence_field: !!python/tuple [cate_his, brand_his, btag_his]
+    shuffle: true
+    target_field: !!python/tuple [cate_id, brand, btag]
+    task: binary_classification
+    use_behavior_refiner: false
+    use_features: null
+    use_pos_emb: true
+    verbose: 1
+DMIN_taobaoad_x1_014_7bc7d404:
+    attention_activation: ReLU
+    attention_dropout: 0.1
+    attention_hidden_units: [512, 256]
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_lambda: 0
+    batch_norm: false
+    batch_size: 8192
+    bn_only_once: false
+    dataset_id: taobaoad_x1_bf8c47ea
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    -   feature_encoder: null
+        name: [cate_his, brand_his, btag_his]
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMIN
+    model_root: ./checkpoints/DMIN_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 32
+    save_best_only: true
+    seed: 20222023
+    sequence_field: !!python/tuple [cate_his, brand_his, btag_his]
+    shuffle: true
+    target_field: !!python/tuple [cate_id, brand, btag]
+    task: binary_classification
+    use_behavior_refiner: false
+    use_features: null
+    use_pos_emb: true
+    verbose: 1
+DMIN_taobaoad_x1_015_3179d037:
+    attention_activation: ReLU
+    attention_dropout: 0.2
+    attention_hidden_units: [512, 256]
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_lambda: 0
+    batch_norm: false
+    batch_size: 8192
+    bn_only_once: false
+    dataset_id: taobaoad_x1_bf8c47ea
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    -   feature_encoder: null
+        name: [cate_his, brand_his, btag_his]
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMIN
+    model_root: ./checkpoints/DMIN_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 4
+    save_best_only: true
+    seed: 20222023
+    sequence_field: !!python/tuple [cate_his, brand_his, btag_his]
+    shuffle: true
+    target_field: !!python/tuple [cate_id, brand, btag]
+    task: binary_classification
+    use_behavior_refiner: false
+    use_features: null
+    use_pos_emb: true
+    verbose: 1
+DMIN_taobaoad_x1_016_03bc23c4:
+    attention_activation: ReLU
+    attention_dropout: 0.2
+    attention_hidden_units: [512, 256]
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_lambda: 0
+    batch_norm: false
+    batch_size: 8192
+    bn_only_once: false
+    dataset_id: taobaoad_x1_bf8c47ea
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    -   feature_encoder: null
+        name: [cate_his, brand_his, btag_his]
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMIN
+    model_root: ./checkpoints/DMIN_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 32
+    save_best_only: true
+    seed: 20222023
+    sequence_field: !!python/tuple [cate_his, brand_his, btag_his]
+    shuffle: true
+    target_field: !!python/tuple [cate_id, brand, btag]
+    task: binary_classification
+    use_behavior_refiner: false
+    use_features: null
+    use_pos_emb: true
+    verbose: 1
+DMIN_taobaoad_x1_017_59164799:
+    attention_activation: ReLU
+    attention_dropout: 0.1
+    attention_hidden_units: [512, 256]
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_lambda: 0
+    batch_norm: false
+    batch_size: 8192
+    bn_only_once: false
+    dataset_id: taobaoad_x1_bf8c47ea
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    enable_sum_pooling: true
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    -   feature_encoder: null
+        name: [cate_his, brand_his, btag_his]
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMIN
+    model_root: ./checkpoints/DMIN_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 4
+    save_best_only: true
+    seed: 20222023
+    sequence_field: !!python/tuple [cate_his, brand_his, btag_his]
+    shuffle: true
+    target_field: !!python/tuple [cate_id, brand, btag]
+    task: binary_classification
+    use_behavior_refiner: true
+    use_features: null
+    use_pos_emb: true
+    verbose: 1
+DMIN_taobaoad_x1_018_082d75bd:
+    attention_activation: ReLU
+    attention_dropout: 0.1
+    attention_hidden_units: [512, 256]
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_lambda: 0
+    batch_norm: false
+    batch_size: 8192
+    bn_only_once: false
+    dataset_id: taobaoad_x1_bf8c47ea
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    enable_sum_pooling: true
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    -   feature_encoder: null
+        name: [cate_his, brand_his, btag_his]
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMIN
+    model_root: ./checkpoints/DMIN_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 32
+    save_best_only: true
+    seed: 20222023
+    sequence_field: !!python/tuple [cate_his, brand_his, btag_his]
+    shuffle: true
+    target_field: !!python/tuple [cate_id, brand, btag]
+    task: binary_classification
+    use_behavior_refiner: true
+    use_features: null
+    use_pos_emb: true
+    verbose: 1
+DMIN_taobaoad_x1_019_981f3f5c:
+    attention_activation: ReLU
+    attention_dropout: 0.2
+    attention_hidden_units: [512, 256]
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_lambda: 0
+    batch_norm: false
+    batch_size: 8192
+    bn_only_once: false
+    dataset_id: taobaoad_x1_bf8c47ea
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    enable_sum_pooling: true
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    -   feature_encoder: null
+        name: [cate_his, brand_his, btag_his]
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMIN
+    model_root: ./checkpoints/DMIN_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 4
+    save_best_only: true
+    seed: 20222023
+    sequence_field: !!python/tuple [cate_his, brand_his, btag_his]
+    shuffle: true
+    target_field: !!python/tuple [cate_id, brand, btag]
+    task: binary_classification
+    use_behavior_refiner: true
+    use_features: null
+    use_pos_emb: true
+    verbose: 1
+DMIN_taobaoad_x1_020_0ad40076:
+    attention_activation: ReLU
+    attention_dropout: 0.2
+    attention_hidden_units: [512, 256]
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_lambda: 0
+    batch_norm: false
+    batch_size: 8192
+    bn_only_once: false
+    dataset_id: taobaoad_x1_bf8c47ea
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    enable_sum_pooling: true
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    -   feature_encoder: null
+        name: [cate_his, brand_his, btag_his]
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMIN
+    model_root: ./checkpoints/DMIN_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 32
+    save_best_only: true
+    seed: 20222023
+    sequence_field: !!python/tuple [cate_his, brand_his, btag_his]
+    shuffle: true
+    target_field: !!python/tuple [cate_id, brand, btag]
+    task: binary_classification
+    use_behavior_refiner: true
+    use_features: null
+    use_pos_emb: true
+    verbose: 1
+DMIN_taobaoad_x1_021_a775af59:
+    attention_activation: ReLU
+    attention_dropout: 0.1
+    attention_hidden_units: [512, 256]
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_lambda: 0
+    batch_norm: false
+    batch_size: 8192
+    bn_only_once: false
+    dataset_id: taobaoad_x1_bf8c47ea
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    enable_sum_pooling: true
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    -   feature_encoder: null
+        name: [cate_his, brand_his, btag_his]
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMIN
+    model_root: ./checkpoints/DMIN_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 4
+    save_best_only: true
+    seed: 20222023
+    sequence_field: !!python/tuple [cate_his, brand_his, btag_his]
+    shuffle: true
+    target_field: !!python/tuple [cate_id, brand, btag]
+    task: binary_classification
+    use_behavior_refiner: true
+    use_features: null
+    use_pos_emb: true
+    verbose: 1
+DMIN_taobaoad_x1_022_306aabd9:
+    attention_activation: ReLU
+    attention_dropout: 0.1
+    attention_hidden_units: [512, 256]
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_lambda: 0
+    batch_norm: false
+    batch_size: 8192
+    bn_only_once: false
+    dataset_id: taobaoad_x1_bf8c47ea
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    enable_sum_pooling: true
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    -   feature_encoder: null
+        name: [cate_his, brand_his, btag_his]
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMIN
+    model_root: ./checkpoints/DMIN_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 32
+    save_best_only: true
+    seed: 20222023
+    sequence_field: !!python/tuple [cate_his, brand_his, btag_his]
+    shuffle: true
+    target_field: !!python/tuple [cate_id, brand, btag]
+    task: binary_classification
+    use_behavior_refiner: true
+    use_features: null
+    use_pos_emb: true
+    verbose: 1
+DMIN_taobaoad_x1_023_f09e89a3:
+    attention_activation: ReLU
+    attention_dropout: 0.2
+    attention_hidden_units: [512, 256]
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_lambda: 0
+    batch_norm: false
+    batch_size: 8192
+    bn_only_once: false
+    dataset_id: taobaoad_x1_bf8c47ea
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    enable_sum_pooling: true
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    -   feature_encoder: null
+        name: [cate_his, brand_his, btag_his]
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMIN
+    model_root: ./checkpoints/DMIN_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 4
+    save_best_only: true
+    seed: 20222023
+    sequence_field: !!python/tuple [cate_his, brand_his, btag_his]
+    shuffle: true
+    target_field: !!python/tuple [cate_id, brand, btag]
+    task: binary_classification
+    use_behavior_refiner: true
+    use_features: null
+    use_pos_emb: true
+    verbose: 1
+DMIN_taobaoad_x1_024_c9f93ef2:
+    attention_activation: ReLU
+    attention_dropout: 0.2
+    attention_hidden_units: [512, 256]
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_lambda: 0
+    batch_norm: false
+    batch_size: 8192
+    bn_only_once: false
+    dataset_id: taobaoad_x1_bf8c47ea
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    enable_sum_pooling: true
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    -   feature_encoder: null
+        name: [cate_his, brand_his, btag_his]
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMIN
+    model_root: ./checkpoints/DMIN_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 32
+    save_best_only: true
+    seed: 20222023
+    sequence_field: !!python/tuple [cate_his, brand_his, btag_his]
+    shuffle: true
+    target_field: !!python/tuple [cate_id, brand, btag]
+    task: binary_classification
+    use_behavior_refiner: true
+    use_features: null
+    use_pos_emb: true
+    verbose: 1
+DMIN_taobaoad_x1_025_3e76899d:
+    attention_activation: ReLU
+    attention_dropout: 0.1
+    attention_hidden_units: [512, 256]
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_lambda: 0
+    batch_norm: false
+    batch_size: 8192
+    bn_only_once: false
+    dataset_id: taobaoad_x1_bf8c47ea
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    enable_sum_pooling: true
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    -   feature_encoder: null
+        name: [cate_his, brand_his, btag_his]
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMIN
+    model_root: ./checkpoints/DMIN_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 4
+    save_best_only: true
+    seed: 20222023
+    sequence_field: !!python/tuple [cate_his, brand_his, btag_his]
+    shuffle: true
+    target_field: !!python/tuple [cate_id, brand, btag]
+    task: binary_classification
+    use_behavior_refiner: false
+    use_features: null
+    use_pos_emb: true
+    verbose: 1
+DMIN_taobaoad_x1_026_b4f08285:
+    attention_activation: ReLU
+    attention_dropout: 0.1
+    attention_hidden_units: [512, 256]
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_lambda: 0
+    batch_norm: false
+    batch_size: 8192
+    bn_only_once: false
+    dataset_id: taobaoad_x1_bf8c47ea
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    enable_sum_pooling: true
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    -   feature_encoder: null
+        name: [cate_his, brand_his, btag_his]
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMIN
+    model_root: ./checkpoints/DMIN_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 32
+    save_best_only: true
+    seed: 20222023
+    sequence_field: !!python/tuple [cate_his, brand_his, btag_his]
+    shuffle: true
+    target_field: !!python/tuple [cate_id, brand, btag]
+    task: binary_classification
+    use_behavior_refiner: false
+    use_features: null
+    use_pos_emb: true
+    verbose: 1
+DMIN_taobaoad_x1_027_33112c82:
+    attention_activation: ReLU
+    attention_dropout: 0.2
+    attention_hidden_units: [512, 256]
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_lambda: 0
+    batch_norm: false
+    batch_size: 8192
+    bn_only_once: false
+    dataset_id: taobaoad_x1_bf8c47ea
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    enable_sum_pooling: true
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    -   feature_encoder: null
+        name: [cate_his, brand_his, btag_his]
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMIN
+    model_root: ./checkpoints/DMIN_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 4
+    save_best_only: true
+    seed: 20222023
+    sequence_field: !!python/tuple [cate_his, brand_his, btag_his]
+    shuffle: true
+    target_field: !!python/tuple [cate_id, brand, btag]
+    task: binary_classification
+    use_behavior_refiner: false
+    use_features: null
+    use_pos_emb: true
+    verbose: 1
+DMIN_taobaoad_x1_028_7e9f7bc6:
+    attention_activation: ReLU
+    attention_dropout: 0.2
+    attention_hidden_units: [512, 256]
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_lambda: 0
+    batch_norm: false
+    batch_size: 8192
+    bn_only_once: false
+    dataset_id: taobaoad_x1_bf8c47ea
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    enable_sum_pooling: true
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    -   feature_encoder: null
+        name: [cate_his, brand_his, btag_his]
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMIN
+    model_root: ./checkpoints/DMIN_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 32
+    save_best_only: true
+    seed: 20222023
+    sequence_field: !!python/tuple [cate_his, brand_his, btag_his]
+    shuffle: true
+    target_field: !!python/tuple [cate_id, brand, btag]
+    task: binary_classification
+    use_behavior_refiner: false
+    use_features: null
+    use_pos_emb: true
+    verbose: 1
+DMIN_taobaoad_x1_029_e0e309ad:
+    attention_activation: ReLU
+    attention_dropout: 0.1
+    attention_hidden_units: [512, 256]
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_lambda: 0
+    batch_norm: false
+    batch_size: 8192
+    bn_only_once: false
+    dataset_id: taobaoad_x1_bf8c47ea
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    enable_sum_pooling: true
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    -   feature_encoder: null
+        name: [cate_his, brand_his, btag_his]
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMIN
+    model_root: ./checkpoints/DMIN_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 4
+    save_best_only: true
+    seed: 20222023
+    sequence_field: !!python/tuple [cate_his, brand_his, btag_his]
+    shuffle: true
+    target_field: !!python/tuple [cate_id, brand, btag]
+    task: binary_classification
+    use_behavior_refiner: false
+    use_features: null
+    use_pos_emb: true
+    verbose: 1
+DMIN_taobaoad_x1_030_105b7543:
+    attention_activation: ReLU
+    attention_dropout: 0.1
+    attention_hidden_units: [512, 256]
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_lambda: 0
+    batch_norm: false
+    batch_size: 8192
+    bn_only_once: false
+    dataset_id: taobaoad_x1_bf8c47ea
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    enable_sum_pooling: true
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    -   feature_encoder: null
+        name: [cate_his, brand_his, btag_his]
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMIN
+    model_root: ./checkpoints/DMIN_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 32
+    save_best_only: true
+    seed: 20222023
+    sequence_field: !!python/tuple [cate_his, brand_his, btag_his]
+    shuffle: true
+    target_field: !!python/tuple [cate_id, brand, btag]
+    task: binary_classification
+    use_behavior_refiner: false
+    use_features: null
+    use_pos_emb: true
+    verbose: 1
+DMIN_taobaoad_x1_031_f0047d18:
+    attention_activation: ReLU
+    attention_dropout: 0.2
+    attention_hidden_units: [512, 256]
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_lambda: 0
+    batch_norm: false
+    batch_size: 8192
+    bn_only_once: false
+    dataset_id: taobaoad_x1_bf8c47ea
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    enable_sum_pooling: true
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    -   feature_encoder: null
+        name: [cate_his, brand_his, btag_his]
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMIN
+    model_root: ./checkpoints/DMIN_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 4
+    save_best_only: true
+    seed: 20222023
+    sequence_field: !!python/tuple [cate_his, brand_his, btag_his]
+    shuffle: true
+    target_field: !!python/tuple [cate_id, brand, btag]
+    task: binary_classification
+    use_behavior_refiner: false
+    use_features: null
+    use_pos_emb: true
+    verbose: 1
+DMIN_taobaoad_x1_032_11927827:
+    attention_activation: ReLU
+    attention_dropout: 0.2
+    attention_hidden_units: [512, 256]
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_lambda: 0
+    batch_norm: false
+    batch_size: 8192
+    bn_only_once: false
+    dataset_id: taobaoad_x1_bf8c47ea
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [512, 256, 128]
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    enable_sum_pooling: true
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    -   feature_encoder: null
+        name: [cate_his, brand_his, btag_his]
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMIN
+    model_root: ./checkpoints/DMIN_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 32
+    save_best_only: true
+    seed: 20222023
+    sequence_field: !!python/tuple [cate_his, brand_his, btag_his]
+    shuffle: true
+    target_field: !!python/tuple [cate_id, brand, btag]
+    task: binary_classification
+    use_behavior_refiner: false
+    use_features: null
+    use_pos_emb: true
+    verbose: 1

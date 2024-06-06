@@ -1,0 +1,26 @@
+kuaivideo_x1_60f6c91a:
+    data_format: csv
+    data_root: ../data/KuaiShou/
+    feature_cols:
+    - {active: true, dtype: int, name: group_id, preprocess: copy_from(user_id), remap: false,
+        type: meta}
+    - {active: true, dtype: str, name: user_id, type: categorical}
+    - {active: true, dtype: str, name: item_id, type: categorical}
+    - {active: true, dtype: str, embedding_dim: 64, min_categr_count: 1, name: item_emb,
+        preprocess: copy_from(item_id), pretrained_emb: ../data/KuaiShou/KuaiVideo_x1/item_visual_emb_dim64.h5,
+        type: categorical}
+    - {active: true, dtype: str, max_len: 100, name: pos_items, padding: post, share_embedding: item_id,
+        splitter: ^, type: sequence}
+    - {active: true, dtype: str, max_len: 100, name: neg_items, padding: post, share_embedding: item_id,
+        splitter: ^, type: sequence}
+    - {active: true, dtype: str, embedding_dim: 64, max_len: 100, min_categr_count: 1,
+        name: pos_items_emb, padding: post, preprocess: copy_from(pos_items), pretrained_emb: ../data/KuaiShou/KuaiVideo_x1/item_visual_emb_dim64.h5,
+        share_embedding: item_emb, splitter: ^, type: sequence}
+    - {active: true, dtype: str, embedding_dim: 64, max_len: 100, min_categr_count: 1,
+        name: neg_items_emb, padding: post, preprocess: copy_from(neg_items), pretrained_emb: ../data/KuaiShou/KuaiVideo_x1/item_visual_emb_dim64.h5,
+        share_embedding: item_emb, splitter: ^, type: sequence}
+    label_col: {dtype: float, name: is_click}
+    min_categr_count: 10
+    test_data: ../data/KuaiShou/KuaiVideo_x1/test.csv
+    train_data: ../data/KuaiShou/KuaiVideo_x1/train.csv
+    valid_data: ../data/KuaiShou/KuaiVideo_x1/test.csv

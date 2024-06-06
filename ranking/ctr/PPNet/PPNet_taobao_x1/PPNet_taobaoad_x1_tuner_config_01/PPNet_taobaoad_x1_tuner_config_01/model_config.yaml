@@ -1,0 +1,1086 @@
+PPNet_taobaoad_x1_001_e3ece345:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gate_emb_dim: 16
+    gate_hidden_dim: 128
+    gate_priors: [userid]
+    group_id: group_id
+    hidden_activations: ReLU
+    hidden_units: [512, 256, 128]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: PPNet
+    model_root: ./checkpoints/PPNet_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+PPNet_taobaoad_x1_002_c2e2f6a9:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gate_emb_dim: 16
+    gate_hidden_dim: 256
+    gate_priors: [userid]
+    group_id: group_id
+    hidden_activations: ReLU
+    hidden_units: [512, 256, 128]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: PPNet
+    model_root: ./checkpoints/PPNet_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+PPNet_taobaoad_x1_003_59187062:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gate_emb_dim: 16
+    gate_hidden_dim: 512
+    gate_priors: [userid]
+    group_id: group_id
+    hidden_activations: ReLU
+    hidden_units: [512, 256, 128]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: PPNet
+    model_root: ./checkpoints/PPNet_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+PPNet_taobaoad_x1_004_f45486bf:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gate_emb_dim: 16
+    gate_hidden_dim: 128
+    gate_priors: [pid]
+    group_id: group_id
+    hidden_activations: ReLU
+    hidden_units: [512, 256, 128]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: PPNet
+    model_root: ./checkpoints/PPNet_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+PPNet_taobaoad_x1_005_d80f519d:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gate_emb_dim: 16
+    gate_hidden_dim: 256
+    gate_priors: [pid]
+    group_id: group_id
+    hidden_activations: ReLU
+    hidden_units: [512, 256, 128]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: PPNet
+    model_root: ./checkpoints/PPNet_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+PPNet_taobaoad_x1_006_e2afe5f2:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gate_emb_dim: 16
+    gate_hidden_dim: 512
+    gate_priors: [pid]
+    group_id: group_id
+    hidden_activations: ReLU
+    hidden_units: [512, 256, 128]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: PPNet
+    model_root: ./checkpoints/PPNet_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+PPNet_taobaoad_x1_007_1d55fccd:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gate_emb_dim: 16
+    gate_hidden_dim: 128
+    gate_priors: [userid, cms_group_id, adgroup_id]
+    group_id: group_id
+    hidden_activations: ReLU
+    hidden_units: [512, 256, 128]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: PPNet
+    model_root: ./checkpoints/PPNet_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+PPNet_taobaoad_x1_008_e6f7d26c:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gate_emb_dim: 16
+    gate_hidden_dim: 256
+    gate_priors: [userid, cms_group_id, adgroup_id]
+    group_id: group_id
+    hidden_activations: ReLU
+    hidden_units: [512, 256, 128]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: PPNet
+    model_root: ./checkpoints/PPNet_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+PPNet_taobaoad_x1_009_6f0f6262:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gate_emb_dim: 16
+    gate_hidden_dim: 512
+    gate_priors: [userid, cms_group_id, adgroup_id]
+    group_id: group_id
+    hidden_activations: ReLU
+    hidden_units: [512, 256, 128]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: PPNet
+    model_root: ./checkpoints/PPNet_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+PPNet_taobaoad_x1_010_17a92dcb:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gate_emb_dim: 16
+    gate_hidden_dim: 128
+    gate_priors: [cms_group_id, adgroup_id, pid]
+    group_id: group_id
+    hidden_activations: ReLU
+    hidden_units: [512, 256, 128]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: PPNet
+    model_root: ./checkpoints/PPNet_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+PPNet_taobaoad_x1_011_d030bc8e:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gate_emb_dim: 16
+    gate_hidden_dim: 256
+    gate_priors: [cms_group_id, adgroup_id, pid]
+    group_id: group_id
+    hidden_activations: ReLU
+    hidden_units: [512, 256, 128]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: PPNet
+    model_root: ./checkpoints/PPNet_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+PPNet_taobaoad_x1_012_fda7bfaf:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gate_emb_dim: 16
+    gate_hidden_dim: 512
+    gate_priors: [cms_group_id, adgroup_id, pid]
+    group_id: group_id
+    hidden_activations: ReLU
+    hidden_units: [512, 256, 128]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: PPNet
+    model_root: ./checkpoints/PPNet_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+PPNet_taobaoad_x1_013_a28958b9:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gate_emb_dim: 16
+    gate_hidden_dim: 128
+    gate_priors: [userid, cms_segid, cms_group_id, adgroup_id, cate_id, campaign_id,
+        customer, brand, pid]
+    group_id: group_id
+    hidden_activations: ReLU
+    hidden_units: [512, 256, 128]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: PPNet
+    model_root: ./checkpoints/PPNet_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+PPNet_taobaoad_x1_014_b5256cf7:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gate_emb_dim: 16
+    gate_hidden_dim: 256
+    gate_priors: [userid, cms_segid, cms_group_id, adgroup_id, cate_id, campaign_id,
+        customer, brand, pid]
+    group_id: group_id
+    hidden_activations: ReLU
+    hidden_units: [512, 256, 128]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: PPNet
+    model_root: ./checkpoints/PPNet_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+PPNet_taobaoad_x1_015_8ed4e88a:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gate_emb_dim: 16
+    gate_hidden_dim: 512
+    gate_priors: [userid, cms_segid, cms_group_id, adgroup_id, cate_id, campaign_id,
+        customer, brand, pid]
+    group_id: group_id
+    hidden_activations: ReLU
+    hidden_units: [512, 256, 128]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: PPNet
+    model_root: ./checkpoints/PPNet_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+PPNet_taobaoad_x1_016_f0a76e0d:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gate_emb_dim: 32
+    gate_hidden_dim: 128
+    gate_priors: [userid]
+    group_id: group_id
+    hidden_activations: ReLU
+    hidden_units: [512, 256, 128]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: PPNet
+    model_root: ./checkpoints/PPNet_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+PPNet_taobaoad_x1_017_6a787154:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gate_emb_dim: 32
+    gate_hidden_dim: 256
+    gate_priors: [userid]
+    group_id: group_id
+    hidden_activations: ReLU
+    hidden_units: [512, 256, 128]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: PPNet
+    model_root: ./checkpoints/PPNet_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+PPNet_taobaoad_x1_018_9fb23b5a:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gate_emb_dim: 32
+    gate_hidden_dim: 512
+    gate_priors: [userid]
+    group_id: group_id
+    hidden_activations: ReLU
+    hidden_units: [512, 256, 128]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: PPNet
+    model_root: ./checkpoints/PPNet_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+PPNet_taobaoad_x1_019_1a5d1459:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gate_emb_dim: 32
+    gate_hidden_dim: 128
+    gate_priors: [pid]
+    group_id: group_id
+    hidden_activations: ReLU
+    hidden_units: [512, 256, 128]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: PPNet
+    model_root: ./checkpoints/PPNet_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+PPNet_taobaoad_x1_020_7a385900:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gate_emb_dim: 32
+    gate_hidden_dim: 256
+    gate_priors: [pid]
+    group_id: group_id
+    hidden_activations: ReLU
+    hidden_units: [512, 256, 128]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: PPNet
+    model_root: ./checkpoints/PPNet_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+PPNet_taobaoad_x1_021_8da38942:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gate_emb_dim: 32
+    gate_hidden_dim: 512
+    gate_priors: [pid]
+    group_id: group_id
+    hidden_activations: ReLU
+    hidden_units: [512, 256, 128]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: PPNet
+    model_root: ./checkpoints/PPNet_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+PPNet_taobaoad_x1_022_8adf86b0:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gate_emb_dim: 32
+    gate_hidden_dim: 128
+    gate_priors: [userid, cms_group_id, adgroup_id]
+    group_id: group_id
+    hidden_activations: ReLU
+    hidden_units: [512, 256, 128]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: PPNet
+    model_root: ./checkpoints/PPNet_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+PPNet_taobaoad_x1_023_a59da105:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gate_emb_dim: 32
+    gate_hidden_dim: 256
+    gate_priors: [userid, cms_group_id, adgroup_id]
+    group_id: group_id
+    hidden_activations: ReLU
+    hidden_units: [512, 256, 128]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: PPNet
+    model_root: ./checkpoints/PPNet_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+PPNet_taobaoad_x1_024_789663c1:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gate_emb_dim: 32
+    gate_hidden_dim: 512
+    gate_priors: [userid, cms_group_id, adgroup_id]
+    group_id: group_id
+    hidden_activations: ReLU
+    hidden_units: [512, 256, 128]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: PPNet
+    model_root: ./checkpoints/PPNet_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+PPNet_taobaoad_x1_025_7767a495:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gate_emb_dim: 32
+    gate_hidden_dim: 128
+    gate_priors: [cms_group_id, adgroup_id, pid]
+    group_id: group_id
+    hidden_activations: ReLU
+    hidden_units: [512, 256, 128]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: PPNet
+    model_root: ./checkpoints/PPNet_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+PPNet_taobaoad_x1_026_8e610992:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gate_emb_dim: 32
+    gate_hidden_dim: 256
+    gate_priors: [cms_group_id, adgroup_id, pid]
+    group_id: group_id
+    hidden_activations: ReLU
+    hidden_units: [512, 256, 128]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: PPNet
+    model_root: ./checkpoints/PPNet_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+PPNet_taobaoad_x1_027_1dc7a347:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gate_emb_dim: 32
+    gate_hidden_dim: 512
+    gate_priors: [cms_group_id, adgroup_id, pid]
+    group_id: group_id
+    hidden_activations: ReLU
+    hidden_units: [512, 256, 128]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: PPNet
+    model_root: ./checkpoints/PPNet_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+PPNet_taobaoad_x1_028_58178dbc:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gate_emb_dim: 32
+    gate_hidden_dim: 128
+    gate_priors: [userid, cms_segid, cms_group_id, adgroup_id, cate_id, campaign_id,
+        customer, brand, pid]
+    group_id: group_id
+    hidden_activations: ReLU
+    hidden_units: [512, 256, 128]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: PPNet
+    model_root: ./checkpoints/PPNet_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+PPNet_taobaoad_x1_029_bc329bcb:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gate_emb_dim: 32
+    gate_hidden_dim: 256
+    gate_priors: [userid, cms_segid, cms_group_id, adgroup_id, cate_id, campaign_id,
+        customer, brand, pid]
+    group_id: group_id
+    hidden_activations: ReLU
+    hidden_units: [512, 256, 128]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: PPNet
+    model_root: ./checkpoints/PPNet_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+PPNet_taobaoad_x1_030_d1f1b14d:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: taobaoad_x1_2753db8a
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 32
+    embedding_regularizer: 5.0e-06
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gate_emb_dim: 32
+    gate_hidden_dim: 512
+    gate_priors: [userid, cms_segid, cms_group_id, adgroup_id, cate_id, campaign_id,
+        customer, brand, pid]
+    group_id: group_id
+    hidden_activations: ReLU
+    hidden_units: [512, 256, 128]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: PPNet
+    model_root: ./checkpoints/PPNet_taobaoad_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1

@@ -1,0 +1,464 @@
+DMR_kuaivideo_x1_001_794ac421:
+    attention_activation: ReLU
+    attention_dropout: 0.1
+    attention_hidden_units: [512, 256]
+    aux_loss_beta: 0
+    batch_norm: false
+    batch_size: 4096
+    bn_only_once: false
+    context_field: null
+    dataset_id: kuaivideo_x1_60f6c91a
+    debug_mode: false
+    dnn_activations: Dice
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    enable_i2i_rel: false
+    enable_sum_pooling: false
+    enable_u2i_rel: true
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMR
+    model_root: ./checkpoints/DMR_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 8
+    save_best_only: true
+    seed: 20222023
+    sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    shuffle: true
+    target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    task: binary_classification
+    use_features: null
+    use_pos_emb: true
+    verbose: 1
+DMR_kuaivideo_x1_002_365fd4cd:
+    attention_activation: ReLU
+    attention_dropout: 0.1
+    attention_hidden_units: [512, 256]
+    aux_loss_beta: 0
+    batch_norm: false
+    batch_size: 4096
+    bn_only_once: false
+    context_field: null
+    dataset_id: kuaivideo_x1_60f6c91a
+    debug_mode: false
+    dnn_activations: Dice
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    enable_i2i_rel: false
+    enable_sum_pooling: false
+    enable_u2i_rel: true
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMR
+    model_root: ./checkpoints/DMR_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 64
+    save_best_only: true
+    seed: 20222023
+    sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    shuffle: true
+    target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    task: binary_classification
+    use_features: null
+    use_pos_emb: true
+    verbose: 1
+DMR_kuaivideo_x1_003_e9fb63c2:
+    attention_activation: ReLU
+    attention_dropout: 0.1
+    attention_hidden_units: [512, 256]
+    aux_loss_beta: 0
+    batch_norm: false
+    batch_size: 4096
+    bn_only_once: false
+    context_field: null
+    dataset_id: kuaivideo_x1_60f6c91a
+    debug_mode: false
+    dnn_activations: Dice
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    enable_i2i_rel: false
+    enable_sum_pooling: false
+    enable_u2i_rel: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMR
+    model_root: ./checkpoints/DMR_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 8
+    save_best_only: true
+    seed: 20222023
+    sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    shuffle: true
+    target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    task: binary_classification
+    use_features: null
+    use_pos_emb: true
+    verbose: 1
+DMR_kuaivideo_x1_004_40fafd3b:
+    attention_activation: ReLU
+    attention_dropout: 0.1
+    attention_hidden_units: [512, 256]
+    aux_loss_beta: 0
+    batch_norm: false
+    batch_size: 4096
+    bn_only_once: false
+    context_field: null
+    dataset_id: kuaivideo_x1_60f6c91a
+    debug_mode: false
+    dnn_activations: Dice
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    enable_i2i_rel: false
+    enable_sum_pooling: false
+    enable_u2i_rel: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMR
+    model_root: ./checkpoints/DMR_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 64
+    save_best_only: true
+    seed: 20222023
+    sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    shuffle: true
+    target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    task: binary_classification
+    use_features: null
+    use_pos_emb: true
+    verbose: 1
+DMR_kuaivideo_x1_005_6bc1007a:
+    attention_activation: ReLU
+    attention_dropout: 0.2
+    attention_hidden_units: [512, 256]
+    aux_loss_beta: 0
+    batch_norm: false
+    batch_size: 4096
+    bn_only_once: false
+    context_field: null
+    dataset_id: kuaivideo_x1_60f6c91a
+    debug_mode: false
+    dnn_activations: Dice
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    enable_i2i_rel: false
+    enable_sum_pooling: false
+    enable_u2i_rel: true
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMR
+    model_root: ./checkpoints/DMR_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 8
+    save_best_only: true
+    seed: 20222023
+    sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    shuffle: true
+    target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    task: binary_classification
+    use_features: null
+    use_pos_emb: true
+    verbose: 1
+DMR_kuaivideo_x1_006_128f080c:
+    attention_activation: ReLU
+    attention_dropout: 0.2
+    attention_hidden_units: [512, 256]
+    aux_loss_beta: 0
+    batch_norm: false
+    batch_size: 4096
+    bn_only_once: false
+    context_field: null
+    dataset_id: kuaivideo_x1_60f6c91a
+    debug_mode: false
+    dnn_activations: Dice
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    enable_i2i_rel: false
+    enable_sum_pooling: false
+    enable_u2i_rel: true
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMR
+    model_root: ./checkpoints/DMR_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 64
+    save_best_only: true
+    seed: 20222023
+    sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    shuffle: true
+    target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    task: binary_classification
+    use_features: null
+    use_pos_emb: true
+    verbose: 1
+DMR_kuaivideo_x1_007_d93d2f17:
+    attention_activation: ReLU
+    attention_dropout: 0.2
+    attention_hidden_units: [512, 256]
+    aux_loss_beta: 0
+    batch_norm: false
+    batch_size: 4096
+    bn_only_once: false
+    context_field: null
+    dataset_id: kuaivideo_x1_60f6c91a
+    debug_mode: false
+    dnn_activations: Dice
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    enable_i2i_rel: false
+    enable_sum_pooling: false
+    enable_u2i_rel: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMR
+    model_root: ./checkpoints/DMR_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 8
+    save_best_only: true
+    seed: 20222023
+    sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    shuffle: true
+    target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    task: binary_classification
+    use_features: null
+    use_pos_emb: true
+    verbose: 1
+DMR_kuaivideo_x1_008_fd980c67:
+    attention_activation: ReLU
+    attention_dropout: 0.2
+    attention_hidden_units: [512, 256]
+    aux_loss_beta: 0
+    batch_norm: false
+    batch_size: 4096
+    bn_only_once: false
+    context_field: null
+    dataset_id: kuaivideo_x1_60f6c91a
+    debug_mode: false
+    dnn_activations: Dice
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    enable_i2i_rel: false
+    enable_sum_pooling: false
+    enable_u2i_rel: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_emb}
+    - {feature_encoder: null, name: pos_items}
+    - {feature_encoder: null, name: neg_items}
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: pos_items_emb
+    -   feature_encoder: ['nn.Linear(64, 64, bias=False)']
+        name: neg_items_emb
+    group_id: group_id
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMR
+    model_root: ./checkpoints/DMR_kuaivideo_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 64
+    save_best_only: true
+    seed: 20222023
+    sequence_field:
+    - !!python/tuple [pos_items, pos_items_emb]
+    - !!python/tuple [neg_items, neg_items_emb]
+    shuffle: true
+    target_field:
+    - !!python/tuple [item_id, item_emb]
+    - !!python/tuple [item_id, item_emb]
+    task: binary_classification
+    use_features: null
+    use_pos_emb: true
+    verbose: 1

@@ -1,0 +1,1128 @@
+APG_DeepFM_microvideo1.7m_x1_001_69ed3481:
+    batch_norm: true
+    batch_size: 2048
+    condition_features: null
+    condition_mode: self-wise
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: clicked_items
+    - {feature_encoder: layers.MaskedAveragePooling(), name: clicked_categories}
+    generate_bias: true
+    group_id: group_id
+    hidden_activations: relu
+    hidden_units: [1024, 512, 256]
+    hypernet_config:
+        dropout_rates: 0
+        hidden_activations: relu
+        hidden_units: []
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: APG_DeepFM
+    model_root: ./checkpoints/APG_DeepFM_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    new_condition_emb: false
+    num_workers: 3
+    optimizer: adam
+    overparam_p: null
+    pickle_feature_encoder: true
+    rank_k: null
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+APG_DeepFM_microvideo1.7m_x1_002_745feeb2:
+    batch_norm: true
+    batch_size: 2048
+    condition_features: null
+    condition_mode: self-wise
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: clicked_items
+    - {feature_encoder: layers.MaskedAveragePooling(), name: clicked_categories}
+    generate_bias: true
+    group_id: group_id
+    hidden_activations: relu
+    hidden_units: [1024, 512, 256]
+    hypernet_config:
+        dropout_rates: 0
+        hidden_activations: relu
+        hidden_units: []
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: APG_DeepFM
+    model_root: ./checkpoints/APG_DeepFM_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    new_condition_emb: false
+    num_workers: 3
+    optimizer: adam
+    overparam_p: [64, 32, 16]
+    pickle_feature_encoder: true
+    rank_k: null
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+APG_DeepFM_microvideo1.7m_x1_003_9d903fd1:
+    batch_norm: true
+    batch_size: 2048
+    condition_features: null
+    condition_mode: self-wise
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: clicked_items
+    - {feature_encoder: layers.MaskedAveragePooling(), name: clicked_categories}
+    generate_bias: true
+    group_id: group_id
+    hidden_activations: relu
+    hidden_units: [1024, 512, 256]
+    hypernet_config:
+        dropout_rates: 0
+        hidden_activations: relu
+        hidden_units: []
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: APG_DeepFM
+    model_root: ./checkpoints/APG_DeepFM_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    new_condition_emb: false
+    num_workers: 3
+    optimizer: adam
+    overparam_p: [32, 16, 8]
+    pickle_feature_encoder: true
+    rank_k: null
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+APG_DeepFM_microvideo1.7m_x1_004_a46e5f6f:
+    batch_norm: true
+    batch_size: 2048
+    condition_features: null
+    condition_mode: self-wise
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: clicked_items
+    - {feature_encoder: layers.MaskedAveragePooling(), name: clicked_categories}
+    generate_bias: true
+    group_id: group_id
+    hidden_activations: relu
+    hidden_units: [1024, 512, 256]
+    hypernet_config:
+        dropout_rates: 0
+        hidden_activations: relu
+        hidden_units: []
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: APG_DeepFM
+    model_root: ./checkpoints/APG_DeepFM_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    new_condition_emb: false
+    num_workers: 3
+    optimizer: adam
+    overparam_p: [128, 64, 32]
+    pickle_feature_encoder: true
+    rank_k: null
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+APG_DeepFM_microvideo1.7m_x1_005_9d903fd1:
+    batch_norm: true
+    batch_size: 2048
+    condition_features: null
+    condition_mode: self-wise
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: clicked_items
+    - {feature_encoder: layers.MaskedAveragePooling(), name: clicked_categories}
+    generate_bias: true
+    group_id: group_id
+    hidden_activations: relu
+    hidden_units: [1024, 512, 256]
+    hypernet_config:
+        dropout_rates: 0
+        hidden_activations: relu
+        hidden_units: []
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: APG_DeepFM
+    model_root: ./checkpoints/APG_DeepFM_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    new_condition_emb: false
+    num_workers: 3
+    optimizer: adam
+    overparam_p: null
+    pickle_feature_encoder: true
+    rank_k: [32, 16, 8]
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+APG_DeepFM_microvideo1.7m_x1_006_6c4a9a11:
+    batch_norm: true
+    batch_size: 2048
+    condition_features: null
+    condition_mode: self-wise
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: clicked_items
+    - {feature_encoder: layers.MaskedAveragePooling(), name: clicked_categories}
+    generate_bias: true
+    group_id: group_id
+    hidden_activations: relu
+    hidden_units: [1024, 512, 256]
+    hypernet_config:
+        dropout_rates: 0
+        hidden_activations: relu
+        hidden_units: []
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: APG_DeepFM
+    model_root: ./checkpoints/APG_DeepFM_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    new_condition_emb: false
+    num_workers: 3
+    optimizer: adam
+    overparam_p: [64, 32, 16]
+    pickle_feature_encoder: true
+    rank_k: [32, 16, 8]
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+APG_DeepFM_microvideo1.7m_x1_007_651e0cac:
+    batch_norm: true
+    batch_size: 2048
+    condition_features: null
+    condition_mode: self-wise
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: clicked_items
+    - {feature_encoder: layers.MaskedAveragePooling(), name: clicked_categories}
+    generate_bias: true
+    group_id: group_id
+    hidden_activations: relu
+    hidden_units: [1024, 512, 256]
+    hypernet_config:
+        dropout_rates: 0
+        hidden_activations: relu
+        hidden_units: []
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: APG_DeepFM
+    model_root: ./checkpoints/APG_DeepFM_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    new_condition_emb: false
+    num_workers: 3
+    optimizer: adam
+    overparam_p: [32, 16, 8]
+    pickle_feature_encoder: true
+    rank_k: [32, 16, 8]
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+APG_DeepFM_microvideo1.7m_x1_008_5ea39f78:
+    batch_norm: true
+    batch_size: 2048
+    condition_features: null
+    condition_mode: self-wise
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: clicked_items
+    - {feature_encoder: layers.MaskedAveragePooling(), name: clicked_categories}
+    generate_bias: true
+    group_id: group_id
+    hidden_activations: relu
+    hidden_units: [1024, 512, 256]
+    hypernet_config:
+        dropout_rates: 0
+        hidden_activations: relu
+        hidden_units: []
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: APG_DeepFM
+    model_root: ./checkpoints/APG_DeepFM_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    new_condition_emb: false
+    num_workers: 3
+    optimizer: adam
+    overparam_p: [128, 64, 32]
+    pickle_feature_encoder: true
+    rank_k: [32, 16, 8]
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+APG_DeepFM_microvideo1.7m_x1_009_8e9648d3:
+    batch_norm: true
+    batch_size: 2048
+    condition_features: null
+    condition_mode: self-wise
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: clicked_items
+    - {feature_encoder: layers.MaskedAveragePooling(), name: clicked_categories}
+    generate_bias: true
+    group_id: group_id
+    hidden_activations: relu
+    hidden_units: [1024, 512, 256]
+    hypernet_config:
+        dropout_rates: 0
+        hidden_activations: relu
+        hidden_units: []
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: APG_DeepFM
+    model_root: ./checkpoints/APG_DeepFM_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    new_condition_emb: false
+    num_workers: 3
+    optimizer: adam
+    overparam_p: null
+    pickle_feature_encoder: true
+    rank_k: [16, 8, 4]
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+APG_DeepFM_microvideo1.7m_x1_010_eca5e23b:
+    batch_norm: true
+    batch_size: 2048
+    condition_features: null
+    condition_mode: self-wise
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: clicked_items
+    - {feature_encoder: layers.MaskedAveragePooling(), name: clicked_categories}
+    generate_bias: true
+    group_id: group_id
+    hidden_activations: relu
+    hidden_units: [1024, 512, 256]
+    hypernet_config:
+        dropout_rates: 0
+        hidden_activations: relu
+        hidden_units: []
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: APG_DeepFM
+    model_root: ./checkpoints/APG_DeepFM_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    new_condition_emb: false
+    num_workers: 3
+    optimizer: adam
+    overparam_p: [64, 32, 16]
+    pickle_feature_encoder: true
+    rank_k: [16, 8, 4]
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+APG_DeepFM_microvideo1.7m_x1_011_67aee4b7:
+    batch_norm: true
+    batch_size: 2048
+    condition_features: null
+    condition_mode: self-wise
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: clicked_items
+    - {feature_encoder: layers.MaskedAveragePooling(), name: clicked_categories}
+    generate_bias: true
+    group_id: group_id
+    hidden_activations: relu
+    hidden_units: [1024, 512, 256]
+    hypernet_config:
+        dropout_rates: 0
+        hidden_activations: relu
+        hidden_units: []
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: APG_DeepFM
+    model_root: ./checkpoints/APG_DeepFM_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    new_condition_emb: false
+    num_workers: 3
+    optimizer: adam
+    overparam_p: [32, 16, 8]
+    pickle_feature_encoder: true
+    rank_k: [16, 8, 4]
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+APG_DeepFM_microvideo1.7m_x1_012_8c0f062d:
+    batch_norm: true
+    batch_size: 2048
+    condition_features: null
+    condition_mode: self-wise
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: clicked_items
+    - {feature_encoder: layers.MaskedAveragePooling(), name: clicked_categories}
+    generate_bias: true
+    group_id: group_id
+    hidden_activations: relu
+    hidden_units: [1024, 512, 256]
+    hypernet_config:
+        dropout_rates: 0
+        hidden_activations: relu
+        hidden_units: []
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: APG_DeepFM
+    model_root: ./checkpoints/APG_DeepFM_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    new_condition_emb: false
+    num_workers: 3
+    optimizer: adam
+    overparam_p: [128, 64, 32]
+    pickle_feature_encoder: true
+    rank_k: [16, 8, 4]
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+APG_DeepFM_microvideo1.7m_x1_013_60ef8cc4:
+    batch_norm: true
+    batch_size: 2048
+    condition_features: null
+    condition_mode: self-wise
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: clicked_items
+    - {feature_encoder: layers.MaskedAveragePooling(), name: clicked_categories}
+    generate_bias: true
+    group_id: group_id
+    hidden_activations: relu
+    hidden_units: [1024, 512, 256]
+    hypernet_config:
+        dropout_rates: 0
+        hidden_activations: relu
+        hidden_units: []
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: APG_DeepFM
+    model_root: ./checkpoints/APG_DeepFM_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    new_condition_emb: false
+    num_workers: 3
+    optimizer: adam
+    overparam_p: null
+    pickle_feature_encoder: true
+    rank_k: null
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+APG_DeepFM_microvideo1.7m_x1_014_f548683a:
+    batch_norm: true
+    batch_size: 2048
+    condition_features: null
+    condition_mode: self-wise
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: clicked_items
+    - {feature_encoder: layers.MaskedAveragePooling(), name: clicked_categories}
+    generate_bias: true
+    group_id: group_id
+    hidden_activations: relu
+    hidden_units: [1024, 512, 256]
+    hypernet_config:
+        dropout_rates: 0
+        hidden_activations: relu
+        hidden_units: []
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: APG_DeepFM
+    model_root: ./checkpoints/APG_DeepFM_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    new_condition_emb: false
+    num_workers: 3
+    optimizer: adam
+    overparam_p: [64, 32, 16]
+    pickle_feature_encoder: true
+    rank_k: null
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+APG_DeepFM_microvideo1.7m_x1_015_af1e7d5d:
+    batch_norm: true
+    batch_size: 2048
+    condition_features: null
+    condition_mode: self-wise
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: clicked_items
+    - {feature_encoder: layers.MaskedAveragePooling(), name: clicked_categories}
+    generate_bias: true
+    group_id: group_id
+    hidden_activations: relu
+    hidden_units: [1024, 512, 256]
+    hypernet_config:
+        dropout_rates: 0
+        hidden_activations: relu
+        hidden_units: []
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: APG_DeepFM
+    model_root: ./checkpoints/APG_DeepFM_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    new_condition_emb: false
+    num_workers: 3
+    optimizer: adam
+    overparam_p: [32, 16, 8]
+    pickle_feature_encoder: true
+    rank_k: null
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+APG_DeepFM_microvideo1.7m_x1_016_b5188112:
+    batch_norm: true
+    batch_size: 2048
+    condition_features: null
+    condition_mode: self-wise
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: clicked_items
+    - {feature_encoder: layers.MaskedAveragePooling(), name: clicked_categories}
+    generate_bias: true
+    group_id: group_id
+    hidden_activations: relu
+    hidden_units: [1024, 512, 256]
+    hypernet_config:
+        dropout_rates: 0
+        hidden_activations: relu
+        hidden_units: []
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: APG_DeepFM
+    model_root: ./checkpoints/APG_DeepFM_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    new_condition_emb: false
+    num_workers: 3
+    optimizer: adam
+    overparam_p: [128, 64, 32]
+    pickle_feature_encoder: true
+    rank_k: null
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+APG_DeepFM_microvideo1.7m_x1_017_af1e7d5d:
+    batch_norm: true
+    batch_size: 2048
+    condition_features: null
+    condition_mode: self-wise
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: clicked_items
+    - {feature_encoder: layers.MaskedAveragePooling(), name: clicked_categories}
+    generate_bias: true
+    group_id: group_id
+    hidden_activations: relu
+    hidden_units: [1024, 512, 256]
+    hypernet_config:
+        dropout_rates: 0
+        hidden_activations: relu
+        hidden_units: []
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: APG_DeepFM
+    model_root: ./checkpoints/APG_DeepFM_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    new_condition_emb: false
+    num_workers: 3
+    optimizer: adam
+    overparam_p: null
+    pickle_feature_encoder: true
+    rank_k: [32, 16, 8]
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+APG_DeepFM_microvideo1.7m_x1_018_cc3a0322:
+    batch_norm: true
+    batch_size: 2048
+    condition_features: null
+    condition_mode: self-wise
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: clicked_items
+    - {feature_encoder: layers.MaskedAveragePooling(), name: clicked_categories}
+    generate_bias: true
+    group_id: group_id
+    hidden_activations: relu
+    hidden_units: [1024, 512, 256]
+    hypernet_config:
+        dropout_rates: 0
+        hidden_activations: relu
+        hidden_units: []
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: APG_DeepFM
+    model_root: ./checkpoints/APG_DeepFM_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    new_condition_emb: false
+    num_workers: 3
+    optimizer: adam
+    overparam_p: [64, 32, 16]
+    pickle_feature_encoder: true
+    rank_k: [32, 16, 8]
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+APG_DeepFM_microvideo1.7m_x1_019_bd1d0534:
+    batch_norm: true
+    batch_size: 2048
+    condition_features: null
+    condition_mode: self-wise
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: clicked_items
+    - {feature_encoder: layers.MaskedAveragePooling(), name: clicked_categories}
+    generate_bias: true
+    group_id: group_id
+    hidden_activations: relu
+    hidden_units: [1024, 512, 256]
+    hypernet_config:
+        dropout_rates: 0
+        hidden_activations: relu
+        hidden_units: []
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: APG_DeepFM
+    model_root: ./checkpoints/APG_DeepFM_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    new_condition_emb: false
+    num_workers: 3
+    optimizer: adam
+    overparam_p: [32, 16, 8]
+    pickle_feature_encoder: true
+    rank_k: [32, 16, 8]
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+APG_DeepFM_microvideo1.7m_x1_020_b47ffd57:
+    batch_norm: true
+    batch_size: 2048
+    condition_features: null
+    condition_mode: self-wise
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: clicked_items
+    - {feature_encoder: layers.MaskedAveragePooling(), name: clicked_categories}
+    generate_bias: true
+    group_id: group_id
+    hidden_activations: relu
+    hidden_units: [1024, 512, 256]
+    hypernet_config:
+        dropout_rates: 0
+        hidden_activations: relu
+        hidden_units: []
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: APG_DeepFM
+    model_root: ./checkpoints/APG_DeepFM_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    new_condition_emb: false
+    num_workers: 3
+    optimizer: adam
+    overparam_p: [128, 64, 32]
+    pickle_feature_encoder: true
+    rank_k: [32, 16, 8]
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+APG_DeepFM_microvideo1.7m_x1_021_3c2bc4cc:
+    batch_norm: true
+    batch_size: 2048
+    condition_features: null
+    condition_mode: self-wise
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: clicked_items
+    - {feature_encoder: layers.MaskedAveragePooling(), name: clicked_categories}
+    generate_bias: true
+    group_id: group_id
+    hidden_activations: relu
+    hidden_units: [1024, 512, 256]
+    hypernet_config:
+        dropout_rates: 0
+        hidden_activations: relu
+        hidden_units: []
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: APG_DeepFM
+    model_root: ./checkpoints/APG_DeepFM_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    new_condition_emb: false
+    num_workers: 3
+    optimizer: adam
+    overparam_p: null
+    pickle_feature_encoder: true
+    rank_k: [16, 8, 4]
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+APG_DeepFM_microvideo1.7m_x1_022_c9ea30b2:
+    batch_norm: true
+    batch_size: 2048
+    condition_features: null
+    condition_mode: self-wise
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: clicked_items
+    - {feature_encoder: layers.MaskedAveragePooling(), name: clicked_categories}
+    generate_bias: true
+    group_id: group_id
+    hidden_activations: relu
+    hidden_units: [1024, 512, 256]
+    hypernet_config:
+        dropout_rates: 0
+        hidden_activations: relu
+        hidden_units: []
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: APG_DeepFM
+    model_root: ./checkpoints/APG_DeepFM_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    new_condition_emb: false
+    num_workers: 3
+    optimizer: adam
+    overparam_p: [64, 32, 16]
+    pickle_feature_encoder: true
+    rank_k: [16, 8, 4]
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+APG_DeepFM_microvideo1.7m_x1_023_d3a3ee84:
+    batch_norm: true
+    batch_size: 2048
+    condition_features: null
+    condition_mode: self-wise
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: clicked_items
+    - {feature_encoder: layers.MaskedAveragePooling(), name: clicked_categories}
+    generate_bias: true
+    group_id: group_id
+    hidden_activations: relu
+    hidden_units: [1024, 512, 256]
+    hypernet_config:
+        dropout_rates: 0
+        hidden_activations: relu
+        hidden_units: []
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: APG_DeepFM
+    model_root: ./checkpoints/APG_DeepFM_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    new_condition_emb: false
+    num_workers: 3
+    optimizer: adam
+    overparam_p: [32, 16, 8]
+    pickle_feature_encoder: true
+    rank_k: [16, 8, 4]
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+APG_DeepFM_microvideo1.7m_x1_024_c6cb4fa0:
+    batch_norm: true
+    batch_size: 2048
+    condition_features: null
+    condition_mode: self-wise
+    dataset_id: microvideo1.7m_x1_0d855fe6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    -   feature_encoder: [layers.MaskedAveragePooling(), 'nn.Linear(64, 64, bias=False)']
+        name: clicked_items
+    - {feature_encoder: layers.MaskedAveragePooling(), name: clicked_categories}
+    generate_bias: true
+    group_id: group_id
+    hidden_activations: relu
+    hidden_units: [1024, 512, 256]
+    hypernet_config:
+        dropout_rates: 0
+        hidden_activations: relu
+        hidden_units: []
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: APG_DeepFM
+    model_root: ./checkpoints/APG_DeepFM_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    new_condition_emb: false
+    num_workers: 3
+    optimizer: adam
+    overparam_p: [128, 64, 32]
+    pickle_feature_encoder: true
+    rank_k: [16, 8, 4]
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1

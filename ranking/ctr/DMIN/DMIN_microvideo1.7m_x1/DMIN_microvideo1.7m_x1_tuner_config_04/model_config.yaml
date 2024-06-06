@@ -1,0 +1,832 @@
+DMIN_microvideo1.7m_x1_001_2663b367:
+    attention_activation: ReLU
+    attention_dropout: 0.1
+    attention_hidden_units: [512, 256]
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_lambda: 0
+    batch_norm: true
+    batch_size: 2048
+    bn_only_once: false
+    dataset_id: microvideo1.7m_x1_83b31456
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0005
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMIN
+    model_root: ./checkpoints/DMIN_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 2
+    save_best_only: true
+    seed: 2022
+    sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    shuffle: true
+    target_field: !!python/tuple [item_id, cate_id]
+    task: binary_classification
+    use_behavior_refiner: true
+    use_features: null
+    use_pos_emb: true
+    verbose: 1
+DMIN_microvideo1.7m_x1_002_27dc4206:
+    attention_activation: ReLU
+    attention_dropout: 0.1
+    attention_hidden_units: [512, 256]
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_lambda: 0
+    batch_norm: true
+    batch_size: 2048
+    bn_only_once: false
+    dataset_id: microvideo1.7m_x1_83b31456
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0005
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMIN
+    model_root: ./checkpoints/DMIN_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 2
+    save_best_only: true
+    seed: 2022
+    sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    shuffle: true
+    target_field: !!python/tuple [item_id, cate_id]
+    task: binary_classification
+    use_behavior_refiner: true
+    use_features: null
+    use_pos_emb: false
+    verbose: 1
+DMIN_microvideo1.7m_x1_003_a1e54d87:
+    attention_activation: ReLU
+    attention_dropout: 0.1
+    attention_hidden_units: [512, 256]
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_lambda: 0
+    batch_norm: true
+    batch_size: 2048
+    bn_only_once: false
+    dataset_id: microvideo1.7m_x1_83b31456
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0005
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMIN
+    model_root: ./checkpoints/DMIN_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 2
+    save_best_only: true
+    seed: 2022
+    sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    shuffle: true
+    target_field: !!python/tuple [item_id, cate_id]
+    task: binary_classification
+    use_behavior_refiner: true
+    use_features: null
+    use_pos_emb: true
+    verbose: 1
+DMIN_microvideo1.7m_x1_004_f15038ee:
+    attention_activation: ReLU
+    attention_dropout: 0.1
+    attention_hidden_units: [512, 256]
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_lambda: 0
+    batch_norm: true
+    batch_size: 2048
+    bn_only_once: false
+    dataset_id: microvideo1.7m_x1_83b31456
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0005
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMIN
+    model_root: ./checkpoints/DMIN_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 2
+    save_best_only: true
+    seed: 2022
+    sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    shuffle: true
+    target_field: !!python/tuple [item_id, cate_id]
+    task: binary_classification
+    use_behavior_refiner: true
+    use_features: null
+    use_pos_emb: false
+    verbose: 1
+DMIN_microvideo1.7m_x1_005_27dc4206:
+    attention_activation: ReLU
+    attention_dropout: 0.1
+    attention_hidden_units: [512, 256]
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_lambda: 0
+    batch_norm: true
+    batch_size: 2048
+    bn_only_once: false
+    dataset_id: microvideo1.7m_x1_83b31456
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0005
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMIN
+    model_root: ./checkpoints/DMIN_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 2
+    save_best_only: true
+    seed: 2022
+    sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    shuffle: true
+    target_field: !!python/tuple [item_id, cate_id]
+    task: binary_classification
+    use_behavior_refiner: false
+    use_features: null
+    use_pos_emb: true
+    verbose: 1
+DMIN_microvideo1.7m_x1_006_8935b08e:
+    attention_activation: ReLU
+    attention_dropout: 0.1
+    attention_hidden_units: [512, 256]
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_lambda: 0
+    batch_norm: true
+    batch_size: 2048
+    bn_only_once: false
+    dataset_id: microvideo1.7m_x1_83b31456
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0005
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMIN
+    model_root: ./checkpoints/DMIN_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 2
+    save_best_only: true
+    seed: 2022
+    sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    shuffle: true
+    target_field: !!python/tuple [item_id, cate_id]
+    task: binary_classification
+    use_behavior_refiner: false
+    use_features: null
+    use_pos_emb: false
+    verbose: 1
+DMIN_microvideo1.7m_x1_007_f15038ee:
+    attention_activation: ReLU
+    attention_dropout: 0.1
+    attention_hidden_units: [512, 256]
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_lambda: 0
+    batch_norm: true
+    batch_size: 2048
+    bn_only_once: false
+    dataset_id: microvideo1.7m_x1_83b31456
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0005
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMIN
+    model_root: ./checkpoints/DMIN_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 2
+    save_best_only: true
+    seed: 2022
+    sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    shuffle: true
+    target_field: !!python/tuple [item_id, cate_id]
+    task: binary_classification
+    use_behavior_refiner: false
+    use_features: null
+    use_pos_emb: true
+    verbose: 1
+DMIN_microvideo1.7m_x1_008_9d1ce223:
+    attention_activation: ReLU
+    attention_dropout: 0.1
+    attention_hidden_units: [512, 256]
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_lambda: 0
+    batch_norm: true
+    batch_size: 2048
+    bn_only_once: false
+    dataset_id: microvideo1.7m_x1_83b31456
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0005
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMIN
+    model_root: ./checkpoints/DMIN_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 2
+    save_best_only: true
+    seed: 2022
+    sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    shuffle: true
+    target_field: !!python/tuple [item_id, cate_id]
+    task: binary_classification
+    use_behavior_refiner: false
+    use_features: null
+    use_pos_emb: false
+    verbose: 1
+DMIN_microvideo1.7m_x1_009_800f504a:
+    attention_activation: ReLU
+    attention_dropout: 0.1
+    attention_hidden_units: [512, 256]
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_lambda: 0
+    batch_norm: true
+    batch_size: 2048
+    bn_only_once: false
+    dataset_id: microvideo1.7m_x1_83b31456
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMIN
+    model_root: ./checkpoints/DMIN_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 2
+    save_best_only: true
+    seed: 2022
+    sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    shuffle: true
+    target_field: !!python/tuple [item_id, cate_id]
+    task: binary_classification
+    use_behavior_refiner: true
+    use_features: null
+    use_pos_emb: true
+    verbose: 1
+DMIN_microvideo1.7m_x1_010_d21be00a:
+    attention_activation: ReLU
+    attention_dropout: 0.1
+    attention_hidden_units: [512, 256]
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_lambda: 0
+    batch_norm: true
+    batch_size: 2048
+    bn_only_once: false
+    dataset_id: microvideo1.7m_x1_83b31456
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMIN
+    model_root: ./checkpoints/DMIN_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 2
+    save_best_only: true
+    seed: 2022
+    sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    shuffle: true
+    target_field: !!python/tuple [item_id, cate_id]
+    task: binary_classification
+    use_behavior_refiner: true
+    use_features: null
+    use_pos_emb: false
+    verbose: 1
+DMIN_microvideo1.7m_x1_011_76a75336:
+    attention_activation: ReLU
+    attention_dropout: 0.1
+    attention_hidden_units: [512, 256]
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_lambda: 0
+    batch_norm: true
+    batch_size: 2048
+    bn_only_once: false
+    dataset_id: microvideo1.7m_x1_83b31456
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMIN
+    model_root: ./checkpoints/DMIN_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 2
+    save_best_only: true
+    seed: 2022
+    sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    shuffle: true
+    target_field: !!python/tuple [item_id, cate_id]
+    task: binary_classification
+    use_behavior_refiner: true
+    use_features: null
+    use_pos_emb: true
+    verbose: 1
+DMIN_microvideo1.7m_x1_012_dd8c6ae2:
+    attention_activation: ReLU
+    attention_dropout: 0.1
+    attention_hidden_units: [512, 256]
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_lambda: 0
+    batch_norm: true
+    batch_size: 2048
+    bn_only_once: false
+    dataset_id: microvideo1.7m_x1_83b31456
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMIN
+    model_root: ./checkpoints/DMIN_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 2
+    save_best_only: true
+    seed: 2022
+    sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    shuffle: true
+    target_field: !!python/tuple [item_id, cate_id]
+    task: binary_classification
+    use_behavior_refiner: true
+    use_features: null
+    use_pos_emb: false
+    verbose: 1
+DMIN_microvideo1.7m_x1_013_d21be00a:
+    attention_activation: ReLU
+    attention_dropout: 0.1
+    attention_hidden_units: [512, 256]
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_lambda: 0
+    batch_norm: true
+    batch_size: 2048
+    bn_only_once: false
+    dataset_id: microvideo1.7m_x1_83b31456
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMIN
+    model_root: ./checkpoints/DMIN_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 2
+    save_best_only: true
+    seed: 2022
+    sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    shuffle: true
+    target_field: !!python/tuple [item_id, cate_id]
+    task: binary_classification
+    use_behavior_refiner: false
+    use_features: null
+    use_pos_emb: true
+    verbose: 1
+DMIN_microvideo1.7m_x1_014_d6163c18:
+    attention_activation: ReLU
+    attention_dropout: 0.1
+    attention_hidden_units: [512, 256]
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_lambda: 0
+    batch_norm: true
+    batch_size: 2048
+    bn_only_once: false
+    dataset_id: microvideo1.7m_x1_83b31456
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMIN
+    model_root: ./checkpoints/DMIN_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 2
+    save_best_only: true
+    seed: 2022
+    sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    shuffle: true
+    target_field: !!python/tuple [item_id, cate_id]
+    task: binary_classification
+    use_behavior_refiner: false
+    use_features: null
+    use_pos_emb: false
+    verbose: 1
+DMIN_microvideo1.7m_x1_015_dd8c6ae2:
+    attention_activation: ReLU
+    attention_dropout: 0.1
+    attention_hidden_units: [512, 256]
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_lambda: 0
+    batch_norm: true
+    batch_size: 2048
+    bn_only_once: false
+    dataset_id: microvideo1.7m_x1_83b31456
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMIN
+    model_root: ./checkpoints/DMIN_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 2
+    save_best_only: true
+    seed: 2022
+    sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    shuffle: true
+    target_field: !!python/tuple [item_id, cate_id]
+    task: binary_classification
+    use_behavior_refiner: false
+    use_features: null
+    use_pos_emb: true
+    verbose: 1
+DMIN_microvideo1.7m_x1_016_38252189:
+    attention_activation: ReLU
+    attention_dropout: 0.1
+    attention_hidden_units: [512, 256]
+    aux_activation: ReLU
+    aux_hidden_units: [100, 50]
+    aux_loss_lambda: 0
+    batch_norm: true
+    batch_size: 2048
+    bn_only_once: false
+    dataset_id: microvideo1.7m_x1_83b31456
+    debug_mode: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    enable_sum_pooling: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs:
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: item_id}
+    - {feature_encoder: 'nn.Linear(64, 64, bias=False)', name: clicked_items}
+    - {feature_encoder: null, name: clicked_categories}
+    group_id: group_id
+    layer_norm: true
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: DMIN
+    model_root: ./checkpoints/DMIN_microvideo1.7m_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    neg_seq_field: null
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 4
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    pos_emb_dim: 2
+    save_best_only: true
+    seed: 2022
+    sequence_field: !!python/tuple [clicked_items, clicked_categories]
+    shuffle: true
+    target_field: !!python/tuple [item_id, cate_id]
+    task: binary_classification
+    use_behavior_refiner: false
+    use_features: null
+    use_pos_emb: false
+    verbose: 1

@@ -14,7 +14,7 @@ jupytext:
 
 ```{note}
 Please use the following evaluation settings for this benchmark:
-+ Dataset split: [MicroVideo1.7M_x1](https://github.com/reczoo/Datasets/tree/main/MicroVideo1.7M/MicroVideo1.7M_x1)
++ Dataset split: [MicroVideo1.7M_x1](https://github.com/reczoo/Datasets/tree/main/MicroVideo/MicroVideo1.7M_x1)
 + Rare features filtering: min_categr_count=1
 + Embedding size: 64
 ```

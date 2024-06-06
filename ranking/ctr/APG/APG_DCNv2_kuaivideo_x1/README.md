@@ -1,0 +1,228 @@
+## APG_DCNv2_kuaivideo_x1
+
+A hands-on guide to run the APG model on the KuaiVideo_x1 dataset.
+
+Author: [BARS Benchmark](https://github.com/reczoo/BARS/blob/main/CITATION)
+
+
+| [Environments](#Environments) | [Dataset](#Dataset) | [Code](#Code) | [Results](#Results) | [Logs](#Logs) |
+|:-----------------------------:|:-----------:|:--------:|:--------:|-------|
+### Environments
++ Hardware
+
+  ```python
+  CPU: Intel(R) Xeon(R) Gold 6278C CPU @ 2.60GHz
+  GPU: Tesla V100 32G
+  RAM: 755G
+
+  ```
+
++ Software
+
+  ```python
+  cuda: 10.2
+  python: 3.7.10
+  pytorch: 1.11.0
+  pandas: 1.1.5
+  numpy: 1.19.5
+  scipy: 1.5.2
+  sklearn: 0.22.1
+  pyyaml: 6.0
+  h5py: 2.8.0
+  tqdm: 4.64.0
+  fuxictr: 2.0.3
+
+  ```
+
+### Dataset
+Please refer to [KuaiVideo_x1](https://github.com/reczoo/Datasets/tree/main/KuaiShou/KuaiVideo_x1) to get the dataset details.
+
+### Code
+
+We use the [APG](https://github.com/reczoo/FuxiCTR/tree/v2.0.3/model_zoo/APG) model code from [FuxiCTR-v2.0.3](https://github.com/reczoo/FuxiCTR/tree/v2.0.3) for this experiment.
+
+Running steps:
+
+1. Download [FuxiCTR-v2.0.3](https://github.com/reczoo/FuxiCTR/archive/refs/tags/v2.0.3.zip) and install all the dependencies listed in the [environments](#environments).
+    
+    ```bash
+    pip uninstall fuxictr
+    pip install fuxictr==2.0.3
+    ```
+
+2. Create a data directory and put the downloaded data files in `../data/KuaiShou/KuaiVideo_x1`.
+
+3. Both `dataset_config.yaml` and `model_config.yaml` files are available in [APG_DCNv2_kuaivideo_x1_tuner_config_04](./APG_DCNv2_kuaivideo_x1_tuner_config_04). Please make sure that the data paths in `dataset_config.yaml` are correctly set.
+
+4. Run the following script to start training and evaluation.
+
+    ```bash
+    cd FuxiCTR/model_zoo/APG
+    nohup python run_expid.py --config YOUR_PATH/APG/APG_DCNv2_kuaivideo_x1_tuner_config_04 --expid APG_DCNv2_kuaivideo_x1_010_2fb9cb37 --gpu 0 > run.log &
+    tail -f run.log
+    ```
+
+### Results
+
+| gAUC | AUC | logloss  |
+|:--------------------:|:--------------------:|:--------------------:|
+| 0.667191 | 0.746629 | 0.439467  |
+
+
+### Logs
+```python
+2023-06-04 03:14:45,836 P60332 INFO Params: {
+    "batch_norm": "True",
+    "batch_size": "8192",
+    "condition_features": "['user_id', 'item_id', 'item_emb', 'pos_items', 'neg_items', 'pos_items_emb', 'neg_items_emb']",
+    "condition_mode": "mix-wise",
+    "data_format": "csv",
+    "data_root": "../data/KuaiShou/",
+    "dataset_id": "kuaivideo_x1_dc7a3035",
+    "debug_mode": "False",
+    "dnn_activations": "relu",
+    "early_stop_patience": "2",
+    "embedding_dim": "64",
+    "embedding_regularizer": "0.0001",
+    "epochs": "100",
+    "eval_steps": "None",
+    "feature_cols": "[{'active': True, 'dtype': 'int', 'name': 'group_id', 'preprocess': 'copy_from(user_id)', 'remap': False, 'type': 'meta'}, {'active': True, 'dtype': 'str', 'name': 'user_id', 'type': 'categorical'}, {'active': True, 'dtype': 'str', 'name': 'item_id', 'type': 'categorical'}, {'active': True, 'dtype': 'str', 'embedding_dim': 64, 'min_categr_count': 1, 'name': 'item_emb', 'preprocess': 'copy_from(item_id)', 'pretrained_emb': '../data/KuaiShou/KuaiVideo_x1/item_visual_emb_dim64.h5', 'type': 'categorical'}, {'active': True, 'dtype': 'str', 'max_len': 100, 'name': 'pos_items', 'padding': 'pre', 'share_embedding': 'item_id', 'splitter': '^', 'type': 'sequence'}, {'active': True, 'dtype': 'str', 'max_len': 100, 'name': 'neg_items', 'padding': 'pre', 'share_embedding': 'item_id', 'splitter': '^', 'type': 'sequence'}, {'active': True, 'dtype': 'str', 'embedding_dim': 64, 'max_len': 100, 'min_categr_count': 1, 'name': 'pos_items_emb', 'padding': 'pre', 'preprocess': 'copy_from(pos_items)', 'pretrained_emb': '../data/KuaiShou/KuaiVideo_x1/item_visual_emb_dim64.h5', 'share_embedding': 'item_emb', 'splitter': '^', 'type': 'sequence'}, {'active': True, 'dtype': 'str', 'embedding_dim': 64, 'max_len': 100, 'min_categr_count': 1, 'name': 'neg_items_emb', 'padding': 'pre', 'preprocess': 'copy_from(neg_items)', 'pretrained_emb': '../data/KuaiShou/KuaiVideo_x1/item_visual_emb_dim64.h5', 'share_embedding': 'item_emb', 'splitter': '^', 'type': 'sequence'}]",
+    "feature_config": "None",
+    "feature_specs": "[{'feature_encoder': 'nn.Linear(64, 64, bias=False)', 'name': 'item_emb'}, {'feature_encoder': 'layers.MaskedAveragePooling()', 'name': 'pos_items'}, {'feature_encoder': 'layers.MaskedAveragePooling()', 'name': 'neg_items'}, {'feature_encoder': ['layers.MaskedAveragePooling()', 'nn.Linear(64, 64, bias=False)'], 'name': 'pos_items_emb'}, {'feature_encoder': ['layers.MaskedAveragePooling()', 'nn.Linear(64, 64, bias=False)'], 'name': 'neg_items_emb'}]",
+    "generate_bias": "True",
+    "gpu": "1",
+    "group_id": "group_id",
+    "hypernet_config": "{'dropout_rates': 0.1, 'hidden_activations': 'relu', 'hidden_units': []}",
+    "label_col": "{'dtype': 'float', 'name': 'is_click'}",
+    "learning_rate": "0.001",
+    "loss": "binary_crossentropy",
+    "low_rank": "32",
+    "metrics": "['gAUC', 'AUC', 'logloss']",
+    "min_categr_count": "10",
+    "model": "APG_DCNv2",
+    "model_id": "APG_DCNv2_kuaivideo_x1_010_2fb9cb37",
+    "model_root": "./checkpoints/APG_DCNv2_kuaivideo_x1/",
+    "model_structure": "parallel",
+    "monitor": "{'AUC': 1, 'gAUC': 1}",
+    "monitor_mode": "max",
+    "net_dropout": "0.1",
+    "net_regularizer": "0",
+    "new_condition_emb": "False",
+    "num_cross_layers": "2",
+    "num_experts": "4",
+    "num_workers": "3",
+    "optimizer": "adam",
+    "overparam_p": "None",
+    "parallel_dnn_hidden_units": "[1024, 512, 256]",
+    "pickle_feature_encoder": "True",
+    "rank_k": "[32, 16, 8]",
+    "save_best_only": "True",
+    "seed": "20222023",
+    "shuffle": "True",
+    "stacked_dnn_hidden_units": "[500, 500, 500]",
+    "task": "binary_classification",
+    "test_data": "../data/KuaiShou/KuaiVideo_x1/test.csv",
+    "train_data": "../data/KuaiShou/KuaiVideo_x1/train.csv",
+    "use_features": "None",
+    "use_low_rank_mixture": "False",
+    "valid_data": "../data/KuaiShou/KuaiVideo_x1/test.csv",
+    "verbose": "1"
+}
+2023-06-04 03:14:45,837 P60332 INFO Set up feature processor...
+2023-06-04 03:14:45,837 P60332 WARNING Skip rebuilding ../data/KuaiShou/kuaivideo_x1_dc7a3035/feature_map.json. Please delete it manually if rebuilding is required.
+2023-06-04 03:14:45,837 P60332 INFO Load feature_map from json: ../data/KuaiShou/kuaivideo_x1_dc7a3035/feature_map.json
+2023-06-04 03:14:45,838 P60332 INFO Set column index...
+2023-06-04 03:14:45,838 P60332 INFO Feature specs: {
+    "group_id": "{'type': 'meta'}",
+    "item_emb": "{'source': '', 'type': 'categorical', 'embedding_dim': 64, 'pretrained_emb': 'pretrained_emb.h5', 'freeze_emb': True, 'padding_idx': 0, 'oov_idx': 3242316, 'vocab_size': 3242317, 'feature_encoder': 'nn.Linear(64, 64, bias=False)'}",
+    "item_id": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'oov_idx': 632405, 'vocab_size': 632406}",
+    "neg_items": "{'source': '', 'type': 'sequence', 'feature_encoder': 'layers.MaskedAveragePooling()', 'share_embedding': 'item_id', 'padding_idx': 0, 'oov_idx': 632405, 'vocab_size': 632406, 'max_len': 100}",
+    "neg_items_emb": "{'source': '', 'type': 'sequence', 'feature_encoder': ['layers.MaskedAveragePooling()', 'nn.Linear(64, 64, bias=False)'], 'embedding_dim': 64, 'share_embedding': 'item_emb', 'padding_idx': 0, 'oov_idx': 3242316, 'vocab_size': 3242317, 'max_len': 100}",
+    "pos_items": "{'source': '', 'type': 'sequence', 'feature_encoder': 'layers.MaskedAveragePooling()', 'share_embedding': 'item_id', 'padding_idx': 0, 'oov_idx': 632405, 'vocab_size': 632406, 'max_len': 100}",
+    "pos_items_emb": "{'source': '', 'type': 'sequence', 'feature_encoder': ['layers.MaskedAveragePooling()', 'nn.Linear(64, 64, bias=False)'], 'embedding_dim': 64, 'share_embedding': 'item_emb', 'padding_idx': 0, 'oov_idx': 3242316, 'vocab_size': 3242317, 'max_len': 100}",
+    "user_id": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'oov_idx': 10001, 'vocab_size': 10002}"
+}
+2023-06-04 03:14:53,056 P60332 INFO Total number of parameters: 43018881.
+2023-06-04 03:14:53,057 P60332 INFO Loading data...
+2023-06-04 03:14:53,057 P60332 INFO Loading data from h5: ../data/KuaiShou/kuaivideo_x1_dc7a3035/train.h5
+2023-06-04 03:15:17,328 P60332 INFO Train samples: total/10931092, blocks/1
+2023-06-04 03:15:17,328 P60332 INFO Loading data from h5: ../data/KuaiShou/kuaivideo_x1_dc7a3035/valid.h5
+2023-06-04 03:15:24,618 P60332 INFO Validation samples: total/2730291, blocks/1
+2023-06-04 03:15:24,619 P60332 INFO Loading train and validation data done.
+2023-06-04 03:15:24,619 P60332 INFO Start training: 1335 batches/epoch
+2023-06-04 03:15:24,619 P60332 INFO ************ Epoch=1 start ************
+2023-06-04 03:20:38,997 P60332 INFO Train loss: 0.459765
+2023-06-04 03:20:39,003 P60332 INFO Evaluation @epoch 1 - batch 1335: 
+2023-06-04 03:21:52,962 P60332 INFO [Metrics] AUC: 0.731486 - gAUC: 0.644647
+2023-06-04 03:21:52,970 P60332 INFO Save best model: monitor(max)=1.376133
+2023-06-04 03:21:55,243 P60332 INFO ************ Epoch=1 end ************
+2023-06-04 03:27:14,598 P60332 INFO Train loss: 0.444499
+2023-06-04 03:27:14,603 P60332 INFO Evaluation @epoch 2 - batch 1335: 
+2023-06-04 03:28:30,974 P60332 INFO [Metrics] AUC: 0.738369 - gAUC: 0.654570
+2023-06-04 03:28:30,978 P60332 INFO Save best model: monitor(max)=1.392939
+2023-06-04 03:28:33,300 P60332 INFO ************ Epoch=2 end ************
+2023-06-04 03:33:47,481 P60332 INFO Train loss: 0.441063
+2023-06-04 03:33:47,481 P60332 INFO Evaluation @epoch 3 - batch 1335: 
+2023-06-04 03:35:00,971 P60332 INFO [Metrics] AUC: 0.740285 - gAUC: 0.657678
+2023-06-04 03:35:00,975 P60332 INFO Save best model: monitor(max)=1.397963
+2023-06-04 03:35:03,285 P60332 INFO ************ Epoch=3 end ************
+2023-06-04 03:37:55,627 P60332 INFO Train loss: 0.439679
+2023-06-04 03:37:55,627 P60332 INFO Evaluation @epoch 4 - batch 1335: 
+2023-06-04 03:38:36,077 P60332 INFO [Metrics] AUC: 0.740719 - gAUC: 0.658356
+2023-06-04 03:38:36,079 P60332 INFO Save best model: monitor(max)=1.399075
+2023-06-04 03:38:38,680 P60332 INFO ************ Epoch=4 end ************
+2023-06-04 03:40:37,453 P60332 INFO Train loss: 0.438689
+2023-06-04 03:40:37,454 P60332 INFO Evaluation @epoch 5 - batch 1335: 
+2023-06-04 03:41:08,288 P60332 INFO [Metrics] AUC: 0.741564 - gAUC: 0.660730
+2023-06-04 03:41:08,293 P60332 INFO Save best model: monitor(max)=1.402295
+2023-06-04 03:41:10,558 P60332 INFO ************ Epoch=5 end ************
+2023-06-04 03:43:07,854 P60332 INFO Train loss: 0.437906
+2023-06-04 03:43:07,854 P60332 INFO Evaluation @epoch 6 - batch 1335: 
+2023-06-04 03:43:38,366 P60332 INFO [Metrics] AUC: 0.742009 - gAUC: 0.660932
+2023-06-04 03:43:38,368 P60332 INFO Save best model: monitor(max)=1.402941
+2023-06-04 03:43:40,757 P60332 INFO ************ Epoch=6 end ************
+2023-06-04 03:45:40,522 P60332 INFO Train loss: 0.437139
+2023-06-04 03:45:40,522 P60332 INFO Evaluation @epoch 7 - batch 1335: 
+2023-06-04 03:46:12,219 P60332 INFO [Metrics] AUC: 0.743419 - gAUC: 0.662650
+2023-06-04 03:46:12,220 P60332 INFO Save best model: monitor(max)=1.406069
+2023-06-04 03:46:14,590 P60332 INFO ************ Epoch=7 end ************
+2023-06-04 03:48:15,532 P60332 INFO Train loss: 0.436447
+2023-06-04 03:48:15,532 P60332 INFO Evaluation @epoch 8 - batch 1335: 
+2023-06-04 03:48:45,193 P60332 INFO [Metrics] AUC: 0.742908 - gAUC: 0.661645
+2023-06-04 03:48:45,199 P60332 INFO Monitor(max)=1.404552 STOP!
+2023-06-04 03:48:45,199 P60332 INFO Reduce learning rate on plateau: 0.000100
+2023-06-04 03:48:45,265 P60332 INFO ************ Epoch=8 end ************
+2023-06-04 03:50:46,909 P60332 INFO Train loss: 0.413889
+2023-06-04 03:50:46,910 P60332 INFO Evaluation @epoch 9 - batch 1335: 
+2023-06-04 03:51:20,226 P60332 INFO [Metrics] AUC: 0.746651 - gAUC: 0.666573
+2023-06-04 03:51:20,230 P60332 INFO Save best model: monitor(max)=1.413224
+2023-06-04 03:51:22,422 P60332 INFO ************ Epoch=9 end ************
+2023-06-04 03:53:16,894 P60332 INFO Train loss: 0.406181
+2023-06-04 03:53:16,895 P60332 INFO Evaluation @epoch 10 - batch 1335: 
+2023-06-04 03:53:52,258 P60332 INFO [Metrics] AUC: 0.746629 - gAUC: 0.667191
+2023-06-04 03:53:52,287 P60332 INFO Save best model: monitor(max)=1.413820
+2023-06-04 03:53:54,664 P60332 INFO ************ Epoch=10 end ************
+2023-06-04 03:55:37,723 P60332 INFO Train loss: 0.401456
+2023-06-04 03:55:37,724 P60332 INFO Evaluation @epoch 11 - batch 1335: 
+2023-06-04 03:56:03,461 P60332 INFO [Metrics] AUC: 0.745735 - gAUC: 0.666792
+2023-06-04 03:56:03,463 P60332 INFO Monitor(max)=1.412528 STOP!
+2023-06-04 03:56:03,463 P60332 INFO Reduce learning rate on plateau: 0.000010
+2023-06-04 03:56:03,553 P60332 INFO ************ Epoch=11 end ************
+2023-06-04 03:57:37,404 P60332 INFO Train loss: 0.392417
+2023-06-04 03:57:37,404 P60332 INFO Evaluation @epoch 12 - batch 1335: 
+2023-06-04 03:58:02,030 P60332 INFO [Metrics] AUC: 0.745033 - gAUC: 0.666572
+2023-06-04 03:58:02,031 P60332 INFO Monitor(max)=1.411604 STOP!
+2023-06-04 03:58:02,032 P60332 INFO Reduce learning rate on plateau: 0.000001
+2023-06-04 03:58:02,032 P60332 INFO ********* Epoch==12 early stop *********
+2023-06-04 03:58:02,111 P60332 INFO Training finished.
+2023-06-04 03:58:02,112 P60332 INFO Load best model: /cache/FuxiCTR/benchmark/checkpoints/APG_DCNv2_kuaivideo_x1/kuaivideo_x1_dc7a3035/APG_DCNv2_kuaivideo_x1_010_2fb9cb37.model
+2023-06-04 03:58:03,031 P60332 INFO ****** Validation evaluation ******
+2023-06-04 03:58:29,216 P60332 INFO [Metrics] gAUC: 0.667191 - AUC: 0.746629 - logloss: 0.439467
+2023-06-04 03:58:29,370 P60332 INFO ******** Test evaluation ********
+2023-06-04 03:58:29,370 P60332 INFO Loading data...
+2023-06-04 03:58:29,370 P60332 INFO Loading data from h5: ../data/KuaiShou/kuaivideo_x1_dc7a3035/test.h5
+2023-06-04 03:58:35,161 P60332 INFO Test samples: total/2730291, blocks/1
+2023-06-04 03:58:35,161 P60332 INFO Loading test data done.
+2023-06-04 03:59:03,005 P60332 INFO [Metrics] gAUC: 0.667191 - AUC: 0.746629 - logloss: 0.439467
+
+```

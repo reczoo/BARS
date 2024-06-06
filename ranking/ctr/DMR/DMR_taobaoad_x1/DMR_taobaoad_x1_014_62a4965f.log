@@ -1,0 +1,131 @@
+2023-05-24 12:32:05,603 P61086 INFO Params: {
+    "attention_activation": "ReLU",
+    "attention_dropout": "0.2",
+    "attention_hidden_units": "[512, 256]",
+    "aux_loss_beta": "0",
+    "batch_norm": "False",
+    "batch_size": "8192",
+    "bn_only_once": "False",
+    "context_field": "None",
+    "data_format": "csv",
+    "data_root": "../data/Taobao/",
+    "dataset_id": "taobaoad_x1_bf8c47ea",
+    "debug_mode": "False",
+    "dnn_activations": "ReLU",
+    "dnn_hidden_units": "[512, 256, 128]",
+    "early_stop_patience": "2",
+    "embedding_dim": "32",
+    "embedding_regularizer": "5e-06",
+    "enable_i2i_rel": "False",
+    "enable_sum_pooling": "False",
+    "enable_u2i_rel": "False",
+    "epochs": "100",
+    "eval_steps": "None",
+    "feature_cols": "[{'active': True, 'dtype': 'int', 'name': 'group_id', 'preprocess': 'copy_from(userid)', 'remap': False, 'type': 'meta'}, {'active': True, 'dtype': 'str', 'name': ['userid', 'cms_segid', 'cms_group_id', 'final_gender_code', 'age_level', 'pvalue_level', 'shopping_level', 'occupation', 'new_user_class_level', 'adgroup_id', 'cate_id', 'campaign_id', 'customer', 'brand', 'pid', 'btag'], 'type': 'categorical'}, {'active': True, 'dtype': 'float', 'name': 'price', 'type': 'numeric'}, {'active': True, 'dtype': 'str', 'max_len': 50, 'name': 'cate_his', 'padding': 'post', 'share_embedding': 'cate_id', 'splitter': '^', 'type': 'sequence'}, {'active': True, 'dtype': 'str', 'max_len': 50, 'name': 'brand_his', 'padding': 'post', 'share_embedding': 'brand', 'splitter': '^', 'type': 'sequence'}, {'active': True, 'dtype': 'str', 'max_len': 50, 'name': 'btag_his', 'padding': 'post', 'share_embedding': 'btag', 'splitter': '^', 'type': 'sequence'}]",
+    "feature_config": "None",
+    "feature_specs": "[{'feature_encoder': None, 'name': ['cate_his', 'brand_his', 'btag_his']}]",
+    "gpu": "2",
+    "group_id": "group_id",
+    "label_col": "{'dtype': 'float', 'name': 'clk'}",
+    "learning_rate": "0.001",
+    "loss": "binary_crossentropy",
+    "metrics": "['gAUC', 'AUC', 'logloss']",
+    "min_categr_count": "10",
+    "model": "DMR",
+    "model_id": "DMR_taobaoad_x1_014_62a4965f",
+    "model_root": "./checkpoints/DMR_taobaoad_x1/",
+    "monitor": "{'AUC': 1, 'gAUC': 1}",
+    "monitor_mode": "max",
+    "neg_seq_field": "None",
+    "net_dropout": "0.1",
+    "net_regularizer": "0",
+    "num_workers": "3",
+    "optimizer": "adam",
+    "pickle_feature_encoder": "True",
+    "pos_emb_dim": "64",
+    "save_best_only": "True",
+    "seed": "20222023",
+    "sequence_field": "('cate_his', 'brand_his', 'btag_his')",
+    "shuffle": "True",
+    "target_field": "('cate_id', 'brand', 'btag')",
+    "task": "binary_classification",
+    "test_data": "../data/Taobao/TaobaoAd_x1/test.csv",
+    "train_data": "../data/Taobao/TaobaoAd_x1/train.csv",
+    "use_features": "None",
+    "use_pos_emb": "True",
+    "valid_data": "../data/Taobao/TaobaoAd_x1/test.csv",
+    "verbose": "1"
+}
+2023-05-24 12:32:05,604 P61086 INFO Set up feature processor...
+2023-05-24 12:32:05,604 P61086 WARNING Skip rebuilding ../data/Taobao/taobaoad_x1_bf8c47ea/feature_map.json. Please delete it manually if rebuilding is required.
+2023-05-24 12:32:05,604 P61086 INFO Load feature_map from json: ../data/Taobao/taobaoad_x1_bf8c47ea/feature_map.json
+2023-05-24 12:32:05,605 P61086 INFO Set column index...
+2023-05-24 12:32:05,605 P61086 INFO Feature specs: {
+    "adgroup_id": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'oov_idx': 246850, 'vocab_size': 246851}",
+    "age_level": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'oov_idx': 8, 'vocab_size': 9}",
+    "brand": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'oov_idx': 308869, 'vocab_size': 308870}",
+    "brand_his": "{'source': '', 'type': 'sequence', 'feature_encoder': None, 'share_embedding': 'brand', 'padding_idx': 0, 'oov_idx': 308869, 'vocab_size': 308870, 'max_len': 50}",
+    "btag": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'oov_idx': 5, 'vocab_size': 6}",
+    "btag_his": "{'source': '', 'type': 'sequence', 'feature_encoder': None, 'share_embedding': 'btag', 'padding_idx': 0, 'oov_idx': 5, 'vocab_size': 6, 'max_len': 50}",
+    "campaign_id": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'oov_idx': 191770, 'vocab_size': 191771}",
+    "cate_his": "{'source': '', 'type': 'sequence', 'feature_encoder': None, 'share_embedding': 'cate_id', 'padding_idx': 0, 'oov_idx': 11329, 'vocab_size': 11330, 'max_len': 50}",
+    "cate_id": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'oov_idx': 11329, 'vocab_size': 11330}",
+    "cms_group_id": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'oov_idx': 14, 'vocab_size': 15}",
+    "cms_segid": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'oov_idx': 98, 'vocab_size': 99}",
+    "customer": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'oov_idx': 132135, 'vocab_size': 132136}",
+    "final_gender_code": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'oov_idx': 3, 'vocab_size': 4}",
+    "group_id": "{'type': 'meta'}",
+    "new_user_class_level": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'oov_idx': 6, 'vocab_size': 7}",
+    "occupation": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'oov_idx': 3, 'vocab_size': 4}",
+    "pid": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'oov_idx': 3, 'vocab_size': 4}",
+    "price": "{'source': '', 'type': 'numeric'}",
+    "pvalue_level": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'oov_idx': 5, 'vocab_size': 6}",
+    "shopping_level": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'oov_idx': 4, 'vocab_size': 5}",
+    "userid": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'oov_idx': 403957, 'vocab_size': 403958}"
+}
+2023-05-24 12:32:09,496 P61086 INFO Total number of parameters: 52528930.
+2023-05-24 12:32:09,497 P61086 INFO Loading data...
+2023-05-24 12:32:09,497 P61086 INFO Loading data from h5: ../data/Taobao/taobaoad_x1_bf8c47ea/train.h5
+2023-05-24 12:32:35,236 P61086 INFO Train samples: total/21929911, blocks/1
+2023-05-24 12:32:35,237 P61086 INFO Loading data from h5: ../data/Taobao/taobaoad_x1_bf8c47ea/valid.h5
+2023-05-24 12:32:38,842 P61086 INFO Validation samples: total/3099515, blocks/1
+2023-05-24 12:32:38,842 P61086 INFO Loading train and validation data done.
+2023-05-24 12:32:38,842 P61086 INFO Start training: 2677 batches/epoch
+2023-05-24 12:32:38,842 P61086 INFO ************ Epoch=1 start ************
+2023-05-24 12:40:02,774 P61086 INFO Train loss: 0.205892
+2023-05-24 12:40:02,775 P61086 INFO Evaluation @epoch 1 - batch 2677: 
+2023-05-24 12:41:53,046 P61086 INFO [Metrics] AUC: 0.648849 - gAUC: 0.570943
+2023-05-24 12:41:53,047 P61086 INFO Save best model: monitor(max)=1.219792
+2023-05-24 12:41:53,417 P61086 INFO ************ Epoch=1 end ************
+2023-05-24 12:49:36,686 P61086 INFO Train loss: 0.202106
+2023-05-24 12:49:36,687 P61086 INFO Evaluation @epoch 2 - batch 2677: 
+2023-05-24 12:51:32,142 P61086 INFO [Metrics] AUC: 0.651651 - gAUC: 0.574003
+2023-05-24 12:51:32,143 P61086 INFO Save best model: monitor(max)=1.225654
+2023-05-24 12:51:32,709 P61086 INFO ************ Epoch=2 end ************
+2023-05-24 12:59:05,577 P61086 INFO Train loss: 0.200890
+2023-05-24 12:59:05,577 P61086 INFO Evaluation @epoch 3 - batch 2677: 
+2023-05-24 13:00:48,782 P61086 INFO [Metrics] AUC: 0.652411 - gAUC: 0.576770
+2023-05-24 13:00:48,784 P61086 INFO Save best model: monitor(max)=1.229181
+2023-05-24 13:00:49,354 P61086 INFO ************ Epoch=3 end ************
+2023-05-24 13:07:56,821 P61086 INFO Train loss: 0.200790
+2023-05-24 13:07:56,822 P61086 INFO Evaluation @epoch 4 - batch 2677: 
+2023-05-24 13:09:34,798 P61086 INFO [Metrics] AUC: 0.652257 - gAUC: 0.575510
+2023-05-24 13:09:34,799 P61086 INFO Monitor(max)=1.227767 STOP!
+2023-05-24 13:09:34,800 P61086 INFO Reduce learning rate on plateau: 0.000100
+2023-05-24 13:09:34,917 P61086 INFO ************ Epoch=4 end ************
+2023-05-24 13:16:15,125 P61086 INFO Train loss: 0.185845
+2023-05-24 13:16:15,126 P61086 INFO Evaluation @epoch 5 - batch 2677: 
+2023-05-24 13:17:57,255 P61086 INFO [Metrics] AUC: 0.644109 - gAUC: 0.568829
+2023-05-24 13:17:57,257 P61086 INFO Monitor(max)=1.212938 STOP!
+2023-05-24 13:17:57,257 P61086 INFO Reduce learning rate on plateau: 0.000010
+2023-05-24 13:17:57,257 P61086 INFO ********* Epoch==5 early stop *********
+2023-05-24 13:17:57,388 P61086 INFO Training finished.
+2023-05-24 13:17:57,388 P61086 INFO Load best model: /cache/FuxiCTR/benchmark/checkpoints/DMR_taobaoad_x1/taobaoad_x1_bf8c47ea/DMR_taobaoad_x1_014_62a4965f.model
+2023-05-24 13:17:57,544 P61086 INFO ****** Validation evaluation ******
+2023-05-24 13:19:45,252 P61086 INFO [Metrics] gAUC: 0.576770 - AUC: 0.652411 - logloss: 0.193055
+2023-05-24 13:19:45,418 P61086 INFO ******** Test evaluation ********
+2023-05-24 13:19:45,418 P61086 INFO Loading data...
+2023-05-24 13:19:45,418 P61086 INFO Loading data from h5: ../data/Taobao/taobaoad_x1_bf8c47ea/test.h5
+2023-05-24 13:19:49,019 P61086 INFO Test samples: total/3099515, blocks/1
+2023-05-24 13:19:49,019 P61086 INFO Loading test data done.
+2023-05-24 13:21:35,838 P61086 INFO [Metrics] gAUC: 0.576770 - AUC: 0.652411 - logloss: 0.193055

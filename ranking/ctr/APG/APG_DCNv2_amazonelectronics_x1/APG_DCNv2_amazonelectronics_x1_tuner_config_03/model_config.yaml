@@ -1,0 +1,784 @@
+APG_DCNv2_amazonelectronics_x1_001_e26e9057:
+    batch_norm: true
+    batch_size: 1024
+    condition_features: null
+    condition_mode: self-wise
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    generate_bias: true
+    group_id: user_id
+    hypernet_config:
+        dropout_rates: 0.1
+        hidden_activations: relu
+        hidden_units: []
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: APG_DCNv2
+    model_root: ./checkpoints/APG_DCNv2_amazonelectronics_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    new_condition_emb: false
+    num_cross_layers: 2
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    overparam_p: null
+    parallel_dnn_hidden_units: [1024, 512, 256]
+    pickle_feature_encoder: true
+    rank_k: null
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_features: null
+    use_low_rank_mixture: false
+    verbose: 1
+APG_DCNv2_amazonelectronics_x1_002_73bf2cfb:
+    batch_norm: true
+    batch_size: 1024
+    condition_features: null
+    condition_mode: self-wise
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    generate_bias: true
+    group_id: user_id
+    hypernet_config:
+        dropout_rates: 0.1
+        hidden_activations: relu
+        hidden_units: []
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: APG_DCNv2
+    model_root: ./checkpoints/APG_DCNv2_amazonelectronics_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    new_condition_emb: false
+    num_cross_layers: 2
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    overparam_p: [64, 32, 16]
+    parallel_dnn_hidden_units: [1024, 512, 256]
+    pickle_feature_encoder: true
+    rank_k: null
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_features: null
+    use_low_rank_mixture: false
+    verbose: 1
+APG_DCNv2_amazonelectronics_x1_003_27ac8802:
+    batch_norm: true
+    batch_size: 1024
+    condition_features: null
+    condition_mode: self-wise
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    generate_bias: true
+    group_id: user_id
+    hypernet_config:
+        dropout_rates: 0.1
+        hidden_activations: relu
+        hidden_units: []
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: APG_DCNv2
+    model_root: ./checkpoints/APG_DCNv2_amazonelectronics_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    new_condition_emb: false
+    num_cross_layers: 2
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    overparam_p: [32, 16, 8]
+    parallel_dnn_hidden_units: [1024, 512, 256]
+    pickle_feature_encoder: true
+    rank_k: null
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_features: null
+    use_low_rank_mixture: false
+    verbose: 1
+APG_DCNv2_amazonelectronics_x1_004_0a560506:
+    batch_norm: true
+    batch_size: 1024
+    condition_features: null
+    condition_mode: self-wise
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    generate_bias: true
+    group_id: user_id
+    hypernet_config:
+        dropout_rates: 0.1
+        hidden_activations: relu
+        hidden_units: []
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: APG_DCNv2
+    model_root: ./checkpoints/APG_DCNv2_amazonelectronics_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    new_condition_emb: false
+    num_cross_layers: 2
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    overparam_p: [128, 64, 32]
+    parallel_dnn_hidden_units: [1024, 512, 256]
+    pickle_feature_encoder: true
+    rank_k: null
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_features: null
+    use_low_rank_mixture: false
+    verbose: 1
+APG_DCNv2_amazonelectronics_x1_005_27ac8802:
+    batch_norm: true
+    batch_size: 1024
+    condition_features: null
+    condition_mode: self-wise
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    generate_bias: true
+    group_id: user_id
+    hypernet_config:
+        dropout_rates: 0.1
+        hidden_activations: relu
+        hidden_units: []
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: APG_DCNv2
+    model_root: ./checkpoints/APG_DCNv2_amazonelectronics_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    new_condition_emb: false
+    num_cross_layers: 2
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    overparam_p: null
+    parallel_dnn_hidden_units: [1024, 512, 256]
+    pickle_feature_encoder: true
+    rank_k: [32, 16, 8]
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_features: null
+    use_low_rank_mixture: false
+    verbose: 1
+APG_DCNv2_amazonelectronics_x1_006_4411e847:
+    batch_norm: true
+    batch_size: 1024
+    condition_features: null
+    condition_mode: self-wise
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    generate_bias: true
+    group_id: user_id
+    hypernet_config:
+        dropout_rates: 0.1
+        hidden_activations: relu
+        hidden_units: []
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: APG_DCNv2
+    model_root: ./checkpoints/APG_DCNv2_amazonelectronics_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    new_condition_emb: false
+    num_cross_layers: 2
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    overparam_p: [64, 32, 16]
+    parallel_dnn_hidden_units: [1024, 512, 256]
+    pickle_feature_encoder: true
+    rank_k: [32, 16, 8]
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_features: null
+    use_low_rank_mixture: false
+    verbose: 1
+APG_DCNv2_amazonelectronics_x1_007_9b69c8aa:
+    batch_norm: true
+    batch_size: 1024
+    condition_features: null
+    condition_mode: self-wise
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    generate_bias: true
+    group_id: user_id
+    hypernet_config:
+        dropout_rates: 0.1
+        hidden_activations: relu
+        hidden_units: []
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: APG_DCNv2
+    model_root: ./checkpoints/APG_DCNv2_amazonelectronics_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    new_condition_emb: false
+    num_cross_layers: 2
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    overparam_p: [32, 16, 8]
+    parallel_dnn_hidden_units: [1024, 512, 256]
+    pickle_feature_encoder: true
+    rank_k: [32, 16, 8]
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_features: null
+    use_low_rank_mixture: false
+    verbose: 1
+APG_DCNv2_amazonelectronics_x1_008_f4f3ef03:
+    batch_norm: true
+    batch_size: 1024
+    condition_features: null
+    condition_mode: self-wise
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    generate_bias: true
+    group_id: user_id
+    hypernet_config:
+        dropout_rates: 0.1
+        hidden_activations: relu
+        hidden_units: []
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: APG_DCNv2
+    model_root: ./checkpoints/APG_DCNv2_amazonelectronics_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    new_condition_emb: false
+    num_cross_layers: 2
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    overparam_p: [128, 64, 32]
+    parallel_dnn_hidden_units: [1024, 512, 256]
+    pickle_feature_encoder: true
+    rank_k: [32, 16, 8]
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_features: null
+    use_low_rank_mixture: false
+    verbose: 1
+APG_DCNv2_amazonelectronics_x1_009_11a7eb74:
+    batch_norm: true
+    batch_size: 1024
+    condition_features: null
+    condition_mode: self-wise
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    generate_bias: true
+    group_id: user_id
+    hypernet_config:
+        dropout_rates: 0.1
+        hidden_activations: relu
+        hidden_units: []
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: APG_DCNv2
+    model_root: ./checkpoints/APG_DCNv2_amazonelectronics_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    new_condition_emb: false
+    num_cross_layers: 2
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    overparam_p: null
+    parallel_dnn_hidden_units: [1024, 512, 256]
+    pickle_feature_encoder: true
+    rank_k: null
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_features: null
+    use_low_rank_mixture: false
+    verbose: 1
+APG_DCNv2_amazonelectronics_x1_010_31807431:
+    batch_norm: true
+    batch_size: 1024
+    condition_features: null
+    condition_mode: self-wise
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    generate_bias: true
+    group_id: user_id
+    hypernet_config:
+        dropout_rates: 0.1
+        hidden_activations: relu
+        hidden_units: []
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: APG_DCNv2
+    model_root: ./checkpoints/APG_DCNv2_amazonelectronics_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    new_condition_emb: false
+    num_cross_layers: 2
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    overparam_p: [64, 32, 16]
+    parallel_dnn_hidden_units: [1024, 512, 256]
+    pickle_feature_encoder: true
+    rank_k: null
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_features: null
+    use_low_rank_mixture: false
+    verbose: 1
+APG_DCNv2_amazonelectronics_x1_011_f4fe6139:
+    batch_norm: true
+    batch_size: 1024
+    condition_features: null
+    condition_mode: self-wise
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    generate_bias: true
+    group_id: user_id
+    hypernet_config:
+        dropout_rates: 0.1
+        hidden_activations: relu
+        hidden_units: []
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: APG_DCNv2
+    model_root: ./checkpoints/APG_DCNv2_amazonelectronics_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    new_condition_emb: false
+    num_cross_layers: 2
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    overparam_p: [32, 16, 8]
+    parallel_dnn_hidden_units: [1024, 512, 256]
+    pickle_feature_encoder: true
+    rank_k: null
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_features: null
+    use_low_rank_mixture: false
+    verbose: 1
+APG_DCNv2_amazonelectronics_x1_012_35183780:
+    batch_norm: true
+    batch_size: 1024
+    condition_features: null
+    condition_mode: self-wise
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    generate_bias: true
+    group_id: user_id
+    hypernet_config:
+        dropout_rates: 0.1
+        hidden_activations: relu
+        hidden_units: []
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: APG_DCNv2
+    model_root: ./checkpoints/APG_DCNv2_amazonelectronics_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    new_condition_emb: false
+    num_cross_layers: 2
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    overparam_p: [128, 64, 32]
+    parallel_dnn_hidden_units: [1024, 512, 256]
+    pickle_feature_encoder: true
+    rank_k: null
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_features: null
+    use_low_rank_mixture: false
+    verbose: 1
+APG_DCNv2_amazonelectronics_x1_013_f4fe6139:
+    batch_norm: true
+    batch_size: 1024
+    condition_features: null
+    condition_mode: self-wise
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    generate_bias: true
+    group_id: user_id
+    hypernet_config:
+        dropout_rates: 0.1
+        hidden_activations: relu
+        hidden_units: []
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: APG_DCNv2
+    model_root: ./checkpoints/APG_DCNv2_amazonelectronics_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    new_condition_emb: false
+    num_cross_layers: 2
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    overparam_p: null
+    parallel_dnn_hidden_units: [1024, 512, 256]
+    pickle_feature_encoder: true
+    rank_k: [32, 16, 8]
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_features: null
+    use_low_rank_mixture: false
+    verbose: 1
+APG_DCNv2_amazonelectronics_x1_014_cac97ee6:
+    batch_norm: true
+    batch_size: 1024
+    condition_features: null
+    condition_mode: self-wise
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    generate_bias: true
+    group_id: user_id
+    hypernet_config:
+        dropout_rates: 0.1
+        hidden_activations: relu
+        hidden_units: []
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: APG_DCNv2
+    model_root: ./checkpoints/APG_DCNv2_amazonelectronics_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    new_condition_emb: false
+    num_cross_layers: 2
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    overparam_p: [64, 32, 16]
+    parallel_dnn_hidden_units: [1024, 512, 256]
+    pickle_feature_encoder: true
+    rank_k: [32, 16, 8]
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_features: null
+    use_low_rank_mixture: false
+    verbose: 1
+APG_DCNv2_amazonelectronics_x1_015_a0cca3e4:
+    batch_norm: true
+    batch_size: 1024
+    condition_features: null
+    condition_mode: self-wise
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    generate_bias: true
+    group_id: user_id
+    hypernet_config:
+        dropout_rates: 0.1
+        hidden_activations: relu
+        hidden_units: []
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: APG_DCNv2
+    model_root: ./checkpoints/APG_DCNv2_amazonelectronics_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    new_condition_emb: false
+    num_cross_layers: 2
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    overparam_p: [32, 16, 8]
+    parallel_dnn_hidden_units: [1024, 512, 256]
+    pickle_feature_encoder: true
+    rank_k: [32, 16, 8]
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_features: null
+    use_low_rank_mixture: false
+    verbose: 1
+APG_DCNv2_amazonelectronics_x1_016_2eb14b56:
+    batch_norm: true
+    batch_size: 1024
+    condition_features: null
+    condition_mode: self-wise
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    generate_bias: true
+    group_id: user_id
+    hypernet_config:
+        dropout_rates: 0.1
+        hidden_activations: relu
+        hidden_units: []
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [gAUC, AUC, logloss]
+    model: APG_DCNv2
+    model_root: ./checkpoints/APG_DCNv2_amazonelectronics_x1/
+    model_structure: parallel
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    new_condition_emb: false
+    num_cross_layers: 2
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    overparam_p: [128, 64, 32]
+    parallel_dnn_hidden_units: [1024, 512, 256]
+    pickle_feature_encoder: true
+    rank_k: [32, 16, 8]
+    save_best_only: true
+    seed: 2022
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_features: null
+    use_low_rank_mixture: false
+    verbose: 1

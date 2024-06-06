@@ -1,0 +1,54 @@
+base_config: ../model_zoo/DMIN/config/
+base_expid: DMIN_default
+dataset_id: taobaoad_x1
+
+dataset_config:
+    taobaoad_x1:
+        data_root: ../data/Taobao/
+        data_format: csv
+        train_data: ../data/Taobao/TaobaoAd_x1/train.csv
+        valid_data: ../data/Taobao/TaobaoAd_x1/test.csv
+        test_data: ../data/Taobao/TaobaoAd_x1/test.csv
+        min_categr_count: 10
+        feature_cols:
+            - {name: "group_id", active: True, dtype: int, type: meta, preprocess: "copy_from(userid)", remap: False}
+            - {name: ["userid","cms_segid","cms_group_id","final_gender_code","age_level","pvalue_level","shopping_level",
+                      "occupation","new_user_class_level","adgroup_id","cate_id","campaign_id","customer","brand","pid","btag"],
+                      active: True, dtype: str, type: categorical}
+            - {name: price, active: True, dtype: float, type: numeric}
+            - {name: cate_his, active: True, dtype: str, splitter: ^, type: sequence, max_len: 50, padding: post,
+               share_embedding: cate_id}
+            - {name: brand_his, active: True, dtype: str, splitter: ^, type: sequence, max_len: 50, padding: post,
+               share_embedding: brand}
+            - {name: btag_his, active: True, dtype: str, splitter: ^, type: sequence, max_len: 50, padding: post,
+               share_embedding: btag}
+        label_col: {name: clk, dtype: float}
+
+tuner_space:
+    model_root: './checkpoints/DMIN_taobaoad_x1/'
+    feature_specs: [[
+        {name: [cate_his, brand_his, btag_his], feature_encoder: null}
+        ]]
+    embedding_dim: 32
+    dnn_hidden_units: [[512, 256, 128]]
+    dnn_activations: ReLU
+    target_field: [!!python/tuple [cate_id, brand, btag]]
+    sequence_field: [!!python/tuple [cate_his, brand_his, btag_his]]
+    num_heads: [1, 4]
+    attention_activation: ReLU
+    attention_hidden_units: [[512, 256]]
+    attention_dropout: [0.1, 0.2]
+    embedding_regularizer: 5.e-6
+    net_dropout: 0
+    use_pos_emb: True
+    pos_emb_dim: [4, 32]
+    enable_sum_pooling: [False, True]
+    use_behavior_refiner: [True, False]
+    batch_norm: False
+    learning_rate: 1.e-3
+    batch_size: 8192
+    seed: 20222023
+    group_id: group_id
+    metrics: [[gAUC, AUC, logloss]]
+    monitor: {"gAUC": 1, "AUC": 1}
+

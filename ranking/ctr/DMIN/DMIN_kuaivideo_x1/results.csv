@@ -1,0 +1,1 @@
+ 20230524-082556,[command] python run_expid.py --config KuaiShou/DMIN_kuaivideo_x1/DMIN_kuaivideo_x1_tuner_config_02 --expid DMIN_kuaivideo_x1_020_d155f57e --gpu 1,[exp_id] DMIN_kuaivideo_x1_020_d155f57e,[dataset_id] kuaivideo_x1_60f6c91a,[train] N.A.,[val] gAUC: 0.672621 - AUC: 0.750777 - logloss: 0.430187,[test] gAUC: 0.672621 - AUC: 0.750777 - logloss: 0.430187

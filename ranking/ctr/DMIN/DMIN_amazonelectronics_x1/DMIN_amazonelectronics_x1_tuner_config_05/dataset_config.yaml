@@ -1,0 +1,18 @@
+amazonelectronics_x1_51836f99:
+    data_format: csv
+    data_root: ../data/Amazon/
+    feature_cols:
+    - {active: true, dtype: int, name: user_id, remap: false, type: meta}
+    - {active: true, dtype: str, name: item_id, type: categorical}
+    - {active: true, dtype: str, name: cate_id, type: categorical}
+    - {active: true, dtype: str, feature_encoder: layers.MaskedAveragePooling(), max_len: 100,
+        name: item_history, padding: post, share_embedding: item_id, splitter: ^,
+        type: sequence}
+    - {active: true, dtype: str, feature_encoder: layers.MaskedAveragePooling(), max_len: 100,
+        name: cate_history, padding: post, share_embedding: cate_id, splitter: ^,
+        type: sequence}
+    label_col: {dtype: float, name: label}
+    min_categr_count: 1
+    test_data: ../data/Amazon/AmazonElectronics_x1/test.csv
+    train_data: ../data/Amazon/AmazonElectronics_x1/train.csv
+    valid_data: ../data/Amazon/AmazonElectronics_x1/test.csv

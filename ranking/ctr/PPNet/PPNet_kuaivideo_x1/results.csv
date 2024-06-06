@@ -1,0 +1,1 @@
+ 20230601-225710,[command] python run_expid.py --config KuaiShou/PPNet_kuaishou_x1/PPNet_kuaivideo_x1_tuner_config_01 --expid PPNet_kuaivideo_x1_018_71ca4227 --gpu 6,[exp_id] PPNet_kuaivideo_x1_018_71ca4227,[dataset_id] kuaivideo_x1_dc7a3035,[train] N.A.,[val] gAUC: 0.666808 - AUC: 0.746437 - logloss: 0.437027,[test] gAUC: 0.666808 - AUC: 0.746437 - logloss: 0.437027

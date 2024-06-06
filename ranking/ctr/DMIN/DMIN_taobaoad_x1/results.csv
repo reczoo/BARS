@@ -1,0 +1,1 @@
+ 20230523-124230,[command] python run_expid.py --config Taobao/DMIN_taobaoad_x1/DMIN_taobaoad_x1_tuner_config_05 --expid DMIN_taobaoad_x1_011_0be611e8 --gpu 0,[exp_id] DMIN_taobaoad_x1_011_0be611e8,[dataset_id] taobaoad_x1_bf8c47ea,[train] N.A.,[val] gAUC: 0.577000 - AUC: 0.651103 - logloss: 0.192813,[test] gAUC: 0.577000 - AUC: 0.651103 - logloss: 0.192813

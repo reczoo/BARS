@@ -1,0 +1,864 @@
+PPNet_amazonelectronics_x1_001_22b6d1a8:
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gate_emb_dim: 16
+    gate_hidden_dim: 32
+    gate_priors: [item_id, cate_id, cate_history, item_history]
+    group_id: user_id
+    hidden_activations: ReLU
+    hidden_units: [1024, 512, 256]
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: PPNet
+    model_root: ./checkpoints/PPNet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+PPNet_amazonelectronics_x1_002_09c8df60:
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gate_emb_dim: 16
+    gate_hidden_dim: 64
+    gate_priors: [item_id, cate_id, cate_history, item_history]
+    group_id: user_id
+    hidden_activations: ReLU
+    hidden_units: [1024, 512, 256]
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: PPNet
+    model_root: ./checkpoints/PPNet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+PPNet_amazonelectronics_x1_003_1ad7c2f7:
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gate_emb_dim: 16
+    gate_hidden_dim: 128
+    gate_priors: [item_id, cate_id, cate_history, item_history]
+    group_id: user_id
+    hidden_activations: ReLU
+    hidden_units: [1024, 512, 256]
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: PPNet
+    model_root: ./checkpoints/PPNet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+PPNet_amazonelectronics_x1_004_944c3201:
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gate_emb_dim: 16
+    gate_hidden_dim: 32
+    gate_priors: [cate_id, cate_history, item_history]
+    group_id: user_id
+    hidden_activations: ReLU
+    hidden_units: [1024, 512, 256]
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: PPNet
+    model_root: ./checkpoints/PPNet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+PPNet_amazonelectronics_x1_005_e2d48c45:
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gate_emb_dim: 16
+    gate_hidden_dim: 64
+    gate_priors: [cate_id, cate_history, item_history]
+    group_id: user_id
+    hidden_activations: ReLU
+    hidden_units: [1024, 512, 256]
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: PPNet
+    model_root: ./checkpoints/PPNet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+PPNet_amazonelectronics_x1_006_05109b14:
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gate_emb_dim: 16
+    gate_hidden_dim: 128
+    gate_priors: [cate_id, cate_history, item_history]
+    group_id: user_id
+    hidden_activations: ReLU
+    hidden_units: [1024, 512, 256]
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: PPNet
+    model_root: ./checkpoints/PPNet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+PPNet_amazonelectronics_x1_007_191a0a23:
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gate_emb_dim: 16
+    gate_hidden_dim: 32
+    gate_priors: [cate_history, item_history]
+    group_id: user_id
+    hidden_activations: ReLU
+    hidden_units: [1024, 512, 256]
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: PPNet
+    model_root: ./checkpoints/PPNet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+PPNet_amazonelectronics_x1_008_323d4de5:
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gate_emb_dim: 16
+    gate_hidden_dim: 64
+    gate_priors: [cate_history, item_history]
+    group_id: user_id
+    hidden_activations: ReLU
+    hidden_units: [1024, 512, 256]
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: PPNet
+    model_root: ./checkpoints/PPNet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+PPNet_amazonelectronics_x1_009_189355f2:
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gate_emb_dim: 16
+    gate_hidden_dim: 128
+    gate_priors: [cate_history, item_history]
+    group_id: user_id
+    hidden_activations: ReLU
+    hidden_units: [1024, 512, 256]
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: PPNet
+    model_root: ./checkpoints/PPNet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+PPNet_amazonelectronics_x1_010_3ea8f139:
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gate_emb_dim: 16
+    gate_hidden_dim: 32
+    gate_priors: [item_history]
+    group_id: user_id
+    hidden_activations: ReLU
+    hidden_units: [1024, 512, 256]
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: PPNet
+    model_root: ./checkpoints/PPNet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+PPNet_amazonelectronics_x1_011_6b652101:
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gate_emb_dim: 16
+    gate_hidden_dim: 64
+    gate_priors: [item_history]
+    group_id: user_id
+    hidden_activations: ReLU
+    hidden_units: [1024, 512, 256]
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: PPNet
+    model_root: ./checkpoints/PPNet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+PPNet_amazonelectronics_x1_012_839a69cf:
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gate_emb_dim: 16
+    gate_hidden_dim: 128
+    gate_priors: [item_history]
+    group_id: user_id
+    hidden_activations: ReLU
+    hidden_units: [1024, 512, 256]
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: PPNet
+    model_root: ./checkpoints/PPNet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+PPNet_amazonelectronics_x1_013_8fcb26a7:
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gate_emb_dim: 32
+    gate_hidden_dim: 32
+    gate_priors: [item_id, cate_id, cate_history, item_history]
+    group_id: user_id
+    hidden_activations: ReLU
+    hidden_units: [1024, 512, 256]
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: PPNet
+    model_root: ./checkpoints/PPNet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+PPNet_amazonelectronics_x1_014_7128a1ad:
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gate_emb_dim: 32
+    gate_hidden_dim: 64
+    gate_priors: [item_id, cate_id, cate_history, item_history]
+    group_id: user_id
+    hidden_activations: ReLU
+    hidden_units: [1024, 512, 256]
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: PPNet
+    model_root: ./checkpoints/PPNet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+PPNet_amazonelectronics_x1_015_223efcce:
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gate_emb_dim: 32
+    gate_hidden_dim: 128
+    gate_priors: [item_id, cate_id, cate_history, item_history]
+    group_id: user_id
+    hidden_activations: ReLU
+    hidden_units: [1024, 512, 256]
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: PPNet
+    model_root: ./checkpoints/PPNet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+PPNet_amazonelectronics_x1_016_6df2cbf4:
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gate_emb_dim: 32
+    gate_hidden_dim: 32
+    gate_priors: [cate_id, cate_history, item_history]
+    group_id: user_id
+    hidden_activations: ReLU
+    hidden_units: [1024, 512, 256]
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: PPNet
+    model_root: ./checkpoints/PPNet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+PPNet_amazonelectronics_x1_017_ebaf2694:
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gate_emb_dim: 32
+    gate_hidden_dim: 64
+    gate_priors: [cate_id, cate_history, item_history]
+    group_id: user_id
+    hidden_activations: ReLU
+    hidden_units: [1024, 512, 256]
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: PPNet
+    model_root: ./checkpoints/PPNet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+PPNet_amazonelectronics_x1_018_b4af2ee6:
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gate_emb_dim: 32
+    gate_hidden_dim: 128
+    gate_priors: [cate_id, cate_history, item_history]
+    group_id: user_id
+    hidden_activations: ReLU
+    hidden_units: [1024, 512, 256]
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: PPNet
+    model_root: ./checkpoints/PPNet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+PPNet_amazonelectronics_x1_019_5f63a13b:
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gate_emb_dim: 32
+    gate_hidden_dim: 32
+    gate_priors: [cate_history, item_history]
+    group_id: user_id
+    hidden_activations: ReLU
+    hidden_units: [1024, 512, 256]
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: PPNet
+    model_root: ./checkpoints/PPNet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+PPNet_amazonelectronics_x1_020_2ac6bb76:
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gate_emb_dim: 32
+    gate_hidden_dim: 64
+    gate_priors: [cate_history, item_history]
+    group_id: user_id
+    hidden_activations: ReLU
+    hidden_units: [1024, 512, 256]
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: PPNet
+    model_root: ./checkpoints/PPNet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+PPNet_amazonelectronics_x1_021_6c2eb49c:
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gate_emb_dim: 32
+    gate_hidden_dim: 128
+    gate_priors: [cate_history, item_history]
+    group_id: user_id
+    hidden_activations: ReLU
+    hidden_units: [1024, 512, 256]
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: PPNet
+    model_root: ./checkpoints/PPNet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+PPNet_amazonelectronics_x1_022_cd7210f4:
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gate_emb_dim: 32
+    gate_hidden_dim: 32
+    gate_priors: [item_history]
+    group_id: user_id
+    hidden_activations: ReLU
+    hidden_units: [1024, 512, 256]
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: PPNet
+    model_root: ./checkpoints/PPNet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+PPNet_amazonelectronics_x1_023_0b353410:
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gate_emb_dim: 32
+    gate_hidden_dim: 64
+    gate_priors: [item_history]
+    group_id: user_id
+    hidden_activations: ReLU
+    hidden_units: [1024, 512, 256]
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: PPNet
+    model_root: ./checkpoints/PPNet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+PPNet_amazonelectronics_x1_024_967c2d72:
+    batch_norm: true
+    batch_size: 1024
+    dataset_id: amazonelectronics_x1_b7a43f49
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gate_emb_dim: 32
+    gate_hidden_dim: 128
+    gate_priors: [item_history]
+    group_id: user_id
+    hidden_activations: ReLU
+    hidden_units: [1024, 512, 256]
+    learning_rate: 0.0005
+    loss: binary_crossentropy
+    metrics: [gAUC, AUC, logloss]
+    model: PPNet
+    model_root: ./checkpoints/PPNet_amazonelectronics_x1/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20222023
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
