@@ -27,15 +27,18 @@ A curated list of CTR prediction models
 
 ## Behaviour Sequence Modeling
 
-|   |   |   |    |    | |
+|   |   |   |    |    |   |
 | :---------:|:------:|:------:|:------:|:------:|:------:|
-| **2023**   |   [TWIN](https://arxiv.org/abs/2302.02352) {cite}`TWIN`<br>KDD'23<br>Kuaishou  | [DCIN](https://arxiv.org/pdf/2308.06037.pdf) {cite}`DCIN`<br>CIKM'23<br>Meituan  |  |  |
-| **2022**   | [SDIM](https://arxiv.org/abs/2205.10249) {cite}`SDIM`<br>CIKM'22<br>Meituan  |  [DINMP](https://arxiv.org/abs/2104.06312) {cite}`DINMP`<br>SDM'22<br>Alibaba | 
+|  **2024**  |   [TIN](https://arxiv.org/abs/2308.08487) {cite}`TIN`<br>WWW'24<br>Tencent  | [DPN](https://arxiv.org/abs/2404.11456) {cite}`DPN`<br>SIGIR'24<br>Tencent |  |  |
+| **2023**   |   [TWIN](https://arxiv.org/abs/2302.02352) {cite}`TWIN`<br>KDD'23<br>Kuaishou  | [DBPMaN](https://arxiv.org/abs/2011.05625) {cite}`DBPMaN`<br>WWW'23<br>Meituan  | [DCIN](https://arxiv.org/pdf/2308.06037.pdf) {cite}`DCIN`<br>CIKM'23<br>Meituan | [adSformers](https://arxiv.org/abs/2302.01255) {cite}`adSformers`<br>Arxiv'23<br>Etsy |
+|   |  [TransAct](https://arxiv.org/abs/2306.00248) {cite}`TransAct`<br>KDD'23<br>Pinterest   | [IUI](https://dl.acm.org/doi/abs/10.1145/3583780.3614939) {cite}`IUI`<br>CIKM'23<br>JD  | [SUIN](https://dl.acm.org/doi/abs/10.1145/3583780.3615288) {cite}`SUIN`<br>CIKM'23<br>JD |   |
+| **2022**   | [SDIM](https://arxiv.org/abs/2205.10249) {cite}`SDIM`<br>CIKM'22<br>Meituan |  [CAN](https://arxiv.org/abs/2011.05625) {cite}`CAN`<br>WSDM'22<br>Alibaba |  [DINMP](https://arxiv.org/abs/2104.06312) {cite}`DINMP`<br>SDM'22<br>Alibaba | 
 | **2021**   | [CIN](https://dl.acm.org/doi/fullHtml/10.1145/3428079) {cite}`CIN`<br>TKDD'21 |   [HyperCTR](https://arxiv.org/pdf/2109.02398) {cite}`HyperCTR`<br>CIKM'21  | 
-| **2020**   |  [DMIN](https://www.researchgate.net/profile/Luwei-Yang-2/publication/345125472_Deep_Multi-Interest_Network_for_Click-through_Rate_Prediction/links/5f9e1d6b458515b7cfaeffce/Deep-Multi-Interest-Network-for-Click-through-Rate-Prediction.pdf) {cite}`DMIN`<br>CIKM'20<br>Alibaba |   [MARN](https://arxiv.org/abs/2003.07162) {cite}`MARN`<br>WWW'20<br>Alibaba | 
+| **2020**   |  [DMIN](https://www.researchgate.net/profile/Luwei-Yang-2/publication/345125472_Deep_Multi-Interest_Network_for_Click-through_Rate_Prediction/links/5f9e1d6b458515b7cfaeffce/Deep-Multi-Interest-Network-for-Click-through-Rate-Prediction.pdf) {cite}`DMIN`<br>CIKM'20<br>Alibaba | [KFAtt](https://arxiv.org/abs/2010.00985) {cite}`KFAtt`<br>NeurIPS'20<br>JD |   [MARN](https://arxiv.org/abs/2003.07162) {cite}`MARN`<br>WWW'20<br>Alibaba | [DHAN](https://arxiv.org/abs/2005.12981) {cite}`DHAN`<br>SIGIR'20<br>Alibaba | 
 | **2019**  |    [DIEN](https://arxiv.org/abs/1809.03672) {cite}`DIEN`<br>AAAI'19<br>Alibaba | [DSIN](https://arxiv.org/abs/1905.06482) {cite}`DSIN`<br>IJCAI'19<br>Alibaba  |  [DSTN](https://arxiv.org/abs/1906.03776) {cite}`DSTN`<br>KDD'19<br>Alibaba | [MIMN](https://arxiv.org/abs/1905.09248) {cite}`MIMN`<br>KDD'19<br>Alibaba | 
 |     | [BST](https://arxiv.org/abs/1905.06874) {cite}`BST`<br>DLP-KDD'19<br>Alibaba  |       [GIN](https://arxiv.org/abs/2103.16164) {cite}`GIN`<br>SIGIR'19<br>Alibaba | 
 |  **2018** |  [DIN](https://www.kdd.org/kdd2018/accepted-papers/view/deep-interest-network-for-click-through-rate-prediction) {cite}`DIN`<br>KDD'18<br>Alibaba | 
+
 
 ## Multi-Task & Multi-Domain
 
