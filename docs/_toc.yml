@@ -25,10 +25,12 @@ parts:
     - file: CTR/leaderboard/frappe_x1.md
     - file: CTR/leaderboard/movielenslatest_x1.md
     - file: CTR/leaderboard/kkbox_x1.md
+  - file: CTR/leaderboard/seqctr.md
+    sections:
     - file: CTR/leaderboard/amazonelectronics_x1.md
-    - file: CTR/leaderboard/taobaoad_x1.md
     - file: CTR/leaderboard/kuaivideo_x1.md
     - file: CTR/leaderboard/microvideo1.7m_x1.md
+    - file: CTR/leaderboard/taobaoad_x1.md
     
 - caption: "CANDIDATE MATCHING"
   chapters:

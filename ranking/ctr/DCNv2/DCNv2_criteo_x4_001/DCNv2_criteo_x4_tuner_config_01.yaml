@@ -1,0 +1,45 @@
+base_config: ../model_zoo/DCNv2/config/
+base_expid: DCNv2_default
+dataset_id: criteo_x4_001
+
+dataset_config:
+    criteo_x4_001:
+        data_format: csv
+        data_root: ../data/Criteo/
+        feature_cols:
+        -   active: true
+            dtype: float
+            fill_na: 0
+            name: [I1, I2, I3, I4, I5, I6, I7, I8, I9, I10, I11, I12, I13]
+            preprocess: convert_to_bucket
+            type: categorical
+        -   active: true
+            dtype: str
+            fill_na: ''
+            name: [C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12, C13, C14, C15, C16,
+                C17, C18, C19, C20, C21, C22, C23, C24, C25, C26]
+            type: categorical
+        label_col: {dtype: float, name: Label}
+        min_categr_count: 10
+        test_data: ../data/Criteo/Criteo_x4/test.csv
+        train_data: ../data/Criteo/Criteo_x4/train.csv
+        valid_data: ../data/Criteo/Criteo_x4/valid.csv
+
+tuner_space:
+    model_root: './checkpoints/'
+    embedding_dim: 16
+    embedding_regularizer: 1.e-5
+    parallel_dnn_hidden_units: [[1000, 1000, 1000, 1000, 1000]]
+    model_structure: parallel
+    use_low_rank_mixture: False
+    num_cross_layers: [2, 3, 4, 5]
+    net_dropout: [0.1, 0.2]
+    batch_norm: [True, False]
+    learning_rate: 1.e-3
+    batch_size: 10000
+    seed: 2019
+    early_stop_patience: 2
+    monitor: 'AUC'
+    monitor_mode: 'max'
+    metrics: [['AUC', 'logloss']]
+

@@ -1,0 +1,1520 @@
+FinalNet_avazu_x4_001_001_021b5f8d:
+    batch_norm: true
+    batch_size: 8192
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [2000, 2000, 2000]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [100]
+    block_type: 2B
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    early_stop_patience: 1
+    embedding_dim: 16
+    embedding_regularizer: 0
+    epochs: 100
+    eval_steps: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    residual_type: concat
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    verbose: 1
+FinalNet_avazu_x4_001_002_8c1e4350:
+    batch_norm: true
+    batch_size: 8192
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [2000, 2000, 2000]
+    block2_dropout: 0
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [100]
+    block_type: 2B
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    early_stop_patience: 1
+    embedding_dim: 16
+    embedding_regularizer: 0
+    epochs: 100
+    eval_steps: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    residual_type: concat
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    verbose: 1
+FinalNet_avazu_x4_001_003_78a15262:
+    batch_norm: true
+    batch_size: 8192
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [2000, 2000, 2000]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [200]
+    block_type: 2B
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    early_stop_patience: 1
+    embedding_dim: 16
+    embedding_regularizer: 0
+    epochs: 100
+    eval_steps: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    residual_type: concat
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    verbose: 1
+FinalNet_avazu_x4_001_004_65c04d7c:
+    batch_norm: true
+    batch_size: 8192
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [2000, 2000, 2000]
+    block2_dropout: 0
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [200]
+    block_type: 2B
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    early_stop_patience: 1
+    embedding_dim: 16
+    embedding_regularizer: 0
+    epochs: 100
+    eval_steps: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    residual_type: concat
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    verbose: 1
+FinalNet_avazu_x4_001_005_b4887ee5:
+    batch_norm: true
+    batch_size: 8192
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [2000, 2000, 2000]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [500]
+    block_type: 2B
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    early_stop_patience: 1
+    embedding_dim: 16
+    embedding_regularizer: 0
+    epochs: 100
+    eval_steps: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    residual_type: concat
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    verbose: 1
+FinalNet_avazu_x4_001_006_4b405413:
+    batch_norm: true
+    batch_size: 8192
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [2000, 2000, 2000]
+    block2_dropout: 0
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [500]
+    block_type: 2B
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    early_stop_patience: 1
+    embedding_dim: 16
+    embedding_regularizer: 0
+    epochs: 100
+    eval_steps: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    residual_type: concat
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    verbose: 1
+FinalNet_avazu_x4_001_007_861e52a0:
+    batch_norm: true
+    batch_size: 8192
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [2000, 2000, 2000]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [500, 500]
+    block_type: 2B
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    early_stop_patience: 1
+    embedding_dim: 16
+    embedding_regularizer: 0
+    epochs: 100
+    eval_steps: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    residual_type: concat
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    verbose: 1
+FinalNet_avazu_x4_001_008_d7ebfd2d:
+    batch_norm: true
+    batch_size: 8192
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [2000, 2000, 2000]
+    block2_dropout: 0
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [500, 500]
+    block_type: 2B
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    early_stop_patience: 1
+    embedding_dim: 16
+    embedding_regularizer: 0
+    epochs: 100
+    eval_steps: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    residual_type: concat
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    verbose: 1
+FinalNet_avazu_x4_001_009_9b4174e4:
+    batch_norm: true
+    batch_size: 8192
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [2000, 2000, 2000]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [200, 200]
+    block_type: 2B
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    early_stop_patience: 1
+    embedding_dim: 16
+    embedding_regularizer: 0
+    epochs: 100
+    eval_steps: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    residual_type: concat
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    verbose: 1
+FinalNet_avazu_x4_001_010_cada1100:
+    batch_norm: true
+    batch_size: 8192
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [2000, 2000, 2000]
+    block2_dropout: 0
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [200, 200]
+    block_type: 2B
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    early_stop_patience: 1
+    embedding_dim: 16
+    embedding_regularizer: 0
+    epochs: 100
+    eval_steps: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    residual_type: concat
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    verbose: 1
+FinalNet_avazu_x4_001_011_8c1e4350:
+    batch_norm: true
+    batch_size: 8192
+    block1_dropout: 0
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [2000, 2000, 2000]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [100]
+    block_type: 2B
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    early_stop_patience: 1
+    embedding_dim: 16
+    embedding_regularizer: 0
+    epochs: 100
+    eval_steps: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    residual_type: concat
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    verbose: 1
+FinalNet_avazu_x4_001_012_9f5e50ba:
+    batch_norm: true
+    batch_size: 8192
+    block1_dropout: 0
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [2000, 2000, 2000]
+    block2_dropout: 0
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [100]
+    block_type: 2B
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    early_stop_patience: 1
+    embedding_dim: 16
+    embedding_regularizer: 0
+    epochs: 100
+    eval_steps: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    residual_type: concat
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    verbose: 1
+FinalNet_avazu_x4_001_013_65c04d7c:
+    batch_norm: true
+    batch_size: 8192
+    block1_dropout: 0
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [2000, 2000, 2000]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [200]
+    block_type: 2B
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    early_stop_patience: 1
+    embedding_dim: 16
+    embedding_regularizer: 0
+    epochs: 100
+    eval_steps: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    residual_type: concat
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    verbose: 1
+FinalNet_avazu_x4_001_014_b1cae98e:
+    batch_norm: true
+    batch_size: 8192
+    block1_dropout: 0
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [2000, 2000, 2000]
+    block2_dropout: 0
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [200]
+    block_type: 2B
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    early_stop_patience: 1
+    embedding_dim: 16
+    embedding_regularizer: 0
+    epochs: 100
+    eval_steps: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    residual_type: concat
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    verbose: 1
+FinalNet_avazu_x4_001_015_4b405413:
+    batch_norm: true
+    batch_size: 8192
+    block1_dropout: 0
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [2000, 2000, 2000]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [500]
+    block_type: 2B
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    early_stop_patience: 1
+    embedding_dim: 16
+    embedding_regularizer: 0
+    epochs: 100
+    eval_steps: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    residual_type: concat
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    verbose: 1
+FinalNet_avazu_x4_001_016_7871464d:
+    batch_norm: true
+    batch_size: 8192
+    block1_dropout: 0
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [2000, 2000, 2000]
+    block2_dropout: 0
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [500]
+    block_type: 2B
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    early_stop_patience: 1
+    embedding_dim: 16
+    embedding_regularizer: 0
+    epochs: 100
+    eval_steps: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    residual_type: concat
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    verbose: 1
+FinalNet_avazu_x4_001_017_d7ebfd2d:
+    batch_norm: true
+    batch_size: 8192
+    block1_dropout: 0
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [2000, 2000, 2000]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [500, 500]
+    block_type: 2B
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    early_stop_patience: 1
+    embedding_dim: 16
+    embedding_regularizer: 0
+    epochs: 100
+    eval_steps: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    residual_type: concat
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    verbose: 1
+FinalNet_avazu_x4_001_018_b2ebd161:
+    batch_norm: true
+    batch_size: 8192
+    block1_dropout: 0
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [2000, 2000, 2000]
+    block2_dropout: 0
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [500, 500]
+    block_type: 2B
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    early_stop_patience: 1
+    embedding_dim: 16
+    embedding_regularizer: 0
+    epochs: 100
+    eval_steps: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    residual_type: concat
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    verbose: 1
+FinalNet_avazu_x4_001_019_cada1100:
+    batch_norm: true
+    batch_size: 8192
+    block1_dropout: 0
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [2000, 2000, 2000]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [200, 200]
+    block_type: 2B
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    early_stop_patience: 1
+    embedding_dim: 16
+    embedding_regularizer: 0
+    epochs: 100
+    eval_steps: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    residual_type: concat
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    verbose: 1
+FinalNet_avazu_x4_001_020_ac3a250d:
+    batch_norm: true
+    batch_size: 8192
+    block1_dropout: 0
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [2000, 2000, 2000]
+    block2_dropout: 0
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [200, 200]
+    block_type: 2B
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    early_stop_patience: 1
+    embedding_dim: 16
+    embedding_regularizer: 0
+    epochs: 100
+    eval_steps: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    residual_type: concat
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    verbose: 1
+FinalNet_avazu_x4_001_021_a8abb409:
+    batch_norm: true
+    batch_size: 8192
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [100]
+    block_type: 2B
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    early_stop_patience: 1
+    embedding_dim: 16
+    embedding_regularizer: 0
+    epochs: 100
+    eval_steps: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    residual_type: concat
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    verbose: 1
+FinalNet_avazu_x4_001_022_9d00c094:
+    batch_norm: true
+    batch_size: 8192
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [100]
+    block_type: 2B
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    early_stop_patience: 1
+    embedding_dim: 16
+    embedding_regularizer: 0
+    epochs: 100
+    eval_steps: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    residual_type: concat
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    verbose: 1
+FinalNet_avazu_x4_001_023_867276e9:
+    batch_norm: true
+    batch_size: 8192
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [200]
+    block_type: 2B
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    early_stop_patience: 1
+    embedding_dim: 16
+    embedding_regularizer: 0
+    epochs: 100
+    eval_steps: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    residual_type: concat
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    verbose: 1
+FinalNet_avazu_x4_001_024_7161b11e:
+    batch_norm: true
+    batch_size: 8192
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [200]
+    block_type: 2B
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    early_stop_patience: 1
+    embedding_dim: 16
+    embedding_regularizer: 0
+    epochs: 100
+    eval_steps: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    residual_type: concat
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    verbose: 1
+FinalNet_avazu_x4_001_025_0ed13236:
+    batch_norm: true
+    batch_size: 8192
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [500]
+    block_type: 2B
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    early_stop_patience: 1
+    embedding_dim: 16
+    embedding_regularizer: 0
+    epochs: 100
+    eval_steps: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    residual_type: concat
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    verbose: 1
+FinalNet_avazu_x4_001_026_fef319c9:
+    batch_norm: true
+    batch_size: 8192
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [500]
+    block_type: 2B
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    early_stop_patience: 1
+    embedding_dim: 16
+    embedding_regularizer: 0
+    epochs: 100
+    eval_steps: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    residual_type: concat
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    verbose: 1
+FinalNet_avazu_x4_001_027_19b02978:
+    batch_norm: true
+    batch_size: 8192
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [500, 500]
+    block_type: 2B
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    early_stop_patience: 1
+    embedding_dim: 16
+    embedding_regularizer: 0
+    epochs: 100
+    eval_steps: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    residual_type: concat
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    verbose: 1
+FinalNet_avazu_x4_001_028_b193daff:
+    batch_norm: true
+    batch_size: 8192
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [500, 500]
+    block_type: 2B
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    early_stop_patience: 1
+    embedding_dim: 16
+    embedding_regularizer: 0
+    epochs: 100
+    eval_steps: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    residual_type: concat
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    verbose: 1
+FinalNet_avazu_x4_001_029_05eab58b:
+    batch_norm: true
+    batch_size: 8192
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [200, 200]
+    block_type: 2B
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    early_stop_patience: 1
+    embedding_dim: 16
+    embedding_regularizer: 0
+    epochs: 100
+    eval_steps: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    residual_type: concat
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    verbose: 1
+FinalNet_avazu_x4_001_030_507a70cf:
+    batch_norm: true
+    batch_size: 8192
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [200, 200]
+    block_type: 2B
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    early_stop_patience: 1
+    embedding_dim: 16
+    embedding_regularizer: 0
+    epochs: 100
+    eval_steps: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    residual_type: concat
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    verbose: 1
+FinalNet_avazu_x4_001_031_9d00c094:
+    batch_norm: true
+    batch_size: 8192
+    block1_dropout: 0
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [100]
+    block_type: 2B
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    early_stop_patience: 1
+    embedding_dim: 16
+    embedding_regularizer: 0
+    epochs: 100
+    eval_steps: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    residual_type: concat
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    verbose: 1
+FinalNet_avazu_x4_001_032_e02b1105:
+    batch_norm: true
+    batch_size: 8192
+    block1_dropout: 0
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [100]
+    block_type: 2B
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    early_stop_patience: 1
+    embedding_dim: 16
+    embedding_regularizer: 0
+    epochs: 100
+    eval_steps: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    residual_type: concat
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    verbose: 1
+FinalNet_avazu_x4_001_033_7161b11e:
+    batch_norm: true
+    batch_size: 8192
+    block1_dropout: 0
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [200]
+    block_type: 2B
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    early_stop_patience: 1
+    embedding_dim: 16
+    embedding_regularizer: 0
+    epochs: 100
+    eval_steps: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    residual_type: concat
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    verbose: 1
+FinalNet_avazu_x4_001_034_8d53f431:
+    batch_norm: true
+    batch_size: 8192
+    block1_dropout: 0
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [200]
+    block_type: 2B
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    early_stop_patience: 1
+    embedding_dim: 16
+    embedding_regularizer: 0
+    epochs: 100
+    eval_steps: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    residual_type: concat
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    verbose: 1
+FinalNet_avazu_x4_001_035_fef319c9:
+    batch_norm: true
+    batch_size: 8192
+    block1_dropout: 0
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [500]
+    block_type: 2B
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    early_stop_patience: 1
+    embedding_dim: 16
+    embedding_regularizer: 0
+    epochs: 100
+    eval_steps: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    residual_type: concat
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    verbose: 1
+FinalNet_avazu_x4_001_036_7917160e:
+    batch_norm: true
+    batch_size: 8192
+    block1_dropout: 0
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [500]
+    block_type: 2B
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    early_stop_patience: 1
+    embedding_dim: 16
+    embedding_regularizer: 0
+    epochs: 100
+    eval_steps: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    residual_type: concat
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    verbose: 1
+FinalNet_avazu_x4_001_037_b193daff:
+    batch_norm: true
+    batch_size: 8192
+    block1_dropout: 0
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [500, 500]
+    block_type: 2B
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    early_stop_patience: 1
+    embedding_dim: 16
+    embedding_regularizer: 0
+    epochs: 100
+    eval_steps: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    residual_type: concat
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    verbose: 1
+FinalNet_avazu_x4_001_038_22192711:
+    batch_norm: true
+    batch_size: 8192
+    block1_dropout: 0
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [500, 500]
+    block_type: 2B
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    early_stop_patience: 1
+    embedding_dim: 16
+    embedding_regularizer: 0
+    epochs: 100
+    eval_steps: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    residual_type: concat
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    verbose: 1
+FinalNet_avazu_x4_001_039_507a70cf:
+    batch_norm: true
+    batch_size: 8192
+    block1_dropout: 0
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [200, 200]
+    block_type: 2B
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    early_stop_patience: 1
+    embedding_dim: 16
+    embedding_regularizer: 0
+    epochs: 100
+    eval_steps: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    residual_type: concat
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    verbose: 1
+FinalNet_avazu_x4_001_040_fad2874f:
+    batch_norm: true
+    batch_size: 8192
+    block1_dropout: 0
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [200, 200]
+    block_type: 2B
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    early_stop_patience: 1
+    embedding_dim: 16
+    embedding_regularizer: 0
+    epochs: 100
+    eval_steps: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    ordered_features: null
+    pickle_feature_encoder: true
+    residual_type: concat
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    verbose: 1

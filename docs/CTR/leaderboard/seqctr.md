@@ -1,0 +1,4 @@
+# BARS-SeqCTR Leaderboard
+
+```{tableofcontents}
+```

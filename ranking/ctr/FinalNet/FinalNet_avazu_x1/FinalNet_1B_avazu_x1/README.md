@@ -2,7 +2,7 @@
 
 A hands-on guide to run the FINAL model on the Avazu_x1 dataset.
 
-Author: [XUEPAI](https://github.com/xue-pai)
+Author: [BARS Benchmark](https://github.com/reczoo/BARS/blob/main/CITATION)
 
 
 | [Environments](#Environments) | [Dataset](#Dataset) | [Code](#Code) | [Results](#Results) | [Logs](#Logs) |
@@ -39,11 +39,11 @@ Please refer to the BARS dataset [Avazu_x1](https://github.com/openbenchmark/BAR
 
 ### Code
 
-We use the [FINAL](https://github.com/xue-pai/FuxiCTR/blob/v2.0.2/model_zoo/FINAL) model code from [FuxiCTR-v2.0.2](https://github.com/xue-pai/FuxiCTR/tree/v2.0.2) for this experiment.
+We use the [FINAL](https://github.com/reczoo/FuxiCTR/blob/v2.0.2/model_zoo/FINAL) model code from [FuxiCTR-v2.0.2](https://github.com/reczoo/FuxiCTR/tree/v2.0.2) for this experiment.
 
 Running steps:
 
-1. Download [FuxiCTR-v2.0.2](https://github.com/xue-pai/FuxiCTR/archive/refs/tags/v2.0.2.zip) and install all the dependencies listed in the [environments](#environments).
+1. Download [FuxiCTR-v2.0.2](https://github.com/reczoo/FuxiCTR/archive/refs/tags/v2.0.2.zip) and install all the dependencies listed in the [environments](#environments).
     
     ```bash
     pip uninstall fuxictr

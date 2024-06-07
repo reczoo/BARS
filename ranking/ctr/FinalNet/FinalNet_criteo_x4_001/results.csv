@@ -1,0 +1,1 @@
+ 20240221-022741,[command] python run_expid.py --config Criteo_x4/FinalNet_criteo_x4_001/FinalNet_criteo_x4_tuner_config_05 --expid FinalNet_criteo_x4_001_041_449ccb21 --gpu 0,[exp_id] FinalNet_criteo_x4_001_041_449ccb21,[dataset_id] criteo_x4_001_a5e05ce7,[train] N.A.,[val] AUC: 0.814462 - logloss: 0.437531,[test] AUC: 0.814966 - logloss: 0.437116

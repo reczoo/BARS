@@ -1,0 +1,624 @@
+DCNv2_criteo_x4_001_001_b898c4c8:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_001_a5e05ce7
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_root: ./checkpoints/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_cross_layers: 2
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [1000, 1000, 1000, 1000, 1000]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_features: null
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_criteo_x4_001_002_29c70823:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_001_a5e05ce7
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_root: ./checkpoints/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_cross_layers: 2
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [1000, 1000, 1000, 1000, 1000]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_features: null
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_criteo_x4_001_003_ee267cb0:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_001_a5e05ce7
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_root: ./checkpoints/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_cross_layers: 2
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [1000, 1000, 1000, 1000, 1000]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_features: null
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_criteo_x4_001_004_3a036efb:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_001_a5e05ce7
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_root: ./checkpoints/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_cross_layers: 2
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [1000, 1000, 1000, 1000, 1000]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_features: null
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_criteo_x4_001_005_c2376d55:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_001_a5e05ce7
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_root: ./checkpoints/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [1000, 1000, 1000, 1000, 1000]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_features: null
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_criteo_x4_001_006_c15183f0:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_001_a5e05ce7
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_root: ./checkpoints/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [1000, 1000, 1000, 1000, 1000]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_features: null
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_criteo_x4_001_007_d2d39ad9:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_001_a5e05ce7
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_root: ./checkpoints/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [1000, 1000, 1000, 1000, 1000]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_features: null
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_criteo_x4_001_008_37995540:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_001_a5e05ce7
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_root: ./checkpoints/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [1000, 1000, 1000, 1000, 1000]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_features: null
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_criteo_x4_001_009_a3ea8161:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_001_a5e05ce7
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_root: ./checkpoints/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_cross_layers: 4
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [1000, 1000, 1000, 1000, 1000]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_features: null
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_criteo_x4_001_010_46d11cb5:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_001_a5e05ce7
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_root: ./checkpoints/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_cross_layers: 4
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [1000, 1000, 1000, 1000, 1000]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_features: null
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_criteo_x4_001_011_159c60bb:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_001_a5e05ce7
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_root: ./checkpoints/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_cross_layers: 4
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [1000, 1000, 1000, 1000, 1000]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_features: null
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_criteo_x4_001_012_547935d0:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_001_a5e05ce7
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_root: ./checkpoints/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_cross_layers: 4
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [1000, 1000, 1000, 1000, 1000]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_features: null
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_criteo_x4_001_013_38f2f74e:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_001_a5e05ce7
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_root: ./checkpoints/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_cross_layers: 5
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [1000, 1000, 1000, 1000, 1000]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_features: null
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_criteo_x4_001_014_a196cc4b:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_001_a5e05ce7
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_root: ./checkpoints/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_cross_layers: 5
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [1000, 1000, 1000, 1000, 1000]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_features: null
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_criteo_x4_001_015_7fed2c5d:
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: criteo_x4_001_a5e05ce7
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_root: ./checkpoints/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_cross_layers: 5
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [1000, 1000, 1000, 1000, 1000]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_features: null
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_criteo_x4_001_016_4f31dc10:
+    batch_norm: false
+    batch_size: 10000
+    dataset_id: criteo_x4_001_a5e05ce7
+    debug_mode: false
+    dnn_activations: relu
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [AUC, logloss]
+    model: DCNv2
+    model_root: ./checkpoints/
+    model_structure: parallel
+    monitor: AUC
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_cross_layers: 5
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [1000, 1000, 1000, 1000, 1000]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_features: null
+    use_low_rank_mixture: false
+    verbose: 1

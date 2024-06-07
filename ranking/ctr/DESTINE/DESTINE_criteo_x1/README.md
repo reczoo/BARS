@@ -2,7 +2,7 @@
 
 A hands-on guide to run the DESTINE model on the Criteo_x1 dataset.
 
-Author: [XUEPAI](https://github.com/xue-pai)
+Author: [BARS Benchmark](https://github.com/reczoo/BARS/blob/main/CITATION)
 
 ### Index
 
@@ -40,11 +40,11 @@ Dataset ID: [Criteo_x1](https://github.com/openbenchmark/BARS/blob/master/ctr_pr
 
 ### Code
 
-We use [FuxiCTR-v1.2.2](https://github.com/xue-pai/FuxiCTR/tree/v1.2.2) for this experiment. See the model code: [DESTINE](https://github.com/xue-pai/FuxiCTR/blob/v1.2.2/fuxictr/pytorch/models/DESTINE.py).
+We use [FuxiCTR-v1.2.2](https://github.com/reczoo/FuxiCTR/tree/v1.2.2) for this experiment. See the model code: [DESTINE](https://github.com/reczoo/FuxiCTR/blob/v1.2.2/fuxictr/pytorch/models/DESTINE.py).
 
 Running steps:
 
-1. Download [FuxiCTR-v1.2.2](https://github.com/xue-pai/FuxiCTR/archive/refs/tags/v1.2.2.zip) and install all the dependencies listed in the [environments](#environments). Then modify [fuxictr_version.py](./fuxictr_version.py#L3) to add the FuxiCTR library to system path
+1. Download [FuxiCTR-v1.2.2](https://github.com/reczoo/FuxiCTR/archive/refs/tags/v1.2.2.zip) and install all the dependencies listed in the [environments](#environments). Then modify [fuxictr_version.py](./fuxictr_version.py#L3) to add the FuxiCTR library to system path
    
    ```python
    sys.path.append('YOUR_PATH_TO_FuxiCTR/')

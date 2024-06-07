@@ -1,0 +1,1 @@
+ 20240222-202153,[command] python run_expid.py --config Avazu_x4/MaskNet_avazu_x4_001/MaskNet_avazu_x4_tuner_config_03 --expid MaskNet_avazu_x4_001_019_541571c0 --gpu 1,[exp_id] MaskNet_avazu_x4_001_019_541571c0,[dataset_id] avazu_x4_001_a31210da,[train] N.A.,[val] AUC: 0.794253 - logloss: 0.371254,[test] AUC: 0.794382 - logloss: 0.371189

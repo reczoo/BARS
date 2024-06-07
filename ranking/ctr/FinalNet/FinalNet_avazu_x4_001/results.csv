@@ -1,0 +1,1 @@
+ 20240222-133431,[command] python run_expid.py --config Avazu_x4/FinalNet_avazu_x4_001/FinalNet_avazu_x4_tuner_config_04 --expid FinalNet_avazu_x4_001_015_4b405413 --gpu 6,[exp_id] FinalNet_avazu_x4_001_015_4b405413,[dataset_id] avazu_x4_001_a31210da,[train] N.A.,[val] AUC: 0.793961 - logloss: 0.371360,[test] AUC: 0.794116 - logloss: 0.371254

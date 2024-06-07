@@ -2,7 +2,7 @@
 
 A hands-on guide to run the EDCN model on the MovielensLatest_x1 dataset.
 
-Author: [XUEPAI](https://github.com/xue-pai)
+Author: [BARS Benchmark](https://github.com/reczoo/BARS/blob/main/CITATION)
 
 ### Index
 
@@ -40,11 +40,11 @@ Dataset ID: [MovielensLatest_x1](https://github.com/openbenchmark/BARS/blob/mast
 
 ### Code
 
-We use [FuxiCTR-v1.2.2](https://github.com/xue-pai/FuxiCTR/tree/v1.2.2) for this experiment. See the model code: [EDCN](https://github.com/xue-pai/FuxiCTR/blob/v1.2.2/fuxictr/pytorch/models/EDCN.py).
+We use [FuxiCTR-v1.2.2](https://github.com/reczoo/FuxiCTR/tree/v1.2.2) for this experiment. See the model code: [EDCN](https://github.com/reczoo/FuxiCTR/blob/v1.2.2/fuxictr/pytorch/models/EDCN.py).
 
 Running steps:
 
-1. Download [FuxiCTR-v1.2.2](https://github.com/xue-pai/FuxiCTR/archive/refs/tags/v1.2.2.zip) and install all the dependencies listed in the [environments](#environments). Then modify [fuxictr_version.py](./fuxictr_version.py#L3) to add the FuxiCTR library to system path
+1. Download [FuxiCTR-v1.2.2](https://github.com/reczoo/FuxiCTR/archive/refs/tags/v1.2.2.zip) and install all the dependencies listed in the [environments](#environments). Then modify [fuxictr_version.py](./fuxictr_version.py#L3) to add the FuxiCTR library to system path
    
    ```python
    sys.path.append('YOUR_PATH_TO_FuxiCTR/')
@@ -249,4 +249,4 @@ Running steps:
 
 ### Revision History
 
-- [Version 1](https://github.com/openbenchmark/BARS/tree/88d3a0faa4565e975141ae89a52d35d3a8b56eda/ctr_prediction/benchmarks/EDCN/EDCN_movielenslatest_x1): deprecated due to bug fix [#29](https://github.com/xue-pai/FuxiCTR/issues/29) of FuxiCTR.
+- [Version 1](https://github.com/openbenchmark/BARS/tree/88d3a0faa4565e975141ae89a52d35d3a8b56eda/ctr_prediction/benchmarks/EDCN/EDCN_movielenslatest_x1): deprecated due to bug fix [#29](https://github.com/reczoo/FuxiCTR/issues/29) of FuxiCTR.

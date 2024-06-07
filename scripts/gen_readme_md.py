@@ -4,7 +4,7 @@ import glob
 import pandas as pd
 
 
-input_dir = "../ranking/ctr/PPNet/PPNet_taobao_x1"
+input_dir = "../ranking/ctr/FinalNet/FinalNet_criteo_x4_001"
 
 model_id = os.path.basename(input_dir)
 model_name = input_dir.split("ctr/")[1].split("/")[0]
@@ -28,13 +28,21 @@ dataset_name = dataset_id.split("_")[0]
 # dataset_id = "MicroVideo1.7M_x1"
 # short_dataset_id = "MicroVideo1.7M_x1"
 
-dataset_name = "Taobao"
-dataset_id = "TaobaoAd_x1"
-short_dataset_id = "TaobaoAd_x1"
+# dataset_name = "Taobao"
+# dataset_id = "TaobaoAd_x1"
+# short_dataset_id = "TaobaoAd_x1"
 
 # dataset_name = "Frappe"
 # dataset_id = "Frappe_x1"
 # short_dataset_id = "Frappe_x1"
+
+# dataset_name = "Avazu"
+# dataset_id = "Avazu_x4"
+# short_dataset_id = "Avazu_x4"
+
+dataset_name = "Criteo"
+dataset_id = "Criteo_x4"
+short_dataset_id = "Criteo_x4"
 
 dataset_url = f"https://github.com/reczoo/Datasets/tree/main/{dataset_name}/{short_dataset_id}"
 print(dataset_url)

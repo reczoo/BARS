@@ -1,4 +1,4 @@
-# Benchmark Leaderboard
+# BARS-CTR Leaderboard
 
 ```{tableofcontents}
 ```

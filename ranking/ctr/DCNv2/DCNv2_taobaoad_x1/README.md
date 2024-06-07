@@ -2,7 +2,7 @@
 
 A hands-on guide to run the DCNv2 model on the TaobaoAd_x1 dataset.
 
-Author: [XUEPAI](https://github.com/xue-pai)
+Author: [BARS Benchmark](https://github.com/reczoo/BARS/blob/main/CITATION)
 
 
 | [Environments](#Environments) | [Dataset](#Dataset) | [Code](#Code) | [Results](#Results) | [Logs](#Logs) |
@@ -35,15 +35,15 @@ Author: [XUEPAI](https://github.com/xue-pai)
   ```
 
 ### Dataset
-Please refer to the BARS dataset [TaobaoAd_x1](https://github.com/openbenchmark/BARS/blob/main/datasets/Taobao#TaobaoAd_x1) to get data ready.
+Please refer to [TaobaoAd_x1](https://github.com/reczoo/Datasets/tree/main/Taobao/TaobaoAd_x1) to get the dataset details.
 
 ### Code
 
-We use the [DCNv2](https://github.com/xue-pai/FuxiCTR/blob/v2.0.1/model_zoo/DCNv2) model code from [FuxiCTR-v2.0.1](https://github.com/xue-pai/FuxiCTR/tree/v2.0.1) for this experiment.
+We use the [DCNv2](https://github.com/reczoo/FuxiCTR/blob/v2.0.1/model_zoo/DCNv2) model code from [FuxiCTR-v2.0.1](https://github.com/reczoo/FuxiCTR/tree/v2.0.1) for this experiment.
 
 Running steps:
 
-1. Download [FuxiCTR-v2.0.1](https://github.com/xue-pai/FuxiCTR/archive/refs/tags/v2.0.1.zip) and install all the dependencies listed in the [environments](#environments).
+1. Download [FuxiCTR-v2.0.1](https://github.com/reczoo/FuxiCTR/archive/refs/tags/v2.0.1.zip) and install all the dependencies listed in the [environments](#environments).
     
     ```bash
     pip uninstall fuxictr

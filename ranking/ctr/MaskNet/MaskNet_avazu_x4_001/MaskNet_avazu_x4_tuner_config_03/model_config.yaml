@@ -1,0 +1,1368 @@
+MaskNet_avazu_x4_001_001_bbac6c11:
+    batch_size: 10000
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [2000, 2000, 2000]
+    early_stop_patience: 1
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    parallel_block_dim: 500
+    parallel_num_blocks: 6
+    pickle_feature_encoder: true
+    reduction_ratio: 0.8
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_avazu_x4_001_002_9ef5839b:
+    batch_size: 10000
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [2000, 2000, 2000]
+    early_stop_patience: 1
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    parallel_block_dim: 500
+    parallel_num_blocks: 6
+    pickle_feature_encoder: true
+    reduction_ratio: 0.4
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_avazu_x4_001_003_76be1274:
+    batch_size: 10000
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [2000, 2000, 2000]
+    early_stop_patience: 1
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    parallel_block_dim: 500
+    parallel_num_blocks: 6
+    pickle_feature_encoder: true
+    reduction_ratio: 0.2
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_avazu_x4_001_004_4c10b76a:
+    batch_size: 10000
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [2000, 2000, 2000]
+    early_stop_patience: 1
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    parallel_block_dim: 100
+    parallel_num_blocks: 6
+    pickle_feature_encoder: true
+    reduction_ratio: 0.8
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_avazu_x4_001_005_78175568:
+    batch_size: 10000
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [2000, 2000, 2000]
+    early_stop_patience: 1
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    parallel_block_dim: 100
+    parallel_num_blocks: 6
+    pickle_feature_encoder: true
+    reduction_ratio: 0.4
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_avazu_x4_001_006_32009e4b:
+    batch_size: 10000
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [2000, 2000, 2000]
+    early_stop_patience: 1
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    parallel_block_dim: 100
+    parallel_num_blocks: 6
+    pickle_feature_encoder: true
+    reduction_ratio: 0.2
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_avazu_x4_001_007_4dcce194:
+    batch_size: 10000
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [2000, 2000, 2000]
+    early_stop_patience: 1
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    parallel_block_dim: 200
+    parallel_num_blocks: 6
+    pickle_feature_encoder: true
+    reduction_ratio: 0.8
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_avazu_x4_001_008_776519e7:
+    batch_size: 10000
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [2000, 2000, 2000]
+    early_stop_patience: 1
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    parallel_block_dim: 200
+    parallel_num_blocks: 6
+    pickle_feature_encoder: true
+    reduction_ratio: 0.4
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_avazu_x4_001_009_077a69f8:
+    batch_size: 10000
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [2000, 2000, 2000]
+    early_stop_patience: 1
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    parallel_block_dim: 200
+    parallel_num_blocks: 6
+    pickle_feature_encoder: true
+    reduction_ratio: 0.2
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_avazu_x4_001_010_c00b0af8:
+    batch_size: 10000
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [2000, 2000, 2000]
+    early_stop_patience: 1
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    parallel_block_dim: 500
+    parallel_num_blocks: 10
+    pickle_feature_encoder: true
+    reduction_ratio: 0.8
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_avazu_x4_001_011_a867ff31:
+    batch_size: 10000
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [2000, 2000, 2000]
+    early_stop_patience: 1
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    parallel_block_dim: 500
+    parallel_num_blocks: 10
+    pickle_feature_encoder: true
+    reduction_ratio: 0.4
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_avazu_x4_001_012_7d3eddf1:
+    batch_size: 10000
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [2000, 2000, 2000]
+    early_stop_patience: 1
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    parallel_block_dim: 500
+    parallel_num_blocks: 10
+    pickle_feature_encoder: true
+    reduction_ratio: 0.2
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_avazu_x4_001_013_c06e0e42:
+    batch_size: 10000
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [2000, 2000, 2000]
+    early_stop_patience: 1
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    parallel_block_dim: 100
+    parallel_num_blocks: 10
+    pickle_feature_encoder: true
+    reduction_ratio: 0.8
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_avazu_x4_001_014_ca388c2c:
+    batch_size: 10000
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [2000, 2000, 2000]
+    early_stop_patience: 1
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    parallel_block_dim: 100
+    parallel_num_blocks: 10
+    pickle_feature_encoder: true
+    reduction_ratio: 0.4
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_avazu_x4_001_015_efdd867c:
+    batch_size: 10000
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [2000, 2000, 2000]
+    early_stop_patience: 1
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    parallel_block_dim: 100
+    parallel_num_blocks: 10
+    pickle_feature_encoder: true
+    reduction_ratio: 0.2
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_avazu_x4_001_016_50685b2e:
+    batch_size: 10000
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [2000, 2000, 2000]
+    early_stop_patience: 1
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    parallel_block_dim: 200
+    parallel_num_blocks: 10
+    pickle_feature_encoder: true
+    reduction_ratio: 0.8
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_avazu_x4_001_017_97d6e691:
+    batch_size: 10000
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [2000, 2000, 2000]
+    early_stop_patience: 1
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    parallel_block_dim: 200
+    parallel_num_blocks: 10
+    pickle_feature_encoder: true
+    reduction_ratio: 0.4
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_avazu_x4_001_018_1738e59f:
+    batch_size: 10000
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [2000, 2000, 2000]
+    early_stop_patience: 1
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    parallel_block_dim: 200
+    parallel_num_blocks: 10
+    pickle_feature_encoder: true
+    reduction_ratio: 0.2
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_avazu_x4_001_019_541571c0:
+    batch_size: 10000
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [2000, 2000, 2000]
+    early_stop_patience: 1
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    parallel_block_dim: 500
+    parallel_num_blocks: 6
+    pickle_feature_encoder: true
+    reduction_ratio: 0.8
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_avazu_x4_001_020_2b7f0a68:
+    batch_size: 10000
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [2000, 2000, 2000]
+    early_stop_patience: 1
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    parallel_block_dim: 500
+    parallel_num_blocks: 6
+    pickle_feature_encoder: true
+    reduction_ratio: 0.4
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_avazu_x4_001_021_ba3b920a:
+    batch_size: 10000
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [2000, 2000, 2000]
+    early_stop_patience: 1
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    parallel_block_dim: 500
+    parallel_num_blocks: 6
+    pickle_feature_encoder: true
+    reduction_ratio: 0.2
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_avazu_x4_001_022_f6170749:
+    batch_size: 10000
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [2000, 2000, 2000]
+    early_stop_patience: 1
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    parallel_block_dim: 100
+    parallel_num_blocks: 6
+    pickle_feature_encoder: true
+    reduction_ratio: 0.8
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_avazu_x4_001_023_b4bd40ab:
+    batch_size: 10000
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [2000, 2000, 2000]
+    early_stop_patience: 1
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    parallel_block_dim: 100
+    parallel_num_blocks: 6
+    pickle_feature_encoder: true
+    reduction_ratio: 0.4
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_avazu_x4_001_024_1028ff87:
+    batch_size: 10000
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [2000, 2000, 2000]
+    early_stop_patience: 1
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    parallel_block_dim: 100
+    parallel_num_blocks: 6
+    pickle_feature_encoder: true
+    reduction_ratio: 0.2
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_avazu_x4_001_025_5ca67f2d:
+    batch_size: 10000
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [2000, 2000, 2000]
+    early_stop_patience: 1
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    parallel_block_dim: 200
+    parallel_num_blocks: 6
+    pickle_feature_encoder: true
+    reduction_ratio: 0.8
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_avazu_x4_001_026_eff99881:
+    batch_size: 10000
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [2000, 2000, 2000]
+    early_stop_patience: 1
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    parallel_block_dim: 200
+    parallel_num_blocks: 6
+    pickle_feature_encoder: true
+    reduction_ratio: 0.4
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_avazu_x4_001_027_16be52ea:
+    batch_size: 10000
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [2000, 2000, 2000]
+    early_stop_patience: 1
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    parallel_block_dim: 200
+    parallel_num_blocks: 6
+    pickle_feature_encoder: true
+    reduction_ratio: 0.2
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_avazu_x4_001_028_7b840e59:
+    batch_size: 10000
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [2000, 2000, 2000]
+    early_stop_patience: 1
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    parallel_block_dim: 500
+    parallel_num_blocks: 10
+    pickle_feature_encoder: true
+    reduction_ratio: 0.8
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_avazu_x4_001_029_20693171:
+    batch_size: 10000
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [2000, 2000, 2000]
+    early_stop_patience: 1
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    parallel_block_dim: 500
+    parallel_num_blocks: 10
+    pickle_feature_encoder: true
+    reduction_ratio: 0.4
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_avazu_x4_001_030_63a9ed56:
+    batch_size: 10000
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [2000, 2000, 2000]
+    early_stop_patience: 1
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    parallel_block_dim: 500
+    parallel_num_blocks: 10
+    pickle_feature_encoder: true
+    reduction_ratio: 0.2
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_avazu_x4_001_031_46003868:
+    batch_size: 10000
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [2000, 2000, 2000]
+    early_stop_patience: 1
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    parallel_block_dim: 100
+    parallel_num_blocks: 10
+    pickle_feature_encoder: true
+    reduction_ratio: 0.8
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_avazu_x4_001_032_404cab49:
+    batch_size: 10000
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [2000, 2000, 2000]
+    early_stop_patience: 1
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    parallel_block_dim: 100
+    parallel_num_blocks: 10
+    pickle_feature_encoder: true
+    reduction_ratio: 0.4
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_avazu_x4_001_033_6fff8ecb:
+    batch_size: 10000
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [2000, 2000, 2000]
+    early_stop_patience: 1
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    parallel_block_dim: 100
+    parallel_num_blocks: 10
+    pickle_feature_encoder: true
+    reduction_ratio: 0.2
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_avazu_x4_001_034_6960833c:
+    batch_size: 10000
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [2000, 2000, 2000]
+    early_stop_patience: 1
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    parallel_block_dim: 200
+    parallel_num_blocks: 10
+    pickle_feature_encoder: true
+    reduction_ratio: 0.8
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_avazu_x4_001_035_5dda1c36:
+    batch_size: 10000
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [2000, 2000, 2000]
+    early_stop_patience: 1
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    parallel_block_dim: 200
+    parallel_num_blocks: 10
+    pickle_feature_encoder: true
+    reduction_ratio: 0.4
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_avazu_x4_001_036_66863184:
+    batch_size: 10000
+    dataset_id: avazu_x4_001_a31210da
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [2000, 2000, 2000]
+    early_stop_patience: 1
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    parallel_block_dim: 200
+    parallel_num_blocks: 10
+    pickle_feature_encoder: true
+    reduction_ratio: 0.2
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1

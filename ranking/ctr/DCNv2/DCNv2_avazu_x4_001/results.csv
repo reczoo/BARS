@@ -1,0 +1,1 @@
+ 20220517-085547,[command] python run_expid.py --version pytorch --config Avazu/DCNv2_avazu_x4_001/DCNv2_avazu_x4_tuner_config_02 --expid DCNv2_avazu_x4_011_19794dc6 --gpu 2,[exp_id] DCNv2_avazu_x4_011_19794dc6,[dataset_id] avazu_x4_3bbbc4c9,[train] N.A.,[val] AUC: 0.792978 - logloss: 0.371967,[test] AUC: 0.793146 - logloss: 0.371865

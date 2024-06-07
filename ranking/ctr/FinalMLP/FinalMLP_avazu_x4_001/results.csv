@@ -1,0 +1,1 @@
+ 20240222-130933,[command] python run_expid.py --config Avazu_x4/FinalMLP_avazu_x4_001/FinalMLP_avazu_x4_tuner_config_03 --expid FinalMLP_avazu_x4_001_006_a7c95fe1 --gpu 5,[exp_id] FinalMLP_avazu_x4_001_006_a7c95fe1,[dataset_id] avazu_x4_001_a31210da,[train] N.A.,[val] AUC: 0.793356 - logloss: 0.371948,[test] AUC: 0.793537 - logloss: 0.371862

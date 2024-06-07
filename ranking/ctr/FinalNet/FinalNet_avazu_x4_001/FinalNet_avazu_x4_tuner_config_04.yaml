@@ -1,0 +1,42 @@
+base_config: ../model_zoo/FinalNet/config/
+base_expid: FinalNet_default
+dataset_id: avazu_x4_001
+
+dataset_config:
+  avazu_x4_001:
+      data_root: ../data/Avazu/
+      data_format: csv
+      train_data: ../data/Avazu/Avazu_x4/train.csv
+      valid_data: ../data/Avazu/Avazu_x4/valid.csv
+      test_data: ../data/Avazu/Avazu_x4/test.csv
+      min_categr_count: 2
+      feature_cols:
+          - {name: id, active: False, dtype: str, type: categorical}
+          - {name: hour, active: True, dtype: str, type: categorical, preprocess: convert_hour}
+          - {name: [C1,banner_pos,site_id,site_domain,site_category,app_id,app_domain,app_category,device_id,
+                    device_ip,device_model,device_type,device_conn_type,C14,C15,C16,C17,C18,C19,C20,C21], 
+             active: True, dtype: str, type: categorical}
+          - {name: weekday, active: True, dtype: str, type: categorical, preprocess: convert_weekday}
+          - {name: weekend, active: True, dtype: str, type: categorical, preprocess: convert_weekend}
+      label_col: {name: click, dtype: float}
+
+
+tuner_space:
+    model_root: './checkpoints/'
+    embedding_dim: 16
+    embedding_regularizer: 0
+    block_type: "2B"
+    batch_norm: True
+    use_feature_gating: True
+    block1_hidden_units: [[2000, 2000, 2000], [1000, 1000, 1000]]
+    block1_hidden_activations: ReLU
+    block1_dropout: [0.1, 0]
+    block2_hidden_units: [[100], [200], [500], [500, 500], [200, 200]]
+    block2_hidden_activations: ReLU
+    block2_dropout: [0.1, 0]
+    learning_rate: 1.e-3
+    batch_size: 8192
+    seed: 2019
+    monitor: {'AUC': 1, 'logloss': -1}
+    metrics: [['AUC', 'logloss']]
+    early_stop_patience: 1

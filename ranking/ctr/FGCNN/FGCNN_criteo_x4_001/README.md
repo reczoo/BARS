@@ -2,7 +2,7 @@
 
 A notebook to benchmark FGCNN on Criteo_x4_001 dataset.
 
-Author: [XUEPAI Team](https://github.com/xue-pai)
+Author: [XUEPAI Team](https://github.com/reczoo)
 
 
 ### Index
@@ -34,7 +34,7 @@ To make a fair comparison, we fix embedding_dim=16 as with AutoInt.
   
     Install FuxiCTR via `pip install fuxictr==1.0` to get all dependencies ready. Then download [the FuxiCTR repository](https://github.com/huawei-noah/benchmark/archive/53e314461c19dbc7f462b42bf0f0bfae020dc398.zip) to your local path.
 
-2. Downalod the dataset and run [the preprocessing script](https://github.com/xue-pai/Open-CTR-Benchmark/blob/master/datasets/Criteo/Criteo_x4/split_criteo_x4.py) for data splitting. 
+2. Downalod the dataset and run [the preprocessing script](https://github.com/reczoo/Open-CTR-Benchmark/blob/master/datasets/Criteo/Criteo_x4/split_criteo_x4.py) for data splitting. 
 
 3. Download the hyper-parameter configuration file: [FGCNN_criteo_x4_tuner_config_01.yaml](./FGCNN_criteo_x4_tuner_config_01.yaml)
 

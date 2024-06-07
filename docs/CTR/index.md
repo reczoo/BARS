@@ -1,4 +1,4 @@
-# BARS-CTR Benchmark
+# Benchmark Overview
 
 BARS-CTR: An Open Benchmark for CTR Prediction https://openbenchmark.github.io/BARS/CTR
 

@@ -2,7 +2,7 @@
 
 A hands-on guide to run the FinalMLP model on the MovielensLatest_x1 dataset.
 
-Author: [XUEPAI](https://github.com/xue-pai)
+Author: [BARS Benchmark](https://github.com/reczoo/BARS/blob/main/CITATION)
 
 
 | [Environments](#Environments) | [Dataset](#Dataset) | [Code](#Code) | [Results](#Results) | [Logs](#Logs) |
@@ -38,11 +38,11 @@ Please refer to the BARS dataset [MovielensLatest_x1](https://github.com/openben
 
 ### Code
 
-We use the [FinalMLP](https://github.com/xue-pai/FuxiCTR/blob/v2.0.1/model_zoo/FinalMLP) model code from [FuxiCTR-v2.0.1](https://github.com/xue-pai/FuxiCTR/tree/v2.0.1) for this experiment.
+We use the [FinalMLP](https://github.com/reczoo/FuxiCTR/blob/v2.0.1/model_zoo/FinalMLP) model code from [FuxiCTR-v2.0.1](https://github.com/reczoo/FuxiCTR/tree/v2.0.1) for this experiment.
 
 Running steps:
 
-1. Download [FuxiCTR-v2.0.1](https://github.com/xue-pai/FuxiCTR/archive/refs/tags/v2.0.1.zip) and install all the dependencies listed in the [environments](#environments).
+1. Download [FuxiCTR-v2.0.1](https://github.com/reczoo/FuxiCTR/archive/refs/tags/v2.0.1.zip) and install all the dependencies listed in the [environments](#environments).
     
     ```bash
     pip uninstall fuxictr

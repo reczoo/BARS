@@ -1,4 +1,4 @@
-# BARS-Match Overview
+# Benchmark Overview
 
 BARS-Match: An Open Benchmark for Candidate Item Matching https://openbenchmark.github.io/BARS/Matching
 
