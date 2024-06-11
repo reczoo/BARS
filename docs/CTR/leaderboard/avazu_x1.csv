@@ -7,7 +7,7 @@ Year,Publication,Model,Paper URL,AUC,Logloss,Running Steps,Contributor
 2017,SIGIR'17,NFM,https://dl.acm.org/citation.cfm?id=3080777,0.7627,0.3677,https://github.com/reczoo/BARS/tree/main/ranking/ctr/NFM/NFM_avazu_x1,"<a href=""https://arxiv.org/abs/2205.09626"">Zhu et al.</a>"
 2018,WWW'18,FwFM,https://arxiv.org/pdf/1806.03514.pdf,0.7602,0.3688,https://github.com/reczoo/BARS/tree/main/ranking/ctr/FwFM/FwFM_avazu_x1,"<a href=""https://arxiv.org/abs/2205.09626"">Zhu et al.</a>"
 2021,WWW'21,FmFM,https://arxiv.org/abs/2102.12994,0.7595,0.3689,https://github.com/reczoo/BARS/tree/main/ranking/ctr/FmFM/FmFM_avazu_x1,"<a href=""https://arxiv.org/abs/2205.09626"">Zhu et al.</a>"
-2016,RecSys'16,YoutubeDNN,https://research.google.com/pubs/archive/45530.pdf,0.763,0.3682,https://github.com/reczoo/BARS/tree/main/ranking/ctr/DNN/DNN_avazu_x1,"<a href=""https://arxiv.org/abs/2205.09626"">Zhu et al.</a>"
+2016,RecSys'16,YoutubeDNN,https://research.google.com/pubs/archive/45530.pdf,0.763827,0.367394,https://github.com/reczoo/BARS/tree/main/ranking/ctr/DNN/DNN_avazu_x1,"<a href=""https://arxiv.org/abs/2205.09626"">Zhu et al.</a>"
 2016,ICDM'16,IPNN,https://arxiv.org/pdf/1611.00144.pdf,0.763,0.3676,https://github.com/reczoo/BARS/tree/main/ranking/ctr/PNN/IPNN_avazu_x1,"<a href=""https://arxiv.org/abs/2205.09626"">Zhu et al.</a>"
 2016,DLRS'16,Wide&Deep,https://arxiv.org/pdf/1606.07792.pdf,0.7649,0.3665,https://github.com/reczoo/BARS/tree/main/ranking/ctr/WideDeep/WideDeep_avazu_x1,"<a href=""https://arxiv.org/abs/2205.09626"">Zhu et al.</a>"
 2017,IJCAI'17,DeepFM,https://arxiv.org/abs/1703.04247,0.7648,0.3667,https://github.com/reczoo/BARS/tree/main/ranking/ctr/DeepFM/DeepFM_avazu_x1,"<a href=""https://arxiv.org/abs/2205.09626"">Zhu et al.</a>"

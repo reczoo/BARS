@@ -1,13 +1,13 @@
 [Hardware]
-CPU: Intel(R) Xeon(R) Gold 6278C CPU @ 2.60GHz
+CPU: Intel(R) Xeon(R) Gold 6151 CPU @ 3.00GHz
 GPU: Tesla V100 32G
-RAM: 755G
+RAM: 512G
 
 [Software]
 CUDA: 10.2
-python: 3.6.4
+python: 3.7.10
 pytorch: 1.0.0
-pandas: 0.22.0
+pandas: 1.1.5
 numpy: 1.19.2
 scipy: 1.5.4
 sklearn: 0.22.1
@@ -15,4 +15,3 @@ pyyaml: 5.4.1
 h5py: 2.8.0
 tqdm: 4.60.0
 fuxictr: 1.1.0
-
